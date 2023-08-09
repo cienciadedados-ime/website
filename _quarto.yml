@@ -7,7 +7,7 @@ website:
   navbar:
     logo: assets/r.png
     left:
-      - href: paginas/index.qmd
+      - href: index.qmd
         text: Home
       - href: paginas/equipe.qmd
         text: Equipe

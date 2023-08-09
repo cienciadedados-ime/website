@@ -64,7 +64,7 @@ ul.task-list li input[type="checkbox"] {
 <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../assets/styles.css">
 </head>
 
 <body class="nav-fixed">
@@ -75,7 +75,7 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
     <a href="../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../r.png" alt="" class="navbar-logo">
+    <img src="../assets/r.png" alt="" class="navbar-logo">
     </a>
     <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Ciência de Dados</span>
@@ -99,18 +99,33 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link" href="../paginas/inscricoes.html" rel="" target="">
  <span class="menu-text">Inscrições</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../paginas/editais.html" rel="" target="">
- <span class="menu-text">Editais abertos</span></a>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-editais" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+ <span class="menu-text">Editais</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-editais">    
+        <li>
+    <a class="dropdown-item" href="../paginas/editais/editais-abertos.html" rel="" target="">
+ <span class="dropdown-text">Editais abertos</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="../paginas/editais/editais-2023.html" rel="" target="">
+ <span class="dropdown-text">Editais 2023</span></a>
+  </li>  
+    </ul>
+  </li>
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-cursos" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
  <span class="menu-text">Cursos</span>
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-cursos">    
         <li>
-    <a class="dropdown-item" href="../cursos/cd-docentes/cd-docentes.html" rel="" target="">
+    <a class="dropdown-item" href="../paginas/cursos/cd-docentes/cd-docentes.html" rel="" target="">
  <span class="dropdown-text">Ciência de Dados para Docentes usando <code>R</code></span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../paginas/cursos/regressao-logistica/regressao-logistica.html" rel="" target="">
+ <span class="dropdown-text"><code>R</code> para Ciência de Dados: Regressão Logística</span></a>
   </li>  
     </ul>
   </li>
