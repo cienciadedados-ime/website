@@ -1,0 +1,34 @@
+# Equipe técnica
+
+## Coordenadores
+
+```{r}
+#| echo: false
+#| out.width: 25%
+knitr::include_graphics("../assets/carol.jpeg")
+```
+
+
+**Carolina Costa Mota Paraíba** fez doutorado sanduíche na Universidade de Edimburgo (Escócia) e pós-doutorado na Universidade Federal do Espírito Santo. Já trabalhou com Estatística Aplicada no Lanagro/SP e no Instituto Jones dos Santos Neves (Espírito Santo). Atua principalmente nos seguintes temas: análise de regressão, inferência Bayesiana, diagnóstico de modelos, estatística computacional e estatística aplicada.<br>
+**Instagram:** [`@`ccmparaiba](https://www.instagram.com/ccmparaiba/)<br>
+**GitHub:** [github.com//ccmparaiba](https://github.com/ccmparaiba)<br>
+**e-mail:** [carolina.paraiba`@`ufba.br](mailto:carolina.paraiba@ufba.br)
+
+```{r}
+#| echo: false
+#| out.width: 25%
+knitr::include_graphics("../assets/gilberto.jpeg")
+```
+
+
+**Gilberto Pereira Sassi** é professor do Departamento de Estatística do Instituto de Matemática e Estatística da Universidade Federal da Bahia. Bacharel em Matemática com mestrado pelo Programa de Pósgraduação em Ciência da Computação e Matemática Computacional do Instituto de Ciências Matemáticas e de Computação da Universidade de São Paulo e tem doutorado pelo Programa de Pós-graduação em Estatística do Instituto de Matemática e Estatística da Universidade de São Paulo. Já trabalhou com ciência de dados em empresas como Bradesco, Itaú e FIPE. Tem interesse em métodos estatísticos, análise de dados funcionais e teoria de resposta ao item.<br>
+**Instagram:** [`@`gpsassi](https://www.instagram.com/gpsassi/)<br>
+**GitHub:** [github.com/gilberto-sassi](https://github.com/gilberto-sassi)<br>
+**e-mail:** [gilberto.sassi`@`ufba.br](mailto:gilberto.sassi@ufba.br)<br>
+**Página pessoal:** [gilbertosassi.netlify.app](https://gilbertosassi.netlify.app){target="_blank"}
+
+## Membros
+
+Em breve.
+
+---

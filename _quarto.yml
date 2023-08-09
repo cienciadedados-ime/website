@@ -1,0 +1,42 @@
+project:
+  type: website
+
+website:
+  title: "Ciência de Dados"
+  body-footer: "&#169; 2023 `R` para Ciência de Dados <br>&#128420; by Carolina Paraíba e Gilberto Sassi"
+  navbar:
+    logo: assets/r.png
+    left:
+      - href: paginas/index.qmd
+        text: Home
+      - href: paginas/equipe.qmd
+        text: Equipe
+      - href: paginas/inscricoes.qmd
+        text: Inscrições
+      - text: "Editais"
+        menu: 
+          - href: paginas/editais/editais-abertos.qmd
+            text: "Editais abertos"
+          - href: paginas/editais/editais-2023.qmd
+            text: "Editais 2023"
+      - text: "Cursos"
+        menu:
+          - href: paginas/cursos/cd-docentes/cd-docentes.qmd
+            text: "Ciência de Dados para Docentes usando `R`"
+          - href: paginas/cursos/regressao-logistica/regressao-logistica.qmd
+            text: "`R` para Ciência de Dados: Regressão Logística"
+      - href: paginas/eventos.qmd
+        text: Eventos
+      - href: paginas/cade.qmd
+        text: CADE
+
+
+format:
+  html:
+    lang: pt-br
+    include-in-header: assets/header.html
+    theme:
+      light: spacelab
+      dark: superhero
+    css: assets/styles.css
+    toc: true

@@ -1,0 +1,4 @@
+- source: project
+  netlify:
+    - id: bdd524a1-a5fc-4034-95e0-ed32923d3ac9
+      url: 'https://cienciadedados-ime-ufba.netlify.app'

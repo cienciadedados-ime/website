@@ -1,0 +1,18 @@
+---
+title: ""
+---
+
+**Curso:** R para Ciência de Dados: Regressão Logística
+
+**Professores:** Profa. Dra. Carolina Costa Mota Paraíba e Prof. Dr. Gilberto Pereira Sassi, Departamento de Estatística, IME, UFBA.
+
+**Número de vagas:** 20
+
+**Resumo:** O objetivo deste curso é apresentar a linguagem R e os princípios de Modelos Lineares Generalizados, abordando o tópico de Regressão Logística, usando os frameworks tidyverse e tidymodels, especialmente os pacotes broom e gglm. O curso terá 8 horas com
+2 encontros presenciais no Laboratório 140 do Instituto de Matemática e Estatística da UFBA nos dias 18 e 25 de agosto das 14h00 às 18h00.
+
+**Inscrições** (o curso é gratuito, mas é necessário fazer inscrição pelo _Google Forms_): [Formulário de inscrição](https://forms.gle/vfJrBrXnjAn5KwWE7){target="_blank}
+
+**Prazo de Inscrições:** 14/07/2023 a 04/08/2023.
+
+---
