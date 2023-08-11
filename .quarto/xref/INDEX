@@ -1,62 +1,32 @@
 {
-  "cursos/cd-docentes/cd-docentes.qmd": {
-    "cd-docentes.html": "ab7cd0af"
-  },
-  "about.qmd": {
-    "about.html": "d0d29706"
-  },
-  "cade.qmd": {
-    "cade.html": "add3c1b6"
-  },
-  "cursos.qmd": {
-    "cursos.html": "3cf12d3b"
-  },
-  "editais.qmd": {
-    "editais.html": "79787d8c"
-  },
-  "equipe.qmd": {
-    "equipe.html": "88ea066e"
-  },
-  "eventos.qmd": {
-    "eventos.html": "5bfc3c28"
-  },
   "index.qmd": {
-    "index.html": "d30f4aec"
-  },
-  "inscricoes.qmd": {
-    "inscricoes.html": "449b2648"
-  },
-  "paginas/editais.qmd": {
-    "editais.html": "e473095f"
+    "index.html": "f5ad3fdb"
   },
   "paginas/cursos.qmd": {
-    "cursos.html": "f7c779a6"
+    "cursos.html": "56862b29"
   },
   "paginas/inscricoes.qmd": {
-    "inscricoes.html": "e40a39d8"
-  },
-  "paginas/eventos.qmd": {
-    "eventos.html": "4665c659"
-  },
-  "paginas/cade.qmd": {
-    "cade.html": "a4fec386"
-  },
-  "paginas/equipe.qmd": {
-    "equipe.html": "6a867f63"
-  },
-  "paginas/index.qmd": {
-    "index.html": "68ec6953"
-  },
-  "paginas/editais/editais-abertos.qmd": {
-    "editais-abertos.html": "5bb87c7e"
-  },
-  "paginas/editais/editais-2023.qmd": {
-    "editais-2023.html": "83d756e7"
+    "inscricoes.html": "9f907eda"
   },
   "paginas/cursos/cd-docentes/cd-docentes.qmd": {
-    "cd-docentes.html": "0c46e58f"
+    "cd-docentes.html": "b2f76897"
   },
   "paginas/cursos/regressao-logistica/regressao-logistica.qmd": {
-    "regressao-logistica.html": "e8a5df2d"
+    "regressao-logistica.html": "36432917"
+  },
+  "paginas/eventos.qmd": {
+    "eventos.html": "e83609c3"
+  },
+  "paginas/editais/editais-abertos.qmd": {
+    "editais-abertos.html": "eccb033d"
+  },
+  "paginas/editais/editais-2023.qmd": {
+    "editais-2023.html": "6cad00c5"
+  },
+  "paginas/cade.qmd": {
+    "cade.html": "a1a1b2ec"
+  },
+  "paginas/equipe.qmd": {
+    "equipe.html": "9cd9aaf0"
   }
 }
