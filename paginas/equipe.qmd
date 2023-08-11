@@ -48,7 +48,7 @@ knitr::include_graphics("../assets/marcos.jpg")
 
 
 **Marcos Antonio Arnaldo** é um estudante de Engenharia Mecânica na UFBA. Paralelamente à sua jornada acadêmica, ele se dedica ao estudo da ciência de dados, unindo sua paixão por conhecimento e inovação tecnológica.<br>
-**GitHub:** [github.com/marcossk7](https://github.com/marcossk7)
+**GitHub:** [github.com/marcossk7](https://github.com/marcossk7){target="_blank"}
 
 </div>
 
