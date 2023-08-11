@@ -28,5 +28,8 @@
   },
   "paginas/equipe.qmd": {
     "equipe.html": "9cd9aaf0"
+  },
+  "paginas/cursos/programacao/programacao.qmd": {
+    "programacao.html": "65c04832"
   }
 }
