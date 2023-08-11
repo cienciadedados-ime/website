@@ -1,129 +1,31 @@
 [
   {
-    "objectID": "paginas/index.html",
-    "href": "paginas/index.html",
+    "objectID": "index.html",
+    "href": "index.html",
     "title": "R para Ciência de Dados",
     "section": "",
-    "text": "R para Ciência de dados é uma ação de extensão na modalidade projeto com apoio financeiro da Pró-reitoria de Extensão da Univesidade Federal da Bahia (UFBA) e tem como o objetivo compartilhar o conhecimento de análise de dados usando a linguagem R numa interação dialógica da comunidade acadêmica com a sociedade por meio da troca de conhecimentos.\nO projeto irá promover um conjunto de ações com o objetivo de popularizar a Estatística e Ciência de Dados e incentivar o uso de tecnologias de código aberto como a linguagem R, cujo uso é amplamente disseminado entre os pesquisadores da área de Estatística com crescente popularidade entre profissionais de outras áreas.\nOs cursos e eventos promovidas neste projeto serão presenciais em Salvador, gratuitas, abertas a toda comunidade e com certificado emitado pela UFBA.\nDefenda a Universidade pública, gratuita, de qualidade e diversa. Serviço público salva vidas. Defenda o serviço público.\n\nDe cada qual, segundo sua capacidade; a cada qual, segundo suas necessidades.\n\n\n\n\n\n© 2023 R para Ciência de Dados 🖤 by Carolina Paraíba e Gilberto Sassi"
+    "text": "R para Ciência de dados é uma ação de extensão na modalidade projeto com apoio financeiro da Pró-reitoria de Extensão da Univesidade Federal da Bahia (UFBA) e tem como o objetivo compartilhar o conhecimento de análise de dados usando a linguagem R numa interação dialógica da comunidade acadêmica com a sociedade por meio da troca de conhecimentos.\nO projeto irá promover um conjunto de ações com o objetivo de popularizar a Estatística e Ciência de Dados e incentivar o uso de tecnologias de código aberto como a linguagem R, cujo uso é amplamente disseminado entre os pesquisadores da área de Estatística com crescente popularidade entre profissionais de outras áreas.\nOs cursos e eventos promovidas neste projeto serão presenciais em Salvador, gratuitas, abertas a toda comunidade e com certificado emitado pela UFBA.\nDefenda a Universidade pública, gratuita, de qualidade e diversa. Serviço público salva vidas. Defenda o serviço público.\n\nDe cada qual, segundo sua capacidade; a cada qual, segundo suas necessidades.\n\n\n\n\n\n\n© 2023 R para Ciência de Dados 🖤 by Carolina Paraíba e Gilberto Sassi"
   },
   {
-    "objectID": "paginas/cade.html",
-    "href": "paginas/cade.html",
-    "title": "Ciência de Dados",
+    "objectID": "paginas/equipe.html",
+    "href": "paginas/equipe.html",
+    "title": "Equipe técnica",
     "section": "",
-    "text": "Em breve.\n\n\n\n\n© 2023 R para Ciência de Dados 🖤 by Carolina Paraíba e Gilberto Sassi"
+    "text": "Carolina Costa Mota Paraíba fez doutorado sanduíche na Universidade de Edimburgo (Escócia) e pós-doutorado na Universidade Federal do Espírito Santo. Já trabalhou com Estatística Aplicada no Lanagro/SP e no Instituto Jones dos Santos Neves (Espírito Santo). Atua principalmente nos seguintes temas: análise de regressão, inferência Bayesiana, diagnóstico de modelos, estatística computacional e estatística aplicada. Instagram: @ccmparaiba GitHub: github.com//ccmparaiba e-mail: carolina.paraiba@ufba.br\n\n\n\n\n\nGilberto Pereira Sassi é professor do Departamento de Estatística do Instituto de Matemática e Estatística da Universidade Federal da Bahia. Bacharel em Matemática com mestrado pelo Programa de Pósgraduação em Ciência da Computação e Matemática Computacional do Instituto de Ciências Matemáticas e de Computação da Universidade de São Paulo e tem doutorado pelo Programa de Pós-graduação em Estatística do Instituto de Matemática e Estatística da Universidade de São Paulo. Já trabalhou com ciência de dados em empresas como Bradesco, Itaú e FIPE. Tem interesse em métodos estatísticos, análise de dados funcionais e teoria de resposta ao item. Instagram: @gpsassi GitHub: github.com/gilberto-sassi e-mail: gilberto.sassi@ufba.br Página pessoal: gilbertosassi.netlify.app\n\n\n\nEm breve.\n© 2023 R para Ciência de Dados 🖤 by Carolina Paraíba e Gilberto Sassi"
   },
   {
-    "objectID": "paginas/editais/editais-abertos.html",
-    "href": "paginas/editais/editais-abertos.html",
-    "title": "Editais abertos",
+    "objectID": "paginas/equipe.html#coordenadores",
+    "href": "paginas/equipe.html#coordenadores",
+    "title": "Equipe técnica",
     "section": "",
-    "text": "Editais abertos\nEm breve.\n\n\n\n\n\n© 2023 R para Ciência de Dados 🖤 by Carolina Paraíba e Gilberto Sassi"
+    "text": "Carolina Costa Mota Paraíba fez doutorado sanduíche na Universidade de Edimburgo (Escócia) e pós-doutorado na Universidade Federal do Espírito Santo. Já trabalhou com Estatística Aplicada no Lanagro/SP e no Instituto Jones dos Santos Neves (Espírito Santo). Atua principalmente nos seguintes temas: análise de regressão, inferência Bayesiana, diagnóstico de modelos, estatística computacional e estatística aplicada. Instagram: @ccmparaiba GitHub: github.com//ccmparaiba e-mail: carolina.paraiba@ufba.br\n\n\n\n\n\nGilberto Pereira Sassi é professor do Departamento de Estatística do Instituto de Matemática e Estatística da Universidade Federal da Bahia. Bacharel em Matemática com mestrado pelo Programa de Pósgraduação em Ciência da Computação e Matemática Computacional do Instituto de Ciências Matemáticas e de Computação da Universidade de São Paulo e tem doutorado pelo Programa de Pós-graduação em Estatística do Instituto de Matemática e Estatística da Universidade de São Paulo. Já trabalhou com ciência de dados em empresas como Bradesco, Itaú e FIPE. Tem interesse em métodos estatísticos, análise de dados funcionais e teoria de resposta ao item. Instagram: @gpsassi GitHub: github.com/gilberto-sassi e-mail: gilberto.sassi@ufba.br Página pessoal: gilbertosassi.netlify.app"
   },
   {
-    "objectID": "paginas/cursos/regressao-logistica/regressao-logistica.html",
-    "href": "paginas/cursos/regressao-logistica/regressao-logistica.html",
-    "title": "R para Ciência de Dados: Regressão Logística",
-    "section": "",
-    "text": "Em breve.\n© 2023 R para Ciência de Dados 🖤 by Carolina Paraíba e Gilberto Sassi"
-  },
-  {
-    "objectID": "paginas/cursos/regressao-logistica/regressao-logistica.html#slides",
-    "href": "paginas/cursos/regressao-logistica/regressao-logistica.html#slides",
-    "title": "R para Ciência de Dados: Regressão Logística",
+    "objectID": "paginas/equipe.html#membros",
+    "href": "paginas/equipe.html#membros",
+    "title": "Equipe técnica",
     "section": "",
     "text": "Em breve."
-  },
-  {
-    "objectID": "paginas/cursos/regressao-logistica/regressao-logistica.html#conjunto-de-dados",
-    "href": "paginas/cursos/regressao-logistica/regressao-logistica.html#conjunto-de-dados",
-    "title": "R para Ciência de Dados: Regressão Logística",
-    "section": "Conjunto de Dados",
-    "text": "Conjunto de Dados\nEm breve."
-  },
-  {
-    "objectID": "paginas/cursos/regressao-logistica/regressao-logistica.html#instalação-do-r-e-do-rstudio",
-    "href": "paginas/cursos/regressao-logistica/regressao-logistica.html#instalação-do-r-e-do-rstudio",
-    "title": "R para Ciência de Dados: Regressão Logística",
-    "section": "Instalação do R e do RStudio",
-    "text": "Instalação do R e do RStudio\nNeste curso, a IDE vamos utilizar é o RStudio. Outras opções populares em ciência de dados são o VScode da Microsoft e JupyterLab, caso você tenha familiaridade ou já trabalhe com este editores sinta a vontade para usá-los.\nCaso você não queria ou não possa realizar instalações em seu computador, recomendamos que você use as plataformas Google Colaboratory colab.to/r e/ou RStudio Cloud posit.cloud. Recomendamos o uso da plataforma RStudio Cloud pelo mesmo estilo e aspecto visual do aplicativo RStudio."
-  },
-  {
-    "objectID": "paginas/cursos/regressao-logistica/regressao-logistica.html#para-instalar-o-r",
-    "href": "paginas/cursos/regressao-logistica/regressao-logistica.html#para-instalar-o-r",
-    "title": "R para Ciência de Dados: Regressão Logística",
-    "section": "Para instalar o R",
-    "text": "Para instalar o R\nPara instalar o R em seu computador, basta seguir as instruções em cran.r-project.org. É necessário que você instale a versão 4.1 ou superior do R."
-  },
-  {
-    "objectID": "paginas/cursos/regressao-logistica/regressao-logistica.html#para-instalar-o-rstudio",
-    "href": "paginas/cursos/regressao-logistica/regressao-logistica.html#para-instalar-o-rstudio",
-    "title": "R para Ciência de Dados: Regressão Logística",
-    "section": "Para instalar o RStudio",
-    "text": "Para instalar o RStudio\nDepois de ter instalado o R, siga as instruções de instalação em posit.co/downloads."
-  },
-  {
-    "objectID": "paginas/inscricoes.html",
-    "href": "paginas/inscricoes.html",
-    "title": "Ciência de Dados",
-    "section": "",
-    "text": "Curso: R para Ciência de Dados: Regressão Logística\nProfessores: Profa. Dra. Carolina Costa Mota Paraíba e Prof. Dr. Gilberto Pereira Sassi, Departamento de Estatística, IME, UFBA.\nNúmero de vagas: 20\nResumo: O objetivo deste curso é apresentar a linguagem R e os princípios de Modelos Lineares Generalizados, abordando o tópico de Regressão Logística, usando os frameworks tidyverse e tidymodels, especialmente os pacotes broom e gglm. O curso terá 8 horas com 2 encontros presenciais no Laboratório 140 do Instituto de Matemática e Estatística da UFBA nos dias 18 e 25 de agosto das 14h00 às 18h00.\nInscrições (o curso é gratuito, mas é necessário fazer inscrição pelo Google Forms): Formulário de inscrição\nPrazo de Inscrições: 14/07/2023 a 04/08/2023.\n\n\n\n\n© 2023 R para Ciência de Dados 🖤 by Carolina Paraíba e Gilberto Sassi"
-  },
-  {
-    "objectID": "paginas/cursos.html",
-    "href": "paginas/cursos.html",
-    "title": "Ciência de Dados",
-    "section": "",
-    "text": "© 2023 R para Ciência de Dados 🖤 by Carolina Paraíba e Gilberto Sassi"
-  },
-  {
-    "objectID": "paginas/cursos/cd-docentes/cd-docentes.html",
-    "href": "paginas/cursos/cd-docentes/cd-docentes.html",
-    "title": "Ciência de Dados para Docentes usando R",
-    "section": "",
-    "text": "aula\n© 2023 R para Ciência de Dados 🖤 by Carolina Paraíba e Gilberto Sassi"
-  },
-  {
-    "objectID": "paginas/cursos/cd-docentes/cd-docentes.html#slides",
-    "href": "paginas/cursos/cd-docentes/cd-docentes.html#slides",
-    "title": "Ciência de Dados para Docentes usando R",
-    "section": "",
-    "text": "aula"
-  },
-  {
-    "objectID": "paginas/cursos/cd-docentes/cd-docentes.html#conjuntos-de-dados",
-    "href": "paginas/cursos/cd-docentes/cd-docentes.html#conjuntos-de-dados",
-    "title": "Ciência de Dados para Docentes usando R",
-    "section": "Conjuntos de Dados",
-    "text": "Conjuntos de Dados\nestudantes\neconomia_us\nrenda_vida"
-  },
-  {
-    "objectID": "paginas/cursos/cd-docentes/cd-docentes.html#instalação-do-r-e-do-rstudio",
-    "href": "paginas/cursos/cd-docentes/cd-docentes.html#instalação-do-r-e-do-rstudio",
-    "title": "Ciência de Dados para Docentes usando R",
-    "section": "Instalação do R e do RStudio",
-    "text": "Instalação do R e do RStudio\nNeste curso, a IDE vamos utilizar é o RStudio. Outras opções populares em ciência de dados são o VScode da Microsoft e JupyterLab, caso você tenha familiaridade ou já trabalhe com este editores sinta a vontade para usá-los.\nCaso você não queria ou não possa realizar instalações em seu computador, recomendamos que você use as plataformas Google Colaboratory colab.to/r e/ou RStudio Cloud posit.cloud. Recomendamos o uso da plataforma RStudio Cloud pelo mesmo estilo e aspecto visual do aplicativo RStudio."
-  },
-  {
-    "objectID": "paginas/cursos/cd-docentes/cd-docentes.html#para-instalar-o-r",
-    "href": "paginas/cursos/cd-docentes/cd-docentes.html#para-instalar-o-r",
-    "title": "Ciência de Dados para Docentes usando R",
-    "section": "Para instalar o R",
-    "text": "Para instalar o R\nPara instalar o R em seu computador, basta seguir as instruções em cran.r-project.org. É necessário que você instale a versão 4.1 ou superior do R."
-  },
-  {
-    "objectID": "paginas/cursos/cd-docentes/cd-docentes.html#para-instalar-o-rstudio",
-    "href": "paginas/cursos/cd-docentes/cd-docentes.html#para-instalar-o-rstudio",
-    "title": "Ciência de Dados para Docentes usando R",
-    "section": "Para instalar o RStudio",
-    "text": "Para instalar o RStudio\nDepois de ter instalado o R, siga as instruções de instalação em posit.co/downloads."
-  },
-  {
-    "objectID": "paginas/eventos.html",
-    "href": "paginas/eventos.html",
-    "title": "Ciência de Dados",
-    "section": "",
-    "text": "Em breve.\n\n\n\n\n© 2023 R para Ciência de Dados 🖤 by Carolina Paraíba e Gilberto Sassi"
   },
   {
     "objectID": "paginas/editais/editais-2023.html",
@@ -182,31 +84,122 @@
     "text": "A/o primeiro colocado ficará com a bolsa PIBIEX, e a/os segunda/a e terceira/o colocada/o serão voluntárias/os vinculados ao PAEX, conforme descrito acima.\nOs coordenadores pedem, gentilmente, que respondam os e-mails confirmando interesse até amanhã, dia 26/07/2023, às 10h00min sem falta.\n\n\n\n\n\n\n  \n    \n      Classificação das/os inscritas/os.\n    \n    \n    \n      Nome\n      Disponibilidade\n      Conhecimento em estatística\n      Conhecimento da linguagem R\n      Nota final\n    \n  \n  \n    Marcos Antonio Arnaldo\n10,00\n8,00\n9,00\n9,00\n    Paulo Ubiratã Ferreira De Oliveira\n10,00\n5,00\n9,00\n8,00\n    Gabriella Santos Rocha\n10,00\n5,00\n5,60\n6,87\n    Álvaro Davi Araújo De Souza\n10,00\n5,00\n5,40\n6,80\n    Neirison Nepomuceno Lima\n9,00\n6,00\n5,00\n6,67\n    Isaac Silva Borges\n6,00\n5,75\n7,50\n6,42\n    Thiago Santos Rodrigues Rodolfo\n9,00\n5,00\n5,00\n6,33\n    Josemar Santos Oliveira\n6,00\n6,00\n5,00\n5,67\n    Alex Rebouças Pereira\n0,00\n0,00\n0,00\n0,00\n    Amanda Da Silva Santos\n0,00\n0,00\n0,00\n0,00\n    Ana Luísa Dos Santos Jaqueira\n0,00\n0,00\n0,00\n0,00\n    Beatriz Silveira Santos Machado\n0,00\n0,00\n0,00\n0,00\n    Carlos Alberto Araújo Pereira\n0,00\n0,00\n0,00\n0,00\n    Ellen Cristina Paixão Nunes\n0,00\n0,00\n0,00\n0,00\n    Erlane Santos De Jesus\n0,00\n0,00\n0,00\n0,00\n    Jonathan Xavier Pintto\n0,00\n0,00\n0,00\n0,00\n    João Vitor Moreira De Jesus\n0,00\n0,00\n0,00\n0,00\n    Kalila Martins Ferraz Lebrão\n0,00\n0,00\n0,00\n0,00\n    Keila Mayane Pereira Dos Santos Andrade\n0,00\n0,00\n0,00\n0,00\n    Kevely Wiliam De Jesus Santos\n0,00\n0,00\n0,00\n0,00\n    Larissa Vitória Carneiro\n0,00\n0,00\n0,00\n0,00\n    Lucas Da Silva Bonfim\n0,00\n0,00\n0,00\n0,00\n    Matheus Conceição Varela\n0,00\n0,00\n0,00\n0,00\n    Raquel Lopes Ribeiro\n0,00\n0,00\n0,00\n0,00\n    Regiane De Jesus Sousa\n0,00\n0,00\n0,00\n0,00\n    Ricardo Dos Santos De Lima\n0,00\n0,00\n0,00\n0,00\n    Rute Lopes Ribeiro\n0,00\n0,00\n0,00\n0,00\n    Sellton Tanajura Nunes\n0,00\n0,00\n0,00\n0,00\n    Tainara Vitória Santos Da Costa\n0,00\n0,00\n0,00\n0,00\n    Thainá Martins Silva\n0,00\n0,00\n0,00\n0,00\n    Vitor Lima Santos Dos Santos\n0,00\n0,00\n0,00\n0,00"
   },
   {
-    "objectID": "paginas/equipe.html",
-    "href": "paginas/equipe.html",
-    "title": "Equipe técnica",
+    "objectID": "paginas/eventos.html",
+    "href": "paginas/eventos.html",
+    "title": "Ciência de Dados",
     "section": "",
-    "text": "Carolina Costa Mota Paraíba fez doutorado sanduíche na Universidade de Edimburgo (Escócia) e pós-doutorado na Universidade Federal do Espírito Santo. Já trabalhou com Estatística Aplicada no Lanagro/SP e no Instituto Jones dos Santos Neves (Espírito Santo). Atua principalmente nos seguintes temas: análise de regressão, inferência Bayesiana, diagnóstico de modelos, estatística computacional e estatística aplicada. Instagram: @ccmparaiba GitHub: github.com//ccmparaiba e-mail: carolina.paraiba@ufba.br\n\n\n\n\n\nGilberto Pereira Sassi é professor do Departamento de Estatística do Instituto de Matemática e Estatística da Universidade Federal da Bahia. Bacharel em Matemática com mestrado pelo Programa de Pósgraduação em Ciência da Computação e Matemática Computacional do Instituto de Ciências Matemáticas e de Computação da Universidade de São Paulo e tem doutorado pelo Programa de Pós-graduação em Estatística do Instituto de Matemática e Estatística da Universidade de São Paulo. Já trabalhou com ciência de dados em empresas como Bradesco, Itaú e FIPE. Tem interesse em métodos estatísticos, análise de dados funcionais e teoria de resposta ao item. Instagram: @gpsassi GitHub: github.com/gilberto-sassi e-mail: gilberto.sassi@ufba.br Página pessoal: gilbertosassi.netlify.app\n\n\n\nEm breve.\n© 2023 R para Ciência de Dados 🖤 by Carolina Paraíba e Gilberto Sassi"
+    "text": "Em breve.\n\n\n\n\n© 2023 R para Ciência de Dados 🖤 by Carolina Paraíba e Gilberto Sassi"
   },
   {
-    "objectID": "paginas/equipe.html#coordenadores",
-    "href": "paginas/equipe.html#coordenadores",
-    "title": "Equipe técnica",
+    "objectID": "paginas/cursos/cd-docentes/cd-docentes.html",
+    "href": "paginas/cursos/cd-docentes/cd-docentes.html",
+    "title": "Ciência de Dados para Docentes usando R",
     "section": "",
-    "text": "Carolina Costa Mota Paraíba fez doutorado sanduíche na Universidade de Edimburgo (Escócia) e pós-doutorado na Universidade Federal do Espírito Santo. Já trabalhou com Estatística Aplicada no Lanagro/SP e no Instituto Jones dos Santos Neves (Espírito Santo). Atua principalmente nos seguintes temas: análise de regressão, inferência Bayesiana, diagnóstico de modelos, estatística computacional e estatística aplicada. Instagram: @ccmparaiba GitHub: github.com//ccmparaiba e-mail: carolina.paraiba@ufba.br\n\n\n\n\n\nGilberto Pereira Sassi é professor do Departamento de Estatística do Instituto de Matemática e Estatística da Universidade Federal da Bahia. Bacharel em Matemática com mestrado pelo Programa de Pósgraduação em Ciência da Computação e Matemática Computacional do Instituto de Ciências Matemáticas e de Computação da Universidade de São Paulo e tem doutorado pelo Programa de Pós-graduação em Estatística do Instituto de Matemática e Estatística da Universidade de São Paulo. Já trabalhou com ciência de dados em empresas como Bradesco, Itaú e FIPE. Tem interesse em métodos estatísticos, análise de dados funcionais e teoria de resposta ao item. Instagram: @gpsassi GitHub: github.com/gilberto-sassi e-mail: gilberto.sassi@ufba.br Página pessoal: gilbertosassi.netlify.app"
+    "text": "aula\n\n\n\nestudantes\neconomia_us\nrenda_vida\n\n\n\nNeste curso, a IDE vamos utilizar é o RStudio. Outras opções populares em ciência de dados são o VScode da Microsoft e JupyterLab, caso você tenha familiaridade ou já trabalhe com este editores sinta a vontade para usá-los.\nCaso você não queria ou não possa realizar instalações em seu computador, recomendamos que você use as plataformas Google Colaboratory colab.to/r e/ou RStudio Cloud posit.cloud. Recomendamos o uso da plataforma RStudio Cloud pelo mesmo estilo e aspecto visual do aplicativo RStudio.\n\n\n\nPara instalar o R em seu computador, basta seguir as instruções em cran.r-project.org. É necessário que você instale a versão 4.1 ou superior do R.\n\n\n\nDepois de ter instalado o R, siga as instruções de instalação em posit.co/downloads.\n© 2023 R para Ciência de Dados 🖤 by Carolina Paraíba e Gilberto Sassi"
   },
   {
-    "objectID": "paginas/equipe.html#membros",
-    "href": "paginas/equipe.html#membros",
-    "title": "Equipe técnica",
+    "objectID": "paginas/cursos/cd-docentes/cd-docentes.html#slides",
+    "href": "paginas/cursos/cd-docentes/cd-docentes.html#slides",
+    "title": "Ciência de Dados para Docentes usando R",
+    "section": "",
+    "text": "aula"
+  },
+  {
+    "objectID": "paginas/cursos/cd-docentes/cd-docentes.html#conjuntos-de-dados",
+    "href": "paginas/cursos/cd-docentes/cd-docentes.html#conjuntos-de-dados",
+    "title": "Ciência de Dados para Docentes usando R",
+    "section": "",
+    "text": "estudantes\neconomia_us\nrenda_vida"
+  },
+  {
+    "objectID": "paginas/cursos/cd-docentes/cd-docentes.html#instalação-do-r-e-do-rstudio",
+    "href": "paginas/cursos/cd-docentes/cd-docentes.html#instalação-do-r-e-do-rstudio",
+    "title": "Ciência de Dados para Docentes usando R",
+    "section": "",
+    "text": "Neste curso, a IDE vamos utilizar é o RStudio. Outras opções populares em ciência de dados são o VScode da Microsoft e JupyterLab, caso você tenha familiaridade ou já trabalhe com este editores sinta a vontade para usá-los.\nCaso você não queria ou não possa realizar instalações em seu computador, recomendamos que você use as plataformas Google Colaboratory colab.to/r e/ou RStudio Cloud posit.cloud. Recomendamos o uso da plataforma RStudio Cloud pelo mesmo estilo e aspecto visual do aplicativo RStudio."
+  },
+  {
+    "objectID": "paginas/cursos/cd-docentes/cd-docentes.html#para-instalar-o-r",
+    "href": "paginas/cursos/cd-docentes/cd-docentes.html#para-instalar-o-r",
+    "title": "Ciência de Dados para Docentes usando R",
+    "section": "",
+    "text": "Para instalar o R em seu computador, basta seguir as instruções em cran.r-project.org. É necessário que você instale a versão 4.1 ou superior do R."
+  },
+  {
+    "objectID": "paginas/cursos/cd-docentes/cd-docentes.html#para-instalar-o-rstudio",
+    "href": "paginas/cursos/cd-docentes/cd-docentes.html#para-instalar-o-rstudio",
+    "title": "Ciência de Dados para Docentes usando R",
+    "section": "",
+    "text": "Depois de ter instalado o R, siga as instruções de instalação em posit.co/downloads."
+  },
+  {
+    "objectID": "paginas/cursos.html",
+    "href": "paginas/cursos.html",
+    "title": "Ciência de Dados",
+    "section": "",
+    "text": "© 2023 R para Ciência de Dados 🖤 by Carolina Paraíba e Gilberto Sassi"
+  },
+  {
+    "objectID": "paginas/inscricoes.html",
+    "href": "paginas/inscricoes.html",
+    "title": "Ciência de Dados",
+    "section": "",
+    "text": "Curso: R para Ciência de Dados: Introdução à programação em R\n\nProfessores: Profa. Dra. Carolina Costa Mota Paraíba e Prof. Dr. Gilberto Pereira Sassi, Departamento de Estatística, IME, UFBA.\nNúmero de vagas: 20\nResumo: O curso se propõe a apresentar a linguagem R incluindo vetores, matrizes, funções, operadores lógicos, controle de fluxo usando if, for, ifelse, while, as funções apply e map, funções anônimas, operador pipe, e rotinas de otimização. O curso terá 8 horas com 2 encontros presenciais nos dias 15 e 22 de setembro das 14h00 às 18h00 nos laboratórios de ensino de informática do IME-UFBA, será gratuito com certificado emitido pela UFBA e terá 20 vagas.\nInscrições (o curso é gratuito, mas é necessário fazer inscrição pelo Google Forms): Formulário de inscrição\n\nPrazo de Inscrições: 10/08/2023 a 27/08/2023.\n\n\n\n\n© 2023 R para Ciência de Dados 🖤 by Carolina Paraíba e Gilberto Sassi"
+  },
+  {
+    "objectID": "paginas/cursos/regressao-logistica/regressao-logistica.html",
+    "href": "paginas/cursos/regressao-logistica/regressao-logistica.html",
+    "title": "R para Ciência de Dados: Regressão Logística",
+    "section": "",
+    "text": "Em breve.\n\n\n\nEm breve.\n\n\n\nNeste curso, a IDE vamos utilizar é o RStudio. Outras opções populares em ciência de dados são o VScode da Microsoft e JupyterLab, caso você tenha familiaridade ou já trabalhe com este editores sinta a vontade para usá-los.\nCaso você não queria ou não possa realizar instalações em seu computador, recomendamos que você use as plataformas Google Colaboratory colab.to/r e/ou RStudio Cloud posit.cloud. Recomendamos o uso da plataforma RStudio Cloud pelo mesmo estilo e aspecto visual do aplicativo RStudio.\n\n\n\nPara instalar o R em seu computador, basta seguir as instruções em cran.r-project.org. É necessário que você instale a versão 4.1 ou superior do R.\n\n\n\nDepois de ter instalado o R, siga as instruções de instalação em posit.co/downloads.\n© 2023 R para Ciência de Dados 🖤 by Carolina Paraíba e Gilberto Sassi"
+  },
+  {
+    "objectID": "paginas/cursos/regressao-logistica/regressao-logistica.html#slides",
+    "href": "paginas/cursos/regressao-logistica/regressao-logistica.html#slides",
+    "title": "R para Ciência de Dados: Regressão Logística",
     "section": "",
     "text": "Em breve."
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "R para Ciência de Dados",
+    "objectID": "paginas/cursos/regressao-logistica/regressao-logistica.html#conjunto-de-dados",
+    "href": "paginas/cursos/regressao-logistica/regressao-logistica.html#conjunto-de-dados",
+    "title": "R para Ciência de Dados: Regressão Logística",
     "section": "",
-    "text": "R para Ciência de dados é uma ação de extensão na modalidade projeto com apoio financeiro da Pró-reitoria de Extensão da Univesidade Federal da Bahia (UFBA) e tem como o objetivo compartilhar o conhecimento de análise de dados usando a linguagem R numa interação dialógica da comunidade acadêmica com a sociedade por meio da troca de conhecimentos.\nO projeto irá promover um conjunto de ações com o objetivo de popularizar a Estatística e Ciência de Dados e incentivar o uso de tecnologias de código aberto como a linguagem R, cujo uso é amplamente disseminado entre os pesquisadores da área de Estatística com crescente popularidade entre profissionais de outras áreas.\nOs cursos e eventos promovidas neste projeto serão presenciais em Salvador, gratuitas, abertas a toda comunidade e com certificado emitado pela UFBA.\nDefenda a Universidade pública, gratuita, de qualidade e diversa. Serviço público salva vidas. Defenda o serviço público.\n\nDe cada qual, segundo sua capacidade; a cada qual, segundo suas necessidades.\n\n\n\n\n\n© 2023 R para Ciência de Dados 🖤 by Carolina Paraíba e Gilberto Sassi"
+    "text": "Em breve."
+  },
+  {
+    "objectID": "paginas/cursos/regressao-logistica/regressao-logistica.html#instalação-do-r-e-do-rstudio",
+    "href": "paginas/cursos/regressao-logistica/regressao-logistica.html#instalação-do-r-e-do-rstudio",
+    "title": "R para Ciência de Dados: Regressão Logística",
+    "section": "",
+    "text": "Neste curso, a IDE vamos utilizar é o RStudio. Outras opções populares em ciência de dados são o VScode da Microsoft e JupyterLab, caso você tenha familiaridade ou já trabalhe com este editores sinta a vontade para usá-los.\nCaso você não queria ou não possa realizar instalações em seu computador, recomendamos que você use as plataformas Google Colaboratory colab.to/r e/ou RStudio Cloud posit.cloud. Recomendamos o uso da plataforma RStudio Cloud pelo mesmo estilo e aspecto visual do aplicativo RStudio."
+  },
+  {
+    "objectID": "paginas/cursos/regressao-logistica/regressao-logistica.html#para-instalar-o-r",
+    "href": "paginas/cursos/regressao-logistica/regressao-logistica.html#para-instalar-o-r",
+    "title": "R para Ciência de Dados: Regressão Logística",
+    "section": "",
+    "text": "Para instalar o R em seu computador, basta seguir as instruções em cran.r-project.org. É necessário que você instale a versão 4.1 ou superior do R."
+  },
+  {
+    "objectID": "paginas/cursos/regressao-logistica/regressao-logistica.html#para-instalar-o-rstudio",
+    "href": "paginas/cursos/regressao-logistica/regressao-logistica.html#para-instalar-o-rstudio",
+    "title": "R para Ciência de Dados: Regressão Logística",
+    "section": "",
+    "text": "Depois de ter instalado o R, siga as instruções de instalação em posit.co/downloads."
+  },
+  {
+    "objectID": "paginas/editais/editais-abertos.html",
+    "href": "paginas/editais/editais-abertos.html",
+    "title": "Editais abertos",
+    "section": "",
+    "text": "Editais abertos\nEm breve.\n\n\n\n\n\n© 2023 R para Ciência de Dados 🖤 by Carolina Paraíba e Gilberto Sassi"
+  },
+  {
+    "objectID": "paginas/cade.html",
+    "href": "paginas/cade.html",
+    "title": "Ciência de Dados",
+    "section": "",
+    "text": "Em breve…\n\n\n\n\n© 2023 R para Ciência de Dados 🖤 by Carolina Paraíba e Gilberto Sassi"
   }
 ]
