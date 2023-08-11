@@ -25,6 +25,8 @@ website:
             text: "Ciência de Dados para Docentes usando `R`"
           - href: paginas/cursos/regressao-logistica/regressao-logistica.qmd
             text: "`R` para Ciência de Dados: Regressão Logística"
+          - href: paginas/cursos/programacao/programacao.qmd
+            text: "`R` para Ciência de Dados: programação em `R`"
       - href: paginas/eventos.qmd
         text: Eventos
       - href: paginas/cade.qmd
