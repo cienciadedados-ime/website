@@ -1,20 +1,27 @@
 <div style="text-align:justify">
 
-# Edital público em Extensão Universitária
+
+::: {.panel-tabset}
+
+## Edital em andamento
+
+O edital para os semestres 2023.2 e 2024.1 já está em andamento.
+
+## Edital 2023
 
 Estão abertas inscrições para seleção de **01 vaga para bolsista e 02 vagas para voluntário** para os Semestres Letivos 2023.2  e 2024.1 no Projeto de Extensão **`R` para Ciência de Dados**, sob número de cadastro 19588 na plataforma SIATEX. 
 
 O objetivo deste projeto de extensão é compartilhar o conhecimento de análise de dados usando a linguagem `R` numa interação dialógica da comunidade acadêmica com a sociedade por meio da troca de conhecimentos. O projeto irá promover um conjunto de ações com o objetivo de popularizar a Estatística e Ciência de Dados e incentivar o uso de tecnologias de código aberto como a linguagem `R`, cujo uso é amplamente disseminado entre os pesquisadores da área de Estatística com crescente popularidade entre profissionais de outras áreas. Os métodos que serão abordados neste projeto constituem um conhecimento essencial para o exercício da cidadania devido ao avanço das tecnologias de informação. As ações planejadas neste projeto trarão para a universidade a experiência e a demanda dos profissionais pelo uso de Estatística e Ciência de Dados. Devido a relevância e atualidade do tema, é importante que a UFBA atue junto com a sociedade em atividades gratuitas fortalecendo a inserção da UFBA dentro da sociedade.
 
 
-## Vagas ofertadas
+### Vagas ofertadas
 
 - 01 vaga para bolsista de Extensão, no valor de R$700,00 mensal, conforme Edital [PIBIEX 2023-2024](https://sisbiex.ufba.br/sisbiex//fileAnexoArquivo?n=Sisbiex_E_34.pdf){target="_blank"}.
 - 02 vagas para voluntárias/os, com até R$1.000,00 de auxílio financeiro para ajuda de custo, conforme Edital [PAEx 2023](https://sapex.ufba.br/sapex//fileAnexoArquivo?n=Sapex_E_164.pdf){target="_blank"}.
 
 
 
-## Requisitos para candidatura
+### Requisitos para candidatura
 
 As vagas estão aberta para qualquer estudante de graduação da UFBA que atenda aos seguintes requisitos:
 
@@ -26,7 +33,7 @@ As vagas estão aberta para qualquer estudante de graduação da UFBA que atenda
 - desejável conhecimento de linguagem `R` e/ou Métodos Estatísticos.
 
 
-## Responsabilidades da/o bolsista
+### Responsabilidades da/o bolsista
 
 - participar de reuniões semanais com a equipe executora em dia e horário a definir.
 - participar das reuniões de orientação e avaliação com a PROEXT.
@@ -36,7 +43,7 @@ As vagas estão aberta para qualquer estudante de graduação da UFBA que atenda
 - apresentar os resultados dos planos de trabalhos na próxima edição do Congresso UFBA.
 
 
-## Responsabilidades da/o voluntária/o
+### Responsabilidades da/o voluntária/o
 
 - participar de reuniões semanais com a equipe executora em dia e horário a definir.
 - participar das reuniões de orientação e avaliação com a PROEXT.
@@ -45,7 +52,7 @@ As vagas estão aberta para qualquer estudante de graduação da UFBA que atenda
 - apresentar os resultados dos planos de trabalhos na próxima edição do Congresso UFBA.
 
 
-## Critérios que serão usados para seleção
+### Critérios que serão usados para seleção
 
 Em ordem de importância:
 
@@ -53,7 +60,7 @@ Em ordem de importância:
 2. nível de conhecimento de Métodos Estatísticos (nota de 0 a 10).
 3. nível de conhecimento da linguagem `R` (nota de 0 a 10).
 
-## Inscrição
+### Inscrição
 
 Para se candidatar as vagas, você precisa preencher o seguinte formulário de inscrição: [formulário de inscrição](https://forms.gle/mg3aPbCxxC29bzmY6){target="_blank"}.
 
@@ -61,7 +68,7 @@ O período de inscrição é de 17/07/2023 a 20/07/2023.
 
 Eventuais dúvidas podem ser encaminhadas a [gilberto.sassi`@`ufba.br](mailto:gilberto.sassi@ufba.br).
 
-## Resultados
+### Resultados
 
 A/o primeiro colocado ficará com a bolsa PIBIEX, e a/os segunda/a e terceira/o colocada/o serão voluntárias/os vinculados ao PAEX, conforme descrito acima.
 
@@ -98,5 +105,7 @@ gt(dados) |>
 ```
 
 </div>
+
+::: 
 
 ---

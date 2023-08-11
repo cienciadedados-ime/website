@@ -18,7 +18,7 @@ website:
           - href: paginas/editais/editais-abertos.qmd
             text: "Editais abertos"
           - href: paginas/editais/editais-2023.qmd
-            text: "Editais 2023"
+            text: "Editais encerrados"
       - text: "Cursos"
         menu:
           - href: paginas/cursos/cd-docentes/cd-docentes.qmd
