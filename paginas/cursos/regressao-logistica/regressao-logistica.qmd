@@ -2,6 +2,8 @@
 title: "`R` para Ciência de Dados: Regressão Logística"
 ---
 
+<div style="text-align:justify">
+
 ## Slides
 
 Em breve.
@@ -24,5 +26,6 @@ Para instalar o `R` em seu computador, basta seguir as instruções em [cran.r-p
 
 Depois de ter instalado o `R`, siga as instruções de instalação em [posit.co/downloads](https://posit.co/downloads/).
 
+</div>
 
 ---

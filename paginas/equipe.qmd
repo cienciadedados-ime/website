@@ -1,3 +1,5 @@
+<div style="text-align:justify">
+
 # Equipe técnica
 
 ## Coordenadores
@@ -30,5 +32,7 @@ knitr::include_graphics("../assets/gilberto.jpeg")
 ## Membros
 
 Em breve.
+
+</div>
 
 ---
