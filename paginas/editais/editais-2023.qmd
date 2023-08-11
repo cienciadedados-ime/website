@@ -1,3 +1,5 @@
+<div style="text-align:justify">
+
 # Edital público em Extensão Universitária
 
 Estão abertas inscrições para seleção de **01 vaga para bolsista e 02 vagas para voluntário** para os Semestres Letivos 2023.2  e 2024.1 no Projeto de Extensão **`R` para Ciência de Dados**, sob número de cadastro 19588 na plataforma SIATEX. 
@@ -94,5 +96,7 @@ gt(dados) |>
         nota = md("**Nota final**")
     )   
 ```
+
+</div>
 
 ---

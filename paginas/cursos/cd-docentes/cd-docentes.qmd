@@ -2,6 +2,8 @@
 title: "Ciência de Dados para Docentes usando `R`"
 ---
 
+<div style="text-align:justify">
+
 ## Slides
 
 [aula](aula.pdf){target="_blank"}
@@ -27,5 +29,7 @@ Para instalar o `R` em seu computador, basta seguir as instruções em [cran.r-p
 ## Para instalar o `RStudio`
 
 Depois de ter instalado o `R`, siga as instruções de instalação em [posit.co/downloads](https://posit.co/downloads/).
+
+</div>
 
 ---
