@@ -1,0 +1,30 @@
+---
+title: "Contatos"
+---
+
+
+![](../assets/gmail.png){width='3%'}
+[cienciadedados.ime@gmail.com](mailto:cienciadedados.ime@gmail.com){target='_blank'}
+
+
+
+
+![](../assets/instagram.png){width='3%'}
+[@cienciadedados.ime](https://www.instagram.com/cienciadedados.ime/){target='_blank'}
+
+
+<!--  {#whatsapp} -->
+
+<!-- ![](../assets/whatsapp.png){width='3%'} -->
+<!-- whatsapp -->
+
+<!--  -->
+
+
+### Endereço
+
+Instituto de Matemática e Estatística - UFBA<br>
+Av. Milton Santos, s/n, Campus Universitário de Ondina CEP: 40.170-110
+
+
+---

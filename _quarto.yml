@@ -14,7 +14,7 @@ website:
       - href: paginas/inscricoes.qmd
         text: Inscrições
       - text: "Editais"
-        menu: 
+        menu:
           - href: paginas/editais/editais-abertos.qmd
             text: "Editais abertos"
           - href: paginas/editais/editais-2023.qmd
@@ -27,10 +27,15 @@ website:
             text: "`R` para Ciência de Dados: Regressão Logística"
           - href: paginas/cursos/programacao/programacao.qmd
             text: "`R` para Ciência de Dados: programação em `R`"
+          - href: paginas/cursos/quarto/quarto.qmd
+            text: "`R` para Ciência de Dados: quarto"
+
       - href: paginas/eventos.qmd
         text: Eventos
       - href: paginas/cade.qmd
         text: CADE
+      - href: paginas/contato.qmd
+        text: 'Contato'
 
 
 format:

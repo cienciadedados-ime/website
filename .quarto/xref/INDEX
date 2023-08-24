@@ -31,5 +31,11 @@
   },
   "paginas/cursos/programacao/programacao.qmd": {
     "programacao.html": "65c04832"
+  },
+  "paginas/cursos/quarto/quarto.qmd": {
+    "quarto.html": "9a17598b"
+  },
+  "paginas/contato.qmd": {
+    "contato.html": "e8c7d359"
   }
 }
