@@ -3,17 +3,3 @@
 p {
     text-align: justify; /* Justifica o texto */
 }
-
-.container {
-    display: flex;           /* Habilita o flexbox */
-    flex-wrap: wrap;         /* Permite que os itens se movam para a próxima linha se não houver espaço suficiente */
-    align-items: center;     /* Alinha os itens verticalmente ao centro */
-    gap: 20px;               /* Espaçamento entre a imagem e o texto */
-}
-
-.responsive-image {
-    width: auto;             /* A largura da imagem se ajusta automaticamente */
-    max-width: 100%;         /* A imagem nunca será mais larga do que sua container */
-    height: auto;            /* A altura da imagem se ajusta automaticamente */
-}
-

@@ -26,9 +26,9 @@ website:
           - href: paginas/cursos/regressao-logistica/regressao-logistica.qmd
             text: "`R` para Ciência de Dados: Regressão Logística"
           - href: paginas/cursos/programacao/programacao.qmd
-            text: "`R` para Ciência de Dados: programação em `R`"
+            text: "`R` para Ciência de Dados: Programação em `R`"
           - href: paginas/cursos/quarto/quarto.qmd
-            text: "`R` para Ciência de Dados: quarto"
+            text: "`R` para Ciência de Dados: Quarto"
 
       - href: paginas/eventos.qmd
         text: Eventos

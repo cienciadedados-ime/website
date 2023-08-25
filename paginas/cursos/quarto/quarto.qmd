@@ -1,1 +1,31 @@
-em breve
+---
+title: "`R` para Ciência de Dados: Quarto"
+---
+
+<div style="text-align:justify">
+
+## Slides
+
+Em breve.
+
+## Conjunto de Dados
+
+Em breve.
+
+## Instalação do `R` e do `RStudio`
+
+Neste curso, a IDE vamos utilizar é o `RStudio`. Outras opções populares em ciência de dados são o `VScode` da Microsoft e `JupyterLab,` caso você tenha familiaridade ou já trabalhe com este editores sinta a vontade para usá-los.
+
+Caso você não queria ou não possa realizar instalações em seu computador, recomendamos que você use as plataformas *Google Colaboratory* [colab.to/r](https://colab.to/r) e/ou *RStudio Cloud* [posit.cloud](https://posit.cloud/). Recomendamos o uso da plataforma *RStudio Cloud* pelo mesmo estilo e aspecto visual do aplicativo `RStudio`.
+
+## Para instalar o `R`
+
+Para instalar o `R` em seu computador, basta seguir as instruções em [cran.r-project.org](https://cran.r-project.org/). É necessário que você instale a versão 4.1 ou superior do `R`.
+
+## Para instalar o `RStudio`
+
+Depois de ter instalado o `R`, siga as instruções de instalação em [posit.co/downloads](https://posit.co/downloads/).
+
+</div>
+
+---

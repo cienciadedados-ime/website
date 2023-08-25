@@ -6,11 +6,11 @@ title: "`R` para Ciência de Dados: Regressão Logística"
 
 ## Slides
 
-Em breve.
+[Aula](aula.pdf){target='_blank'}
 
 ## Conjunto de Dados
 
-Em breve.
+[dados_cdrl](dados_cdrl.xlsx){target='_blank'}
 
 ## Instalação do `R` e do `RStudio`
 

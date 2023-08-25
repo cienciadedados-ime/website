@@ -9,7 +9,7 @@
   {
     "objectID": "paginas/equipe.html",
     "href": "paginas/equipe.html",
-    "title": "Ciência de Dados",
+    "title": "Equipe técnica",
     "section": "",
     "text": "Carolina Costa Mota Paraíba fez doutorado sanduíche na Universidade de Edimburgo (Escócia) e pós-doutorado na Universidade Federal do Espírito Santo. Já trabalhou com Estatística Aplicada no Lanagro/SP e no Instituto Jones dos Santos Neves (Espírito Santo). Atua principalmente nos seguintes temas: análise de regressão, inferência Bayesiana, diagnóstico de modelos, estatística computacional e estatística aplicada. Instagram: @ccmparaiba GitHub: github.com//ccmparaiba e-mail: carolina.paraiba@ufba.br\n\n\n\n\n\nGilberto Pereira Sassi é professor do Departamento de Estatística do Instituto de Matemática e Estatística da Universidade Federal da Bahia. Bacharel em Matemática com mestrado pelo Programa de Pósgraduação em Ciência da Computação e Matemática Computacional do Instituto de Ciências Matemáticas e de Computação da Universidade de São Paulo e tem doutorado pelo Programa de Pós-graduação em Estatística do Instituto de Matemática e Estatística da Universidade de São Paulo. Já trabalhou com ciência de dados em empresas como Bradesco, Itaú e FIPE. Tem interesse em métodos estatísticos, análise de dados funcionais e teoria de resposta ao item. Instagram: @gpsassi GitHub: github.com/gilberto-sassi e-mail: gilberto.sassi@ufba.br Página pessoal: gilbertosassi.netlify.app\n\n\n\n\n\n\n\n\nGabriella Santos Rocha tem 20 anos, é estudante do 3° semestre do Bacharelado Interdisciplinar em saúde pela UFBA. Nasceu e cresceu no interior da Bahia em uma cidade chamada Maracás,e Gosta muito de conhecer e aprender coisas novas.\n\n\n\n\n\nMarcos Antonio Arnaldo é um estudante de Engenharia Mecânica na UFBA. Paralelamente à sua jornada acadêmica, ele se dedica ao estudo da ciência de dados, unindo sua paixão por conhecimento e inovação tecnológica. GitHub: github.com/marcossk7\n\n\n\n\n\nThiago Rodolfo é aluno do curso Licenciatura em Computação na UFBA. Apaixonado por tecnologia, buscado conciliar seus estudos em ciências de dados aos objetivos profissionais e acadêmicos.\n© 2023 R para Ciência de Dados 🖤 by Carolina Paraíba e Gilberto Sassi"
   },
@@ -88,7 +88,7 @@
     "href": "paginas/eventos.html",
     "title": "Ciência de Dados",
     "section": "",
-    "text": "Em breve.\n\n\n\n\n© 2023 R para Ciência de Dados 🖤 by Carolina Paraíba e Gilberto Sassi"
+    "text": "Em breve…\n\n\n\n\n© 2023 R para Ciência de Dados 🖤 by Carolina Paraíba e Gilberto Sassi"
   },
   {
     "objectID": "paginas/cursos/cd-docentes/cd-docentes.html",
@@ -151,21 +151,21 @@
     "href": "paginas/cursos/regressao-logistica/regressao-logistica.html",
     "title": "R para Ciência de Dados: Regressão Logística",
     "section": "",
-    "text": "Em breve.\n\n\n\nEm breve.\n\n\n\nNeste curso, a IDE vamos utilizar é o RStudio. Outras opções populares em ciência de dados são o VScode da Microsoft e JupyterLab, caso você tenha familiaridade ou já trabalhe com este editores sinta a vontade para usá-los.\nCaso você não queria ou não possa realizar instalações em seu computador, recomendamos que você use as plataformas Google Colaboratory colab.to/r e/ou RStudio Cloud posit.cloud. Recomendamos o uso da plataforma RStudio Cloud pelo mesmo estilo e aspecto visual do aplicativo RStudio.\n\n\n\nPara instalar o R em seu computador, basta seguir as instruções em cran.r-project.org. É necessário que você instale a versão 4.1 ou superior do R.\n\n\n\nDepois de ter instalado o R, siga as instruções de instalação em posit.co/downloads.\n© 2023 R para Ciência de Dados 🖤 by Carolina Paraíba e Gilberto Sassi"
+    "text": "Aula\n\n\n\ndados_cdrl\n\n\n\nNeste curso, a IDE vamos utilizar é o RStudio. Outras opções populares em ciência de dados são o VScode da Microsoft e JupyterLab, caso você tenha familiaridade ou já trabalhe com este editores sinta a vontade para usá-los.\nCaso você não queria ou não possa realizar instalações em seu computador, recomendamos que você use as plataformas Google Colaboratory colab.to/r e/ou RStudio Cloud posit.cloud. Recomendamos o uso da plataforma RStudio Cloud pelo mesmo estilo e aspecto visual do aplicativo RStudio.\n\n\n\nPara instalar o R em seu computador, basta seguir as instruções em cran.r-project.org. É necessário que você instale a versão 4.1 ou superior do R.\n\n\n\nDepois de ter instalado o R, siga as instruções de instalação em posit.co/downloads.\n© 2023 R para Ciência de Dados 🖤 by Carolina Paraíba e Gilberto Sassi"
   },
   {
     "objectID": "paginas/cursos/regressao-logistica/regressao-logistica.html#slides",
     "href": "paginas/cursos/regressao-logistica/regressao-logistica.html#slides",
     "title": "R para Ciência de Dados: Regressão Logística",
     "section": "",
-    "text": "Em breve."
+    "text": "Aula"
   },
   {
     "objectID": "paginas/cursos/regressao-logistica/regressao-logistica.html#conjunto-de-dados",
     "href": "paginas/cursos/regressao-logistica/regressao-logistica.html#conjunto-de-dados",
     "title": "R para Ciência de Dados: Regressão Logística",
     "section": "",
-    "text": "Em breve."
+    "text": "dados_cdrl"
   },
   {
     "objectID": "paginas/cursos/regressao-logistica/regressao-logistica.html#instalação-do-r-e-do-rstudio",
@@ -191,7 +191,7 @@
   {
     "objectID": "paginas/editais/editais-abertos.html",
     "href": "paginas/editais/editais-abertos.html",
-    "title": "Ciência de Dados",
+    "title": "Editais abertos",
     "section": "",
     "text": "Editais abertos\nEm breve.\n\n\n\n\n\n© 2023 R para Ciência de Dados 🖤 by Carolina Paraíba e Gilberto Sassi"
   },
@@ -254,15 +254,57 @@
   {
     "objectID": "paginas/cursos/quarto/quarto.html",
     "href": "paginas/cursos/quarto/quarto.html",
-    "title": "Ciência de Dados",
+    "title": "R para Ciência de Dados: Quarto",
     "section": "",
-    "text": "em breve\n\n\n\n© 2023 R para Ciência de Dados 🖤 by Carolina Paraíba e Gilberto Sassi"
+    "text": "Em breve.\n\n\n\nEm breve.\n\n\n\nNeste curso, a IDE vamos utilizar é o RStudio. Outras opções populares em ciência de dados são o VScode da Microsoft e JupyterLab, caso você tenha familiaridade ou já trabalhe com este editores sinta a vontade para usá-los.\nCaso você não queria ou não possa realizar instalações em seu computador, recomendamos que você use as plataformas Google Colaboratory colab.to/r e/ou RStudio Cloud posit.cloud. Recomendamos o uso da plataforma RStudio Cloud pelo mesmo estilo e aspecto visual do aplicativo RStudio.\n\n\n\nPara instalar o R em seu computador, basta seguir as instruções em cran.r-project.org. É necessário que você instale a versão 4.1 ou superior do R.\n\n\n\nDepois de ter instalado o R, siga as instruções de instalação em posit.co/downloads.\n© 2023 R para Ciência de Dados 🖤 by Carolina Paraíba e Gilberto Sassi"
   },
   {
     "objectID": "paginas/contato.html",
     "href": "paginas/contato.html",
     "title": "Contatos",
     "section": "",
-    "text": "cienciadedados.ime@gmail.com\n @cienciadedados.ime\n\n\n\n\n\nEndereço\nInstituto de Matemática e Estatística - UFBA Av. Milton Santos, s/n, Campus Universitário de Ondina CEP: 40.170-110\n\n\n\n\n\n© 2023 R para Ciência de Dados 🖤 by Carolina Paraíba e Gilberto Sassi"
+    "text": "cienciadedados.ime@gmail.com\n @cienciadedados.ime\n\n\n\n\n\n\nEndereço\nInstituto de Matemática e Estatística - UFBA Av. Milton Santos, Campus Universitário de Ondina CEP: 40.170-110\n\n\n\n\n\n\n© 2023 R para Ciência de Dados 🖤 by Carolina Paraíba e Gilberto Sassi"
+  },
+  {
+    "objectID": "paginas/cursos/quarto/quarto.html#r-para-ciência-de-dados-quarto",
+    "href": "paginas/cursos/quarto/quarto.html#r-para-ciência-de-dados-quarto",
+    "title": "R para Ciência de Dados: Quarto",
+    "section": "",
+    "text": "Em breve…"
+  },
+  {
+    "objectID": "paginas/cursos/quarto/quarto.html#slides",
+    "href": "paginas/cursos/quarto/quarto.html#slides",
+    "title": "R para Ciência de Dados: Quarto",
+    "section": "",
+    "text": "Em breve."
+  },
+  {
+    "objectID": "paginas/cursos/quarto/quarto.html#conjunto-de-dados",
+    "href": "paginas/cursos/quarto/quarto.html#conjunto-de-dados",
+    "title": "R para Ciência de Dados: Quarto",
+    "section": "",
+    "text": "Em breve."
+  },
+  {
+    "objectID": "paginas/cursos/quarto/quarto.html#instalação-do-r-e-do-rstudio",
+    "href": "paginas/cursos/quarto/quarto.html#instalação-do-r-e-do-rstudio",
+    "title": "R para Ciência de Dados: Quarto",
+    "section": "",
+    "text": "Neste curso, a IDE vamos utilizar é o RStudio. Outras opções populares em ciência de dados são o VScode da Microsoft e JupyterLab, caso você tenha familiaridade ou já trabalhe com este editores sinta a vontade para usá-los.\nCaso você não queria ou não possa realizar instalações em seu computador, recomendamos que você use as plataformas Google Colaboratory colab.to/r e/ou RStudio Cloud posit.cloud. Recomendamos o uso da plataforma RStudio Cloud pelo mesmo estilo e aspecto visual do aplicativo RStudio."
+  },
+  {
+    "objectID": "paginas/cursos/quarto/quarto.html#para-instalar-o-r",
+    "href": "paginas/cursos/quarto/quarto.html#para-instalar-o-r",
+    "title": "R para Ciência de Dados: Quarto",
+    "section": "",
+    "text": "Para instalar o R em seu computador, basta seguir as instruções em cran.r-project.org. É necessário que você instale a versão 4.1 ou superior do R."
+  },
+  {
+    "objectID": "paginas/cursos/quarto/quarto.html#para-instalar-o-rstudio",
+    "href": "paginas/cursos/quarto/quarto.html#para-instalar-o-rstudio",
+    "title": "R para Ciência de Dados: Quarto",
+    "section": "",
+    "text": "Depois de ter instalado o R, siga as instruções de instalação em posit.co/downloads."
   }
 ]
