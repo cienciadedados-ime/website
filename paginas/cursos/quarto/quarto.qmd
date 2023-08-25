@@ -1,16 +1,16 @@
 ---
-title: "`R` para Ciência de Dados: Regressão Logística"
+title: "`R` para Ciência de Dados: Quarto"
 ---
 
 <div style="text-align:justify">
 
 ## Slides
 
-[Aula](aula.pdf){target='_blank'}
+Em breve.
 
 ## Conjunto de Dados
 
-[dados_cdrl](dados_cdrl.xlsx){target='_blank'}
+Em breve.
 
 ## Instalação do `R` e do `RStudio`
 
