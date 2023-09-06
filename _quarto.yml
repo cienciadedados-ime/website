@@ -27,7 +27,7 @@ website:
             text: "`R` para Ciência de Dados: Regressão Logística"
           - href: paginas/cursos/programacao/programacao.qmd
             text: "`R` para Ciência de Dados: Programação em `R`"
-          - href: https://rmarkdown.simple.ink
+          - href: paginas/cursos/quarto/quarto.qmd
             text: "`R` para Ciência de Dados: Quarto"
 
       - href: paginas/eventos.qmd

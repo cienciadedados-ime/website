@@ -39,7 +39,7 @@
     "href": "paginas/cursos/quarto/quarto.html",
     "title": "R para Ciência de Dados: Quarto",
     "section": "",
-    "text": "Em breve.\n\n\n\nEm breve.\n\n\n\nNeste curso, a IDE vamos utilizar é o RStudio. Outras opções populares em ciência de dados são o VScode da Microsoft e JupyterLab, caso você tenha familiaridade ou já trabalhe com este editores sinta a vontade para usá-los.\nCaso você não queria ou não possa realizar instalações em seu computador, recomendamos que você use as plataformas Google Colaboratory colab.to/r e/ou RStudio Cloud posit.cloud. Recomendamos o uso da plataforma RStudio Cloud pelo mesmo estilo e aspecto visual do aplicativo RStudio.\n\n\n\nPara instalar o R em seu computador, basta seguir as instruções em cran.r-project.org. É necessário que você instale a versão 4.1 ou superior do R.\n\n\n\nDepois de ter instalado o R, siga as instruções de instalação em posit.co/downloads.\n© 2023 R para Ciência de Dados 🖤 by Carolina Paraíba e Gilberto Sassi"
+    "text": "rmarkdown.simple.ink\n\n\n\nEm breve.\n\n\n\nEm breve.\n\n\n\nNeste curso, a IDE vamos utilizar é o RStudio. Outras opções populares em ciência de dados são o VScode da Microsoft e JupyterLab, caso você tenha familiaridade ou já trabalhe com este editores sinta a vontade para usá-los.\nCaso você não queria ou não possa realizar instalações em seu computador, recomendamos que você use as plataformas Google Colaboratory colab.to/r e/ou RStudio Cloud posit.cloud. Recomendamos o uso da plataforma RStudio Cloud pelo mesmo estilo e aspecto visual do aplicativo RStudio.\n\n\n\nPara instalar o R em seu computador, basta seguir as instruções em cran.r-project.org. É necessário que você instale a versão 4.1 ou superior do R.\n\n\n\nDepois de ter instalado o R, siga as instruções de instalação em posit.co/downloads.\n© 2023 R para Ciência de Dados 🖤 by Carolina Paraíba e Gilberto Sassi"
   },
   {
     "objectID": "paginas/cursos/regressao-logistica/regressao-logistica.html",
@@ -89,5 +89,82 @@
     "title": "Ciência de Dados",
     "section": "",
     "text": "Curso: R para Ciência de Dados: Introdução à programação em R\n\nProfessores: Profa. Dra. Carolina Costa Mota Paraíba e Prof. Dr. Gilberto Pereira Sassi, Departamento de Estatística, IME, UFBA.\nNúmero de vagas: 20\nResumo: O curso se propõe a apresentar a linguagem R incluindo vetores, matrizes, funções, operadores lógicos, controle de fluxo usando if, for, ifelse, while, as funções apply e map, funções anônimas, operador pipe, e rotinas de otimização. O curso terá 8 horas com 2 encontros presenciais nos dias 15 e 22 de setembro das 14h00 às 18h00 nos laboratórios de ensino de informática do IME-UFBA, será gratuito com certificado emitido pela UFBA e terá 20 vagas.\nInscrições (o curso é gratuito, mas é necessário fazer inscrição pelo Google Forms): Formulário de inscrição\n\nPrazo de Inscrições: 10/08/2023 a 27/08/2023.\n\n\n\n\n© 2023 R para Ciência de Dados 🖤 by Carolina Paraíba e Gilberto Sassi"
+  },
+  {
+    "objectID": "paginas/cursos/programacao/programacao.html#slides",
+    "href": "paginas/cursos/programacao/programacao.html#slides",
+    "title": "R para Ciência de Dados: Introdução à programação em R",
+    "section": "",
+    "text": "Em breve."
+  },
+  {
+    "objectID": "paginas/cursos/programacao/programacao.html#conjunto-de-dados",
+    "href": "paginas/cursos/programacao/programacao.html#conjunto-de-dados",
+    "title": "R para Ciência de Dados: Introdução à programação em R",
+    "section": "",
+    "text": "Em breve."
+  },
+  {
+    "objectID": "paginas/cursos/programacao/programacao.html#instalação-do-r-e-do-rstudio",
+    "href": "paginas/cursos/programacao/programacao.html#instalação-do-r-e-do-rstudio",
+    "title": "R para Ciência de Dados: Introdução à programação em R",
+    "section": "",
+    "text": "Neste curso, a IDE vamos utilizar é o RStudio. Outras opções populares em ciência de dados são o VScode da Microsoft e JupyterLab, caso você tenha familiaridade ou já trabalhe com este editores sinta a vontade para usá-los.\nCaso você não queria ou não possa realizar instalações em seu computador, recomendamos que você use as plataformas Google Colaboratory colab.to/r e/ou RStudio Cloud posit.cloud. Recomendamos o uso da plataforma RStudio Cloud pelo mesmo estilo e aspecto visual do aplicativo RStudio."
+  },
+  {
+    "objectID": "paginas/cursos/programacao/programacao.html#para-instalar-o-r",
+    "href": "paginas/cursos/programacao/programacao.html#para-instalar-o-r",
+    "title": "R para Ciência de Dados: Introdução à programação em R",
+    "section": "",
+    "text": "Para instalar o R em seu computador, basta seguir as instruções em cran.r-project.org. É necessário que você instale a versão 4.1 ou superior do R."
+  },
+  {
+    "objectID": "paginas/cursos/programacao/programacao.html#para-instalar-o-rstudio",
+    "href": "paginas/cursos/programacao/programacao.html#para-instalar-o-rstudio",
+    "title": "R para Ciência de Dados: Introdução à programação em R",
+    "section": "",
+    "text": "Depois de ter instalado o R, siga as instruções de instalação em posit.co/downloads."
+  },
+  {
+    "objectID": "paginas/cursos/quarto/quarto.html#slides",
+    "href": "paginas/cursos/quarto/quarto.html#slides",
+    "title": "R para Ciência de Dados: Quarto",
+    "section": "",
+    "text": "Em breve."
+  },
+  {
+    "objectID": "paginas/cursos/quarto/quarto.html#conjunto-de-dados",
+    "href": "paginas/cursos/quarto/quarto.html#conjunto-de-dados",
+    "title": "R para Ciência de Dados: Quarto",
+    "section": "",
+    "text": "Em breve."
+  },
+  {
+    "objectID": "paginas/cursos/quarto/quarto.html#instalação-do-r-e-do-rstudio",
+    "href": "paginas/cursos/quarto/quarto.html#instalação-do-r-e-do-rstudio",
+    "title": "R para Ciência de Dados: Quarto",
+    "section": "",
+    "text": "Neste curso, a IDE vamos utilizar é o RStudio. Outras opções populares em ciência de dados são o VScode da Microsoft e JupyterLab, caso você tenha familiaridade ou já trabalhe com este editores sinta a vontade para usá-los.\nCaso você não queria ou não possa realizar instalações em seu computador, recomendamos que você use as plataformas Google Colaboratory colab.to/r e/ou RStudio Cloud posit.cloud. Recomendamos o uso da plataforma RStudio Cloud pelo mesmo estilo e aspecto visual do aplicativo RStudio."
+  },
+  {
+    "objectID": "paginas/cursos/quarto/quarto.html#para-instalar-o-r",
+    "href": "paginas/cursos/quarto/quarto.html#para-instalar-o-r",
+    "title": "R para Ciência de Dados: Quarto",
+    "section": "",
+    "text": "Para instalar o R em seu computador, basta seguir as instruções em cran.r-project.org. É necessário que você instale a versão 4.1 ou superior do R."
+  },
+  {
+    "objectID": "paginas/cursos/quarto/quarto.html#para-instalar-o-rstudio",
+    "href": "paginas/cursos/quarto/quarto.html#para-instalar-o-rstudio",
+    "title": "R para Ciência de Dados: Quarto",
+    "section": "",
+    "text": "Depois de ter instalado o R, siga as instruções de instalação em posit.co/downloads."
+  },
+  {
+    "objectID": "paginas/cursos/quarto/quarto.html#página-do-curso-do-primeiro-semestre-de-2023",
+    "href": "paginas/cursos/quarto/quarto.html#página-do-curso-do-primeiro-semestre-de-2023",
+    "title": "R para Ciência de Dados: Quarto",
+    "section": "",
+    "text": "rmarkdown.simple.ink"
   }
 ]

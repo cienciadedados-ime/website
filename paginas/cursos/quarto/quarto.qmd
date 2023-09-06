@@ -4,6 +4,10 @@ title: "`R` para Ciência de Dados: Quarto"
 
 <div style="text-align:justify">
 
+## Página do curso do primeiro semestre de 2023
+
+[rmarkdown.simple.ink](https://rmarkdown.simple.ink)
+
 ## Slides
 
 Em breve.
