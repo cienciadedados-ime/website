@@ -2,7 +2,7 @@
 title: ""
 ---
 
-**Curso:** `R` para Ciência de Dados: Introdução à programação em `R`
+**Curso:** `R` para Ciência de Dados: Exploração e Visualização de Dados
 
 <div style="text-align:justify">
 
@@ -10,13 +10,13 @@ title: ""
 
 **Número de vagas:** 20
 
-**Resumo:** O curso se propõe a apresentar a linguagem R incluindo vetores, matrizes, funções, operadores lógicos, controle de fluxo usando `if`, `for`, `ifelse`, `while`, as funções `apply` e `map`, funções anônimas, operador *pipe,* e rotinas de otimização. O curso terá 8 horas com 2 encontros presenciais nos dias 15 e 22 de setembro das 14h00 às 18h00 nos laboratórios de ensino de informática do IME-UFBA, será gratuito com certificado emitido pela UFBA e terá 20 vagas.
+**Resumo:**
+O curso se propõe a apresentar a linguagem `R` e os princípios de exploração e visualização de dados utilizando o framework tidyverse especialmente os pacotes `ggplot2` e `dplyr`. O curso terá 8 horas com 2 encontros presenciais com duração de quatro horas nos laboratórios de ensino de informática do IME-UFBA, será gratuito com certificado emitido pela UFBA e terá 15 vagas.
 
-
-**Inscrições** (o curso é gratuito, mas é necessário fazer inscrição pelo _Google Forms_): [Formulário de inscrição](https://forms.gle/yRjDjSCCt3PUfFEX6){target="_blank}
+**Inscrições** (o curso é gratuito, mas é necessário fazer inscrição pelo _Google Forms_): [Formulário de inscrição](https://forms.gle/af7jG5PkGsBBgYWB7){target="_blank}
 
 </div>
 
-**Prazo de Inscrições:** 10/08/2023 a 27/08/2023.
+**Prazo de Inscrições:** 11/09/2023 a 01/10/2023.
 
 ---

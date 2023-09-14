@@ -6,11 +6,11 @@ title: "`R` para Ciência de Dados: Introdução à programação em `R`"
 
 ## Slides
 
-Em breve.
+[Slides](programacao.pdf)
 
 ## Conjunto de Dados
 
-Em breve.
+[`arquivos.zip`](arquivos.zip)
 
 ## Instalação do `R` e do `RStudio`
 
