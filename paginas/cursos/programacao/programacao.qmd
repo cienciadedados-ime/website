@@ -12,6 +12,14 @@ title: "`R` para Ciência de Dados: Introdução à programação em `R`"
 
 [`arquivos.zip`](arquivos.zip)
 
+## Código de sala de aula
+
+**NÃO RECORTE NEM APAGUE NADA DESTE ARQUIVO**
+
+**APENAS COPIE O CÓDIGO**
+
+[`https://codeshare.io/r9m9g6`](https://codeshare.io/r9m9g6){target="_blank"}
+
 ## Instalação do `R` e do `RStudio`
 
 Neste curso, a IDE vamos utilizar é o `RStudio`. Outras opções populares em ciência de dados são o `VScode` da Microsoft e `JupyterLab,` caso você tenha familiaridade ou já trabalhe com este editores sinta a vontade para usá-los.

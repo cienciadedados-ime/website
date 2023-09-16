@@ -60,7 +60,7 @@
     "href": "paginas/cursos/programacao/programacao.html",
     "title": "R para Ciência de Dados: Introdução à programação em R",
     "section": "",
-    "text": "Slides\n\n\n\narquivos.zip\n\n\n\nNeste curso, a IDE vamos utilizar é o RStudio. Outras opções populares em ciência de dados são o VScode da Microsoft e JupyterLab, caso você tenha familiaridade ou já trabalhe com este editores sinta a vontade para usá-los.\nCaso você não queria ou não possa realizar instalações em seu computador, recomendamos que você use as plataformas Google Colaboratory colab.to/r e/ou RStudio Cloud posit.cloud. Recomendamos o uso da plataforma RStudio Cloud pelo mesmo estilo e aspecto visual do aplicativo RStudio.\n\n\n\nPara instalar o R em seu computador, basta seguir as instruções em cran.r-project.org. É necessário que você instale a versão 4.1 ou superior do R.\n\n\n\nDepois de ter instalado o R, siga as instruções de instalação em posit.co/downloads.\n© 2023 R para Ciência de Dados 🖤 by Carolina Paraíba e Gilberto Sassi"
+    "text": "Slides\n\n\n\narquivos.zip\n\n\n\nNÃO RECORTE NEM APAGUE NADA DESTE ARQUIVO\nAPENAS COPIE O CÓDIGO\nhttps://codeshare.io/r9m9g6\n\n\n\nNeste curso, a IDE vamos utilizar é o RStudio. Outras opções populares em ciência de dados são o VScode da Microsoft e JupyterLab, caso você tenha familiaridade ou já trabalhe com este editores sinta a vontade para usá-los.\nCaso você não queria ou não possa realizar instalações em seu computador, recomendamos que você use as plataformas Google Colaboratory colab.to/r e/ou RStudio Cloud posit.cloud. Recomendamos o uso da plataforma RStudio Cloud pelo mesmo estilo e aspecto visual do aplicativo RStudio.\n\n\n\nPara instalar o R em seu computador, basta seguir as instruções em cran.r-project.org. É necessário que você instale a versão 4.1 ou superior do R.\n\n\n\nDepois de ter instalado o R, siga as instruções de instalação em posit.co/downloads.\n© 2023 R para Ciência de Dados 🖤 by Carolina Paraíba e Gilberto Sassi"
   },
   {
     "objectID": "paginas/cursos/programacao/programacao.html#slides",
@@ -250,5 +250,12 @@
     "title": "Ciência de Dados",
     "section": "",
     "text": "© 2023 R para Ciência de Dados 🖤 by Carolina Paraíba e Gilberto Sassi"
+  },
+  {
+    "objectID": "paginas/cursos/programacao/programacao.html#código-de-sala-de-aula",
+    "href": "paginas/cursos/programacao/programacao.html#código-de-sala-de-aula",
+    "title": "R para Ciência de Dados: Introdução à programação em R",
+    "section": "",
+    "text": "NÃO RECORTE NEM APAGUE NADA DESTE ARQUIVO\nAPENAS COPIE O CÓDIGO\nhttps://codeshare.io/r9m9g6"
   }
 ]
