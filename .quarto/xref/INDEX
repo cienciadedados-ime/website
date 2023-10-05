@@ -37,5 +37,11 @@
   },
   "paginas/contato.qmd": {
     "contato.html": "e8c7d359"
+  },
+  "paginas/cursos/outubro-2023/exploracao-visualizacao.qmd": {
+    "exploracao-visualizacao.html": "d035d5aa"
+  },
+  "paginas/cursos/exploracao-visualizacao/exploracao-visualizacao.qmd": {
+    "exploracao-visualizacao.html": "c26c5891"
   }
 }

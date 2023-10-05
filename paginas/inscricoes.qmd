@@ -2,21 +2,12 @@
 title: ""
 ---
 
-**Curso:** `R` para Ciência de Dados: Exploração e Visualização de Dados
-
 <div style="text-align:justify">
 
-**Professores:** Profa. Dra. Carolina Costa Mota Paraíba e Prof. Dr. Gilberto Pereira Sassi, Departamento de Estatística, IME, UFBA.
+**Inscrições para o curso _R para Ciência de Dados: Exploração e Visualização de Dados_ estão encerradas.**
 
-**Número de vagas:** 20
-
-**Resumo:**
-O curso se propõe a apresentar a linguagem `R` e os princípios de exploração e visualização de dados utilizando o framework tidyverse especialmente os pacotes `ggplot2` e `dplyr`. O curso terá 8 horas com 2 encontros presenciais com duração de quatro horas nos laboratórios de ensino de informática do IME-UFBA, será gratuito com certificado emitido pela UFBA e terá 15 vagas.
-
-**Inscrições** (o curso é gratuito, mas é necessário fazer inscrição pelo _Google Forms_): [Formulário de inscrição](https://forms.gle/af7jG5PkGsBBgYWB7){target="_blank}
+Candidatas/os selecionados por sorteio para participar do curso: [selecionadas(os)](cursos/outubro-2023/contemplados.xlsx).
 
 </div>
-
-**Prazo de Inscrições:** 11/09/2023 a 01/10/2023.
 
 ---
