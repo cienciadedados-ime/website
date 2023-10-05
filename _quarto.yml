@@ -24,11 +24,13 @@ website:
           - href: paginas/cursos/cd-docentes/cd-docentes.qmd
             text: "Ciência de Dados para Docentes usando `R`"
           - href: paginas/cursos/regressao-logistica/regressao-logistica.qmd
-            text: "`R` para Ciência de Dados: Regressão Logística"
+            text: "Regressão Logística"
           - href: paginas/cursos/programacao/programacao.qmd
-            text: "`R` para Ciência de Dados: Programação em `R`"
+            text: "Programação em `R`"
           - href: paginas/cursos/quarto/quarto.qmd
-            text: "`R` para Ciência de Dados: Quarto"
+            text: "Quarto"
+          - href: paginas/cursos/exploracao-visualizacao/exploracao-visualizacao.qmd
+            text: "Exploração e Visualização"
 
       - href: paginas/eventos.qmd
         text: Eventos
