@@ -1,0 +1,12 @@
+---
+title: ""
+---
+
+
+|Catálogo de cursos|
+|:----|
+|[Exploração e Visualização de Dados](catalogo/exploracao-visualizacao.html)<br>|
+|[Intervalo de Confiança e Testes de Hipóteses](catalogo/intervalo-confianca-teste-hipoteses.html)|
+
+
+---

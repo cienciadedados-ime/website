@@ -19,7 +19,9 @@ website:
             text: "Editais abertos"
           - href: paginas/editais/editais-2023.qmd
             text: "Editais encerrados"
-      - text: "Cursos"
+      - href: paginas/catalogo.qmd
+        text: "Cursos oferecidos"
+      - text: "Material"
         menu:
           - href: paginas/cursos/cd-docentes/cd-docentes.qmd
             text: "Ciência de Dados para Docentes usando `R`"
