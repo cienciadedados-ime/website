@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Ciência de Dados -</title>
+<title>Ciência de Dados - Intervalos de Confiança e Testes de hipóteses</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,24 +23,24 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<script src="../site_libs/quarto-html/quarto.js"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -64,7 +64,7 @@ ul.task-list li input[type="checkbox"] {
 <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 
 
-<link rel="stylesheet" href="../assets/styles.css">
+<link rel="stylesheet" href="../../assets/styles.css">
 </head>
 
 <body class="nav-fixed">
@@ -74,10 +74,10 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
-    <a href="../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../assets/r.png" alt="" class="navbar-logo">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../assets/r.png" alt="" class="navbar-logo">
     </a>
-    <a class="navbar-brand" href="../index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Ciência de Dados</span>
     </a>
   </div>
@@ -88,15 +88,15 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.html" rel="" target="">
+    <a class="nav-link" href="../../index.html" rel="" target="">
  <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../paginas/equipe.html" rel="" target="">
+    <a class="nav-link" href="../../paginas/equipe.html" rel="" target="">
  <span class="menu-text">Equipe</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../paginas/inscricoes.html" rel="" target="">
+    <a class="nav-link" href="../../paginas/inscricoes.html" rel="" target="">
  <span class="menu-text">Inscrições</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -105,17 +105,17 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-editais">    
         <li>
-    <a class="dropdown-item" href="../paginas/editais/editais-abertos.html" rel="" target="">
+    <a class="dropdown-item" href="../../paginas/editais/editais-abertos.html" rel="" target="">
  <span class="dropdown-text">Editais abertos</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../paginas/editais/editais-2023.html" rel="" target="">
+    <a class="dropdown-item" href="../../paginas/editais/editais-2023.html" rel="" target="">
  <span class="dropdown-text">Editais encerrados</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="../paginas/catalogo.html" rel="" target="">
+    <a class="nav-link" href="../../paginas/catalogo.html" rel="" target="">
  <span class="menu-text">Cursos oferecidos</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -124,37 +124,37 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-material">    
         <li>
-    <a class="dropdown-item" href="../paginas/cursos/cd-docentes/cd-docentes.html" rel="" target="">
+    <a class="dropdown-item" href="../../paginas/cursos/cd-docentes/cd-docentes.html" rel="" target="">
  <span class="dropdown-text">Ciência de Dados para Docentes usando <code>R</code></span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../paginas/cursos/regressao-logistica/regressao-logistica.html" rel="" target="">
+    <a class="dropdown-item" href="../../paginas/cursos/regressao-logistica/regressao-logistica.html" rel="" target="">
  <span class="dropdown-text">Regressão Logística</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../paginas/cursos/programacao/programacao.html" rel="" target="">
+    <a class="dropdown-item" href="../../paginas/cursos/programacao/programacao.html" rel="" target="">
  <span class="dropdown-text">Programação em <code>R</code></span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../paginas/cursos/quarto/quarto.html" rel="" target="">
+    <a class="dropdown-item" href="../../paginas/cursos/quarto/quarto.html" rel="" target="">
  <span class="dropdown-text">Quarto</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../paginas/cursos/exploracao-visualizacao/exploracao-visualizacao.html" rel="" target="">
+    <a class="dropdown-item" href="../../paginas/cursos/exploracao-visualizacao/exploracao-visualizacao.html" rel="" target="">
  <span class="dropdown-text">Exploração e Visualização</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="../paginas/eventos.html" rel="" target="">
+    <a class="nav-link" href="../../paginas/eventos.html" rel="" target="">
  <span class="menu-text">Eventos</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="../paginas/cade.html" rel="" target="" aria-current="page">
+    <a class="nav-link" href="../../paginas/cade.html" rel="" target="">
  <span class="menu-text">CADE</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../paginas/contato.html" rel="" target="">
+    <a class="nav-link" href="../../paginas/contato.html" rel="" target="">
  <span class="menu-text">Contato</span></a>
   </li>  
 </ul>
@@ -175,9 +175,24 @@ ul.task-list li input[type="checkbox"] {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Intervalos de Confiança e Testes de hipóteses</h1>
+</div>
 
 
-<p>Em breve…</p>
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<p>Em breve.</p>
 <hr>
 
 
