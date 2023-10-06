@@ -52,5 +52,20 @@
   },
   "paginas/catalogo/intervalo-confianca-teste-hipoteses.qmd": {
     "intervalo-confianca-teste-hipoteses.html": "0cf383bc"
+  },
+  "paginas/material/regressao-logistica/regressao-logistica.qmd": {
+    "regressao-logistica.html": "37f3109c"
+  },
+  "paginas/material/programacao/programacao.qmd": {
+    "programacao.html": "4dcbe532"
+  },
+  "paginas/material/exploracao-visualizacao/exploracao-visualizacao.qmd": {
+    "exploracao-visualizacao.html": "e1423d74"
+  },
+  "paginas/material/quarto/quarto.qmd": {
+    "quarto.html": "40dc2f08"
+  },
+  "paginas/material/cd-docentes/cd-docentes.qmd": {
+    "cd-docentes.html": "6346fc1d"
   }
 }
