@@ -6,7 +6,7 @@ title: ""
 
 **Inscrições para o curso _R para Ciência de Dados: Exploração e Visualização de Dados_ estão encerradas.**
 
-Candidatas/os selecionados por sorteio para participar do curso: [selecionadas(os)](cursos/outubro-2023/contemplados.xlsx).
+Candidatas/os selecionados por sorteio para participar do curso: [selecionadas(os)](material/exploracao-visualizacao/contemplados.xlsx).
 
 </div>
 
