@@ -67,5 +67,38 @@
   },
   "paginas/material/cd-docentes/cd-docentes.qmd": {
     "cd-docentes.html": "6346fc1d"
+  },
+  "paginas/catalogo/ciencia-de-dados-doc.qmd": {
+    "ciencia-de-dados-doc.html": "07f15580"
+  },
+  "paginas/catalogo/intervalo-c-teste-h.qmd": {
+    "intervalo-c-teste-h.html": "c964336d"
+  },
+  "paginas/catalogo/introducao-a-programcao.qmd": {
+    "introducao-a-programcao.html": "dacc64f8"
+  },
+  "paginas/catalogo/modelo-de-analise-de-variancia.qmd": {
+    "modelo-de-analise-de-variancia.html": "bc1b2ce8"
+  },
+  "paginas/catalogo/producao-de-texto.qmd": {
+    "producao-de-texto.html": "b910a8ca"
+  },
+  "paginas/catalogo/regressao-linear.qmd": {
+    "regressao-linear.html": "503e63fb"
+  },
+  "paginas/catalogo/regressao-logistica.qmd": {
+    "regressao-logistica.html": "a51389b2"
+  },
+  "paginas/catalogo/ciencia-de-dados-para-docentes.qmd": {
+    "ciencia-de-dados-para-docentes.html": "df2ad2b1"
+  },
+  "paginas/catalogo/producao-de-texto-usando-rmarkdown.qmd": {
+    "producao-de-texto-usando-rmarkdown.html": "6eb5b72d"
+  },
+  "paginas/catalogo/regressao-linear-simples-e-multipla.qmd": {
+    "regressao-linear-simples-e-multipla.html": "c96fca67"
+  },
+  "paginas/catalogo/introducao-a-programacao.qmd": {
+    "introducao-a-programacao.html": "80ca11b3"
   }
 }

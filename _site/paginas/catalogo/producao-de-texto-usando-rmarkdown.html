@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Ciência de Dados - R para Ciência de Dados: Quarto</title>
+<title>Ciência de Dados - Produção de Texto usando rmarkdown e quarto</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,24 +23,24 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../../../">
-<script src="../../../site_libs/quarto-html/quarto.js"></script>
-<script src="../../../site_libs/quarto-html/popper.min.js"></script>
-<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -63,7 +63,7 @@ ul.task-list li input[type="checkbox"] {
 <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 
 
-<link rel="stylesheet" href="../../../assets/styles.css">
+<link rel="stylesheet" href="../../assets/styles.css">
 </head>
 
 <body class="nav-fixed">
@@ -73,10 +73,10 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
-    <a href="../../../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../../../assets/r.png" alt="" class="navbar-logo">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../assets/r.png" alt="" class="navbar-logo">
     </a>
-    <a class="navbar-brand" href="../../../index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Ciência de Dados</span>
     </a>
   </div>
@@ -87,15 +87,15 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../../index.html" rel="" target="">
+    <a class="nav-link" href="../../index.html" rel="" target="">
  <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../../paginas/equipe.html" rel="" target="">
+    <a class="nav-link" href="../../paginas/equipe.html" rel="" target="">
  <span class="menu-text">Equipe</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../../paginas/inscricoes.html" rel="" target="">
+    <a class="nav-link" href="../../paginas/inscricoes.html" rel="" target="">
  <span class="menu-text">Inscrições</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -104,17 +104,17 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-editais">    
         <li>
-    <a class="dropdown-item" href="../../../paginas/editais/editais-abertos.html" rel="" target="">
+    <a class="dropdown-item" href="../../paginas/editais/editais-abertos.html" rel="" target="">
  <span class="dropdown-text">Editais abertos</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../../paginas/editais/editais-2023.html" rel="" target="">
+    <a class="dropdown-item" href="../../paginas/editais/editais-2023.html" rel="" target="">
  <span class="dropdown-text">Editais encerrados</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="../../../paginas/catalogo.html" rel="" target="">
+    <a class="nav-link" href="../../paginas/catalogo.html" rel="" target="">
  <span class="menu-text">Cursos oferecidos</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -123,37 +123,37 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-material">    
         <li>
-    <a class="dropdown-item" href="../../../paginas/material/cd-docentes/cd-docentes.html" rel="" target="">
+    <a class="dropdown-item" href="../../paginas/material/cd-docentes/cd-docentes.html" rel="" target="">
  <span class="dropdown-text">Ciência de Dados para Docentes usando <code>R</code></span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../../paginas/material/regressao-logistica/regressao-logistica.html" rel="" target="">
+    <a class="dropdown-item" href="../../paginas/material/regressao-logistica/regressao-logistica.html" rel="" target="">
  <span class="dropdown-text">Regressão Logística</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../../paginas/material/programacao/programacao.html" rel="" target="">
+    <a class="dropdown-item" href="../../paginas/material/programacao/programacao.html" rel="" target="">
  <span class="dropdown-text">Programação em <code>R</code></span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../../paginas/material/quarto/quarto.html" rel="" target="">
+    <a class="dropdown-item" href="../../paginas/material/quarto/quarto.html" rel="" target="">
  <span class="dropdown-text">Quarto</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../../paginas/material/exploracao-visualizacao/exploracao-visualizacao.html" rel="" target="">
+    <a class="dropdown-item" href="../../paginas/material/exploracao-visualizacao/exploracao-visualizacao.html" rel="" target="">
  <span class="dropdown-text">Exploração e Visualização</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="../../../paginas/eventos.html" rel="" target="">
+    <a class="nav-link" href="../../paginas/eventos.html" rel="" target="">
  <span class="menu-text">Eventos</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../../paginas/cade.html" rel="" target="">
+    <a class="nav-link" href="../../paginas/cade.html" rel="" target="">
  <span class="menu-text">CADE</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../../paginas/contato.html" rel="" target="">
+    <a class="nav-link" href="../../paginas/contato.html" rel="" target="">
  <span class="menu-text">Contato</span></a>
   </li>  
 </ul>
@@ -169,14 +169,28 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Nesta página</h2>
+   
+  <ul>
+  <li><a href="#resumo" id="toc-resumo" class="nav-link active" data-scroll-target="#resumo">Resumo</a></li>
+  <li><a href="#área" id="toc-área" class="nav-link" data-scroll-target="#área">Área</a></li>
+  <li><a href="#coordenação" id="toc-coordenação" class="nav-link" data-scroll-target="#coordenação">Coordenação</a></li>
+  <li><a href="#universidade-universitária" id="toc-universidade-universitária" class="nav-link" data-scroll-target="#universidade-universitária">Universidade universitária</a></li>
+  <li><a href="#público-alvo" id="toc-público-alvo" class="nav-link" data-scroll-target="#público-alvo">Público alvo</a></li>
+  <li><a href="#número-esperado-de-participantes" id="toc-número-esperado-de-participantes" class="nav-link" data-scroll-target="#número-esperado-de-participantes">Número esperado de participantes</a></li>
+  <li><a href="#local-de-realização" id="toc-local-de-realização" class="nav-link" data-scroll-target="#local-de-realização">Local de realização</a></li>
+  <li><a href="#metodologia" id="toc-metodologia" class="nav-link" data-scroll-target="#metodologia">Metodologia</a></li>
+  <li><a href="#conteúdo-programático" id="toc-conteúdo-programático" class="nav-link" data-scroll-target="#conteúdo-programático">Conteúdo programático</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><code>R</code> para Ciência de Dados: Quarto</h1>
+<h1 class="title">Produção de Texto usando rmarkdown e quarto</h1>
 </div>
 
 
@@ -191,12 +205,60 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<div style="text-align:justify">
-<p>Página do curso do primeiro semestre de 2023: <a href="https://rmarkdown.simple.ink">rmarkdown.simple.ink</a></p>
-</div>
+<section id="resumo" class="level1">
+<h1>Resumo</h1>
+<p>O objetivo deste curso é compartilhar o conhecimento da linguagem R numa interação dialógica da comunidade acadêmica com a sociedade por meio da troca de conhecimentos. A ação cumprirá o papel de aproximar a academia da comunidade, popularizando o uso de software livre e da linguagem R e trazendo para dentro da universidade a experiência e a grande demanda que profissionais têm de usar software livre e, em especial, a linguagem R. A ação procurará integrar discentes em sua equipe organizadora. O curso se propõe a apresentar dois pacotes da linguagem R: rmarkdown e quarto, que são especialmente úteis para redação de textos no formato pdf (incluindo apresentações em beamer), html (incluindo apresentações apresentações em ioslide), e docx. O curso terá 8 horas com 2 encontros presenciais com duração de quatro horas nos laboratórios de ensino de informática do IME-UFBA, será gratuito com certificado emitido pela UFBA e terá 20 vagas.</p>
+</section>
+<section id="área" class="level1">
+<h1>Área</h1>
+<p>De acordo com o disposto na Política Nacional de Extensão, este Projeto de Extensão está vinculado às áreas temáticas descritas a seguir.</p>
+<ul>
+<li><strong>Linha Programática:</strong> Educação profissional;</li>
+<li><strong>Área(s) de Conhecimento(s):</strong> Ciências Exatas e da Terra;</li>
+<li><strong>Área(s) Temáticas(s):</strong> Tecnologia.</li>
+</ul>
+</section>
+<section id="coordenação" class="level1">
+<h1>Coordenação</h1>
+<ul>
+<li>Professor Doutor Gilberto Pereira Sassi, Departamento de Estatística, Instituto de Matemática e Estatística, Universidade Federal da Bahia.</li>
+<li>Professora Doutora Carolina Costa Mota Paraíba, Departamento de Estatística, Instituto de Matemática e Estatística, Universidade Federal da Bahia.</li>
+</ul>
+<p>Justificativa da necessidade do segundo coordenador: a Profa. Carolina é responsável por coordenar a ampla divulgação do curso entre os profissionais que fazem uso de análise estatística de dados, o processo de inscrição, a construção do site do curso, a elaboração de material didático e manutenção das bases de dados usadas neste curso.</p>
+</section>
+<section id="universidade-universitária" class="level1">
+<h1>Universidade universitária</h1>
+<p>Instituto de Matemática e Estatística da Universidade Federal da Bahia.</p>
+</section>
+<section id="público-alvo" class="level1">
+<h1>Público alvo</h1>
+<p>Profissionais que usam análises estatísticas de dados.</p>
+</section>
+<section id="número-esperado-de-participantes" class="level1">
+<h1>Número esperado de participantes</h1>
+<p>20</p>
+</section>
+<section id="local-de-realização" class="level1">
+<h1>Local de realização</h1>
+<p>Laboratório de ensino de informática do IME-UFBA.</p>
+</section>
+<section id="metodologia" class="level1">
+<h1>Metodologia</h1>
+<p>metodologia do curso será de aulas expositivas e práticas em laboratório de informática usando a linguagem R.</p>
+</section>
+<section id="conteúdo-programático" class="level1">
+<h1>Conteúdo programático</h1>
+<ol type="1">
+<li>Breve apresentação da linguagem <code>R</code> e <code>RStudio</code>;</li>
+<li>Preparação de documentos <code>pdf</code> usando <code>rmardown</code> (através da linguagem <code>latex</code>): <code>rticle</code> e <code>beamer</code>;</li>
+<li>Preparação de documento <code>html</code> usando <code>rmardown</code>: <code>ioslide</code> e <code>prettydoc</code>, e publicação usando <code>github pages</code> e <code>netlify</code>;</li>
+<li>Preparação de documentos <code>docx</code> usando <code>rmarkdown</code>;</li>
+<li>Apresentação de <code>quarto</code>: <code>rmarkdown</code> para <code>python,</code> <code>R</code> e <code>julia</code>.</li>
+</ol>
 <hr>
 
 
+</section>
 
 <p>© 2023 <code>R</code> para Ciência de Dados <br>🖤 by Carolina Paraíba e Gilberto Sassi</p></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

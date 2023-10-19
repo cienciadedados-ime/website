@@ -1,16 +1,10 @@
 ---
-title: "Intervalos de Confiança e Testes de Hipóteses"
+title: "Ciência de Dados para Docentes usando o R"
 ---
 
 # Resumo
 
-O objetivo deste curso é compartilhar o conhecimento de análise estatística de dados, principalmente métodos de inferência estatística, usando a linguagem `R` numa interação dialógica da comunidade acadêmica com a sociedade por meio da troca de conhecimentos. A ação cumprirá o papel de aproximar a academia da comunidade, popularizando a ciência Estatística e trazendo para dentro da universidade a experiência e a grande demanda que profissionais têm de usar Estatística e Ciência de Dados.
-
-A ação procurará integrar discentes em sua equipe organizadora.
-
-A atividade se propõe a introduzir os conceitos de intervalos de confiança e testes de hipóteses, métodos estatísticos amplamente usados, utilizando o pacote `statBasics`.
-
-O curso terá 8 horas com 2 encontros presenciais com duração de quatro horas nos laboratórios de ensino de informática do IME-UFBA, será gratuito com certificado emitido pela UFBA e terá 15 vagas.
+O curso irá compartilhar o conhecimento de análise estatística de dados usando a linguagem R numa interação dialógica da comunidade acadêmica com a sociedade por meio da troca de conhecimentos. A ação irá aproximar a academia da comunidade, popularizando a ciência Estatística e trazendo para dentro da universidade a experiência e a grande demanda que profissionais têm de usar Estatística e Ciência de Dados. O objetivo do curso é apresentar a linguagem R, e os princípios de exploração e visualização de dados utilizando o framework tidyverse especialmente os pacotes ggplot2 e dplyr, para docentes de diferentes áreas de conhecimento, do ensino fundamental, médio e superior, que fazem uso de análise de dados. O curso irá apresentar a linguagem R aos professores, que poderá servir como ferramenta didática, com a vantagem de ser um programa de código aberto e gratuito. O curso terá 12 horas com 3 encontros presenciais de quatro horas nos laboratórios do IME-UFBA e será gratuito.
 
 # Área
 
@@ -49,9 +43,10 @@ Metodologia do curso será de aulas expositivas e práticas em laboratório de i
 
 # Conteúdo programático
 
-1. Breve revisão de `R`, `RStudio` e `tidyverse`
-2. Breve introdução à variável aleatória
-3. Intervalo de confiança para uma população usando o pacote `statBasics`
-4. Teste de hipóteses para uma população usando o pacote `statBasics`
+1. Apresentação da linguagem R;
+2. Apresentação da IDE `RStudio`
+3. Leitura de arquivos `.xlsx`, `.csv` e `.ods`
+4. Visualização de dados usando `ggplot2`
+5. Medidas de resumo usando o pacote `dplyr`
 
 ---
