@@ -1,16 +1,16 @@
 ---
-title: "Intervalos de Confiança e Testes de Hipóteses"
+title: "Regressão Linear Simples e Múltipla"
 ---
 
 # Resumo
 
-O objetivo deste curso é compartilhar o conhecimento de análise estatística de dados, principalmente métodos de inferência estatística, usando a linguagem `R` numa interação dialógica da comunidade acadêmica com a sociedade por meio da troca de conhecimentos. A ação cumprirá o papel de aproximar a academia da comunidade, popularizando a ciência Estatística e trazendo para dentro da universidade a experiência e a grande demanda que profissionais têm de usar Estatística e Ciência de Dados.
+O objetivo deste curso é compartilhar o conhecimento de análise estatística de dados usando a linguagem R numa interação dialógica da comunidade acadêmica com a sociedade por meio da troca de conhecimentos. A ação cumprirá o papel de aproximar a academia da comunidade, popularizando a ciência Estatística e trazendo para dentro da universidade a experiência e a grande demanda que profissionais têm de usar Estatística e Ciência de Dados.
 
 A ação procurará integrar discentes em sua equipe organizadora.
 
-A atividade se propõe a introduzir os conceitos de intervalos de confiança e testes de hipóteses, métodos estatísticos amplamente usados, utilizando o pacote `statBasics`.
+O curso se propõe a apresentar a linguagem R e os princípios de modelagem de dados, abordando os tópicos de regressão linear simples e múltipla usando os frameworks tidyverse e tidymodels, especialmente os pacotes broom, gglm e qqplotr.
 
-O curso terá 8 horas com 2 encontros presenciais com duração de quatro horas nos laboratórios de ensino de informática do IME-UFBA, será gratuito com certificado emitido pela UFBA e terá 15 vagas.
+O curso terá 8 horas com 2 encontros presenciais com duração de quatro horas nos laboratórios de ensino de informática do IME-UFBA, será gratuito com certificado emitido pela UFBA e terá 20 vagas.
 
 # Área
 
@@ -49,9 +49,6 @@ Metodologia do curso será de aulas expositivas e práticas em laboratório de i
 
 # Conteúdo programático
 
-1. Breve revisão de `R`, `RStudio` e `tidyverse`
-2. Breve introdução à variável aleatória
-3. Intervalo de confiança para uma população usando o pacote `statBasics`
-4. Teste de hipóteses para uma população usando o pacote `statBasics`
+A definir.
 
 ---
