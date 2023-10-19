@@ -4,13 +4,7 @@ title: "Introdução à Programação em R"
 
 # Resumo
 
-O objetivo deste curso é compartilhar o conhecimento de análise estatística de dados usando a linguagem R numa interação dialógica da comunidade acadêmica com a sociedade por meio da troca de conhecimentos. A ação cumprirá o papel de aproximar a academia da comunidade, popularizando a ciência Estatística e trazendo para dentro da universidade a experiência e a grande demanda que profissionais têm de usar Estatística e Ciência de Dados.
-
-A ação procurará integrar discentes em sua equipe organizadora.
-
-O curso se propõe a apresentar a linguagem R incluindo vetores, matrizes, funções, operadores lógicos, controle de fluxo usando `if`, `for`, `ifelse`, `while`, as funções `apply` e `map`, funções anônimas, operador *pipe,* e rotinas de otimização.
-
-O curso terá 8 horas com 2 encontros presenciais com duração de quatro horas nos laboratórios de ensino de informática do IME-UFBA, será gratuito com certificado emitido pela UFBA e terá 20 vagas.
+O objetivo deste curso é compartilhar o conhecimento de análise estatística de dados usando a linguagem R numa interação dialógica da comunidade acadêmica com a sociedade por meio da troca de conhecimentos. A ação cumprirá o papel de aproximar a academia da comunidade, popularizando a ciência Estatística e trazendo para dentro da universidade a experiência e a grande demanda que profissionais têm de usar Estatística e Ciência de Dados. A ação procurará integrar discentes em sua equipe organizadora. O curso se propõe a apresentar a linguagem R incluindo vetores, matrizes, funções, operadores lógicos, controle de fluxo usando `if`, `for`, `ifelse`, `while`, as funções `apply` e `map`, funções anônimas, operador *pipe,* e rotinas de otimização. O curso terá 8 horas com 2 encontros presenciais com duração de quatro horas nos laboratórios de ensino de informática do IME-UFBA, será gratuito com certificado emitido pela UFBA e terá 20 vagas.
 
 # Área
 

@@ -6,11 +6,13 @@ title: "`R` para Ciência de Dados: Exploração e Visualização de Dados"
 
 ## Slides
 
-Em breve.
+[slides](aula.pdf){target="_blank"}
 
 ## Conjunto de Dados
 
-Em breve.
+[economia_us.xlsx](economia_us.xlsx)<br>
+[estudantes.xlsx](estudantes.xlsx)<br>
+[renda_vida.xlsx](renda_vida.xlsx)
 
 ## Instalação do `R` e do `RStudio`
 
