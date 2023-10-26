@@ -4,6 +4,12 @@ title: "`R` para Ciência de Dados: Exploração e Visualização de Dados"
 
 <div style="text-align:justify">
 
+# Avisos
+
+Infelizmente, a segunda aula que seria dia 27/10/2023 está cancelada devido a compromissos profissionais da equipe organizadora com a UFBA. **Então, a segunda aula será remarcada para o dia 10/11/2023.**
+
+---
+
 ## Slides
 
 [slides](aula.pdf){target="_blank"}
