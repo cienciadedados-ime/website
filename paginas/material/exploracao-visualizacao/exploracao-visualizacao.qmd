@@ -6,7 +6,9 @@ title: "`R` para Ciência de Dados: Exploração e Visualização de Dados"
 
 # Avisos
 
-Infelizmente, a segunda aula que seria dia 27/10/2023 está cancelada devido a compromissos profissionais da equipe organizadora com a UFBA. **Então, a segunda aula será remarcada para o dia 10/11/2023.**
+Infelizmente, a segunda aula que seria dia 03/11/2023 está cancelada, pois o campus Ondina/Federação da UFBA estará fechado por causa do feriado prolongado de Finados. **Então, a segunda aula será remarcada para o dia 10/11/2023.**
+
+**Lembrando que dia 27/10/2023 não teremos aula.**
 
 ---
 
