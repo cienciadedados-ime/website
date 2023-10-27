@@ -43,6 +43,12 @@ Metodologia do curso será de aulas expositivas e práticas em laboratório de i
 
 # Conteúdo programático
 
-A definir.
+* Introdução 
+* Modelo de Regressão Logística
+* Inferência 
+* Análise de Resíduos
+* Diagnóstico de Influência
+* Classificação
+* Curva ROC
 
 ---

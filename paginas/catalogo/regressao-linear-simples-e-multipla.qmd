@@ -43,6 +43,9 @@ Metodologia do curso será de aulas expositivas e práticas em laboratório de i
 
 # Conteúdo programático
 
-A definir.
+* Introdução à Modelagem Estatística
+* Regressão Linear Simples
+* Regressão Linear Múltipla
+* Análise de Resíduos e Diagnóstico
 
 ---
