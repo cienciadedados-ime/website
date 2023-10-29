@@ -1,1 +1,1 @@
-Sitemap: http://www.cienciadedados.ime.ufba.br/sitemap.xml
+Sitemap: https://f234a65c-d665-486e-93f8-440878d41663.netlify.app/sitemap.xml
