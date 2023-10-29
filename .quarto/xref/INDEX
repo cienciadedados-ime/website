@@ -100,5 +100,17 @@
   },
   "paginas/catalogo/introducao-a-programacao.qmd": {
     "introducao-a-programacao.html": "80ca11b3"
+  },
+  "paginas/cade/teste.qmd": {
+    "teste.html": "5395f086"
+  },
+  "paginas/cade/teste/teste.qmd": {
+    "teste.html": "43d7d0a9"
+  },
+  "paginas/cade/tabela-frequencias/tabela-frequencias.qmd": {
+    "tabela-frequencias.html": "e6969081"
+  },
+  "paginas/cade/medidas-resumo-graficos/medidas-resumo-graficos.qmd": {
+    "medidas-resumo-graficos.html": "f98a9aa4"
   }
 }

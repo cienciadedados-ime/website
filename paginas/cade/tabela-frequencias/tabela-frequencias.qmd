@@ -1,0 +1,97 @@
+---
+title: "Como criar tabela de distribuição de frequências usando o R?"
+author: "Gilberto Pereira Sassi"
+date: "2023/10/01"
+image: tabela.png
+categories:
+  - linguage R
+  - Estatística
+  - Ciência de Dados
+  - Exploração e visualização de dados
+---
+
+Neste artigo, eu vou mostrar como usar a linguagem `R` para criar tabelas de distribuição de frequências para variáveis categóricas, variáveis discretas e variáveis contínuas. A primeira coisa que um analista pode fazer é **contar**! A contagem ou frequência, como falamos em Estatística e Ciência de Dados, permite que você detecte valores que são comuns e valores pouco usuais e também permite que você encontre diversas características da variável. Além disso, você pode usar tabelas de distribuição de frequências para comunicar informações e construir relatórios e artigos. 
+
+
+Para simplificar a sua vida, ~~assim espero~~, eu dividi este texto em três partes: tabelas de distribuição de frequências para variáveis categóricas; tabelas de distribuição de frequências para variáveis discretas; e tabelas de distribuição de frequências para variáveis contínuas. E, para ilustrar tudo que eu estiver falando, eu vou usar um conjunto de dados do livro [Estatística Básica](https://www.ime.usp.br/~pam/EstBas.html): _[empresa.xlsx](empresa.xlsx)_ que é um conjunto de dados com informações socioeconômicas de 36 funcionários de um departamento de contabilidade.
+
+No que segue, vamos usar o _framework_ `tidyverse` e o pacote `janitor`.
+
+## Tabelas de distribuição de frequências para variáveis categóricas
+
+Suponha que você tenha uma variável categórica $X$ com suporte $\{A_1,\dots, A_k\}$, então a ideia é contar quantas vezes $A_1$ aparece, $A_2$ aparece e assim por diante. Além disso, você pode calcular a porcentagem de vezes que $A_1$ aparece, a porcentagem $A_2$ de vezes que aparece e assim sucessivamente.
+
+Para ilustrar, considere a variável `escolaridade` onde o pesquisador armazenou o grau de escolaridade de cada um dos 36 funcionários. A primeira coisa que você precisa fazer é carregar os pacotes e os dados. 
+
+```{r, message=F}
+library(readxl)
+library(janitor)
+library(tidyverse)
+```
+
+
+```{r, results='hold'}
+# carregando o arquivo
+df_dados <- read_xlsx("empresa.xlsx")
+
+# uma olhadinha rápida nos dados carregados
+glimpse(df_dados) 
+```
+
+Se tudo estiver correto, já estamos prontos para construir a tabela de distribuição de frequência, ou seja, contar quantos funcionários têm `ensino fundamental`, quantos funcionários têm `ensino médio` e quantos funcionários têm `superior`. 
+
+Primeiro usamos a função `tabyl` do pacote `janitor` para contar sem incluir o total e sem o sinal de porcentagem na coluna de _porcentagem_. Depois usamos `adorn_totals` e `adorn_pct_formatting` para adicionar o total na tabela e o sinal de porcentagem, respectivamente. Finalmente, usamos a função `rename` do pacote `dplyr` para traduzir os nomes da tabela para o português. Repare que usamos o operador pipe `|>` para simplificar a nossa codificação.
+
+```{r}
+tabyl(df_dados, escolaridade) |> # função que realiza a contagem
+ adorn_totals() |> # adiciona a linha de total a tabela
+ adorn_pct_formatting(digits = 2, affix_sign = FALSE) |> # acrescenta porcentagem na tabela sem o sinal de %
+ rename("Frequência" = n, "Porcentagem" = percent) # nomes em português
+```
+
+
+## Tabelas de distribuição de frequências para variáveis discretas
+
+Para uma variável discreta, usamos uma abordagem semelhante a abordagem usada para variáveis categóricas. Suponha que $X$ seja uma variável discreta com suporte $\{x_1, \dots, x_k\}$. Então, vamos contar quantas vezes o valor $x_1$ apareceu no conjunto de dados, quantas vezes apareceu o valor $x_2$ e assim por diante. Além disso, também vamos calcular a porcentagem de vezes que o valor $x_1$ ocorreu no conjunto de dados, a porcentagem de vezes que o valor $x_2$ e assim por diante. 
+
+```{r}
+tabyl(df_dados, numero_filhos) |>
+  adorn_totals() |>
+  adorn_pct_formatting(digits = 2, affix_sign = FALSE) |>
+  rename("Número de filhos" = numero_filhos, "Frequência" = n, "Porcentagem" = percent)
+```
+
+
+## Tabelas de distribuição de frequências para variáveis contínuas
+
+E se quisermos construir uma tabela de distribuição de frequências para uma variável contínua? No conjunto de dados _[empresa.xlsx](empresa.xlsx)_, a variável `salario` é contínua e se você olhar no arquivo  _[empresa.xlsx](empresa.xlsx)_ você pode reparar que nenhum funcionário tem salário igual ao outro.  Consequentemente, se usarmos a técnica que vimos nas seções anteriores, teremos uma tabela com 36 valores, que é basicamente uma cópia dos dados originais, e ficaria bem complicado de encontrar características desta variável.
+
+Neste caso, agregamos os valores em intervalos. Os intervalos podem ser determinados de diversas formas. O regulador ou o mercado pode especificar intervalos para uma variável, por exemplo os intervalos usados na medição de pressão arterial podem ser especificados pelo governo. Estudos ou pesquisas anteriores podem indicar quais intervalos você deveria usar em tabela de distribuição de frequências.
+
+E se você não tem acesso a estudos anteriores, nem regulador, nem _mercado_ para indicar como construir os intervalos? Neste caso, você pode categorizar a variável contínua em $k$ intervalos de mesmo tamanho segundo a **Regra de Sturge**, que é dada por
+$$
+k = \lfloor 1 + \log2(n) \rfloor,
+$$
+onde $n$ é o número de linhas (ou o tamanho da amostra) do conjunto de dados, e $\lfloor x \rfloor$ é o maior número inteiro menor ou igual a $x$ (equivale a função `arrendonda.para.baixo` do `google sheets`).
+
+Em nosso exemplo, não temos regulador, nem mercado e nem estudos anteriores para nos indicar os intervalos para usar com a variável `salario` do conjuto de dados _[empresa.xlsx](empresa.xlsx)_. Então, vamos usar a Regra de Sturge, ou seja, vamos categorizar a variável `salario` agregando os valores de `salario` em $k=\lfloor 1 + \log2(36) \rfloor=6$ intervalos de mesmo tamanho usando a função `cut`.
+
+```{r}
+# limites dos intervalos
+breaks <- with(df_dados, seq(from = min(salario), to = max(salario), length.out = 6))
+
+# categorizando salario em 6 intervalos
+df_dados <- mutate(df_dados, salario_cat = cut(salario, breaks, include.lowest = T, right = F))
+```
+
+Após categorização, podemos usar as técnicas que aprendamos para variáveis categóricas.
+
+```{r}
+tabyl(df_dados, salario_cat) |>
+  adorn_totals() |>
+  adorn_pct_formatting(digits = 2, affix_sign = FALSE) |>
+  rename("Salário" = salario_cat, "Frequência" = n, "Porcentagem" = percent)
+```
+
+
+---

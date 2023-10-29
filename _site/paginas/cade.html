@@ -30,6 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-listing/list.min.js"></script>
+<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -61,11 +63,42 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Procurar"
   }
 }</script>
+<script>
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-posts .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-image','listing-date','listing-title','listing-author','listing-reading-time',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-posts'] = new List('listing-posts', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
 <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="../assets/styles.css">
-</head>
+<link rel="alternate" type="application/rss+xml" title="Ciência de Dados" href="cade.xml"></head>
 
 <body class="nav-fixed">
 
@@ -171,14 +204,81 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    </div>
+    <h5 class="quarto-listing-category-title">Categorias</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">Tudo <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Ciência de Dados">Ciência de Dados <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Estatística">Estatística <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Exploração e visualização de dados">Exploração e visualização de dados <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Gráfico de barras">Gráfico de barras <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Histograma">Histograma <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Medidas de resumo">Medidas de resumo <span class="quarto-category-count">(1)</span></div><div class="category" data-category="linguage R">linguage R <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 
 
-<p>Em breve…</p>
+<p><img src="../assets/logo-v4.png" width="30%" align="right" class="margem-logo"></p>
+<p>A atividade <em>CADE: onde a divulgação da Ciência Estatística acontece</em> é uma ação de extensão do <a href="https://est.ufba.br/"><strong>Departamento de Estatística</strong></a> do <a href="https://ime.ufba.br/"><strong>Instituto de Matemática e Estatística</strong></a> da <a href="https://www.ufba.br/"><strong>Universidade Federal da Bahia</strong></a>. Esta ação de extensão propõe construir um repositório on-line denominado Canal de Divulgação de Estatística, ou abreviadamente CADE, onde textos sobre estatística de leitura simples e acessível serão disponibilizados.</p>
+<p>Esta ação de extensão na modalidade <em>publicação</em> é parte do projeto de extensão <a href="https://cienciadedados.ime.ufba.br/"><em><code>R</code> para Ciência de Dados</em></a>.</p>
 <hr>
+<div id="listing-posts" class="quarto-listing quarto-listing-container-default">
+<div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-categories="linguage R,Estatística,Ciência de Dados,Exploração e visualização de dados" data-listing-date-sort="1696129200000" data-listing-file-modified-sort="1698603003600" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5">
+<div class="thumbnail">
+<p><a href="../paginas/cade/tabela-frequencias/tabela-frequencias.html"> <img src="../paginas/cade/tabela-frequencias/tabela.png" class="thumbnail-image"> </a></p>
+</div>
+<div class="body">
+<a href="../paginas/cade/tabela-frequencias/tabela-frequencias.html">
+<h3 class="no-anchor listing-title">
+Como criar tabela de distribuição de frequências usando o R?
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="../paginas/cade/tabela-frequencias/tabela-frequencias.html">
+<div class="listing-date">
+1 de out. de 2023
+</div>
+<div class="listing-author">
+Gilberto Pereira Sassi
+</div>
+<div class="listing-reading-time">
+5 minutos
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="1" data-categories="Ciência de Dados,Exploração e visualização de dados,Medidas de resumo,Gráfico de barras,Histograma" data-listing-date-sort="1698807600000" data-listing-file-modified-sort="1698605021756" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10">
+<div class="thumbnail">
+<p><a href="../paginas/cade/medidas-resumo-graficos/medidas-resumo-graficos.html"> <img src="../paginas/cade/medidas-resumo-graficos/barra.png" class="thumbnail-image"> </a></p>
+</div>
+<div class="body">
+<a href="../paginas/cade/medidas-resumo-graficos/medidas-resumo-graficos.html">
+<h3 class="no-anchor listing-title">
+E como calcular medidas de resumo quando temos um gráfico de barras ou histograma?
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="../paginas/cade/medidas-resumo-graficos/medidas-resumo-graficos.html">
+<div class="listing-date">
+1 de nov. de 2023
+</div>
+<div class="listing-author">
+Gilberto Pereira Sassi
+</div>
+<div class="listing-reading-time">
+10 minutos
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="listing-no-matching d-none">
+Nenhum item correspondente
+</div>
+</div>
+<hr>
+
 
 
 

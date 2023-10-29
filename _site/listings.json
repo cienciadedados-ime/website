@@ -1,0 +1,13 @@
+[
+  {
+    "listing": "/paginas/eventos.html",
+    "items": []
+  },
+  {
+    "listing": "/paginas/cade.html",
+    "items": [
+      "/paginas/cade/tabela-frequencias/tabela-frequencias.html",
+      "/paginas/cade/medidas-resumo-graficos/medidas-resumo-graficos.html"
+    ]
+  }
+]
