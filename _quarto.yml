@@ -3,7 +3,7 @@ project:
 
 website:
   title: "Ciência de Dados"
-  site-url: "http://www.cienciadedados.ime.ufba.br"
+  site-url: "https://gilbertosassi.quarto.pub/cienciadedados/"
   body-footer: "&#169; 2023 `R` para Ciência de Dados <br>&#128420; by Carolina Paraíba e Gilberto Sassi"
   navbar:
     logo: assets/r.png
