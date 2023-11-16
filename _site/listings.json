@@ -1,13 +1,23 @@
 [
   {
+    "listing": "/paginas/material.html",
+    "items": [
+      "/paginas/material/exploracao-visualizacao/exploracao-visualizacao.html",
+      "/paginas/material/programacao/programacao.html",
+      "/paginas/material/regressao-logistica/regressao-logistica.html",
+      "/paginas/material/cd-docentes/cd-docentes.html",
+      "/paginas/material/quarto/quarto.html"
+    ]
+  },
+  {
     "listing": "/paginas/eventos.html",
     "items": []
   },
   {
     "listing": "/paginas/cade.html",
     "items": [
-      "/paginas/cade/tabela-frequencias/tabela-frequencias.html",
-      "/paginas/cade/medidas-resumo-graficos/medidas-resumo-graficos.html"
+      "/paginas/cade/medidas-resumo-graficos/medidas-resumo-graficos.html",
+      "/paginas/cade/tabela-frequencias/tabela-frequencias.html"
     ]
   }
 ]

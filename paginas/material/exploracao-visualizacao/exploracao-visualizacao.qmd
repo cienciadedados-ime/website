@@ -1,5 +1,14 @@
 ---
 title: "`R` para Ciência de Dados: Exploração e Visualização de Dados"
+author: "Carolina Costa Mota Paraíba"
+date: "2023/10/20"
+categories:
+  - Ciência de Dados
+  - Estatística descritiva
+  - Exploração e visualização de dados
+  - Medidas de resumo
+  - Gráfico de barras
+  - Histograma
 ---
 
 <div style="text-align:justify">

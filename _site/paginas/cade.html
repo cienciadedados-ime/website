@@ -73,9 +73,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-image','listing-date','listing-title','listing-author','listing-reading-time',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-date','listing-image','listing-title','listing-author','listing-reading-time',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
       
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
+      searchColumns: ["listing-date","listing-title","listing-author"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -92,20 +92,15 @@ ul.task-list li input[type="checkbox"] {
     }
   })
   </script>
-
-
-
 <!-- Google tag (gtag.js) -->
-<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-E72QBG5K95"></script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-0WD3PSV647"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'G-E72QBG5K95');
+  gtag('config', 'G-0WD3PSV647');
 </script>
-
-
 
 <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 
@@ -140,12 +135,28 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../paginas/equipe.html" rel="" target="">
- <span class="menu-text">Equipe</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link" href="../paginas/inscricoes.html" rel="" target="">
  <span class="menu-text">Inscrições</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../paginas/catalogo.html" rel="" target="">
+ <span class="menu-text">Cursos oferecidos</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../paginas/material.html" rel="" target="">
+ <span class="menu-text">Material</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="../paginas/cade.html" rel="" target="" aria-current="page">
+ <span class="menu-text">CADE</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../paginas/eventos.html" rel="" target="">
+ <span class="menu-text">Eventos</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../paginas/equipe.html" rel="" target="">
+ <span class="menu-text">Equipe</span></a>
   </li>  
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-editais" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
@@ -162,45 +173,6 @@ ul.task-list li input[type="checkbox"] {
   </li>  
     </ul>
   </li>
-  <li class="nav-item">
-    <a class="nav-link" href="../paginas/catalogo.html" rel="" target="">
- <span class="menu-text">Cursos oferecidos</span></a>
-  </li>  
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-material" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
- <span class="menu-text">Material</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-material">    
-        <li>
-    <a class="dropdown-item" href="../paginas/material/cd-docentes/cd-docentes.html" rel="" target="">
- <span class="dropdown-text">Ciência de Dados para Docentes usando <code>R</code></span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../paginas/material/regressao-logistica/regressao-logistica.html" rel="" target="">
- <span class="dropdown-text">Regressão Logística</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../paginas/material/programacao/programacao.html" rel="" target="">
- <span class="dropdown-text">Programação em <code>R</code></span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../paginas/material/quarto/quarto.html" rel="" target="">
- <span class="dropdown-text">Quarto</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../paginas/material/exploracao-visualizacao/exploracao-visualizacao.html" rel="" target="">
- <span class="dropdown-text">Exploração e Visualização</span></a>
-  </li>  
-    </ul>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="../paginas/eventos.html" rel="" target="">
- <span class="menu-text">Eventos</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link active" href="../paginas/cade.html" rel="" target="" aria-current="page">
- <span class="menu-text">CADE</span></a>
-  </li>  
   <li class="nav-item">
     <a class="nav-link" href="../paginas/contato.html" rel="" target="">
  <span class="menu-text">Contato</span></a>
@@ -225,69 +197,94 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<p><img src="../assets/logo-v4.png" width="30%" align="right" class="margem-logo"></p>
+<p><img src="../assets/logo-v4.png" width="30%" align="left" class="margem-logo"></p>
 <p>A atividade <em>CADE: onde a divulgação da Ciência Estatística acontece</em> é uma ação de extensão do <a href="https://est.ufba.br/"><strong>Departamento de Estatística</strong></a> do <a href="https://ime.ufba.br/"><strong>Instituto de Matemática e Estatística</strong></a> da <a href="https://www.ufba.br/"><strong>Universidade Federal da Bahia</strong></a>. Esta ação de extensão propõe construir um repositório on-line denominado Canal de Divulgação de Estatística, ou abreviadamente CADE, onde textos sobre estatística de leitura simples e acessível serão disponibilizados.</p>
 <p>Esta ação de extensão na modalidade <em>publicação</em> é parte do projeto de extensão <a href="https://cienciadedados.ime.ufba.br/"><em><code>R</code> para Ciência de Dados</em></a>.</p>
 <hr>
-<div id="listing-posts" class="quarto-listing quarto-listing-container-default">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="linguage R,Estatística,Ciência de Dados,Exploração e visualização de dados" data-listing-date-sort="1696129200000" data-listing-file-modified-sort="1698603003600" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5">
-<div class="thumbnail">
-<p><a href="../paginas/cade/tabela-frequencias/tabela-frequencias.html"> <img src="../paginas/cade/tabela-frequencias/tabela.png" class="thumbnail-image"> </a></p>
+<div id="listing-posts" class="quarto-listing quarto-listing-container-table">
+<div class="listing-actions-group">
+   <div class="input-group input-group-sm quarto-listing-sort">
+     <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
+     <select id="listing-posts-sort" class="form-select" aria-label="Ordenar por" onchange="window['quarto-listings']['listing-posts'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
+       <option value="" disabled="" selected="" hidden="">Ordenar por</option>
+       <option value="index" data-direction="asc">Pré-selecionado</option>
+         <option value="listing-date-sort" data-direction="asc">
+          Data - Mais velho
+        </option>
+         <option value="listing-date-sort" data-direction="desc">
+          Data - O mais novo
+        </option>
+         <option value="listing-title-sort" data-direction="asc">
+          Título
+        </option>
+         <option value="listing-author" data-direction="asc">
+          Autor
+        </option>
+     </select>
+  </div>
+    <div class="input-group input-group-sm quarto-listing-filter">
+      <span class="input-group-text"><i class="bi bi-search"></i></span>
+      <input type="text" class="search form-control" placeholder="Filter">
+    </div>
 </div>
-<div class="body">
-<a href="../paginas/cade/tabela-frequencias/tabela-frequencias.html">
-<h3 class="no-anchor listing-title">
-Como criar tabela de distribuição de frequências usando o R?
-</h3>
-<div class="listing-subtitle">
 
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="../paginas/cade/tabela-frequencias/tabela-frequencias.html">
-<div class="listing-date">
-1 de out. de 2023
-</div>
-<div class="listing-author">
-Gilberto Pereira Sassi
-</div>
-<div class="listing-reading-time">
-5 minutos
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="Ciência de Dados,Exploração e visualização de dados,Medidas de resumo,Gráfico de barras,Histograma" data-listing-date-sort="1698807600000" data-listing-file-modified-sort="1698605021756" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10">
-<div class="thumbnail">
-<p><a href="../paginas/cade/medidas-resumo-graficos/medidas-resumo-graficos.html"> <img src="../paginas/cade/medidas-resumo-graficos/barra.png" class="thumbnail-image"> </a></p>
-</div>
-<div class="body">
-<a href="../paginas/cade/medidas-resumo-graficos/medidas-resumo-graficos.html">
-<h3 class="no-anchor listing-title">
-E como calcular medidas de resumo quando temos um gráfico de barras ou histograma?
-</h3>
-<div class="listing-subtitle">
+<table class="quarto-listing-table table">
+<thead>
+<tr>
+<th>
+<a class="sort" data-sort="listing-date-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Data</a>
+</th>
+<th>
+</th>
+<th>
+<a class="sort" data-sort="listing-title-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Título</a>
+</th>
+<th>
+<a class="sort" data-sort="listing-author" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Autor</a>
+</th>
+<th>
+Tempo de leitura
+</th>
+</tr>
+</thead>
+<tbody class="list">
+<tr data-index="0" data-categories="Ciência de Dados,Exploração e visualização de dados,Medidas de resumo,Gráfico de barras,Histograma" data-listing-date-sort="1698807600000" data-listing-file-modified-sort="1698766186811" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10" data-listing-title-sort="E como calcular medidas de resumo quando temos um gráfico de barras ou histograma?" data-listing-filename-sort="medidas-resumo-graficos.qmd">
+<td>
+<span class="listing-date">1 de nov. de 2023</span>
+</td>
+<td>
+<span class="listing-image"><img src="../paginas/cade/medidas-resumo-graficos/barra.png" style="height: 40px;"></span>
+</td>
+<td>
+<a href="../paginas/cade/medidas-resumo-graficos/medidas-resumo-graficos.html" class="title listing-title">E como calcular medidas de resumo quando temos um gráfico de barras ou histograma?</a>
+</td>
+<td>
+<span class="listing-author">Gilberto Pereira Sassi</span>
+</td>
+<td>
+<span class="listing-reading-time">10 minutos</span>
+</td>
+</tr>
+<tr data-index="1" data-categories="linguage R,Estatística,Ciência de Dados,Exploração e visualização de dados" data-listing-date-sort="1696129200000" data-listing-file-modified-sort="1698766186815" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-title-sort="Como criar tabela de distribuição de frequências usando o R?" data-listing-filename-sort="tabela-frequencias.qmd">
+<td>
+<span class="listing-date">1 de out. de 2023</span>
+</td>
+<td>
+<span class="listing-image"><img src="../paginas/cade/tabela-frequencias/tabela.png" style="height: 40px;"></span>
+</td>
+<td>
+<a href="../paginas/cade/tabela-frequencias/tabela-frequencias.html" class="title listing-title">Como criar tabela de distribuição de frequências usando o R?</a>
+</td>
+<td>
+<span class="listing-author">Gilberto Pereira Sassi</span>
+</td>
+<td>
+<span class="listing-reading-time">5 minutos</span>
+</td>
+</tr>
+</tbody>
 
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="../paginas/cade/medidas-resumo-graficos/medidas-resumo-graficos.html">
-<div class="listing-date">
-1 de nov. de 2023
-</div>
-<div class="listing-author">
-Gilberto Pereira Sassi
-</div>
-<div class="listing-reading-time">
-10 minutos
-</div>
-</a>
-</div>
-</div>
-</div>
+</table>
 <div class="listing-no-matching d-none">
 Nenhum item correspondente
 </div>

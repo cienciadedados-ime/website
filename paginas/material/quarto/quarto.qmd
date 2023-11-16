@@ -1,5 +1,13 @@
 ---
 title: "`R` para Ciência de Dados: Quarto"
+author: "Gilberto Pereira Sassi"
+date: "2023/07/07"
+categories:
+  - Ciência de Dados
+  - Estatística 
+  - Linguagem <code>R</code>
+  - Markdown
+  - Quarto
 ---
 
 <div style="text-align:justify">

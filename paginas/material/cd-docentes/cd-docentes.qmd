@@ -1,5 +1,15 @@
 ---
 title: "Ciência de Dados para Docentes usando `R`"
+author: "Carolina Costa Mota Paraíba"
+date: "2023/07/26"
+categories:
+  - Ciência de Dados
+  - Estatística descritiva
+  - Exploração e visualização de dados
+  - Medidas de resumo
+  - Gráfico de barras
+  - Docentes
+  - Histograma
 ---
 
 <div style="text-align:justify">

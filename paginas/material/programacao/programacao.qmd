@@ -1,5 +1,13 @@
 ---
 title: "`R` para Ciência de Dados: Introdução à programação em `R`"
+author: "Gilberto Pereira Sassi"
+date: "2023/09/15"
+categories:
+  - Ciência de Dados
+  - Linguagem <code>R</code>
+  - Laços de repetição
+  - Controle de Fluxo
+  - Pacote <code>purrr</code>
 ---
 
 <div style="text-align:justify">

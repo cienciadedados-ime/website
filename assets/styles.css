@@ -7,3 +7,7 @@ p {
 .margem-logo {
     margin: 1em;
 }
+
+.category {
+    font-size: 80%;
+}

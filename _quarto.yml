@@ -10,35 +10,24 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - href: paginas/equipe.qmd
-        text: Equipe
       - href: paginas/inscricoes.qmd
         text: Inscrições
+      - href: paginas/catalogo.qmd
+        text: "Cursos oferecidos"
+      - href: paginas/material.qmd
+        text: "Material"
+      - href: paginas/cade.qmd
+        text: CADE
+      - href: paginas/eventos.qmd
+        text: Eventos
+      - href: paginas/equipe.qmd
+        text: Equipe
       - text: "Editais"
         menu:
           - href: paginas/editais/editais-abertos.qmd
             text: "Editais abertos"
           - href: paginas/editais/editais-2023.qmd
             text: "Editais encerrados"
-      - href: paginas/catalogo.qmd
-        text: "Cursos oferecidos"
-      - text: "Material"
-        menu:
-          - href: paginas/material/cd-docentes/cd-docentes.qmd
-            text: "Ciência de Dados para Docentes usando `R`"
-          - href: paginas/material/regressao-logistica/regressao-logistica.qmd
-            text: "Regressão Logística"
-          - href: paginas/material/programacao/programacao.qmd
-            text: "Programação em `R`"
-          - href: paginas/material/quarto/quarto.qmd
-            text: "Quarto"
-          - href: paginas/material/exploracao-visualizacao/exploracao-visualizacao.qmd
-            text: "Exploração e Visualização"
-
-      - href: paginas/eventos.qmd
-        text: Eventos
-      - href: paginas/cade.qmd
-        text: CADE
       - href: paginas/contato.qmd
         text: 'Contato'
 

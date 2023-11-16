@@ -1,5 +1,13 @@
 ---
 title: "`R` para Ciência de Dados: Regressão Logística"
+author: "Carolina Costa Mota Paraíba"
+date: "2023/08/18"
+categories:
+  - Ciência de Dados
+  - Estatística 
+  - Modelagem Estatística
+  - Modelos Lineares Generalizados
+  - Regressão Logística
 ---
 
 <div style="text-align:justify">
