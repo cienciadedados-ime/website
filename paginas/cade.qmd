@@ -1,7 +1,29 @@
 ---
 title: ""
+listing:
+  id: posts
+  contents: cade
+  type: table
+  categories: true
+  page-size: 5
+  feed: true
+  fields: [date, image, title, author, reading-time]
+  sort:
+    - "date desc"
+    - "title desc"
 ---
 
-Em breve...
+
+<img src="../assets/logo-v4.png" width = "30%" align="left" class="margem-logo"/>
+
+
+A atividade _CADE: onde a divulgação da Ciência Estatística acontece_ é uma ação de extensão do [**Departamento de Estatística**](https://est.ufba.br/) do [**Instituto de Matemática e Estatística**](https://ime.ufba.br/) da [**Universidade Federal da Bahia**](https://www.ufba.br/). Esta ação de extensão propõe construir um repositório on-line denominado Canal de Divulgação de Estatística, ou abreviadamente CADE, onde textos sobre estatística de leitura simples e acessível serão disponibilizados.
+
+Esta ação de extensão na modalidade _publicação_ é parte do projeto de extensão [_`R` para Ciência de Dados_](https://cienciadedados.ime.ufba.br/).
+
+---
+
+::: {#posts}
+:::
 
 ---

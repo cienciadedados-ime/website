@@ -1,271 +1,5 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "R para Ciência de Dados",
-    "section": "",
-    "text": "R para Ciência de dados é uma ação de extensão na modalidade projeto com apoio financeiro da Pró-reitoria de Extensão da Univesidade Federal da Bahia (UFBA) e tem como o objetivo compartilhar o conhecimento de análise de dados usando a linguagem R numa interação dialógica da comunidade acadêmica com a sociedade por meio da troca de conhecimentos.\nO projeto irá promover um conjunto de ações com o objetivo de popularizar a Estatística e Ciência de Dados e incentivar o uso de tecnologias de código aberto como a linguagem R, cujo uso é amplamente disseminado entre os pesquisadores da área de Estatística com crescente popularidade entre profissionais de outras áreas.\nOs cursos e eventos promovidos neste projeto serão presenciais em Salvador, gratuitas, abertas a toda comunidade e com certificado emitado pela UFBA.\nDefenda a Universidade pública, gratuita, de qualidade e diversa. Serviço público salva vidas. Defenda o serviço público.\n\nDe cada qual, segundo sua capacidade; a cada qual, segundo suas necessidades.\n\n\n\n\n\n\n© 2023 R para Ciência de Dados 🖤 by Carolina Paraíba e Gilberto Sassi"
-  },
-  {
-    "objectID": "paginas/catalogo/intervalo-confianca-teste-hipoteses.html",
-    "href": "paginas/catalogo/intervalo-confianca-teste-hipoteses.html",
-    "title": "Intervalos de Confiança e Testes de Hipóteses",
-    "section": "",
-    "text": "Resumo\nO objetivo deste curso é compartilhar o conhecimento de análise estatística de dados, principalmente métodos de inferência estatística, usando a linguagem R numa interação dialógica da comunidade acadêmica com a sociedade por meio da troca de conhecimentos. A ação cumprirá o papel de aproximar a academia da comunidade, popularizando a ciência Estatística e trazendo para dentro da universidade a experiência e a grande demanda que profissionais têm de usar Estatística e Ciência de Dados. A ação procurará integrar discentes em sua equipe organizadora. A atividade se propõe a introduzir os conceitos de intervalos de confiança e testes de hipóteses, métodos estatísticos amplamente usados, utilizando o pacote statBasics.\nO curso terá 8 horas com 2 encontros presenciais com duração de quatro horas nos laboratórios de ensino de informática do IME-UFBA, será gratuito com certificado emitido pela UFBA e terá 15 vagas.\n\n\nÁrea\nDe acordo com o disposto na Política Nacional de Extensão, este Projeto de Extensão está vinculado às áreas temáticas descritas a seguir.\n\nLinha Programática: Educação profissional;\nÁrea(s) de Conhecimento(s): Ciências Exatas e da Terra;\nÁrea(s) Temáticas(s): Tecnologia.\n\n\n\nCoordenação\n\nProfessor Doutor Gilberto Pereira Sassi, Departamento de Estatística, Instituto de Matemática e Estatística, Universidade Federal da Bahia.\nProfessora Doutora Carolina Costa Mota Paraíba, Departamento de Estatística, Instituto de Matemática e Estatística, Universidade Federal da Bahia.\n\nJustificativa da necessidade do segundo coordenador: a Profa. Carolina é responsável por coordenar a ampla divulgação do curso entre os profissionais que fazem uso de análise estatística de dados, o processo de inscrição, a construção do site do curso, a elaboração de material didático e manutenção das bases de dados usadas neste curso.\n\n\nUniversidade universitária\nInstituto de Matemática e Estatística da Universidade Federal da Bahia.\n\n\nPúblico alvo\nProfissionais que usam análises estatísticas de dados.\n\n\nNúmero esperado de participantes\n20\n\n\nLocal de realização\nLaboratório de ensino de informática do IME-UFBA.\n\n\nMetodologia\nMetodologia do curso será de aulas expositivas e práticas em laboratório de informática usando a linguagem R.\n\n\nConteúdo programático\n\nBreve revisão de R, RStudio e tidyverse\nBreve introdução à variável aleatória\nIntervalo de confiança para uma população usando o pacote statBasics\nTeste de hipóteses para uma população usando o pacote statBasics\n\n\n\n\n\n\n© 2023 R para Ciência de Dados 🖤 by Carolina Paraíba e Gilberto Sassi"
-  },
-  {
-    "objectID": "paginas/catalogo/regressao-linear-simples-e-multipla.html",
-    "href": "paginas/catalogo/regressao-linear-simples-e-multipla.html",
-    "title": "Regressão Linear Simples e Múltipla",
-    "section": "",
-    "text": "Resumo\nO objetivo deste curso é compartilhar o conhecimento de análise estatística de dados usando a linguagem R numa interação dialógica da comunidade acadêmica com a sociedade por meio da troca de conhecimentos. A ação cumprirá o papel de aproximar a academia da comunidade, popularizando a ciência Estatística e trazendo para dentro da universidade a experiência e a grande demanda que profissionais têm de usar Estatística e Ciência de Dados. A ação procurará integrar discentes em sua equipe organizadora. O curso se propõe a apresentar a linguagem R e os princípios de modelagem de dados, abordando os tópicos de regressão linear simples e múltipla usando os frameworks tidyverse e tidymodels, especialmente os pacotes broom, gglm e qqplotr. O curso terá 8 horas com 2 encontros presenciais com duração de quatro horas nos laboratórios de ensino de informática do IME-UFBA, será gratuito com certificado emitido pela UFBA e terá 20 vagas.\n\n\nÁrea\nDe acordo com o disposto na Política Nacional de Extensão, este Projeto de Extensão está vinculado às áreas temáticas descritas a seguir.\n\nLinha Programática: Educação profissional;\nÁrea(s) de Conhecimento(s): Ciências Exatas e da Terra;\nÁrea(s) Temáticas(s): Tecnologia.\n\n\n\nCoordenação\n\nProfessor Doutor Gilberto Pereira Sassi, Departamento de Estatística, Instituto de Matemática e Estatística, Universidade Federal da Bahia.\nProfessora Doutora Carolina Costa Mota Paraíba, Departamento de Estatística, Instituto de Matemática e Estatística, Universidade Federal da Bahia.\n\nJustificativa da necessidade do segundo coordenador: a Profa. Carolina é responsável por coordenar a ampla divulgação do curso entre os profissionais que fazem uso de análise estatística de dados, o processo de inscrição, a construção do site do curso, a elaboração de material didático e manutenção das bases de dados usadas neste curso.\n\n\nUniversidade universitária\nInstituto de Matemática e Estatística da Universidade Federal da Bahia.\n\n\nPúblico alvo\nProfissionais que usam análises estatísticas de dados.\n\n\nNúmero esperado de participantes\n20\n\n\nLocal de realização\nLaboratório de ensino de informática do IME-UFBA.\n\n\nMetodologia\nMetodologia do curso será de aulas expositivas e práticas em laboratório de informática usando a linguagem R.\n\n\nConteúdo programático\n\nIntrodução à Modelagem Estatística\nRegressão Linear Simples\nRegressão Linear Múltipla\nAnálise de Resíduos e Diagnóstico\n\n\n\n\n\n\n© 2023 R para Ciência de Dados 🖤 by Carolina Paraíba e Gilberto Sassi"
-  },
-  {
-    "objectID": "paginas/catalogo/ciencia-de-dados-para-docentes.html",
-    "href": "paginas/catalogo/ciencia-de-dados-para-docentes.html",
-    "title": "Ciência de Dados para Docentes usando o R",
-    "section": "",
-    "text": "Resumo\nO curso irá compartilhar o conhecimento de análise estatística de dados usando a linguagem R numa interação dialógica da comunidade acadêmica com a sociedade por meio da troca de conhecimentos. A ação irá aproximar a academia da comunidade, popularizando a ciência Estatística e trazendo para dentro da universidade a experiência e a grande demanda que profissionais têm de usar Estatística e Ciência de Dados. O objetivo do curso é apresentar a linguagem R, e os princípios de exploração e visualização de dados utilizando o framework tidyverse especialmente os pacotes ggplot2 e dplyr, para docentes de diferentes áreas de conhecimento, do ensino fundamental, médio e superior, que fazem uso de análise de dados. O curso irá apresentar a linguagem R aos professores, que poderá servir como ferramenta didática, com a vantagem de ser um programa de código aberto e gratuito. O curso terá 12 horas com 3 encontros presenciais de quatro horas nos laboratórios do IME-UFBA e será gratuito.\n\n\nÁrea\nDe acordo com o disposto na Política Nacional de Extensão, este Projeto de Extensão está vinculado às áreas temáticas descritas a seguir.\n\nLinha Programática: Educação profissional;\nÁrea(s) de Conhecimento(s): Ciências Exatas e da Terra;\nÁrea(s) Temáticas(s): Tecnologia.\n\n\n\nCoordenação\n\nProfessor Doutor Gilberto Pereira Sassi, Departamento de Estatística, Instituto de Matemática e Estatística, Universidade Federal da Bahia.\nProfessora Doutora Carolina Costa Mota Paraíba, Departamento de Estatística, Instituto de Matemática e Estatística, Universidade Federal da Bahia.\n\nJustificativa da necessidade do segundo coordenador: a Profa. Carolina é responsável por coordenar a ampla divulgação do curso entre os profissionais que fazem uso de análise estatística de dados, o processo de inscrição, a construção do site do curso, a elaboração de material didático e manutenção das bases de dados usadas neste curso.\n\n\nUniversidade universitária\nInstituto de Matemática e Estatística da Universidade Federal da Bahia.\n\n\nPúblico alvo\nProfissionais que usam análises estatísticas de dados.\n\n\nNúmero esperado de participantes\n20\n\n\nLocal de realização\nLaboratório de ensino de informática do IME-UFBA.\n\n\nMetodologia\nMetodologia do curso será de aulas expositivas e práticas em laboratório de informática usando a linguagem R.\n\n\nConteúdo programático\n\nApresentação da linguagem R;\nApresentação da IDE RStudio\nLeitura de arquivos .xlsx, .csv e .ods\nVisualização de dados usando ggplot2\nMedidas de resumo usando o pacote dplyr\n\n\n\n\n\n\n© 2023 R para Ciência de Dados 🖤 by Carolina Paraíba e Gilberto Sassi"
-  },
-  {
-    "objectID": "paginas/catalogo/introducao-a-programacao.html",
-    "href": "paginas/catalogo/introducao-a-programacao.html",
-    "title": "Introdução à Programação em R",
-    "section": "",
-    "text": "Resumo\nO objetivo deste curso é compartilhar o conhecimento de análise estatística de dados usando a linguagem R numa interação dialógica da comunidade acadêmica com a sociedade por meio da troca de conhecimentos. A ação cumprirá o papel de aproximar a academia da comunidade, popularizando a ciência Estatística e trazendo para dentro da universidade a experiência e a grande demanda que profissionais têm de usar Estatística e Ciência de Dados. A ação procurará integrar discentes em sua equipe organizadora. O curso se propõe a apresentar a linguagem R incluindo vetores, matrizes, funções, operadores lógicos, controle de fluxo usando if, for, ifelse, while, as funções apply e map, funções anônimas, operador pipe, e rotinas de otimização. O curso terá 8 horas com 2 encontros presenciais com duração de quatro horas nos laboratórios de ensino de informática do IME-UFBA, será gratuito com certificado emitido pela UFBA e terá 20 vagas.\n\n\nÁrea\nDe acordo com o disposto na Política Nacional de Extensão, este Projeto de Extensão está vinculado às áreas temáticas descritas a seguir.\n\nLinha Programática: Educação profissional;\nÁrea(s) de Conhecimento(s): Ciências Exatas e da Terra;\nÁrea(s) Temáticas(s): Tecnologia.\n\n\n\nCoordenação\n\nProfessor Doutor Gilberto Pereira Sassi, Departamento de Estatística, Instituto de Matemática e Estatística, Universidade Federal da Bahia.\nProfessora Doutora Carolina Costa Mota Paraíba, Departamento de Estatística, Instituto de Matemática e Estatística, Universidade Federal da Bahia.\n\nJustificativa da necessidade do segundo coordenador: a Profa. Carolina é responsável por coordenar a ampla divulgação do curso entre os profissionais que fazem uso de análise estatística de dados, o processo de inscrição, a construção do site do curso, a elaboração de material didático e manutenção das bases de dados usadas neste curso.\n\n\nUniversidade universitária\nInstituto de Matemática e Estatística da Universidade Federal da Bahia.\n\n\nPúblico alvo\nProfissionais que usam análises estatísticas de dados.\n\n\nNúmero esperado de participantes\n20\n\n\nLocal de realização\nLaboratório de ensino de informática do IME-UFBA.\n\n\nMetodologia\nMetodologia do curso será de aulas expositivas e práticas em laboratório de informática usando a linguagem R.\n\n\nConteúdo programático\n\nApresentação da IDE RStudio\nVetores e matriz\nFunções\nControle de fluxo usando if, ifelse, for e while\nFunções apply e map\nFunções anônimas e operador pipe\nOtimização usando optim e nlminb\n\n\n\n\n\n\n© 2023 R para Ciência de Dados 🖤 by Carolina Paraíba e Gilberto Sassi"
-  },
-  {
-    "objectID": "paginas/inscricoes.html",
-    "href": "paginas/inscricoes.html",
-    "title": "Ciência de Dados",
-    "section": "",
-    "text": "Inscrições para o curso R para Ciência de Dados: Exploração e Visualização de Dados estão encerradas.\nCandidatas/os selecionados por sorteio para participar do curso: selecionadas(os).\n\n\n\n\n\n© 2023 R para Ciência de Dados 🖤 by Carolina Paraíba e Gilberto Sassi"
-  },
-  {
-    "objectID": "paginas/contato.html",
-    "href": "paginas/contato.html",
-    "title": "Contatos",
-    "section": "",
-    "text": "cienciadedados.ime@gmail.com\n @cienciadedados.ime\n\n\n\n\n\n\nEndereço\nInstituto de Matemática e Estatística - UFBA Av. Milton Santos, Campus Universitário de Ondina CEP: 40.170-110\n\n\n\n\n\n\n© 2023 R para Ciência de Dados 🖤 by Carolina Paraíba e Gilberto Sassi"
-  },
-  {
-    "objectID": "paginas/catalogo.html",
-    "href": "paginas/catalogo.html",
-    "title": "Catálogo de cursos",
-    "section": "",
-    "text": "Ciência de Dados para Docentes usando o R\n\n\nExploração e visualização de dados\n\n\nIntervalos de Confiança e Testes de Hipóteses\n\n\nIntrodução à Programação em R\n\n\nModelos de Análise de Variância (Anova)\n\n\nProdução de Texto usando Rmarkdown e Quarto\n\n\nRegressão Linear Simples e Múltipla\n\n\nRegressão Logística\n\n\n\n\n\n\n\n© 2023 R para Ciência de Dados 🖤 by Carolina Paraíba e Gilberto Sassi"
-  },
-  {
-    "objectID": "paginas/editais/editais-2023.html",
-    "href": "paginas/editais/editais-2023.html",
-    "title": "Ciência de Dados",
-    "section": "",
-    "text": "Edital em andamentoEdital 2023\n\n\nO edital para os semestres 2023.2 e 2024.1 já está em andamento.\n\n\nEstão abertas inscrições para seleção de 01 vaga para bolsista e 02 vagas para voluntário para os Semestres Letivos 2023.2 e 2024.1 no Projeto de Extensão R para Ciência de Dados, sob número de cadastro 19588 na plataforma SIATEX.\nO objetivo deste projeto de extensão é compartilhar o conhecimento de análise de dados usando a linguagem R numa interação dialógica da comunidade acadêmica com a sociedade por meio da troca de conhecimentos. O projeto irá promover um conjunto de ações com o objetivo de popularizar a Estatística e Ciência de Dados e incentivar o uso de tecnologias de código aberto como a linguagem R, cujo uso é amplamente disseminado entre os pesquisadores da área de Estatística com crescente popularidade entre profissionais de outras áreas. Os métodos que serão abordados neste projeto constituem um conhecimento essencial para o exercício da cidadania devido ao avanço das tecnologias de informação. As ações planejadas neste projeto trarão para a universidade a experiência e a demanda dos profissionais pelo uso de Estatística e Ciência de Dados. Devido a relevância e atualidade do tema, é importante que a UFBA atue junto com a sociedade em atividades gratuitas fortalecendo a inserção da UFBA dentro da sociedade.\n\nVagas ofertadas\n\n01 vaga para bolsista de Extensão, no valor de R$700,00 mensal, conforme Edital PIBIEX 2023-2024.\n02 vagas para voluntárias/os, com até R$1.000,00 de auxílio financeiro para ajuda de custo, conforme Edital PAEx 2023.\n\n\n\nRequisitos para candidatura\nAs vagas estão aberta para qualquer estudante de graduação da UFBA que atenda aos seguintes requisitos:\n\na/o candidata/o deve ser estudante regularmente matriculada/o em qualquer curso de graduação oferecido pela UFBA.\nnão pode estar inadimplente com a PROEXT.\nno caso de bolsista, não pode acumular bolsa com outro Programa Institucional.\nter disponibilidade de trabalhar vinte horas semanais nas atividades deste projeto.\nter coeficiente de rendimento maior ou igual a 6,0.\ndesejável conhecimento de linguagem R e/ou Métodos Estatísticos.\n\n\n\nResponsabilidades da/o bolsista\n\nparticipar de reuniões semanais com a equipe executora em dia e horário a definir.\nparticipar das reuniões de orientação e avaliação com a PROEXT.\nparticipar das atividades promovidas por este projeto de extensão.\nauxiliar na manutenção do website do projeto de extensão.\nenviar relatório de atividades no sistema SISBIEX, usando formulário próprio, em até 30 (trinta) dias após a conclusão do projeto,\napresentar os resultados dos planos de trabalhos na próxima edição do Congresso UFBA.\n\n\n\nResponsabilidades da/o voluntária/o\n\nparticipar de reuniões semanais com a equipe executora em dia e horário a definir.\nparticipar das reuniões de orientação e avaliação com a PROEXT.\nparticipar das atividades promovidas por este projeto de extensão.\nenviar relatório de atividades no sistema SISBIEX, usando formulário próprio, em até 30 (trinta) dias após a conclusão do projeto,\napresentar os resultados dos planos de trabalhos na próxima edição do Congresso UFBA.\n\n\n\nCritérios que serão usados para seleção\nEm ordem de importância:\n\nentrevista em que se avaliará a disponibilidade e adequação da/o candidata/o para a vaga (nota de 0 a 10),\nnível de conhecimento de Métodos Estatísticos (nota de 0 a 10).\nnível de conhecimento da linguagem R (nota de 0 a 10).\n\n\n\nInscrição\nPara se candidatar as vagas, você precisa preencher o seguinte formulário de inscrição: formulário de inscrição.\nO período de inscrição é de 17/07/2023 a 20/07/2023.\nEventuais dúvidas podem ser encaminhadas a gilberto.sassi@ufba.br.\n\n\nResultados\nA/o primeiro colocado ficará com a bolsa PIBIEX, e a/os segunda/a e terceira/o colocada/o serão voluntárias/os vinculados ao PAEX, conforme descrito acima.\nOs coordenadores pedem, gentilmente, que respondam os e-mails confirmando interesse até amanhã, dia 26/07/2023, às 10h00min sem falta.\n\n\n\n\n\n\n  \n    \n      Classificação das/os inscritas/os.\n    \n    \n  \n  \n    \n      Nome\n      Disponibilidade\n      Conhecimento em estatística\n      Conhecimento da linguagem R\n      Nota final\n    \n  \n  \n    Marcos Antonio Arnaldo\n10,00\n8,00\n9,00\n9,00\n    Paulo Ubiratã Ferreira De Oliveira\n10,00\n5,00\n9,00\n8,00\n    Gabriella Santos Rocha\n10,00\n5,00\n5,60\n6,87\n    Álvaro Davi Araújo De Souza\n10,00\n5,00\n5,40\n6,80\n    Neirison Nepomuceno Lima\n9,00\n6,00\n5,00\n6,67\n    Isaac Silva Borges\n6,00\n5,75\n7,50\n6,42\n    Thiago Santos Rodrigues Rodolfo\n9,00\n5,00\n5,00\n6,33\n    Josemar Santos Oliveira\n6,00\n6,00\n5,00\n5,67\n    Alex Rebouças Pereira\n0,00\n0,00\n0,00\n0,00\n    Amanda Da Silva Santos\n0,00\n0,00\n0,00\n0,00\n    Ana Luísa Dos Santos Jaqueira\n0,00\n0,00\n0,00\n0,00\n    Beatriz Silveira Santos Machado\n0,00\n0,00\n0,00\n0,00\n    Carlos Alberto Araújo Pereira\n0,00\n0,00\n0,00\n0,00\n    Ellen Cristina Paixão Nunes\n0,00\n0,00\n0,00\n0,00\n    Erlane Santos De Jesus\n0,00\n0,00\n0,00\n0,00\n    Jonathan Xavier Pintto\n0,00\n0,00\n0,00\n0,00\n    João Vitor Moreira De Jesus\n0,00\n0,00\n0,00\n0,00\n    Kalila Martins Ferraz Lebrão\n0,00\n0,00\n0,00\n0,00\n    Keila Mayane Pereira Dos Santos Andrade\n0,00\n0,00\n0,00\n0,00\n    Kevely Wiliam De Jesus Santos\n0,00\n0,00\n0,00\n0,00\n    Larissa Vitória Carneiro\n0,00\n0,00\n0,00\n0,00\n    Lucas Da Silva Bonfim\n0,00\n0,00\n0,00\n0,00\n    Matheus Conceição Varela\n0,00\n0,00\n0,00\n0,00\n    Raquel Lopes Ribeiro\n0,00\n0,00\n0,00\n0,00\n    Regiane De Jesus Sousa\n0,00\n0,00\n0,00\n0,00\n    Ricardo Dos Santos De Lima\n0,00\n0,00\n0,00\n0,00\n    Rute Lopes Ribeiro\n0,00\n0,00\n0,00\n0,00\n    Sellton Tanajura Nunes\n0,00\n0,00\n0,00\n0,00\n    Tainara Vitória Santos Da Costa\n0,00\n0,00\n0,00\n0,00\n    Thainá Martins Silva\n0,00\n0,00\n0,00\n0,00\n    Vitor Lima Santos Dos Santos\n0,00\n0,00\n0,00\n0,00\n  \n  \n  \n\n\n\n\n\n\n\n\n\n\n\n\n\n© 2023 R para Ciência de Dados 🖤 by Carolina Paraíba e Gilberto Sassi"
-  },
-  {
-    "objectID": "paginas/material/quarto/quarto.html",
-    "href": "paginas/material/quarto/quarto.html",
-    "title": "R para Ciência de Dados: Quarto",
-    "section": "",
-    "text": "Página do curso do primeiro semestre de 2023: rmarkdown.simple.ink\n\n\n\n\n\n© 2023 R para Ciência de Dados 🖤 by Carolina Paraíba e Gilberto Sassi"
-  },
-  {
-    "objectID": "paginas/material/programacao/programacao.html",
-    "href": "paginas/material/programacao/programacao.html",
-    "title": "R para Ciência de Dados: Introdução à programação em R",
-    "section": "",
-    "text": "Slides\n\n\n\narquivos.zip\n\n\n\nNÃO RECORTE NEM APAGUE NADA DESTE ARQUIVO\nAPENAS COPIE O CÓDIGO\nhttps://codeshare.io/r9m9g6\n\n\n\nNeste curso, a IDE vamos utilizar é o RStudio. Outras opções populares em ciência de dados são o VScode da Microsoft e JupyterLab, caso você tenha familiaridade ou já trabalhe com este editores sinta a vontade para usá-los.\nCaso você não queria ou não possa realizar instalações em seu computador, recomendamos que você use as plataformas Google Colaboratory colab.to/r e/ou RStudio Cloud posit.cloud. Recomendamos o uso da plataforma RStudio Cloud pelo mesmo estilo e aspecto visual do aplicativo RStudio.\n\n\n\nPara instalar o R em seu computador, basta seguir as instruções em cran.r-project.org. É necessário que você instale a versão 4.1 ou superior do R.\n\n\n\nDepois de ter instalado o R, siga as instruções de instalação em posit.co/downloads.\n© 2023 R para Ciência de Dados 🖤 by Carolina Paraíba e Gilberto Sassi"
-  },
-  {
-    "objectID": "paginas/material/programacao/programacao.html#slides",
-    "href": "paginas/material/programacao/programacao.html#slides",
-    "title": "R para Ciência de Dados: Introdução à programação em R",
-    "section": "",
-    "text": "Slides"
-  },
-  {
-    "objectID": "paginas/material/programacao/programacao.html#conjunto-de-dados",
-    "href": "paginas/material/programacao/programacao.html#conjunto-de-dados",
-    "title": "R para Ciência de Dados: Introdução à programação em R",
-    "section": "",
-    "text": "arquivos.zip"
-  },
-  {
-    "objectID": "paginas/material/programacao/programacao.html#código-de-sala-de-aula",
-    "href": "paginas/material/programacao/programacao.html#código-de-sala-de-aula",
-    "title": "R para Ciência de Dados: Introdução à programação em R",
-    "section": "",
-    "text": "NÃO RECORTE NEM APAGUE NADA DESTE ARQUIVO\nAPENAS COPIE O CÓDIGO\nhttps://codeshare.io/r9m9g6"
-  },
-  {
-    "objectID": "paginas/material/programacao/programacao.html#instalação-do-r-e-do-rstudio",
-    "href": "paginas/material/programacao/programacao.html#instalação-do-r-e-do-rstudio",
-    "title": "R para Ciência de Dados: Introdução à programação em R",
-    "section": "",
-    "text": "Neste curso, a IDE vamos utilizar é o RStudio. Outras opções populares em ciência de dados são o VScode da Microsoft e JupyterLab, caso você tenha familiaridade ou já trabalhe com este editores sinta a vontade para usá-los.\nCaso você não queria ou não possa realizar instalações em seu computador, recomendamos que você use as plataformas Google Colaboratory colab.to/r e/ou RStudio Cloud posit.cloud. Recomendamos o uso da plataforma RStudio Cloud pelo mesmo estilo e aspecto visual do aplicativo RStudio."
-  },
-  {
-    "objectID": "paginas/material/programacao/programacao.html#para-instalar-o-r",
-    "href": "paginas/material/programacao/programacao.html#para-instalar-o-r",
-    "title": "R para Ciência de Dados: Introdução à programação em R",
-    "section": "",
-    "text": "Para instalar o R em seu computador, basta seguir as instruções em cran.r-project.org. É necessário que você instale a versão 4.1 ou superior do R."
-  },
-  {
-    "objectID": "paginas/material/programacao/programacao.html#para-instalar-o-rstudio",
-    "href": "paginas/material/programacao/programacao.html#para-instalar-o-rstudio",
-    "title": "R para Ciência de Dados: Introdução à programação em R",
-    "section": "",
-    "text": "Depois de ter instalado o R, siga as instruções de instalação em posit.co/downloads."
-  },
-  {
-    "objectID": "paginas/eventos.html",
-    "href": "paginas/eventos.html",
-    "title": "Ciência de Dados",
-    "section": "",
-    "text": "Em breve…\n\n\n\n\n© 2023 R para Ciência de Dados 🖤 by Carolina Paraíba e Gilberto Sassi"
-  },
-  {
-    "objectID": "paginas/material/regressao-logistica/regressao-logistica.html",
-    "href": "paginas/material/regressao-logistica/regressao-logistica.html",
-    "title": "R para Ciência de Dados: Regressão Logística",
-    "section": "",
-    "text": "Aula\n\n\n\ndados_cdrl\n\n\n\nNeste curso, a IDE vamos utilizar é o RStudio. Outras opções populares em ciência de dados são o VScode da Microsoft e JupyterLab, caso você tenha familiaridade ou já trabalhe com este editores sinta a vontade para usá-los.\nCaso você não queria ou não possa realizar instalações em seu computador, recomendamos que você use as plataformas Google Colaboratory colab.to/r e/ou RStudio Cloud posit.cloud. Recomendamos o uso da plataforma RStudio Cloud pelo mesmo estilo e aspecto visual do aplicativo RStudio.\n\n\n\nPara instalar o R em seu computador, basta seguir as instruções em cran.r-project.org. É necessário que você instale a versão 4.1 ou superior do R.\n\n\n\nDepois de ter instalado o R, siga as instruções de instalação em posit.co/downloads.\n© 2023 R para Ciência de Dados 🖤 by Carolina Paraíba e Gilberto Sassi"
-  },
-  {
-    "objectID": "paginas/material/regressao-logistica/regressao-logistica.html#slides",
-    "href": "paginas/material/regressao-logistica/regressao-logistica.html#slides",
-    "title": "R para Ciência de Dados: Regressão Logística",
-    "section": "",
-    "text": "Aula"
-  },
-  {
-    "objectID": "paginas/material/regressao-logistica/regressao-logistica.html#conjunto-de-dados",
-    "href": "paginas/material/regressao-logistica/regressao-logistica.html#conjunto-de-dados",
-    "title": "R para Ciência de Dados: Regressão Logística",
-    "section": "",
-    "text": "dados_cdrl"
-  },
-  {
-    "objectID": "paginas/material/regressao-logistica/regressao-logistica.html#instalação-do-r-e-do-rstudio",
-    "href": "paginas/material/regressao-logistica/regressao-logistica.html#instalação-do-r-e-do-rstudio",
-    "title": "R para Ciência de Dados: Regressão Logística",
-    "section": "",
-    "text": "Neste curso, a IDE vamos utilizar é o RStudio. Outras opções populares em ciência de dados são o VScode da Microsoft e JupyterLab, caso você tenha familiaridade ou já trabalhe com este editores sinta a vontade para usá-los.\nCaso você não queria ou não possa realizar instalações em seu computador, recomendamos que você use as plataformas Google Colaboratory colab.to/r e/ou RStudio Cloud posit.cloud. Recomendamos o uso da plataforma RStudio Cloud pelo mesmo estilo e aspecto visual do aplicativo RStudio."
-  },
-  {
-    "objectID": "paginas/material/regressao-logistica/regressao-logistica.html#para-instalar-o-r",
-    "href": "paginas/material/regressao-logistica/regressao-logistica.html#para-instalar-o-r",
-    "title": "R para Ciência de Dados: Regressão Logística",
-    "section": "",
-    "text": "Para instalar o R em seu computador, basta seguir as instruções em cran.r-project.org. É necessário que você instale a versão 4.1 ou superior do R."
-  },
-  {
-    "objectID": "paginas/material/regressao-logistica/regressao-logistica.html#para-instalar-o-rstudio",
-    "href": "paginas/material/regressao-logistica/regressao-logistica.html#para-instalar-o-rstudio",
-    "title": "R para Ciência de Dados: Regressão Logística",
-    "section": "",
-    "text": "Depois de ter instalado o R, siga as instruções de instalação em posit.co/downloads."
-  },
-  {
-    "objectID": "paginas/material/exploracao-visualizacao/exploracao-visualizacao.html",
-    "href": "paginas/material/exploracao-visualizacao/exploracao-visualizacao.html",
-    "title": "R para Ciência de Dados: Exploração e Visualização de Dados",
-    "section": "",
-    "text": "Infelizmente, a segunda aula que seria dia 03/11/2023 está cancelada, pois o campus Ondina/Federação da UFBA estará fechado por causa do feriado prolongado de Finados. Então, a segunda aula será remarcada para o dia 10/11/2023.\nLembrando que dia 27/10/2023 não teremos aula.\n\n\n\nslides\n\n\n\neconomia_us.xlsx estudantes.xlsx renda_vida.xlsx\n\n\n\nNeste curso, a IDE vamos utilizar é o RStudio. Outras opções populares em ciência de dados são o VScode da Microsoft e JupyterLab, caso você tenha familiaridade ou já trabalhe com este editores sinta a vontade para usá-los.\nCaso você não queria ou não possa realizar instalações em seu computador, recomendamos que você use as plataformas Google Colaboratory colab.to/r e/ou RStudio Cloud posit.cloud. Recomendamos o uso da plataforma RStudio Cloud pelo mesmo estilo e aspecto visual do aplicativo RStudio.\n\n\n\nPara instalar o R em seu computador, basta seguir as instruções em cran.r-project.org. É necessário que você instale a versão 4.1 ou superior do R.\n\n\n\nDepois de ter instalado o R, siga as instruções de instalação em posit.co/downloads.\n© 2023 R para Ciência de Dados 🖤 by Carolina Paraíba e Gilberto Sassi"
-  },
-  {
-    "objectID": "paginas/material/exploracao-visualizacao/exploracao-visualizacao.html#slides",
-    "href": "paginas/material/exploracao-visualizacao/exploracao-visualizacao.html#slides",
-    "title": "R para Ciência de Dados: Exploração e Visualização de Dados",
-    "section": "",
-    "text": "slides"
-  },
-  {
-    "objectID": "paginas/material/exploracao-visualizacao/exploracao-visualizacao.html#conjunto-de-dados",
-    "href": "paginas/material/exploracao-visualizacao/exploracao-visualizacao.html#conjunto-de-dados",
-    "title": "R para Ciência de Dados: Exploração e Visualização de Dados",
-    "section": "",
-    "text": "economia_us.xlsx estudantes.xlsx renda_vida.xlsx"
-  },
-  {
-    "objectID": "paginas/material/exploracao-visualizacao/exploracao-visualizacao.html#instalação-do-r-e-do-rstudio",
-    "href": "paginas/material/exploracao-visualizacao/exploracao-visualizacao.html#instalação-do-r-e-do-rstudio",
-    "title": "R para Ciência de Dados: Exploração e Visualização de Dados",
-    "section": "",
-    "text": "Neste curso, a IDE vamos utilizar é o RStudio. Outras opções populares em ciência de dados são o VScode da Microsoft e JupyterLab, caso você tenha familiaridade ou já trabalhe com este editores sinta a vontade para usá-los.\nCaso você não queria ou não possa realizar instalações em seu computador, recomendamos que você use as plataformas Google Colaboratory colab.to/r e/ou RStudio Cloud posit.cloud. Recomendamos o uso da plataforma RStudio Cloud pelo mesmo estilo e aspecto visual do aplicativo RStudio."
-  },
-  {
-    "objectID": "paginas/material/exploracao-visualizacao/exploracao-visualizacao.html#para-instalar-o-r",
-    "href": "paginas/material/exploracao-visualizacao/exploracao-visualizacao.html#para-instalar-o-r",
-    "title": "R para Ciência de Dados: Exploração e Visualização de Dados",
-    "section": "",
-    "text": "Para instalar o R em seu computador, basta seguir as instruções em cran.r-project.org. É necessário que você instale a versão 4.1 ou superior do R."
-  },
-  {
-    "objectID": "paginas/material/exploracao-visualizacao/exploracao-visualizacao.html#para-instalar-o-rstudio",
-    "href": "paginas/material/exploracao-visualizacao/exploracao-visualizacao.html#para-instalar-o-rstudio",
-    "title": "R para Ciência de Dados: Exploração e Visualização de Dados",
-    "section": "",
-    "text": "Depois de ter instalado o R, siga as instruções de instalação em posit.co/downloads."
-  },
-  {
-    "objectID": "paginas/material/cd-docentes/cd-docentes.html",
-    "href": "paginas/material/cd-docentes/cd-docentes.html",
-    "title": "Ciência de Dados para Docentes usando R",
-    "section": "",
-    "text": "aula\n\n\n\nestudantes\neconomia_us\nrenda_vida\n\n\n\nNeste curso, a IDE vamos utilizar é o RStudio. Outras opções populares em ciência de dados são o VScode da Microsoft e JupyterLab, caso você tenha familiaridade ou já trabalhe com este editores sinta a vontade para usá-los.\nCaso você não queria ou não possa realizar instalações em seu computador, recomendamos que você use as plataformas Google Colaboratory colab.to/r e/ou RStudio Cloud posit.cloud. Recomendamos o uso da plataforma RStudio Cloud pelo mesmo estilo e aspecto visual do aplicativo RStudio.\n\n\n\nPara instalar o R em seu computador, basta seguir as instruções em cran.r-project.org. É necessário que você instale a versão 4.1 ou superior do R.\n\n\n\nDepois de ter instalado o R, siga as instruções de instalação em posit.co/downloads.\n© 2023 R para Ciência de Dados 🖤 by Carolina Paraíba e Gilberto Sassi"
-  },
-  {
-    "objectID": "paginas/material/cd-docentes/cd-docentes.html#slides",
-    "href": "paginas/material/cd-docentes/cd-docentes.html#slides",
-    "title": "Ciência de Dados para Docentes usando R",
-    "section": "",
-    "text": "aula"
-  },
-  {
-    "objectID": "paginas/material/cd-docentes/cd-docentes.html#conjuntos-de-dados",
-    "href": "paginas/material/cd-docentes/cd-docentes.html#conjuntos-de-dados",
-    "title": "Ciência de Dados para Docentes usando R",
-    "section": "",
-    "text": "estudantes\neconomia_us\nrenda_vida"
-  },
-  {
-    "objectID": "paginas/material/cd-docentes/cd-docentes.html#instalação-do-r-e-do-rstudio",
-    "href": "paginas/material/cd-docentes/cd-docentes.html#instalação-do-r-e-do-rstudio",
-    "title": "Ciência de Dados para Docentes usando R",
-    "section": "",
-    "text": "Neste curso, a IDE vamos utilizar é o RStudio. Outras opções populares em ciência de dados são o VScode da Microsoft e JupyterLab, caso você tenha familiaridade ou já trabalhe com este editores sinta a vontade para usá-los.\nCaso você não queria ou não possa realizar instalações em seu computador, recomendamos que você use as plataformas Google Colaboratory colab.to/r e/ou RStudio Cloud posit.cloud. Recomendamos o uso da plataforma RStudio Cloud pelo mesmo estilo e aspecto visual do aplicativo RStudio."
-  },
-  {
-    "objectID": "paginas/material/cd-docentes/cd-docentes.html#para-instalar-o-r",
-    "href": "paginas/material/cd-docentes/cd-docentes.html#para-instalar-o-r",
-    "title": "Ciência de Dados para Docentes usando R",
-    "section": "",
-    "text": "Para instalar o R em seu computador, basta seguir as instruções em cran.r-project.org. É necessário que você instale a versão 4.1 ou superior do R."
-  },
-  {
-    "objectID": "paginas/material/cd-docentes/cd-docentes.html#para-instalar-o-rstudio",
-    "href": "paginas/material/cd-docentes/cd-docentes.html#para-instalar-o-rstudio",
-    "title": "Ciência de Dados para Docentes usando R",
-    "section": "",
-    "text": "Depois de ter instalado o R, siga as instruções de instalação em posit.co/downloads."
-  },
-  {
-    "objectID": "paginas/editais/editais-abertos.html",
-    "href": "paginas/editais/editais-abertos.html",
-    "title": "Editais abertos",
-    "section": "",
-    "text": "Editais abertos\nEm breve.\n\n\n\n\n\n© 2023 R para Ciência de Dados 🖤 by Carolina Paraíba e Gilberto Sassi"
-  },
-  {
-    "objectID": "paginas/cade.html",
-    "href": "paginas/cade.html",
-    "title": "Ciência de Dados",
-    "section": "",
-    "text": "Em breve…\n\n\n\n\n© 2023 R para Ciência de Dados 🖤 by Carolina Paraíba e Gilberto Sassi"
-  },
-  {
     "objectID": "paginas/equipe.html",
     "href": "paginas/equipe.html",
     "title": "Equipe técnica",
@@ -287,6 +21,41 @@
     "text": "Gabriella Santos Rocha tem 20 anos, é estudante do 3° semestre do Bacharelado Interdisciplinar em saúde pela UFBA. Nasceu e cresceu no interior da Bahia em uma cidade chamada Maracás,e Gosta muito de conhecer e aprender coisas novas.\n\n\n\n\n\nMarcos Antonio Arnaldo é um estudante de Engenharia Mecânica na UFBA. Paralelamente à sua jornada acadêmica, ele se dedica ao estudo da ciência de dados, unindo sua paixão por conhecimento e inovação tecnológica. GitHub: github.com/marcossk7\n\n\n\n\n\nThiago Rodolfo é aluno do curso Licenciatura em Computação na UFBA. Apaixonado por tecnologia, buscado conciliar seus estudos em ciências de dados aos objetivos profissionais e acadêmicos."
   },
   {
+    "objectID": "paginas/cade/tabela-frequencias/tabela-frequencias.html",
+    "href": "paginas/cade/tabela-frequencias/tabela-frequencias.html",
+    "title": "Como criar tabela de distribuição de frequências usando o R?",
+    "section": "",
+    "text": "Neste artigo, eu vou mostrar como usar a linguagem R para criar tabelas de distribuição de frequências para variáveis categóricas, variáveis discretas e variáveis contínuas. A primeira coisa que um analista pode fazer é contar! A contagem ou frequência, como falamos em Estatística e Ciência de Dados, permite que você detecte valores que são comuns e valores pouco usuais e também permite que você encontre diversas características da variável. Além disso, você pode usar tabelas de distribuição de frequências para comunicar informações e construir relatórios e artigos.\nPara simplificar a sua vida, assim espero, eu dividi este texto em três partes: tabelas de distribuição de frequências para variáveis categóricas; tabelas de distribuição de frequências para variáveis discretas; e tabelas de distribuição de frequências para variáveis contínuas. E, para ilustrar tudo que eu estiver falando, eu vou usar um conjunto de dados do livro Estatística Básica: empresa.xlsx que é um conjunto de dados com informações socioeconômicas de 36 funcionários de um departamento de contabilidade.\nNo que segue, vamos usar o framework tidyverse e o pacote janitor.\n© 2023 R para Ciência de Dados 🖤 by Carolina Paraíba e Gilberto Sassi"
+  },
+  {
+    "objectID": "paginas/cade/tabela-frequencias/tabela-frequencias.html#tabelas-de-distribuição-de-frequências-para-variáveis-categóricas",
+    "href": "paginas/cade/tabela-frequencias/tabela-frequencias.html#tabelas-de-distribuição-de-frequências-para-variáveis-categóricas",
+    "title": "Como criar tabela de distribuição de frequências usando o R?",
+    "section": "Tabelas de distribuição de frequências para variáveis categóricas",
+    "text": "Tabelas de distribuição de frequências para variáveis categóricas\nSuponha que você tenha uma variável categórica \\(X\\) com suporte \\(\\{A_1,\\dots, A_k\\}\\), então a ideia é contar quantas vezes \\(A_1\\) aparece, \\(A_2\\) aparece e assim por diante. Além disso, você pode calcular a porcentagem de vezes que \\(A_1\\) aparece, a porcentagem \\(A_2\\) de vezes que aparece e assim sucessivamente.\nPara ilustrar, considere a variável escolaridade onde o pesquisador armazenou o grau de escolaridade de cada um dos 36 funcionários. A primeira coisa que você precisa fazer é carregar os pacotes e os dados.\n\nlibrary(readxl)\nlibrary(janitor)\nlibrary(tidyverse)\n\n\n# carregando o arquivo\ndf_dados &lt;- read_xlsx(\"empresa.xlsx\")\n\n# uma olhadinha rápida nos dados carregados\nglimpse(df_dados) \n\nRows: 36\nColumns: 6\n$ estado_civil  &lt;chr&gt; \"solteiro\", \"casado\", \"casado\", \"solteiro\", \"solteiro\", …\n$ escolaridade  &lt;chr&gt; \"ensino fundamental\", \"ensino fundamental\", \"ensino fund…\n$ numero_filhos &lt;dbl&gt; 0, 1, 2, 0, 0, 0, 0, 0, 1, 0, 2, 0, 0, 3, 0, 0, 1, 2, 0,…\n$ salario       &lt;dbl&gt; 4.00, 4.56, 5.25, 5.73, 6.26, 6.66, 6.86, 7.39, 7.59, 7.…\n$ idade         &lt;dbl&gt; 26, 32, 36, 20, 40, 28, 41, 43, 34, 23, 33, 27, 37, 44, …\n$ procedencia   &lt;chr&gt; \"interior\", \"capital\", \"capital\", \"outra\", \"outra\", \"int…\n\n\nSe tudo estiver correto, já estamos prontos para construir a tabela de distribuição de frequência, ou seja, contar quantos funcionários têm ensino fundamental, quantos funcionários têm ensino médio e quantos funcionários têm superior.\nPrimeiro usamos a função tabyl do pacote janitor para contar sem incluir o total e sem o sinal de porcentagem na coluna de porcentagem. Depois usamos adorn_totals e adorn_pct_formatting para adicionar o total na tabela e o sinal de porcentagem, respectivamente. Finalmente, usamos a função rename do pacote dplyr para traduzir os nomes da tabela para o português. Repare que usamos o operador pipe |&gt; para simplificar a nossa codificação.\n\ntabyl(df_dados, escolaridade) |&gt; # função que realiza a contagem\n adorn_totals() |&gt; # adiciona a linha de total a tabela\n adorn_pct_formatting(digits = 2, affix_sign = FALSE) |&gt; # acrescenta porcentagem na tabela sem o sinal de %\n rename(\"Frequência\" = n, \"Porcentagem\" = percent) # nomes em português\n\n       escolaridade Frequência Porcentagem\n ensino fundamental         12       33.33\n       ensino médio         18       50.00\n           superior          6       16.67\n              Total         36      100.00"
+  },
+  {
+    "objectID": "paginas/cade/tabela-frequencias/tabela-frequencias.html#tabelas-de-distribuição-de-frequências-para-variáveis-discretas",
+    "href": "paginas/cade/tabela-frequencias/tabela-frequencias.html#tabelas-de-distribuição-de-frequências-para-variáveis-discretas",
+    "title": "Como criar tabela de distribuição de frequências usando o R?",
+    "section": "Tabelas de distribuição de frequências para variáveis discretas",
+    "text": "Tabelas de distribuição de frequências para variáveis discretas\nPara uma variável discreta, usamos uma abordagem semelhante a abordagem usada para variáveis categóricas. Suponha que \\(X\\) seja uma variável discreta com suporte \\(\\{x_1, \\dots, x_k\\}\\). Então, vamos contar quantas vezes o valor \\(x_1\\) apareceu no conjunto de dados, quantas vezes apareceu o valor \\(x_2\\) e assim por diante. Além disso, também vamos calcular a porcentagem de vezes que o valor \\(x_1\\) ocorreu no conjunto de dados, a porcentagem de vezes que o valor \\(x_2\\) e assim por diante.\n\ntabyl(df_dados, numero_filhos) |&gt;\n  adorn_totals() |&gt;\n  adorn_pct_formatting(digits = 2, affix_sign = FALSE) |&gt;\n  rename(\"Número de filhos\" = numero_filhos, \"Frequência\" = n, \"Porcentagem\" = percent)\n\n Número de filhos Frequência Porcentagem\n                0         20       55.56\n                1          5       13.89\n                2          7       19.44\n                3          3        8.33\n                5          1        2.78\n            Total         36      100.00"
+  },
+  {
+    "objectID": "paginas/cade/tabela-frequencias/tabela-frequencias.html#tabelas-de-distribuição-de-frequências-para-variáveis-contínuas",
+    "href": "paginas/cade/tabela-frequencias/tabela-frequencias.html#tabelas-de-distribuição-de-frequências-para-variáveis-contínuas",
+    "title": "Como criar tabela de distribuição de frequências usando o R?",
+    "section": "Tabelas de distribuição de frequências para variáveis contínuas",
+    "text": "Tabelas de distribuição de frequências para variáveis contínuas\nE se quisermos construir uma tabela de distribuição de frequências para uma variável contínua? No conjunto de dados empresa.xlsx, a variável salario é contínua e se você olhar no arquivo empresa.xlsx você pode reparar que nenhum funcionário tem salário igual ao outro. Consequentemente, se usarmos a técnica que vimos nas seções anteriores, teremos uma tabela com 36 valores, que é basicamente uma cópia dos dados originais, e ficaria bem complicado de encontrar características desta variável.\nNeste caso, agregamos os valores em intervalos. Os intervalos podem ser determinados de diversas formas. O regulador ou o mercado pode especificar intervalos para uma variável, por exemplo os intervalos usados na medição de pressão arterial podem ser especificados pelo governo. Estudos ou pesquisas anteriores podem indicar quais intervalos você deveria usar em tabela de distribuição de frequências.\nE se você não tem acesso a estudos anteriores, nem regulador, nem mercado para indicar como construir os intervalos? Neste caso, você pode categorizar a variável contínua em \\(k\\) intervalos de mesmo tamanho segundo a Regra de Sturge, que é dada por \\[\nk = \\lfloor 1 + \\log2(n) \\rfloor,\n\\] onde \\(n\\) é o número de linhas (ou o tamanho da amostra) do conjunto de dados, e \\(\\lfloor x \\rfloor\\) é o maior número inteiro menor ou igual a \\(x\\) (equivale a função arrendonda.para.baixo do google sheets).\nEm nosso exemplo, não temos regulador, nem mercado e nem estudos anteriores para nos indicar os intervalos para usar com a variável salario do conjuto de dados empresa.xlsx. Então, vamos usar a Regra de Sturge, ou seja, vamos categorizar a variável salario agregando os valores de salario em \\(k=\\lfloor 1 + \\log2(36) \\rfloor=6\\) intervalos de mesmo tamanho usando a função cut.\n\n# limites dos intervalos\nbreaks &lt;- with(df_dados, seq(from = min(salario), to = max(salario), length.out = 6))\n\n# categorizando salario em 6 intervalos\ndf_dados &lt;- mutate(df_dados, salario_cat = cut(salario, breaks, include.lowest = T, right = F))\n\nApós categorização, podemos usar as técnicas que aprendamos para variáveis categóricas.\n\ntabyl(df_dados, salario_cat) |&gt;\n  adorn_totals() |&gt;\n  adorn_pct_formatting(digits = 2, affix_sign = FALSE) |&gt;\n  rename(\"Salário\" = salario_cat, \"Frequência\" = n, \"Porcentagem\" = percent)\n\n     Salário Frequência Porcentagem\n    [4,7.86)         10       27.78\n [7.86,11.7)         12       33.33\n [11.7,15.6)          7       19.44\n [15.6,19.4)          6       16.67\n [19.4,23.3]          1        2.78\n       Total         36      100.00"
+  },
+  {
+    "objectID": "paginas/catalogo.html",
+    "href": "paginas/catalogo.html",
+    "title": "Catálogo de cursos",
+    "section": "",
+    "text": "Ciência de Dados para Docentes usando o R\n\n\nExploração e visualização de dados\n\n\nIntervalos de Confiança e Testes de Hipóteses\n\n\nIntrodução à Programação em R\n\n\nModelos de Análise de Variância (Anova)\n\n\nProdução de Texto usando Rmarkdown e Quarto\n\n\nRegressão Linear Simples e Múltipla\n\n\nRegressão Logística\n\n\n\n\n\n\n\n© 2023 R para Ciência de Dados 🖤 by Carolina Paraíba e Gilberto Sassi"
+  },
+  {
     "objectID": "paginas/catalogo/modelo-de-analise-de-variancia.html",
     "href": "paginas/catalogo/modelo-de-analise-de-variancia.html",
     "title": "Modelos de Análise de Variância (Anova)",
@@ -294,18 +63,18 @@
     "text": "Resumo\nO objetivo deste curso é compartilhar o conhecimento de análise estatística de dados usando a linguagem R numa interação dialógica da comunidade acadêmica com a sociedade por meio da troca de conhecimentos. A ação cumprirá o papel de aproximar a academia da comunidade, popularizando a ciência Estatística e trazendo para dentro da universidade a experiência e a grande demanda que profissionais têm de usar Estatística e Ciência de Dados. O curso se propõe a apresentar a linguagem R e os princípios de modelos de análise de variância, abordando delineamentos completamente aleatorizados e delineamentos aleatorizado em blocos, usando os frameworks tidyverse e tidymodels. A ação procurará integrar discentes em sua equipe organizadora. O curso terá 8 horas com 2 encontros presenciais com duração de quatro horas nos laboratórios de ensino de informática do IME-UFBA, será gratuito com certificado emitido pela UFBA e terá 15 vagas.\n\n\nÁrea\nDe acordo com o disposto na Política Nacional de Extensão, este Projeto de Extensão está vinculado às áreas temáticas descritas a seguir.\n\nLinha Programática: Educação profissional;\nÁrea(s) de Conhecimento(s): Ciências Exatas e da Terra;\nÁrea(s) Temáticas(s): Tecnologia.\n\n\n\nCoordenação\n\nProfessor Doutor Gilberto Pereira Sassi, Departamento de Estatística, Instituto de Matemática e Estatística, Universidade Federal da Bahia.\nProfessora Doutora Carolina Costa Mota Paraíba, Departamento de Estatística, Instituto de Matemática e Estatística, Universidade Federal da Bahia.\n\nJustificativa da necessidade do segundo coordenador: a Profa. Carolina é responsável por coordenar a ampla divulgação do curso entre os profissionais que fazem uso de análise estatística de dados, o processo de inscrição, a construção do site do curso, a elaboração de material didático e manutenção das bases de dados usadas neste curso.\n\n\nUniversidade universitária\nInstituto de Matemática e Estatística da Universidade Federal da Bahia.\n\n\nPúblico alvo\nProfissionais que usam análises estatísticas de dados.\n\n\nNúmero esperado de participantes\n20\n\n\nLocal de realização\nLaboratório de ensino de informática do IME-UFBA.\n\n\nMetodologia\nMetodologia do curso será de aulas expositivas e práticas em laboratório de informática usando a linguagem R.\n\n\nConteúdo programático\n\nBreve revisão de R, RStudio e tidyverse\nDelineamento Completamente Aleatorizado.\nDelineamento Aleatorizado em Blocos.\n\n\n\n\n\n\n© 2023 R para Ciência de Dados 🖤 by Carolina Paraíba e Gilberto Sassi"
   },
   {
-    "objectID": "paginas/catalogo/regressao-logistica.html",
-    "href": "paginas/catalogo/regressao-logistica.html",
-    "title": "Regressão Logística",
+    "objectID": "paginas/catalogo/ciencia-de-dados-para-docentes.html",
+    "href": "paginas/catalogo/ciencia-de-dados-para-docentes.html",
+    "title": "Ciência de Dados para Docentes usando o R",
     "section": "",
-    "text": "Resumo\nO objetivo deste curso é compartilhar o conhecimento de análise estatística de dados usando a linguagem R numa interação dialógica da comunidade acadêmica com a sociedade por meio da troca de conhecimentos. A ação cumprirá o papel de aproximar a academia da comunidade, popularizando a ciência Estatística e trazendo para dentro da universidade a experiência e a grande demanda que profissionais têm de usar Estatística e Ciência de Dados. A ação procurará integrar discentes em sua equipe organizadora. O curso se propõe a apresentar a linguagem R e os princípios de modelos lineares generalizados, abordando o tópico de regressão logística usando os frameworks tidyverse e tidymodels, especialmente os pacotes broom e gglm. O curso terá 8 horas com 2 encontros presenciais com duração de quatro horas nos laboratórios de ensino de informática do IME-UFBA, será gratuito com certificado emitido pela UFBA e terá 20 vagas.\n\n\nÁrea\nDe acordo com o disposto na Política Nacional de Extensão, este Projeto de Extensão está vinculado às áreas temáticas descritas a seguir.\n\nLinha Programática: Educação profissional;\nÁrea(s) de Conhecimento(s): Ciências Exatas e da Terra;\nÁrea(s) Temáticas(s): Tecnologia.\n\n\n\nCoordenação\n\nProfessor Doutor Gilberto Pereira Sassi, Departamento de Estatística, Instituto de Matemática e Estatística, Universidade Federal da Bahia.\nProfessora Doutora Carolina Costa Mota Paraíba, Departamento de Estatística, Instituto de Matemática e Estatística, Universidade Federal da Bahia.\n\nJustificativa da necessidade do segundo coordenador: a Profa. Carolina é responsável por coordenar a ampla divulgação do curso entre os profissionais que fazem uso de análise estatística de dados, o processo de inscrição, a construção do site do curso, a elaboração de material didático e manutenção das bases de dados usadas neste curso.\n\n\nUniversidade universitária\nInstituto de Matemática e Estatística da Universidade Federal da Bahia.\n\n\nPúblico alvo\nProfissionais que usam análises estatísticas de dados.\n\n\nNúmero esperado de participantes\n20\n\n\nLocal de realização\nLaboratório de ensino de informática do IME-UFBA.\n\n\nMetodologia\nMetodologia do curso será de aulas expositivas e práticas em laboratório de informática usando a linguagem R.\n\n\nConteúdo programático\n\nIntrodução\nModelo de Regressão Logística\nInferência\nAnálise de Resíduos\nDiagnóstico de Influência\nClassificação\nCurva ROC\n\n\n\n\n\n\n© 2023 R para Ciência de Dados 🖤 by Carolina Paraíba e Gilberto Sassi"
+    "text": "Resumo\nO curso irá compartilhar o conhecimento de análise estatística de dados usando a linguagem R numa interação dialógica da comunidade acadêmica com a sociedade por meio da troca de conhecimentos. A ação irá aproximar a academia da comunidade, popularizando a ciência Estatística e trazendo para dentro da universidade a experiência e a grande demanda que profissionais têm de usar Estatística e Ciência de Dados. O objetivo do curso é apresentar a linguagem R, e os princípios de exploração e visualização de dados utilizando o framework tidyverse especialmente os pacotes ggplot2 e dplyr, para docentes de diferentes áreas de conhecimento, do ensino fundamental, médio e superior, que fazem uso de análise de dados. O curso irá apresentar a linguagem R aos professores, que poderá servir como ferramenta didática, com a vantagem de ser um programa de código aberto e gratuito. O curso terá 12 horas com 3 encontros presenciais de quatro horas nos laboratórios do IME-UFBA e será gratuito.\n\n\nÁrea\nDe acordo com o disposto na Política Nacional de Extensão, este Projeto de Extensão está vinculado às áreas temáticas descritas a seguir.\n\nLinha Programática: Educação profissional;\nÁrea(s) de Conhecimento(s): Ciências Exatas e da Terra;\nÁrea(s) Temáticas(s): Tecnologia.\n\n\n\nCoordenação\n\nProfessor Doutor Gilberto Pereira Sassi, Departamento de Estatística, Instituto de Matemática e Estatística, Universidade Federal da Bahia.\nProfessora Doutora Carolina Costa Mota Paraíba, Departamento de Estatística, Instituto de Matemática e Estatística, Universidade Federal da Bahia.\n\nJustificativa da necessidade do segundo coordenador: a Profa. Carolina é responsável por coordenar a ampla divulgação do curso entre os profissionais que fazem uso de análise estatística de dados, o processo de inscrição, a construção do site do curso, a elaboração de material didático e manutenção das bases de dados usadas neste curso.\n\n\nUniversidade universitária\nInstituto de Matemática e Estatística da Universidade Federal da Bahia.\n\n\nPúblico alvo\nProfissionais que usam análises estatísticas de dados.\n\n\nNúmero esperado de participantes\n20\n\n\nLocal de realização\nLaboratório de ensino de informática do IME-UFBA.\n\n\nMetodologia\nMetodologia do curso será de aulas expositivas e práticas em laboratório de informática usando a linguagem R.\n\n\nConteúdo programático\n\nApresentação da linguagem R;\nApresentação da IDE RStudio\nLeitura de arquivos .xlsx, .csv e .ods\nVisualização de dados usando ggplot2\nMedidas de resumo usando o pacote dplyr\n\n\n\n\n\n\n© 2023 R para Ciência de Dados 🖤 by Carolina Paraíba e Gilberto Sassi"
   },
   {
-    "objectID": "paginas/catalogo/producao-de-texto-usando-rmarkdown.html",
-    "href": "paginas/catalogo/producao-de-texto-usando-rmarkdown.html",
-    "title": "Produção de Texto usando rmarkdown e quarto",
+    "objectID": "paginas/catalogo/introducao-a-programacao.html",
+    "href": "paginas/catalogo/introducao-a-programacao.html",
+    "title": "Introdução à Programação em R",
     "section": "",
-    "text": "Resumo\nO objetivo deste curso é compartilhar o conhecimento da linguagem R numa interação dialógica da comunidade acadêmica com a sociedade por meio da troca de conhecimentos. A ação cumprirá o papel de aproximar a academia da comunidade, popularizando o uso de software livre e da linguagem R e trazendo para dentro da universidade a experiência e a grande demanda que profissionais têm de usar software livre e, em especial, a linguagem R. A ação procurará integrar discentes em sua equipe organizadora. O curso se propõe a apresentar dois pacotes da linguagem R: rmarkdown e quarto, que são especialmente úteis para redação de textos no formato .pdf (incluindo apresentações em beamer), .html (incluindo apresentações apresentações em ioslide), e .docx. O curso terá 8 horas com 2 encontros presenciais com duração de quatro horas nos laboratórios de ensino de informática do IME-UFBA, será gratuito com certificado emitido pela UFBA e terá 20 vagas.\n\n\nÁrea\nDe acordo com o disposto na Política Nacional de Extensão, este Projeto de Extensão está vinculado às áreas temáticas descritas a seguir.\n\nLinha Programática: Educação profissional;\nÁrea(s) de Conhecimento(s): Ciências Exatas e da Terra;\nÁrea(s) Temáticas(s): Tecnologia.\n\n\n\nCoordenação\n\nProfessor Doutor Gilberto Pereira Sassi, Departamento de Estatística, Instituto de Matemática e Estatística, Universidade Federal da Bahia.\nProfessora Doutora Carolina Costa Mota Paraíba, Departamento de Estatística, Instituto de Matemática e Estatística, Universidade Federal da Bahia.\n\nJustificativa da necessidade do segundo coordenador: a Profa. Carolina é responsável por coordenar a ampla divulgação do curso entre os profissionais que fazem uso de análise estatística de dados, o processo de inscrição, a construção do site do curso, a elaboração de material didático e manutenção das bases de dados usadas neste curso.\n\n\nUniversidade universitária\nInstituto de Matemática e Estatística da Universidade Federal da Bahia.\n\n\nPúblico alvo\nProfissionais que usam análises estatísticas de dados.\n\n\nNúmero esperado de participantes\n20\n\n\nLocal de realização\nLaboratório de ensino de informática do IME-UFBA.\n\n\nMetodologia\nmetodologia do curso será de aulas expositivas e práticas em laboratório de informática usando a linguagem R.\n\n\nConteúdo programático\n\nBreve apresentação da linguagem R e RStudio;\nPreparação de documentos pdf usando rmardown (através da linguagem latex): rticle e beamer;\nPreparação de documento html usando rmardown: ioslide e prettydoc, e publicação usando github pages e netlify;\nPreparação de documentos docx usando rmarkdown;\nApresentação de quarto: rmarkdown para python, R e julia.\n\n\n\n\n\n\n© 2023 R para Ciência de Dados 🖤 by Carolina Paraíba e Gilberto Sassi"
+    "text": "Resumo\nO objetivo deste curso é compartilhar o conhecimento de análise estatística de dados usando a linguagem R numa interação dialógica da comunidade acadêmica com a sociedade por meio da troca de conhecimentos. A ação cumprirá o papel de aproximar a academia da comunidade, popularizando a ciência Estatística e trazendo para dentro da universidade a experiência e a grande demanda que profissionais têm de usar Estatística e Ciência de Dados. A ação procurará integrar discentes em sua equipe organizadora. O curso se propõe a apresentar a linguagem R incluindo vetores, matrizes, funções, operadores lógicos, controle de fluxo usando if, for, ifelse, while, as funções apply e map, funções anônimas, operador pipe, e rotinas de otimização. O curso terá 8 horas com 2 encontros presenciais com duração de quatro horas nos laboratórios de ensino de informática do IME-UFBA, será gratuito com certificado emitido pela UFBA e terá 20 vagas.\n\n\nÁrea\nDe acordo com o disposto na Política Nacional de Extensão, este Projeto de Extensão está vinculado às áreas temáticas descritas a seguir.\n\nLinha Programática: Educação profissional;\nÁrea(s) de Conhecimento(s): Ciências Exatas e da Terra;\nÁrea(s) Temáticas(s): Tecnologia.\n\n\n\nCoordenação\n\nProfessor Doutor Gilberto Pereira Sassi, Departamento de Estatística, Instituto de Matemática e Estatística, Universidade Federal da Bahia.\nProfessora Doutora Carolina Costa Mota Paraíba, Departamento de Estatística, Instituto de Matemática e Estatística, Universidade Federal da Bahia.\n\nJustificativa da necessidade do segundo coordenador: a Profa. Carolina é responsável por coordenar a ampla divulgação do curso entre os profissionais que fazem uso de análise estatística de dados, o processo de inscrição, a construção do site do curso, a elaboração de material didático e manutenção das bases de dados usadas neste curso.\n\n\nUniversidade universitária\nInstituto de Matemática e Estatística da Universidade Federal da Bahia.\n\n\nPúblico alvo\nProfissionais que usam análises estatísticas de dados.\n\n\nNúmero esperado de participantes\n20\n\n\nLocal de realização\nLaboratório de ensino de informática do IME-UFBA.\n\n\nMetodologia\nMetodologia do curso será de aulas expositivas e práticas em laboratório de informática usando a linguagem R.\n\n\nConteúdo programático\n\nApresentação da IDE RStudio\nVetores e matriz\nFunções\nControle de fluxo usando if, ifelse, for e while\nFunções apply e map\nFunções anônimas e operador pipe\nOtimização usando optim e nlminb\n\n\n\n\n\n\n© 2023 R para Ciência de Dados 🖤 by Carolina Paraíba e Gilberto Sassi"
   },
   {
     "objectID": "paginas/catalogo/exploracao-visualizacao.html",
@@ -315,10 +84,311 @@
     "text": "Resumo\nO objetivo deste curso é compartilhar o conhecimento de análise estatística de dados usando a linguagem R numa interação dialógica da comunidade acadêmica com a sociedade por meio da troca de conhecimentos. A ação cumprirá o papel de aproximar a academia da comunidade, popularizando a ciência Estatística e trazendo para dentro da universidade a experiência e a grande demanda que profissionais têm de usar Estatística e Ciência de Dados. A ação procurará integrar discentes em sua equipe organizadora. O curso se propõe a apresentar a linguagem R e os princípios de exploração e visualização de dados utilizando o framework tidyverse especialmente os pacotes ggplot2 e dplyr. O curso terá 10 horas com 2 encontros presenciais com duração de quatro horas nos laboratórios de ensino de informática do IME-UFBA, será gratuito com certificado emitido pela UFBA e terá 15 vagas.\n\n\nÁrea\nDe acordo com o disposto na Política Nacional de Extensão, este Projeto de Extensão está vinculado às áreas temáticas descritas a seguir.\n\nLinha Programática: Educação profissional;\nÁrea(s) de Conhecimento(s): Ciências Exatas e da Terra;\nÁrea(s) Temáticas(s): Tecnologia.\n\n\n\nCoordenação\n\nProfessor Doutor Gilberto Pereira Sassi, Departamento de Estatística, Instituto de Matemática e Estatística, Universidade Federal da Bahia.\nProfessora Doutora Carolina Costa Mota Paraíba, Departamento de Estatística, Instituto de Matemática e Estatística, Universidade Federal da Bahia.\n\nJustificativa da necessidade do segundo coordenador: a Profa. Carolina é responsável por coordenar a ampla divulgação do curso entre os profissionais que fazem uso de análise estatística de dados, o processo de inscrição, a construção do site do curso, a elaboração de material didático e manutenção das bases de dados usadas neste curso.\n\n\nUniversidade universitária\nInstituto de Matemática e Estatística da Universidade Federal da Bahia.\n\n\nPúblico alvo\nProfissionais que usam análises estatísticas de dados.\n\n\nNúmero esperado de participantes\n20\n\n\nLocal de realização\nLaboratório de ensino de informática do IME-UFBA.\n\n\nMetodologia\nMetodologia do curso será de aulas expositivas e práticas em laboratório de informática usando a linguagem R.\n\n\nConteúdo programático\n\nApresentação da linguagem R;\nApresentação da IDE RStudio\nLeitura de arquivos .xlsx, .csv e .ods\nVisualização de dados usando ggplot2\nMedidas de resumo usando o pacote dplyr\n\n\n\n\n\n\n© 2023 R para Ciência de Dados 🖤 by Carolina Paraíba e Gilberto Sassi"
   },
   {
+    "objectID": "paginas/material/2023/cd-docentes/cd-docentes.html",
+    "href": "paginas/material/2023/cd-docentes/cd-docentes.html",
+    "title": "Ciência de Dados para Docentes usando R",
+    "section": "",
+    "text": "aula\n\n\n\nestudantes\neconomia_us\nrenda_vida\n\n\n\nNeste curso, a IDE vamos utilizar é o RStudio. Outras opções populares em ciência de dados são o VScode da Microsoft e JupyterLab, caso você tenha familiaridade ou já trabalhe com este editores sinta a vontade para usá-los.\nCaso você não queria ou não possa realizar instalações em seu computador, recomendamos que você use as plataformas Google Colaboratory colab.to/r e/ou RStudio Cloud posit.cloud. Recomendamos o uso da plataforma RStudio Cloud pelo mesmo estilo e aspecto visual do aplicativo RStudio.\n\n\n\nPara instalar o R em seu computador, basta seguir as instruções em cran.r-project.org. É necessário que você instale a versão 4.1 ou superior do R.\n\n\n\nDepois de ter instalado o R, siga as instruções de instalação em posit.co/downloads.\n© 2023 R para Ciência de Dados 🖤 by Carolina Paraíba e Gilberto Sassi"
+  },
+  {
+    "objectID": "paginas/material/2023/cd-docentes/cd-docentes.html#slides",
+    "href": "paginas/material/2023/cd-docentes/cd-docentes.html#slides",
+    "title": "Ciência de Dados para Docentes usando R",
+    "section": "",
+    "text": "aula"
+  },
+  {
+    "objectID": "paginas/material/2023/cd-docentes/cd-docentes.html#conjuntos-de-dados",
+    "href": "paginas/material/2023/cd-docentes/cd-docentes.html#conjuntos-de-dados",
+    "title": "Ciência de Dados para Docentes usando R",
+    "section": "",
+    "text": "estudantes\neconomia_us\nrenda_vida"
+  },
+  {
+    "objectID": "paginas/material/2023/cd-docentes/cd-docentes.html#instalação-do-r-e-do-rstudio",
+    "href": "paginas/material/2023/cd-docentes/cd-docentes.html#instalação-do-r-e-do-rstudio",
+    "title": "Ciência de Dados para Docentes usando R",
+    "section": "",
+    "text": "Neste curso, a IDE vamos utilizar é o RStudio. Outras opções populares em ciência de dados são o VScode da Microsoft e JupyterLab, caso você tenha familiaridade ou já trabalhe com este editores sinta a vontade para usá-los.\nCaso você não queria ou não possa realizar instalações em seu computador, recomendamos que você use as plataformas Google Colaboratory colab.to/r e/ou RStudio Cloud posit.cloud. Recomendamos o uso da plataforma RStudio Cloud pelo mesmo estilo e aspecto visual do aplicativo RStudio."
+  },
+  {
+    "objectID": "paginas/material/2023/cd-docentes/cd-docentes.html#para-instalar-o-r",
+    "href": "paginas/material/2023/cd-docentes/cd-docentes.html#para-instalar-o-r",
+    "title": "Ciência de Dados para Docentes usando R",
+    "section": "",
+    "text": "Para instalar o R em seu computador, basta seguir as instruções em cran.r-project.org. É necessário que você instale a versão 4.1 ou superior do R."
+  },
+  {
+    "objectID": "paginas/material/2023/cd-docentes/cd-docentes.html#para-instalar-o-rstudio",
+    "href": "paginas/material/2023/cd-docentes/cd-docentes.html#para-instalar-o-rstudio",
+    "title": "Ciência de Dados para Docentes usando R",
+    "section": "",
+    "text": "Depois de ter instalado o R, siga as instruções de instalação em posit.co/downloads."
+  },
+  {
+    "objectID": "paginas/material/2023/quarto/quarto.html",
+    "href": "paginas/material/2023/quarto/quarto.html",
+    "title": "R para Ciência de Dados: Quarto",
+    "section": "",
+    "text": "Página do curso do primeiro semestre de 2023: rmarkdown.simple.ink\n\n\n\n\n\n© 2023 R para Ciência de Dados 🖤 by Carolina Paraíba e Gilberto Sassi"
+  },
+  {
+    "objectID": "paginas/cade.html",
+    "href": "paginas/cade.html",
+    "title": "Ciência de Dados",
+    "section": "",
+    "text": "A atividade CADE: onde a divulgação da Ciência Estatística acontece é uma ação de extensão do Departamento de Estatística do Instituto de Matemática e Estatística da Universidade Federal da Bahia. Esta ação de extensão propõe construir um repositório on-line denominado Canal de Divulgação de Estatística, ou abreviadamente CADE, onde textos sobre estatística de leitura simples e acessível serão disponibilizados.\nEsta ação de extensão na modalidade publicação é parte do projeto de extensão R para Ciência de Dados.\n\n\n\n   \n     \n     \n       Ordenar por\n       Pré-selecionado\n         \n          Data - Mais velho\n        \n         \n          Data - O mais novo\n        \n         \n          Título\n        \n         \n          Autor\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\nData\n\n\n\n\nTítulo\n\n\nAutor\n\n\nTempo de leitura\n\n\n\n\n\n\n1 de nov. de 2023\n\n\n\n\n\nE como calcular medidas de resumo quando temos um gráfico de barras ou histograma?\n\n\nGilberto Pereira Sassi\n\n\n10 minutos\n\n\n\n\n1 de out. de 2023\n\n\n\n\n\nComo criar tabela de distribuição de frequências usando o R?\n\n\nGilberto Pereira Sassi\n\n\n5 minutos\n\n\n\n\n\n\nNenhum item correspondente\n\n\n\n\n\n\n\n© 2023 R para Ciência de Dados 🖤 by Carolina Paraíba e Gilberto Sassi"
+  },
+  {
+    "objectID": "paginas/editais/editais-2023.html",
+    "href": "paginas/editais/editais-2023.html",
+    "title": "Ciência de Dados",
+    "section": "",
+    "text": "Edital em andamentoEdital 2023\n\n\nO edital para os semestres 2023.2 e 2024.1 já está em andamento.\n\n\nEstão abertas inscrições para seleção de 01 vaga para bolsista e 02 vagas para voluntário para os Semestres Letivos 2023.2 e 2024.1 no Projeto de Extensão R para Ciência de Dados, sob número de cadastro 19588 na plataforma SIATEX.\nO objetivo deste projeto de extensão é compartilhar o conhecimento de análise de dados usando a linguagem R numa interação dialógica da comunidade acadêmica com a sociedade por meio da troca de conhecimentos. O projeto irá promover um conjunto de ações com o objetivo de popularizar a Estatística e Ciência de Dados e incentivar o uso de tecnologias de código aberto como a linguagem R, cujo uso é amplamente disseminado entre os pesquisadores da área de Estatística com crescente popularidade entre profissionais de outras áreas. Os métodos que serão abordados neste projeto constituem um conhecimento essencial para o exercício da cidadania devido ao avanço das tecnologias de informação. As ações planejadas neste projeto trarão para a universidade a experiência e a demanda dos profissionais pelo uso de Estatística e Ciência de Dados. Devido a relevância e atualidade do tema, é importante que a UFBA atue junto com a sociedade em atividades gratuitas fortalecendo a inserção da UFBA dentro da sociedade.\n\nVagas ofertadas\n\n01 vaga para bolsista de Extensão, no valor de R$700,00 mensal, conforme Edital PIBIEX 2023-2024.\n02 vagas para voluntárias/os, com até R$1.000,00 de auxílio financeiro para ajuda de custo, conforme Edital PAEx 2023.\n\n\n\nRequisitos para candidatura\nAs vagas estão aberta para qualquer estudante de graduação da UFBA que atenda aos seguintes requisitos:\n\na/o candidata/o deve ser estudante regularmente matriculada/o em qualquer curso de graduação oferecido pela UFBA.\nnão pode estar inadimplente com a PROEXT.\nno caso de bolsista, não pode acumular bolsa com outro Programa Institucional.\nter disponibilidade de trabalhar vinte horas semanais nas atividades deste projeto.\nter coeficiente de rendimento maior ou igual a 6,0.\ndesejável conhecimento de linguagem R e/ou Métodos Estatísticos.\n\n\n\nResponsabilidades da/o bolsista\n\nparticipar de reuniões semanais com a equipe executora em dia e horário a definir.\nparticipar das reuniões de orientação e avaliação com a PROEXT.\nparticipar das atividades promovidas por este projeto de extensão.\nauxiliar na manutenção do website do projeto de extensão.\nenviar relatório de atividades no sistema SISBIEX, usando formulário próprio, em até 30 (trinta) dias após a conclusão do projeto,\napresentar os resultados dos planos de trabalhos na próxima edição do Congresso UFBA.\n\n\n\nResponsabilidades da/o voluntária/o\n\nparticipar de reuniões semanais com a equipe executora em dia e horário a definir.\nparticipar das reuniões de orientação e avaliação com a PROEXT.\nparticipar das atividades promovidas por este projeto de extensão.\nenviar relatório de atividades no sistema SISBIEX, usando formulário próprio, em até 30 (trinta) dias após a conclusão do projeto,\napresentar os resultados dos planos de trabalhos na próxima edição do Congresso UFBA.\n\n\n\nCritérios que serão usados para seleção\nEm ordem de importância:\n\nentrevista em que se avaliará a disponibilidade e adequação da/o candidata/o para a vaga (nota de 0 a 10),\nnível de conhecimento de Métodos Estatísticos (nota de 0 a 10).\nnível de conhecimento da linguagem R (nota de 0 a 10).\n\n\n\nInscrição\nPara se candidatar as vagas, você precisa preencher o seguinte formulário de inscrição: formulário de inscrição.\nO período de inscrição é de 17/07/2023 a 20/07/2023.\nEventuais dúvidas podem ser encaminhadas a gilberto.sassi@ufba.br.\n\n\nResultados\nA/o primeiro colocado ficará com a bolsa PIBIEX, e a/os segunda/a e terceira/o colocada/o serão voluntárias/os vinculados ao PAEX, conforme descrito acima.\nOs coordenadores pedem, gentilmente, que respondam os e-mails confirmando interesse até amanhã, dia 26/07/2023, às 10h00min sem falta.\n\n\n\n\n\n\n  \n    \n      Classificação das/os inscritas/os.\n    \n    \n    \n      Nome\n      Disponibilidade\n      Conhecimento em estatística\n      Conhecimento da linguagem R\n      Nota final\n    \n  \n  \n    Marcos Antonio Arnaldo\n10,00\n8,00\n9,00\n9,00\n    Paulo Ubiratã Ferreira De Oliveira\n10,00\n5,00\n9,00\n8,00\n    Gabriella Santos Rocha\n10,00\n5,00\n5,60\n6,87\n    Álvaro Davi Araújo De Souza\n10,00\n5,00\n5,40\n6,80\n    Neirison Nepomuceno Lima\n9,00\n6,00\n5,00\n6,67\n    Isaac Silva Borges\n6,00\n5,75\n7,50\n6,42\n    Thiago Santos Rodrigues Rodolfo\n9,00\n5,00\n5,00\n6,33\n    Josemar Santos Oliveira\n6,00\n6,00\n5,00\n5,67\n    Alex Rebouças Pereira\n0,00\n0,00\n0,00\n0,00\n    Amanda Da Silva Santos\n0,00\n0,00\n0,00\n0,00\n    Ana Luísa Dos Santos Jaqueira\n0,00\n0,00\n0,00\n0,00\n    Beatriz Silveira Santos Machado\n0,00\n0,00\n0,00\n0,00\n    Carlos Alberto Araújo Pereira\n0,00\n0,00\n0,00\n0,00\n    Ellen Cristina Paixão Nunes\n0,00\n0,00\n0,00\n0,00\n    Erlane Santos De Jesus\n0,00\n0,00\n0,00\n0,00\n    Jonathan Xavier Pintto\n0,00\n0,00\n0,00\n0,00\n    João Vitor Moreira De Jesus\n0,00\n0,00\n0,00\n0,00\n    Kalila Martins Ferraz Lebrão\n0,00\n0,00\n0,00\n0,00\n    Keila Mayane Pereira Dos Santos Andrade\n0,00\n0,00\n0,00\n0,00\n    Kevely Wiliam De Jesus Santos\n0,00\n0,00\n0,00\n0,00\n    Larissa Vitória Carneiro\n0,00\n0,00\n0,00\n0,00\n    Lucas Da Silva Bonfim\n0,00\n0,00\n0,00\n0,00\n    Matheus Conceição Varela\n0,00\n0,00\n0,00\n0,00\n    Raquel Lopes Ribeiro\n0,00\n0,00\n0,00\n0,00\n    Regiane De Jesus Sousa\n0,00\n0,00\n0,00\n0,00\n    Ricardo Dos Santos De Lima\n0,00\n0,00\n0,00\n0,00\n    Rute Lopes Ribeiro\n0,00\n0,00\n0,00\n0,00\n    Sellton Tanajura Nunes\n0,00\n0,00\n0,00\n0,00\n    Tainara Vitória Santos Da Costa\n0,00\n0,00\n0,00\n0,00\n    Thainá Martins Silva\n0,00\n0,00\n0,00\n0,00\n    Vitor Lima Santos Dos Santos\n0,00\n0,00\n0,00\n0,00\n  \n  \n  \n\n\n\n\n\n\n\n\n\n\n\n\n\n© 2023 R para Ciência de Dados 🖤 by Carolina Paraíba e Gilberto Sassi"
+  },
+  {
     "objectID": "paginas/cursos.html",
     "href": "paginas/cursos.html",
     "title": "Ciência de Dados",
     "section": "",
     "text": "© 2023 R para Ciência de Dados 🖤 by Carolina Paraíba e Gilberto Sassi"
+  },
+  {
+    "objectID": "paginas/inscricoes.html",
+    "href": "paginas/inscricoes.html",
+    "title": "Ciência de Dados",
+    "section": "",
+    "text": "Inscrições para o curso R para Ciência de Dados: Exploração e Visualização de Dados estão encerradas.\nCandidatas/os selecionados por sorteio para participar do curso: selecionadas(os).\n\n\n\n\n\n© 2023 R para Ciência de Dados 🖤 by Carolina Paraíba e Gilberto Sassi"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "R para Ciência de Dados",
+    "section": "",
+    "text": "R para Ciência de dados é uma ação de extensão na modalidade projeto com apoio financeiro da Pró-reitoria de Extensão da Univesidade Federal da Bahia (UFBA) e tem como o objetivo compartilhar o conhecimento de análise de dados usando a linguagem R numa interação dialógica da comunidade acadêmica com a sociedade por meio da troca de conhecimentos.\nO projeto irá promover um conjunto de ações com o objetivo de popularizar a Estatística e Ciência de Dados e incentivar o uso de tecnologias de código aberto como a linguagem R, cujo uso é amplamente disseminado entre os pesquisadores da área de Estatística com crescente popularidade entre profissionais de outras áreas.\nOs cursos e eventos promovidos neste projeto serão presenciais em Salvador, gratuitas, abertas a toda comunidade e com certificado emitado pela UFBA.\nDefenda a Universidade pública, gratuita, de qualidade e diversa. Serviço público salva vidas. Defenda o serviço público.\n\nDe cada qual, segundo sua capacidade; a cada qual, segundo suas necessidades.\n\n\n\n\n\n\n© 2023 R para Ciência de Dados 🖤 by Carolina Paraíba e Gilberto Sassi"
+  },
+  {
+    "objectID": "paginas/contato.html",
+    "href": "paginas/contato.html",
+    "title": "Contatos",
+    "section": "",
+    "text": "cienciadedados.ime@gmail.com\n @cienciadedados.ime\n\n\n\n\n\n\nEndereço\nInstituto de Matemática e Estatística - UFBA Av. Milton Santos, Campus Universitário de Ondina CEP: 40.170-110\n\n\n\n\n\n\n© 2023 R para Ciência de Dados 🖤 by Carolina Paraíba e Gilberto Sassi"
+  },
+  {
+    "objectID": "paginas/eventos.html",
+    "href": "paginas/eventos.html",
+    "title": "Ciência de Dados",
+    "section": "",
+    "text": "Em breve.\n\n\n\n\n\nNenhum item correspondente\n\n\n\n\n\n\n\n© 2023 R para Ciência de Dados 🖤 by Carolina Paraíba e Gilberto Sassi"
+  },
+  {
+    "objectID": "paginas/editais/editais-abertos.html",
+    "href": "paginas/editais/editais-abertos.html",
+    "title": "Editais abertos",
+    "section": "",
+    "text": "Editais abertos\nEm breve.\n\n\n\n\n\n© 2023 R para Ciência de Dados 🖤 by Carolina Paraíba e Gilberto Sassi"
+  },
+  {
+    "objectID": "paginas/material/2023/programacao/programacao.html",
+    "href": "paginas/material/2023/programacao/programacao.html",
+    "title": "R para Ciência de Dados: Introdução à programação em R",
+    "section": "",
+    "text": "Slides\n\n\n\narquivos.zip\n\n\n\nNÃO RECORTE NEM APAGUE NADA DESTE ARQUIVO\nAPENAS COPIE O CÓDIGO\nhttps://codeshare.io/r9m9g6\n\n\n\nNeste curso, a IDE vamos utilizar é o RStudio. Outras opções populares em ciência de dados são o VScode da Microsoft e JupyterLab, caso você tenha familiaridade ou já trabalhe com este editores sinta a vontade para usá-los.\nCaso você não queria ou não possa realizar instalações em seu computador, recomendamos que você use as plataformas Google Colaboratory colab.to/r e/ou RStudio Cloud posit.cloud. Recomendamos o uso da plataforma RStudio Cloud pelo mesmo estilo e aspecto visual do aplicativo RStudio.\n\n\n\nPara instalar o R em seu computador, basta seguir as instruções em cran.r-project.org. É necessário que você instale a versão 4.1 ou superior do R.\n\n\n\nDepois de ter instalado o R, siga as instruções de instalação em posit.co/downloads.\n© 2023 R para Ciência de Dados 🖤 by Carolina Paraíba e Gilberto Sassi"
+  },
+  {
+    "objectID": "paginas/material/2023/programacao/programacao.html#slides",
+    "href": "paginas/material/2023/programacao/programacao.html#slides",
+    "title": "R para Ciência de Dados: Introdução à programação em R",
+    "section": "",
+    "text": "Slides"
+  },
+  {
+    "objectID": "paginas/material/2023/programacao/programacao.html#conjunto-de-dados",
+    "href": "paginas/material/2023/programacao/programacao.html#conjunto-de-dados",
+    "title": "R para Ciência de Dados: Introdução à programação em R",
+    "section": "",
+    "text": "arquivos.zip"
+  },
+  {
+    "objectID": "paginas/material/2023/programacao/programacao.html#código-de-sala-de-aula",
+    "href": "paginas/material/2023/programacao/programacao.html#código-de-sala-de-aula",
+    "title": "R para Ciência de Dados: Introdução à programação em R",
+    "section": "",
+    "text": "NÃO RECORTE NEM APAGUE NADA DESTE ARQUIVO\nAPENAS COPIE O CÓDIGO\nhttps://codeshare.io/r9m9g6"
+  },
+  {
+    "objectID": "paginas/material/2023/programacao/programacao.html#instalação-do-r-e-do-rstudio",
+    "href": "paginas/material/2023/programacao/programacao.html#instalação-do-r-e-do-rstudio",
+    "title": "R para Ciência de Dados: Introdução à programação em R",
+    "section": "",
+    "text": "Neste curso, a IDE vamos utilizar é o RStudio. Outras opções populares em ciência de dados são o VScode da Microsoft e JupyterLab, caso você tenha familiaridade ou já trabalhe com este editores sinta a vontade para usá-los.\nCaso você não queria ou não possa realizar instalações em seu computador, recomendamos que você use as plataformas Google Colaboratory colab.to/r e/ou RStudio Cloud posit.cloud. Recomendamos o uso da plataforma RStudio Cloud pelo mesmo estilo e aspecto visual do aplicativo RStudio."
+  },
+  {
+    "objectID": "paginas/material/2023/programacao/programacao.html#para-instalar-o-r",
+    "href": "paginas/material/2023/programacao/programacao.html#para-instalar-o-r",
+    "title": "R para Ciência de Dados: Introdução à programação em R",
+    "section": "",
+    "text": "Para instalar o R em seu computador, basta seguir as instruções em cran.r-project.org. É necessário que você instale a versão 4.1 ou superior do R."
+  },
+  {
+    "objectID": "paginas/material/2023/programacao/programacao.html#para-instalar-o-rstudio",
+    "href": "paginas/material/2023/programacao/programacao.html#para-instalar-o-rstudio",
+    "title": "R para Ciência de Dados: Introdução à programação em R",
+    "section": "",
+    "text": "Depois de ter instalado o R, siga as instruções de instalação em posit.co/downloads."
+  },
+  {
+    "objectID": "paginas/material/2023/exploracao-visualizacao/exploracao-visualizacao.html",
+    "href": "paginas/material/2023/exploracao-visualizacao/exploracao-visualizacao.html",
+    "title": "R para Ciência de Dados: Exploração e Visualização de Dados",
+    "section": "",
+    "text": "Infelizmente, a segunda aula que seria dia 03/11/2023 está cancelada, pois o campus Ondina/Federação da UFBA estará fechado por causa do feriado prolongado de Finados. Então, a segunda aula será remarcada para o dia 10/11/2023.\nLembrando que dia 27/10/2023 não teremos aula.\n\n\n\nslides\n\n\n\neconomia_us.xlsx estudantes.xlsx renda_vida.xlsx\n\n\n\nCódigo apresentado durante as aulas.\n\n\n\nNeste curso, a IDE vamos utilizar é o RStudio. Outras opções populares em ciência de dados são o VScode da Microsoft e JupyterLab, caso você tenha familiaridade ou já trabalhe com este editores sinta a vontade para usá-los.\nCaso você não queria ou não possa realizar instalações em seu computador, recomendamos que você use as plataformas Google Colaboratory colab.to/r e/ou RStudio Cloud posit.cloud. Recomendamos o uso da plataforma RStudio Cloud pelo mesmo estilo e aspecto visual do aplicativo RStudio.\n\n\n\nPara instalar o R em seu computador, basta seguir as instruções em cran.r-project.org. É necessário que você instale a versão 4.1 ou superior do R.\n\n\n\nDepois de ter instalado o R, siga as instruções de instalação em posit.co/downloads.\n© 2023 R para Ciência de Dados 🖤 by Carolina Paraíba e Gilberto Sassi"
+  },
+  {
+    "objectID": "paginas/material/2023/exploracao-visualizacao/exploracao-visualizacao.html#slides",
+    "href": "paginas/material/2023/exploracao-visualizacao/exploracao-visualizacao.html#slides",
+    "title": "R para Ciência de Dados: Exploração e Visualização de Dados",
+    "section": "",
+    "text": "slides"
+  },
+  {
+    "objectID": "paginas/material/2023/exploracao-visualizacao/exploracao-visualizacao.html#conjunto-de-dados",
+    "href": "paginas/material/2023/exploracao-visualizacao/exploracao-visualizacao.html#conjunto-de-dados",
+    "title": "R para Ciência de Dados: Exploração e Visualização de Dados",
+    "section": "",
+    "text": "economia_us.xlsx estudantes.xlsx renda_vida.xlsx"
+  },
+  {
+    "objectID": "paginas/material/2023/exploracao-visualizacao/exploracao-visualizacao.html#código-das-aulas",
+    "href": "paginas/material/2023/exploracao-visualizacao/exploracao-visualizacao.html#código-das-aulas",
+    "title": "R para Ciência de Dados: Exploração e Visualização de Dados",
+    "section": "",
+    "text": "Código apresentado durante as aulas."
+  },
+  {
+    "objectID": "paginas/material/2023/exploracao-visualizacao/exploracao-visualizacao.html#instalação-do-r-e-do-rstudio",
+    "href": "paginas/material/2023/exploracao-visualizacao/exploracao-visualizacao.html#instalação-do-r-e-do-rstudio",
+    "title": "R para Ciência de Dados: Exploração e Visualização de Dados",
+    "section": "",
+    "text": "Neste curso, a IDE vamos utilizar é o RStudio. Outras opções populares em ciência de dados são o VScode da Microsoft e JupyterLab, caso você tenha familiaridade ou já trabalhe com este editores sinta a vontade para usá-los.\nCaso você não queria ou não possa realizar instalações em seu computador, recomendamos que você use as plataformas Google Colaboratory colab.to/r e/ou RStudio Cloud posit.cloud. Recomendamos o uso da plataforma RStudio Cloud pelo mesmo estilo e aspecto visual do aplicativo RStudio."
+  },
+  {
+    "objectID": "paginas/material/2023/exploracao-visualizacao/exploracao-visualizacao.html#para-instalar-o-r",
+    "href": "paginas/material/2023/exploracao-visualizacao/exploracao-visualizacao.html#para-instalar-o-r",
+    "title": "R para Ciência de Dados: Exploração e Visualização de Dados",
+    "section": "",
+    "text": "Para instalar o R em seu computador, basta seguir as instruções em cran.r-project.org. É necessário que você instale a versão 4.1 ou superior do R."
+  },
+  {
+    "objectID": "paginas/material/2023/exploracao-visualizacao/exploracao-visualizacao.html#para-instalar-o-rstudio",
+    "href": "paginas/material/2023/exploracao-visualizacao/exploracao-visualizacao.html#para-instalar-o-rstudio",
+    "title": "R para Ciência de Dados: Exploração e Visualização de Dados",
+    "section": "",
+    "text": "Depois de ter instalado o R, siga as instruções de instalação em posit.co/downloads."
+  },
+  {
+    "objectID": "paginas/material/2023/regressao-logistica/regressao-logistica.html",
+    "href": "paginas/material/2023/regressao-logistica/regressao-logistica.html",
+    "title": "R para Ciência de Dados: Regressão Logística",
+    "section": "",
+    "text": "Aula\n\n\n\ndados_cdrl\n\n\n\nNeste curso, a IDE vamos utilizar é o RStudio. Outras opções populares em ciência de dados são o VScode da Microsoft e JupyterLab, caso você tenha familiaridade ou já trabalhe com este editores sinta a vontade para usá-los.\nCaso você não queria ou não possa realizar instalações em seu computador, recomendamos que você use as plataformas Google Colaboratory colab.to/r e/ou RStudio Cloud posit.cloud. Recomendamos o uso da plataforma RStudio Cloud pelo mesmo estilo e aspecto visual do aplicativo RStudio.\n\n\n\nPara instalar o R em seu computador, basta seguir as instruções em cran.r-project.org. É necessário que você instale a versão 4.1 ou superior do R.\n\n\n\nDepois de ter instalado o R, siga as instruções de instalação em posit.co/downloads.\n© 2023 R para Ciência de Dados 🖤 by Carolina Paraíba e Gilberto Sassi"
+  },
+  {
+    "objectID": "paginas/material/2023/regressao-logistica/regressao-logistica.html#slides",
+    "href": "paginas/material/2023/regressao-logistica/regressao-logistica.html#slides",
+    "title": "R para Ciência de Dados: Regressão Logística",
+    "section": "",
+    "text": "Aula"
+  },
+  {
+    "objectID": "paginas/material/2023/regressao-logistica/regressao-logistica.html#conjunto-de-dados",
+    "href": "paginas/material/2023/regressao-logistica/regressao-logistica.html#conjunto-de-dados",
+    "title": "R para Ciência de Dados: Regressão Logística",
+    "section": "",
+    "text": "dados_cdrl"
+  },
+  {
+    "objectID": "paginas/material/2023/regressao-logistica/regressao-logistica.html#instalação-do-r-e-do-rstudio",
+    "href": "paginas/material/2023/regressao-logistica/regressao-logistica.html#instalação-do-r-e-do-rstudio",
+    "title": "R para Ciência de Dados: Regressão Logística",
+    "section": "",
+    "text": "Neste curso, a IDE vamos utilizar é o RStudio. Outras opções populares em ciência de dados são o VScode da Microsoft e JupyterLab, caso você tenha familiaridade ou já trabalhe com este editores sinta a vontade para usá-los.\nCaso você não queria ou não possa realizar instalações em seu computador, recomendamos que você use as plataformas Google Colaboratory colab.to/r e/ou RStudio Cloud posit.cloud. Recomendamos o uso da plataforma RStudio Cloud pelo mesmo estilo e aspecto visual do aplicativo RStudio."
+  },
+  {
+    "objectID": "paginas/material/2023/regressao-logistica/regressao-logistica.html#para-instalar-o-r",
+    "href": "paginas/material/2023/regressao-logistica/regressao-logistica.html#para-instalar-o-r",
+    "title": "R para Ciência de Dados: Regressão Logística",
+    "section": "",
+    "text": "Para instalar o R em seu computador, basta seguir as instruções em cran.r-project.org. É necessário que você instale a versão 4.1 ou superior do R."
+  },
+  {
+    "objectID": "paginas/material/2023/regressao-logistica/regressao-logistica.html#para-instalar-o-rstudio",
+    "href": "paginas/material/2023/regressao-logistica/regressao-logistica.html#para-instalar-o-rstudio",
+    "title": "R para Ciência de Dados: Regressão Logística",
+    "section": "",
+    "text": "Depois de ter instalado o R, siga as instruções de instalação em posit.co/downloads."
+  },
+  {
+    "objectID": "paginas/catalogo/intervalo-confianca-teste-hipoteses.html",
+    "href": "paginas/catalogo/intervalo-confianca-teste-hipoteses.html",
+    "title": "Intervalos de Confiança e Testes de Hipóteses",
+    "section": "",
+    "text": "Resumo\nO objetivo deste curso é compartilhar o conhecimento de análise estatística de dados, principalmente métodos de inferência estatística, usando a linguagem R numa interação dialógica da comunidade acadêmica com a sociedade por meio da troca de conhecimentos. A ação cumprirá o papel de aproximar a academia da comunidade, popularizando a ciência Estatística e trazendo para dentro da universidade a experiência e a grande demanda que profissionais têm de usar Estatística e Ciência de Dados. A ação procurará integrar discentes em sua equipe organizadora. A atividade se propõe a introduzir os conceitos de intervalos de confiança e testes de hipóteses, métodos estatísticos amplamente usados, utilizando o pacote statBasics.\nO curso terá 8 horas com 2 encontros presenciais com duração de quatro horas nos laboratórios de ensino de informática do IME-UFBA, será gratuito com certificado emitido pela UFBA e terá 15 vagas.\n\n\nÁrea\nDe acordo com o disposto na Política Nacional de Extensão, este Projeto de Extensão está vinculado às áreas temáticas descritas a seguir.\n\nLinha Programática: Educação profissional;\nÁrea(s) de Conhecimento(s): Ciências Exatas e da Terra;\nÁrea(s) Temáticas(s): Tecnologia.\n\n\n\nCoordenação\n\nProfessor Doutor Gilberto Pereira Sassi, Departamento de Estatística, Instituto de Matemática e Estatística, Universidade Federal da Bahia.\nProfessora Doutora Carolina Costa Mota Paraíba, Departamento de Estatística, Instituto de Matemática e Estatística, Universidade Federal da Bahia.\n\nJustificativa da necessidade do segundo coordenador: a Profa. Carolina é responsável por coordenar a ampla divulgação do curso entre os profissionais que fazem uso de análise estatística de dados, o processo de inscrição, a construção do site do curso, a elaboração de material didático e manutenção das bases de dados usadas neste curso.\n\n\nUniversidade universitária\nInstituto de Matemática e Estatística da Universidade Federal da Bahia.\n\n\nPúblico alvo\nProfissionais que usam análises estatísticas de dados.\n\n\nNúmero esperado de participantes\n20\n\n\nLocal de realização\nLaboratório de ensino de informática do IME-UFBA.\n\n\nMetodologia\nMetodologia do curso será de aulas expositivas e práticas em laboratório de informática usando a linguagem R.\n\n\nConteúdo programático\n\nBreve revisão de R, RStudio e tidyverse\nBreve introdução à variável aleatória\nIntervalo de confiança para uma população usando o pacote statBasics\nTeste de hipóteses para uma população usando o pacote statBasics\n\n\n\n\n\n\n© 2023 R para Ciência de Dados 🖤 by Carolina Paraíba e Gilberto Sassi"
+  },
+  {
+    "objectID": "paginas/catalogo/producao-de-texto-usando-rmarkdown.html",
+    "href": "paginas/catalogo/producao-de-texto-usando-rmarkdown.html",
+    "title": "Produção de Texto usando rmarkdown e quarto",
+    "section": "",
+    "text": "Resumo\nO objetivo deste curso é compartilhar o conhecimento da linguagem R numa interação dialógica da comunidade acadêmica com a sociedade por meio da troca de conhecimentos. A ação cumprirá o papel de aproximar a academia da comunidade, popularizando o uso de software livre e da linguagem R e trazendo para dentro da universidade a experiência e a grande demanda que profissionais têm de usar software livre e, em especial, a linguagem R. A ação procurará integrar discentes em sua equipe organizadora. O curso se propõe a apresentar dois pacotes da linguagem R: rmarkdown e quarto, que são especialmente úteis para redação de textos no formato .pdf (incluindo apresentações em beamer), .html (incluindo apresentações apresentações em ioslide), e .docx. O curso terá 8 horas com 2 encontros presenciais com duração de quatro horas nos laboratórios de ensino de informática do IME-UFBA, será gratuito com certificado emitido pela UFBA e terá 20 vagas.\n\n\nÁrea\nDe acordo com o disposto na Política Nacional de Extensão, este Projeto de Extensão está vinculado às áreas temáticas descritas a seguir.\n\nLinha Programática: Educação profissional;\nÁrea(s) de Conhecimento(s): Ciências Exatas e da Terra;\nÁrea(s) Temáticas(s): Tecnologia.\n\n\n\nCoordenação\n\nProfessor Doutor Gilberto Pereira Sassi, Departamento de Estatística, Instituto de Matemática e Estatística, Universidade Federal da Bahia.\nProfessora Doutora Carolina Costa Mota Paraíba, Departamento de Estatística, Instituto de Matemática e Estatística, Universidade Federal da Bahia.\n\nJustificativa da necessidade do segundo coordenador: a Profa. Carolina é responsável por coordenar a ampla divulgação do curso entre os profissionais que fazem uso de análise estatística de dados, o processo de inscrição, a construção do site do curso, a elaboração de material didático e manutenção das bases de dados usadas neste curso.\n\n\nUniversidade universitária\nInstituto de Matemática e Estatística da Universidade Federal da Bahia.\n\n\nPúblico alvo\nProfissionais que usam análises estatísticas de dados.\n\n\nNúmero esperado de participantes\n20\n\n\nLocal de realização\nLaboratório de ensino de informática do IME-UFBA.\n\n\nMetodologia\nmetodologia do curso será de aulas expositivas e práticas em laboratório de informática usando a linguagem R.\n\n\nConteúdo programático\n\nBreve apresentação da linguagem R e RStudio;\nPreparação de documentos pdf usando rmardown (através da linguagem latex): rticle e beamer;\nPreparação de documento html usando rmardown: ioslide e prettydoc, e publicação usando github pages e netlify;\nPreparação de documentos docx usando rmarkdown;\nApresentação de quarto: rmarkdown para python, R e julia.\n\n\n\n\n\n\n© 2023 R para Ciência de Dados 🖤 by Carolina Paraíba e Gilberto Sassi"
+  },
+  {
+    "objectID": "paginas/catalogo/regressao-logistica.html",
+    "href": "paginas/catalogo/regressao-logistica.html",
+    "title": "Regressão Logística",
+    "section": "",
+    "text": "Resumo\nO objetivo deste curso é compartilhar o conhecimento de análise estatística de dados usando a linguagem R numa interação dialógica da comunidade acadêmica com a sociedade por meio da troca de conhecimentos. A ação cumprirá o papel de aproximar a academia da comunidade, popularizando a ciência Estatística e trazendo para dentro da universidade a experiência e a grande demanda que profissionais têm de usar Estatística e Ciência de Dados. A ação procurará integrar discentes em sua equipe organizadora. O curso se propõe a apresentar a linguagem R e os princípios de modelos lineares generalizados, abordando o tópico de regressão logística usando os frameworks tidyverse e tidymodels, especialmente os pacotes broom e gglm. O curso terá 8 horas com 2 encontros presenciais com duração de quatro horas nos laboratórios de ensino de informática do IME-UFBA, será gratuito com certificado emitido pela UFBA e terá 20 vagas.\n\n\nÁrea\nDe acordo com o disposto na Política Nacional de Extensão, este Projeto de Extensão está vinculado às áreas temáticas descritas a seguir.\n\nLinha Programática: Educação profissional;\nÁrea(s) de Conhecimento(s): Ciências Exatas e da Terra;\nÁrea(s) Temáticas(s): Tecnologia.\n\n\n\nCoordenação\n\nProfessor Doutor Gilberto Pereira Sassi, Departamento de Estatística, Instituto de Matemática e Estatística, Universidade Federal da Bahia.\nProfessora Doutora Carolina Costa Mota Paraíba, Departamento de Estatística, Instituto de Matemática e Estatística, Universidade Federal da Bahia.\n\nJustificativa da necessidade do segundo coordenador: a Profa. Carolina é responsável por coordenar a ampla divulgação do curso entre os profissionais que fazem uso de análise estatística de dados, o processo de inscrição, a construção do site do curso, a elaboração de material didático e manutenção das bases de dados usadas neste curso.\n\n\nUniversidade universitária\nInstituto de Matemática e Estatística da Universidade Federal da Bahia.\n\n\nPúblico alvo\nProfissionais que usam análises estatísticas de dados.\n\n\nNúmero esperado de participantes\n20\n\n\nLocal de realização\nLaboratório de ensino de informática do IME-UFBA.\n\n\nMetodologia\nMetodologia do curso será de aulas expositivas e práticas em laboratório de informática usando a linguagem R.\n\n\nConteúdo programático\n\nIntrodução\nModelo de Regressão Logística\nInferência\nAnálise de Resíduos\nDiagnóstico de Influência\nClassificação\nCurva ROC\n\n\n\n\n\n\n© 2023 R para Ciência de Dados 🖤 by Carolina Paraíba e Gilberto Sassi"
+  },
+  {
+    "objectID": "paginas/catalogo/regressao-linear-simples-e-multipla.html",
+    "href": "paginas/catalogo/regressao-linear-simples-e-multipla.html",
+    "title": "Regressão Linear Simples e Múltipla",
+    "section": "",
+    "text": "Resumo\nO objetivo deste curso é compartilhar o conhecimento de análise estatística de dados usando a linguagem R numa interação dialógica da comunidade acadêmica com a sociedade por meio da troca de conhecimentos. A ação cumprirá o papel de aproximar a academia da comunidade, popularizando a ciência Estatística e trazendo para dentro da universidade a experiência e a grande demanda que profissionais têm de usar Estatística e Ciência de Dados. A ação procurará integrar discentes em sua equipe organizadora. O curso se propõe a apresentar a linguagem R e os princípios de modelagem de dados, abordando os tópicos de regressão linear simples e múltipla usando os frameworks tidyverse e tidymodels, especialmente os pacotes broom, gglm e qqplotr. O curso terá 8 horas com 2 encontros presenciais com duração de quatro horas nos laboratórios de ensino de informática do IME-UFBA, será gratuito com certificado emitido pela UFBA e terá 20 vagas.\n\n\nÁrea\nDe acordo com o disposto na Política Nacional de Extensão, este Projeto de Extensão está vinculado às áreas temáticas descritas a seguir.\n\nLinha Programática: Educação profissional;\nÁrea(s) de Conhecimento(s): Ciências Exatas e da Terra;\nÁrea(s) Temáticas(s): Tecnologia.\n\n\n\nCoordenação\n\nProfessor Doutor Gilberto Pereira Sassi, Departamento de Estatística, Instituto de Matemática e Estatística, Universidade Federal da Bahia.\nProfessora Doutora Carolina Costa Mota Paraíba, Departamento de Estatística, Instituto de Matemática e Estatística, Universidade Federal da Bahia.\n\nJustificativa da necessidade do segundo coordenador: a Profa. Carolina é responsável por coordenar a ampla divulgação do curso entre os profissionais que fazem uso de análise estatística de dados, o processo de inscrição, a construção do site do curso, a elaboração de material didático e manutenção das bases de dados usadas neste curso.\n\n\nUniversidade universitária\nInstituto de Matemática e Estatística da Universidade Federal da Bahia.\n\n\nPúblico alvo\nProfissionais que usam análises estatísticas de dados.\n\n\nNúmero esperado de participantes\n20\n\n\nLocal de realização\nLaboratório de ensino de informática do IME-UFBA.\n\n\nMetodologia\nMetodologia do curso será de aulas expositivas e práticas em laboratório de informática usando a linguagem R.\n\n\nConteúdo programático\n\nIntrodução à Modelagem Estatística\nRegressão Linear Simples\nRegressão Linear Múltipla\nAnálise de Resíduos e Diagnóstico\n\n\n\n\n\n\n© 2023 R para Ciência de Dados 🖤 by Carolina Paraíba e Gilberto Sassi"
+  },
+  {
+    "objectID": "paginas/cade/medidas-resumo-graficos/medidas-resumo-graficos.html",
+    "href": "paginas/cade/medidas-resumo-graficos/medidas-resumo-graficos.html",
+    "title": "E como calcular medidas de resumo quando temos um gráfico de barras ou histograma?",
+    "section": "",
+    "text": "Com um gráfico de barras e um histograma, você tem uma ideia da distribuição dos dados. Mas e se você deseja encontrar um ou alguns números que representam ou resumem fidedignamente os valores representados nestes gráficos? Para encontrar estes números podemos usar medidas de resumo, e se você tem o conjunto de dados que foi usado para construir estes gráficos essa tarefa é simples em softwares como o R, Python ou até um software de planilha como o excel. E se você tem apenas o gráfico de barras ou histograma e não tem o conjunto de dados? Don’t panic, mesmo nesse caso conseguimos calcular medidas de resumo, e é isso que eu vou explicar como fazer neste post.\n© 2023 R para Ciência de Dados 🖤 by Carolina Paraíba e Gilberto Sassi"
+  },
+  {
+    "objectID": "paginas/cade/medidas-resumo-graficos/medidas-resumo-graficos.html#gráfico-de-barras",
+    "href": "paginas/cade/medidas-resumo-graficos/medidas-resumo-graficos.html#gráfico-de-barras",
+    "title": "E como calcular medidas de resumo quando temos um gráfico de barras ou histograma?",
+    "section": "Gráfico de barras",
+    "text": "Gráfico de barras\nImagine que você tem um gráfico de barras para uma variável quantitativa discreta \\(X\\) com valores observados \\(x_1, \\dots, x_k\\), conforme a figura abaixo.\n\nCada valor observado \\(x_i, i=1, \\dots, k\\) do gráfico acima tem uma barra com altura \\(n_i,i=1, \\dots, k\\)1. Logo, usando esta altura, que é igual a frequência, podemos construir a tabela de distribuição de frequência abaixo.\n\n\n\n\n\n\n\n\n\n\\(X\\)\nFrequência\nFrequência relativa (proporção)\nPorcentagem\n\n\n\n\n\\(x_1\\)\n\\(n_1\\)\n\\(f_1 = \\frac{n_1}{n}\\)\n\\(100\\cdot f_1\\\\%\\)\n\n\n\\(x_2\\)\n\\(n_1\\)\n\\(f_2 = \\frac{n_2}{n}\\)\n\\(100\\cdot f_2\\\\%\\)\n\n\n\\(x_3\\)\n\\(n_3\\)\n\\(f_3 = \\frac{n_3}{n}\\)\n\\(100\\cdot f_3\\\\%\\)\n\n\n\\(\\vdots\\)\n\\(\\vdots\\)\n\\(\\vdots\\)\n\\(\\vdots%\\)\n\n\n\\(x_k\\)\n\\(n_k\\)\n\\(f_k = \\frac{n_k}{n}\\)\n\\(100\\cdot f_k\\%\\)\n\n\nTotal\n\\(n = n_1+\\cdots+n_k\\)\n\\(1 \\approx f_1 + \\cdots + f_k\\)\n\\(100\\% \\approx 100\\cdot f_1 + \\cdots + 100 \\cdot f_k\\)\n\n\n\nPara calcular as medidas de resumo, note que o valor \\(x_i\\) aparece \\(n_i\\) vezes para \\(i=1, \\dots, k\\). Aqui vamos calcular a média, desvio padrão e a mediana. Para calcular a média, somamos todos os valores e dividimos pelo tamanho da amostra, e para calcular o desvio padrão somamos todos os desvios ao quadrado2 e dividimos pelo tamanho da amostra subtraído por um e em seguida tiramos a raiz quadrada deste valor. Então podemos usar a frequência da tabela de distribuição de frequência como descrito na equação abaixo para calcular a média e o desvio padrão. \\[\n\\begin{split}\n\\bar{x} &= \\frac{\\overbrace{x_1+ \\cdots + x_1}^{n_1\\mbox{ vezes}} + \\cdots + \\overbrace{x_k+ \\cdots + x_k}^{n_k\\mbox{ vezes}}}{n}\\newline\n&= \\frac{n_1 \\cdot x_1 + \\cdots + n_k \\cdot x_k}{n}\\newline\ndp(x) &= \\sqrt{Var(x)}\\newline\n&= \\sqrt{\\frac{\\overbrace{(x_1 - \\bar{x})^2+ \\cdots + (x_1 - \\bar{x})^2}^{n_1\\mbox{ vezes}} + \\cdots + \\overbrace{(x_k - \\bar{x})^2+ \\cdots + (x_k - \\bar{x})^2}^{n_k\\mbox{ vezes}}}{n-1}}\\newline\n&= \\sqrt{\\frac{n_1\\cdot(x_1 - \\bar{x})^2 + \\cdots + n_k \\cdot (x_k - \\bar{x})^2}{n-1}}\n\\end{split}\n\\]\nPara calcular a mediana, precisamos calcular as estatísticas de ordem \\(x_{(i)}\\), em que \\(x_{(i)}\\) é o \\(i\\)-ésimo menor número. Imagine que \\(x_1\\) é o menor número da amostra, então os \\(n_1\\) menores valores são todos iguais a \\(x_1\\): \\(x_{(1)} = x_{(2)} = \\cdots = x_{(n_1)} = x_1\\). Suponha que \\(x_2\\) é o segundo menor valor da amostra, então os \\(n_2\\) menores valores (depois de \\(x_1\\)) são todos iguais a \\(x_2\\): \\(x_{(n_1+1)} = x_{(n_1+2)} = \\cdots = x_{(n_1+n_2)} = x_2\\). Imagine agora que \\(x_3\\) é o terceiro menor valor da amostra, então os menores valores (depois de \\(x_1\\) e \\(x_2\\)) são todos iguais a \\(x_3\\): \\(x_{(n_1+n_2+1)} = x_{(n_1+n_2+2)} = \\cdots = x_{(n_1+n_2+n_3)} = x_3\\). E continuamos neste processo até organizar todos os valores observados da amostra do menor até o maior valor como indicado na tabela abaixo. Note que estamos usando a frequência \\(n_1\\), \\(n_2\\) até \\(n_k\\) da tabela distribuição de frequências.\n\n\n\n\n\n\nEstatística de ordem\n\n\n\n\n\\(x_{(1)} = x_{(2)} = \\cdots = x_{(n_1)} = x_1\\)\n\n\n\\(x_{(n_1+1)} = x_{(n_1+2)} = \\cdots = x_{(n_1+n_2)} = x_2\\)\n\n\n\\(x_{(n_1+n_2+1)} = x_{(n_1+n_2+2)} = \\cdots = x_{(n_1+n_2 + n_3)} = x_3\\)\n\n\n\\(\\\\vdots\\)\n\n\n\\(x_{(n_1+n_2 + n_3+ \\cdots + n_{k-1}+1)} = x_{(n_1+n_2 + n_3+ \\cdots + n_{k-1}+2)} = \\cdots = x_{(n_1+n_2 + n_3+ \\cdots + n_{k-1}+ n_k)} = x_k\\)\n\n\n\nEntão a mediana é calculada do jeito tradicional usando a equação abaixo. \\[\nmd(x) = \\frac{x_{\\left(\\lceil(n+1)\\cdot 0.5\\rceil \\right)} + x_{\\left(\\lfloor(n+1)\\cdot 0.5\\rfloor \\right)}}{2}\n\\]\nem que \\(\\lfloor \\cdot \\rfloor\\) é a função arredonda para baixo e \\(\\lceil \\cdot \\rceil\\) é a função arredonda para cima. Por exemplo, \\(\\lfloor 1,2 \\rfloor = 1\\), \\(\\lfloor 1,76 \\rfloor = 1\\), \\(\\lceil 1,2 \\rceil = 2\\) e \\(\\lceil 1,76 \\rceil =2\\).\n\nExemplo\nConsidere o gráfico de barras da variável Número de filhos de um conjunto de \\(36\\) funcionário da Companhia MB representado na figura abaixo.\n\nNote que a barra que corresponde a zero filhos tem altura \\(20\\) e frequência \\(20\\), a barra que corresponde a um filho tem altura \\(5\\) e frequência \\(5\\), a barra que corresponde a dois filhos tem altura \\(7\\) e frequência \\(7\\), a barra que corresponde a três filhos tem altura \\(3\\) e frequência \\(3\\), a barra que corresponde a quatro filhos tem altura \\(0\\) e frequência \\(0\\) e a barra que corresponde a cinco filhos tem altura \\(1\\) e frequência \\(1\\). Consequentemente, temos a seguinte tabela de distribuição de frequências.\n\n\n\n\n\n\n\n\n\nNúmero de filhos\nFrequência\nFrequência relativa (proporção)\nPorcentagem\n\n\n\n\n\\(0\\)\n\\(20\\)\n\\(\\frac{20}{36} = 0,5556\\)\n\\(0,5556 \\cdot 100 = 55,56\\\\%\\)\n\n\n\\(1\\)\n\\(5\\)\n\\(\\frac{5}{36} = 0,1389\\)\n\\(0,1389 \\cdot 100 = 13,89\\\\%\\)\n\n\n\\(2\\)\n\\(7\\)\n\\(\\frac{7}{36}=0,1944\\)\n\\(0,1944 \\cdot 100 = 19,44\\\\%\\)\n\n\n\\(3\\)\n\\(3\\)\n\\(\\frac{3}{36}=0,0833\\)\n\\(0,0833 \\cdot 100 = 8,33\\\\%\\)\n\n\n\\(4\\)\n\\(0\\)\n\\(\\frac{0}{36} =0\\)\n\\(0 \\cdot 100 = 0\\\\%\\)\n\n\n\\(5\\)\n\\(1\\)\n\\(\\frac{1}{36} = 0,0278\\)\n\\(0,0278 \\cdot 100 = 2,78\\\\%\\)\n\n\nTotal\n\\(36\\)\n\\(1\\)\n\\(100\\)\n\n\n\n\\[\n\\begin{split}\n\\bar{x} &= \\frac{20 \\cdot 0 + 5 \\cdot 1 + 7 \\cdot 2 + 3 \\cdot 3 + 0 \\cdot 4 + 1 \\cdot 5}{36} = 0,92.\\newline\ndp(x) &= \\sqrt{\\frac{20 \\cdot (0 - 0,92)^2 + 5 \\cdot (1 - 0,92)^2 + 7 \\cdot (2 - 0,92)^2 + 3 \\cdot (3 - 0,92)^2 + 0 \\cdot (4 - 0,92)^2 + 1 \\cdot (5 - 0,92)^2}{35}}\\newline\n&= 1,25.\n\\end{split}\n\\]\nPara calcular a mediana, primeiro precisamos encontrar as estatísticas de ordem.\n\n\n\nEstatísticas de ordem\n\n\n\n\n\\(x_{(1)}=x_{(2)}=\\\\cdots=x_{(20)}=0\\)\n\n\n\\(x_{(21)}=x_{(22)}=x_{(23)}=x_{(24)}=x_{(25)}=1\\)\n\n\n\\(x_{(26)}=x_{(27)}=x_{(28)}=x_{(29)}=x_{(30)}=x_{(31)}=x_{(32)}=2\\)\n\n\n\\(x_{(33)}=x_{(34)}=x_{(35)}=3\\)\n\n\n\\(x_{(36)} = 5\\)\n\n\n\nEntão a mediana é dada por\n\\[\n\\begin{split}\nmd(x) &= \\frac{x_{\\left(\\lfloor \\frac{n+1}{2}  \\rfloor\\right)} + x_{\\left(\\lceil \\frac{n+1}{2}  \\rceil\\right)}}{2}\\newline\n&= \\frac{x_{\\left(\\lfloor \\frac{36+1}{2}  \\rfloor\\right)} + x_{\\left(\\lceil \\frac{36+1}{2}  \\rceil\\right)}}{2}\\newline\n&= \\frac{x_{\\left(\\lfloor 18,5  \\rfloor\\right)} + x_{\\left(\\lceil 18,5  \\rceil\\right)}}{2}\\newline\n&= \\frac{x_{\\left(18\\right)} + x_{\\left(19\\right)}}{2}=0\\newline\n\\end{split}\n\\]"
+  },
+  {
+    "objectID": "paginas/cade/medidas-resumo-graficos/medidas-resumo-graficos.html#histograma",
+    "href": "paginas/cade/medidas-resumo-graficos/medidas-resumo-graficos.html#histograma",
+    "title": "E como calcular medidas de resumo quando temos um gráfico de barras ou histograma?",
+    "section": "Histograma",
+    "text": "Histograma\nO histograma é um gráfico construído usando barras sem espaçamento entre elas, e cada barra tem a largura da base igual a largura do intervalo intervalo usado na contagem da variável quantitativa contínua e a área da barra é igual a frequência relativa3. Note que a área da figura geométrica do histograma sempre é um, e a altura de cada barra é a divisão da frequência relativa pela largura do intervalo conforme ilustrado na figura abaixo. Chamamos essa divisão de Densidade de frequência.\n\nPara encontrarmos a frequência relativa de cada intervalo, e consequentemente a porcentagem, precisamos multiplicar a densidade de frequência (altura da barra) pela largura do intervalo, conforme tabela abaixo.\n\n\n\n\n\n\n\n\n\nX\nDensidade de frequência (altura da barra)\nFrequência relativa\nPorcentagem\n\n\n\n\n\\([a_0, a_1)\\)\n\\(df_1\\)\nf_1 = \\(df_1 \\cdot (a_1 - a_0)\\)\n\\(f_1 \\cdot 100\\%\\)\n\n\n\\([a_1, a_2)\\)\n\\(df_2\\)\nf_2 = \\(df_2 \\cdot (a_2 - a_1)\\)\n\\(f_2 \\cdot 100\\%\\)\n\n\n\\([a_3, a_2)\\)\n\\(df_3\\)\nf_3 = \\(df_3 \\cdot (a_3 - a_2)\\)\n\\(f_3 \\cdot 100\\%\\)\n\n\n\\(\\vdots\\)\n\\(\\vdots\\)\n\\(\\vdots\\)\n\\(\\vdots\\)\n\n\n\\([a_k, a_{k-1})\\)\n\\(df_k\\)\nf_k = \\(df_k \\cdot (a_k - a_{k-1})\\)\n\\(f_k \\cdot 100\\%\\)\n\n\nTotal\n\\(--\\)\n\\(1\\)\n\\(100\\%\\)\n\n\n\nSe soubermos o tamanho da amostra, conseguimos calcular a frequência (absoluta): basta multiplicar a frequência relativa pelo tamanho da amostra. Imagine que o tamanho da amostra é \\(n\\), então a tabela de distribuição de frequências é dada pela tabela abaixo.\n\n\n\n\n\n\n\n\n\n\n\nX\nDensidade de frequência (altura da barra)\nFrequência relativa\nPorcentagem\nFrequência\n\n\n\n\n\n\\([a_0, a_1)\\)\n\\(df_1\\)\nf_1 = \\(df_1 \\cdot (a_1 - a_0)\\)\n\\(f_1 \\cdot 100\\%\\)\n\\(f_1 \\cdot n\\)\n\n\n\n\\([a_1, a_2)\\)\n\\(df_2\\)\nf_2 = \\(df_2 \\cdot (a_2 - a_1)\\)\n\\(f_2 \\cdot 100\\%\\)\n\\(f_2 \\cdot n\\)\n\n\n\n\\([a_3, a_2)\\)\n\\(df_3\\)\nf_3 = \\(df_3 \\cdot (a_3 - a_2)\\)\n\\(f_3 \\cdot 100\\%\\)\n\\(f_3 \\cdot n\\)\n\n\n\n\\(\\vdots\\)\n\\(\\vdots\\)\n\\(\\vdots\\)\n\\(\\vdots\\)\n\\(\\vdots\\)\n\n\n\n\\([a_k, a_{k-1})\\)\n\\(df_k\\)\nf_k = \\(df_k \\cdot (a_k - a_{k-1})\\)\n\\(f_k \\cdot 100\\%\\)\n\\(f_k \\cdot n\\)\n\n\n\nTotal\n\\(--\\)\n\\(1\\)\n\\(100\\%\\)\n\\(n\\)\n\n\n\n\nAgora, queremos calcular a média e o desvio padrão. Mas na tabela de distribuição de frequências acima, sabemos apenas que \\(n_i\\) valores da variável quantitativa contínua \\(X\\) está entre \\(a_{i-1}\\) e \\(a_i\\), para \\(i=1, \\dots, k\\), mas não sabemos quais são esses valores e sem esses valores não conseguimos calcular a média e o desvio padrão. Existe vários algoritmos para contornar essa restrição e você pode consultar, por exemplo, o livro com título Estatística Básica de Bussab e Morettin. Aqui neste post, vamos usar uma abordagem bem simples, rápida e um pouco grosseira: vamos assumir que todos os \\(n_i\\) valores do intervalo de valores \\([a_{i-1}, a_i)\\) são aproximadamente iguais a \\(\\frac{a_{i-1} + a_i}{2}\\). Vou chamar esse valor \\(\\frac{a_{i-1} + a_i}{2}\\) de ponto médio. E temos a seguinte tabela de distribuição de frequências.\n\n\n\n\n\n\n\n\n\n\n\n\nX\nDensidade de frequência (altura da barra)\nFrequência relativa\nPorcentagem\nFrequência\nPonto médio\n\n\n\n\n\n\\([a_0, a_1)\\)\n\\(df_1\\)\nf_1 = \\(df_1 \\cdot (a_1 - a_0)\\)\n\\(f_1 \\cdot 100\\%\\)\n\\(f_1 \\cdot n\\)\n\\(p_1 = \\frac{a_0 + a_1}{2}\\)\n\n\n\n\\([a_1, a_2)\\)\n\\(df_2\\)\nf_2 = \\(df_2 \\cdot (a_2 - a_1)\\)\n\\(f_2 \\cdot 100\\%\\)\n\\(f_2 \\cdot n\\)\n\\(p_2 = \\frac{a_2 + a_1}{2}\\)\n\n\n\n\\([a_3, a_2)\\)\n\\(df_3\\)\nf_3 = \\(df_3 \\cdot (a_3 - a_2)\\)\n\\(f_3 \\cdot 100\\%\\)\n\\(f_3 \\cdot n\\)\n\\(p_3 = \\frac{a_3 + a_2}{2}\\)\n\n\n\n\\(\\vdots\\)\n\\(\\vdots\\)\n\\(\\vdots\\)\n\\(\\vdots\\)\n\\(\\vdots\\)\n\n\n\n\n\\([a_k, a_{k-1})\\)\n\\(df_k\\)\nf_k = \\(df_k \\cdot (a_k - a_{k-1})\\)\n\\(f_k \\cdot 100\\%\\)\n\\(f_k \\cdot n\\)\n\\(p_k = \\frac{a_k + a_{k-1}}{2}\\)\n\n\n\nTotal\n\\(--\\)\n\\(1\\)\n\\(100\\%\\)\n\\(n\\)\n\\(--\\)\n\n\n\n\nCom a tabela de distribuição de frequências, podemos usar o ponto médio para calcular a média e o desvio padrão de forma análoga ao caso da variável quantitativa discreta. Mais precisamente,\n\\[\n\\begin{split}\n\\bar{x} &= \\frac{p_1 \\cdot n_1 + p_2 \\cdot n_2 + \\cdots + p_k \\cdot n_k}{n}\\newline\ndp(x) &= \\sqrt{Var(x)}\\newline\n&= \\sqrt{\\frac{n_1(\\bar{x} - p_1) + n_2(\\bar{x} - p_2) + \\cdots + n_k(\\bar{x} - p_k)}{n-1}}\\newline\n\\end{split}\n\\]\nPara calcular a mediana, precisamos calcular as estatísticas de ordem \\(p_{(i)}\\), em que \\(p_{(i)}\\) é o \\(i\\)-ésimo menor número. Imagine que \\(p_1\\) é o menor número entre os pontos médios, então os \\(n_1\\) menores pontos médios são todos iguais a \\(p_1\\): \\(p_{(1)} = p_{(2)} = \\cdots = p_{(n_1)} = p_1\\). Suponha que \\(p_2\\) é o segundo menor valor da amostra, então os \\(n_2\\) menores valores (depois de \\(p_1\\)) são todos iguais a \\(p_2\\): \\(p_{(n_1+1)} = p_{(n_1+2)} = \\cdots = p_{(n_1+n_2)} = p_2\\). Imagine agora que \\(p_3\\) é o terceiro menor valor da amostra, então os menores valores (depois de \\(p_1\\) e \\(p_2\\)) são todos iguais a \\(p_3\\): \\(p_{(n_1+n_2+1)} = p_{(n_1+n_2+2)} = \\cdots = p_{(n_1+n_2+n_3)} = p_3\\). E continuamos neste processo até organizar todos os valores observados da amostra do menor até o maior valor como indicado na tabela abaixo. Note que estamos usando a frequência \\(n_1\\), \\(n_2\\) até \\(n_k\\) da tabela distribuição de frequências.\n\n\n\n\n\n\nEstatística de ordem\n\n\n\n\n\\(p_{(1)} = p_{(2)} = \\cdots = p_{(n_1)} = p_1\\)\n\n\n\\(p_{(n_1+1)} = p_{(n_1+2)} = \\cdots = p_{(n_1+n_2)} = p_2\\)\n\n\n\\(p_{(n_1+n_2+1)} = p_{(n_1+n_2+2)} = \\cdots = p_{(n_1+n_2 + n_3)} = p_3\\)\n\n\n\\(\\\\vdots\\)\n\n\n\\(p_{(n_1+n_2 + n_3+ \\cdots + n_{k-1}+1)} = p_{(n_1+n_2 + n_3+ \\cdots + n_{k-1}+2)} = \\cdots = p_{(n_1+n_2 + n_3+ \\cdots + n_{k-1}+ n_k)} = p_k\\)\n\n\n\nEntão a mediana é calculada do jeito tradicional usando a equação abaixo. \\[\nmd(x) = \\frac{p_{\\left(\\lceil(n+1)\\cdot 0.5\\rceil \\right)} + p_{\\left(\\lfloor(n+1)\\cdot 0.5\\rfloor \\right)}}{2}.\n\\]\n\nExemplo\nConsidere o histograma da variável quantitativa contínua \\(X\\) de 36 funcionário da companhia MB da figura abaixo.\n\nEntão, temos a seguinte tabela de distribuição de frequências.\n\n\n\n\n\n\n\n\n\n\n\nSalário\nDensidade de frequência\nFrequência relativa\nPorcentagem\nfrequência\nPonto médio\n\n\n\n\n\\([4, 8)\\)\n\\(0,0694\\)\n\\(0,0694 \\cdot 4 = 0,2776\\)\n\\(27,76\\\\%\\)\n$0,2776 \\cdot 36 \\approx 10 \\(|\\) = 6\\(| |\\)[8, 12)$\n\\(0,0833\\)\n\n\n\\([12, 16)\\)\n\\(0,0556\\)\n\\(0,0556 \\cdot 4 = 0,2224\\)\n\\(22,24\\\\%\\)\n\\(0,2224 \\\\cdot 36 \\\\approx 8\\)\n\\(\\frac{12 + 16}{2} = 14\\)\n\n\n\\([16, 20)\\)\n\\(0,0347\\)\n\\(0,0347 \\cdot 4 = 0,1388\\)\n\\(13,88\\\\%\\)\n\\(0,1388 \\\\cdot 36 \\\\approx 5\\)\n\\(\\frac{16 + 20}{2} = 18\\)\n\n\n\\([20, 24)\\)\n\\(0,0069\\)\n\\(0,0069 \\cdot 4 = 0,0276\\)\n\\(2,76\\\\%\\)\n\\(0,0276 \\\\cdot 36 \\\\approx 1\\)\n\\(\\frac{20 + 24}{2} = 22\\)\n\n\nTotal\n\\(--\\)\n\\(1\\)\n\\(100\\\\%\\)\n\\(--\\)\n\n\n\n\nA média e o desvio padrão são dados por\n\\[\n\\begin{split}\n\\bar{x} &= \\frac{10 \\cdot 6 + 12 \\cdot 10 + 8 \\cdot 14 + 5 \\cdot 18 + 1 \\cdot 1}{36}\\newline\n&= 11,22\\newline\ndp(x) &= \\sqrt{\\frac{10 \\cdot (6 - 11,22)^2 + 12 \\cdot (10 - 11,22)^2 + 8 \\cdot (14 - 11,22)^2 + 5 \\cdot (18 - 11,22)^2 + 1 \\cdot (22 - 11,22)^2}{35}}\\newline\n&= 4,47.\n\\end{split}\n\\]\nUsando a tabela de distribuição de frequências acima, podemos encontrar as estatísticas de ordem.\n\n\n\nEstatísticas de ordem\n\n\n\n\n\\(p_{(1)}=\\\\cdots=p_{(10)}=6\\)\n\n\n\\(p_{(11)}=\\\\cdots=p_{(22)}=10\\)\n\n\n\\(p_{(23)}=\\\\cdots=p_{(30)}=14\\)\n\n\n\\(p_{(31)}=p_{(32)}=p_{(33)}=p_{(34)}=p_{(35)}=18\\)\n\n\n\\(p_{(36)}=22\\)\n\n\n\nEntão a mediana é dada por\n\\[\n\\begin{split}\nmd(x) &= \\frac{x_{\\left(\\lfloor \\frac{n+1}{2}  \\rfloor\\right)} + x_{\\left(\\lceil \\frac{n+1}{2}  \\rceil\\right)}}{2}\\newline\n&= \\frac{x_{\\left(\\lfloor \\frac{36+1}{2}  \\rfloor\\right)} + x_{\\left(\\lceil \\frac{36+1}{2}  \\rceil\\right)}}{2}\\newline\n&= \\frac{x_{\\left(\\lfloor 18,5  \\rfloor\\right)} + x_{\\left(\\lceil 18,5  \\rceil\\right)}}{2}\\newline\n&= \\frac{x_{\\left(18\\right)} + x_{\\left(19\\right)}}{2}= \\frac{10 + 10}{2} = 10.\n\\end{split}\n\\]"
+  },
+  {
+    "objectID": "paginas/cade/medidas-resumo-graficos/medidas-resumo-graficos.html#footnotes",
+    "href": "paginas/cade/medidas-resumo-graficos/medidas-resumo-graficos.html#footnotes",
+    "title": "E como calcular medidas de resumo quando temos um gráfico de barras ou histograma?",
+    "section": "Notas de rodapé",
+    "text": "Notas de rodapé\n\n\nO gráfico de barras pode ser construído usando frequência relativa (proporção) ou porcentagem. Fique atento ao rótulo do eixo \\(y\\) do gráfico.↩︎\nOs desvios ao quadrado são dados por \\((x_i - \\bar{x})^2\\) em que \\(x_i\\) é um valor observado da amostra e \\(\\bar{x}\\) é a média.↩︎\nO histograma também pode ser construído usando frequência (absoluta) ou porcentagem. Mas geralmente, usamos frequência relativa.↩︎"
+  },
+  {
+    "objectID": "paginas/material.html",
+    "href": "paginas/material.html",
+    "title": "Ciência de Dados",
+    "section": "",
+    "text": "Material dos cursos do projeto de extensão R para Ciência de Dados.\n\n\n   \n     \n     \n       Ordenar por\n       Pré-selecionado\n         \n          Data - Mais velho\n        \n         \n          Data - O mais novo\n        \n         \n          Título\n        \n         \n          Autor\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\nData\n\n\n\n\nTítulo\n\n\nAutor\n\n\n\n\n\n\n20 de out. de 2023\n\n\n\n\n\nR para Ciência de Dados: Exploração e Visualização de Dados\n\n\nCarolina Costa Mota Paraíba\n\n\n\n\n15 de set. de 2023\n\n\n\n\n\nR para Ciência de Dados: Introdução à programação em R\n\n\nGilberto Pereira Sassi\n\n\n\n\n18 de ago. de 2023\n\n\n\n\n\nR para Ciência de Dados: Regressão Logística\n\n\nCarolina Costa Mota Paraíba\n\n\n\n\n26 de jul. de 2023\n\n\n\n\n\nCiência de Dados para Docentes usando R\n\n\nCarolina Costa Mota Paraíba\n\n\n\n\n7 de jul. de 2023\n\n\n\n\n\nR para Ciência de Dados: Quarto\n\n\nGilberto Pereira Sassi\n\n\n\n\n\n\nNenhum item correspondente\n\n\n\n\n\n\n\n© 2023 R para Ciência de Dados 🖤 by Carolina Paraíba e Gilberto Sassi"
   }
 ]

@@ -1,0 +1,842 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>Ciência de Dados</title>
+<link>https://gilbertosassi.quarto.pub/cienciadedados/paginas/cade.html</link>
+<atom:link href="https://gilbertosassi.quarto.pub/cienciadedados/paginas/cade.xml" rel="self" type="application/rss+xml"/>
+<description></description>
+<generator>quarto-1.3.450</generator>
+<lastBuildDate>Wed, 01 Nov 2023 03:00:00 GMT</lastBuildDate>
+<item>
+  <title>E como calcular medidas de resumo quando temos um gráfico de barras ou histograma?</title>
+  <dc:creator>Gilberto Pereira Sassi</dc:creator>
+  <link>https://gilbertosassi.quarto.pub/cienciadedados/paginas/cade/medidas-resumo-graficos/medidas-resumo-graficos.html</link>
+  <description><![CDATA[ 
+
+
+
+<p>Com um gráfico de barras e um histograma, você tem uma ideia da distribuição dos dados. Mas e se você deseja encontrar um ou alguns números que representam ou resumem fidedignamente os valores representados nestes gráficos? Para encontrar estes números podemos usar medidas de resumo, e se você tem o conjunto de dados que foi usado para construir estes gráficos essa tarefa é simples em <em>softwares</em> como o <code>R</code>, <code>Python</code> ou até um <em>software</em> de planilha como o <code>excel</code>. E se você tem apenas o gráfico de barras ou histograma e não tem o conjunto de dados? <em>Don’t panic</em>, mesmo nesse caso conseguimos calcular medidas de resumo, e é isso que eu vou explicar como fazer neste post.</p>
+<section id="gráfico-de-barras" class="level2">
+<h2 class="anchored" data-anchor-id="gráfico-de-barras">Gráfico de barras</h2>
+<p>Imagine que você tem um gráfico de barras para uma variável quantitativa discreta <img src="https://latex.codecogs.com/png.latex?X"> com valores observados <img src="https://latex.codecogs.com/png.latex?x_1,%20%5Cdots,%20x_k">, conforme a figura abaixo.</p>
+<p><img src="https://gilbertosassi.quarto.pub/cienciadedados/paginas/cade/medidas-resumo-graficos/barras-geral.png" alt="Gráfico de barras para variável quantitativa discreta." width="50%" title="Gráfico de barras para variável quantitativa discreta."></p>
+<p>Cada valor observado <img src="https://latex.codecogs.com/png.latex?x_i,%20i=1,%20%5Cdots,%20k"> do gráfico acima tem uma barra com altura <img src="https://latex.codecogs.com/png.latex?n_i,i=1,%20%5Cdots,%20k"><sup>1</sup>. Logo, usando esta altura, que é igual a frequência, podemos construir a tabela de distribuição de frequência abaixo.</p>
+<table class="table">
+<colgroup>
+<col style="width: 16%">
+<col style="width: 18%">
+<col style="width: 29%">
+<col style="width: 35%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;"><img src="https://latex.codecogs.com/png.latex?X"></th>
+<th style="text-align: center;">Frequência</th>
+<th style="text-align: center;">Frequência relativa (proporção)</th>
+<th style="text-align: center;">Porcentagem</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><img src="https://latex.codecogs.com/png.latex?x_1"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?n_1"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?f_1%20=%20%5Cfrac%7Bn_1%7D%7Bn%7D"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?100%5Ccdot%20f_1%5C%5C%25"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><img src="https://latex.codecogs.com/png.latex?x_2"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?n_1"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?f_2%20=%20%5Cfrac%7Bn_2%7D%7Bn%7D"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?100%5Ccdot%20f_2%5C%5C%25"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><img src="https://latex.codecogs.com/png.latex?x_3"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?n_3"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?f_3%20=%20%5Cfrac%7Bn_3%7D%7Bn%7D"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?100%5Ccdot%20f_3%5C%5C%25"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><img src="https://latex.codecogs.com/png.latex?%5Cvdots"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?%5Cvdots"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?%5Cvdots"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?%5Cvdots%25"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><img src="https://latex.codecogs.com/png.latex?x_k"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?n_k"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?f_k%20=%20%5Cfrac%7Bn_k%7D%7Bn%7D"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?100%5Ccdot%20f_k%5C%25"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Total</td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?n%20=%20n_1+%5Ccdots+n_k"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?1%20%5Capprox%20f_1%20+%20%5Ccdots%20+%20f_k"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?100%5C%25%20%5Capprox%20100%5Ccdot%20f_1%20+%20%5Ccdots%20+%20100%20%5Ccdot%20f_k"></td>
+</tr>
+</tbody>
+</table>
+<p>Para calcular as medidas de resumo, note que o valor <img src="https://latex.codecogs.com/png.latex?x_i"> aparece <img src="https://latex.codecogs.com/png.latex?n_i"> vezes para <img src="https://latex.codecogs.com/png.latex?i=1,%20%5Cdots,%20k">. Aqui vamos calcular a média, desvio padrão e a mediana. Para calcular a média, somamos todos os valores e dividimos pelo tamanho da amostra, e para calcular o desvio padrão somamos todos os desvios ao quadrado<sup>2</sup> e dividimos pelo tamanho da amostra subtraído por um e em seguida tiramos a raiz quadrada deste valor. Então podemos usar a frequência da tabela de distribuição de frequência como descrito na equação abaixo para calcular a média e o desvio padrão. <img src="https://latex.codecogs.com/png.latex?%0A%5Cbegin%7Bsplit%7D%0A%5Cbar%7Bx%7D%20&amp;=%20%5Cfrac%7B%5Coverbrace%7Bx_1+%20%5Ccdots%20+%20x_1%7D%5E%7Bn_1%5Cmbox%7B%20vezes%7D%7D%20+%20%5Ccdots%20+%20%5Coverbrace%7Bx_k+%20%5Ccdots%20+%20x_k%7D%5E%7Bn_k%5Cmbox%7B%20vezes%7D%7D%7D%7Bn%7D%5Cnewline%0A&amp;=%20%5Cfrac%7Bn_1%20%5Ccdot%20x_1%20+%20%5Ccdots%20+%20n_k%20%5Ccdot%20x_k%7D%7Bn%7D%5Cnewline%0Adp(x)%20&amp;=%20%5Csqrt%7BVar(x)%7D%5Cnewline%0A&amp;=%20%5Csqrt%7B%5Cfrac%7B%5Coverbrace%7B(x_1%20-%20%5Cbar%7Bx%7D)%5E2+%20%5Ccdots%20+%20(x_1%20-%20%5Cbar%7Bx%7D)%5E2%7D%5E%7Bn_1%5Cmbox%7B%20vezes%7D%7D%20+%20%5Ccdots%20+%20%5Coverbrace%7B(x_k%20-%20%5Cbar%7Bx%7D)%5E2+%20%5Ccdots%20+%20(x_k%20-%20%5Cbar%7Bx%7D)%5E2%7D%5E%7Bn_k%5Cmbox%7B%20vezes%7D%7D%7D%7Bn-1%7D%7D%5Cnewline%0A&amp;=%20%5Csqrt%7B%5Cfrac%7Bn_1%5Ccdot(x_1%20-%20%5Cbar%7Bx%7D)%5E2%20+%20%5Ccdots%20+%20n_k%20%5Ccdot%20(x_k%20-%20%5Cbar%7Bx%7D)%5E2%7D%7Bn-1%7D%7D%0A%5Cend%7Bsplit%7D%0A"></p>
+<p>Para calcular a mediana, precisamos calcular as estatísticas de ordem <img src="https://latex.codecogs.com/png.latex?x_%7B(i)%7D">, em que <img src="https://latex.codecogs.com/png.latex?x_%7B(i)%7D"> é o <img src="https://latex.codecogs.com/png.latex?i">-ésimo menor número. Imagine que <img src="https://latex.codecogs.com/png.latex?x_1"> é o menor número da amostra, então os <img src="https://latex.codecogs.com/png.latex?n_1"> menores valores são todos iguais a <img src="https://latex.codecogs.com/png.latex?x_1">: <img src="https://latex.codecogs.com/png.latex?x_%7B(1)%7D%20=%20x_%7B(2)%7D%20=%20%5Ccdots%20=%20x_%7B(n_1)%7D%20=%20x_1">. Suponha que <img src="https://latex.codecogs.com/png.latex?x_2"> é o segundo menor valor da amostra, então os <img src="https://latex.codecogs.com/png.latex?n_2"> menores valores (depois de <img src="https://latex.codecogs.com/png.latex?x_1">) são todos iguais a <img src="https://latex.codecogs.com/png.latex?x_2">: <img src="https://latex.codecogs.com/png.latex?x_%7B(n_1+1)%7D%20=%20x_%7B(n_1+2)%7D%20=%20%5Ccdots%20=%20x_%7B(n_1+n_2)%7D%20=%20x_2">. Imagine agora que <img src="https://latex.codecogs.com/png.latex?x_3"> é o terceiro menor valor da amostra, então os menores valores (depois de <img src="https://latex.codecogs.com/png.latex?x_1"> e <img src="https://latex.codecogs.com/png.latex?x_2">) são todos iguais a <img src="https://latex.codecogs.com/png.latex?x_3">: <img src="https://latex.codecogs.com/png.latex?x_%7B(n_1+n_2+1)%7D%20=%20x_%7B(n_1+n_2+2)%7D%20=%20%5Ccdots%20=%20x_%7B(n_1+n_2+n_3)%7D%20=%20x_3">. E continuamos neste processo até organizar todos os valores observados da amostra do menor até o maior valor como indicado na tabela abaixo. Note que estamos usando a frequência <img src="https://latex.codecogs.com/png.latex?n_1">, <img src="https://latex.codecogs.com/png.latex?n_2"> até <img src="https://latex.codecogs.com/png.latex?n_k"> da tabela distribuição de frequências.</p>
+<table class="table">
+<colgroup>
+<col style="width: 100%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Estatística de ordem</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><img src="https://latex.codecogs.com/png.latex?x_%7B(1)%7D%20=%20x_%7B(2)%7D%20=%20%5Ccdots%20=%20x_%7B(n_1)%7D%20=%20x_1"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><img src="https://latex.codecogs.com/png.latex?x_%7B(n_1+1)%7D%20=%20x_%7B(n_1+2)%7D%20=%20%5Ccdots%20=%20x_%7B(n_1+n_2)%7D%20=%20x_2"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><img src="https://latex.codecogs.com/png.latex?x_%7B(n_1+n_2+1)%7D%20=%20x_%7B(n_1+n_2+2)%7D%20=%20%5Ccdots%20=%20x_%7B(n_1+n_2%20+%20n_3)%7D%20=%20x_3"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><img src="https://latex.codecogs.com/png.latex?%5C%5Cvdots"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><img src="https://latex.codecogs.com/png.latex?x_%7B(n_1+n_2%20+%20n_3+%20%5Ccdots%20+%20n_%7Bk-1%7D+1)%7D%20=%20x_%7B(n_1+n_2%20+%20n_3+%20%5Ccdots%20+%20n_%7Bk-1%7D+2)%7D%20=%20%5Ccdots%20=%20x_%7B(n_1+n_2%20+%20n_3+%20%5Ccdots%20+%20n_%7Bk-1%7D+%20n_k)%7D%20=%20x_k"></td>
+</tr>
+</tbody>
+</table>
+<p>Então a mediana é calculada do jeito tradicional usando a equação abaixo. <img src="https://latex.codecogs.com/png.latex?%0Amd(x)%20=%20%5Cfrac%7Bx_%7B%5Cleft(%5Clceil(n+1)%5Ccdot%200.5%5Crceil%20%5Cright)%7D%20+%20x_%7B%5Cleft(%5Clfloor(n+1)%5Ccdot%200.5%5Crfloor%20%5Cright)%7D%7D%7B2%7D%0A"></p>
+<p>em que <img src="https://latex.codecogs.com/png.latex?%5Clfloor%20%5Ccdot%20%5Crfloor"> é a função <em>arredonda para baixo</em> e <img src="https://latex.codecogs.com/png.latex?%5Clceil%20%5Ccdot%20%5Crceil"> é a função <em>arredonda para cima</em>. Por exemplo, <img src="https://latex.codecogs.com/png.latex?%5Clfloor%201,2%20%5Crfloor%20=%201">, <img src="https://latex.codecogs.com/png.latex?%5Clfloor%201,76%20%5Crfloor%20=%201">, <img src="https://latex.codecogs.com/png.latex?%5Clceil%201,2%20%5Crceil%20=%202"> e <img src="https://latex.codecogs.com/png.latex?%5Clceil%201,76%20%5Crceil%20=2">.</p>
+<section id="exemplo" class="level3">
+<h3 class="anchored" data-anchor-id="exemplo">Exemplo</h3>
+<p>Considere o gráfico de barras da variável <code>Número de filhos</code> de um conjunto de <img src="https://latex.codecogs.com/png.latex?36"> funcionário da <code>Companhia MB</code> representado na figura abaixo.</p>
+<p><img src="https://gilbertosassi.quarto.pub/cienciadedados/paginas/cade/medidas-resumo-graficos/grafico-barras-numero-filhos.png" alt="Gráfico de barras para variável quantitativa discreta Número de filhos." width="50%"></p>
+<p>Note que a barra que corresponde a <code>zero filhos</code> tem altura <img src="https://latex.codecogs.com/png.latex?20"> e frequência <img src="https://latex.codecogs.com/png.latex?20">, a barra que corresponde a <code>um filho</code> tem altura <img src="https://latex.codecogs.com/png.latex?5"> e frequência <img src="https://latex.codecogs.com/png.latex?5">, a barra que corresponde a <code>dois filhos</code> tem altura <img src="https://latex.codecogs.com/png.latex?7"> e frequência <img src="https://latex.codecogs.com/png.latex?7">, a barra que corresponde a <code>três filhos</code> tem altura <img src="https://latex.codecogs.com/png.latex?3"> e frequência <img src="https://latex.codecogs.com/png.latex?3">, a barra que corresponde a <code>quatro filhos</code> tem altura <img src="https://latex.codecogs.com/png.latex?0"> e frequência <img src="https://latex.codecogs.com/png.latex?0"> e a barra que corresponde a <code>cinco filhos</code> tem altura <img src="https://latex.codecogs.com/png.latex?1"> e frequência <img src="https://latex.codecogs.com/png.latex?1">. Consequentemente, temos a seguinte tabela de distribuição de frequências.</p>
+<table class="table">
+<colgroup>
+<col style="width: 26%">
+<col style="width: 28%">
+<col style="width: 22%">
+<col style="width: 22%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Número de filhos</th>
+<th style="text-align: center;">Frequência</th>
+<th style="text-align: center;">Frequência relativa (proporção)</th>
+<th style="text-align: center;">Porcentagem</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?0"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?20"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?%5Cfrac%7B20%7D%7B36%7D%20=%200,5556"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?0,5556%20%5Ccdot%20100%20=%2055,56%5C%5C%25"></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?1"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?5"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?%5Cfrac%7B5%7D%7B36%7D%20=%200,1389"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?0,1389%20%5Ccdot%20100%20=%2013,89%5C%5C%25"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?2"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?7"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?%5Cfrac%7B7%7D%7B36%7D=0,1944"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?0,1944%20%5Ccdot%20100%20=%2019,44%5C%5C%25"></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?3"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?3"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?%5Cfrac%7B3%7D%7B36%7D=0,0833"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?0,0833%20%5Ccdot%20100%20=%208,33%5C%5C%25"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?4"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?0"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?%5Cfrac%7B0%7D%7B36%7D%20=0"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?0%20%5Ccdot%20100%20=%200%5C%5C%25"></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?5"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?1"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?%5Cfrac%7B1%7D%7B36%7D%20=%200,0278"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?0,0278%20%5Ccdot%20100%20=%202,78%5C%5C%25"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">Total</td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?36"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?1"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?100"></td>
+</tr>
+</tbody>
+</table>
+<p><img src="https://latex.codecogs.com/png.latex?%0A%5Cbegin%7Bsplit%7D%0A%5Cbar%7Bx%7D%20&amp;=%20%5Cfrac%7B20%20%5Ccdot%200%20+%205%20%5Ccdot%201%20+%207%20%5Ccdot%202%20+%203%20%5Ccdot%203%20+%200%20%5Ccdot%204%20+%201%20%5Ccdot%205%7D%7B36%7D%20=%200,92.%5Cnewline%0Adp(x)%20&amp;=%20%5Csqrt%7B%5Cfrac%7B20%20%5Ccdot%20(0%20-%200,92)%5E2%20+%205%20%5Ccdot%20(1%20-%200,92)%5E2%20+%207%20%5Ccdot%20(2%20-%200,92)%5E2%20+%203%20%5Ccdot%20(3%20-%200,92)%5E2%20+%200%20%5Ccdot%20(4%20-%200,92)%5E2%20+%201%20%5Ccdot%20(5%20-%200,92)%5E2%7D%7B35%7D%7D%5Cnewline%0A&amp;=%201,25.%0A%5Cend%7Bsplit%7D%0A"></p>
+<p>Para calcular a mediana, primeiro precisamos encontrar as estatísticas de ordem.</p>
+<table class="table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Estatísticas de ordem</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><img src="https://latex.codecogs.com/png.latex?x_%7B(1)%7D=x_%7B(2)%7D=%5C%5Ccdots=x_%7B(20)%7D=0"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><img src="https://latex.codecogs.com/png.latex?x_%7B(21)%7D=x_%7B(22)%7D=x_%7B(23)%7D=x_%7B(24)%7D=x_%7B(25)%7D=1"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><img src="https://latex.codecogs.com/png.latex?x_%7B(26)%7D=x_%7B(27)%7D=x_%7B(28)%7D=x_%7B(29)%7D=x_%7B(30)%7D=x_%7B(31)%7D=x_%7B(32)%7D=2"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><img src="https://latex.codecogs.com/png.latex?x_%7B(33)%7D=x_%7B(34)%7D=x_%7B(35)%7D=3"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><img src="https://latex.codecogs.com/png.latex?x_%7B(36)%7D%20=%205"></td>
+</tr>
+</tbody>
+</table>
+<p>Então a mediana é dada por</p>
+<p><img src="https://latex.codecogs.com/png.latex?%0A%5Cbegin%7Bsplit%7D%0Amd(x)%20&amp;=%20%5Cfrac%7Bx_%7B%5Cleft(%5Clfloor%20%5Cfrac%7Bn+1%7D%7B2%7D%20%20%5Crfloor%5Cright)%7D%20+%20x_%7B%5Cleft(%5Clceil%20%5Cfrac%7Bn+1%7D%7B2%7D%20%20%5Crceil%5Cright)%7D%7D%7B2%7D%5Cnewline%0A&amp;=%20%5Cfrac%7Bx_%7B%5Cleft(%5Clfloor%20%5Cfrac%7B36+1%7D%7B2%7D%20%20%5Crfloor%5Cright)%7D%20+%20x_%7B%5Cleft(%5Clceil%20%5Cfrac%7B36+1%7D%7B2%7D%20%20%5Crceil%5Cright)%7D%7D%7B2%7D%5Cnewline%0A&amp;=%20%5Cfrac%7Bx_%7B%5Cleft(%5Clfloor%2018,5%20%20%5Crfloor%5Cright)%7D%20+%20x_%7B%5Cleft(%5Clceil%2018,5%20%20%5Crceil%5Cright)%7D%7D%7B2%7D%5Cnewline%0A&amp;=%20%5Cfrac%7Bx_%7B%5Cleft(18%5Cright)%7D%20+%20x_%7B%5Cleft(19%5Cright)%7D%7D%7B2%7D=0%5Cnewline%0A%5Cend%7Bsplit%7D%0A"></p>
+</section>
+</section>
+<section id="histograma" class="level2">
+<h2 class="anchored" data-anchor-id="histograma">Histograma</h2>
+<p>O histograma é um gráfico construído usando barras sem espaçamento entre elas, e cada barra tem a largura da base igual a largura do intervalo intervalo usado na contagem da variável quantitativa contínua e a área da barra é igual a frequência relativa<sup>3</sup>. Note que a área da figura geométrica do histograma sempre é um, e a altura de cada barra é a divisão da frequência relativa pela largura do intervalo conforme ilustrado na figura abaixo. Chamamos essa divisão de <em>Densidade de frequência</em>.</p>
+<p><img src="https://gilbertosassi.quarto.pub/cienciadedados/paginas/cade/medidas-resumo-graficos/histograma-continua.png" alt="Histograma de uma variável quantitativa contínua." width="50%"></p>
+<p>Para encontrarmos a frequência relativa de cada intervalo, e consequentemente a porcentagem, precisamos multiplicar a <em>densidade de frequência</em> (altura da barra) pela largura do intervalo, conforme tabela abaixo.</p>
+<table class="table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 24%">
+<col style="width: 32%">
+<col style="width: 24%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">X</th>
+<th style="text-align: center;">Densidade de frequência (altura da barra)</th>
+<th style="text-align: center;">Frequência relativa</th>
+<th style="text-align: center;">Porcentagem</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?%5Ba_0,%20a_1)"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?df_1"></td>
+<td style="text-align: center;">f_1 = <img src="https://latex.codecogs.com/png.latex?df_1%20%5Ccdot%20(a_1%20-%20a_0)"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?f_1%20%5Ccdot%20100%5C%25"></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?%5Ba_1,%20a_2)"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?df_2"></td>
+<td style="text-align: center;">f_2 = <img src="https://latex.codecogs.com/png.latex?df_2%20%5Ccdot%20(a_2%20-%20a_1)"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?f_2%20%5Ccdot%20100%5C%25"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?%5Ba_3,%20a_2)"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?df_3"></td>
+<td style="text-align: center;">f_3 = <img src="https://latex.codecogs.com/png.latex?df_3%20%5Ccdot%20(a_3%20-%20a_2)"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?f_3%20%5Ccdot%20100%5C%25"></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?%5Cvdots"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?%5Cvdots"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?%5Cvdots"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?%5Cvdots"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?%5Ba_k,%20a_%7Bk-1%7D)"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?df_k"></td>
+<td style="text-align: center;">f_k = <img src="https://latex.codecogs.com/png.latex?df_k%20%5Ccdot%20(a_k%20-%20a_%7Bk-1%7D)"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?f_k%20%5Ccdot%20100%5C%25"></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Total</td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?--"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?1"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?100%5C%25"></td>
+</tr>
+</tbody>
+</table>
+<p>Se soubermos o tamanho da amostra, conseguimos calcular a frequência (absoluta): basta multiplicar a frequência relativa pelo tamanho da amostra. Imagine que o tamanho da amostra é <img src="https://latex.codecogs.com/png.latex?n">, então a tabela de distribuição de frequências é dada pela tabela abaixo.</p>
+<table class="table">
+<colgroup>
+<col style="width: 13%">
+<col style="width: 16%">
+<col style="width: 21%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">X</th>
+<th style="text-align: center;">Densidade de frequência (altura da barra)</th>
+<th style="text-align: center;">Frequência relativa</th>
+<th style="text-align: center;">Porcentagem</th>
+<th style="text-align: center;">Frequência</th>
+<th style="text-align: center;"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?%5Ba_0,%20a_1)"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?df_1"></td>
+<td style="text-align: center;">f_1 = <img src="https://latex.codecogs.com/png.latex?df_1%20%5Ccdot%20(a_1%20-%20a_0)"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?f_1%20%5Ccdot%20100%5C%25"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?f_1%20%5Ccdot%20n"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?%5Ba_1,%20a_2)"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?df_2"></td>
+<td style="text-align: center;">f_2 = <img src="https://latex.codecogs.com/png.latex?df_2%20%5Ccdot%20(a_2%20-%20a_1)"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?f_2%20%5Ccdot%20100%5C%25"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?f_2%20%5Ccdot%20n"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?%5Ba_3,%20a_2)"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?df_3"></td>
+<td style="text-align: center;">f_3 = <img src="https://latex.codecogs.com/png.latex?df_3%20%5Ccdot%20(a_3%20-%20a_2)"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?f_3%20%5Ccdot%20100%5C%25"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?f_3%20%5Ccdot%20n"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?%5Cvdots"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?%5Cvdots"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?%5Cvdots"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?%5Cvdots"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?%5Cvdots"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?%5Ba_k,%20a_%7Bk-1%7D)"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?df_k"></td>
+<td style="text-align: center;">f_k = <img src="https://latex.codecogs.com/png.latex?df_k%20%5Ccdot%20(a_k%20-%20a_%7Bk-1%7D)"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?f_k%20%5Ccdot%20100%5C%25"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?f_k%20%5Ccdot%20n"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Total</td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?--"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?1"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?100%5C%25"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?n"></td>
+<td style="text-align: center;"></td>
+</tr>
+</tbody>
+</table>
+<p>Agora, queremos calcular a média e o desvio padrão. Mas na tabela de distribuição de frequências acima, sabemos apenas que <img src="https://latex.codecogs.com/png.latex?n_i"> valores da variável quantitativa contínua <img src="https://latex.codecogs.com/png.latex?X"> está entre <img src="https://latex.codecogs.com/png.latex?a_%7Bi-1%7D"> e <img src="https://latex.codecogs.com/png.latex?a_i">, para <img src="https://latex.codecogs.com/png.latex?i=1,%20%5Cdots,%20k">, mas não sabemos quais são esses valores e sem esses valores não conseguimos calcular a média e o desvio padrão. Existe vários algoritmos para contornar essa restrição e você pode consultar, por exemplo, o livro com título <a href="https://gilbertosassi.netlify.app/ensino/2022/02/primeiro-semestre-de-2022/estatistica-basica-bussab-morettin.pdf"><strong>Estatística Básica</strong></a> de Bussab e <a href="https://www.ime.usp.br/~pam/">Morettin</a>. Aqui neste post, vamos usar uma abordagem bem simples, rápida e um pouco grosseira: vamos assumir que todos os <img src="https://latex.codecogs.com/png.latex?n_i"> valores do intervalo de valores <img src="https://latex.codecogs.com/png.latex?%5Ba_%7Bi-1%7D,%20a_i)"> são aproximadamente iguais a <img src="https://latex.codecogs.com/png.latex?%5Cfrac%7Ba_%7Bi-1%7D%20+%20a_i%7D%7B2%7D">. Vou chamar esse valor <img src="https://latex.codecogs.com/png.latex?%5Cfrac%7Ba_%7Bi-1%7D%20+%20a_i%7D%7B2%7D"> de ponto médio. E temos a seguinte tabela de distribuição de frequências.</p>
+<table class="table">
+<colgroup>
+<col style="width: 11%">
+<col style="width: 13%">
+<col style="width: 18%">
+<col style="width: 13%">
+<col style="width: 13%">
+<col style="width: 13%">
+<col style="width: 13%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">X</th>
+<th style="text-align: center;">Densidade de frequência (altura da barra)</th>
+<th style="text-align: center;">Frequência relativa</th>
+<th style="text-align: center;">Porcentagem</th>
+<th style="text-align: center;">Frequência</th>
+<th style="text-align: center;">Ponto médio</th>
+<th style="text-align: center;"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?%5Ba_0,%20a_1)"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?df_1"></td>
+<td style="text-align: center;">f_1 = <img src="https://latex.codecogs.com/png.latex?df_1%20%5Ccdot%20(a_1%20-%20a_0)"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?f_1%20%5Ccdot%20100%5C%25"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?f_1%20%5Ccdot%20n"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?p_1%20=%20%5Cfrac%7Ba_0%20+%20a_1%7D%7B2%7D"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?%5Ba_1,%20a_2)"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?df_2"></td>
+<td style="text-align: center;">f_2 = <img src="https://latex.codecogs.com/png.latex?df_2%20%5Ccdot%20(a_2%20-%20a_1)"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?f_2%20%5Ccdot%20100%5C%25"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?f_2%20%5Ccdot%20n"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?p_2%20=%20%5Cfrac%7Ba_2%20+%20a_1%7D%7B2%7D"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?%5Ba_3,%20a_2)"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?df_3"></td>
+<td style="text-align: center;">f_3 = <img src="https://latex.codecogs.com/png.latex?df_3%20%5Ccdot%20(a_3%20-%20a_2)"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?f_3%20%5Ccdot%20100%5C%25"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?f_3%20%5Ccdot%20n"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?p_3%20=%20%5Cfrac%7Ba_3%20+%20a_2%7D%7B2%7D"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?%5Cvdots"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?%5Cvdots"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?%5Cvdots"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?%5Cvdots"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?%5Cvdots"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?%5Ba_k,%20a_%7Bk-1%7D)"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?df_k"></td>
+<td style="text-align: center;">f_k = <img src="https://latex.codecogs.com/png.latex?df_k%20%5Ccdot%20(a_k%20-%20a_%7Bk-1%7D)"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?f_k%20%5Ccdot%20100%5C%25"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?f_k%20%5Ccdot%20n"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?p_k%20=%20%5Cfrac%7Ba_k%20+%20a_%7Bk-1%7D%7D%7B2%7D"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Total</td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?--"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?1"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?100%5C%25"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?n"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?--"></td>
+<td style="text-align: center;"></td>
+</tr>
+</tbody>
+</table>
+<p>Com a tabela de distribuição de frequências, podemos usar o ponto médio para calcular a média e o desvio padrão de forma análoga ao caso da variável quantitativa discreta. Mais precisamente,</p>
+<p><img src="https://latex.codecogs.com/png.latex?%0A%5Cbegin%7Bsplit%7D%0A%5Cbar%7Bx%7D%20&amp;=%20%5Cfrac%7Bp_1%20%5Ccdot%20n_1%20+%20p_2%20%5Ccdot%20n_2%20+%20%5Ccdots%20+%20p_k%20%5Ccdot%20n_k%7D%7Bn%7D%5Cnewline%0Adp(x)%20&amp;=%20%5Csqrt%7BVar(x)%7D%5Cnewline%0A&amp;=%20%5Csqrt%7B%5Cfrac%7Bn_1(%5Cbar%7Bx%7D%20-%20p_1)%20+%20n_2(%5Cbar%7Bx%7D%20-%20p_2)%20+%20%5Ccdots%20+%20n_k(%5Cbar%7Bx%7D%20-%20p_k)%7D%7Bn-1%7D%7D%5Cnewline%0A%5Cend%7Bsplit%7D%0A"></p>
+<p>Para calcular a mediana, precisamos calcular as estatísticas de ordem <img src="https://latex.codecogs.com/png.latex?p_%7B(i)%7D">, em que <img src="https://latex.codecogs.com/png.latex?p_%7B(i)%7D"> é o <img src="https://latex.codecogs.com/png.latex?i">-ésimo menor número. Imagine que <img src="https://latex.codecogs.com/png.latex?p_1"> é o menor número entre os pontos médios, então os <img src="https://latex.codecogs.com/png.latex?n_1"> menores pontos médios são todos iguais a <img src="https://latex.codecogs.com/png.latex?p_1">: <img src="https://latex.codecogs.com/png.latex?p_%7B(1)%7D%20=%20p_%7B(2)%7D%20=%20%5Ccdots%20=%20p_%7B(n_1)%7D%20=%20p_1">. Suponha que <img src="https://latex.codecogs.com/png.latex?p_2"> é o segundo menor valor da amostra, então os <img src="https://latex.codecogs.com/png.latex?n_2"> menores valores (depois de <img src="https://latex.codecogs.com/png.latex?p_1">) são todos iguais a <img src="https://latex.codecogs.com/png.latex?p_2">: <img src="https://latex.codecogs.com/png.latex?p_%7B(n_1+1)%7D%20=%20p_%7B(n_1+2)%7D%20=%20%5Ccdots%20=%20p_%7B(n_1+n_2)%7D%20=%20p_2">. Imagine agora que <img src="https://latex.codecogs.com/png.latex?p_3"> é o terceiro menor valor da amostra, então os menores valores (depois de <img src="https://latex.codecogs.com/png.latex?p_1"> e <img src="https://latex.codecogs.com/png.latex?p_2">) são todos iguais a <img src="https://latex.codecogs.com/png.latex?p_3">: <img src="https://latex.codecogs.com/png.latex?p_%7B(n_1+n_2+1)%7D%20=%20p_%7B(n_1+n_2+2)%7D%20=%20%5Ccdots%20=%20p_%7B(n_1+n_2+n_3)%7D%20=%20p_3">. E continuamos neste processo até organizar todos os valores observados da amostra do menor até o maior valor como indicado na tabela abaixo. Note que estamos usando a frequência <img src="https://latex.codecogs.com/png.latex?n_1">, <img src="https://latex.codecogs.com/png.latex?n_2"> até <img src="https://latex.codecogs.com/png.latex?n_k"> da tabela distribuição de frequências.</p>
+<table class="table">
+<colgroup>
+<col style="width: 100%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Estatística de ordem</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><img src="https://latex.codecogs.com/png.latex?p_%7B(1)%7D%20=%20p_%7B(2)%7D%20=%20%5Ccdots%20=%20p_%7B(n_1)%7D%20=%20p_1"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><img src="https://latex.codecogs.com/png.latex?p_%7B(n_1+1)%7D%20=%20p_%7B(n_1+2)%7D%20=%20%5Ccdots%20=%20p_%7B(n_1+n_2)%7D%20=%20p_2"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><img src="https://latex.codecogs.com/png.latex?p_%7B(n_1+n_2+1)%7D%20=%20p_%7B(n_1+n_2+2)%7D%20=%20%5Ccdots%20=%20p_%7B(n_1+n_2%20+%20n_3)%7D%20=%20p_3"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><img src="https://latex.codecogs.com/png.latex?%5C%5Cvdots"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><img src="https://latex.codecogs.com/png.latex?p_%7B(n_1+n_2%20+%20n_3+%20%5Ccdots%20+%20n_%7Bk-1%7D+1)%7D%20=%20p_%7B(n_1+n_2%20+%20n_3+%20%5Ccdots%20+%20n_%7Bk-1%7D+2)%7D%20=%20%5Ccdots%20=%20p_%7B(n_1+n_2%20+%20n_3+%20%5Ccdots%20+%20n_%7Bk-1%7D+%20n_k)%7D%20=%20p_k"></td>
+</tr>
+</tbody>
+</table>
+<p>Então a mediana é calculada do jeito tradicional usando a equação abaixo. <img src="https://latex.codecogs.com/png.latex?%0Amd(x)%20=%20%5Cfrac%7Bp_%7B%5Cleft(%5Clceil(n+1)%5Ccdot%200.5%5Crceil%20%5Cright)%7D%20+%20p_%7B%5Cleft(%5Clfloor(n+1)%5Ccdot%200.5%5Crfloor%20%5Cright)%7D%7D%7B2%7D.%0A"></p>
+<section id="exemplo-1" class="level3">
+<h3 class="anchored" data-anchor-id="exemplo-1">Exemplo</h3>
+<p>Considere o histograma da variável quantitativa contínua <img src="https://latex.codecogs.com/png.latex?X"> de 36 funcionário da <a href="empresa.xlsx">companhia MB</a> da figura abaixo.</p>
+<p><img src="https://gilbertosassi.quarto.pub/cienciadedados/paginas/cade/medidas-resumo-graficos/histograma-funcionarios.png" alt="Histograma para a variável salário." width="50%"></p>
+<p>Então, temos a seguinte tabela de distribuição de frequências.</p>
+<table class="table">
+<colgroup>
+<col style="width: 11%">
+<col style="width: 32%">
+<col style="width: 19%">
+<col style="width: 16%">
+<col style="width: 9%">
+<col style="width: 11%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Salário</th>
+<th style="text-align: center;">Densidade de frequência</th>
+<th style="text-align: center;">Frequência relativa</th>
+<th style="text-align: center;">Porcentagem</th>
+<th style="text-align: center;">frequência</th>
+<th style="text-align: center;">Ponto médio</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?%5B4,%208)"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?0,0694"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?0,0694%20%5Ccdot%204%20=%200,2776"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?27,76%5C%5C%25"></td>
+<td style="text-align: center;">$0,2776 \cdot 36 \approx 10 <img src="https://latex.codecogs.com/png.latex?%7C"> = 6<img src="https://latex.codecogs.com/png.latex?%7C%20%7C">[8, 12)$</td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?0,0833"></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?%5B12,%2016)"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?0,0556"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?0,0556%20%5Ccdot%204%20=%200,2224"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?22,24%5C%5C%25"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?0,2224%20%5C%5Ccdot%2036%20%5C%5Capprox%208"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?%5Cfrac%7B12%20+%2016%7D%7B2%7D%20=%2014"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?%5B16,%2020)"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?0,0347"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?0,0347%20%5Ccdot%204%20=%200,1388"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?13,88%5C%5C%25"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?0,1388%20%5C%5Ccdot%2036%20%5C%5Capprox%205"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?%5Cfrac%7B16%20+%2020%7D%7B2%7D%20=%2018"></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?%5B20,%2024)"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?0,0069"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?0,0069%20%5Ccdot%204%20=%200,0276"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?2,76%5C%5C%25"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?0,0276%20%5C%5Ccdot%2036%20%5C%5Capprox%201"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?%5Cfrac%7B20%20+%2024%7D%7B2%7D%20=%2022"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">Total</td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?--"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?1"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?100%5C%5C%25"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?--"></td>
+<td style="text-align: center;"></td>
+</tr>
+</tbody>
+</table>
+<p>A média e o desvio padrão são dados por</p>
+<p><img src="https://latex.codecogs.com/png.latex?%0A%5Cbegin%7Bsplit%7D%0A%5Cbar%7Bx%7D%20&amp;=%20%5Cfrac%7B10%20%5Ccdot%206%20+%2012%20%5Ccdot%2010%20+%208%20%5Ccdot%2014%20+%205%20%5Ccdot%2018%20+%201%20%5Ccdot%201%7D%7B36%7D%5Cnewline%0A&amp;=%2011,22%5Cnewline%0Adp(x)%20&amp;=%20%5Csqrt%7B%5Cfrac%7B10%20%5Ccdot%20(6%20-%2011,22)%5E2%20+%2012%20%5Ccdot%20(10%20-%2011,22)%5E2%20+%208%20%5Ccdot%20(14%20-%2011,22)%5E2%20+%205%20%5Ccdot%20(18%20-%2011,22)%5E2%20+%201%20%5Ccdot%20(22%20-%2011,22)%5E2%7D%7B35%7D%7D%5Cnewline%0A&amp;=%204,47.%0A%5Cend%7Bsplit%7D%0A"></p>
+<p>Usando a tabela de distribuição de frequências acima, podemos encontrar as estatísticas de ordem.</p>
+<table class="table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Estatísticas de ordem</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><img src="https://latex.codecogs.com/png.latex?p_%7B(1)%7D=%5C%5Ccdots=p_%7B(10)%7D=6"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><img src="https://latex.codecogs.com/png.latex?p_%7B(11)%7D=%5C%5Ccdots=p_%7B(22)%7D=10"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><img src="https://latex.codecogs.com/png.latex?p_%7B(23)%7D=%5C%5Ccdots=p_%7B(30)%7D=14"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><img src="https://latex.codecogs.com/png.latex?p_%7B(31)%7D=p_%7B(32)%7D=p_%7B(33)%7D=p_%7B(34)%7D=p_%7B(35)%7D=18"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><img src="https://latex.codecogs.com/png.latex?p_%7B(36)%7D=22"></td>
+</tr>
+</tbody>
+</table>
+<p>Então a mediana é dada por</p>
+<p><img src="https://latex.codecogs.com/png.latex?%0A%5Cbegin%7Bsplit%7D%0Amd(x)%20&amp;=%20%5Cfrac%7Bx_%7B%5Cleft(%5Clfloor%20%5Cfrac%7Bn+1%7D%7B2%7D%20%20%5Crfloor%5Cright)%7D%20+%20x_%7B%5Cleft(%5Clceil%20%5Cfrac%7Bn+1%7D%7B2%7D%20%20%5Crceil%5Cright)%7D%7D%7B2%7D%5Cnewline%0A&amp;=%20%5Cfrac%7Bx_%7B%5Cleft(%5Clfloor%20%5Cfrac%7B36+1%7D%7B2%7D%20%20%5Crfloor%5Cright)%7D%20+%20x_%7B%5Cleft(%5Clceil%20%5Cfrac%7B36+1%7D%7B2%7D%20%20%5Crceil%5Cright)%7D%7D%7B2%7D%5Cnewline%0A&amp;=%20%5Cfrac%7Bx_%7B%5Cleft(%5Clfloor%2018,5%20%20%5Crfloor%5Cright)%7D%20+%20x_%7B%5Cleft(%5Clceil%2018,5%20%20%5Crceil%5Cright)%7D%7D%7B2%7D%5Cnewline%0A&amp;=%20%5Cfrac%7Bx_%7B%5Cleft(18%5Cright)%7D%20+%20x_%7B%5Cleft(19%5Cright)%7D%7D%7B2%7D=%20%5Cfrac%7B10%20+%2010%7D%7B2%7D%20=%2010.%0A%5Cend%7Bsplit%7D%0A"></p>
+<hr>
+
+
+</section>
+</section>
+
+
+<p>© 2023 <code>R</code> para Ciência de Dados <br>🖤 by Carolina Paraíba e Gilberto Sassi</p><div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Notas de rodapé</h2>
+
+<ol>
+<li id="fn1"><p>O gráfico de barras pode ser construído usando frequência relativa (proporção) ou porcentagem. Fique atento ao rótulo do eixo <img src="https://latex.codecogs.com/png.latex?y"> do gráfico.↩︎</p></li>
+<li id="fn2"><p>Os desvios ao quadrado são dados por <img src="https://latex.codecogs.com/png.latex?(x_i%20-%20%5Cbar%7Bx%7D)%5E2"> em que <img src="https://latex.codecogs.com/png.latex?x_i"> é um valor observado da amostra e <img src="https://latex.codecogs.com/png.latex?%5Cbar%7Bx%7D"> é a média.↩︎</p></li>
+<li id="fn3"><p>O histograma também pode ser construído usando frequência (absoluta) ou porcentagem. Mas geralmente, usamos frequência relativa.↩︎</p></li>
+</ol>
+</section></div> ]]></description>
+  <category>Ciência de Dados</category>
+  <category>Exploração e visualização de dados</category>
+  <category>Medidas de resumo</category>
+  <category>Gráfico de barras</category>
+  <category>Histograma</category>
+  <guid>https://gilbertosassi.quarto.pub/cienciadedados/paginas/cade/medidas-resumo-graficos/medidas-resumo-graficos.html</guid>
+  <pubDate>Wed, 01 Nov 2023 03:00:00 GMT</pubDate>
+  <media:content url="https://gilbertosassi.quarto.pub/cienciadedados/paginas/cade/medidas-resumo-graficos/barra.png" medium="image" type="image/png" height="144" width="144"/>
+</item>
+<item>
+  <title>Como criar tabela de distribuição de frequências usando o R?</title>
+  <dc:creator>Gilberto Pereira Sassi</dc:creator>
+  <link>https://gilbertosassi.quarto.pub/cienciadedados/paginas/cade/tabela-frequencias/tabela-frequencias.html</link>
+  <description><![CDATA[ 
+
+
+
+<p>Neste artigo, eu vou mostrar como usar a linguagem <code>R</code> para criar tabelas de distribuição de frequências para variáveis categóricas, variáveis discretas e variáveis contínuas. A primeira coisa que um analista pode fazer é <strong>contar</strong>! A contagem ou frequência, como falamos em Estatística e Ciência de Dados, permite que você detecte valores que são comuns e valores pouco usuais e também permite que você encontre diversas características da variável. Além disso, você pode usar tabelas de distribuição de frequências para comunicar informações e construir relatórios e artigos.</p>
+<p>Para simplificar a sua vida, <del>assim espero</del>, eu dividi este texto em três partes: tabelas de distribuição de frequências para variáveis categóricas; tabelas de distribuição de frequências para variáveis discretas; e tabelas de distribuição de frequências para variáveis contínuas. E, para ilustrar tudo que eu estiver falando, eu vou usar um conjunto de dados do livro <a href="https://www.ime.usp.br/~pam/EstBas.html">Estatística Básica</a>: <em><a href="empresa.xlsx">empresa.xlsx</a></em> que é um conjunto de dados com informações socioeconômicas de 36 funcionários de um departamento de contabilidade.</p>
+<p>No que segue, vamos usar o <em>framework</em> <code>tidyverse</code> e o pacote <code>janitor</code>.</p>
+<section id="tabelas-de-distribuição-de-frequências-para-variáveis-categóricas" class="level2">
+<h2 class="anchored" data-anchor-id="tabelas-de-distribuição-de-frequências-para-variáveis-categóricas">Tabelas de distribuição de frequências para variáveis categóricas</h2>
+<p>Suponha que você tenha uma variável categórica <img src="https://latex.codecogs.com/png.latex?X"> com suporte <img src="https://latex.codecogs.com/png.latex?%5C%7BA_1,%5Cdots,%20A_k%5C%7D">, então a ideia é contar quantas vezes <img src="https://latex.codecogs.com/png.latex?A_1"> aparece, <img src="https://latex.codecogs.com/png.latex?A_2"> aparece e assim por diante. Além disso, você pode calcular a porcentagem de vezes que <img src="https://latex.codecogs.com/png.latex?A_1"> aparece, a porcentagem <img src="https://latex.codecogs.com/png.latex?A_2"> de vezes que aparece e assim sucessivamente.</p>
+<p>Para ilustrar, considere a variável <code>escolaridade</code> onde o pesquisador armazenou o grau de escolaridade de cada um dos 36 funcionários. A primeira coisa que você precisa fazer é carregar os pacotes e os dados.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">library</span>(readxl)</span>
+<span id="cb1-2"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">library</span>(janitor)</span>
+<span id="cb1-3"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">library</span>(tidyverse)</span></code></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># carregando o arquivo</span></span>
+<span id="cb2-2">df_dados <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">read_xlsx</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"empresa.xlsx"</span>)</span>
+<span id="cb2-3"></span>
+<span id="cb2-4"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># uma olhadinha rápida nos dados carregados</span></span>
+<span id="cb2-5"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">glimpse</span>(df_dados) </span></code></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Rows: 36
+Columns: 6
+$ estado_civil  &lt;chr&gt; "solteiro", "casado", "casado", "solteiro", "solteiro", …
+$ escolaridade  &lt;chr&gt; "ensino fundamental", "ensino fundamental", "ensino fund…
+$ numero_filhos &lt;dbl&gt; 0, 1, 2, 0, 0, 0, 0, 0, 1, 0, 2, 0, 0, 3, 0, 0, 1, 2, 0,…
+$ salario       &lt;dbl&gt; 4.00, 4.56, 5.25, 5.73, 6.26, 6.66, 6.86, 7.39, 7.59, 7.…
+$ idade         &lt;dbl&gt; 26, 32, 36, 20, 40, 28, 41, 43, 34, 23, 33, 27, 37, 44, …
+$ procedencia   &lt;chr&gt; "interior", "capital", "capital", "outra", "outra", "int…</code></pre>
+</div>
+</div>
+<p>Se tudo estiver correto, já estamos prontos para construir a tabela de distribuição de frequência, ou seja, contar quantos funcionários têm <code>ensino fundamental</code>, quantos funcionários têm <code>ensino médio</code> e quantos funcionários têm <code>superior</code>.</p>
+<p>Primeiro usamos a função <code>tabyl</code> do pacote <code>janitor</code> para contar sem incluir o total e sem o sinal de porcentagem na coluna de <em>porcentagem</em>. Depois usamos <code>adorn_totals</code> e <code>adorn_pct_formatting</code> para adicionar o total na tabela e o sinal de porcentagem, respectivamente. Finalmente, usamos a função <code>rename</code> do pacote <code>dplyr</code> para traduzir os nomes da tabela para o português. Repare que usamos o operador pipe <code>|&gt;</code> para simplificar a nossa codificação.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">tabyl</span>(df_dados, escolaridade) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">|&gt;</span> <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># função que realiza a contagem</span></span>
+<span id="cb4-2"> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">adorn_totals</span>() <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">|&gt;</span> <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># adiciona a linha de total a tabela</span></span>
+<span id="cb4-3"> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">adorn_pct_formatting</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">digits =</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2</span>, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">affix_sign =</span> <span class="cn" style="color: #8f5902;
+background-color: null;
+font-style: inherit;">FALSE</span>) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">|&gt;</span> <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># acrescenta porcentagem na tabela sem o sinal de %</span></span>
+<span id="cb4-4"> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">rename</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Frequência"</span> <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">=</span> n, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Porcentagem"</span> <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">=</span> percent) <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># nomes em português</span></span></code></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>       escolaridade Frequência Porcentagem
+ ensino fundamental         12       33.33
+       ensino médio         18       50.00
+           superior          6       16.67
+              Total         36      100.00</code></pre>
+</div>
+</div>
+</section>
+<section id="tabelas-de-distribuição-de-frequências-para-variáveis-discretas" class="level2">
+<h2 class="anchored" data-anchor-id="tabelas-de-distribuição-de-frequências-para-variáveis-discretas">Tabelas de distribuição de frequências para variáveis discretas</h2>
+<p>Para uma variável discreta, usamos uma abordagem semelhante a abordagem usada para variáveis categóricas. Suponha que <img src="https://latex.codecogs.com/png.latex?X"> seja uma variável discreta com suporte <img src="https://latex.codecogs.com/png.latex?%5C%7Bx_1,%20%5Cdots,%20x_k%5C%7D">. Então, vamos contar quantas vezes o valor <img src="https://latex.codecogs.com/png.latex?x_1"> apareceu no conjunto de dados, quantas vezes apareceu o valor <img src="https://latex.codecogs.com/png.latex?x_2"> e assim por diante. Além disso, também vamos calcular a porcentagem de vezes que o valor <img src="https://latex.codecogs.com/png.latex?x_1"> ocorreu no conjunto de dados, a porcentagem de vezes que o valor <img src="https://latex.codecogs.com/png.latex?x_2"> e assim por diante.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb6" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">tabyl</span>(df_dados, numero_filhos) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">|&gt;</span></span>
+<span id="cb6-2">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">adorn_totals</span>() <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">|&gt;</span></span>
+<span id="cb6-3">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">adorn_pct_formatting</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">digits =</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2</span>, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">affix_sign =</span> <span class="cn" style="color: #8f5902;
+background-color: null;
+font-style: inherit;">FALSE</span>) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">|&gt;</span></span>
+<span id="cb6-4">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">rename</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Número de filhos"</span> <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">=</span> numero_filhos, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Frequência"</span> <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">=</span> n, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Porcentagem"</span> <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">=</span> percent)</span></code></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> Número de filhos Frequência Porcentagem
+                0         20       55.56
+                1          5       13.89
+                2          7       19.44
+                3          3        8.33
+                5          1        2.78
+            Total         36      100.00</code></pre>
+</div>
+</div>
+</section>
+<section id="tabelas-de-distribuição-de-frequências-para-variáveis-contínuas" class="level2">
+<h2 class="anchored" data-anchor-id="tabelas-de-distribuição-de-frequências-para-variáveis-contínuas">Tabelas de distribuição de frequências para variáveis contínuas</h2>
+<p>E se quisermos construir uma tabela de distribuição de frequências para uma variável contínua? No conjunto de dados <em><a href="empresa.xlsx">empresa.xlsx</a></em>, a variável <code>salario</code> é contínua e se você olhar no arquivo <em><a href="empresa.xlsx">empresa.xlsx</a></em> você pode reparar que nenhum funcionário tem salário igual ao outro. Consequentemente, se usarmos a técnica que vimos nas seções anteriores, teremos uma tabela com 36 valores, que é basicamente uma cópia dos dados originais, e ficaria bem complicado de encontrar características desta variável.</p>
+<p>Neste caso, agregamos os valores em intervalos. Os intervalos podem ser determinados de diversas formas. O regulador ou o mercado pode especificar intervalos para uma variável, por exemplo os intervalos usados na medição de pressão arterial podem ser especificados pelo governo. Estudos ou pesquisas anteriores podem indicar quais intervalos você deveria usar em tabela de distribuição de frequências.</p>
+<p>E se você não tem acesso a estudos anteriores, nem regulador, nem <em>mercado</em> para indicar como construir os intervalos? Neste caso, você pode categorizar a variável contínua em <img src="https://latex.codecogs.com/png.latex?k"> intervalos de mesmo tamanho segundo a <strong>Regra de Sturge</strong>, que é dada por <img src="https://latex.codecogs.com/png.latex?%0Ak%20=%20%5Clfloor%201%20+%20%5Clog2(n)%20%5Crfloor,%0A"> onde <img src="https://latex.codecogs.com/png.latex?n"> é o número de linhas (ou o tamanho da amostra) do conjunto de dados, e <img src="https://latex.codecogs.com/png.latex?%5Clfloor%20x%20%5Crfloor"> é o maior número inteiro menor ou igual a <img src="https://latex.codecogs.com/png.latex?x"> (equivale a função <code>arrendonda.para.baixo</code> do <code>google sheets</code>).</p>
+<p>Em nosso exemplo, não temos regulador, nem mercado e nem estudos anteriores para nos indicar os intervalos para usar com a variável <code>salario</code> do conjuto de dados <em><a href="empresa.xlsx">empresa.xlsx</a></em>. Então, vamos usar a Regra de Sturge, ou seja, vamos categorizar a variável <code>salario</code> agregando os valores de <code>salario</code> em <img src="https://latex.codecogs.com/png.latex?k=%5Clfloor%201%20+%20%5Clog2(36)%20%5Crfloor=6"> intervalos de mesmo tamanho usando a função <code>cut</code>.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb8" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># limites dos intervalos</span></span>
+<span id="cb8-2">breaks <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">with</span>(df_dados, <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">seq</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">from =</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">min</span>(salario), <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">to =</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">max</span>(salario), <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">length.out =</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">6</span>))</span>
+<span id="cb8-3"></span>
+<span id="cb8-4"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># categorizando salario em 6 intervalos</span></span>
+<span id="cb8-5">df_dados <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">mutate</span>(df_dados, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">salario_cat =</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">cut</span>(salario, breaks, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">include.lowest =</span> T, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">right =</span> F))</span></code></pre></div>
+</div>
+<p>Após categorização, podemos usar as técnicas que aprendamos para variáveis categóricas.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb9" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">tabyl</span>(df_dados, salario_cat) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">|&gt;</span></span>
+<span id="cb9-2">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">adorn_totals</span>() <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">|&gt;</span></span>
+<span id="cb9-3">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">adorn_pct_formatting</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">digits =</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2</span>, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">affix_sign =</span> <span class="cn" style="color: #8f5902;
+background-color: null;
+font-style: inherit;">FALSE</span>) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">|&gt;</span></span>
+<span id="cb9-4">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">rename</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Salário"</span> <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">=</span> salario_cat, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Frequência"</span> <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">=</span> n, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Porcentagem"</span> <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">=</span> percent)</span></code></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>     Salário Frequência Porcentagem
+    [4,7.86)         10       27.78
+ [7.86,11.7)         12       33.33
+ [11.7,15.6)          7       19.44
+ [15.6,19.4)          6       16.67
+ [19.4,23.3]          1        2.78
+       Total         36      100.00</code></pre>
+</div>
+</div>
+<hr>
+
+
+</section>
+
+<p>© 2023 <code>R</code> para Ciência de Dados <br>🖤 by Carolina Paraíba e Gilberto Sassi</p> ]]></description>
+  <category>linguage R</category>
+  <category>Estatística</category>
+  <category>Ciência de Dados</category>
+  <category>Exploração e visualização de dados</category>
+  <guid>https://gilbertosassi.quarto.pub/cienciadedados/paginas/cade/tabela-frequencias/tabela-frequencias.html</guid>
+  <pubDate>Sun, 01 Oct 2023 03:00:00 GMT</pubDate>
+  <media:content url="https://gilbertosassi.quarto.pub/cienciadedados/paginas/cade/tabela-frequencias/tabela.png" medium="image" type="image/png" height="144" width="144"/>
+</item>
+</channel>
+</rss>

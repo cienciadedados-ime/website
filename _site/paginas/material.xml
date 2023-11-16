@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>Ciência de Dados</title>
+<link>https://gilbertosassi.quarto.pub/cienciadedados/paginas/material.html</link>
+<atom:link href="https://gilbertosassi.quarto.pub/cienciadedados/paginas/material.xml" rel="self" type="application/rss+xml"/>
+<description></description>
+<generator>quarto-1.3.450</generator>
+<lastBuildDate>Fri, 20 Oct 2023 03:00:00 GMT</lastBuildDate>
+<item>
+  <title>R para Ciência de Dados: Exploração e Visualização de Dados</title>
+  <dc:creator>Carolina Costa Mota Paraíba</dc:creator>
+  <link>https://gilbertosassi.quarto.pub/cienciadedados/paginas/material/2023/exploracao-visualizacao/exploracao-visualizacao.html</link>
+  <description><![CDATA[ 
+
+
+
+<section id="avisos" class="level1" style="text-align:justify">
+<h1>Avisos</h1>
+<p>Infelizmente, a segunda aula que seria dia 03/11/2023 está cancelada, pois o campus Ondina/Federação da UFBA estará fechado por causa do feriado prolongado de Finados. <strong>Então, a segunda aula será remarcada para o dia 10/11/2023.</strong></p>
+<p><strong>Lembrando que dia 27/10/2023 não teremos aula.</strong></p>
+<hr>
+<section id="slides" class="level2">
+<h2 class="anchored" data-anchor-id="slides">Slides</h2>
+<p><a href="aula.pdf" target="_blank">slides</a></p>
+</section>
+<section id="conjunto-de-dados" class="level2">
+<h2 class="anchored" data-anchor-id="conjunto-de-dados">Conjunto de Dados</h2>
+<p><a href="economia_us.xlsx">economia_us.xlsx</a><br> <a href="estudantes.xlsx">estudantes.xlsx</a><br> <a href="renda_vida.xlsx">renda_vida.xlsx</a></p>
+</section>
+<section id="código-das-aulas" class="level2">
+<h2 class="anchored" data-anchor-id="código-das-aulas">Código das aulas</h2>
+<p><a href="https://gist.github.com/cienciadedados-ime/f7bb4abbcbe096d4030efa861b67baa3" target="_blank">Código apresentado durante as aulas.</a></p>
+</section>
+<section id="instalação-do-r-e-do-rstudio" class="level2">
+<h2 class="anchored" data-anchor-id="instalação-do-r-e-do-rstudio">Instalação do <code>R</code> e do <code>RStudio</code></h2>
+<p>Neste curso, a IDE vamos utilizar é o&nbsp;<code>RStudio</code>. Outras opções populares em ciência de dados são o <code>VScode</code> da Microsoft e <code>JupyterLab,</code> caso você tenha familiaridade ou já trabalhe com este editores sinta a vontade para usá-los.</p>
+<p>Caso você não queria ou não possa realizar instalações em seu computador, recomendamos que você use as plataformas <em>Google Colaboratory</em> <a href="https://colab.to/r">colab.to/r</a> e/ou <em>RStudio Cloud</em> <a href="https://posit.cloud/">posit.cloud</a>. Recomendamos o uso da plataforma <em>RStudio Cloud</em> pelo mesmo estilo e aspecto visual do aplicativo <code>RStudio</code>.</p>
+</section>
+<section id="para-instalar-o-r" class="level2">
+<h2 class="anchored" data-anchor-id="para-instalar-o-r">Para instalar o <code>R</code></h2>
+<p>Para instalar o <code>R</code> em seu computador, basta seguir as instruções em <a href="https://cran.r-project.org/">cran.r-project.org</a>. É necessário que você instale a versão 4.1 ou superior do <code>R</code>.</p>
+</section>
+<section id="para-instalar-o-rstudio" class="level2">
+<h2 class="anchored" data-anchor-id="para-instalar-o-rstudio">Para instalar o <code>RStudio</code></h2>
+<p>Depois de ter instalado o <code>R</code>, siga as instruções de instalação em <a href="https://posit.co/downloads/">posit.co/downloads</a>.</p>
+</section>
+</section>
+<hr>
+
+
+
+<p>© 2023 <code>R</code> para Ciência de Dados <br>🖤 by Carolina Paraíba e Gilberto Sassi</p> ]]></description>
+  <category>Ciência de Dados</category>
+  <category>Estatística descritiva</category>
+  <category>Exploração e visualização de dados</category>
+  <category>Medidas de resumo</category>
+  <category>Gráfico de barras</category>
+  <category>Histograma</category>
+  <guid>https://gilbertosassi.quarto.pub/cienciadedados/paginas/material/2023/exploracao-visualizacao/exploracao-visualizacao.html</guid>
+  <pubDate>Fri, 20 Oct 2023 03:00:00 GMT</pubDate>
+  <media:content url="https://gilbertosassi.quarto.pub/cienciadedados/assets/logo_projeto.png" medium="image" type="image/png" height="151" width="144"/>
+</item>
+<item>
+  <title>R para Ciência de Dados: Introdução à programação em R</title>
+  <dc:creator>Gilberto Pereira Sassi</dc:creator>
+  <link>https://gilbertosassi.quarto.pub/cienciadedados/paginas/material/2023/programacao/programacao.html</link>
+  <description><![CDATA[ 
+
+
+
+<div style="text-align:justify">
+<section id="slides" class="level2">
+<h2 class="anchored" data-anchor-id="slides">Slides</h2>
+<p><a href="programacao.pdf">Slides</a></p>
+</section>
+<section id="conjunto-de-dados" class="level2">
+<h2 class="anchored" data-anchor-id="conjunto-de-dados">Conjunto de Dados</h2>
+<p><a href="arquivos.zip"><code>arquivos.zip</code></a></p>
+</section>
+<section id="código-de-sala-de-aula" class="level2">
+<h2 class="anchored" data-anchor-id="código-de-sala-de-aula">Código de sala de aula</h2>
+<p><strong>NÃO RECORTE NEM APAGUE NADA DESTE ARQUIVO</strong></p>
+<p><strong>APENAS COPIE O CÓDIGO</strong></p>
+<p><a href="https://codeshare.io/r9m9g6" target="_blank"><code>https://codeshare.io/r9m9g6</code></a></p>
+</section>
+<section id="instalação-do-r-e-do-rstudio" class="level2">
+<h2 class="anchored" data-anchor-id="instalação-do-r-e-do-rstudio">Instalação do <code>R</code> e do <code>RStudio</code></h2>
+<p>Neste curso, a IDE vamos utilizar é o&nbsp;<code>RStudio</code>. Outras opções populares em ciência de dados são o <code>VScode</code> da Microsoft e <code>JupyterLab,</code> caso você tenha familiaridade ou já trabalhe com este editores sinta a vontade para usá-los.</p>
+<p>Caso você não queria ou não possa realizar instalações em seu computador, recomendamos que você use as plataformas <em>Google Colaboratory</em> <a href="https://colab.to/r">colab.to/r</a> e/ou <em>RStudio Cloud</em> <a href="https://posit.cloud/">posit.cloud</a>. Recomendamos o uso da plataforma <em>RStudio Cloud</em> pelo mesmo estilo e aspecto visual do aplicativo <code>RStudio</code>.</p>
+</section>
+<section id="para-instalar-o-r" class="level2">
+<h2 class="anchored" data-anchor-id="para-instalar-o-r">Para instalar o <code>R</code></h2>
+<p>Para instalar o <code>R</code> em seu computador, basta seguir as instruções em <a href="https://cran.r-project.org/">cran.r-project.org</a>. É necessário que você instale a versão 4.1 ou superior do <code>R</code>.</p>
+</section>
+<section id="para-instalar-o-rstudio" class="level2">
+<h2 class="anchored" data-anchor-id="para-instalar-o-rstudio">Para instalar o <code>RStudio</code></h2>
+<p>Depois de ter instalado o <code>R</code>, siga as instruções de instalação em <a href="https://posit.co/downloads/">posit.co/downloads</a>.</p>
+</section>
+</div>
+<hr>
+
+
+
+<p>© 2023 <code>R</code> para Ciência de Dados <br>🖤 by Carolina Paraíba e Gilberto Sassi</p> ]]></description>
+  <category>Ciência de Dados</category>
+  <category>Linguagem &lt;code&gt;R&lt;/code&gt;</category>
+  <category>Laços de repetição</category>
+  <category>Controle de Fluxo</category>
+  <category>Pacote &lt;code&gt;purrr&lt;/code&gt;</category>
+  <guid>https://gilbertosassi.quarto.pub/cienciadedados/paginas/material/2023/programacao/programacao.html</guid>
+  <pubDate>Fri, 15 Sep 2023 03:00:00 GMT</pubDate>
+  <media:content url="https://gilbertosassi.quarto.pub/cienciadedados/assets/logo_projeto.png" medium="image" type="image/png" height="151" width="144"/>
+</item>
+<item>
+  <title>R para Ciência de Dados: Regressão Logística</title>
+  <dc:creator>Carolina Costa Mota Paraíba</dc:creator>
+  <link>https://gilbertosassi.quarto.pub/cienciadedados/paginas/material/2023/regressao-logistica/regressao-logistica.html</link>
+  <description><![CDATA[ 
+
+
+
+<div style="text-align:justify">
+<section id="slides" class="level2">
+<h2 class="anchored" data-anchor-id="slides">Slides</h2>
+<p><a href="aula.pdf" target="_blank">Aula</a></p>
+</section>
+<section id="conjunto-de-dados" class="level2">
+<h2 class="anchored" data-anchor-id="conjunto-de-dados">Conjunto de Dados</h2>
+<p><a href="dados_cdrl.xlsx" target="_blank">dados_cdrl</a></p>
+</section>
+<section id="instalação-do-r-e-do-rstudio" class="level2">
+<h2 class="anchored" data-anchor-id="instalação-do-r-e-do-rstudio">Instalação do <code>R</code> e do <code>RStudio</code></h2>
+<p>Neste curso, a IDE vamos utilizar é o&nbsp;<code>RStudio</code>. Outras opções populares em ciência de dados são o <code>VScode</code> da Microsoft e <code>JupyterLab,</code> caso você tenha familiaridade ou já trabalhe com este editores sinta a vontade para usá-los.</p>
+<p>Caso você não queria ou não possa realizar instalações em seu computador, recomendamos que você use as plataformas <em>Google Colaboratory</em> <a href="https://colab.to/r">colab.to/r</a> e/ou <em>RStudio Cloud</em> <a href="https://posit.cloud/">posit.cloud</a>. Recomendamos o uso da plataforma <em>RStudio Cloud</em> pelo mesmo estilo e aspecto visual do aplicativo <code>RStudio</code>.</p>
+</section>
+<section id="para-instalar-o-r" class="level2">
+<h2 class="anchored" data-anchor-id="para-instalar-o-r">Para instalar o <code>R</code></h2>
+<p>Para instalar o <code>R</code> em seu computador, basta seguir as instruções em <a href="https://cran.r-project.org/">cran.r-project.org</a>. É necessário que você instale a versão 4.1 ou superior do <code>R</code>.</p>
+</section>
+<section id="para-instalar-o-rstudio" class="level2">
+<h2 class="anchored" data-anchor-id="para-instalar-o-rstudio">Para instalar o <code>RStudio</code></h2>
+<p>Depois de ter instalado o <code>R</code>, siga as instruções de instalação em <a href="https://posit.co/downloads/">posit.co/downloads</a>.</p>
+</section>
+</div>
+<hr>
+
+
+
+<p>© 2023 <code>R</code> para Ciência de Dados <br>🖤 by Carolina Paraíba e Gilberto Sassi</p> ]]></description>
+  <category>Ciência de Dados</category>
+  <category>Estatística</category>
+  <category>Modelagem Estatística</category>
+  <category>Modelos Lineares Generalizados</category>
+  <category>Regressão Logística</category>
+  <guid>https://gilbertosassi.quarto.pub/cienciadedados/paginas/material/2023/regressao-logistica/regressao-logistica.html</guid>
+  <pubDate>Fri, 18 Aug 2023 03:00:00 GMT</pubDate>
+  <media:content url="https://gilbertosassi.quarto.pub/cienciadedados/assets/logo_projeto.png" medium="image" type="image/png" height="151" width="144"/>
+</item>
+<item>
+  <title>Ciência de Dados para Docentes usando R</title>
+  <dc:creator>Carolina Costa Mota Paraíba</dc:creator>
+  <link>https://gilbertosassi.quarto.pub/cienciadedados/paginas/material/2023/cd-docentes/cd-docentes.html</link>
+  <description><![CDATA[ 
+
+
+
+<div style="text-align:justify">
+<section id="slides" class="level2">
+<h2 class="anchored" data-anchor-id="slides">Slides</h2>
+<p><a href="aula.pdf" target="_blank">aula</a></p>
+</section>
+<section id="conjuntos-de-dados" class="level2">
+<h2 class="anchored" data-anchor-id="conjuntos-de-dados">Conjuntos de Dados</h2>
+<p><a href="estudantes.xlsx" target="_blank">estudantes</a></p>
+<p><a href="economia_us.xlsx" target="_blank">economia_us</a></p>
+<p><a href="renda_vida.xlsx" target="_blank">renda_vida</a></p>
+</section>
+<section id="instalação-do-r-e-do-rstudio" class="level2">
+<h2 class="anchored" data-anchor-id="instalação-do-r-e-do-rstudio">Instalação do <code>R</code> e do <code>RStudio</code></h2>
+<p>Neste curso, a IDE vamos utilizar é o&nbsp;<code>RStudio</code>. Outras opções populares em ciência de dados são o <code>VScode</code> da Microsoft e <code>JupyterLab,</code> caso você tenha familiaridade ou já trabalhe com este editores sinta a vontade para usá-los.</p>
+<p>Caso você não queria ou não possa realizar instalações em seu computador, recomendamos que você use as plataformas <em>Google Colaboratory</em> <a href="https://colab.to/r">colab.to/r</a> e/ou <em>RStudio Cloud</em> <a href="https://posit.cloud/">posit.cloud</a>. Recomendamos o uso da plataforma <em>RStudio Cloud</em> pelo mesmo estilo e aspecto visual do aplicativo <code>RStudio</code>.</p>
+</section>
+<section id="para-instalar-o-r" class="level2">
+<h2 class="anchored" data-anchor-id="para-instalar-o-r">Para instalar o <code>R</code></h2>
+<p>Para instalar o <code>R</code> em seu computador, basta seguir as instruções em <a href="https://cran.r-project.org/">cran.r-project.org</a>. É necessário que você instale a versão 4.1 ou superior do <code>R</code>.</p>
+</section>
+<section id="para-instalar-o-rstudio" class="level2">
+<h2 class="anchored" data-anchor-id="para-instalar-o-rstudio">Para instalar o <code>RStudio</code></h2>
+<p>Depois de ter instalado o <code>R</code>, siga as instruções de instalação em <a href="https://posit.co/downloads/">posit.co/downloads</a>.</p>
+</section>
+</div>
+<hr>
+
+
+
+<p>© 2023 <code>R</code> para Ciência de Dados <br>🖤 by Carolina Paraíba e Gilberto Sassi</p> ]]></description>
+  <category>Ciência de Dados</category>
+  <category>Estatística descritiva</category>
+  <category>Exploração e visualização de dados</category>
+  <category>Medidas de resumo</category>
+  <category>Gráfico de barras</category>
+  <category>Docentes</category>
+  <category>Histograma</category>
+  <guid>https://gilbertosassi.quarto.pub/cienciadedados/paginas/material/2023/cd-docentes/cd-docentes.html</guid>
+  <pubDate>Wed, 26 Jul 2023 03:00:00 GMT</pubDate>
+  <media:content url="https://gilbertosassi.quarto.pub/cienciadedados/assets/logo_projeto.png" medium="image" type="image/png" height="151" width="144"/>
+</item>
+<item>
+  <title>R para Ciência de Dados: Quarto</title>
+  <dc:creator>Gilberto Pereira Sassi</dc:creator>
+  <link>https://gilbertosassi.quarto.pub/cienciadedados/paginas/material/2023/quarto/quarto.html</link>
+  <description><![CDATA[ 
+
+
+
+<div style="text-align:justify">
+<p>Página do curso do primeiro semestre de 2023: <a href="https://rmarkdown.simple.ink">rmarkdown.simple.ink</a></p>
+</div>
+<hr>
+
+
+
+<p>© 2023 <code>R</code> para Ciência de Dados <br>🖤 by Carolina Paraíba e Gilberto Sassi</p> ]]></description>
+  <category>Ciência de Dados</category>
+  <category>Estatística</category>
+  <category>Linguagem &lt;code&gt;R&lt;/code&gt;</category>
+  <category>Markdown</category>
+  <category>Quarto</category>
+  <guid>https://gilbertosassi.quarto.pub/cienciadedados/paginas/material/2023/quarto/quarto.html</guid>
+  <pubDate>Fri, 07 Jul 2023 03:00:00 GMT</pubDate>
+  <media:content url="https://gilbertosassi.quarto.pub/cienciadedados/assets/logo_projeto.png" medium="image" type="image/png" height="151" width="144"/>
+</item>
+</channel>
+</rss>

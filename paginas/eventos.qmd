@@ -1,7 +1,20 @@
 ---
 title: ""
+listing:
+  id: listagem
+  contents: eventos
+  type: default
+  categories: false
+  feed: true
+  fields: [image, date, title, author, reading-time]
+  sort:
+    - "date"
+    - "title desc"
 ---
 
-Em breve...
+Em breve.
+
+::: {#listagem}
+:::
 
 ---

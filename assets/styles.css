@@ -3,3 +3,11 @@
 p {
     text-align: justify; /* Justifica o texto */
 }
+
+.margem-logo {
+    margin: 1em;
+}
+
+.category {
+    font-size: 80%;
+}

@@ -100,5 +100,35 @@
   },
   "paginas/catalogo/introducao-a-programacao.qmd": {
     "introducao-a-programacao.html": "80ca11b3"
+  },
+  "paginas/cade/teste.qmd": {
+    "teste.html": "5395f086"
+  },
+  "paginas/cade/teste/teste.qmd": {
+    "teste.html": "43d7d0a9"
+  },
+  "paginas/cade/tabela-frequencias/tabela-frequencias.qmd": {
+    "tabela-frequencias.html": "e6969081"
+  },
+  "paginas/cade/medidas-resumo-graficos/medidas-resumo-graficos.qmd": {
+    "medidas-resumo-graficos.html": "f98a9aa4"
+  },
+  "paginas/material.qmd": {
+    "material.html": "3b92e5ee"
+  },
+  "paginas/material/2023/exploracao-visualizacao/exploracao-visualizacao.qmd": {
+    "exploracao-visualizacao.html": "01be37d5"
+  },
+  "paginas/material/2023/programacao/programacao.qmd": {
+    "programacao.html": "51508bb6"
+  },
+  "paginas/material/2023/quarto/quarto.qmd": {
+    "quarto.html": "38e47c89"
+  },
+  "paginas/material/2023/cd-docentes/cd-docentes.qmd": {
+    "cd-docentes.html": "ef783583"
+  },
+  "paginas/material/2023/regressao-logistica/regressao-logistica.qmd": {
+    "regressao-logistica.html": "0fb86daf"
   }
 }
