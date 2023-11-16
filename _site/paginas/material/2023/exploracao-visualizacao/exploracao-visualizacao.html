@@ -8,7 +8,7 @@
 
 <meta name="author" content="Carolina Costa Mota Paraíba">
 
-<title>Ciência de Dados - Ciência de Dados para Docentes usando R</title>
+<title>Ciência de Dados - R para Ciência de Dados: Exploração e Visualização de Dados</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -24,24 +24,24 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../../../">
-<script src="../../../site_libs/quarto-html/quarto.js"></script>
-<script src="../../../site_libs/quarto-html/popper.min.js"></script>
-<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script src="../../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../../">
+<script src="../../../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -75,7 +75,7 @@ ul.task-list li input[type="checkbox"] {
 <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 
 
-<link rel="stylesheet" href="../../../assets/styles.css">
+<link rel="stylesheet" href="../../../../assets/styles.css">
 </head>
 
 <body class="nav-fixed">
@@ -85,10 +85,10 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
-    <a href="../../../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../../../assets/r.png" alt="" class="navbar-logo">
+    <a href="../../../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../../../assets/r.png" alt="" class="navbar-logo">
     </a>
-    <a class="navbar-brand" href="../../../index.html">
+    <a class="navbar-brand" href="../../../../index.html">
     <span class="navbar-title">Ciência de Dados</span>
     </a>
   </div>
@@ -99,31 +99,31 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../../index.html" rel="" target="">
+    <a class="nav-link" href="../../../../index.html" rel="" target="">
  <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../../paginas/inscricoes.html" rel="" target="">
+    <a class="nav-link" href="../../../../paginas/inscricoes.html" rel="" target="">
  <span class="menu-text">Inscrições</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../../paginas/catalogo.html" rel="" target="">
+    <a class="nav-link" href="../../../../paginas/catalogo.html" rel="" target="">
  <span class="menu-text">Cursos oferecidos</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../../paginas/material.html" rel="" target="">
+    <a class="nav-link" href="../../../../paginas/material.html" rel="" target="">
  <span class="menu-text">Material</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../../paginas/cade.html" rel="" target="">
+    <a class="nav-link" href="../../../../paginas/cade.html" rel="" target="">
  <span class="menu-text">CADE</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../../paginas/eventos.html" rel="" target="">
+    <a class="nav-link" href="../../../../paginas/eventos.html" rel="" target="">
  <span class="menu-text">Eventos</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../../paginas/equipe.html" rel="" target="">
+    <a class="nav-link" href="../../../../paginas/equipe.html" rel="" target="">
  <span class="menu-text">Equipe</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -132,17 +132,17 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-editais">    
         <li>
-    <a class="dropdown-item" href="../../../paginas/editais/editais-abertos.html" rel="" target="">
+    <a class="dropdown-item" href="../../../../paginas/editais/editais-abertos.html" rel="" target="">
  <span class="dropdown-text">Editais abertos</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../../paginas/editais/editais-2023.html" rel="" target="">
+    <a class="dropdown-item" href="../../../../paginas/editais/editais-2023.html" rel="" target="">
  <span class="dropdown-text">Editais encerrados</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="../../../paginas/contato.html" rel="" target="">
+    <a class="nav-link" href="../../../../paginas/contato.html" rel="" target="">
  <span class="menu-text">Contato</span></a>
   </li>  
 </ul>
@@ -158,21 +158,34 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Nesta página</h2>
+   
+  <ul>
+  <li><a href="#avisos" id="toc-avisos" class="nav-link active" data-scroll-target="#avisos">Avisos</a>
+  <ul class="collapse">
+  <li><a href="#slides" id="toc-slides" class="nav-link" data-scroll-target="#slides">Slides</a></li>
+  <li><a href="#conjunto-de-dados" id="toc-conjunto-de-dados" class="nav-link" data-scroll-target="#conjunto-de-dados">Conjunto de Dados</a></li>
+  <li><a href="#código-das-aulas" id="toc-código-das-aulas" class="nav-link" data-scroll-target="#código-das-aulas">Código das aulas</a></li>
+  <li><a href="#instalação-do-r-e-do-rstudio" id="toc-instalação-do-r-e-do-rstudio" class="nav-link" data-scroll-target="#instalação-do-r-e-do-rstudio">Instalação do <code>R</code> e do <code>RStudio</code></a></li>
+  <li><a href="#para-instalar-o-r" id="toc-para-instalar-o-r" class="nav-link" data-scroll-target="#para-instalar-o-r">Para instalar o <code>R</code></a></li>
+  <li><a href="#para-instalar-o-rstudio" id="toc-para-instalar-o-rstudio" class="nav-link" data-scroll-target="#para-instalar-o-rstudio">Para instalar o <code>RStudio</code></a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Ciência de Dados para Docentes usando <code>R</code></h1>
+<h1 class="title"><code>R</code> para Ciência de Dados: Exploração e Visualização de Dados</h1>
   <div class="quarto-categories">
     <div class="quarto-category">Ciência de Dados</div>
     <div class="quarto-category">Estatística descritiva</div>
     <div class="quarto-category">Exploração e visualização de dados</div>
     <div class="quarto-category">Medidas de resumo</div>
     <div class="quarto-category">Gráfico de barras</div>
-    <div class="quarto-category">Docentes</div>
     <div class="quarto-category">Histograma</div>
   </div>
   </div>
@@ -191,7 +204,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Data de Publicação</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">26 de julho de 2023</p>
+      <p class="date">20 de outubro de 2023</p>
     </div>
   </div>
   
@@ -201,16 +214,22 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<div style="text-align:justify">
+<section id="avisos" class="level1" style="text-align:justify">
+<h1>Avisos</h1>
+<p>Infelizmente, a segunda aula que seria dia 03/11/2023 está cancelada, pois o campus Ondina/Federação da UFBA estará fechado por causa do feriado prolongado de Finados. <strong>Então, a segunda aula será remarcada para o dia 10/11/2023.</strong></p>
+<p><strong>Lembrando que dia 27/10/2023 não teremos aula.</strong></p>
+<hr>
 <section id="slides" class="level2">
 <h2 class="anchored" data-anchor-id="slides">Slides</h2>
-<p><a href="aula.pdf" target="_blank">aula</a></p>
+<p><a href="aula.pdf" target="_blank">slides</a></p>
 </section>
-<section id="conjuntos-de-dados" class="level2">
-<h2 class="anchored" data-anchor-id="conjuntos-de-dados">Conjuntos de Dados</h2>
-<p><a href="estudantes.xlsx" target="_blank">estudantes</a></p>
-<p><a href="economia_us.xlsx" target="_blank">economia_us</a></p>
-<p><a href="renda_vida.xlsx" target="_blank">renda_vida</a></p>
+<section id="conjunto-de-dados" class="level2">
+<h2 class="anchored" data-anchor-id="conjunto-de-dados">Conjunto de Dados</h2>
+<p><a href="economia_us.xlsx">economia_us.xlsx</a><br> <a href="estudantes.xlsx">estudantes.xlsx</a><br> <a href="renda_vida.xlsx">renda_vida.xlsx</a></p>
+</section>
+<section id="código-das-aulas" class="level2">
+<h2 class="anchored" data-anchor-id="código-das-aulas">Código das aulas</h2>
+<p><a href="https://gist.github.com/cienciadedados-ime/f7bb4abbcbe096d4030efa861b67baa3" target="_blank">Código apresentado durante as aulas.</a></p>
 </section>
 <section id="instalação-do-r-e-do-rstudio" class="level2">
 <h2 class="anchored" data-anchor-id="instalação-do-r-e-do-rstudio">Instalação do <code>R</code> e do <code>RStudio</code></h2>
@@ -225,7 +244,7 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="para-instalar-o-rstudio">Para instalar o <code>RStudio</code></h2>
 <p>Depois de ter instalado o <code>R</code>, siga as instruções de instalação em <a href="https://posit.co/downloads/">posit.co/downloads</a>.</p>
 </section>
-</div>
+</section>
 <hr>
 
 

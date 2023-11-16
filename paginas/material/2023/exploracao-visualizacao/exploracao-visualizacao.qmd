@@ -31,6 +31,10 @@ Infelizmente, a segunda aula que seria dia 03/11/2023 está cancelada, pois o ca
 [estudantes.xlsx](estudantes.xlsx)<br>
 [renda_vida.xlsx](renda_vida.xlsx)
 
+## Código das aulas
+
+[Código apresentado durante as aulas.](https://gist.github.com/cienciadedados-ime/f7bb4abbcbe096d4030efa861b67baa3){target="_blank"}
+
 ## Instalação do `R` e do `RStudio`
 
 Neste curso, a IDE vamos utilizar é o `RStudio`. Outras opções populares em ciência de dados são o `VScode` da Microsoft e `JupyterLab,` caso você tenha familiaridade ou já trabalhe com este editores sinta a vontade para usá-los.

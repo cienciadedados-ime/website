@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Gilberto Pereira Sassi">
+<meta name="author" content="Carolina Costa Mota Paraíba">
 
-<title>Ciência de Dados - R para Ciência de Dados: Introdução à programação em R</title>
+<title>Ciência de Dados - Ciência de Dados para Docentes usando R</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -24,24 +24,24 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../../../">
-<script src="../../../site_libs/quarto-html/quarto.js"></script>
-<script src="../../../site_libs/quarto-html/popper.min.js"></script>
-<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script src="../../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../../">
+<script src="../../../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -75,7 +75,7 @@ ul.task-list li input[type="checkbox"] {
 <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 
 
-<link rel="stylesheet" href="../../../assets/styles.css">
+<link rel="stylesheet" href="../../../../assets/styles.css">
 </head>
 
 <body class="nav-fixed">
@@ -85,10 +85,10 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
-    <a href="../../../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../../../assets/r.png" alt="" class="navbar-logo">
+    <a href="../../../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../../../assets/r.png" alt="" class="navbar-logo">
     </a>
-    <a class="navbar-brand" href="../../../index.html">
+    <a class="navbar-brand" href="../../../../index.html">
     <span class="navbar-title">Ciência de Dados</span>
     </a>
   </div>
@@ -99,31 +99,31 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../../index.html" rel="" target="">
+    <a class="nav-link" href="../../../../index.html" rel="" target="">
  <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../../paginas/inscricoes.html" rel="" target="">
+    <a class="nav-link" href="../../../../paginas/inscricoes.html" rel="" target="">
  <span class="menu-text">Inscrições</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../../paginas/catalogo.html" rel="" target="">
+    <a class="nav-link" href="../../../../paginas/catalogo.html" rel="" target="">
  <span class="menu-text">Cursos oferecidos</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../../paginas/material.html" rel="" target="">
+    <a class="nav-link" href="../../../../paginas/material.html" rel="" target="">
  <span class="menu-text">Material</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../../paginas/cade.html" rel="" target="">
+    <a class="nav-link" href="../../../../paginas/cade.html" rel="" target="">
  <span class="menu-text">CADE</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../../paginas/eventos.html" rel="" target="">
+    <a class="nav-link" href="../../../../paginas/eventos.html" rel="" target="">
  <span class="menu-text">Eventos</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../../paginas/equipe.html" rel="" target="">
+    <a class="nav-link" href="../../../../paginas/equipe.html" rel="" target="">
  <span class="menu-text">Equipe</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -132,17 +132,17 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-editais">    
         <li>
-    <a class="dropdown-item" href="../../../paginas/editais/editais-abertos.html" rel="" target="">
+    <a class="dropdown-item" href="../../../../paginas/editais/editais-abertos.html" rel="" target="">
  <span class="dropdown-text">Editais abertos</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../../paginas/editais/editais-2023.html" rel="" target="">
+    <a class="dropdown-item" href="../../../../paginas/editais/editais-2023.html" rel="" target="">
  <span class="dropdown-text">Editais encerrados</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="../../../paginas/contato.html" rel="" target="">
+    <a class="nav-link" href="../../../../paginas/contato.html" rel="" target="">
  <span class="menu-text">Contato</span></a>
   </li>  
 </ul>
@@ -165,13 +165,15 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><code>R</code> para Ciência de Dados: Introdução à programação em <code>R</code></h1>
+<h1 class="title">Ciência de Dados para Docentes usando <code>R</code></h1>
   <div class="quarto-categories">
     <div class="quarto-category">Ciência de Dados</div>
-    <div class="quarto-category">Linguagem <code>R</code></div>
-    <div class="quarto-category">Laços de repetição</div>
-    <div class="quarto-category">Controle de Fluxo</div>
-    <div class="quarto-category">Pacote <code>purrr</code></div>
+    <div class="quarto-category">Estatística descritiva</div>
+    <div class="quarto-category">Exploração e visualização de dados</div>
+    <div class="quarto-category">Medidas de resumo</div>
+    <div class="quarto-category">Gráfico de barras</div>
+    <div class="quarto-category">Docentes</div>
+    <div class="quarto-category">Histograma</div>
   </div>
   </div>
 
@@ -182,14 +184,14 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Autor</div>
     <div class="quarto-title-meta-contents">
-             <p>Gilberto Pereira Sassi </p>
+             <p>Carolina Costa Mota Paraíba </p>
           </div>
   </div>
     
     <div>
     <div class="quarto-title-meta-heading">Data de Publicação</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">15 de setembro de 2023</p>
+      <p class="date">26 de julho de 2023</p>
     </div>
   </div>
   
@@ -202,17 +204,13 @@ ul.task-list li input[type="checkbox"] {
 <div style="text-align:justify">
 <section id="slides" class="level2">
 <h2 class="anchored" data-anchor-id="slides">Slides</h2>
-<p><a href="programacao.pdf">Slides</a></p>
+<p><a href="aula.pdf" target="_blank">aula</a></p>
 </section>
-<section id="conjunto-de-dados" class="level2">
-<h2 class="anchored" data-anchor-id="conjunto-de-dados">Conjunto de Dados</h2>
-<p><a href="arquivos.zip"><code>arquivos.zip</code></a></p>
-</section>
-<section id="código-de-sala-de-aula" class="level2">
-<h2 class="anchored" data-anchor-id="código-de-sala-de-aula">Código de sala de aula</h2>
-<p><strong>NÃO RECORTE NEM APAGUE NADA DESTE ARQUIVO</strong></p>
-<p><strong>APENAS COPIE O CÓDIGO</strong></p>
-<p><a href="https://codeshare.io/r9m9g6" target="_blank"><code>https://codeshare.io/r9m9g6</code></a></p>
+<section id="conjuntos-de-dados" class="level2">
+<h2 class="anchored" data-anchor-id="conjuntos-de-dados">Conjuntos de Dados</h2>
+<p><a href="estudantes.xlsx" target="_blank">estudantes</a></p>
+<p><a href="economia_us.xlsx" target="_blank">economia_us</a></p>
+<p><a href="renda_vida.xlsx" target="_blank">renda_vida</a></p>
 </section>
 <section id="instalação-do-r-e-do-rstudio" class="level2">
 <h2 class="anchored" data-anchor-id="instalação-do-r-e-do-rstudio">Instalação do <code>R</code> e do <code>RStudio</code></h2>
