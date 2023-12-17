@@ -30,8 +30,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<script src="../site_libs/quarto-listing/list.min.js"></script>
-<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -63,35 +61,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Procurar"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-posts .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-date','listing-image','listing-title','listing-author','listing-reading-time',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-posts'] = new List('listing-posts', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 <!-- Google tag (gtag.js) -->
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-0WD3PSV647"></script>
 <script>
@@ -104,11 +73,9 @@ ul.task-list li input[type="checkbox"] {
 
 <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="../assets/styles.css">
-<link rel="alternate" type="application/rss+xml" title="Ciência de Dados" href="cade.xml"></head>
+</head>
 
 <body class="nav-fixed">
 
@@ -135,7 +102,7 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../paginas/inscricoes.html" rel="" target="">
+    <a class="nav-link active" href="../paginas/inscricoes.html" rel="" target="" aria-current="page">
  <span class="menu-text">Inscrições</span></a>
   </li>  
   <li class="nav-item">
@@ -147,7 +114,7 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Material</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="../paginas/cade.html" rel="" target="" aria-current="page">
+    <a class="nav-link" href="../paginas/cade.html" rel="" target="">
  <span class="menu-text">CADE</span></a>
   </li>  
   <li class="nav-item">
@@ -191,123 +158,17 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    <h5 class="quarto-listing-category-title">Categorias</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">Tudo <span class="quarto-category-count">(3)</span></div><div class="category" data-category="Ciência de Dados">Ciência de Dados <span class="quarto-category-count">(3)</span></div><div class="category" data-category="Estatística">Estatística <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Exploração e visualização de dados">Exploração e visualização de dados <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Gráfico de barras">Gráfico de barras <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Histograma">Histograma <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Medidas de resumo">Medidas de resumo <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Probabilidade">Probabilidade <span class="quarto-category-count">(1)</span></div><div class="category" data-category="linguage R">linguage R <span class="quarto-category-count">(1)</span></div></div></div>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 
 
-<p><img src="../assets/logo-v4.png" width="30%" align="left" class="margem-logo"></p>
-<p>A atividade <em>CADE: onde a divulgação da Ciência Estatística acontece</em> é uma ação de extensão do <a href="https://est.ufba.br/"><strong>Departamento de Estatística</strong></a> do <a href="https://ime.ufba.br/"><strong>Instituto de Matemática e Estatística</strong></a> da <a href="https://www.ufba.br/"><strong>Universidade Federal da Bahia</strong></a>. Esta ação de extensão propõe construir um repositório on-line denominado Canal de Divulgação de Estatística, ou abreviadamente CADE, onde textos sobre estatística de leitura simples e acessível serão disponibilizados.</p>
-<p>Esta ação de extensão na modalidade <em>publicação</em> é parte do projeto de extensão <a href="https://cienciadedados.ime.ufba.br/"><em><code>R</code> para Ciência de Dados</em></a>.</p>
-<hr>
-<div id="listing-posts" class="quarto-listing quarto-listing-container-table">
-<div class="listing-actions-group">
-   <div class="input-group input-group-sm quarto-listing-sort">
-     <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
-     <select id="listing-posts-sort" class="form-select" aria-label="Ordenar por" onchange="window['quarto-listings']['listing-posts'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
-       <option value="" disabled="" selected="" hidden="">Ordenar por</option>
-       <option value="index" data-direction="asc">Pré-selecionado</option>
-         <option value="listing-date-sort" data-direction="asc">
-          Data - Mais velho
-        </option>
-         <option value="listing-date-sort" data-direction="desc">
-          Data - O mais novo
-        </option>
-         <option value="listing-title-sort" data-direction="asc">
-          Título
-        </option>
-         <option value="listing-author" data-direction="asc">
-          Autor
-        </option>
-     </select>
-  </div>
-    <div class="input-group input-group-sm quarto-listing-filter">
-      <span class="input-group-text"><i class="bi bi-search"></i></span>
-      <input type="text" class="search form-control" placeholder="Filter">
-    </div>
-</div>
-
-<table class="quarto-listing-table table">
-<thead>
-<tr>
-<th>
-<a class="sort" data-sort="listing-date-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Data</a>
-</th>
-<th>
-</th>
-<th>
-<a class="sort" data-sort="listing-title-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Título</a>
-</th>
-<th>
-<a class="sort" data-sort="listing-author" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Autor</a>
-</th>
-<th>
-Tempo de leitura
-</th>
-</tr>
-</thead>
-<tbody class="list">
-<tr data-index="0" data-categories="Ciência de Dados,Probabilidade,Estatística" data-listing-date-sort="1701399600000" data-listing-file-modified-sort="1702821929915" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-title-sort="O que é e como calcular probabilidade." data-listing-filename-sort="probabilidade.qmd">
-<td>
-<span class="listing-date">1 de dez. de 2023</span>
-</td>
-<td>
-<span class="listing-image"><img src="../paginas/cade/probabilidade/dice.png" style="height: 40px;"></span>
-</td>
-<td>
-<a href="../paginas/cade/probabilidade/probabilidade.html" class="title listing-title">O que é e como calcular probabilidade.</a>
-</td>
-<td>
-<span class="listing-author">Gilberto Pereira Sassi</span>
-</td>
-<td>
-<span class="listing-reading-time">7 minutos</span>
-</td>
-</tr>
-<tr data-index="1" data-categories="Ciência de Dados,Exploração e visualização de dados,Medidas de resumo,Gráfico de barras,Histograma" data-listing-date-sort="1698807600000" data-listing-file-modified-sort="1698605021756" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10" data-listing-title-sort="E como calcular medidas de resumo quando temos um gráfico de barras ou histograma?" data-listing-filename-sort="medidas-resumo-graficos.qmd">
-<td>
-<span class="listing-date">1 de nov. de 2023</span>
-</td>
-<td>
-<span class="listing-image"><img src="../paginas/cade/medidas-resumo-graficos/barra.png" style="height: 40px;"></span>
-</td>
-<td>
-<a href="../paginas/cade/medidas-resumo-graficos/medidas-resumo-graficos.html" class="title listing-title">E como calcular medidas de resumo quando temos um gráfico de barras ou histograma?</a>
-</td>
-<td>
-<span class="listing-author">Gilberto Pereira Sassi</span>
-</td>
-<td>
-<span class="listing-reading-time">10 minutos</span>
-</td>
-</tr>
-<tr data-index="2" data-categories="linguage R,Estatística,Ciência de Dados,Exploração e visualização de dados" data-listing-date-sort="1696129200000" data-listing-file-modified-sort="1698603003600" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-title-sort="Como criar tabela de distribuição de frequências usando o R?" data-listing-filename-sort="tabela-frequencias.qmd">
-<td>
-<span class="listing-date">1 de out. de 2023</span>
-</td>
-<td>
-<span class="listing-image"><img src="../paginas/cade/tabela-frequencias/tabela.png" style="height: 40px;"></span>
-</td>
-<td>
-<a href="../paginas/cade/tabela-frequencias/tabela-frequencias.html" class="title listing-title">Como criar tabela de distribuição de frequências usando o R?</a>
-</td>
-<td>
-<span class="listing-author">Gilberto Pereira Sassi</span>
-</td>
-<td>
-<span class="listing-reading-time">5 minutos</span>
-</td>
-</tr>
-</tbody>
-
-</table>
-<div class="listing-no-matching d-none">
-Nenhum item correspondente
-</div>
+<div style="text-align:justify">
+<p><strong>Inscrições para o curso <em>R para Ciência de Dados: Exploração e Visualização de Dados</em> estão encerradas.</strong></p>
+<p>Candidatas/os selecionados por sorteio para participar do curso: <a href="material/exploracao-visualizacao/contemplados.xlsx">selecionadas(os)</a>.</p>
 </div>
 <hr>
-
 
 
 
