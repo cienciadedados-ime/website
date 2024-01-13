@@ -133,5 +133,14 @@
   },
   "paginas/cade/probabilidade/probabilidade.qmd": {
     "probabilidade.html": "bce127ba"
+  },
+  "paginas/cade/probabilidade-condicional-bayes/prob-condicional.qmd": {
+    "prob-condicional.html": "f3620397"
+  },
+  "assets/confirmacao_inscricoes.qmd": {
+    "confirmacao_inscricoes.html": "2e9622ad"
+  },
+  "paginas/inscricao-popup.qmd": {
+    "inscricao-popup.html": "f3f0d067"
   }
 }

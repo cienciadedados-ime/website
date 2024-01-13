@@ -1,13 +1,8 @@
 ---
 title: ""
+format:
+    html:
+        include-before-body: ../assets/form.html
 ---
-
-<div style="text-align:justify">
-
-**Inscrições para o curso _R para Ciência de Dados: Exploração e Visualização de Dados_ estão encerradas.**
-
-Candidatas/os selecionados por sorteio para participar do curso: [selecionadas(os)](material/exploracao-visualizacao/contemplados.xlsx).
-
-</div>
 
 ---
