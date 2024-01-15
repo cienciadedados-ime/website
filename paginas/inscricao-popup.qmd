@@ -2,17 +2,7 @@
 title: ""
 ---
 
-**Atenção:** se certifique de ter clicado em no botão *checkbox* na **página anterior** para confirmar que você não é um robô, caso este botão tenha aparecido.
-
-<!-- ![Botão para confirmar que você não é um robô.](../assets/form.png){#fig-form}
-
-
-A ?@fig-mensagem precisa aparecer para você. 
-
-![Mensagem após inscrição.](../assets/sucesso.png){#fig-mensagem} -->
-
----
-
+## Inscrição realizada com sucesso!
 
 Depois das inscrições se encerrarem, enviaremos uma mensagem por e-mail com mais informações sobre o curso.
 
