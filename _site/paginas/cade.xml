@@ -10,7 +10,198 @@
 <atom:link href="https://gilbertosassi.quarto.pub/cienciadedados/paginas/cade.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.3.450</generator>
-<lastBuildDate>Fri, 01 Dec 2023 03:00:00 GMT</lastBuildDate>
+<lastBuildDate>Mon, 01 Jan 2024 03:00:00 GMT</lastBuildDate>
+<item>
+  <title>Explicando probabilidade condicional e o Teorema de Bayes.</title>
+  <dc:creator>Gilberto Pereira Sassi</dc:creator>
+  <link>https://gilbertosassi.quarto.pub/cienciadedados/paginas/cade/probabilidade-condicional-bayes/prob-condicional.html</link>
+  <description><![CDATA[ 
+
+
+
+<p>Neste texto,vamos ver algumas das propriedades das probabilidades começando com probabilidade condicional, e, em seguida, vamos apresentar o <em>Teorema da Probabilidade Total</em> e o <em>Teorema de Bayes</em>.</p>
+<section id="probabilidade-condicional" class="level2">
+<h2 class="anchored" data-anchor-id="probabilidade-condicional">Probabilidade condicional</h2>
+<p>Suponha que um camarada descobriu que o resultado do fenômeno aleatório está dentro do evento <img src="https://latex.codecogs.com/png.latex?B">, e ele quer saber a probabilidade de um elemento do evento <img src="https://latex.codecogs.com/png.latex?A"> ser resultado do fenômeno aleatório. Para não ficar repetindo a frase <em>ser resultado do fenômeno aleatório</em>, vamos simplificar: se um elemento do evento <img src="https://latex.codecogs.com/png.latex?A"> for resultado do fenômeno aleatório, vamos falar que o evento <img src="https://latex.codecogs.com/png.latex?A"> aconteceu (ou acontece). Neste contexto, a única forma do evento <img src="https://latex.codecogs.com/png.latex?A"> acontecer é o resultado do fenômeno estar em <img src="https://latex.codecogs.com/png.latex?A"> e <img src="https://latex.codecogs.com/png.latex?B"> simultaneamente <img src="https://latex.codecogs.com/png.latex?(A%20%5Ccap%20B)">, conforme ilustrado na Figura&nbsp;1.</p>
+<div id="fig-vann" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="https://gilbertosassi.quarto.pub/cienciadedados/paginas/cade/probabilidade-condicional-bayes/interseccao.png" class="img-fluid figure-img" alt="Diagrama de Venn com intersecção entre os eventos $A$ e $B$. A único jeito de A acontecer é se o resultado do fenômeno aleatório estiver dentro de $A \cap B$."></p>
+<figcaption class="figure-caption">Figura&nbsp;1: Diagrama de Venn com intersecção entre os eventos A e B. O único jeito de A acontecer é se o resultado do fenômeno aleatório estiver dentro de <img src="https://latex.codecogs.com/png.latex?A%20%5Ccap%20B">.</figcaption>
+</figure>
+</div>
+<p>Imagine que estamos no contexto em que podemos aplicar o princípio da equiprobabilidade. Considere que o evento <img src="https://latex.codecogs.com/png.latex?B"> tem <img src="https://latex.codecogs.com/png.latex?n_1"> elementos e que o evento <img src="https://latex.codecogs.com/png.latex?A%20%5Ccap%20B"> tem <img src="https://latex.codecogs.com/png.latex?n_2"> elementos. Além disso, assuma que o espaço amostral tem <img src="https://latex.codecogs.com/png.latex?N"> elementos. Note que <img src="https://latex.codecogs.com/png.latex?n_2%20%5Cleq%20n_1">. Então, temos <img src="https://latex.codecogs.com/png.latex?n_1"> resultados possíveis do fenômeno aleatório (sabemos que <img src="https://latex.codecogs.com/png.latex?B"> acontece), e a probabilidade de <img src="https://latex.codecogs.com/png.latex?A"> acontecer (sabendo que <img src="https://latex.codecogs.com/png.latex?B"> acontece) é dada por <img src="https://latex.codecogs.com/png.latex?%0A%5Cbegin%7Bsplit%7D%0A%5Cfrac%7Bn_2%7D%7Bn_1%7D,%0A%5Cend%7Bsplit%7D%0A"> Note que <img src="https://latex.codecogs.com/png.latex?%5Cfrac%7Bn_2%7D%7Bn_1%7D%20=%20%5Cfrac%7BN%7D%7BN%7D%5Ccdot%20%5Cfrac%7Bn_2%7D%7Bn_1%7D%20=%20%5Cfrac%7B%5Cfrac%7Bn_2%7D%7BN%7D%7D%7B%5Cfrac%7Bn_1%7D%7BN%7D%7D">. Observe que estamos no princípio da equiprobabilidade, então <img src="https://latex.codecogs.com/png.latex?P(A%20%5Ccap%20B)%20=%20%5Cfrac%7Bn_2%7D%7BN%7D"> e <img src="https://latex.codecogs.com/png.latex?P(B)%20=%20%5Cfrac%7Bn_1%7D%7BN%7D">. Consequentemente, concluímos que a probabilidade de <img src="https://latex.codecogs.com/png.latex?A"> acontecer, se sabemos que <img src="https://latex.codecogs.com/png.latex?B"> acontece, é dada por <img src="https://latex.codecogs.com/png.latex?%0A%5Cfrac%7BP(A%20%5Ccap%20B)%7D%7BP(B)%7D.%0A"></p>
+<p>Chamamos a probabilidade de <img src="https://latex.codecogs.com/png.latex?A"> acontecer sabendo que <img src="https://latex.codecogs.com/png.latex?B"> acontece de <em>probabilidade condicional</em>, e em Estatística, resumimos a sentença <em>a probabilidade de <img src="https://latex.codecogs.com/png.latex?A"> acontecer sabendo que <img src="https://latex.codecogs.com/png.latex?B"> acontece</em> por <em>probabilidade de <img src="https://latex.codecogs.com/png.latex?A"> dado <img src="https://latex.codecogs.com/png.latex?B"></em>. Usamos a seguinte notação matemática para a <em>probabilidade de <img src="https://latex.codecogs.com/png.latex?A"> dado <img src="https://latex.codecogs.com/png.latex?B"></em>: <img src="https://latex.codecogs.com/png.latex?P(A%20%5Cmid%20B)">.</p>
+<p>Não precisamos nos restringir ao contexto em que podemos aplicar o princípio da equiprobabilidade, e definimos a probabilidade de <img src="https://latex.codecogs.com/png.latex?A"> dado <img src="https://latex.codecogs.com/png.latex?B"> por:</p>
+<blockquote class="blockquote">
+<ul>
+<li><img src="https://latex.codecogs.com/png.latex?P(A%20%5Cmid%20B)%20=%20%5Cfrac%7BP(A%20%5Ccap%20B)%7D%7BP(B)%7D">, se <img src="https://latex.codecogs.com/png.latex?P(B)%20%3E%200">;</li>
+<li>Por convenção e conveniência, estabelecemos que <img src="https://latex.codecogs.com/png.latex?P(A%20%5Cmid%20B)%20=%20P(A)"> se <img src="https://latex.codecogs.com/png.latex?P(B)%20=%200">.</li>
+</ul>
+</blockquote>
+<p>Com esta definição de probabilidade condicional, temos a seguinte propriedade chamada de <em>regra do produto</em>:</p>
+<blockquote class="blockquote">
+<ul>
+<li><img src="https://latex.codecogs.com/png.latex?P(A%20%5Ccap%20B)%20=%20P(A%20%5Cmid%20B)%20P(B)">;</li>
+<li><img src="https://latex.codecogs.com/png.latex?P(A%20%5Ccap%20B)%20=%20P(B%20%5Cmid%20A)%20P(A)">.</li>
+</ul>
+</blockquote>
+<p>Vamos ilustrar as ideias de probabilidade condicional com um exemplo. Imagine cinquenta estudantes distribuídos em duas turmas (Turma <img src="https://latex.codecogs.com/png.latex?A"> e Turma <img src="https://latex.codecogs.com/png.latex?B">) conforme a tabela abaixo, e queremos escolhê-los por sorteio para formar uma comissão de estudantes.</p>
+<table class="table">
+<thead>
+<tr class="header">
+<th style="text-align: center;">Gênero</th>
+<th style="text-align: center;">Turma A</th>
+<th style="text-align: center;">Turma B</th>
+<th style="text-align: center;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">Masculino</td>
+<td style="text-align: center;">21</td>
+<td style="text-align: center;">16</td>
+<td style="text-align: center;">37</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Feminino</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">13</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">Total</td>
+<td style="text-align: center;">26</td>
+<td style="text-align: center;">24</td>
+<td style="text-align: center;">50</td>
+</tr>
+</tbody>
+</table>
+<p>Vamos especificar alguns eventos que usaremos em nossa notação matemática. Lembre-se que usamos as letras maiúsculas do alfabeto latino para representar eventos.</p>
+<ul>
+<li><img src="https://latex.codecogs.com/png.latex?A%20=%20%5C%5C%7B%5Cmbox%7Bestudante%20da%20turma%20A%7D%5C%5C%7D">;</li>
+<li><img src="https://latex.codecogs.com/png.latex?B%20=%20%5C%5C%7B%5Cmbox%7Bestudante%20da%20turma%20B%7D%5C%5C%7D">;</li>
+<li><img src="https://latex.codecogs.com/png.latex?M%20=%20%5C%5C%7B%5Cmbox%7Bestudante%20se%20identifica%20com%20g%C3%AAnero%20masculino%7D%5C%5C%7D">;</li>
+<li><img src="https://latex.codecogs.com/png.latex?F%20=%20%5C%5C%7B%5Cmbox%7Bestudante%20se%20identifica%20com%20g%C3%AAnero%20feminino%7D%5C%5C%7D">.</li>
+</ul>
+<p>Imagine que queremos escolher por sorteio uma aluna para participar de uma comissão. Neste contexto, sabemos que a pessoa selecionada entre os alunos se identificará com o gênero feminino, e temos <img src="https://latex.codecogs.com/png.latex?13"> pessoas que se identificam com o gênero feminino. Entre estudantes que se identificam com o gênero feminino, <img src="https://latex.codecogs.com/png.latex?5"> são da turma <img src="https://latex.codecogs.com/png.latex?A">. Então, a probabilidade da aluna ser da turma <img src="https://latex.codecogs.com/png.latex?A"> é dada por <img src="https://latex.codecogs.com/png.latex?%0AP(A%20%5Cmid%20F)%20=%20%5Cfrac%7B5%7D%7B13%7D%20=%200,38.%0A"></p>
+<p>Se usarmos a definição de probabilidade condicional, vamos chegar no exato mesmo valor <img src="https://latex.codecogs.com/png.latex?0,38">. De fato, vamos calcular a probabilidade de <img src="https://latex.codecogs.com/png.latex?A%20%5Ccap%20F"> e <img src="https://latex.codecogs.com/png.latex?F"> usando o princípio da equiprobabilidade, e, depois, usaremos a definição de probabilidade condicional para calcular <img src="https://latex.codecogs.com/png.latex?P(A%20%5Cmid%20F)">: <img src="https://latex.codecogs.com/png.latex?%0A%5Cbegin%7Bsplit%7D%0AP(A%20%5Ccap%20F)%20&amp;=%20%5Cfrac%7B5%7D%7B50%7D%20=%200,1;%5Cnewline%0AP(F)%20&amp;=%20%5Cfrac%7B13%7D%7B50%7D%20=%200,26;%5Cnewline%0AP(A%20%5Cmid%20F)%20&amp;=%20%5Cfrac%7BP(A%20%5Ccap%20F)%7D%7BP(F)%7D%20=%20%5Cfrac%7B0,1%7D%7B0,26%7D%20=%200,38.%0A%5Cend%7Bsplit%7D%0A"></p>
+</section>
+<section id="teorema-da-probabilidade-total" class="level2">
+<h2 class="anchored" data-anchor-id="teorema-da-probabilidade-total">Teorema da probabilidade total</h2>
+<p>A partir de agora, vamos fazer algumas mágicas interessantes usando probabilidade condicional. Imagine que o espaço amostral pode ser dividido em algumas partes <img src="https://latex.codecogs.com/png.latex?C_1,%20%5Cdots,%20C_n">, conforme ilustrado na Figura&nbsp;2 onde dividimos o espaço amostral em quatro partes.</p>
+<div id="fig-prob-total" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="https://gilbertosassi.quarto.pub/cienciadedados/paginas/cade/probabilidade-condicional-bayes/prob-total.jpg" class="img-fluid figure-img" alt="Teorema da probabilidade total."></p>
+<figcaption class="figure-caption">Figura&nbsp;2: Teorema da probabilidade total.</figcaption>
+</figure>
+</div>
+<p>A probabilidade do evento <img src="https://latex.codecogs.com/png.latex?A"> é a área do quadrado indicada pelo círculo preenchido com a cor azul. Para calcular a probabilidade do evento indicado pelo círculo <img src="https://latex.codecogs.com/png.latex?A">, podemos calcular as probabilidades por partes deste círculo</p>
+<ul>
+<li><img src="https://latex.codecogs.com/png.latex?P(A%20%5Ccap%20C_1)">;</li>
+<li><img src="https://latex.codecogs.com/png.latex?P(A%20%5Ccap%20C_2)">;</li>
+<li><img src="https://latex.codecogs.com/png.latex?P(A%20%5Ccap%20C_3)">;</li>
+<li><img src="https://latex.codecogs.com/png.latex?P(A%20%5Ccap%20C_4)">;</li>
+</ul>
+<p>e depois somar essas probabilidades para obter a probabilidade do círculo <img src="https://latex.codecogs.com/png.latex?%0AP(A)%20=%20P(A%20%5Ccap%20C_1)%20+%20P(A%20%5Ccap%20C_2)%20+%20P(A%20%5Ccap%20C_3)%20+%20P(A%20%5Ccap%20C_4),%0A"> e, então, usando a <em>regra do produto</em> em <img src="https://latex.codecogs.com/png.latex?P(A%20%5Ccap%20C_1)">, <img src="https://latex.codecogs.com/png.latex?P(A%20%5Ccap%20C_2)">, <img src="https://latex.codecogs.com/png.latex?P(A%20%5Ccap%20C_3)"> e <img src="https://latex.codecogs.com/png.latex?P(A%20%5Ccap%20C_4)"> temos que <img src="https://latex.codecogs.com/png.latex?%0AP(A)%20=%20P(A%20%5Cmid%20C_1)%20P(C_1)%20+%20P(A%20%5Cmid%20C_2)%20P(C_2)%20+%20P(A%20%5Cmid%20C_3)%20P(C_3)%20+%20P(A%20%5Cmid%20C_4)%20P(C_4).%0A"> Chamamos a coleção dos conjuntos <img src="https://latex.codecogs.com/png.latex?C_1,%20%5Ccdots,%20C_4"> de partição do espaço amostral.</p>
+<p>Agora vamos enunciar o Teorema de Probabilidade Total de uma forma geral. Suponha que temos uma participação <img src="https://latex.codecogs.com/png.latex?C_1,%20%5Ccdots,%20C_n"> do espaço amostral e imagine que queremos calcular a probabilidade do evento <img src="https://latex.codecogs.com/png.latex?A">. Além disso, imagine que conhecemos as probabilidades:</p>
+<ul>
+<li>Probabilidade do evento <img src="https://latex.codecogs.com/png.latex?C_1">: <img src="https://latex.codecogs.com/png.latex?P(C_1)">;</li>
+<li>Probabilidade do evento <img src="https://latex.codecogs.com/png.latex?A"> dado <img src="https://latex.codecogs.com/png.latex?C_1">: <img src="https://latex.codecogs.com/png.latex?P(A%20%5Cmid%20C_1)">;</li>
+<li>Probabilidade do evento <img src="https://latex.codecogs.com/png.latex?C_2">: <img src="https://latex.codecogs.com/png.latex?P(C_2)">;</li>
+<li>Probabilidade do evento <img src="https://latex.codecogs.com/png.latex?A"> dado <img src="https://latex.codecogs.com/png.latex?C_2">: <img src="https://latex.codecogs.com/png.latex?P(A%20%5Cmid%20C_2)">;</li>
+<li>Probabilidade do evento <img src="https://latex.codecogs.com/png.latex?C_3">: <img src="https://latex.codecogs.com/png.latex?P(C_3)">;</li>
+<li>Probabilidade do evento <img src="https://latex.codecogs.com/png.latex?A"> dado <img src="https://latex.codecogs.com/png.latex?C_3">: <img src="https://latex.codecogs.com/png.latex?P(A%20%5Cmid%20C_3)">;</li>
+</ul>
+<p><img src="https://latex.codecogs.com/png.latex?%0A%5Cvdots%0A"></p>
+<ul>
+<li>Probabilidade do evento <img src="https://latex.codecogs.com/png.latex?C_n">: <img src="https://latex.codecogs.com/png.latex?P(C_n)">;</li>
+<li>Probabilidade do evento <img src="https://latex.codecogs.com/png.latex?A"> dado <img src="https://latex.codecogs.com/png.latex?C_n">: <img src="https://latex.codecogs.com/png.latex?P(A%20%5Cmid%20C_n)">;</li>
+</ul>
+<p>Então, podemos calcular a probabilidade do evento <img src="https://latex.codecogs.com/png.latex?A"> através da seguinte equação <img src="https://latex.codecogs.com/png.latex?%0AP(A)%20=%20P(A%20%5Cmid%20C_1)%20P(C_1)%20+%20P(A%20%5Cmid%20C_2)%20P(C_2)%20+%20%5Ccdots%20+%20P(A%20%5Cmid%20C_n)%20P(C_n).%0A"></p>
+<p>Vamos considerar um exemplo simples para ilustrar o uso do Teorema da Probabilidade Total. Imagine que um produtor artesanal de sorvete compra leite de três fazendas: <em>fazenda pequena</em>, <em>fazenda média</em> e <em>fazenda grande</em>. 20% de todo o leite usado por este produtor vem da <em>fazenda pequena</em>, 30% de todo o leite usado por este produtor vem da <em>fazenda média</em> e 50% de todo o leite usado por este produtor vem da <em>fazenda grande</em>. Uma inspenção surpresa da Ministério da Agricultura, Pecuária e Abastecimento (MAPA) descobriu que 10% do leite vendido pela <em>fazenda pequena</em> estava adulterado, 30% do leite vendido pela <em>fazenda média</em> estava adulterado e 20% do leite vendido pela <em>fazenda grande</em> estava adulterado. E agora vem a pergunta: quanto leite adulterado este pequeno produtor artesanal de sorvete comprou destas fazendas?</p>
+<p>Primeiro vamos definir alguns eventos: <img src="https://latex.codecogs.com/png.latex?%0A%5Cbegin%7Bsplit%7D%0AA%20&amp;=%20%5C%7B%5Cmbox%7BGal%C3%A3o%20adulterado%7D%5C%7D;%5Cnewline%0AP%20&amp;=%20%5C%7B%5Cmbox%7BGal%C3%A3o%20produzido%20pela%20fazenda%20pequena%7D%5C%7D;%5Cnewline%0AM%20&amp;=%20%5C%7B%5Cmbox%7BGal%C3%A3o%20produzido%20pela%20fazenda%20m%C3%A9dia%7D%5C%7D;%5Cnewline%0AG%20&amp;=%20%5C%7B%5Cmbox%7BGal%C3%A3o%20produzido%20pela%20fazenda%20grande%7D%5C%7D;%0A%5Cend%7Bsplit%7D%0A"> e sabemos que (usamos as informações do MAPA e do produtor artesanal)</p>
+<table class="table">
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><img src="https://latex.codecogs.com/png.latex?P(A%20%5Cmid%20P)%20=%200,1;"></td>
+<td style="text-align: right;"><img src="https://latex.codecogs.com/png.latex?P(P)%20=%200,2"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><img src="https://latex.codecogs.com/png.latex?P(A%20%5Cmid%20M)%20=%200,3;"></td>
+<td style="text-align: right;"><img src="https://latex.codecogs.com/png.latex?P(M)%20=%200,3"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><img src="https://latex.codecogs.com/png.latex?P(A%20%5Cmid%20G)%20=%200,2;"></td>
+<td style="text-align: right;"><img src="https://latex.codecogs.com/png.latex?P(G)%20=%200,5"></td>
+</tr>
+</tbody>
+</table>
+<p>então, usando o Teorema de Probabilidade Total, a proporção (ou probabilidade) de galões adulterados comprados pelo pequeno produtor artesanal de sorvete é dada por <img src="https://latex.codecogs.com/png.latex?%0A%5Cbegin%7Bsplit%7D%0AP(A)%20&amp;=%20P(A%20%5Cmid%20P)%20P(P)%20+%20P(A%20%5Cmid%20M)%20P(M)%20+%20P(A%20%5Cmid%20G)%20P(G),%5Cnewline%0A&amp;=%200,1%20%5Ccdot%200,2%20+%200,3%20%5Ccdot%200,3%20+%200,2%20%5Ccdot%200,5,%20%5Cnewline%0A&amp;=%200,21.%0A%5Cend%7Bsplit%7D%0A"></p>
+</section>
+<section id="teorema-de-bayes" class="level2">
+<h2 class="anchored" data-anchor-id="teorema-de-bayes">Teorema de Bayes</h2>
+<p>Finalmente, e não menos importante, temos o Teorema de Bayes, que foi descoberto pelo pastor presbiteriano <a href="https://pt.wikipedia.org/wiki/Thomas_Bayes">Thomas Bayes</a>. Apesar de matematicamente simples, as implicações e aplicações do Teorema de Bayes são extremamente relevantes para a Probabilidade, Estatística e o conhecimento científico como um todo. O Teorema de Bayes nos permite atualizar a probabilidade ou <em>crença</em> de que um evento <img src="https://latex.codecogs.com/png.latex?A"> será o resultado de um fenômeno aleatório ao coletarmos ou descobrirmos novas informações ou evidências sobre o fenômeno aleatório.</p>
+<div id="fig-thomas-bayes" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="https://gilbertosassi.quarto.pub/cienciadedados/paginas/cade/probabilidade-condicional-bayes/thomas-bayes.jpeg" class="img-fluid figure-img" alt="Reverendo Thomas Bayes."></p>
+<figcaption class="figure-caption">Figura&nbsp;3: Thomas Bayes: matemático, filósofo e pastor presbiteriano.</figcaption>
+</figure>
+</div>
+<p>Vamos considerar um exemplo. Imagine que a prevalência de um doença, que denotaremos por <img src="https://latex.codecogs.com/png.latex?D_1">, no Brasil é <img src="https://latex.codecogs.com/png.latex?20%5C%5C%25">. Ou seja, sem examinar um paciente, um médico estima que este paciente tem a doencça <img src="https://latex.codecogs.com/png.latex?D_1"> com probabilidade <img src="https://latex.codecogs.com/png.latex?0,2">.</p>
+<p>Na consulta médica, o paciente descreveu o sintoma <img src="https://latex.codecogs.com/png.latex?S">. Da literatura especilizada em medicina, o médico sabe que este sintoma está presente em apenas três doenças: <img src="https://latex.codecogs.com/png.latex?D_1">, <img src="https://latex.codecogs.com/png.latex?D_2"> e <img src="https://latex.codecogs.com/png.latex?D_3">. Além disso, o médico sabe que</p>
+<ul>
+<li>a probabilidade de um paciente com a doença <img src="https://latex.codecogs.com/png.latex?D_1"> apresentar o sintoma <img src="https://latex.codecogs.com/png.latex?S"> é <img src="https://latex.codecogs.com/png.latex?20%5C%5C%25">, ou seja, <img src="https://latex.codecogs.com/png.latex?P(S%20%5Cmid%20D_1)%20=%200,2">;</li>
+<li>a probabilidade de um paciente com a doença <img src="https://latex.codecogs.com/png.latex?D_2"> apresentar o sintoma <img src="https://latex.codecogs.com/png.latex?S"> é <img src="https://latex.codecogs.com/png.latex?40%5C%5C%25">, ou seja, <img src="https://latex.codecogs.com/png.latex?P(S%20%5Cmid%20D_2)%20=%200,4">;</li>
+<li>a probabilidade de um paciente com a doença <img src="https://latex.codecogs.com/png.latex?D_3"> apresentar o sintoma <img src="https://latex.codecogs.com/png.latex?S"> é <img src="https://latex.codecogs.com/png.latex?15%5C%5C%25">, ou seja, <img src="https://latex.codecogs.com/png.latex?P(S%20%5Cmid%20D_3)%20=%200,15">.</li>
+</ul>
+<p>No website do Ministério da Saúde, o médico verificou que a prevalência das doenças <img src="https://latex.codecogs.com/png.latex?D_2"> e <img src="https://latex.codecogs.com/png.latex?D_3"> no Brasil são: <img src="https://latex.codecogs.com/png.latex?P(D_2)%20=%200,4"> e <img src="https://latex.codecogs.com/png.latex?P(D_3)%20=%200,15">.</p>
+<p>Agora vem a pergunta mais importante: após o médico descobrir que o paciente tem o sintoma <img src="https://latex.codecogs.com/png.latex?S">, qual é a probabilidade do paciente ter a doença <img src="https://latex.codecogs.com/png.latex?D_1">? Lembre que antes da consulta, o médico diria que a probabilidade deste paciente ter a doença <img src="https://latex.codecogs.com/png.latex?D_1"> é <img src="https://latex.codecogs.com/png.latex?20%5C%5C%25">. Ou seja, queremos calcular a seguinte probabilidade <img src="https://latex.codecogs.com/png.latex?%0A%5Cbegin%7Bsplit%7D%0AP(D_1%20%5Cmid%20S),%0A%5Cend%7Bsplit%7D%0A"> usando a definição de probabilidade condicional e a regra do produto temos que <img src="https://latex.codecogs.com/png.latex?%0A%5Cbegin%7Bsplit%7D%0AP(D_1%20%5Cmid%20S)%20&amp;=%20%5Cfrac%7BP(D_1%20%5Ccap%20S)%7D%7BP(S)%7D,%5Cnewline%0A&amp;=%20%5Cfrac%7BP(D_1)%20P(S%20%5Cmid%20D_1)%7D%7BP(S)%7D,%0A%5Cend%7Bsplit%7D%0A"> e para calcular <img src="https://latex.codecogs.com/png.latex?P(S)"> usamos o Teorema da Probabilidade Total <img src="https://latex.codecogs.com/png.latex?%0A%5Cbegin%7Bsplit%7D%0AP(D_1%20%5Cmid%20S)%20&amp;=%20%5Cfrac%7BP(D_1)%20P(S%20%5Cmid%20D_1)%7D%7BP(S)%7D,%20%5Cnewline%0A&amp;=%20%5Cfrac%7BP(D_1)%20P(S%20%5Cmid%20D_1)%7D%7BP(D_1)%20P(S%20%5Cmid%20D_1)%20+%20P(D_2)%20P(S%20%5Cmid%20D_2)%20+%20P(D_3)%20P(S%20%5Cmid%20D_3)%7D,%20%5Cnewline%0A&amp;=%20%5Cfrac%7B0,2%20%5Ccdot%200,2%7D%7B0,2%20%5Ccdot%200,2%20+%200,4%20%5Ccdot%200,4%20+%200,4%20%5Ccdot%200,15%7D,%5Cnewline%0A&amp;%5Capprox%200,02%0A%5Cend%7Bsplit%7D%0A"></p>
+<p>Ou seja, ao descobrir que o paciente tem o sintoma <img src="https://latex.codecogs.com/png.latex?S">, o médico <del>mudou</del> atualizou a probabilidade do paciente ter a doença <img src="https://latex.codecogs.com/png.latex?D_1"> de <img src="https://latex.codecogs.com/png.latex?20%5C%5C%25"> para <img src="https://latex.codecogs.com/png.latex?2%5C%5C%25">.</p>
+<p>Agora vamos enunciar o Teorema de Bayes de uma forma geral. Suponha que temos uma participação <img src="https://latex.codecogs.com/png.latex?C_1,%20%5Cdots,%20C_n"> do espaço amostral e considere o evento de interesse <img src="https://latex.codecogs.com/png.latex?A">. Além disso, imagine que conhecemos as probabilidades:</p>
+<ul>
+<li>probabilidade do evento <img src="https://latex.codecogs.com/png.latex?C_1">: <img src="https://latex.codecogs.com/png.latex?P(C_1)">;</li>
+<li>probabilidade do evento <img src="https://latex.codecogs.com/png.latex?A"> dado <img src="https://latex.codecogs.com/png.latex?C_1">: <img src="https://latex.codecogs.com/png.latex?P(A%20%5Cmid%20C_1)">;</li>
+<li>probabilidade do evento <img src="https://latex.codecogs.com/png.latex?C_2">: <img src="https://latex.codecogs.com/png.latex?P(C_2)">;</li>
+<li>probabilidade do evento <img src="https://latex.codecogs.com/png.latex?A"> dado <img src="https://latex.codecogs.com/png.latex?C_2">: <img src="https://latex.codecogs.com/png.latex?P(A%20%5Cmid%20C_2)">;</li>
+<li>probabilidade do evento <img src="https://latex.codecogs.com/png.latex?C_3">: <img src="https://latex.codecogs.com/png.latex?P(C_3)">;</li>
+<li>probabilidade do evento <img src="https://latex.codecogs.com/png.latex?A"> dado <img src="https://latex.codecogs.com/png.latex?C_3">: <img src="https://latex.codecogs.com/png.latex?P(A%20%5Cmid%20C_3)">; <img src="https://latex.codecogs.com/png.latex?%0A%5Cvdots%0A"></li>
+<li>probabilidade do evento <img src="https://latex.codecogs.com/png.latex?C_n">: <img src="https://latex.codecogs.com/png.latex?P(C_n)">;</li>
+<li>probabilidade do evento <img src="https://latex.codecogs.com/png.latex?A"> dado <img src="https://latex.codecogs.com/png.latex?C_n">: <img src="https://latex.codecogs.com/png.latex?P(A%20%5Cmid%20C_n)">;</li>
+</ul>
+<p>Então, as probabilidades dos eventos <img src="https://latex.codecogs.com/png.latex?C_i,%20i=1,%20%5Cdots,%20n"> acontecerem dado que sabemos ou observamos o evento <img src="https://latex.codecogs.com/png.latex?A"> é dada por <img src="https://latex.codecogs.com/png.latex?%0A%5Cbegin%7Bsplit%7D%0AP(C_1%20%5Cmid%20A)%20&amp;=%20%5Cfrac%7BP(C_1)%20P(A%20%5Cmid%20C_1)%7D%7BP(C_1)%20P(A%20%5Cmid%20C_1)%20+%20%5Ccdots%20+%20P(C_n)%20P(A%20%5Cmid%20C_n)%7D,%20%5Cnewline%0AP(C_2%20%5Cmid%20A)%20&amp;=%20%5Cfrac%7BP(C_2)%20P(A%20%5Cmid%20C_2)%7D%7BP(C_1)%20P(A%20%5Cmid%20C_1)%20+%20%5Ccdots%20+%20P(C_n)%20P(A%20%5Cmid%20C_n)%7D,%20%5Cnewline%0A&amp;%5Cvdots%20%5Cnewline%0AP(C_n%20%5Cmid%20A)%20&amp;=%20%5Cfrac%7BP(C_n)%20P(A%20%5Cmid%20C_n)%7D%7BP(C_1)%20P(A%20%5Cmid%20C_1)%20+%20%5Ccdots%20+%20P(C_n1)%20P(A%20%5Cmid%20C_n)%7D.%5Cnewline%0A%5Cend%7Bsplit%7D%0A"></p>
+<p>Vamos fazer mais um exemplo para ilustração. Imagine que uma planta industrial tem três linhas de produção, <img src="https://latex.codecogs.com/png.latex?L_1,%20L_2,%20L_3">, que produzem lotes de um mesmo equipamento eletrônico. Um lote é considerado inadequado para venda se mais de <img src="https://latex.codecogs.com/png.latex?10%5C%5C%25"> dos equipamentos eletrônicos deste lote forem defeituosos. Considere os seguintes eventos</p>
+<ul>
+<li><img src="https://latex.codecogs.com/png.latex?L_1%20=%20%5C%5C%7B%5Cmbox%7Blote%20vem%20da%20linha%20de%20produ%C3%A7%C3%A3o%20%7D%20L_1%20%5C%5C%7D"></li>
+<li><img src="https://latex.codecogs.com/png.latex?L_2%20=%20%5C%5C%7B%5Cmbox%7Blote%20vem%20da%20linha%20de%20produ%C3%A7%C3%A3o%20%7DL_2%20%5C%5C%7D"></li>
+<li><img src="https://latex.codecogs.com/png.latex?L_3%20=%20%5C%5C%7B%5Cmbox%7Blote%20vem%20da%20linha%20de%20produ%C3%A7%C3%A3o%20%7DL_3%20%5C%5C%7D"></li>
+<li><img src="https://latex.codecogs.com/png.latex?D%20=%20%5C%5C%7B%5Cmbox%7Bmais%20de%20%7D10%5C%25%20%5Cmbox%7B%20equipamentos%20do%20lote%20s%C3%A3o%20defeituosos%7D%20%5C%5C%7D"></li>
+</ul>
+<p>Os engenheiros que construíram estas três linhas afirmam que:</p>
+<ul>
+<li>a probabilidade da linha de produção <img src="https://latex.codecogs.com/png.latex?L_1"> produzir um lote com mais de <img src="https://latex.codecogs.com/png.latex?10%5C%5C%25"> dos equipamentos defeituosos é <img src="https://latex.codecogs.com/png.latex?35%5C%5C%25">, ou seja, <img src="https://latex.codecogs.com/png.latex?P(D%20%5Cmid%20L_1)%20=%200,35">;</li>
+<li>a probabilidade da linha de produção <img src="https://latex.codecogs.com/png.latex?L_2"> produzir um lote com mais de <img src="https://latex.codecogs.com/png.latex?10%5C%5C%25"> dos equipamentos defeituosos é <img src="https://latex.codecogs.com/png.latex?40%5C%5C%25">, ou seja, <img src="https://latex.codecogs.com/png.latex?P(D%20%5Cmid%20L_2)%20=%200,4">;</li>
+<li>a probabilidade da linha de produção <img src="https://latex.codecogs.com/png.latex?L_3"> produzir um lote com mais de <img src="https://latex.codecogs.com/png.latex?10%5C%5C%25"> dos equipamentos defeituosos é <img src="https://latex.codecogs.com/png.latex?32,5%5C%5C%25">, ou seja, <img src="https://latex.codecogs.com/png.latex?P(D%20%5Cmid%20L_3)%20=%200,325">;</li>
+<li><img src="https://latex.codecogs.com/png.latex?50%5C%5C%25"> dos lotes desta planta industrial são produzidos pela linha de produção <img src="https://latex.codecogs.com/png.latex?L_1">, ou seja, <img src="https://latex.codecogs.com/png.latex?P(L_1)%20=%200,5">;</li>
+<li><img src="https://latex.codecogs.com/png.latex?30%5C%5C%25"> dos lotes desta planta industrial são produzidos pela linha de produção <img src="https://latex.codecogs.com/png.latex?L_2">, ou seja, <img src="https://latex.codecogs.com/png.latex?P(L_2)%20=%200,3">;</li>
+<li><img src="https://latex.codecogs.com/png.latex?20%5C%5C%25"> dos lotes desta planta industrial são produzidos pela linha de produção <img src="https://latex.codecogs.com/png.latex?L_3">, ou seja, <img src="https://latex.codecogs.com/png.latex?P(L_3)%20=%200,2">.</li>
+</ul>
+<p>A equipe do controle de qualidade identificou um lote inadequado, e os engenheiros da planta industrial precisam fazer ajustes nas linhas de produção. A melhor estratégia é começar as análises e ajustes na linha de produção com a maior probabilidade de te ter produzido o lote inadequado. Então, vamos usar o <em>Teorema de Bayes</em> para calcular <img src="https://latex.codecogs.com/png.latex?P(L_1%20%5Cmid%20D),%20P(L_2%20%5Cmid%20D)"> e <img src="https://latex.codecogs.com/png.latex?P(L_3%20%5Cmid%20D)">:</p>
+<p><img src="https://latex.codecogs.com/png.latex?%0A%5Cbegin%7Bsplit%7D%0AP(L_1%20%5Cmid%20D)%20&amp;=%20%5Cfrac%7BP(L_1)%20P(D%20%5Cmid%20L_1)%7D%7BP(D)%7D%5Cnewline%0A&amp;=%20%5Cfrac%7BP(L_1)%20P(D%20%5Cmid%20L_1)%7D%7BP(L_1)%20P(D%20%5Cmid%20L_1)%20+%20P(L_1)%20P(D%20%5Cmid%20L_1)%20+%20P(L_3)%20P(D%20%5Cmid%20L_3)%7D%5Cnewline%0A&amp;=%20%5Cfrac%7B0,35%20%5Ccdot%200,5%7D%7B0,35%20%5Ccdot%200,5%20+%200,4%20%5Ccdot%200,3%20+%200,2%20%5Ccdot%200,325%7D%5Cnewline%0A&amp;=%200,49%5Cnewline%0AP(L_2%20%5Cmid%20D)%20&amp;=%20%5Cfrac%7BP(L_2)%20P(D%20%5Cmid%20L_2)%7D%7BP(D)%7D%5Cnewline%0A&amp;=%20%5Cfrac%7BP(L_2)%20P(D%20%5Cmid%20L_2)%7D%7BP(L_1)%20P(D%20%5Cmid%20L_1)%20+%20P(L_1)%20P(D%20%5Cmid%20L_1)%20+%20P(L_3)%20P(D%20%5Cmid%20L_3)%7D%5Cnewline%0A&amp;=%20%5Cfrac%7B0,4%20%5Ccdot%200,3%7D%7B0,35%20%5Ccdot%200,5%20+%200,4%20%5Ccdot%200,3%20+%200,2%20%5Ccdot%200,325%7D%5Cnewline%0A&amp;=%200,33%5Cnewline%0AP(L_3%20%5Cmid%20D)%20&amp;=%20%5Cfrac%7BP(L_3)%20P(D%20%5Cmid%20L_3)%7D%7BP(D)%7D%5Cnewline%0A&amp;=%20%5Cfrac%7BP(L_3)%20P(D%20%5Cmid%20L_3)%7D%7BP(L_1)%20P(D%20%5Cmid%20L_1)%20+%20P(L_1)%20P(D%20%5Cmid%20L_1)%20+%20P(L_3)%20P(D%20%5Cmid%20L_3)%7D%5Cnewline%0A&amp;=%20%5Cfrac%7B0,2%20%5Ccdot%200,325%7D%7B0,35%20%5Ccdot%200,5%20+%200,4%20%5Ccdot%200,3%20+%200,2%20%5Ccdot%200,325%7D%5Cnewline%0A&amp;=%200,18%0A%5Cend%7Bsplit%7D%0A"></p>
+<p>Ou seja, a linha de produção com maior probabilidade de ter produzido o lote inaquedo é a linha de produção <img src="https://latex.codecogs.com/png.latex?L_1">, <img src="https://latex.codecogs.com/png.latex?P(L_1%20%5Cmid%20D)%20=%200,49">, e os engenheiros deveriam começar a análise nesta linha de produção.</p>
+<hr>
+
+
+</section>
+
+<p>© 2024 <strong><code>R</code> para Ciência de Dados <br>🖤</strong> by Carolina Paraíba e Gilberto Sassi</p> ]]></description>
+  <category>Probabilidade</category>
+  <category>Probabilidade condicional</category>
+  <category>Teorema de Bayes</category>
+  <category>Teorema da probabilidade total</category>
+  <guid>https://gilbertosassi.quarto.pub/cienciadedados/paginas/cade/probabilidade-condicional-bayes/prob-condicional.html</guid>
+  <pubDate>Mon, 01 Jan 2024 03:00:00 GMT</pubDate>
+  <media:content url="https://gilbertosassi.quarto.pub/cienciadedados/paginas/cade/probabilidade-condicional-bayes/bayes.png" medium="image" type="image/png" height="144" width="144"/>
+</item>
 <item>
   <title>O que é e como calcular probabilidade.</title>
   <dc:creator>Gilberto Pereira Sassi</dc:creator>
@@ -126,7 +317,7 @@
 </section>
 
 
-<p>© 2023 <code>R</code> para Ciência de Dados <br>🖤 by Carolina Paraíba e Gilberto Sassi</p><div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Notas de rodapé</h2>
+<p>© 2024 <strong><code>R</code> para Ciência de Dados <br>🖤</strong> by Carolina Paraíba e Gilberto Sassi</p><div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Notas de rodapé</h2>
 
 <ol>
 <li id="fn1"><p>Neste texto, estou supondo que você conhece a teoria básica de conjuntos e tem conhecimentos matemáticos do ensino básico. Mas nada muito avançado e acredito que você vai entender tudo com tranquilidade.↩︎</p></li>
@@ -678,7 +869,7 @@
 </section>
 
 
-<p>© 2023 <code>R</code> para Ciência de Dados <br>🖤 by Carolina Paraíba e Gilberto Sassi</p><div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Notas de rodapé</h2>
+<p>© 2024 <strong><code>R</code> para Ciência de Dados <br>🖤</strong> by Carolina Paraíba e Gilberto Sassi</p><div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Notas de rodapé</h2>
 
 <ol>
 <li id="fn1"><p>O gráfico de barras pode ser construído usando frequência relativa (proporção) ou porcentagem. Fique atento ao rótulo do eixo <img src="https://latex.codecogs.com/png.latex?y"> do gráfico.↩︎</p></li>
@@ -959,7 +1150,7 @@ font-style: inherit;">=</span> percent)</span></code></pre></div>
 
 </section>
 
-<p>© 2023 <code>R</code> para Ciência de Dados <br>🖤 by Carolina Paraíba e Gilberto Sassi</p> ]]></description>
+<p>© 2024 <strong><code>R</code> para Ciência de Dados <br>🖤</strong> by Carolina Paraíba e Gilberto Sassi</p> ]]></description>
   <category>linguage R</category>
   <category>Estatística</category>
   <category>Ciência de Dados</category>
