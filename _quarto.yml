@@ -22,7 +22,7 @@ website:
         text: Eventos
       - href: paginas/equipe.qmd
         text: Equipe
-      - text: "Editais"
+      - text: Editais
         menu:
           - href: paginas/editais/editais-abertos.qmd
             text: "Editais abertos"
