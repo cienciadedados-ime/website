@@ -1,1 +1,1 @@
-Sitemap: https://gilbertosassi.quarto.pub/cienciadedados/sitemap.xml
+Sitemap: https://aa49ad2e-9f28-4641-965f-f4e2c45682c4.netlify.app/sitemap.xml
