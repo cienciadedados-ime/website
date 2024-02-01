@@ -6,10 +6,10 @@
       version="2.0">
 <channel>
 <title>Ciência de Dados</title>
-<link>https://aa49ad2e-9f28-4641-965f-f4e2c45682c4.netlify.app/paginas/eventos.html</link>
-<atom:link href="https://aa49ad2e-9f28-4641-965f-f4e2c45682c4.netlify.app/paginas/eventos.xml" rel="self" type="application/rss+xml"/>
+<link>https://cienciadedados-ime.quarto.pub/ime/paginas/eventos.html</link>
+<atom:link href="https://cienciadedados-ime.quarto.pub/ime/paginas/eventos.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.3.450</generator>
-<lastBuildDate>Thu, 01 Feb 2024 17:03:11 GMT</lastBuildDate>
+<lastBuildDate>Thu, 01 Feb 2024 18:22:34 GMT</lastBuildDate>
 </channel>
 </rss>

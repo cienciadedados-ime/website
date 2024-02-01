@@ -3,7 +3,7 @@ title: ""
 listing:
   id: posts
   contents: cade
-  type: table
+  type: grid
   categories: true
   page-size: 5
   feed: true

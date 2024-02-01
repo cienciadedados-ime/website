@@ -73,9 +73,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-date','listing-image','listing-title','listing-author','listing-reading-time',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
+      valueNames: ['listing-date','listing-image','listing-title','listing-author','listing-reading-time',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-date","listing-title","listing-author"],
+      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description","listing-categories"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -104,8 +104,8 @@ ul.task-list li input[type="checkbox"] {
 
 <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script> -->
 
 <script>
   document.getElementById('enviarInscricao').addEventListener('click', function() {
@@ -212,124 +212,109 @@ ul.task-list li input[type="checkbox"] {
 <p>A atividade <em>CADE: onde a divulgação da Ciência Estatística acontece</em> é uma ação de extensão do <a href="https://est.ufba.br/"><strong>Departamento de Estatística</strong></a> do <a href="https://ime.ufba.br/"><strong>Instituto de Matemática e Estatística</strong></a> da <a href="https://www.ufba.br/"><strong>Universidade Federal da Bahia</strong></a>. Esta ação de extensão propõe construir um repositório on-line denominado Canal de Divulgação de Estatística, ou abreviadamente CADE, onde textos sobre estatística de leitura simples e acessível serão disponibilizados.</p>
 <p>Esta ação de extensão na modalidade <em>publicação</em> é parte do projeto de extensão <a href="https://cienciadedados.ime.ufba.br/"><em><code>R</code> para Ciência de Dados</em></a>.</p>
 <hr>
-<div id="listing-posts" class="quarto-listing quarto-listing-container-table">
-<div class="listing-actions-group">
-   <div class="input-group input-group-sm quarto-listing-sort">
-     <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
-     <select id="listing-posts-sort" class="form-select" aria-label="Ordenar por" onchange="window['quarto-listings']['listing-posts'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
-       <option value="" disabled="" selected="" hidden="">Ordenar por</option>
-       <option value="index" data-direction="asc">Pré-selecionado</option>
-         <option value="listing-date-sort" data-direction="asc">
-          Data - Mais velho
-        </option>
-         <option value="listing-date-sort" data-direction="desc">
-          Data - O mais novo
-        </option>
-         <option value="listing-title-sort" data-direction="asc">
-          Título
-        </option>
-         <option value="listing-author" data-direction="asc">
-          Autor
-        </option>
-     </select>
-  </div>
-    <div class="input-group input-group-sm quarto-listing-filter">
-      <span class="input-group-text"><i class="bi bi-search"></i></span>
-      <input type="text" class="search form-control" placeholder="Filter">
-    </div>
+<div id="listing-posts" class="quarto-listing quarto-listing-container-grid">
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-categories="Probabilidade,Probabilidade condicional,Teorema de Bayes,Teorema da probabilidade total" data-listing-date-sort="1704078000000" data-listing-file-modified-sort="1705171840695" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="11">
+<a href="../paginas/cade/probabilidade-condicional-bayes/prob-condicional.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="../paginas/cade/probabilidade-condicional-bayes/bayes.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Explicando probabilidade condicional e o Teorema de Bayes.
+</h5>
+<div class="listing-reading-time card-text text-muted">
+11 minutos
 </div>
-
-<table class="quarto-listing-table table">
-<thead>
-<tr>
-<th>
-<a class="sort" data-sort="listing-date-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Data</a>
-</th>
-<th>
-</th>
-<th>
-<a class="sort" data-sort="listing-title-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Título</a>
-</th>
-<th>
-<a class="sort" data-sort="listing-author" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Autor</a>
-</th>
-<th>
-Tempo de leitura
-</th>
-</tr>
-</thead>
-<tbody class="list">
-<tr data-index="0" data-categories="Probabilidade,Probabilidade condicional,Teorema de Bayes,Teorema da probabilidade total" data-listing-date-sort="1704078000000" data-listing-file-modified-sort="1705171840695" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="11" data-listing-title-sort="Explicando probabilidade condicional e o Teorema de Bayes." data-listing-filename-sort="prob-condicional.qmd">
-<td>
-<span class="listing-date">1 de jan. de 2024</span>
-</td>
-<td>
-<span class="listing-image"><img src="../paginas/cade/probabilidade-condicional-bayes/bayes.png" style="height: 40px;"></span>
-</td>
-<td>
-<a href="../paginas/cade/probabilidade-condicional-bayes/prob-condicional.html" class="title listing-title">Explicando probabilidade condicional e o Teorema de Bayes.</a>
-</td>
-<td>
-<span class="listing-author">Gilberto Pereira Sassi</span>
-</td>
-<td>
-<span class="listing-reading-time">11 minutos</span>
-</td>
-</tr>
-<tr data-index="1" data-categories="Ciência de Dados,Probabilidade,Estatística" data-listing-date-sort="1701399600000" data-listing-file-modified-sort="1702821929915" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-title-sort="O que é e como calcular probabilidade." data-listing-filename-sort="probabilidade.qmd">
-<td>
-<span class="listing-date">1 de dez. de 2023</span>
-</td>
-<td>
-<span class="listing-image"><img src="../paginas/cade/probabilidade/dice.png" style="height: 40px;"></span>
-</td>
-<td>
-<a href="../paginas/cade/probabilidade/probabilidade.html" class="title listing-title">O que é e como calcular probabilidade.</a>
-</td>
-<td>
-<span class="listing-author">Gilberto Pereira Sassi</span>
-</td>
-<td>
-<span class="listing-reading-time">7 minutos</span>
-</td>
-</tr>
-<tr data-index="2" data-categories="Ciência de Dados,Exploração e visualização de dados,Medidas de resumo,Gráfico de barras,Histograma" data-listing-date-sort="1698807600000" data-listing-file-modified-sort="1698605021756" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10" data-listing-title-sort="E como calcular medidas de resumo quando temos um gráfico de barras ou histograma?" data-listing-filename-sort="medidas-resumo-graficos.qmd">
-<td>
-<span class="listing-date">1 de nov. de 2023</span>
-</td>
-<td>
-<span class="listing-image"><img src="../paginas/cade/medidas-resumo-graficos/barra.png" style="height: 40px;"></span>
-</td>
-<td>
-<a href="../paginas/cade/medidas-resumo-graficos/medidas-resumo-graficos.html" class="title listing-title">E como calcular medidas de resumo quando temos um gráfico de barras ou histograma?</a>
-</td>
-<td>
-<span class="listing-author">Gilberto Pereira Sassi</span>
-</td>
-<td>
-<span class="listing-reading-time">10 minutos</span>
-</td>
-</tr>
-<tr data-index="3" data-categories="linguage R,Estatística,Ciência de Dados,Exploração e visualização de dados" data-listing-date-sort="1696129200000" data-listing-file-modified-sort="1698603003600" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-title-sort="Como criar tabela de distribuição de frequências usando o R?" data-listing-filename-sort="tabela-frequencias.qmd">
-<td>
-<span class="listing-date">1 de out. de 2023</span>
-</td>
-<td>
-<span class="listing-image"><img src="../paginas/cade/tabela-frequencias/tabela.png" style="height: 40px;"></span>
-</td>
-<td>
-<a href="../paginas/cade/tabela-frequencias/tabela-frequencias.html" class="title listing-title">Como criar tabela de distribuição de frequências usando o R?</a>
-</td>
-<td>
-<span class="listing-author">Gilberto Pereira Sassi</span>
-</td>
-<td>
-<span class="listing-reading-time">5 minutos</span>
-</td>
-</tr>
-</tbody>
-
-</table>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+Gilberto Pereira Sassi
+</div>
+<div class="listing-date">
+1 de jan. de 2024
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="1" data-categories="Ciência de Dados,Probabilidade,Estatística" data-listing-date-sort="1701399600000" data-listing-file-modified-sort="1702821929915" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7">
+<a href="../paginas/cade/probabilidade/probabilidade.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="../paginas/cade/probabilidade/dice.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+O que é e como calcular probabilidade.
+</h5>
+<div class="listing-reading-time card-text text-muted">
+7 minutos
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+Gilberto Pereira Sassi
+</div>
+<div class="listing-date">
+1 de dez. de 2023
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="2" data-categories="Ciência de Dados,Exploração e visualização de dados,Medidas de resumo,Gráfico de barras,Histograma" data-listing-date-sort="1698807600000" data-listing-file-modified-sort="1698605021756" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10">
+<a href="../paginas/cade/medidas-resumo-graficos/medidas-resumo-graficos.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="../paginas/cade/medidas-resumo-graficos/barra.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+E como calcular medidas de resumo quando temos um gráfico de barras ou histograma?
+</h5>
+<div class="listing-reading-time card-text text-muted">
+10 minutos
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+Gilberto Pereira Sassi
+</div>
+<div class="listing-date">
+1 de nov. de 2023
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="3" data-categories="linguage R,Estatística,Ciência de Dados,Exploração e visualização de dados" data-listing-date-sort="1696129200000" data-listing-file-modified-sort="1698603003600" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5">
+<a href="../paginas/cade/tabela-frequencias/tabela-frequencias.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="../paginas/cade/tabela-frequencias/tabela.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Como criar tabela de distribuição de frequências usando o R?
+</h5>
+<div class="listing-reading-time card-text text-muted">
+5 minutos
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+Gilberto Pereira Sassi
+</div>
+<div class="listing-date">
+1 de out. de 2023
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+</div>
 <div class="listing-no-matching d-none">
 Nenhum item correspondente
 </div>
