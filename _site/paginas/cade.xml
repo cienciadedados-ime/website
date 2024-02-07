@@ -6,15 +6,15 @@
       version="2.0">
 <channel>
 <title>Ciência de Dados</title>
-<link>https://cienciadedados-ime.quarto.pub/ime/paginas/cade.html</link>
-<atom:link href="https://cienciadedados-ime.quarto.pub/ime/paginas/cade.xml" rel="self" type="application/rss+xml"/>
+<link>https://cienciadedados.quarto.pub/ime/paginas/cade.html</link>
+<atom:link href="https://cienciadedados.quarto.pub/ime/paginas/cade.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.3.450</generator>
 <lastBuildDate>Mon, 01 Jan 2024 03:00:00 GMT</lastBuildDate>
 <item>
   <title>Explicando probabilidade condicional e o Teorema de Bayes.</title>
   <dc:creator>Gilberto Pereira Sassi</dc:creator>
-  <link>https://cienciadedados-ime.quarto.pub/ime/paginas/cade/probabilidade-condicional-bayes/prob-condicional.html</link>
+  <link>https://cienciadedados.quarto.pub/ime/paginas/cade/probabilidade-condicional-bayes/prob-condicional.html</link>
   <description><![CDATA[ 
 
 
@@ -25,7 +25,7 @@
 <p>Suponha que um camarada descobriu que o resultado do fenômeno aleatório está dentro do evento <img src="https://latex.codecogs.com/png.latex?B">, e ele quer saber a probabilidade de um elemento do evento <img src="https://latex.codecogs.com/png.latex?A"> ser resultado do fenômeno aleatório. Para não ficar repetindo a frase <em>ser resultado do fenômeno aleatório</em>, vamos simplificar: se um elemento do evento <img src="https://latex.codecogs.com/png.latex?A"> for resultado do fenômeno aleatório, vamos falar que o evento <img src="https://latex.codecogs.com/png.latex?A"> aconteceu (ou acontece). Neste contexto, a única forma do evento <img src="https://latex.codecogs.com/png.latex?A"> acontecer é o resultado do fenômeno estar em <img src="https://latex.codecogs.com/png.latex?A"> e <img src="https://latex.codecogs.com/png.latex?B"> simultaneamente <img src="https://latex.codecogs.com/png.latex?(A%20%5Ccap%20B)">, conforme ilustrado na Figura&nbsp;1.</p>
 <div id="fig-vann" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><img src="https://cienciadedados-ime.quarto.pub/ime/paginas/cade/probabilidade-condicional-bayes/interseccao.png" class="img-fluid figure-img" alt="Diagrama de Venn com intersecção entre os eventos $A$ e $B$. A único jeito de A acontecer é se o resultado do fenômeno aleatório estiver dentro de $A \cap B$."></p>
+<p><img src="https://cienciadedados.quarto.pub/ime/paginas/cade/probabilidade-condicional-bayes/interseccao.png" class="img-fluid figure-img" alt="Diagrama de Venn com intersecção entre os eventos $A$ e $B$. A único jeito de A acontecer é se o resultado do fenômeno aleatório estiver dentro de $A \cap B$."></p>
 <figcaption class="figure-caption">Figura&nbsp;1: Diagrama de Venn com intersecção entre os eventos A e B. O único jeito de A acontecer é se o resultado do fenômeno aleatório estiver dentro de <img src="https://latex.codecogs.com/png.latex?A%20%5Ccap%20B">.</figcaption>
 </figure>
 </div>
@@ -91,7 +91,7 @@
 <p>A partir de agora, vamos fazer algumas mágicas interessantes usando probabilidade condicional. Imagine que o espaço amostral pode ser dividido em algumas partes <img src="https://latex.codecogs.com/png.latex?C_1,%20%5Cdots,%20C_n">, conforme ilustrado na Figura&nbsp;2 onde dividimos o espaço amostral em quatro partes.</p>
 <div id="fig-prob-total" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><img src="https://cienciadedados-ime.quarto.pub/ime/paginas/cade/probabilidade-condicional-bayes/prob-total.jpg" class="img-fluid figure-img" alt="Teorema da probabilidade total."></p>
+<p><img src="https://cienciadedados.quarto.pub/ime/paginas/cade/probabilidade-condicional-bayes/prob-total.jpg" class="img-fluid figure-img" alt="Teorema da probabilidade total."></p>
 <figcaption class="figure-caption">Figura&nbsp;2: Teorema da probabilidade total.</figcaption>
 </figure>
 </div>
@@ -143,7 +143,7 @@
 <p>Finalmente, e não menos importante, temos o Teorema de Bayes, que foi descoberto pelo pastor presbiteriano <a href="https://pt.wikipedia.org/wiki/Thomas_Bayes">Thomas Bayes</a>. Apesar de matematicamente simples, as implicações e aplicações do Teorema de Bayes são extremamente relevantes para a Probabilidade, Estatística e o conhecimento científico como um todo. O Teorema de Bayes nos permite atualizar a probabilidade ou <em>crença</em> de que um evento <img src="https://latex.codecogs.com/png.latex?A"> será o resultado de um fenômeno aleatório ao coletarmos ou descobrirmos novas informações ou evidências sobre o fenômeno aleatório.</p>
 <div id="fig-thomas-bayes" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><img src="https://cienciadedados-ime.quarto.pub/ime/paginas/cade/probabilidade-condicional-bayes/thomas-bayes.jpeg" class="img-fluid figure-img" alt="Reverendo Thomas Bayes."></p>
+<p><img src="https://cienciadedados.quarto.pub/ime/paginas/cade/probabilidade-condicional-bayes/thomas-bayes.jpeg" class="img-fluid figure-img" alt="Reverendo Thomas Bayes."></p>
 <figcaption class="figure-caption">Figura&nbsp;3: Thomas Bayes: matemático, filósofo e pastor presbiteriano.</figcaption>
 </figure>
 </div>
@@ -198,14 +198,14 @@
   <category>Probabilidade condicional</category>
   <category>Teorema de Bayes</category>
   <category>Teorema da probabilidade total</category>
-  <guid>https://cienciadedados-ime.quarto.pub/ime/paginas/cade/probabilidade-condicional-bayes/prob-condicional.html</guid>
+  <guid>https://cienciadedados.quarto.pub/ime/paginas/cade/probabilidade-condicional-bayes/prob-condicional.html</guid>
   <pubDate>Mon, 01 Jan 2024 03:00:00 GMT</pubDate>
-  <media:content url="https://cienciadedados-ime.quarto.pub/ime/paginas/cade/probabilidade-condicional-bayes/bayes.png" medium="image" type="image/png" height="144" width="144"/>
+  <media:content url="https://cienciadedados.quarto.pub/ime/paginas/cade/probabilidade-condicional-bayes/bayes.png" medium="image" type="image/png" height="144" width="144"/>
 </item>
 <item>
   <title>O que é e como calcular probabilidade.</title>
   <dc:creator>Gilberto Pereira Sassi</dc:creator>
-  <link>https://cienciadedados-ime.quarto.pub/ime/paginas/cade/probabilidade/probabilidade.html</link>
+  <link>https://cienciadedados.quarto.pub/ime/paginas/cade/probabilidade/probabilidade.html</link>
   <description><![CDATA[ 
 
 
@@ -328,14 +328,14 @@
   <category>Ciência de Dados</category>
   <category>Probabilidade</category>
   <category>Estatística</category>
-  <guid>https://cienciadedados-ime.quarto.pub/ime/paginas/cade/probabilidade/probabilidade.html</guid>
+  <guid>https://cienciadedados.quarto.pub/ime/paginas/cade/probabilidade/probabilidade.html</guid>
   <pubDate>Fri, 01 Dec 2023 03:00:00 GMT</pubDate>
-  <media:content url="https://cienciadedados-ime.quarto.pub/ime/paginas/cade/probabilidade/dice.png" medium="image" type="image/png" height="144" width="144"/>
+  <media:content url="https://cienciadedados.quarto.pub/ime/paginas/cade/probabilidade/dice.png" medium="image" type="image/png" height="144" width="144"/>
 </item>
 <item>
   <title>E como calcular medidas de resumo quando temos um gráfico de barras ou histograma?</title>
   <dc:creator>Gilberto Pereira Sassi</dc:creator>
-  <link>https://cienciadedados-ime.quarto.pub/ime/paginas/cade/medidas-resumo-graficos/medidas-resumo-graficos.html</link>
+  <link>https://cienciadedados.quarto.pub/ime/paginas/cade/medidas-resumo-graficos/medidas-resumo-graficos.html</link>
   <description><![CDATA[ 
 
 
@@ -344,7 +344,7 @@
 <section id="gráfico-de-barras" class="level2">
 <h2 class="anchored" data-anchor-id="gráfico-de-barras">Gráfico de barras</h2>
 <p>Imagine que você tem um gráfico de barras para uma variável quantitativa discreta <img src="https://latex.codecogs.com/png.latex?X"> com valores observados <img src="https://latex.codecogs.com/png.latex?x_1,%20%5Cdots,%20x_k">, conforme a figura abaixo.</p>
-<p><img src="https://cienciadedados-ime.quarto.pub/ime/paginas/cade/medidas-resumo-graficos/barras-geral.png" alt="Gráfico de barras para variável quantitativa discreta." width="50%" title="Gráfico de barras para variável quantitativa discreta."></p>
+<p><img src="https://cienciadedados.quarto.pub/ime/paginas/cade/medidas-resumo-graficos/barras-geral.png" alt="Gráfico de barras para variável quantitativa discreta." width="50%" title="Gráfico de barras para variável quantitativa discreta."></p>
 <p>Cada valor observado <img src="https://latex.codecogs.com/png.latex?x_i,%20i=1,%20%5Cdots,%20k"> do gráfico acima tem uma barra com altura <img src="https://latex.codecogs.com/png.latex?n_i,i=1,%20%5Cdots,%20k"><sup>1</sup>. Logo, usando esta altura, que é igual a frequência, podemos construir a tabela de distribuição de frequência abaixo.</p>
 <table class="table">
 <colgroup>
@@ -434,7 +434,7 @@
 <section id="exemplo" class="level3">
 <h3 class="anchored" data-anchor-id="exemplo">Exemplo</h3>
 <p>Considere o gráfico de barras da variável <code>Número de filhos</code> de um conjunto de <img src="https://latex.codecogs.com/png.latex?36"> funcionário da <code>Companhia MB</code> representado na figura abaixo.</p>
-<p><img src="https://cienciadedados-ime.quarto.pub/ime/paginas/cade/medidas-resumo-graficos/grafico-barras-numero-filhos.png" alt="Gráfico de barras para variável quantitativa discreta Número de filhos." width="50%"></p>
+<p><img src="https://cienciadedados.quarto.pub/ime/paginas/cade/medidas-resumo-graficos/grafico-barras-numero-filhos.png" alt="Gráfico de barras para variável quantitativa discreta Número de filhos." width="50%"></p>
 <p>Note que a barra que corresponde a <code>zero filhos</code> tem altura <img src="https://latex.codecogs.com/png.latex?20"> e frequência <img src="https://latex.codecogs.com/png.latex?20">, a barra que corresponde a <code>um filho</code> tem altura <img src="https://latex.codecogs.com/png.latex?5"> e frequência <img src="https://latex.codecogs.com/png.latex?5">, a barra que corresponde a <code>dois filhos</code> tem altura <img src="https://latex.codecogs.com/png.latex?7"> e frequência <img src="https://latex.codecogs.com/png.latex?7">, a barra que corresponde a <code>três filhos</code> tem altura <img src="https://latex.codecogs.com/png.latex?3"> e frequência <img src="https://latex.codecogs.com/png.latex?3">, a barra que corresponde a <code>quatro filhos</code> tem altura <img src="https://latex.codecogs.com/png.latex?0"> e frequência <img src="https://latex.codecogs.com/png.latex?0"> e a barra que corresponde a <code>cinco filhos</code> tem altura <img src="https://latex.codecogs.com/png.latex?1"> e frequência <img src="https://latex.codecogs.com/png.latex?1">. Consequentemente, temos a seguinte tabela de distribuição de frequências.</p>
 <table class="table">
 <colgroup>
@@ -529,7 +529,7 @@
 <section id="histograma" class="level2">
 <h2 class="anchored" data-anchor-id="histograma">Histograma</h2>
 <p>O histograma é um gráfico construído usando barras sem espaçamento entre elas, e cada barra tem a largura da base igual a largura do intervalo intervalo usado na contagem da variável quantitativa contínua e a área da barra é igual a frequência relativa<sup>3</sup>. Note que a área da figura geométrica do histograma sempre é um, e a altura de cada barra é a divisão da frequência relativa pela largura do intervalo conforme ilustrado na figura abaixo. Chamamos essa divisão de <em>Densidade de frequência</em>.</p>
-<p><img src="https://cienciadedados-ime.quarto.pub/ime/paginas/cade/medidas-resumo-graficos/histograma-continua.png" alt="Histograma de uma variável quantitativa contínua." width="50%"></p>
+<p><img src="https://cienciadedados.quarto.pub/ime/paginas/cade/medidas-resumo-graficos/histograma-continua.png" alt="Histograma de uma variável quantitativa contínua." width="50%"></p>
 <p>Para encontrarmos a frequência relativa de cada intervalo, e consequentemente a porcentagem, precisamos multiplicar a <em>densidade de frequência</em> (altura da barra) pela largura do intervalo, conforme tabela abaixo.</p>
 <table class="table">
 <colgroup>
@@ -769,7 +769,7 @@
 <section id="exemplo-1" class="level3">
 <h3 class="anchored" data-anchor-id="exemplo-1">Exemplo</h3>
 <p>Considere o histograma da variável quantitativa contínua <img src="https://latex.codecogs.com/png.latex?X"> de 36 funcionário da <a href="empresa.xlsx">companhia MB</a> da figura abaixo.</p>
-<p><img src="https://cienciadedados-ime.quarto.pub/ime/paginas/cade/medidas-resumo-graficos/histograma-funcionarios.png" alt="Histograma para a variável salário." width="50%"></p>
+<p><img src="https://cienciadedados.quarto.pub/ime/paginas/cade/medidas-resumo-graficos/histograma-funcionarios.png" alt="Histograma para a variável salário." width="50%"></p>
 <p>Então, temos a seguinte tabela de distribuição de frequências.</p>
 <table class="table">
 <colgroup>
@@ -882,14 +882,14 @@
   <category>Medidas de resumo</category>
   <category>Gráfico de barras</category>
   <category>Histograma</category>
-  <guid>https://cienciadedados-ime.quarto.pub/ime/paginas/cade/medidas-resumo-graficos/medidas-resumo-graficos.html</guid>
+  <guid>https://cienciadedados.quarto.pub/ime/paginas/cade/medidas-resumo-graficos/medidas-resumo-graficos.html</guid>
   <pubDate>Wed, 01 Nov 2023 03:00:00 GMT</pubDate>
-  <media:content url="https://cienciadedados-ime.quarto.pub/ime/paginas/cade/medidas-resumo-graficos/barra.png" medium="image" type="image/png" height="144" width="144"/>
+  <media:content url="https://cienciadedados.quarto.pub/ime/paginas/cade/medidas-resumo-graficos/barra.png" medium="image" type="image/png" height="144" width="144"/>
 </item>
 <item>
   <title>Como criar tabela de distribuição de frequências usando o R?</title>
   <dc:creator>Gilberto Pereira Sassi</dc:creator>
-  <link>https://cienciadedados-ime.quarto.pub/ime/paginas/cade/tabela-frequencias/tabela-frequencias.html</link>
+  <link>https://cienciadedados.quarto.pub/ime/paginas/cade/tabela-frequencias/tabela-frequencias.html</link>
   <description><![CDATA[ 
 
 
@@ -1155,9 +1155,9 @@ font-style: inherit;">=</span> percent)</span></code></pre></div>
   <category>Estatística</category>
   <category>Ciência de Dados</category>
   <category>Exploração e visualização de dados</category>
-  <guid>https://cienciadedados-ime.quarto.pub/ime/paginas/cade/tabela-frequencias/tabela-frequencias.html</guid>
+  <guid>https://cienciadedados.quarto.pub/ime/paginas/cade/tabela-frequencias/tabela-frequencias.html</guid>
   <pubDate>Sun, 01 Oct 2023 03:00:00 GMT</pubDate>
-  <media:content url="https://cienciadedados-ime.quarto.pub/ime/paginas/cade/tabela-frequencias/tabela.png" medium="image" type="image/png" height="144" width="144"/>
+  <media:content url="https://cienciadedados.quarto.pub/ime/paginas/cade/tabela-frequencias/tabela.png" medium="image" type="image/png" height="144" width="144"/>
 </item>
 </channel>
 </rss>

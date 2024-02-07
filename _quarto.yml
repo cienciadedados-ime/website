@@ -2,8 +2,14 @@ project:
   type: website
 
 website:
+  open-graph:
+    locale: pt_BR
+    site-name: "Ciência de Dados"
   title: "Ciência de Dados"
-  site-url: "https://gilbertosassi.quarto.pub/cienciadedados/"
+  google-analytics:
+    tracking-id: G-0WD3PSV647
+    anonymize-ip: true
+  site-url: "https://cienciadedados.quarto.pub/"
   body-footer: "&#169; 2024 **`R` para Ciência de Dados <br>&#128420;** by Carolina Paraíba e Gilberto Sassi"
   navbar:
     logo: assets/r.png

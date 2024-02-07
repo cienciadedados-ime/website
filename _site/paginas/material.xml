@@ -6,15 +6,15 @@
       version="2.0">
 <channel>
 <title>Ciência de Dados</title>
-<link>https://cienciadedados-ime.quarto.pub/ime/paginas/material.html</link>
-<atom:link href="https://cienciadedados-ime.quarto.pub/ime/paginas/material.xml" rel="self" type="application/rss+xml"/>
+<link>https://cienciadedados.quarto.pub/ime/paginas/material.html</link>
+<atom:link href="https://cienciadedados.quarto.pub/ime/paginas/material.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.3.450</generator>
 <lastBuildDate>Fri, 20 Oct 2023 03:00:00 GMT</lastBuildDate>
 <item>
   <title>R para Ciência de Dados: Exploração e Visualização de Dados</title>
   <dc:creator>Carolina Costa Mota Paraíba</dc:creator>
-  <link>https://cienciadedados-ime.quarto.pub/ime/paginas/material/2023/exploracao-visualizacao/exploracao-visualizacao.html</link>
+  <link>https://cienciadedados.quarto.pub/ime/paginas/material/2023/exploracao-visualizacao/exploracao-visualizacao.html</link>
   <description><![CDATA[ 
 
 
@@ -61,14 +61,14 @@
   <category>Medidas de resumo</category>
   <category>Gráfico de barras</category>
   <category>Histograma</category>
-  <guid>https://cienciadedados-ime.quarto.pub/ime/paginas/material/2023/exploracao-visualizacao/exploracao-visualizacao.html</guid>
+  <guid>https://cienciadedados.quarto.pub/ime/paginas/material/2023/exploracao-visualizacao/exploracao-visualizacao.html</guid>
   <pubDate>Fri, 20 Oct 2023 03:00:00 GMT</pubDate>
-  <media:content url="https://cienciadedados-ime.quarto.pub/ime/assets/logo_projeto.png" medium="image" type="image/png" height="151" width="144"/>
+  <media:content url="https://cienciadedados.quarto.pub/ime/assets/logo_projeto.png" medium="image" type="image/png" height="151" width="144"/>
 </item>
 <item>
   <title>R para Ciência de Dados: Introdução à programação em R</title>
   <dc:creator>Gilberto Pereira Sassi</dc:creator>
-  <link>https://cienciadedados-ime.quarto.pub/ime/paginas/material/2023/programacao/programacao.html</link>
+  <link>https://cienciadedados.quarto.pub/ime/paginas/material/2023/programacao/programacao.html</link>
   <description><![CDATA[ 
 
 
@@ -112,14 +112,14 @@
   <category>Laços de repetição</category>
   <category>Controle de Fluxo</category>
   <category>Pacote &lt;code&gt;purrr&lt;/code&gt;</category>
-  <guid>https://cienciadedados-ime.quarto.pub/ime/paginas/material/2023/programacao/programacao.html</guid>
+  <guid>https://cienciadedados.quarto.pub/ime/paginas/material/2023/programacao/programacao.html</guid>
   <pubDate>Fri, 15 Sep 2023 03:00:00 GMT</pubDate>
-  <media:content url="https://cienciadedados-ime.quarto.pub/ime/assets/logo_projeto.png" medium="image" type="image/png" height="151" width="144"/>
+  <media:content url="https://cienciadedados.quarto.pub/ime/assets/logo_projeto.png" medium="image" type="image/png" height="151" width="144"/>
 </item>
 <item>
   <title>R para Ciência de Dados: Regressão Logística</title>
   <dc:creator>Carolina Costa Mota Paraíba</dc:creator>
-  <link>https://cienciadedados-ime.quarto.pub/ime/paginas/material/2023/regressao-logistica/regressao-logistica.html</link>
+  <link>https://cienciadedados.quarto.pub/ime/paginas/material/2023/regressao-logistica/regressao-logistica.html</link>
   <description><![CDATA[ 
 
 
@@ -157,14 +157,14 @@
   <category>Modelagem Estatística</category>
   <category>Modelos Lineares Generalizados</category>
   <category>Regressão Logística</category>
-  <guid>https://cienciadedados-ime.quarto.pub/ime/paginas/material/2023/regressao-logistica/regressao-logistica.html</guid>
+  <guid>https://cienciadedados.quarto.pub/ime/paginas/material/2023/regressao-logistica/regressao-logistica.html</guid>
   <pubDate>Fri, 18 Aug 2023 03:00:00 GMT</pubDate>
-  <media:content url="https://cienciadedados-ime.quarto.pub/ime/assets/logo_projeto.png" medium="image" type="image/png" height="151" width="144"/>
+  <media:content url="https://cienciadedados.quarto.pub/ime/assets/logo_projeto.png" medium="image" type="image/png" height="151" width="144"/>
 </item>
 <item>
   <title>Ciência de Dados para Docentes usando R</title>
   <dc:creator>Carolina Costa Mota Paraíba</dc:creator>
-  <link>https://cienciadedados-ime.quarto.pub/ime/paginas/material/2023/cd-docentes/cd-docentes.html</link>
+  <link>https://cienciadedados.quarto.pub/ime/paginas/material/2023/cd-docentes/cd-docentes.html</link>
   <description><![CDATA[ 
 
 
@@ -206,14 +206,14 @@
   <category>Gráfico de barras</category>
   <category>Docentes</category>
   <category>Histograma</category>
-  <guid>https://cienciadedados-ime.quarto.pub/ime/paginas/material/2023/cd-docentes/cd-docentes.html</guid>
+  <guid>https://cienciadedados.quarto.pub/ime/paginas/material/2023/cd-docentes/cd-docentes.html</guid>
   <pubDate>Wed, 26 Jul 2023 03:00:00 GMT</pubDate>
-  <media:content url="https://cienciadedados-ime.quarto.pub/ime/assets/logo_projeto.png" medium="image" type="image/png" height="151" width="144"/>
+  <media:content url="https://cienciadedados.quarto.pub/ime/assets/logo_projeto.png" medium="image" type="image/png" height="151" width="144"/>
 </item>
 <item>
   <title>R para Ciência de Dados: Quarto</title>
   <dc:creator>Gilberto Pereira Sassi</dc:creator>
-  <link>https://cienciadedados-ime.quarto.pub/ime/paginas/material/2023/quarto/quarto.html</link>
+  <link>https://cienciadedados.quarto.pub/ime/paginas/material/2023/quarto/quarto.html</link>
   <description><![CDATA[ 
 
 
@@ -231,9 +231,9 @@
   <category>Linguagem &lt;code&gt;R&lt;/code&gt;</category>
   <category>Markdown</category>
   <category>Quarto</category>
-  <guid>https://cienciadedados-ime.quarto.pub/ime/paginas/material/2023/quarto/quarto.html</guid>
+  <guid>https://cienciadedados.quarto.pub/ime/paginas/material/2023/quarto/quarto.html</guid>
   <pubDate>Fri, 07 Jul 2023 03:00:00 GMT</pubDate>
-  <media:content url="https://cienciadedados-ime.quarto.pub/ime/assets/logo_projeto.png" medium="image" type="image/png" height="151" width="144"/>
+  <media:content url="https://cienciadedados.quarto.pub/ime/assets/logo_projeto.png" medium="image" type="image/png" height="151" width="144"/>
 </item>
 </channel>
 </rss>
