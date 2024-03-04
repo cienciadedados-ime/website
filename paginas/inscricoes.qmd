@@ -1,8 +1,12 @@
 ---
 title: ""
-format:
-    html:
-        include-before-body: ../assets/form.html
+format: html
+    # html:
+    #     include-before-body: ../assets/form.html
 ---
+
+**Inscrições encerradas.**
+
+Candidatos selecionados para o curso **`R` para Ciência de Dados: Exploração e Visualização de Dados** que acontecerá nos dias 16 e 23 de março: [candidatos selecionados](../assets/selecionados/2024-marco/nomes-selecionados.xlsx).
 
 ---

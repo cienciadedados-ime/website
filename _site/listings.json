@@ -1,5 +1,9 @@
 [
   {
+    "listing": "/paginas/eventos.html",
+    "items": []
+  },
+  {
     "listing": "/paginas/cade.html",
     "items": [
       "/paginas/cade/probabilidade-condicional-bayes/prob-condicional.html",
@@ -7,10 +11,6 @@
       "/paginas/cade/medidas-resumo-graficos/medidas-resumo-graficos.html",
       "/paginas/cade/tabela-frequencias/tabela-frequencias.html"
     ]
-  },
-  {
-    "listing": "/paginas/eventos.html",
-    "items": []
   },
   {
     "listing": "/paginas/material.html",

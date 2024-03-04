@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Gilberto Pereira Sassi">
 
-<title>Ciência de Dados -</title>
+<title>Ciência de Dados - Construindo gráfico de barras e histograma usando ggplot2</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,24 +24,24 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<script src="../site_libs/quarto-html/quarto.js"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<script src="../../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -94,11 +95,14 @@ gtag('config', 'G-0WD3PSV647', { 'anonymize_ip': true});
 </script>
 
 
-<link rel="stylesheet" href="../assets/styles.css">
-<meta property="og:title" content="Ciência de Dados -">
+<link rel="stylesheet" href="../../../assets/styles.css">
+<meta property="og:title" content="Ciência de Dados - Construindo gráfico de barras e histograma usando ggplot2">
 <meta property="og:description" content="">
+<meta property="og:image" content="https://cienciadedados.quarto.pub/ime/paginas/cade/grafico-barra-histograma/histogram.png">
 <meta property="og:site-name" content="Ciência de Dados">
 <meta property="og:locale" content="pt_BR">
+<meta property="og:image:height" content="512">
+<meta property="og:image:width" content="512">
 </head>
 
 <body class="nav-fixed">
@@ -108,10 +112,10 @@ gtag('config', 'G-0WD3PSV647', { 'anonymize_ip': true});
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
-    <a href="../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../assets/r.png" alt="" class="navbar-logo">
+    <a href="../../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../../assets/r.png" alt="" class="navbar-logo">
     </a>
-    <a class="navbar-brand" href="../index.html">
+    <a class="navbar-brand" href="../../../index.html">
     <span class="navbar-title">Ciência de Dados</span>
     </a>
   </div>
@@ -122,31 +126,31 @@ gtag('config', 'G-0WD3PSV647', { 'anonymize_ip': true});
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.html" rel="" target="">
+    <a class="nav-link" href="../../../index.html" rel="" target="">
  <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="../paginas/inscricoes.html" rel="" target="" aria-current="page">
+    <a class="nav-link" href="../../../paginas/inscricoes.html" rel="" target="">
  <span class="menu-text">Inscrições</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../paginas/catalogo.html" rel="" target="">
+    <a class="nav-link" href="../../../paginas/catalogo.html" rel="" target="">
  <span class="menu-text">Cursos oferecidos</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../paginas/material.html" rel="" target="">
+    <a class="nav-link" href="../../../paginas/material.html" rel="" target="">
  <span class="menu-text">Material</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../paginas/cade.html" rel="" target="">
+    <a class="nav-link" href="../../../paginas/cade.html" rel="" target="">
  <span class="menu-text">CADE</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../paginas/eventos.html" rel="" target="">
+    <a class="nav-link" href="../../../paginas/eventos.html" rel="" target="">
  <span class="menu-text">Eventos</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../paginas/equipe.html" rel="" target="">
+    <a class="nav-link" href="../../../paginas/equipe.html" rel="" target="">
  <span class="menu-text">Equipe</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -155,17 +159,17 @@ gtag('config', 'G-0WD3PSV647', { 'anonymize_ip': true});
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-editais">    
         <li>
-    <a class="dropdown-item" href="../paginas/editais/editais-abertos.html" rel="" target="">
+    <a class="dropdown-item" href="../../../paginas/editais/editais-abertos.html" rel="" target="">
  <span class="dropdown-text">Editais abertos</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../paginas/editais/editais-2023.html" rel="" target="">
+    <a class="dropdown-item" href="../../../paginas/editais/editais-2023.html" rel="" target="">
  <span class="dropdown-text">Editais encerrados</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="../paginas/contato.html" rel="" target="">
+    <a class="nav-link" href="../../../paginas/contato.html" rel="" target="">
  <span class="menu-text">Contato</span></a>
   </li>  
 </ul>
@@ -181,18 +185,77 @@ gtag('config', 'G-0WD3PSV647', { 'anonymize_ip': true});
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Nesta página</h2>
+   
+  <ul>
+  <li><a href="#apresentando-ggplot2" id="toc-apresentando-ggplot2" class="nav-link active" data-scroll-target="#apresentando-ggplot2">Apresentando <code>ggplot2</code></a></li>
+  <li><a href="#gráfico-de-barras" id="toc-gráfico-de-barras" class="nav-link" data-scroll-target="#gráfico-de-barras">Gráfico de barras</a>
+  <ul class="collapse">
+  <li><a href="#variáveis-categóricas" id="toc-variáveis-categóricas" class="nav-link" data-scroll-target="#variáveis-categóricas">Variáveis categóricas</a></li>
+  <li><a href="#variáveis-discretas" id="toc-variáveis-discretas" class="nav-link" data-scroll-target="#variáveis-discretas">Variáveis discretas</a></li>
+  </ul></li>
+  <li><a href="#histograma" id="toc-histograma" class="nav-link" data-scroll-target="#histograma">Histograma</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Construindo gráfico de barras e histograma usando <code>ggplot2</code></h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">Ciência de Dados</div>
+    <div class="quarto-category">Exploração e visualização de dados</div>
+    <div class="quarto-category">Gráfico de barras</div>
+    <div class="quarto-category">Histograma</div>
+    <div class="quarto-category">ggplot2</div>
+    <div class="quarto-category">tidyverse</div>
+  </div>
+  </div>
 
 
-<p><strong>Inscrições encerradas.</strong></p>
-<p>Candidatos selecionados para o curso <strong><code>R</code> para Ciência de Dados: Exploração e Visualização de Dados</strong> que acontecerá nos dias 16 e 23 de março: <a href="../assets/selecionados/2024-marco/nomes-selecionados.xlsx">candidatos selecionados</a>.</p>
-<hr>
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Autor</div>
+    <div class="quarto-title-meta-contents">
+             <p>Gilberto Pereira Sassi </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Data de Publicação</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">1 de fevereiro de 2024</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="apresentando-ggplot2" class="level1">
+<h1>Apresentando <code>ggplot2</code></h1>
+</section>
+<section id="gráfico-de-barras" class="level1">
+<h1>Gráfico de barras</h1>
+<section id="variáveis-categóricas" class="level2">
+<h2 class="anchored" data-anchor-id="variáveis-categóricas">Variáveis categóricas</h2>
+</section>
+<section id="variáveis-discretas" class="level2">
+<h2 class="anchored" data-anchor-id="variáveis-discretas">Variáveis discretas</h2>
+</section>
+</section>
+<section id="histograma" class="level1">
+<h1>Histograma</h1>
 
 
+</section>
 
 <p>© 2024 <strong><code>R</code> para Ciência de Dados <br>🖤</strong> by Carolina Paraíba e Gilberto Sassi</p></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
