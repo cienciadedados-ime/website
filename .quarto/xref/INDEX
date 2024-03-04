@@ -142,5 +142,8 @@
   },
   "paginas/inscricao-popup.qmd": {
     "inscricao-popup.html": "f3f0d067"
+  },
+  "paginas/cade/grafico-barra-histograma/grafico-barra-histograma.qmd": {
+    "grafico-barra-histograma.html": "2dba8657"
   }
 }
