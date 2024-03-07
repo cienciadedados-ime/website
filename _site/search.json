@@ -238,46 +238,18 @@
     "text": "Depois de ter instalado o R, siga as instruções de instalação em posit.co/downloads."
   },
   {
-    "objectID": "paginas/editais/editais-abertos.html",
-    "href": "paginas/editais/editais-abertos.html",
-    "title": "Editais abertos",
-    "section": "",
-    "text": "Editais abertos\nEm breve.\n\n\n\n\n\n© 2024 R para Ciência de Dados 🖤 by Carolina Paraíba e Gilberto Sassi"
-  },
-  {
-    "objectID": "paginas/eventos.html",
-    "href": "paginas/eventos.html",
+    "objectID": "paginas/cade.html",
+    "href": "paginas/cade.html",
     "title": "Ciência de Dados",
     "section": "",
-    "text": "Em breve.\n\n\n\n\n\nNenhum item correspondente\n\n\n\n\n\n\n\n© 2024 R para Ciência de Dados 🖤 by Carolina Paraíba e Gilberto Sassi"
+    "text": "A atividade CADE: onde a divulgação da Ciência Estatística acontece é uma ação de extensão do Departamento de Estatística do Instituto de Matemática e Estatística da Universidade Federal da Bahia. Esta ação de extensão propõe construir um repositório on-line denominado Canal de Divulgação de Estatística, ou abreviadamente CADE, onde textos sobre estatística de leitura simples e acessível serão disponibilizados.\nEsta ação de extensão na modalidade publicação é parte do projeto de extensão R para Ciência de Dados.\n\n\n\n\n\n\n\n\n\n\n\nExplicando probabilidade condicional e o Teorema de Bayes.\n\n\n11 minutos\n\n\n\nGilberto Pereira Sassi\n\n\n1 de jan. de 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nO que é e como calcular probabilidade.\n\n\n7 minutos\n\n\n\nGilberto Pereira Sassi\n\n\n1 de dez. de 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nE como calcular medidas de resumo quando temos um gráfico de barras ou histograma?\n\n\n10 minutos\n\n\n\nGilberto Pereira Sassi\n\n\n1 de nov. de 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nComo criar tabela de distribuição de frequências usando o R?\n\n\n5 minutos\n\n\n\nGilberto Pereira Sassi\n\n\n1 de out. de 2023\n\n\n\n\n\n\n\n\nNenhum item correspondente\n\n\n\n\n\n\n\n© 2024 R para Ciência de Dados 🖤 by Carolina Paraíba e Gilberto Sassi"
   },
   {
-    "objectID": "paginas/cursos.html",
-    "href": "paginas/cursos.html",
+    "objectID": "paginas/editais/editais-2023.html",
+    "href": "paginas/editais/editais-2023.html",
     "title": "Ciência de Dados",
     "section": "",
-    "text": "© 2024 R para Ciência de Dados 🖤 by Carolina Paraíba e Gilberto Sassi"
-  },
-  {
-    "objectID": "paginas/inscricoes.html",
-    "href": "paginas/inscricoes.html",
-    "title": "Ciência de Dados",
-    "section": "",
-    "text": "Inscrições encerradas.\nCandidatos selecionados para o curso R para Ciência de Dados: Exploração e Visualização de Dados que acontecerá nos dias 16 e 23 de março: candidatos selecionados.\n\n\n\n\n© 2024 R para Ciência de Dados 🖤 by Carolina Paraíba e Gilberto Sassi"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "R para Ciência de Dados",
-    "section": "",
-    "text": "R para Ciência de dados é uma ação de extensão na modalidade projeto com apoio financeiro da Pró-reitoria de Extensão da Univesidade Federal da Bahia (UFBA) e tem como o objetivo compartilhar o conhecimento de análise de dados usando a linguagem R numa interação dialógica da comunidade acadêmica com a sociedade por meio da troca de conhecimentos.\nO projeto irá promover um conjunto de ações com o objetivo de popularizar a Estatística e Ciência de Dados e incentivar o uso de tecnologias de código aberto como a linguagem R, cujo uso é amplamente disseminado entre os pesquisadores da área de Estatística com crescente popularidade entre profissionais de outras áreas.\nOs cursos e eventos promovidos neste projeto serão presenciais em Salvador, gratuitas, abertas a toda comunidade e com certificado emitado pela UFBA.\nDefenda a Universidade pública, gratuita, de qualidade e diversa. Serviço público salva vidas. Defenda o serviço público.\n\nDe cada qual, segundo sua capacidade; a cada qual, segundo suas necessidades.\n\n\n\n\n\n\n© 2024 R para Ciência de Dados 🖤 by Carolina Paraíba e Gilberto Sassi"
-  },
-  {
-    "objectID": "paginas/contato.html",
-    "href": "paginas/contato.html",
-    "title": "Contatos",
-    "section": "",
-    "text": "cienciadedados.ime@gmail.com\n @cienciadedados.ime\n\n\n\n\n\n\nEndereço\nInstituto de Matemática e Estatística - UFBA Av. Milton Santos, Campus Universitário de Ondina CEP: 40.170-110\n\n\n\n\n\n\n© 2024 R para Ciência de Dados 🖤 by Carolina Paraíba e Gilberto Sassi"
+    "text": "Edital em andamentoEdital 2023\n\n\nO edital para os semestres 2023.2 e 2024.1 já está em andamento.\n\n\nEstão abertas inscrições para seleção de 01 vaga para bolsista e 02 vagas para voluntário para os Semestres Letivos 2023.2 e 2024.1 no Projeto de Extensão R para Ciência de Dados, sob número de cadastro 19588 na plataforma SIATEX.\nO objetivo deste projeto de extensão é compartilhar o conhecimento de análise de dados usando a linguagem R numa interação dialógica da comunidade acadêmica com a sociedade por meio da troca de conhecimentos. O projeto irá promover um conjunto de ações com o objetivo de popularizar a Estatística e Ciência de Dados e incentivar o uso de tecnologias de código aberto como a linguagem R, cujo uso é amplamente disseminado entre os pesquisadores da área de Estatística com crescente popularidade entre profissionais de outras áreas. Os métodos que serão abordados neste projeto constituem um conhecimento essencial para o exercício da cidadania devido ao avanço das tecnologias de informação. As ações planejadas neste projeto trarão para a universidade a experiência e a demanda dos profissionais pelo uso de Estatística e Ciência de Dados. Devido a relevância e atualidade do tema, é importante que a UFBA atue junto com a sociedade em atividades gratuitas fortalecendo a inserção da UFBA dentro da sociedade.\n\nVagas ofertadas\n\n01 vaga para bolsista de Extensão, no valor de R$700,00 mensal, conforme Edital PIBIEX 2023-2024.\n02 vagas para voluntárias/os, com até R$1.000,00 de auxílio financeiro para ajuda de custo, conforme Edital PAEx 2023.\n\n\n\nRequisitos para candidatura\nAs vagas estão aberta para qualquer estudante de graduação da UFBA que atenda aos seguintes requisitos:\n\na/o candidata/o deve ser estudante regularmente matriculada/o em qualquer curso de graduação oferecido pela UFBA.\nnão pode estar inadimplente com a PROEXT.\nno caso de bolsista, não pode acumular bolsa com outro Programa Institucional.\nter disponibilidade de trabalhar vinte horas semanais nas atividades deste projeto.\nter coeficiente de rendimento maior ou igual a 6,0.\ndesejável conhecimento de linguagem R e/ou Métodos Estatísticos.\n\n\n\nResponsabilidades da/o bolsista\n\nparticipar de reuniões semanais com a equipe executora em dia e horário a definir.\nparticipar das reuniões de orientação e avaliação com a PROEXT.\nparticipar das atividades promovidas por este projeto de extensão.\nauxiliar na manutenção do website do projeto de extensão.\nenviar relatório de atividades no sistema SISBIEX, usando formulário próprio, em até 30 (trinta) dias após a conclusão do projeto,\napresentar os resultados dos planos de trabalhos na próxima edição do Congresso UFBA.\n\n\n\nResponsabilidades da/o voluntária/o\n\nparticipar de reuniões semanais com a equipe executora em dia e horário a definir.\nparticipar das reuniões de orientação e avaliação com a PROEXT.\nparticipar das atividades promovidas por este projeto de extensão.\nenviar relatório de atividades no sistema SISBIEX, usando formulário próprio, em até 30 (trinta) dias após a conclusão do projeto,\napresentar os resultados dos planos de trabalhos na próxima edição do Congresso UFBA.\n\n\n\nCritérios que serão usados para seleção\nEm ordem de importância:\n\nentrevista em que se avaliará a disponibilidade e adequação da/o candidata/o para a vaga (nota de 0 a 10),\nnível de conhecimento de Métodos Estatísticos (nota de 0 a 10).\nnível de conhecimento da linguagem R (nota de 0 a 10).\n\n\n\nInscrição\nPara se candidatar as vagas, você precisa preencher o seguinte formulário de inscrição: formulário de inscrição.\nO período de inscrição é de 17/07/2023 a 20/07/2023.\nEventuais dúvidas podem ser encaminhadas a gilberto.sassi@ufba.br.\n\n\nResultados\nA/o primeiro colocado ficará com a bolsa PIBIEX, e a/os segunda/a e terceira/o colocada/o serão voluntárias/os vinculados ao PAEX, conforme descrito acima.\nOs coordenadores pedem, gentilmente, que respondam os e-mails confirmando interesse até amanhã, dia 26/07/2023, às 10h00min sem falta.\n\n\n\n\n\n\n  \n    \n      Classificação das/os inscritas/os.\n    \n    \n    \n      Nome\n      Disponibilidade\n      Conhecimento em estatística\n      Conhecimento da linguagem R\n      Nota final\n    \n  \n  \n    Marcos Antonio Arnaldo\n10,00\n8,00\n9,00\n9,00\n    Paulo Ubiratã Ferreira De Oliveira\n10,00\n5,00\n9,00\n8,00\n    Gabriella Santos Rocha\n10,00\n5,00\n5,60\n6,87\n    Álvaro Davi Araújo De Souza\n10,00\n5,00\n5,40\n6,80\n    Neirison Nepomuceno Lima\n9,00\n6,00\n5,00\n6,67\n    Isaac Silva Borges\n6,00\n5,75\n7,50\n6,42\n    Thiago Santos Rodrigues Rodolfo\n9,00\n5,00\n5,00\n6,33\n    Josemar Santos Oliveira\n6,00\n6,00\n5,00\n5,67\n    Alex Rebouças Pereira\n0,00\n0,00\n0,00\n0,00\n    Amanda Da Silva Santos\n0,00\n0,00\n0,00\n0,00\n    Ana Luísa Dos Santos Jaqueira\n0,00\n0,00\n0,00\n0,00\n    Beatriz Silveira Santos Machado\n0,00\n0,00\n0,00\n0,00\n    Carlos Alberto Araújo Pereira\n0,00\n0,00\n0,00\n0,00\n    Ellen Cristina Paixão Nunes\n0,00\n0,00\n0,00\n0,00\n    Erlane Santos De Jesus\n0,00\n0,00\n0,00\n0,00\n    Jonathan Xavier Pintto\n0,00\n0,00\n0,00\n0,00\n    João Vitor Moreira De Jesus\n0,00\n0,00\n0,00\n0,00\n    Kalila Martins Ferraz Lebrão\n0,00\n0,00\n0,00\n0,00\n    Keila Mayane Pereira Dos Santos Andrade\n0,00\n0,00\n0,00\n0,00\n    Kevely Wiliam De Jesus Santos\n0,00\n0,00\n0,00\n0,00\n    Larissa Vitória Carneiro\n0,00\n0,00\n0,00\n0,00\n    Lucas Da Silva Bonfim\n0,00\n0,00\n0,00\n0,00\n    Matheus Conceição Varela\n0,00\n0,00\n0,00\n0,00\n    Raquel Lopes Ribeiro\n0,00\n0,00\n0,00\n0,00\n    Regiane De Jesus Sousa\n0,00\n0,00\n0,00\n0,00\n    Ricardo Dos Santos De Lima\n0,00\n0,00\n0,00\n0,00\n    Rute Lopes Ribeiro\n0,00\n0,00\n0,00\n0,00\n    Sellton Tanajura Nunes\n0,00\n0,00\n0,00\n0,00\n    Tainara Vitória Santos Da Costa\n0,00\n0,00\n0,00\n0,00\n    Thainá Martins Silva\n0,00\n0,00\n0,00\n0,00\n    Vitor Lima Santos Dos Santos\n0,00\n0,00\n0,00\n0,00\n  \n  \n  \n\n\n\n\n\n\n\n\n\n\n\n\n\n© 2024 R para Ciência de Dados 🖤 by Carolina Paraíba e Gilberto Sassi"
   },
   {
     "objectID": "paginas/inscricao-popup.html",
@@ -294,18 +266,81 @@
     "text": "Depois das inscrições se encerrarem, enviaremos uma mensagem por e-mail com mais informações sobre o curso.\nLembre que o curso conta com 20 vagas e, havendo mais inscritos do que número de vagas, as mesmas serão distribuídas por sorteio, respeitando o caráter extensionista da atividade conforme a Resolução 02 de 2012 do CAPEX/UFBA."
   },
   {
-    "objectID": "paginas/editais/editais-2023.html",
-    "href": "paginas/editais/editais-2023.html",
-    "title": "Ciência de Dados",
+    "objectID": "paginas/contato.html",
+    "href": "paginas/contato.html",
+    "title": "Contatos",
     "section": "",
-    "text": "Edital em andamentoEdital 2023\n\n\nO edital para os semestres 2023.2 e 2024.1 já está em andamento.\n\n\nEstão abertas inscrições para seleção de 01 vaga para bolsista e 02 vagas para voluntário para os Semestres Letivos 2023.2 e 2024.1 no Projeto de Extensão R para Ciência de Dados, sob número de cadastro 19588 na plataforma SIATEX.\nO objetivo deste projeto de extensão é compartilhar o conhecimento de análise de dados usando a linguagem R numa interação dialógica da comunidade acadêmica com a sociedade por meio da troca de conhecimentos. O projeto irá promover um conjunto de ações com o objetivo de popularizar a Estatística e Ciência de Dados e incentivar o uso de tecnologias de código aberto como a linguagem R, cujo uso é amplamente disseminado entre os pesquisadores da área de Estatística com crescente popularidade entre profissionais de outras áreas. Os métodos que serão abordados neste projeto constituem um conhecimento essencial para o exercício da cidadania devido ao avanço das tecnologias de informação. As ações planejadas neste projeto trarão para a universidade a experiência e a demanda dos profissionais pelo uso de Estatística e Ciência de Dados. Devido a relevância e atualidade do tema, é importante que a UFBA atue junto com a sociedade em atividades gratuitas fortalecendo a inserção da UFBA dentro da sociedade.\n\nVagas ofertadas\n\n01 vaga para bolsista de Extensão, no valor de R$700,00 mensal, conforme Edital PIBIEX 2023-2024.\n02 vagas para voluntárias/os, com até R$1.000,00 de auxílio financeiro para ajuda de custo, conforme Edital PAEx 2023.\n\n\n\nRequisitos para candidatura\nAs vagas estão aberta para qualquer estudante de graduação da UFBA que atenda aos seguintes requisitos:\n\na/o candidata/o deve ser estudante regularmente matriculada/o em qualquer curso de graduação oferecido pela UFBA.\nnão pode estar inadimplente com a PROEXT.\nno caso de bolsista, não pode acumular bolsa com outro Programa Institucional.\nter disponibilidade de trabalhar vinte horas semanais nas atividades deste projeto.\nter coeficiente de rendimento maior ou igual a 6,0.\ndesejável conhecimento de linguagem R e/ou Métodos Estatísticos.\n\n\n\nResponsabilidades da/o bolsista\n\nparticipar de reuniões semanais com a equipe executora em dia e horário a definir.\nparticipar das reuniões de orientação e avaliação com a PROEXT.\nparticipar das atividades promovidas por este projeto de extensão.\nauxiliar na manutenção do website do projeto de extensão.\nenviar relatório de atividades no sistema SISBIEX, usando formulário próprio, em até 30 (trinta) dias após a conclusão do projeto,\napresentar os resultados dos planos de trabalhos na próxima edição do Congresso UFBA.\n\n\n\nResponsabilidades da/o voluntária/o\n\nparticipar de reuniões semanais com a equipe executora em dia e horário a definir.\nparticipar das reuniões de orientação e avaliação com a PROEXT.\nparticipar das atividades promovidas por este projeto de extensão.\nenviar relatório de atividades no sistema SISBIEX, usando formulário próprio, em até 30 (trinta) dias após a conclusão do projeto,\napresentar os resultados dos planos de trabalhos na próxima edição do Congresso UFBA.\n\n\n\nCritérios que serão usados para seleção\nEm ordem de importância:\n\nentrevista em que se avaliará a disponibilidade e adequação da/o candidata/o para a vaga (nota de 0 a 10),\nnível de conhecimento de Métodos Estatísticos (nota de 0 a 10).\nnível de conhecimento da linguagem R (nota de 0 a 10).\n\n\n\nInscrição\nPara se candidatar as vagas, você precisa preencher o seguinte formulário de inscrição: formulário de inscrição.\nO período de inscrição é de 17/07/2023 a 20/07/2023.\nEventuais dúvidas podem ser encaminhadas a gilberto.sassi@ufba.br.\n\n\nResultados\nA/o primeiro colocado ficará com a bolsa PIBIEX, e a/os segunda/a e terceira/o colocada/o serão voluntárias/os vinculados ao PAEX, conforme descrito acima.\nOs coordenadores pedem, gentilmente, que respondam os e-mails confirmando interesse até amanhã, dia 26/07/2023, às 10h00min sem falta.\n\n\n\n\n\n\n  \n    \n      Classificação das/os inscritas/os.\n    \n    \n    \n      Nome\n      Disponibilidade\n      Conhecimento em estatística\n      Conhecimento da linguagem R\n      Nota final\n    \n  \n  \n    Marcos Antonio Arnaldo\n10,00\n8,00\n9,00\n9,00\n    Paulo Ubiratã Ferreira De Oliveira\n10,00\n5,00\n9,00\n8,00\n    Gabriella Santos Rocha\n10,00\n5,00\n5,60\n6,87\n    Álvaro Davi Araújo De Souza\n10,00\n5,00\n5,40\n6,80\n    Neirison Nepomuceno Lima\n9,00\n6,00\n5,00\n6,67\n    Isaac Silva Borges\n6,00\n5,75\n7,50\n6,42\n    Thiago Santos Rodrigues Rodolfo\n9,00\n5,00\n5,00\n6,33\n    Josemar Santos Oliveira\n6,00\n6,00\n5,00\n5,67\n    Alex Rebouças Pereira\n0,00\n0,00\n0,00\n0,00\n    Amanda Da Silva Santos\n0,00\n0,00\n0,00\n0,00\n    Ana Luísa Dos Santos Jaqueira\n0,00\n0,00\n0,00\n0,00\n    Beatriz Silveira Santos Machado\n0,00\n0,00\n0,00\n0,00\n    Carlos Alberto Araújo Pereira\n0,00\n0,00\n0,00\n0,00\n    Ellen Cristina Paixão Nunes\n0,00\n0,00\n0,00\n0,00\n    Erlane Santos De Jesus\n0,00\n0,00\n0,00\n0,00\n    Jonathan Xavier Pintto\n0,00\n0,00\n0,00\n0,00\n    João Vitor Moreira De Jesus\n0,00\n0,00\n0,00\n0,00\n    Kalila Martins Ferraz Lebrão\n0,00\n0,00\n0,00\n0,00\n    Keila Mayane Pereira Dos Santos Andrade\n0,00\n0,00\n0,00\n0,00\n    Kevely Wiliam De Jesus Santos\n0,00\n0,00\n0,00\n0,00\n    Larissa Vitória Carneiro\n0,00\n0,00\n0,00\n0,00\n    Lucas Da Silva Bonfim\n0,00\n0,00\n0,00\n0,00\n    Matheus Conceição Varela\n0,00\n0,00\n0,00\n0,00\n    Raquel Lopes Ribeiro\n0,00\n0,00\n0,00\n0,00\n    Regiane De Jesus Sousa\n0,00\n0,00\n0,00\n0,00\n    Ricardo Dos Santos De Lima\n0,00\n0,00\n0,00\n0,00\n    Rute Lopes Ribeiro\n0,00\n0,00\n0,00\n0,00\n    Sellton Tanajura Nunes\n0,00\n0,00\n0,00\n0,00\n    Tainara Vitória Santos Da Costa\n0,00\n0,00\n0,00\n0,00\n    Thainá Martins Silva\n0,00\n0,00\n0,00\n0,00\n    Vitor Lima Santos Dos Santos\n0,00\n0,00\n0,00\n0,00\n  \n  \n  \n\n\n\n\n\n\n\n\n\n\n\n\n\n© 2024 R para Ciência de Dados 🖤 by Carolina Paraíba e Gilberto Sassi"
+    "text": "cienciadedados.ime@gmail.com\n @cienciadedados.ime\n\n\n\n\n\n\nEndereço\nInstituto de Matemática e Estatística - UFBA Av. Milton Santos, Campus Universitário de Ondina CEP: 40.170-110\n\n\n\n\n\n\n© 2024 R para Ciência de Dados 🖤 by Carolina Paraíba e Gilberto Sassi"
   },
   {
-    "objectID": "paginas/cade.html",
-    "href": "paginas/cade.html",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "R para Ciência de Dados",
+    "section": "",
+    "text": "R para Ciência de dados é uma ação de extensão na modalidade projeto com apoio financeiro da Pró-reitoria de Extensão da Univesidade Federal da Bahia (UFBA) e tem como o objetivo compartilhar o conhecimento de análise de dados usando a linguagem R numa interação dialógica da comunidade acadêmica com a sociedade por meio da troca de conhecimentos.\nO projeto irá promover um conjunto de ações com o objetivo de popularizar a Estatística e Ciência de Dados e incentivar o uso de tecnologias de código aberto como a linguagem R, cujo uso é amplamente disseminado entre os pesquisadores da área de Estatística com crescente popularidade entre profissionais de outras áreas.\nOs cursos e eventos promovidos neste projeto serão presenciais em Salvador, gratuitas, abertas a toda comunidade e com certificado emitado pela UFBA.\nDefenda a Universidade pública, gratuita, de qualidade e diversa. Serviço público salva vidas. Defenda o serviço público.\n\nDe cada qual, segundo sua capacidade; a cada qual, segundo suas necessidades.\n\n\n\n\n\n\n© 2024 R para Ciência de Dados 🖤 by Carolina Paraíba e Gilberto Sassi"
+  },
+  {
+    "objectID": "paginas/inscricoes.html",
+    "href": "paginas/inscricoes.html",
     "title": "Ciência de Dados",
     "section": "",
-    "text": "A atividade CADE: onde a divulgação da Ciência Estatística acontece é uma ação de extensão do Departamento de Estatística do Instituto de Matemática e Estatística da Universidade Federal da Bahia. Esta ação de extensão propõe construir um repositório on-line denominado Canal de Divulgação de Estatística, ou abreviadamente CADE, onde textos sobre estatística de leitura simples e acessível serão disponibilizados.\nEsta ação de extensão na modalidade publicação é parte do projeto de extensão R para Ciência de Dados.\n\n\n\n\n\n\n\n\n\n\n\nExplicando probabilidade condicional e o Teorema de Bayes.\n\n\n11 minutos\n\n\n\nGilberto Pereira Sassi\n\n\n1 de jan. de 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nO que é e como calcular probabilidade.\n\n\n7 minutos\n\n\n\nGilberto Pereira Sassi\n\n\n1 de dez. de 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nE como calcular medidas de resumo quando temos um gráfico de barras ou histograma?\n\n\n10 minutos\n\n\n\nGilberto Pereira Sassi\n\n\n1 de nov. de 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nComo criar tabela de distribuição de frequências usando o R?\n\n\n5 minutos\n\n\n\nGilberto Pereira Sassi\n\n\n1 de out. de 2023\n\n\n\n\n\n\n\n\nNenhum item correspondente\n\n\n\n\n\n\n\n© 2024 R para Ciência de Dados 🖤 by Carolina Paraíba e Gilberto Sassi"
+    "text": "Inscrições encerradas.\nCandidatos selecionados para o curso R para Ciência de Dados: Exploração e Visualização de Dados que acontecerá nos dias 16 e 23 de março: candidatos selecionados.\n\n\n\n\n© 2024 R para Ciência de Dados 🖤 by Carolina Paraíba e Gilberto Sassi"
+  },
+  {
+    "objectID": "paginas/cursos.html",
+    "href": "paginas/cursos.html",
+    "title": "Ciência de Dados",
+    "section": "",
+    "text": "© 2024 R para Ciência de Dados 🖤 by Carolina Paraíba e Gilberto Sassi"
+  },
+  {
+    "objectID": "paginas/eventos.html",
+    "href": "paginas/eventos.html",
+    "title": "Ciência de Dados",
+    "section": "",
+    "text": "Em breve.\n\n\n\n\n\nNenhum item correspondente\n\n\n\n\n\n\n\n© 2024 R para Ciência de Dados 🖤 by Carolina Paraíba e Gilberto Sassi"
+  },
+  {
+    "objectID": "paginas/editais/editais-abertos.html",
+    "href": "paginas/editais/editais-abertos.html",
+    "title": "Editais abertos",
+    "section": "",
+    "text": "Editais abertos\nEm breve.\n\n\n\n\n\n© 2024 R para Ciência de Dados 🖤 by Carolina Paraíba e Gilberto Sassi"
+  },
+  {
+    "objectID": "paginas/material/2024/marco/exploracao-visualizacao.html",
+    "href": "paginas/material/2024/marco/exploracao-visualizacao.html",
+    "title": "R para Ciência de Dados: Exploração e Visualização de Dados",
+    "section": "",
+    "text": "slides.pdf\n© 2024 R para Ciência de Dados 🖤 by Carolina Paraíba e Gilberto Sassi"
+  },
+  {
+    "objectID": "paginas/material/2024/marco/exploracao-visualizacao.html#slides",
+    "href": "paginas/material/2024/marco/exploracao-visualizacao.html#slides",
+    "title": "R para Ciência de Dados: Exploração e Visualização de Dados",
+    "section": "",
+    "text": "slides.pdf"
+  },
+  {
+    "objectID": "paginas/material/2024/marco/exploracao-visualizacao.html#dados",
+    "href": "paginas/material/2024/marco/exploracao-visualizacao.html#dados",
+    "title": "R para Ciência de Dados: Exploração e Visualização de Dados",
+    "section": "Dados",
+    "text": "Dados\narquivos.zip"
+  },
+  {
+    "objectID": "paginas/material/2024/marco/exploracao-visualizacao.html#dados---enem",
+    "href": "paginas/material/2024/marco/exploracao-visualizacao.html#dados---enem",
+    "title": "R para Ciência de Dados: Exploração e Visualização de Dados",
+    "section": "Dados - ENEM",
+    "text": "Dados - ENEM\nDicionário de dados: dicionario.xlsx.\n\n\n\nEnem por cidade nos formatos .csv e .xlsx com id dos participantes.\n\n\nid\ncsv\nxlsx\n\n\n\n\n1\nbelem.csv\nbelem.xlsx\n\n\n2\njoao_pessoa.csv\njoao_pessoa.xlsx\n\n\n3\ncuritiba.csv\ncuritiba.xlsx\n\n\n4\nrio_de_janeiro.csv\nrio_de_janeiro.xlsx\n\n\n5\nsao_goncalo.csv\nsao_goncalo.xlsx\n\n\n6\nsao_paulo.csv\nsao_paulo.xlsx\n\n\n7\nbrasilia.csv\nbrasilia.xlsx\n\n\n8\nfortaleza.csv\nfortaleza.xlsx\n\n\n9\naracaju.csv\naracaju.xlsx\n\n\n10\nsao_luis.csv\nsao_luis.xlsx\n\n\n11\ngoiania.csv\ngoiania.xlsx\n\n\n12\nporto_alegre.csv\nporto_alegre.xlsx\n\n\n13\nmacapa.csv\nmacapa.xlsx\n\n\n14\ncuiaba.csv\ncuiaba.xlsx\n\n\n15\nrecife.csv\nrecife.xlsx\n\n\n16\nuberlandia.csv\nuberlandia.xlsx\n\n\n17\ncampo_grande.csv\ncampo_grande.xlsx\n\n\n18\nguarulhos.csv\nguarulhos.xlsx\n\n\n19\nnatal.csv\nnatal.xlsx\n\n\n20\nniteroi.csv\nniteroi.xlsx\n\n\n21\nbelo_horizonte.csv\nbelo_horizonte.xlsx\n\n\n22\nfeira_de_santana.csv\nfeira_de_santana.xlsx\n\n\n23\nmanaus.csv\nmanaus.xlsx\n\n\n24\nmaceio.csv\nmaceio.xlsx\n\n\n25\ncampina_grande.csv\ncampina_grande.xlsx\n\n\n26\nteresina.csv\nteresina.xlsx\n\n\n27\nananindeua.csv\nananindeua.xlsx\n\n\n28\nribeirao_preto.csv\nribeirao_preto.xlsx\n\n\n29\nrio_branco.csv\nrio_branco.xlsx\n\n\n30\ncampinas.csv\ncampinas.xlsx"
+  },
+  {
+    "objectID": "paginas/material/2024/marco/exploracao-visualizacao.html#r-e-rstudio",
+    "href": "paginas/material/2024/marco/exploracao-visualizacao.html#r-e-rstudio",
+    "title": "R para Ciência de Dados: Exploração e Visualização de Dados",
+    "section": "R e Rstudio",
+    "text": "R e Rstudio\nNeste curso, a IDE vamos utilizar é o RStudio. Outras opções populares em ciência de dados são o VScode da Microsoft e JupyterLab, caso você tenha familiaridade ou já trabalhe com este editores sinta a vontade para usá-los.\nCaso você não queria ou não possa realizar instalações em seu computador, recomendamos que você use as plataformas Google Colaboratory e/ou Posit Cloud. Recomendamos o uso da plataforma Posit Cloud pelo mesmo estilo e aspecto visual do aplicativo RStudio.\n\nInstalação -R\nPara instalar o R em seu computador, basta seguir as instruções em cran.r-project.org. É necessário que você instale a versão 4.1 ou superior do R.\n\n\nInstalação - RStudio\nDepois de ter instalado o R, siga as instruções de instalação em posit.co/downloads."
   },
   {
     "objectID": "paginas/material/2023/quarto/quarto.html",
@@ -452,6 +487,6 @@
     "href": "paginas/material.html",
     "title": "Ciência de Dados",
     "section": "",
-    "text": "Material dos cursos do projeto de extensão R para Ciência de Dados.\n\n\n   \n     \n     \n       Ordenar por\n       Pré-selecionado\n         \n          Data - Mais velho\n        \n         \n          Data - O mais novo\n        \n         \n          Título\n        \n         \n          Autor\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\nData\n\n\nTítulo\n\n\nAutor\n\n\n\n\n\n\n20 de out. de 2023\n\n\nR para Ciência de Dados: Exploração e Visualização de Dados\n\n\nCarolina Costa Mota Paraíba\n\n\n\n\n15 de set. de 2023\n\n\nR para Ciência de Dados: Introdução à programação em R\n\n\nGilberto Pereira Sassi\n\n\n\n\n18 de ago. de 2023\n\n\nR para Ciência de Dados: Regressão Logística\n\n\nCarolina Costa Mota Paraíba\n\n\n\n\n26 de jul. de 2023\n\n\nCiência de Dados para Docentes usando R\n\n\nCarolina Costa Mota Paraíba\n\n\n\n\n7 de jul. de 2023\n\n\nR para Ciência de Dados: Quarto\n\n\nGilberto Pereira Sassi\n\n\n\n\n\n\nNenhum item correspondente\n\n\n\n\n\n\n\n© 2024 R para Ciência de Dados 🖤 by Carolina Paraíba e Gilberto Sassi"
+    "text": "Material dos cursos do projeto de extensão R para Ciência de Dados.\n\n\n   \n     \n     \n       Ordenar por\n       Pré-selecionado\n         \n          Data - Mais velho\n        \n         \n          Data - O mais novo\n        \n         \n          Título\n        \n         \n          Autor\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\nData\n\n\nTítulo\n\n\nAutor\n\n\n\n\n\n\n16 de mar. de 2024\n\n\nR para Ciência de Dados: Exploração e Visualização de Dados\n\n\nGilberto Pereira Sassi\n\n\n\n\n20 de out. de 2023\n\n\nR para Ciência de Dados: Exploração e Visualização de Dados\n\n\nCarolina Costa Mota Paraíba\n\n\n\n\n15 de set. de 2023\n\n\nR para Ciência de Dados: Introdução à programação em R\n\n\nGilberto Pereira Sassi\n\n\n\n\n18 de ago. de 2023\n\n\nR para Ciência de Dados: Regressão Logística\n\n\nCarolina Costa Mota Paraíba\n\n\n\n\n26 de jul. de 2023\n\n\nCiência de Dados para Docentes usando R\n\n\nCarolina Costa Mota Paraíba\n\n\n\n\n7 de jul. de 2023\n\n\nR para Ciência de Dados: Quarto\n\n\nGilberto Pereira Sassi\n\n\n\n\n\n\nNenhum item correspondente\n\n\n  \n\n\n\n\n\n\n\n© 2024 R para Ciência de Dados 🖤 by Carolina Paraíba e Gilberto Sassi"
   }
 ]
