@@ -74,7 +74,8 @@ ul.task-list li input[type="checkbox"] {
 
     const options = {
       valueNames: ['listing-date','listing-title','listing-author',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
-      
+      page: 5,
+    pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
       searchColumns: ["listing-date","listing-title","listing-author"],
     };
 
@@ -215,7 +216,7 @@ gtag('config', 'G-0WD3PSV647', { 'anonymize_ip': true});
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    <h5 class="quarto-listing-category-title">Categorias</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">Tudo <span class="quarto-category-count">(5)</span></div><div class="category" data-category="Ciência de Dados">Ciência de Dados <span class="quarto-category-count">(5)</span></div><div class="category" data-category="Controle de Fluxo">Controle de Fluxo <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Docentes">Docentes <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Estatística">Estatística <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Estatística descritiva">Estatística descritiva <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Exploração e visualização de dados">Exploração e visualização de dados <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Gráfico de barras">Gráfico de barras <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Histograma">Histograma <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Laços de repetição">Laços de repetição <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Linguagem <code>R</code>">Linguagem <code>R</code> <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Markdown">Markdown <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Medidas de resumo">Medidas de resumo <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Modelagem Estatística">Modelagem Estatística <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Modelos Lineares Generalizados">Modelos Lineares Generalizados <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Pacote <code>purrr</code>">Pacote <code>purrr</code> <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Quarto">Quarto <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Regressão Logística">Regressão Logística <span class="quarto-category-count">(1)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categorias</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">Tudo <span class="quarto-category-count">(6)</span></div><div class="category" data-category="Ciência de Dados">Ciência de Dados <span class="quarto-category-count">(6)</span></div><div class="category" data-category="Controle de Fluxo">Controle de Fluxo <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Docentes">Docentes <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Estatística">Estatística <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Estatística descritiva">Estatística descritiva <span class="quarto-category-count">(3)</span></div><div class="category" data-category="Exploração e visualização de dados">Exploração e visualização de dados <span class="quarto-category-count">(3)</span></div><div class="category" data-category="Gráfico de barras">Gráfico de barras <span class="quarto-category-count">(3)</span></div><div class="category" data-category="Histograma">Histograma <span class="quarto-category-count">(3)</span></div><div class="category" data-category="Laços de repetição">Laços de repetição <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Linguagem <code>R</code>">Linguagem <code>R</code> <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Markdown">Markdown <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Medidas de resumo">Medidas de resumo <span class="quarto-category-count">(3)</span></div><div class="category" data-category="Modelagem Estatística">Modelagem Estatística <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Modelos Lineares Generalizados">Modelos Lineares Generalizados <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Pacote <code>purrr</code>">Pacote <code>purrr</code> <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Quarto">Quarto <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Regressão Logística">Regressão Logística <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
@@ -264,7 +265,18 @@ gtag('config', 'G-0WD3PSV647', { 'anonymize_ip': true});
 </tr>
 </thead>
 <tbody class="list">
-<tr data-index="0" data-categories="Ciência de Dados,Estatística descritiva,Exploração e visualização de dados,Medidas de resumo,Gráfico de barras,Histograma" data-listing-date-sort="1697770800000" data-listing-file-modified-sort="1700165240775" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-title-sort="`R` para Ciência de Dados: Exploração e Visualização de Dados" data-listing-filename-sort="exploracao-visualizacao.qmd">
+<tr data-index="0" data-categories="Ciência de Dados,Estatística descritiva,Exploração e visualização de dados,Medidas de resumo,Gráfico de barras,Histograma" data-listing-date-sort="1710558000000" data-listing-file-modified-sort="1709842909640" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-title-sort="`R` para Ciência de Dados: Exploração e Visualização de Dados" data-listing-filename-sort="exploracao-visualizacao.qmd">
+<td>
+<span class="listing-date">16 de mar. de 2024</span>
+</td>
+<td>
+<a href="../paginas/material/2024/marco/exploracao-visualizacao.html" class="title listing-title"><code>R</code> para Ciência de Dados: Exploração e Visualização de Dados</a>
+</td>
+<td>
+<span class="listing-author">Gilberto Pereira Sassi</span>
+</td>
+</tr>
+<tr data-index="1" data-categories="Ciência de Dados,Estatística descritiva,Exploração e visualização de dados,Medidas de resumo,Gráfico de barras,Histograma" data-listing-date-sort="1697770800000" data-listing-file-modified-sort="1700165240775" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-title-sort="`R` para Ciência de Dados: Exploração e Visualização de Dados" data-listing-filename-sort="exploracao-visualizacao.qmd">
 <td>
 <span class="listing-date">20 de out. de 2023</span>
 </td>
@@ -275,7 +287,7 @@ gtag('config', 'G-0WD3PSV647', { 'anonymize_ip': true});
 <span class="listing-author">Carolina Costa Mota Paraíba</span>
 </td>
 </tr>
-<tr data-index="1" data-categories="Ciência de Dados,Linguagem <code>R</code>,Laços de repetição,Controle de Fluxo,Pacote <code>purrr</code>" data-listing-date-sort="1694746800000" data-listing-file-modified-sort="1700164395176" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-title-sort="`R` para Ciência de Dados: Introdução à programação em `R`" data-listing-filename-sort="programacao.qmd">
+<tr data-index="2" data-categories="Ciência de Dados,Linguagem <code>R</code>,Laços de repetição,Controle de Fluxo,Pacote <code>purrr</code>" data-listing-date-sort="1694746800000" data-listing-file-modified-sort="1700164395176" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-title-sort="`R` para Ciência de Dados: Introdução à programação em `R`" data-listing-filename-sort="programacao.qmd">
 <td>
 <span class="listing-date">15 de set. de 2023</span>
 </td>
@@ -286,7 +298,7 @@ gtag('config', 'G-0WD3PSV647', { 'anonymize_ip': true});
 <span class="listing-author">Gilberto Pereira Sassi</span>
 </td>
 </tr>
-<tr data-index="2" data-categories="Ciência de Dados,Estatística,Modelagem Estatística,Modelos Lineares Generalizados,Regressão Logística" data-listing-date-sort="1692327600000" data-listing-file-modified-sort="1700164395176" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-title-sort="`R` para Ciência de Dados: Regressão Logística" data-listing-filename-sort="regressao-logistica.qmd">
+<tr data-index="3" data-categories="Ciência de Dados,Estatística,Modelagem Estatística,Modelos Lineares Generalizados,Regressão Logística" data-listing-date-sort="1692327600000" data-listing-file-modified-sort="1700164395176" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-title-sort="`R` para Ciência de Dados: Regressão Logística" data-listing-filename-sort="regressao-logistica.qmd">
 <td>
 <span class="listing-date">18 de ago. de 2023</span>
 </td>
@@ -297,7 +309,7 @@ gtag('config', 'G-0WD3PSV647', { 'anonymize_ip': true});
 <span class="listing-author">Carolina Costa Mota Paraíba</span>
 </td>
 </tr>
-<tr data-index="3" data-categories="Ciência de Dados,Estatística descritiva,Exploração e visualização de dados,Medidas de resumo,Gráfico de barras,Docentes,Histograma" data-listing-date-sort="1690340400000" data-listing-file-modified-sort="1700164395176" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-title-sort="Ciência de Dados para Docentes usando `R`" data-listing-filename-sort="cd-docentes.qmd">
+<tr data-index="4" data-categories="Ciência de Dados,Estatística descritiva,Exploração e visualização de dados,Medidas de resumo,Gráfico de barras,Docentes,Histograma" data-listing-date-sort="1690340400000" data-listing-file-modified-sort="1700164395176" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-title-sort="Ciência de Dados para Docentes usando `R`" data-listing-filename-sort="cd-docentes.qmd">
 <td>
 <span class="listing-date">26 de jul. de 2023</span>
 </td>
@@ -308,7 +320,7 @@ gtag('config', 'G-0WD3PSV647', { 'anonymize_ip': true});
 <span class="listing-author">Carolina Costa Mota Paraíba</span>
 </td>
 </tr>
-<tr data-index="4" data-categories="Ciência de Dados,Estatística,Linguagem <code>R</code>,Markdown,Quarto" data-listing-date-sort="1688698800000" data-listing-file-modified-sort="1700164395176" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-title-sort="`R` para Ciência de Dados: Quarto" data-listing-filename-sort="quarto.qmd">
+<tr data-index="5" data-categories="Ciência de Dados,Estatística,Linguagem <code>R</code>,Markdown,Quarto" data-listing-date-sort="1688698800000" data-listing-file-modified-sort="1700164395176" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-title-sort="`R` para Ciência de Dados: Quarto" data-listing-filename-sort="quarto.qmd">
 <td>
 <span class="listing-date">7 de jul. de 2023</span>
 </td>
@@ -325,6 +337,9 @@ gtag('config', 'G-0WD3PSV647', { 'anonymize_ip': true});
 <div class="listing-no-matching d-none">
 Nenhum item correspondente
 </div>
+<nav id="posts-pagination" class="listing-pagination" aria-label="Page Navigation">
+  <ul class="pagination"></ul>
+</nav>
 </div>
 <hr>
 

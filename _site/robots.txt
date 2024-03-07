@@ -1,1 +1,1 @@
-Sitemap: https://cienciadedados.quarto.pub/ime/sitemap.xml
+Sitemap: https://cienciadedados.quarto.pub/sitemap.xml

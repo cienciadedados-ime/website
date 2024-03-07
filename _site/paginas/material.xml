@@ -6,15 +6,229 @@
       version="2.0">
 <channel>
 <title>Ciência de Dados</title>
-<link>https://cienciadedados.quarto.pub/ime/paginas/material.html</link>
-<atom:link href="https://cienciadedados.quarto.pub/ime/paginas/material.xml" rel="self" type="application/rss+xml"/>
+<link>https://cienciadedados.quarto.pub/paginas/material.html</link>
+<atom:link href="https://cienciadedados.quarto.pub/paginas/material.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.3.450</generator>
-<lastBuildDate>Fri, 20 Oct 2023 03:00:00 GMT</lastBuildDate>
+<lastBuildDate>Sat, 16 Mar 2024 03:00:00 GMT</lastBuildDate>
+<item>
+  <title>R para Ciência de Dados: Exploração e Visualização de Dados</title>
+  <dc:creator>Gilberto Pereira Sassi</dc:creator>
+  <link>https://cienciadedados.quarto.pub/paginas/material/2024/marco/exploracao-visualizacao.html</link>
+  <description><![CDATA[ 
+
+
+
+<section id="slides" class="level2">
+<h2 class="anchored" data-anchor-id="slides">Slides</h2>
+<p><a href="slides.pdf" target="_blank">slides.pdf</a></p>
+</section>
+<section id="dados" class="level2">
+<h2 class="anchored" data-anchor-id="dados">Dados</h2>
+<p><a href="arquivos.zip" target="_blank">arquivos.zip</a></p>
+</section>
+<section id="dados---enem" class="level2">
+<h2 class="anchored" data-anchor-id="dados---enem">Dados - ENEM</h2>
+<p>Dicionário de dados: <a href="cidades-enem-2022/dicionario.xlsx">dicionario.xlsx</a>.</p>
+<div class="cell">
+<div class="cell-output-display">
+<table class="table table-sm table-striped small">
+<caption>Enem por cidade nos formatos .csv e .xlsx com id dos participantes.</caption>
+<thead>
+<tr class="header">
+<th style="text-align: right;">id</th>
+<th style="text-align: left;">csv</th>
+<th style="text-align: left;">xlsx</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">1</td>
+<td style="text-align: left;"><a href="cidades-enem-2022/csv/belem.csv">belem.csv</a></td>
+<td style="text-align: left;"><a href="cidades-enem-2022/xlsx/belem.xlsx">belem.xlsx</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2</td>
+<td style="text-align: left;"><a href="cidades-enem-2022/csv/joao_pessoa.csv">joao_pessoa.csv</a></td>
+<td style="text-align: left;"><a href="cidades-enem-2022/xlsx/joao_pessoa.xlsx">joao_pessoa.xlsx</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">3</td>
+<td style="text-align: left;"><a href="cidades-enem-2022/csv/curitiba.csv">curitiba.csv</a></td>
+<td style="text-align: left;"><a href="cidades-enem-2022/xlsx/curitiba.xlsx">curitiba.xlsx</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">4</td>
+<td style="text-align: left;"><a href="cidades-enem-2022/csv/rio_de_janeiro.csv">rio_de_janeiro.csv</a></td>
+<td style="text-align: left;"><a href="cidades-enem-2022/xlsx/rio_de_janeiro.xlsx">rio_de_janeiro.xlsx</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">5</td>
+<td style="text-align: left;"><a href="cidades-enem-2022/csv/sao_goncalo.csv">sao_goncalo.csv</a></td>
+<td style="text-align: left;"><a href="cidades-enem-2022/xlsx/sao_goncalo.xlsx">sao_goncalo.xlsx</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">6</td>
+<td style="text-align: left;"><a href="cidades-enem-2022/csv/sao_paulo.csv">sao_paulo.csv</a></td>
+<td style="text-align: left;"><a href="cidades-enem-2022/xlsx/sao_paulo.xlsx">sao_paulo.xlsx</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">7</td>
+<td style="text-align: left;"><a href="cidades-enem-2022/csv/brasilia.csv">brasilia.csv</a></td>
+<td style="text-align: left;"><a href="cidades-enem-2022/xlsx/brasilia.xlsx">brasilia.xlsx</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">8</td>
+<td style="text-align: left;"><a href="cidades-enem-2022/csv/fortaleza.csv">fortaleza.csv</a></td>
+<td style="text-align: left;"><a href="cidades-enem-2022/xlsx/fortaleza.xlsx">fortaleza.xlsx</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">9</td>
+<td style="text-align: left;"><a href="cidades-enem-2022/csv/aracaju.csv">aracaju.csv</a></td>
+<td style="text-align: left;"><a href="cidades-enem-2022/xlsx/aracaju.xlsx">aracaju.xlsx</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">10</td>
+<td style="text-align: left;"><a href="cidades-enem-2022/csv/sao_luis.csv">sao_luis.csv</a></td>
+<td style="text-align: left;"><a href="cidades-enem-2022/xlsx/sao_luis.xlsx">sao_luis.xlsx</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">11</td>
+<td style="text-align: left;"><a href="cidades-enem-2022/csv/goiania.csv">goiania.csv</a></td>
+<td style="text-align: left;"><a href="cidades-enem-2022/xlsx/goiania.xlsx">goiania.xlsx</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">12</td>
+<td style="text-align: left;"><a href="cidades-enem-2022/csv/porto_alegre.csv">porto_alegre.csv</a></td>
+<td style="text-align: left;"><a href="cidades-enem-2022/xlsx/porto_alegre.xlsx">porto_alegre.xlsx</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">13</td>
+<td style="text-align: left;"><a href="cidades-enem-2022/csv/macapa.csv">macapa.csv</a></td>
+<td style="text-align: left;"><a href="cidades-enem-2022/xlsx/macapa.xlsx">macapa.xlsx</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">14</td>
+<td style="text-align: left;"><a href="cidades-enem-2022/csv/cuiaba.csv">cuiaba.csv</a></td>
+<td style="text-align: left;"><a href="cidades-enem-2022/xlsx/cuiaba.xlsx">cuiaba.xlsx</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">15</td>
+<td style="text-align: left;"><a href="cidades-enem-2022/csv/recife.csv">recife.csv</a></td>
+<td style="text-align: left;"><a href="cidades-enem-2022/xlsx/recife.xlsx">recife.xlsx</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">16</td>
+<td style="text-align: left;"><a href="cidades-enem-2022/csv/uberlandia.csv">uberlandia.csv</a></td>
+<td style="text-align: left;"><a href="cidades-enem-2022/xlsx/uberlandia.xlsx">uberlandia.xlsx</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">17</td>
+<td style="text-align: left;"><a href="cidades-enem-2022/csv/campo_grande.csv">campo_grande.csv</a></td>
+<td style="text-align: left;"><a href="cidades-enem-2022/xlsx/campo_grande.xlsx">campo_grande.xlsx</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">18</td>
+<td style="text-align: left;"><a href="cidades-enem-2022/csv/guarulhos.csv">guarulhos.csv</a></td>
+<td style="text-align: left;"><a href="cidades-enem-2022/xlsx/guarulhos.xlsx">guarulhos.xlsx</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">19</td>
+<td style="text-align: left;"><a href="cidades-enem-2022/csv/natal.csv">natal.csv</a></td>
+<td style="text-align: left;"><a href="cidades-enem-2022/xlsx/natal.xlsx">natal.xlsx</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">20</td>
+<td style="text-align: left;"><a href="cidades-enem-2022/csv/niteroi.csv">niteroi.csv</a></td>
+<td style="text-align: left;"><a href="cidades-enem-2022/xlsx/niteroi.xlsx">niteroi.xlsx</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">21</td>
+<td style="text-align: left;"><a href="cidades-enem-2022/csv/belo_horizonte.csv">belo_horizonte.csv</a></td>
+<td style="text-align: left;"><a href="cidades-enem-2022/xlsx/belo_horizonte.xlsx">belo_horizonte.xlsx</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">22</td>
+<td style="text-align: left;"><a href="cidades-enem-2022/csv/feira_de_santana.csv">feira_de_santana.csv</a></td>
+<td style="text-align: left;"><a href="cidades-enem-2022/xlsx/feira_de_santana.xlsx">feira_de_santana.xlsx</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">23</td>
+<td style="text-align: left;"><a href="cidades-enem-2022/csv/manaus.csv">manaus.csv</a></td>
+<td style="text-align: left;"><a href="cidades-enem-2022/xlsx/manaus.xlsx">manaus.xlsx</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">24</td>
+<td style="text-align: left;"><a href="cidades-enem-2022/csv/maceio.csv">maceio.csv</a></td>
+<td style="text-align: left;"><a href="cidades-enem-2022/xlsx/maceio.xlsx">maceio.xlsx</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">25</td>
+<td style="text-align: left;"><a href="cidades-enem-2022/csv/campina_grande.csv">campina_grande.csv</a></td>
+<td style="text-align: left;"><a href="cidades-enem-2022/xlsx/campina_grande.xlsx">campina_grande.xlsx</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">26</td>
+<td style="text-align: left;"><a href="cidades-enem-2022/csv/teresina.csv">teresina.csv</a></td>
+<td style="text-align: left;"><a href="cidades-enem-2022/xlsx/teresina.xlsx">teresina.xlsx</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">27</td>
+<td style="text-align: left;"><a href="cidades-enem-2022/csv/ananindeua.csv">ananindeua.csv</a></td>
+<td style="text-align: left;"><a href="cidades-enem-2022/xlsx/ananindeua.xlsx">ananindeua.xlsx</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">28</td>
+<td style="text-align: left;"><a href="cidades-enem-2022/csv/ribeirao_preto.csv">ribeirao_preto.csv</a></td>
+<td style="text-align: left;"><a href="cidades-enem-2022/xlsx/ribeirao_preto.xlsx">ribeirao_preto.xlsx</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">29</td>
+<td style="text-align: left;"><a href="cidades-enem-2022/csv/rio_branco.csv">rio_branco.csv</a></td>
+<td style="text-align: left;"><a href="cidades-enem-2022/xlsx/rio_branco.xlsx">rio_branco.xlsx</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">30</td>
+<td style="text-align: left;"><a href="cidades-enem-2022/csv/campinas.csv">campinas.csv</a></td>
+<td style="text-align: left;"><a href="cidades-enem-2022/xlsx/campinas.xlsx">campinas.xlsx</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section id="r-e-rstudio" class="level2">
+<h2 class="anchored" data-anchor-id="r-e-rstudio"><code>R</code> e <code>Rstudio</code></h2>
+<p>Neste curso, a IDE vamos utilizar é o <a href="https://posit.co/downloads/" target="_blank"><code>RStudio</code></a>. Outras opções populares em ciência de dados são o <a href="https://code.visualstudio.com/Download" target="_blank"><code>VScode</code></a> da Microsoft e <a href="https://jupyter.org/install" target="_blank"><code>JupyterLab</code></a>, caso você tenha familiaridade ou já trabalhe com este editores sinta a vontade para usá-los.</p>
+<p>Caso você não queria ou não possa realizar instalações em seu computador, recomendamos que você use as plataformas <a href="https://colab.research.google.com/" target="_blank">Google Colaboratory</a> e/ou <a href="https://posit.cloud" target="_blank">Posit Cloud</a>. Recomendamos o uso da plataforma <a href="https://posit.cloud" target="_blank">Posit Cloud</a> pelo mesmo estilo e aspecto visual do aplicativo <a href="https://posit.co/downloads/" target="_blank"><code>RStudio</code></a>.</p>
+<section id="instalação--r" class="level3">
+<h3 class="anchored" data-anchor-id="instalação--r">Instalação -<code>R</code></h3>
+<p>Para instalar o <code>R</code> em seu computador, basta seguir as instruções em <a href="https://cran.r-project.org/">cran.r-project.org</a>. É necessário que você instale a versão 4.1 ou superior do R.</p>
+</section>
+<section id="instalação---rstudio" class="level3">
+<h3 class="anchored" data-anchor-id="instalação---rstudio">Instalação - <code>RStudio</code></h3>
+<p>Depois de ter instalado o R, siga as instruções de instalação em <a href="https://posit.co/downloads/">posit.co/downloads</a>.</p>
+<hr>
+
+
+</section>
+</section>
+
+<p>© 2024 <strong><code>R</code> para Ciência de Dados <br>🖤</strong> by Carolina Paraíba e Gilberto Sassi</p> ]]></description>
+  <category>Ciência de Dados</category>
+  <category>Estatística descritiva</category>
+  <category>Exploração e visualização de dados</category>
+  <category>Medidas de resumo</category>
+  <category>Gráfico de barras</category>
+  <category>Histograma</category>
+  <guid>https://cienciadedados.quarto.pub/paginas/material/2024/marco/exploracao-visualizacao.html</guid>
+  <pubDate>Sat, 16 Mar 2024 03:00:00 GMT</pubDate>
+  <media:content url="https://cienciadedados.quarto.pub/assets/logo_projeto.png" medium="image" type="image/png" height="151" width="144"/>
+</item>
 <item>
   <title>R para Ciência de Dados: Exploração e Visualização de Dados</title>
   <dc:creator>Carolina Costa Mota Paraíba</dc:creator>
-  <link>https://cienciadedados.quarto.pub/ime/paginas/material/2023/exploracao-visualizacao/exploracao-visualizacao.html</link>
+  <link>https://cienciadedados.quarto.pub/paginas/material/2023/exploracao-visualizacao/exploracao-visualizacao.html</link>
   <description><![CDATA[ 
 
 
@@ -61,14 +275,14 @@
   <category>Medidas de resumo</category>
   <category>Gráfico de barras</category>
   <category>Histograma</category>
-  <guid>https://cienciadedados.quarto.pub/ime/paginas/material/2023/exploracao-visualizacao/exploracao-visualizacao.html</guid>
+  <guid>https://cienciadedados.quarto.pub/paginas/material/2023/exploracao-visualizacao/exploracao-visualizacao.html</guid>
   <pubDate>Fri, 20 Oct 2023 03:00:00 GMT</pubDate>
-  <media:content url="https://cienciadedados.quarto.pub/ime/assets/logo_projeto.png" medium="image" type="image/png" height="151" width="144"/>
+  <media:content url="https://cienciadedados.quarto.pub/assets/logo_projeto.png" medium="image" type="image/png" height="151" width="144"/>
 </item>
 <item>
   <title>R para Ciência de Dados: Introdução à programação em R</title>
   <dc:creator>Gilberto Pereira Sassi</dc:creator>
-  <link>https://cienciadedados.quarto.pub/ime/paginas/material/2023/programacao/programacao.html</link>
+  <link>https://cienciadedados.quarto.pub/paginas/material/2023/programacao/programacao.html</link>
   <description><![CDATA[ 
 
 
@@ -112,14 +326,14 @@
   <category>Laços de repetição</category>
   <category>Controle de Fluxo</category>
   <category>Pacote &lt;code&gt;purrr&lt;/code&gt;</category>
-  <guid>https://cienciadedados.quarto.pub/ime/paginas/material/2023/programacao/programacao.html</guid>
+  <guid>https://cienciadedados.quarto.pub/paginas/material/2023/programacao/programacao.html</guid>
   <pubDate>Fri, 15 Sep 2023 03:00:00 GMT</pubDate>
-  <media:content url="https://cienciadedados.quarto.pub/ime/assets/logo_projeto.png" medium="image" type="image/png" height="151" width="144"/>
+  <media:content url="https://cienciadedados.quarto.pub/assets/logo_projeto.png" medium="image" type="image/png" height="151" width="144"/>
 </item>
 <item>
   <title>R para Ciência de Dados: Regressão Logística</title>
   <dc:creator>Carolina Costa Mota Paraíba</dc:creator>
-  <link>https://cienciadedados.quarto.pub/ime/paginas/material/2023/regressao-logistica/regressao-logistica.html</link>
+  <link>https://cienciadedados.quarto.pub/paginas/material/2023/regressao-logistica/regressao-logistica.html</link>
   <description><![CDATA[ 
 
 
@@ -157,14 +371,14 @@
   <category>Modelagem Estatística</category>
   <category>Modelos Lineares Generalizados</category>
   <category>Regressão Logística</category>
-  <guid>https://cienciadedados.quarto.pub/ime/paginas/material/2023/regressao-logistica/regressao-logistica.html</guid>
+  <guid>https://cienciadedados.quarto.pub/paginas/material/2023/regressao-logistica/regressao-logistica.html</guid>
   <pubDate>Fri, 18 Aug 2023 03:00:00 GMT</pubDate>
-  <media:content url="https://cienciadedados.quarto.pub/ime/assets/logo_projeto.png" medium="image" type="image/png" height="151" width="144"/>
+  <media:content url="https://cienciadedados.quarto.pub/assets/logo_projeto.png" medium="image" type="image/png" height="151" width="144"/>
 </item>
 <item>
   <title>Ciência de Dados para Docentes usando R</title>
   <dc:creator>Carolina Costa Mota Paraíba</dc:creator>
-  <link>https://cienciadedados.quarto.pub/ime/paginas/material/2023/cd-docentes/cd-docentes.html</link>
+  <link>https://cienciadedados.quarto.pub/paginas/material/2023/cd-docentes/cd-docentes.html</link>
   <description><![CDATA[ 
 
 
@@ -206,14 +420,14 @@
   <category>Gráfico de barras</category>
   <category>Docentes</category>
   <category>Histograma</category>
-  <guid>https://cienciadedados.quarto.pub/ime/paginas/material/2023/cd-docentes/cd-docentes.html</guid>
+  <guid>https://cienciadedados.quarto.pub/paginas/material/2023/cd-docentes/cd-docentes.html</guid>
   <pubDate>Wed, 26 Jul 2023 03:00:00 GMT</pubDate>
-  <media:content url="https://cienciadedados.quarto.pub/ime/assets/logo_projeto.png" medium="image" type="image/png" height="151" width="144"/>
+  <media:content url="https://cienciadedados.quarto.pub/assets/logo_projeto.png" medium="image" type="image/png" height="151" width="144"/>
 </item>
 <item>
   <title>R para Ciência de Dados: Quarto</title>
   <dc:creator>Gilberto Pereira Sassi</dc:creator>
-  <link>https://cienciadedados.quarto.pub/ime/paginas/material/2023/quarto/quarto.html</link>
+  <link>https://cienciadedados.quarto.pub/paginas/material/2023/quarto/quarto.html</link>
   <description><![CDATA[ 
 
 
@@ -231,9 +445,9 @@
   <category>Linguagem &lt;code&gt;R&lt;/code&gt;</category>
   <category>Markdown</category>
   <category>Quarto</category>
-  <guid>https://cienciadedados.quarto.pub/ime/paginas/material/2023/quarto/quarto.html</guid>
+  <guid>https://cienciadedados.quarto.pub/paginas/material/2023/quarto/quarto.html</guid>
   <pubDate>Fri, 07 Jul 2023 03:00:00 GMT</pubDate>
-  <media:content url="https://cienciadedados.quarto.pub/ime/assets/logo_projeto.png" medium="image" type="image/png" height="151" width="144"/>
+  <media:content url="https://cienciadedados.quarto.pub/assets/logo_projeto.png" medium="image" type="image/png" height="151" width="144"/>
 </item>
 </channel>
 </rss>
