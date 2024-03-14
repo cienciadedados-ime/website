@@ -8,7 +8,11 @@ title: "`R` para Ciência de Dados"
 
 O projeto irá promover um conjunto de ações com o objetivo de popularizar a Estatística e Ciência de Dados e incentivar o uso de tecnologias de código aberto como a linguagem `R`, cujo uso é amplamente disseminado entre os pesquisadores da área de Estatística com crescente popularidade entre profissionais de outras áreas.
 
-Os cursos e eventos promovidos neste projeto serão presenciais em Salvador, gratuitas, abertas a toda comunidade e com certificado emitado pela UFBA.
+Os cursos e eventos promovidos neste projeto serão presenciais em Salvador no Instituto de Matemática e Estatística da UFBA, gratuitas, abertas a toda comunidade e com certificado emitado pela UFBA.
+
+<div style="text-align: center;">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1731.7044864127633!2d-38.50767380792866!3d-13.00092642626354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x716049fbfc20d8b%3A0x5a3ed51534624abc!2sInstituto%20de%20Matem%C3%A1tica%20e%20Estat%C3%ADstica%20da%20UFBA!5e0!3m2!1spt-BR!2sbr!4v1710436162475!5m2!1spt-BR!2sbr" width="75%" height="300em" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
 
 **Defenda a Universidade pública, gratuita, de qualidade e diversa.**<br>
 **Serviço público salva vidas. Defenda o serviço público.**
