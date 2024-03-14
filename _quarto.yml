@@ -22,10 +22,10 @@ website:
         text: "Cursos oferecidos"
       - href: paginas/material.qmd
         text: "Material"
-      - href: paginas/cade.qmd
-        text: CADE
-      - href: paginas/eventos.qmd
-        text: Eventos
+      # - href: paginas/cade.qmd
+      #   text: CADE
+      # - href: paginas/eventos.qmd
+      #   text: Eventos
       - href: paginas/equipe.qmd
         text: Equipe
       - text: Editais

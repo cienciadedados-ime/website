@@ -41,6 +41,14 @@ p_load(
   gt,
   tidyverse
 )
+# setwd("paginas/material/2024/marco")
+df_inscritos <- read_excel("lista-inscritos.xlsx")
+
+nomes <- df_inscritos$nome_completo
+nomes <- c(
+  nomes, 
+  rep("--", 5)
+)
 
 set.seed(11235)
 id <- sample(
@@ -55,6 +63,7 @@ arq_xlsx <- arq_xlsx[arq_xlsx != "salvador.xlsx"]
 
 df <- tibble(
   id = id,
+  nome = nomes,
   csv = arq_csv |>
     map(\(arq) {
       gt::md(str_interp("[${arq}](cidades-enem-2022/csv/${arq})"))
