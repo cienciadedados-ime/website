@@ -2,122 +2,126 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://cienciadedados.quarto.pub/paginas/equipe.html</loc>
-    <lastmod>2024-03-14T23:58:37.858Z</lastmod>
+    <lastmod>2024-04-01T17:21:18.936Z</lastmod>
   </url>
   <url>
     <loc>https://cienciadedados.quarto.pub/paginas/cade/tabela-frequencias/tabela-frequencias.html</loc>
-    <lastmod>2024-03-14T23:58:35.910Z</lastmod>
+    <lastmod>2024-04-01T17:21:16.904Z</lastmod>
   </url>
   <url>
     <loc>https://cienciadedados.quarto.pub/paginas/cade/probabilidade/probabilidade.html</loc>
-    <lastmod>2024-03-14T23:58:33.510Z</lastmod>
+    <lastmod>2024-04-01T17:21:14.496Z</lastmod>
   </url>
   <url>
     <loc>https://cienciadedados.quarto.pub/paginas/catalogo/regressao-linear-simples-e-multipla.html</loc>
-    <lastmod>2024-03-14T23:58:32.838Z</lastmod>
+    <lastmod>2024-04-01T17:21:13.804Z</lastmod>
   </url>
   <url>
     <loc>https://cienciadedados.quarto.pub/paginas/catalogo/regressao-logistica.html</loc>
-    <lastmod>2024-03-14T23:58:32.274Z</lastmod>
+    <lastmod>2024-04-01T17:21:13.252Z</lastmod>
   </url>
   <url>
     <loc>https://cienciadedados.quarto.pub/paginas/catalogo/producao-de-texto-usando-rmarkdown.html</loc>
-    <lastmod>2024-03-14T23:58:31.686Z</lastmod>
+    <lastmod>2024-04-01T17:21:12.716Z</lastmod>
   </url>
   <url>
     <loc>https://cienciadedados.quarto.pub/paginas/catalogo/intervalo-confianca-teste-hipoteses.html</loc>
-    <lastmod>2024-03-14T23:58:31.102Z</lastmod>
+    <lastmod>2024-04-01T17:21:12.132Z</lastmod>
   </url>
   <url>
     <loc>https://cienciadedados.quarto.pub/paginas/material/2023/regressao-logistica/regressao-logistica.html</loc>
-    <lastmod>2024-03-14T23:58:30.530Z</lastmod>
+    <lastmod>2024-04-01T17:21:11.544Z</lastmod>
   </url>
   <url>
     <loc>https://cienciadedados.quarto.pub/paginas/material/2023/exploracao-visualizacao/exploracao-visualizacao.html</loc>
-    <lastmod>2024-03-14T23:58:30.022Z</lastmod>
+    <lastmod>2024-04-01T17:21:11.000Z</lastmod>
   </url>
   <url>
     <loc>https://cienciadedados.quarto.pub/paginas/material/2023/programacao/programacao.html</loc>
-    <lastmod>2024-03-14T23:58:29.518Z</lastmod>
-  </url>
-  <url>
-    <loc>https://cienciadedados.quarto.pub/paginas/cade.html</loc>
-    <lastmod>2024-03-14T23:58:27.686Z</lastmod>
-  </url>
-  <url>
-    <loc>https://cienciadedados.quarto.pub/paginas/editais/editais-2023.html</loc>
-    <lastmod>2024-03-14T23:58:26.922Z</lastmod>
-  </url>
-  <url>
-    <loc>https://cienciadedados.quarto.pub/paginas/inscricao-popup.html</loc>
-    <lastmod>2024-03-14T23:58:25.058Z</lastmod>
-  </url>
-  <url>
-    <loc>https://cienciadedados.quarto.pub/paginas/contato.html</loc>
-    <lastmod>2024-03-14T23:58:24.582Z</lastmod>
-  </url>
-  <url>
-    <loc>https://cienciadedados.quarto.pub/index.html</loc>
-    <lastmod>2024-03-14T23:58:24.110Z</lastmod>
-  </url>
-  <url>
-    <loc>https://cienciadedados.quarto.pub/paginas/inscricoes.html</loc>
-    <lastmod>2024-03-14T23:58:24.354Z</lastmod>
-  </url>
-  <url>
-    <loc>https://cienciadedados.quarto.pub/paginas/cursos.html</loc>
-    <lastmod>2024-03-14T23:58:24.802Z</lastmod>
-  </url>
-  <url>
-    <loc>https://cienciadedados.quarto.pub/paginas/eventos.html</loc>
-    <lastmod>2024-03-14T23:58:25.298Z</lastmod>
-  </url>
-  <url>
-    <loc>https://cienciadedados.quarto.pub/paginas/editais/editais-abertos.html</loc>
-    <lastmod>2024-03-14T23:58:27.158Z</lastmod>
+    <lastmod>2024-04-01T17:21:10.444Z</lastmod>
   </url>
   <url>
     <loc>https://cienciadedados.quarto.pub/paginas/material/2024/marco/exploracao-visualizacao.html</loc>
-    <lastmod>2024-03-14T23:58:29.234Z</lastmod>
+    <lastmod>2024-04-01T17:21:09.916Z</lastmod>
+  </url>
+  <url>
+    <loc>https://cienciadedados.quarto.pub/paginas/editais/editais-abertos.html</loc>
+    <lastmod>2024-04-01T17:21:07.804Z</lastmod>
+  </url>
+  <url>
+    <loc>https://cienciadedados.quarto.pub/paginas/eventos.html</loc>
+    <lastmod>2024-04-01T17:21:05.856Z</lastmod>
+  </url>
+  <url>
+    <loc>https://cienciadedados.quarto.pub/paginas/cursos.html</loc>
+    <lastmod>2024-04-01T17:21:05.316Z</lastmod>
+  </url>
+  <url>
+    <loc>https://cienciadedados.quarto.pub/paginas/inscricoes.html</loc>
+    <lastmod>2024-04-01T17:21:04.860Z</lastmod>
+  </url>
+  <url>
+    <loc>https://cienciadedados.quarto.pub/index.html</loc>
+    <lastmod>2024-04-01T17:21:04.632Z</lastmod>
+  </url>
+  <url>
+    <loc>https://cienciadedados.quarto.pub/paginas/contato.html</loc>
+    <lastmod>2024-04-01T17:21:05.100Z</lastmod>
+  </url>
+  <url>
+    <loc>https://cienciadedados.quarto.pub/paginas/inscricao-popup.html</loc>
+    <lastmod>2024-04-01T17:21:05.588Z</lastmod>
+  </url>
+  <url>
+    <loc>https://cienciadedados.quarto.pub/paginas/editais/editais-2023.html</loc>
+    <lastmod>2024-04-01T17:21:07.588Z</lastmod>
+  </url>
+  <url>
+    <loc>https://cienciadedados.quarto.pub/paginas/cade.html</loc>
+    <lastmod>2024-04-01T17:21:08.316Z</lastmod>
+  </url>
+  <url>
+    <loc>https://cienciadedados.quarto.pub/paginas/material/2024/abril/regressao-linear.html</loc>
+    <lastmod>2024-04-01T17:21:10.184Z</lastmod>
   </url>
   <url>
     <loc>https://cienciadedados.quarto.pub/paginas/material/2023/quarto/quarto.html</loc>
-    <lastmod>2024-03-14T23:58:29.742Z</lastmod>
+    <lastmod>2024-04-01T17:21:10.712Z</lastmod>
   </url>
   <url>
     <loc>https://cienciadedados.quarto.pub/paginas/material/2023/cd-docentes/cd-docentes.html</loc>
-    <lastmod>2024-03-14T23:58:30.274Z</lastmod>
+    <lastmod>2024-04-01T17:21:11.292Z</lastmod>
   </url>
   <url>
     <loc>https://cienciadedados.quarto.pub/paginas/catalogo/exploracao-visualizacao.html</loc>
-    <lastmod>2024-03-14T23:58:30.806Z</lastmod>
+    <lastmod>2024-04-01T17:21:11.864Z</lastmod>
   </url>
   <url>
     <loc>https://cienciadedados.quarto.pub/paginas/catalogo/introducao-a-programacao.html</loc>
-    <lastmod>2024-03-14T23:58:31.378Z</lastmod>
+    <lastmod>2024-04-01T17:21:12.440Z</lastmod>
   </url>
   <url>
     <loc>https://cienciadedados.quarto.pub/paginas/catalogo/ciencia-de-dados-para-docentes.html</loc>
-    <lastmod>2024-03-14T23:58:31.966Z</lastmod>
+    <lastmod>2024-04-01T17:21:12.988Z</lastmod>
   </url>
   <url>
     <loc>https://cienciadedados.quarto.pub/paginas/catalogo/modelo-de-analise-de-variancia.html</loc>
-    <lastmod>2024-03-14T23:58:32.538Z</lastmod>
+    <lastmod>2024-04-01T17:21:13.528Z</lastmod>
   </url>
   <url>
     <loc>https://cienciadedados.quarto.pub/paginas/catalogo.html</loc>
-    <lastmod>2024-03-14T23:58:33.074Z</lastmod>
+    <lastmod>2024-04-01T17:21:14.076Z</lastmod>
   </url>
   <url>
     <loc>https://cienciadedados.quarto.pub/paginas/cade/medidas-resumo-graficos/medidas-resumo-graficos.html</loc>
-    <lastmod>2024-03-14T23:58:34.202Z</lastmod>
+    <lastmod>2024-04-01T17:21:15.228Z</lastmod>
   </url>
   <url>
     <loc>https://cienciadedados.quarto.pub/paginas/cade/probabilidade-condicional-bayes/prob-condicional.html</loc>
-    <lastmod>2024-03-14T23:58:36.438Z</lastmod>
+    <lastmod>2024-04-01T17:21:17.412Z</lastmod>
   </url>
   <url>
     <loc>https://cienciadedados.quarto.pub/paginas/material.html</loc>
-    <lastmod>2024-03-14T23:58:36.982Z</lastmod>
+    <lastmod>2024-04-01T17:21:17.964Z</lastmod>
   </url>
 </urlset>

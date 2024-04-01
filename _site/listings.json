@@ -1,5 +1,9 @@
 [
   {
+    "listing": "/paginas/eventos.html",
+    "items": []
+  },
+  {
     "listing": "/paginas/cade.html",
     "items": [
       "/paginas/cade/probabilidade-condicional-bayes/prob-condicional.html",
@@ -9,12 +13,9 @@
     ]
   },
   {
-    "listing": "/paginas/eventos.html",
-    "items": []
-  },
-  {
     "listing": "/paginas/material.html",
     "items": [
+      "/paginas/material/2024/abril/regressao-linear.html",
       "/paginas/material/2024/marco/exploracao-visualizacao.html",
       "/paginas/material/2023/exploracao-visualizacao/exploracao-visualizacao.html",
       "/paginas/material/2023/programacao/programacao.html",
