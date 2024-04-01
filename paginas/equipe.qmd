@@ -43,12 +43,19 @@ knitr::include_graphics("../assets/gabriella.jpg")
 ```{r}
 #| echo: false
 #| out.width: 25%
-knitr::include_graphics("../assets/marcos.jpg")
+knitr::include_graphics("../assets/keila.jpg")
 ```
 
+**Keila Lisboa**  é estudante de estatística, entusiasta da área e encantada pelo software R. Seu interesse é pelo ramo aplicado ao mercado de trabalho e busca constantemente novos conhecimentos e aprimoramento de suas habilidades.
 
-**Marcos Antonio Arnaldo** é um estudante de Engenharia Mecânica na UFBA. Paralelamente à sua jornada acadêmica, ele se dedica ao estudo da ciência de dados, unindo sua paixão por conhecimento e inovação tecnológica.<br>
-**GitHub:** [github.com/marcossk7](https://github.com/marcossk7){target="_blank"}
+```{r}
+#| echo: false
+#| out.width: 25%
+knitr::include_graphics("../assets/fernanda.jpg")
+```
+
+**Fernanda de Jesus** é estudante de Estatística na UFBA, atualmente cursando o terceiro semestre. Deseja expandir os conhecimentos na área de Estatística e Ciência de Dados e contribuir para o progresso dela.
+
 
 ```{r}
 #| echo: false
