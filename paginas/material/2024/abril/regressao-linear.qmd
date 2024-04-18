@@ -13,11 +13,12 @@ categories:
 
 ## Slides
 
-Em breve.
+[aula_rls.pdf](aula_rls.pdf){target="_blank"}
 
 ## Dados
 
-Em breve.
+[dados_rls.xlsx](dados_rls.xlsx)<br>
+[mtcarros.xlsx](mtcarros.xlsx)
 
 ## `R` e `Rstudio`
 
