@@ -1,5 +1,5 @@
 ---
-title: "`R` para Ciência de Dados: Regressão Linear"
+title: "`R` para Ciência de Dados: Regressão Linear Simples e Múltipla"
 author: "Carolina Costa Mota Paraíba"
 date: "2024/04/19"
 categories:
@@ -19,6 +19,10 @@ categories:
 
 [dados_rls.xlsx](dados_rls.xlsx)<br>
 [mtcarros.xlsx](mtcarros.xlsx)
+
+## Código da sala de aula
+
+O código da sala de aula está em [codeshare.io/9bjkmg](https://codeshare.io/9bjkmg){target="_blank"}.
 
 ## `R` e `Rstudio`
 

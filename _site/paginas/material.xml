@@ -12,7 +12,7 @@
 <generator>quarto-1.3.450</generator>
 <lastBuildDate>Fri, 19 Apr 2024 03:00:00 GMT</lastBuildDate>
 <item>
-  <title>R para Ciência de Dados: Regressão Linear</title>
+  <title>R para Ciência de Dados: Regressão Linear Simples e Múltipla</title>
   <dc:creator>Carolina Costa Mota Paraíba</dc:creator>
   <link>https://cienciadedados.quarto.pub/paginas/material/2024/abril/regressao-linear.html</link>
   <description><![CDATA[ 
@@ -26,6 +26,10 @@
 <section id="dados" class="level2">
 <h2 class="anchored" data-anchor-id="dados">Dados</h2>
 <p><a href="dados_rls.xlsx">dados_rls.xlsx</a><br> <a href="mtcarros.xlsx">mtcarros.xlsx</a></p>
+</section>
+<section id="código-da-sala-de-aula" class="level2">
+<h2 class="anchored" data-anchor-id="código-da-sala-de-aula">Código da sala de aula</h2>
+<p>O código da sala de aula está em <a href="https://codeshare.io/9bjkmg" target="_blank">codeshare.io/9bjkmg</a>.</p>
 </section>
 <section id="r-e-rstudio" class="level2">
 <h2 class="anchored" data-anchor-id="r-e-rstudio"><code>R</code> e <code>Rstudio</code></h2>
