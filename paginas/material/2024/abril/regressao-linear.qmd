@@ -13,11 +13,13 @@ categories:
 
 ## Slides
 
-[aula_rls.pdf](aula_rls.pdf){target="_blank"}
+[aula_rls.pdf](aula_rls.pdf){target="_blank"}<br>
+[aula_rlsm.pdf](aula_rlsm.pdf){target="_blank"}
 
 ## Dados
 
 [dados_rls.xlsx](dados_rls.xlsx)<br>
+[dados_rlsm.xlsx](dados_rlsm.xlsx)<br>
 [mtcarros.xlsx](mtcarros.xlsx)
 
 ## Código da sala de aula
