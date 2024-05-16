@@ -1,10 +1,9 @@
 ---
 title: ""
-format: html
-    # html:
-    #     include-before-body: ../assets/form.html
+format: 
+    html:
+        include-before-body: ../assets/form.html
 ---
 
-### Não existem inscrições abertas no momento.
 
 ---
