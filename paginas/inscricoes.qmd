@@ -1,10 +1,11 @@
 ---
 title: ""
-format: # html
-    html:
-        include-before-body: ../assets/form.html
+format:  html
+# format:
+#     html:
+#         include-before-body: ../assets/form.html
 ---
 
-<!-- ## Não há inscrições abertas no momento. -->
+## Não há inscrições abertas no momento.
 
 ---
