@@ -151,5 +151,8 @@
   },
   "paginas/material/2024/abril/regressao-linear.qmd": {
     "regressao-linear.html": "51bce7d4"
+  },
+  "paginas/material/2024/maio/aplicacoes-regressao-logistica.qmd": {
+    "aplicacoes-regressao-logistica.html": "636df19d"
   }
 }
