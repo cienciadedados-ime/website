@@ -173,25 +173,83 @@ gtag('config', 'G-0WD3PSV647', { 'anonymize_ip': true});
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Nesta página</h2>
-   
-  <ul>
-  <li><a href="#não-há-inscrições-abertas-no-momento." id="toc-não-há-inscrições-abertas-no-momento." class="nav-link active" data-scroll-target="#não-há-inscrições-abertas-no-momento.">Não há inscrições abertas no momento.</a></li>
-  </ul>
-</nav>
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
+<h1>Formulário de inscrição</h1>
+
+<hr>
+
+<p>
+    Formulário de inscrição para o curso livre <a href="https://ufba.netlify.app/paginas/catalogo/modelo-de-analise-de-variancia" target="_blank"><strong><code>R</code> para Ciência de Dados: Modelos de Análise de Variância</strong></a> que acontecerá nos dias <strong>05 de julho (das 14h às 18h) e 12 de julho (das 14h às 18h)</strong> no Instituto de Matemática e Estatística da Universidade Federal da Bahia.
+</p>
+
+<p>
+    <strong>Prazo de inscrições:</strong> 02/06/2024 a 15/06/2024.
+</p>
+
+<p>
+    <strong>
+        Importante: o curso conta com 20 vagas e, havendo mais inscritos do que número de vagas, as mesmas serão distribuídas por sorteio, respeitando o caráter extensionista da atividade conforme a <strong><a href="https://proext.ufba.br/sites/proext.ufba.br/files/resolucao_no_02-2012_capex_-_regulamento_da_extensao.pdf" target="_blank">Resolução 02/2012 do Conselho Acadêmico de Pesquisa e Extensão da UFBA</a></strong>.
+    </strong>
+</p>
+
+<hr>
+
+<form class="gform" action="https://script.google.com/macros/s/AKfycbwjhr3Ftp-3LEkue0SLWbCUAwLEje9MLhrvswZAX4J2wNLC22zwvVb2BYE3v0BpPa3M5Q/exec" method="post" onsubmit="window.open('inscricao-popup.html','print_popup','width=1000,height=800');">
+    <input type="hidden" name="accessKey" value="1f0b00f9-d8d4-4329-9cbb-4a4ac2d8c29f">
+
+    <div class="mb-3">
+        <label for="inputNome" class="form-label">Nome completo</label>
+        <input type="text" name="nome" class="form-control" id="inputNome" aria-describedby="nomeHelp" required="">
+        <div id="nomeHelp" class="form-text">Preencha este campo com atenção,pois o nome que você digitar neste campo aparecerá no certificado emitido pela UFBA.</div>
+    </div>
+
+    <div class="mb-3">
+        <label for="inputEmail" class="form-label">E-mail</label>
+        <input type="email" name="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" required="">
+        <div id="emailHelp" class="form-text">Preencha este campo com atenção: toda comunicação será realizada por este e-mail.</div>
+    </div>
+
+    <div class="mb-3">
+        <label for="inputDataNascimento" class="form-label">Data de nascimento</label>
+        <input type="date" name="nascimento" class="form-control" id="inputDataNascimento" placeholder="1990/01/01" required="">
+        <div id="emailHelp" class="form-text">Data de nascimento.</div>
+    </div>
+
+    <div class="mb-3">
+        <label for="vinculo" class="form-label">Vínculo com a UFBA</label>
+        <select class="form-select" name="vinculo" id="vinculo" aria-label="Default select example" required="">
+            <option value="estudante">Estudante de graduação e pós-graduação da UFBA</option>
+            <option value="estudante_best">Estudante do Bacharelado em Estatística da UFBA</option>
+            <option value="tecnico">Técnico da UFBA</option>
+            <option value="professor">Professor da UFBA</option>
+            <option value="externa" selected="">Não tenho vínculo com a UFBA</option>
+        </select>
+        <div id="vinculoHelp" class="form-text">Se você não estuda e não trabalha na UFBA, escolha a opção <em>Não tenho vínculo com a UFBA</em>.</div>
+    </div>
+
+    <div class="mb-3">
+        <label for="inputCelular" class="form-label">Celular</label>
+        <input type="text" name="celular" class="form-control" id="inputCelular" aria-describedby="celularHelp" pattern="^[0-9]{2}[9][0-9]{8}$" required="">
+        <div id="celularHelp" class="form-text">Informe seu telefone celular com WhatsApp no formato xx9xxxxxxxx.</div>
+    </div>
+
+    <input id="honeypot" type="text" name="honeypot" value="" hidden="">
+
+    <button type="submit" class="btn btn-primary" id="enviarInscricao"> Enviar inscrição</button>
+</form>
+
+
+  
 
 
 
-<section id="não-há-inscrições-abertas-no-momento." class="level2">
-<h2 class="anchored" data-anchor-id="não-há-inscrições-abertas-no-momento.">Não há inscrições abertas no momento.</h2>
+<!-- ## Não há inscrições abertas no momento. -->
 <hr>
 
 
-</section>
 
 <p>© 2024 <strong><code>R</code> para Ciência de Dados <br>🖤</strong> by Carolina Paraíba e Gilberto Sassi</p></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

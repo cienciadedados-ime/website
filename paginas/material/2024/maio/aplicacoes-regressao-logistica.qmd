@@ -17,7 +17,7 @@ categories:
 
 [base_dados_aluno.xlsx](base_dados_aluno.xlsx){target="_blank"}<br>
 [base_dados_profesor.xlsx](base_dados_profesor.xlsx){target="_blank"}<br>
-[base_modelo_final.xlsx](base_modelo_final.xlsx){target="_blank"}<br>
+[base_modelo_final.xlsx](https://docs.google.com/spreadsheets/d/1tfryKzlOX9nXjmAIP8qnJlNGEoluzN4bv9KPCx4mRMA/edit?usp=sharing){target="_blank"}<br>
 
 ### Validação e monitoramento
 
