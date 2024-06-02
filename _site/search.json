@@ -396,14 +396,14 @@
     "href": "paginas/material/2024/maio/aplicacoes-regressao-logistica.html#dados",
     "title": "R para Ciência de Dados: Aplicações de Regressão Logística",
     "section": "Dados",
-    "text": "Dados\nbase_dados_aluno.xlsx"
+    "text": "Dados\nbase_dados_aluno.xlsx base_dados_profesor.xlsx base_modelo_final.xlsx\n\nValidação e monitoramento\nvalidacao_monitoramento.xlsx"
   },
   {
     "objectID": "paginas/material/2024/maio/aplicacoes-regressao-logistica.html#código-r",
     "href": "paginas/material/2024/maio/aplicacoes-regressao-logistica.html#código-r",
     "title": "R para Ciência de Dados: Aplicações de Regressão Logística",
     "section": "Código R",
-    "text": "Código R\ncode.R"
+    "text": "Código R\ncode.R\n\ncodeshare.io\ncodeshare.io/MkbMRJ"
   },
   {
     "objectID": "paginas/material/2024/maio/aplicacoes-regressao-logistica.html#r-e-rstudio",
