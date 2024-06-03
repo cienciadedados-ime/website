@@ -57,10 +57,10 @@ filename <- cidades |>
         arq <- paste0(caminho, "cidades_enem_2023/xlsx/", x)
         glue("[`{x}`]({arq})")
     })
-df <- tibble(nomes, filename)
+df <- tibble(id = paste0("id",1:50), nomes, filename)
 knitr::kable(
     df,
-    col.names = c("Nome", "Planilha eletrônica (formato .xlsx)")
+    col.names = c("ID", "Nome", "Planilha eletrônica (formato .xlsx)")
 )
 ```
 
