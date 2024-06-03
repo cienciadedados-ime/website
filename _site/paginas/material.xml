@@ -10,7 +10,275 @@
 <atom:link href="https://cienciadedados.quarto.pub/paginas/material.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.3.450</generator>
-<lastBuildDate>Tue, 28 May 2024 03:00:00 GMT</lastBuildDate>
+<lastBuildDate>Fri, 07 Jun 2024 03:00:00 GMT</lastBuildDate>
+<item>
+  <title>R para Ciência de Dados: Intervalos de Confiança e Teste de Hipóteses</title>
+  <dc:creator>Gilberto Sassi</dc:creator>
+  <link>https://cienciadedados.quarto.pub/paginas/material/2024/junho/inferencia-estatistica.html</link>
+  <description><![CDATA[ 
+
+
+
+<section id="slides" class="level2">
+<h2 class="anchored" data-anchor-id="slides">Slides</h2>
+<p><a href="slides.pdf" target="_blank">slides</a></p>
+</section>
+<section id="arquivos-incluindo-dados" class="level2">
+<h2 class="anchored" data-anchor-id="arquivos-incluindo-dados">Arquivos (incluindo dados)</h2>
+<p><a href="arquivos.zip">arquivos</a></p>
+</section>
+<section id="dados" class="level2">
+<h2 class="anchored" data-anchor-id="dados">Dados</h2>
+<p>Durante as duas aulas deste curso, você vai analisar as informações (dados) de candidatas/os do Exame Nacional do Ensino Médio (ENEM) na edição de 2023. Cada pessoa deste curso será responsável por analisar uma cidade que está lista na Tabela&nbsp;1.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="tbl-cidades" class="anchored">
+<table class="table table-sm table-striped small">
+<caption>Tabela&nbsp;1: Informações de candidatas/os do ENEM 2023 por cidade.</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Nome</th>
+<th style="text-align: left;">Planilha eletrônica (formato .xlsx)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Ana Luíza Aguiar Nunes</td>
+<td style="text-align: left;"><a href="cidades_enem_2023/xlsx/campos_dos_goytacazes.xlsx"><code>campos_dos_goytacazes.xlsx</code></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Anne Natally Freire Santos</td>
+<td style="text-align: left;"><a href="cidades_enem_2023/xlsx/sao_paulo.xlsx"><code>sao_paulo.xlsx</code></a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Átila Prudente Simões</td>
+<td style="text-align: left;"><a href="cidades_enem_2023/xlsx/sorocaba.xlsx"><code>sorocaba.xlsx</code></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Bianca Magaly Pedreira Conceição</td>
+<td style="text-align: left;"><a href="cidades_enem_2023/xlsx/maceio.xlsx"><code>maceio.xlsx</code></a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Daniel Henrique Santos Silva</td>
+<td style="text-align: left;"><a href="cidades_enem_2023/xlsx/feira_de_santana.xlsx"><code>feira_de_santana.xlsx</code></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Eduarda Araújo Silva</td>
+<td style="text-align: left;"><a href="cidades_enem_2023/xlsx/sao_goncalo.xlsx"><code>sao_goncalo.xlsx</code></a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Estefany Nunes Lima</td>
+<td style="text-align: left;"><a href="cidades_enem_2023/xlsx/aparecida_de_goiania.xlsx"><code>aparecida_de_goiania.xlsx</code></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Guilherme De Castro Figueredo</td>
+<td style="text-align: left;"><a href="cidades_enem_2023/xlsx/campinas.xlsx"><code>campinas.xlsx</code></a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Henrique Santos Braga</td>
+<td style="text-align: left;"><a href="cidades_enem_2023/xlsx/serra.xlsx"><code>serra.xlsx</code></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Isis Juliana Figueiredo De Barros</td>
+<td style="text-align: left;"><a href="cidades_enem_2023/xlsx/porto_velho.xlsx"><code>porto_velho.xlsx</code></a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Joice Chaves Dos Santos</td>
+<td style="text-align: left;"><a href="cidades_enem_2023/xlsx/teresina.xlsx"><code>teresina.xlsx</code></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Lenneth Vigas Silva</td>
+<td style="text-align: left;"><a href="cidades_enem_2023/xlsx/belo_horizonte.xlsx"><code>belo_horizonte.xlsx</code></a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Leonardo Souza De Almeida</td>
+<td style="text-align: left;"><a href="cidades_enem_2023/xlsx/fortaleza.xlsx"><code>fortaleza.xlsx</code></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Lucas Santos Pimentel</td>
+<td style="text-align: left;"><a href="cidades_enem_2023/xlsx/florianopolis.xlsx"><code>florianopolis.xlsx</code></a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Maiara Da Silva Antunes</td>
+<td style="text-align: left;"><a href="cidades_enem_2023/xlsx/manaus.xlsx"><code>manaus.xlsx</code></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Marcus De Souza Alves</td>
+<td style="text-align: left;"><a href="cidades_enem_2023/xlsx/duque_de_caxias.xlsx"><code>duque_de_caxias.xlsx</code></a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Nailton Santos Dos Prazeres</td>
+<td style="text-align: left;"><a href="cidades_enem_2023/xlsx/guarulhos.xlsx"><code>guarulhos.xlsx</code></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Pablo Vieira Florentino</td>
+<td style="text-align: left;"><a href="cidades_enem_2023/xlsx/recife.xlsx"><code>recife.xlsx</code></a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Túlio Bomfim Luz</td>
+<td style="text-align: left;"><a href="cidades_enem_2023/xlsx/londrina.xlsx"><code>londrina.xlsx</code></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">—</td>
+<td style="text-align: left;"><a href="cidades_enem_2023/xlsx/belford_roxo.xlsx"><code>belford_roxo.xlsx</code></a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">—</td>
+<td style="text-align: left;"><a href="cidades_enem_2023/xlsx/vila_velha.xlsx"><code>vila_velha.xlsx</code></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">—</td>
+<td style="text-align: left;"><a href="cidades_enem_2023/xlsx/sao_bernardo_do_campo.xlsx"><code>sao_bernardo_do_campo.xlsx</code></a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">—</td>
+<td style="text-align: left;"><a href="cidades_enem_2023/xlsx/jundiai.xlsx"><code>jundiai.xlsx</code></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">—</td>
+<td style="text-align: left;"><a href="cidades_enem_2023/xlsx/jaboatao_dos_guararapes.xlsx"><code>jaboatao_dos_guararapes.xlsx</code></a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">—</td>
+<td style="text-align: left;"><a href="cidades_enem_2023/xlsx/brasilia.xlsx"><code>brasilia.xlsx</code></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">—</td>
+<td style="text-align: left;"><a href="cidades_enem_2023/xlsx/cuiaba.xlsx"><code>cuiaba.xlsx</code></a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">—</td>
+<td style="text-align: left;"><a href="cidades_enem_2023/xlsx/ananindeua.xlsx"><code>ananindeua.xlsx</code></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">—</td>
+<td style="text-align: left;"><a href="cidades_enem_2023/xlsx/goiania.xlsx"><code>goiania.xlsx</code></a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">—</td>
+<td style="text-align: left;"><a href="cidades_enem_2023/xlsx/natal.xlsx"><code>natal.xlsx</code></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">—</td>
+<td style="text-align: left;"><a href="cidades_enem_2023/xlsx/sao_luis.xlsx"><code>sao_luis.xlsx</code></a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">—</td>
+<td style="text-align: left;"><a href="cidades_enem_2023/xlsx/belem.xlsx"><code>belem.xlsx</code></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">—</td>
+<td style="text-align: left;"><a href="cidades_enem_2023/xlsx/mogi_das_cruzes.xlsx"><code>mogi_das_cruzes.xlsx</code></a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">—</td>
+<td style="text-align: left;"><a href="cidades_enem_2023/xlsx/curitiba.xlsx"><code>curitiba.xlsx</code></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">—</td>
+<td style="text-align: left;"><a href="cidades_enem_2023/xlsx/uberlandia.xlsx"><code>uberlandia.xlsx</code></a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">—</td>
+<td style="text-align: left;"><a href="cidades_enem_2023/xlsx/rio_de_janeiro.xlsx"><code>rio_de_janeiro.xlsx</code></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">—</td>
+<td style="text-align: left;"><a href="cidades_enem_2023/xlsx/aracaju.xlsx"><code>aracaju.xlsx</code></a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">—</td>
+<td style="text-align: left;"><a href="cidades_enem_2023/xlsx/contagem.xlsx"><code>contagem.xlsx</code></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">—</td>
+<td style="text-align: left;"><a href="cidades_enem_2023/xlsx/nova_iguacu.xlsx"><code>nova_iguacu.xlsx</code></a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">—</td>
+<td style="text-align: left;"><a href="cidades_enem_2023/xlsx/niteroi.xlsx"><code>niteroi.xlsx</code></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">—</td>
+<td style="text-align: left;"><a href="cidades_enem_2023/xlsx/osasco.xlsx"><code>osasco.xlsx</code></a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">—</td>
+<td style="text-align: left;"><a href="cidades_enem_2023/xlsx/ribeirao_preto.xlsx"><code>ribeirao_preto.xlsx</code></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">—</td>
+<td style="text-align: left;"><a href="cidades_enem_2023/xlsx/sao_jose_dos_campos.xlsx"><code>sao_jose_dos_campos.xlsx</code></a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">—</td>
+<td style="text-align: left;"><a href="cidades_enem_2023/xlsx/porto_alegre.xlsx"><code>porto_alegre.xlsx</code></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">—</td>
+<td style="text-align: left;"><a href="cidades_enem_2023/xlsx/joao_pessoa.xlsx"><code>joao_pessoa.xlsx</code></a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">—</td>
+<td style="text-align: left;"><a href="cidades_enem_2023/xlsx/joinville.xlsx"><code>joinville.xlsx</code></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">—</td>
+<td style="text-align: left;"><a href="cidades_enem_2023/xlsx/juiz_de_fora.xlsx"><code>juiz_de_fora.xlsx</code></a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">—</td>
+<td style="text-align: left;"><a href="cidades_enem_2023/xlsx/santo_andre.xlsx"><code>santo_andre.xlsx</code></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">—</td>
+<td style="text-align: left;"><a href="cidades_enem_2023/xlsx/sao_jose_do_rio_preto.xlsx"><code>sao_jose_do_rio_preto.xlsx</code></a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">—</td>
+<td style="text-align: left;"><a href="cidades_enem_2023/xlsx/caxias_do_sul.xlsx"><code>caxias_do_sul.xlsx</code></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">—</td>
+<td style="text-align: left;"><a href="cidades_enem_2023/xlsx/campo_grande.xlsx"><code>campo_grande.xlsx</code></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</section>
+<section id="codeshare.io" class="level2">
+<h2 class="anchored" data-anchor-id="codeshare.io"><code>codeshare.io</code></h2>
+<p><a href="https://codeshare.io/BdOqYx" target="_blank">codeshare.io/BdOqYx</a></p>
+</section>
+<section id="r-e-rstudio" class="level2">
+<h2 class="anchored" data-anchor-id="r-e-rstudio"><code>R</code> e <code>Rstudio</code></h2>
+<p>Neste curso, a IDE vamos utilizar é o <a href="https://posit.co/downloads/" target="_blank"><code>RStudio</code></a>. Outras opções populares em ciência de dados são o <a href="https://code.visualstudio.com/Download" target="_blank"><code>VScode</code></a> da Microsoft e <a href="https://jupyter.org/install" target="_blank"><code>JupyterLab</code></a>, caso você tenha familiaridade ou já trabalhe com este editores sinta a vontade para usá-los.</p>
+<p>Caso você não queria ou não possa realizar instalações em seu computador, recomendamos que você use as plataformas <a href="https://colab.research.google.com/" target="_blank">Google Colaboratory</a> e/ou <a href="https://posit.cloud" target="_blank">Posit Cloud</a>. Recomendamos o uso da plataforma <a href="https://posit.cloud" target="_blank">Posit Cloud</a> pelo mesmo estilo e aspecto visual do aplicativo <a href="https://posit.co/downloads/" target="_blank"><code>RStudio</code></a>.</p>
+<section id="instalação--r" class="level3">
+<h3 class="anchored" data-anchor-id="instalação--r">Instalação -<code>R</code></h3>
+<p>Para instalar o <code>R</code> em seu computador, basta seguir as instruções em <a href="https://cran.r-project.org/">cran.r-project.org</a>. É necessário que você instale a versão 4.1 ou superior do R.</p>
+</section>
+<section id="instalação---rstudio" class="level3">
+<h3 class="anchored" data-anchor-id="instalação---rstudio">Instalação - <code>RStudio</code></h3>
+<p>Depois de ter instalado o R, siga as instruções de instalação em <a href="https://posit.co/downloads/">posit.co/downloads</a>.</p>
+<hr>
+
+
+</section>
+</section>
+
+<p>© 2024 <strong><code>R</code> para Ciência de Dados <br>🖤</strong> by Carolina Paraíba e Gilberto Sassi</p> ]]></description>
+  <category>Ciência de Dados</category>
+  <category>Inferência Estatística</category>
+  <category>Estatística</category>
+  <category>Intervalo de Confiança</category>
+  <category>Teste de Hipóteses</category>
+  <guid>https://cienciadedados.quarto.pub/paginas/material/2024/junho/inferencia-estatistica.html</guid>
+  <pubDate>Fri, 07 Jun 2024 03:00:00 GMT</pubDate>
+  <media:content url="https://cienciadedados.quarto.pub/assets/logo_projeto.png" medium="image" type="image/png" height="151" width="144"/>
+</item>
 <item>
   <title>R para Ciência de Dados: Aplicações de Regressão Logística</title>
   <dc:creator>Thiago Gerolamo</dc:creator>
