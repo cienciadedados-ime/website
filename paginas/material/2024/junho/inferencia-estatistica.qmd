@@ -22,6 +22,8 @@ categories:
 
 Durante as duas aulas deste curso, você vai analisar as informações (dados) de candidatas/os do Exame Nacional do Ensino Médio (ENEM) na edição de 2023. Cada pessoa deste curso será responsável por analisar uma cidade que está lista na @tbl-cidades.
 
+As colunas (variáveis) dos arquivos da @tbl-cidades estão descritas no seguinte arquivo: [dicionao_enem_2023.xlsx](dicionao_enem_2023.xlsx).
+
 ```{r}
 #| echo: false
 #| message: false
@@ -45,7 +47,10 @@ set.seed(20240603)
 # caminho <- "paginas/material/2024/junho/"
 caminho <- ""
 participantes <- read_csv(glue("{caminho}lista_presenca.csv"))
-nomes <- participantes$nome_completo |> sort()
+nomes <- participantes$nome_completo |> 
+  c("Gabriella Santos Rocha", "Fernanda de Jesus Araújo dos Santos", "Keila Lisboa da Silva",
+  "Carolilna Costa Mota Paraíba") |>
+  sort()
 nomes <- c(
     nomes,
     rep("---", 50 - length(nomes))
