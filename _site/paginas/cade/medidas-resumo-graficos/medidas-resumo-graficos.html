@@ -2,13 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="pt-br" xml:lang="pt-br"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.450">
+<meta name="generator" content="quarto-1.5.45">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Gilberto Pereira Sassi">
 
-<title>Ciência de Dados - E como calcular medidas de resumo quando temos um gráfico de barras ou histograma?</title>
+<title>E como calcular medidas de resumo quando temos um gráfico de barras ou histograma? – Ciência de Dados</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -48,7 +48,13 @@ ul.task-list li input[type="checkbox"] {
   "collapse-after": 3,
   "panel-placement": "end",
   "type": "overlay",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "Nenhum resultado",
     "search-matching-documents-text": "documentos correspondentes",
@@ -57,6 +63,7 @@ ul.task-list li input[type="checkbox"] {
     "search-more-match-text": "mais correspondência neste documento",
     "search-more-matches-text": "mais correspondências neste documento",
     "search-clear-button-title": "Limpar",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancelar",
     "search-submit-button-title": "Enviar",
     "search-label": "Procurar"
@@ -94,14 +101,41 @@ gtag('config', 'G-0WD3PSV647', { 'anonymize_ip': true});
 
 </script>
 
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../../../assets/styles.css">
 <meta property="og:title" content="Ciência de Dados - E como calcular medidas de resumo quando temos um gráfico de barras ou histograma?">
 <meta property="og:description" content="">
 <meta property="og:image" content="https://cienciadedados.quarto.pub/paginas/cade/medidas-resumo-graficos/barra.png">
-<meta property="og:site-name" content="Ciência de Dados">
+<meta property="og:site_name" content="Ciência de Dados">
 <meta property="og:locale" content="pt_BR">
 <meta property="og:image:height" content="512">
 <meta property="og:image:width" content="512">
@@ -111,9 +145,9 @@ gtag('config', 'G-0WD3PSV647', { 'anonymize_ip': true});
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg navbar-dark ">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container">
+      <div class="navbar-brand-container mx-auto">
     <a href="../../../index.html" class="navbar-brand navbar-brand-logo">
     <img src="../../../assets/r.png" alt="" class="navbar-logo">
     </a>
@@ -122,55 +156,55 @@ gtag('config', 'G-0WD3PSV647', { 'anonymize_ip': true});
     </a>
   </div>
             <div id="quarto-search" class="" title="Procurar"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Alternar de navegação" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Alternar de navegação" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../../index.html" rel="" target="">
- <span class="menu-text">Home</span></a>
+    <a class="nav-link" href="../../../index.html"> 
+<span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../../paginas/inscricoes.html" rel="" target="">
- <span class="menu-text">Inscrições</span></a>
+    <a class="nav-link" href="../../../paginas/inscricoes.html"> 
+<span class="menu-text">Inscrições</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../../paginas/catalogo.html" rel="" target="">
- <span class="menu-text">Cursos oferecidos</span></a>
+    <a class="nav-link" href="../../../paginas/catalogo.html"> 
+<span class="menu-text">Cursos oferecidos</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../../paginas/material.html" rel="" target="">
- <span class="menu-text">Material</span></a>
+    <a class="nav-link" href="../../../paginas/material.html"> 
+<span class="menu-text">Material</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../../paginas/equipe.html" rel="" target="">
- <span class="menu-text">Equipe</span></a>
+    <a class="nav-link" href="../../../paginas/equipe.html"> 
+<span class="menu-text">Equipe</span></a>
   </li>  
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-editais" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-editais" role="link" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">Editais</span>
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-editais">    
         <li>
-    <a class="dropdown-item" href="../../../paginas/editais/editais-abertos.html" rel="" target="">
+    <a class="dropdown-item" href="../../../paginas/editais/editais-abertos.html">
  <span class="dropdown-text">Editais abertos</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../../paginas/editais/editais-2023.html" rel="" target="">
+    <a class="dropdown-item" href="../../../paginas/editais/editais-2023.html">
  <span class="dropdown-text">Editais encerrados</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="../../../paginas/contato.html" rel="" target="">
- <span class="menu-text">Contato</span></a>
+    <a class="nav-link" href="../../../paginas/contato.html"> 
+<span class="menu-text">Contato</span></a>
   </li>  
 </ul>
-            <div class="quarto-navbar-tools ms-auto">
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Alternar modo escuro"><i class="bi"></i></a>
 </div>
-          </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
 </header>
@@ -231,7 +265,9 @@ gtag('config', 'G-0WD3PSV647', { 'anonymize_ip': true});
   </div>
   
 
+
 </header>
+
 
 <p>Com um gráfico de barras e um histograma, você tem uma ideia da distribuição dos dados. Mas e se você deseja encontrar um ou alguns números que representam ou resumem fidedignamente os valores representados nestes gráficos? Para encontrar estes números podemos usar medidas de resumo, e se você tem o conjunto de dados que foi usado para construir estes gráficos essa tarefa é simples em <em>softwares</em> como o <code>R</code>, <code>Python</code> ou até um <em>software</em> de planilha como o <code>excel</code>. E se você tem apenas o gráfico de barras ou histograma e não tem o conjunto de dados? <em>Don’t panic</em>, mesmo nesse caso conseguimos calcular medidas de resumo, e é isso que eu vou explicar como fazer neste post.</p>
 <section id="gráfico-de-barras" class="level2">
@@ -239,7 +275,7 @@ gtag('config', 'G-0WD3PSV647', { 'anonymize_ip': true});
 <p>Imagine que você tem um gráfico de barras para uma variável quantitativa discreta <span class="math inline">\(X\)</span> com valores observados <span class="math inline">\(x_1, \dots, x_k\)</span>, conforme a figura abaixo.</p>
 <p><img src="barras-geral.png" alt="Gráfico de barras para variável quantitativa discreta." width="50%" title="Gráfico de barras para variável quantitativa discreta."></p>
 <p>Cada valor observado <span class="math inline">\(x_i, i=1, \dots, k\)</span> do gráfico acima tem uma barra com altura <span class="math inline">\(n_i,i=1, \dots, k\)</span><a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>. Logo, usando esta altura, que é igual a frequência, podemos construir a tabela de distribuição de frequência abaixo.</p>
-<table class="table">
+<table class="caption-top table">
 <colgroup>
 <col style="width: 16%">
 <col style="width: 18%">
@@ -303,7 +339,7 @@ dp(x) &amp;= \sqrt{Var(x)}\newline
 \end{split}
 \]</span></p>
 <p>Para calcular a mediana, precisamos calcular as estatísticas de ordem <span class="math inline">\(x_{(i)}\)</span>, em que <span class="math inline">\(x_{(i)}\)</span> é o <span class="math inline">\(i\)</span>-ésimo menor número. Imagine que <span class="math inline">\(x_1\)</span> é o menor número da amostra, então os <span class="math inline">\(n_1\)</span> menores valores são todos iguais a <span class="math inline">\(x_1\)</span>: <span class="math inline">\(x_{(1)} = x_{(2)} = \cdots = x_{(n_1)} = x_1\)</span>. Suponha que <span class="math inline">\(x_2\)</span> é o segundo menor valor da amostra, então os <span class="math inline">\(n_2\)</span> menores valores (depois de <span class="math inline">\(x_1\)</span>) são todos iguais a <span class="math inline">\(x_2\)</span>: <span class="math inline">\(x_{(n_1+1)} = x_{(n_1+2)} = \cdots = x_{(n_1+n_2)} = x_2\)</span>. Imagine agora que <span class="math inline">\(x_3\)</span> é o terceiro menor valor da amostra, então os menores valores (depois de <span class="math inline">\(x_1\)</span> e <span class="math inline">\(x_2\)</span>) são todos iguais a <span class="math inline">\(x_3\)</span>: <span class="math inline">\(x_{(n_1+n_2+1)} = x_{(n_1+n_2+2)} = \cdots = x_{(n_1+n_2+n_3)} = x_3\)</span>. E continuamos neste processo até organizar todos os valores observados da amostra do menor até o maior valor como indicado na tabela abaixo. Note que estamos usando a frequência <span class="math inline">\(n_1\)</span>, <span class="math inline">\(n_2\)</span> até <span class="math inline">\(n_k\)</span> da tabela distribuição de frequências.</p>
-<table class="table">
+<table class="caption-top table">
 <colgroup>
 <col style="width: 100%">
 </colgroup>
@@ -339,7 +375,7 @@ md(x) = \frac{x_{\left(\lceil(n+1)\cdot 0.5\rceil \right)} + x_{\left(\lfloor(n+
 <p>Considere o gráfico de barras da variável <code>Número de filhos</code> de um conjunto de <span class="math inline">\(36\)</span> funcionário da <code>Companhia MB</code> representado na figura abaixo.</p>
 <p><img src="grafico-barras-numero-filhos.png" alt="Gráfico de barras para variável quantitativa discreta Número de filhos." width="50%"></p>
 <p>Note que a barra que corresponde a <code>zero filhos</code> tem altura <span class="math inline">\(20\)</span> e frequência <span class="math inline">\(20\)</span>, a barra que corresponde a <code>um filho</code> tem altura <span class="math inline">\(5\)</span> e frequência <span class="math inline">\(5\)</span>, a barra que corresponde a <code>dois filhos</code> tem altura <span class="math inline">\(7\)</span> e frequência <span class="math inline">\(7\)</span>, a barra que corresponde a <code>três filhos</code> tem altura <span class="math inline">\(3\)</span> e frequência <span class="math inline">\(3\)</span>, a barra que corresponde a <code>quatro filhos</code> tem altura <span class="math inline">\(0\)</span> e frequência <span class="math inline">\(0\)</span> e a barra que corresponde a <code>cinco filhos</code> tem altura <span class="math inline">\(1\)</span> e frequência <span class="math inline">\(1\)</span>. Consequentemente, temos a seguinte tabela de distribuição de frequências.</p>
-<table class="table">
+<table class="caption-top table">
 <colgroup>
 <col style="width: 26%">
 <col style="width: 28%">
@@ -407,7 +443,7 @@ dp(x) &amp;= \sqrt{\frac{20 \cdot (0 - 0,92)^2 + 5 \cdot (1 - 0,92)^2 + 7 \cdot 
 \end{split}
 \]</span></p>
 <p>Para calcular a mediana, primeiro precisamos encontrar as estatísticas de ordem.</p>
-<table class="table">
+<table class="caption-top table">
 <thead>
 <tr class="header">
 <th style="text-align: left;">Estatísticas de ordem</th>
@@ -447,7 +483,7 @@ md(x) &amp;= \frac{x_{\left(\lfloor \frac{n+1}{2}  \rfloor\right)} + x_{\left(\l
 <p>O histograma é um gráfico construído usando barras sem espaçamento entre elas, e cada barra tem a largura da base igual a largura do intervalo intervalo usado na contagem da variável quantitativa contínua e a área da barra é igual a frequência relativa<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a>. Note que a área da figura geométrica do histograma sempre é um, e a altura de cada barra é a divisão da frequência relativa pela largura do intervalo conforme ilustrado na figura abaixo. Chamamos essa divisão de <em>Densidade de frequência</em>.</p>
 <p><img src="histograma-continua.png" alt="Histograma de uma variável quantitativa contínua." width="50%"></p>
 <p>Para encontrarmos a frequência relativa de cada intervalo, e consequentemente a porcentagem, precisamos multiplicar a <em>densidade de frequência</em> (altura da barra) pela largura do intervalo, conforme tabela abaixo.</p>
-<table class="table">
+<table class="caption-top table">
 <colgroup>
 <col style="width: 20%">
 <col style="width: 24%">
@@ -502,7 +538,7 @@ md(x) &amp;= \frac{x_{\left(\lfloor \frac{n+1}{2}  \rfloor\right)} + x_{\left(\l
 </tbody>
 </table>
 <p>Se soubermos o tamanho da amostra, conseguimos calcular a frequência (absoluta): basta multiplicar a frequência relativa pelo tamanho da amostra. Imagine que o tamanho da amostra é <span class="math inline">\(n\)</span>, então a tabela de distribuição de frequências é dada pela tabela abaixo.</p>
-<table class="table">
+<table class="caption-top table">
 <colgroup>
 <col style="width: 13%">
 <col style="width: 16%">
@@ -573,7 +609,7 @@ md(x) &amp;= \frac{x_{\left(\lfloor \frac{n+1}{2}  \rfloor\right)} + x_{\left(\l
 </tbody>
 </table>
 <p>Agora, queremos calcular a média e o desvio padrão. Mas na tabela de distribuição de frequências acima, sabemos apenas que <span class="math inline">\(n_i\)</span> valores da variável quantitativa contínua <span class="math inline">\(X\)</span> está entre <span class="math inline">\(a_{i-1}\)</span> e <span class="math inline">\(a_i\)</span>, para <span class="math inline">\(i=1, \dots, k\)</span>, mas não sabemos quais são esses valores e sem esses valores não conseguimos calcular a média e o desvio padrão. Existe vários algoritmos para contornar essa restrição e você pode consultar, por exemplo, o livro com título <a href="https://gilbertosassi.netlify.app/ensino/2022/02/primeiro-semestre-de-2022/estatistica-basica-bussab-morettin.pdf"><strong>Estatística Básica</strong></a> de Bussab e <a href="https://www.ime.usp.br/~pam/">Morettin</a>. Aqui neste post, vamos usar uma abordagem bem simples, rápida e um pouco grosseira: vamos assumir que todos os <span class="math inline">\(n_i\)</span> valores do intervalo de valores <span class="math inline">\([a_{i-1}, a_i)\)</span> são aproximadamente iguais a <span class="math inline">\(\frac{a_{i-1} + a_i}{2}\)</span>. Vou chamar esse valor <span class="math inline">\(\frac{a_{i-1} + a_i}{2}\)</span> de ponto médio. E temos a seguinte tabela de distribuição de frequências.</p>
-<table class="table">
+<table class="caption-top table">
 <colgroup>
 <col style="width: 11%">
 <col style="width: 13%">
@@ -660,7 +696,7 @@ dp(x) &amp;= \sqrt{Var(x)}\newline
 \end{split}
 \]</span></p>
 <p>Para calcular a mediana, precisamos calcular as estatísticas de ordem <span class="math inline">\(p_{(i)}\)</span>, em que <span class="math inline">\(p_{(i)}\)</span> é o <span class="math inline">\(i\)</span>-ésimo menor número. Imagine que <span class="math inline">\(p_1\)</span> é o menor número entre os pontos médios, então os <span class="math inline">\(n_1\)</span> menores pontos médios são todos iguais a <span class="math inline">\(p_1\)</span>: <span class="math inline">\(p_{(1)} = p_{(2)} = \cdots = p_{(n_1)} = p_1\)</span>. Suponha que <span class="math inline">\(p_2\)</span> é o segundo menor valor da amostra, então os <span class="math inline">\(n_2\)</span> menores valores (depois de <span class="math inline">\(p_1\)</span>) são todos iguais a <span class="math inline">\(p_2\)</span>: <span class="math inline">\(p_{(n_1+1)} = p_{(n_1+2)} = \cdots = p_{(n_1+n_2)} = p_2\)</span>. Imagine agora que <span class="math inline">\(p_3\)</span> é o terceiro menor valor da amostra, então os menores valores (depois de <span class="math inline">\(p_1\)</span> e <span class="math inline">\(p_2\)</span>) são todos iguais a <span class="math inline">\(p_3\)</span>: <span class="math inline">\(p_{(n_1+n_2+1)} = p_{(n_1+n_2+2)} = \cdots = p_{(n_1+n_2+n_3)} = p_3\)</span>. E continuamos neste processo até organizar todos os valores observados da amostra do menor até o maior valor como indicado na tabela abaixo. Note que estamos usando a frequência <span class="math inline">\(n_1\)</span>, <span class="math inline">\(n_2\)</span> até <span class="math inline">\(n_k\)</span> da tabela distribuição de frequências.</p>
-<table class="table">
+<table class="caption-top table">
 <colgroup>
 <col style="width: 100%">
 </colgroup>
@@ -695,7 +731,7 @@ md(x) = \frac{p_{\left(\lceil(n+1)\cdot 0.5\rceil \right)} + p_{\left(\lfloor(n+
 <p>Considere o histograma da variável quantitativa contínua <span class="math inline">\(X\)</span> de 36 funcionário da <a href="empresa.xlsx">companhia MB</a> da figura abaixo.</p>
 <p><img src="histograma-funcionarios.png" alt="Histograma para a variável salário." width="50%"></p>
 <p>Então, temos a seguinte tabela de distribuição de frequências.</p>
-<table class="table">
+<table class="caption-top table">
 <colgroup>
 <col style="width: 11%">
 <col style="width: 32%">
@@ -720,7 +756,8 @@ md(x) = \frac{p_{\left(\lceil(n+1)\cdot 0.5\rceil \right)} + p_{\left(\lfloor(n+
 <td style="text-align: center;"><span class="math inline">\(0,0694\)</span></td>
 <td style="text-align: center;"><span class="math inline">\(0,0694 \cdot 4 = 0,2776\)</span></td>
 <td style="text-align: center;"><span class="math inline">\(27,76\\%\)</span></td>
-<td style="text-align: center;">$0,2776 \cdot 36 \approx 10 <span class="math inline">\(|\)</span> = 6<span class="math inline">\(| |\)</span>[8, 12)$</td>
+<td style="text-align: center;">$0,2776 \cdot 36 \approx 10 <span class="math inline">\(|\)</span> = 6<span class="math inline">\(|
+|\)</span>[8, 12)$</td>
 <td style="text-align: center;"><span class="math inline">\(0,0833\)</span></td>
 </tr>
 <tr class="even">
@@ -767,7 +804,7 @@ dp(x) &amp;= \sqrt{\frac{10 \cdot (6 - 11,22)^2 + 12 \cdot (10 - 11,22)^2 + 8 \c
 \end{split}
 \]</span></p>
 <p>Usando a tabela de distribuição de frequências acima, podemos encontrar as estatísticas de ordem.</p>
-<table class="table">
+<table class="caption-top table">
 <thead>
 <tr class="header">
 <th style="text-align: left;">Estatísticas de ordem</th>
@@ -858,6 +895,33 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       }
     }
   }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
+    }
+  }
   const toggleColorMode = (alternate) => {
     // Switch the stylesheets
     const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
@@ -924,13 +988,15 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return localAlternateSentinel;
     }
   }
-  let localAlternateSentinel = 'default';
+  const darkModeDefault = false;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
   // Dark / light mode switch
   window.quartoToggleColorScheme = () => {
     // Read the current dark / light value 
     let toAlternate = !hasAlternateSentinel();
     toggleColorMode(toAlternate);
     setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
   };
   // Ensure there is a toggle, if there isn't float one in the top right
   if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
@@ -965,18 +1031,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-  });
-  clipboard.on('success', function(e) {
+  const onCopySuccess = function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -1008,11 +1063,50 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
   });
-  function tippyHover(el, contentFn) {
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/cienciadedados\.quarto\.pub\/");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -1022,8 +1116,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -1035,7 +1138,130 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -1079,6 +1305,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -1104,6 +1331,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -1164,6 +1417,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
+
 
 
 

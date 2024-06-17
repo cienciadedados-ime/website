@@ -1,9 +1,5 @@
 [
   {
-    "listing": "/paginas/eventos.html",
-    "items": []
-  },
-  {
     "listing": "/paginas/cade.html",
     "items": [
       "/paginas/cade/probabilidade-condicional-bayes/prob-condicional.html",
@@ -25,5 +21,9 @@
       "/paginas/material/2023/cd-docentes/cd-docentes.html",
       "/paginas/material/2023/quarto/quarto.html"
     ]
+  },
+  {
+    "listing": "/paginas/eventos.html",
+    "items": []
   }
 ]

@@ -9,13 +9,14 @@
 <link>https://cienciadedados.quarto.pub/paginas/material.html</link>
 <atom:link href="https://cienciadedados.quarto.pub/paginas/material.xml" rel="self" type="application/rss+xml"/>
 <description></description>
-<generator>quarto-1.3.450</generator>
+<generator>quarto-1.5.45</generator>
 <lastBuildDate>Fri, 07 Jun 2024 03:00:00 GMT</lastBuildDate>
 <item>
   <title>R para Ciência de Dados: Intervalos de Confiança e Teste de Hipóteses</title>
   <dc:creator>Gilberto Sassi</dc:creator>
   <link>https://cienciadedados.quarto.pub/paginas/material/2024/junho/inferencia-estatistica.html</link>
   <description><![CDATA[ 
+
 
 
 
@@ -32,10 +33,14 @@
 <p>Durante as duas aulas deste curso, você vai analisar as informações (dados) de candidatas/os do Exame Nacional do Ensino Médio (ENEM) na edição de 2023. Cada pessoa deste curso será responsável por analisar uma cidade que está lista na Tabela&nbsp;1.</p>
 <p>As colunas (variáveis) dos arquivos da Tabela&nbsp;1 estão descritas no seguinte arquivo: <a href="dicionao_enem_2023.xlsx">dicionao_enem_2023.xlsx</a>.</p>
 <div class="cell">
+<div id="tbl-cidades" class="cell quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-cidades-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Tabela&nbsp;1: Informações de candidatas/os do ENEM 2023 por cidade.
+</figcaption>
+<div aria-describedby="tbl-cidades-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell-output-display">
-<div id="tbl-cidades" class="anchored">
-<table class="table table-sm table-striped small">
-<caption>Tabela&nbsp;1: Informações de candidatas/os do ENEM 2023 por cidade.</caption>
+<table class="cell caption-top table table-sm table-striped small">
 <thead>
 <tr class="header">
 <th style="text-align: left;">ID</th>
@@ -298,6 +303,8 @@
 </table>
 </div>
 </div>
+</figure>
+</div>
 </div>
 </section>
 <section id="codeshare.io" class="level2">
@@ -336,6 +343,7 @@
   <dc:creator>Thiago Gerolamo</dc:creator>
   <link>https://cienciadedados.quarto.pub/paginas/material/2024/maio/aplicacoes-regressao-logistica.html</link>
   <description><![CDATA[ 
+
 
 
 
@@ -393,6 +401,7 @@
 
 
 
+
 <section id="slides" class="level2">
 <h2 class="anchored" data-anchor-id="slides">Slides</h2>
 <p><a href="aula_rls.pdf" target="_blank">aula_rls.pdf</a><br> <a href="aula_rlm.pdf" target="_blank">aula_rlm.pdf</a></p>
@@ -441,6 +450,7 @@
 
 
 
+
 <section id="slides" class="level2">
 <h2 class="anchored" data-anchor-id="slides">Slides</h2>
 <p><a href="slides.pdf" target="_blank">slides.pdf</a></p>
@@ -454,7 +464,7 @@
 <p>Dicionário de dados: <a href="cidades-enem-2022/dicionario.xlsx">dicionario.xlsx</a>.</p>
 <div class="cell">
 <div class="cell-output-display">
-<table class="table table-sm table-striped small">
+<table class="caption-top table table-sm table-striped small">
 <caption>Enem por cidade nos formatos .csv e .xlsx com id dos participantes.</caption>
 <thead>
 <tr class="header">
@@ -686,6 +696,7 @@
 
 
 
+
 <section id="avisos" class="level1" style="text-align:justify">
 <h1>Avisos</h1>
 <p>Infelizmente, a segunda aula que seria dia 03/11/2023 está cancelada, pois o campus Ondina/Federação da UFBA estará fechado por causa do feriado prolongado de Finados. <strong>Então, a segunda aula será remarcada para o dia 10/11/2023.</strong></p>
@@ -740,6 +751,7 @@
 
 
 
+
 <div style="text-align:justify">
 <section id="slides" class="level2">
 <h2 class="anchored" data-anchor-id="slides">Slides</h2>
@@ -791,6 +803,7 @@
 
 
 
+
 <div style="text-align:justify">
 <section id="slides" class="level2">
 <h2 class="anchored" data-anchor-id="slides">Slides</h2>
@@ -833,6 +846,7 @@
   <dc:creator>Carolina Costa Mota Paraíba</dc:creator>
   <link>https://cienciadedados.quarto.pub/paginas/material/2023/cd-docentes/cd-docentes.html</link>
   <description><![CDATA[ 
+
 
 
 
@@ -882,6 +896,7 @@
   <dc:creator>Gilberto Pereira Sassi</dc:creator>
   <link>https://cienciadedados.quarto.pub/paginas/material/2023/quarto/quarto.html</link>
   <description><![CDATA[ 
+
 
 
 
