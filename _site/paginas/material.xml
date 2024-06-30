@@ -1,0 +1,921 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>Ciência de Dados</title>
+<link>https://cienciadedados.quarto.pub/paginas/material.html</link>
+<atom:link href="https://cienciadedados.quarto.pub/paginas/material.xml" rel="self" type="application/rss+xml"/>
+<description></description>
+<generator>quarto-1.5.45</generator>
+<lastBuildDate>Fri, 07 Jun 2024 03:00:00 GMT</lastBuildDate>
+<item>
+  <title>R para Ciência de Dados: Intervalos de Confiança e Teste de Hipóteses</title>
+  <dc:creator>Gilberto Sassi</dc:creator>
+  <link>https://cienciadedados.quarto.pub/paginas/material/2024/junho/inferencia-estatistica.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="slides" class="level2">
+<h2 class="anchored" data-anchor-id="slides">Slides</h2>
+<p><a href="slides.pdf" target="_blank">slides</a></p>
+</section>
+<section id="arquivos-incluindo-dados" class="level2">
+<h2 class="anchored" data-anchor-id="arquivos-incluindo-dados">Arquivos (incluindo dados)</h2>
+<p><a href="arquivos.zip">arquivos</a></p>
+</section>
+<section id="dados" class="level2">
+<h2 class="anchored" data-anchor-id="dados">Dados</h2>
+<p>Durante as duas aulas deste curso, você vai analisar as informações (dados) de candidatas/os do Exame Nacional do Ensino Médio (ENEM) na edição de 2023. Cada pessoa deste curso será responsável por analisar uma cidade que está lista na Tabela&nbsp;1.</p>
+<p>As colunas (variáveis) dos arquivos da Tabela&nbsp;1 estão descritas no seguinte arquivo: <a href="dicionao_enem_2023.xlsx">dicionao_enem_2023.xlsx</a>.</p>
+<div class="cell">
+<div id="tbl-cidades" class="cell quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-cidades-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Tabela&nbsp;1: Informações de candidatas/os do ENEM 2023 por cidade.
+</figcaption>
+<div aria-describedby="tbl-cidades-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="cell-output-display">
+<table class="cell caption-top table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: left;">ID</th>
+<th style="text-align: left;">Nome</th>
+<th style="text-align: left;">Planilha eletrônica (formato .xlsx)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">id1</td>
+<td style="text-align: left;">Ana Luíza Aguiar Nunes</td>
+<td style="text-align: left;"><a href="cidades_enem_2023/xlsx/campos_dos_goytacazes.xlsx"><code>campos_dos_goytacazes.xlsx</code></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">id2</td>
+<td style="text-align: left;">Anne Natally Freire Santos</td>
+<td style="text-align: left;"><a href="cidades_enem_2023/xlsx/sao_paulo.xlsx"><code>sao_paulo.xlsx</code></a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">id3</td>
+<td style="text-align: left;">Átila Prudente Simões</td>
+<td style="text-align: left;"><a href="cidades_enem_2023/xlsx/sorocaba.xlsx"><code>sorocaba.xlsx</code></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">id4</td>
+<td style="text-align: left;">Bianca Magaly Pedreira Conceição</td>
+<td style="text-align: left;"><a href="cidades_enem_2023/xlsx/maceio.xlsx"><code>maceio.xlsx</code></a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">id5</td>
+<td style="text-align: left;">Carolilna Costa Mota Paraíba</td>
+<td style="text-align: left;"><a href="cidades_enem_2023/xlsx/feira_de_santana.xlsx"><code>feira_de_santana.xlsx</code></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">id6</td>
+<td style="text-align: left;">Daniel Henrique Santos Silva</td>
+<td style="text-align: left;"><a href="cidades_enem_2023/xlsx/sao_goncalo.xlsx"><code>sao_goncalo.xlsx</code></a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">id7</td>
+<td style="text-align: left;">Eduarda Araújo Silva</td>
+<td style="text-align: left;"><a href="cidades_enem_2023/xlsx/aparecida_de_goiania.xlsx"><code>aparecida_de_goiania.xlsx</code></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">id8</td>
+<td style="text-align: left;">Estefany Nunes Lima</td>
+<td style="text-align: left;"><a href="cidades_enem_2023/xlsx/campinas.xlsx"><code>campinas.xlsx</code></a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">id9</td>
+<td style="text-align: left;">Fernanda de Jesus Araújo dos Santos</td>
+<td style="text-align: left;"><a href="cidades_enem_2023/xlsx/serra.xlsx"><code>serra.xlsx</code></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">id10</td>
+<td style="text-align: left;">Fernando Oliveira Bispo</td>
+<td style="text-align: left;"><a href="cidades_enem_2023/xlsx/porto_velho.xlsx"><code>porto_velho.xlsx</code></a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">id11</td>
+<td style="text-align: left;">Gabriella Santos Rocha</td>
+<td style="text-align: left;"><a href="cidades_enem_2023/xlsx/teresina.xlsx"><code>teresina.xlsx</code></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">id12</td>
+<td style="text-align: left;">Henrique Santos Braga</td>
+<td style="text-align: left;"><a href="cidades_enem_2023/xlsx/belo_horizonte.xlsx"><code>belo_horizonte.xlsx</code></a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">id13</td>
+<td style="text-align: left;">Isis Juliana Figueiredo De Barros</td>
+<td style="text-align: left;"><a href="cidades_enem_2023/xlsx/fortaleza.xlsx"><code>fortaleza.xlsx</code></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">id14</td>
+<td style="text-align: left;">Joice Chaves Dos Santos</td>
+<td style="text-align: left;"><a href="cidades_enem_2023/xlsx/florianopolis.xlsx"><code>florianopolis.xlsx</code></a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">id15</td>
+<td style="text-align: left;">Julia Viana Moitinho</td>
+<td style="text-align: left;"><a href="cidades_enem_2023/xlsx/manaus.xlsx"><code>manaus.xlsx</code></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">id16</td>
+<td style="text-align: left;">Keila Lisboa da Silva</td>
+<td style="text-align: left;"><a href="cidades_enem_2023/xlsx/duque_de_caxias.xlsx"><code>duque_de_caxias.xlsx</code></a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">id17</td>
+<td style="text-align: left;">Lenneth Vigas Silva</td>
+<td style="text-align: left;"><a href="cidades_enem_2023/xlsx/guarulhos.xlsx"><code>guarulhos.xlsx</code></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">id18</td>
+<td style="text-align: left;">Leonardo Souza De Almeida</td>
+<td style="text-align: left;"><a href="cidades_enem_2023/xlsx/recife.xlsx"><code>recife.xlsx</code></a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">id19</td>
+<td style="text-align: left;">Lucas Santos Pimentel</td>
+<td style="text-align: left;"><a href="cidades_enem_2023/xlsx/londrina.xlsx"><code>londrina.xlsx</code></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">id20</td>
+<td style="text-align: left;">Maiara Da Silva Antunes</td>
+<td style="text-align: left;"><a href="cidades_enem_2023/xlsx/belford_roxo.xlsx"><code>belford_roxo.xlsx</code></a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">id21</td>
+<td style="text-align: left;">Marcus De Souza Alves</td>
+<td style="text-align: left;"><a href="cidades_enem_2023/xlsx/vila_velha.xlsx"><code>vila_velha.xlsx</code></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">id22</td>
+<td style="text-align: left;">Nailton Santos Dos Prazeres</td>
+<td style="text-align: left;"><a href="cidades_enem_2023/xlsx/sao_bernardo_do_campo.xlsx"><code>sao_bernardo_do_campo.xlsx</code></a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">id23</td>
+<td style="text-align: left;">Pablo Vieira Florentino</td>
+<td style="text-align: left;"><a href="cidades_enem_2023/xlsx/jundiai.xlsx"><code>jundiai.xlsx</code></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">id24</td>
+<td style="text-align: left;">Túlio Bomfim Luz</td>
+<td style="text-align: left;"><a href="cidades_enem_2023/xlsx/jaboatao_dos_guararapes.xlsx"><code>jaboatao_dos_guararapes.xlsx</code></a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">id25</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;"><a href="cidades_enem_2023/xlsx/brasilia.xlsx"><code>brasilia.xlsx</code></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">id26</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;"><a href="cidades_enem_2023/xlsx/cuiaba.xlsx"><code>cuiaba.xlsx</code></a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">id27</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;"><a href="cidades_enem_2023/xlsx/ananindeua.xlsx"><code>ananindeua.xlsx</code></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">id28</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;"><a href="cidades_enem_2023/xlsx/goiania.xlsx"><code>goiania.xlsx</code></a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">id29</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;"><a href="cidades_enem_2023/xlsx/natal.xlsx"><code>natal.xlsx</code></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">id30</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;"><a href="cidades_enem_2023/xlsx/sao_luis.xlsx"><code>sao_luis.xlsx</code></a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">id31</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;"><a href="cidades_enem_2023/xlsx/belem.xlsx"><code>belem.xlsx</code></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">id32</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;"><a href="cidades_enem_2023/xlsx/mogi_das_cruzes.xlsx"><code>mogi_das_cruzes.xlsx</code></a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">id33</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;"><a href="cidades_enem_2023/xlsx/curitiba.xlsx"><code>curitiba.xlsx</code></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">id34</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;"><a href="cidades_enem_2023/xlsx/uberlandia.xlsx"><code>uberlandia.xlsx</code></a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">id35</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;"><a href="cidades_enem_2023/xlsx/rio_de_janeiro.xlsx"><code>rio_de_janeiro.xlsx</code></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">id36</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;"><a href="cidades_enem_2023/xlsx/aracaju.xlsx"><code>aracaju.xlsx</code></a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">id37</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;"><a href="cidades_enem_2023/xlsx/contagem.xlsx"><code>contagem.xlsx</code></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">id38</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;"><a href="cidades_enem_2023/xlsx/nova_iguacu.xlsx"><code>nova_iguacu.xlsx</code></a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">id39</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;"><a href="cidades_enem_2023/xlsx/niteroi.xlsx"><code>niteroi.xlsx</code></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">id40</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;"><a href="cidades_enem_2023/xlsx/osasco.xlsx"><code>osasco.xlsx</code></a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">id41</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;"><a href="cidades_enem_2023/xlsx/ribeirao_preto.xlsx"><code>ribeirao_preto.xlsx</code></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">id42</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;"><a href="cidades_enem_2023/xlsx/sao_jose_dos_campos.xlsx"><code>sao_jose_dos_campos.xlsx</code></a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">id43</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;"><a href="cidades_enem_2023/xlsx/porto_alegre.xlsx"><code>porto_alegre.xlsx</code></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">id44</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;"><a href="cidades_enem_2023/xlsx/joao_pessoa.xlsx"><code>joao_pessoa.xlsx</code></a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">id45</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;"><a href="cidades_enem_2023/xlsx/joinville.xlsx"><code>joinville.xlsx</code></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">id46</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;"><a href="cidades_enem_2023/xlsx/juiz_de_fora.xlsx"><code>juiz_de_fora.xlsx</code></a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">id47</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;"><a href="cidades_enem_2023/xlsx/santo_andre.xlsx"><code>santo_andre.xlsx</code></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">id48</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;"><a href="cidades_enem_2023/xlsx/sao_jose_do_rio_preto.xlsx"><code>sao_jose_do_rio_preto.xlsx</code></a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">id49</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;"><a href="cidades_enem_2023/xlsx/caxias_do_sul.xlsx"><code>caxias_do_sul.xlsx</code></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">id50</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;"><a href="cidades_enem_2023/xlsx/campo_grande.xlsx"><code>campo_grande.xlsx</code></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</figure>
+</div>
+</div>
+</section>
+<section id="codeshare.io" class="level2">
+<h2 class="anchored" data-anchor-id="codeshare.io"><code>codeshare.io</code></h2>
+<p><a href="https://codeshare.io/BdOqYx" target="_blank">codeshare.io/BdOqYx</a></p>
+</section>
+<section id="r-e-rstudio" class="level2">
+<h2 class="anchored" data-anchor-id="r-e-rstudio"><code>R</code> e <code>Rstudio</code></h2>
+<p>Neste curso, a IDE vamos utilizar é o <a href="https://posit.co/downloads/" target="_blank"><code>RStudio</code></a>. Outras opções populares em ciência de dados são o <a href="https://code.visualstudio.com/Download" target="_blank"><code>VScode</code></a> da Microsoft e <a href="https://jupyter.org/install" target="_blank"><code>JupyterLab</code></a>, caso você tenha familiaridade ou já trabalhe com este editores sinta a vontade para usá-los.</p>
+<p>Caso você não queria ou não possa realizar instalações em seu computador, recomendamos que você use as plataformas <a href="https://colab.research.google.com/" target="_blank">Google Colaboratory</a> e/ou <a href="https://posit.cloud" target="_blank">Posit Cloud</a>. Recomendamos o uso da plataforma <a href="https://posit.cloud" target="_blank">Posit Cloud</a> pelo mesmo estilo e aspecto visual do aplicativo <a href="https://posit.co/downloads/" target="_blank"><code>RStudio</code></a>.</p>
+<section id="instalação--r" class="level3">
+<h3 class="anchored" data-anchor-id="instalação--r">Instalação -<code>R</code></h3>
+<p>Para instalar o <code>R</code> em seu computador, basta seguir as instruções em <a href="https://cran.r-project.org/">cran.r-project.org</a>. É necessário que você instale a versão 4.1 ou superior do R.</p>
+</section>
+<section id="instalação---rstudio" class="level3">
+<h3 class="anchored" data-anchor-id="instalação---rstudio">Instalação - <code>RStudio</code></h3>
+<p>Depois de ter instalado o R, siga as instruções de instalação em <a href="https://posit.co/downloads/">posit.co/downloads</a>.</p>
+<hr>
+
+
+</section>
+</section>
+
+<p>© 2024 <strong><code>R</code> para Ciência de Dados <br>🖤</strong> by Carolina Paraíba e Gilberto Sassi</p> ]]></description>
+  <category>Ciência de Dados</category>
+  <category>Inferência Estatística</category>
+  <category>Estatística</category>
+  <category>Intervalo de Confiança</category>
+  <category>Teste de Hipóteses</category>
+  <guid>https://cienciadedados.quarto.pub/paginas/material/2024/junho/inferencia-estatistica.html</guid>
+  <pubDate>Fri, 07 Jun 2024 03:00:00 GMT</pubDate>
+  <media:content url="https://cienciadedados.quarto.pub/assets/logo_projeto.png" medium="image" type="image/png" height="151" width="144"/>
+</item>
+<item>
+  <title>R para Ciência de Dados: Aplicações de Regressão Logística</title>
+  <dc:creator>Thiago Gerolamo</dc:creator>
+  <link>https://cienciadedados.quarto.pub/paginas/material/2024/maio/aplicacoes-regressao-logistica.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="slides" class="level2">
+<h2 class="anchored" data-anchor-id="slides">Slides</h2>
+<p><a href="modelo_propensao.pdf" target="_blank">slides.pdf</a></p>
+</section>
+<section id="dados" class="level2">
+<h2 class="anchored" data-anchor-id="dados">Dados</h2>
+<p><a href="base_dados_aluno.xlsx" target="_blank">base_dados_aluno.xlsx</a><br> <a href="base_dados_profesor.xlsx" target="_blank">base_dados_profesor.xlsx</a><br> <a href="https://docs.google.com/spreadsheets/d/1tfryKzlOX9nXjmAIP8qnJlNGEoluzN4bv9KPCx4mRMA/edit?usp=sharing" target="_blank">base_modelo_final.xlsx</a><br></p>
+<section id="validação-e-monitoramento" class="level3">
+<h3 class="anchored" data-anchor-id="validação-e-monitoramento">Validação e monitoramento</h3>
+<p><a href="validacao_monitoramento.xlsx">validacao_monitoramento.xlsx</a></p>
+</section>
+</section>
+<section id="código-r" class="level2">
+<h2 class="anchored" data-anchor-id="código-r">Código <code>R</code></h2>
+<p><a href="code.R">code.R</a></p>
+<section id="codeshare.io" class="level3">
+<h3 class="anchored" data-anchor-id="codeshare.io"><code>codeshare.io</code></h3>
+<p><a href="https://codeshare.io/MkbMRJ" target="_blank">codeshare.io/MkbMRJ</a></p>
+</section>
+</section>
+<section id="r-e-rstudio" class="level2">
+<h2 class="anchored" data-anchor-id="r-e-rstudio"><code>R</code> e <code>Rstudio</code></h2>
+<p>Neste curso, a IDE vamos utilizar é o <a href="https://posit.co/downloads/" target="_blank"><code>RStudio</code></a>. Outras opções populares em ciência de dados são o <a href="https://code.visualstudio.com/Download" target="_blank"><code>VScode</code></a> da Microsoft e <a href="https://jupyter.org/install" target="_blank"><code>JupyterLab</code></a>, caso você tenha familiaridade ou já trabalhe com este editores sinta a vontade para usá-los.</p>
+<p>Caso você não queria ou não possa realizar instalações em seu computador, recomendamos que você use as plataformas <a href="https://colab.research.google.com/" target="_blank">Google Colaboratory</a> e/ou <a href="https://posit.cloud" target="_blank">Posit Cloud</a>. Recomendamos o uso da plataforma <a href="https://posit.cloud" target="_blank">Posit Cloud</a> pelo mesmo estilo e aspecto visual do aplicativo <a href="https://posit.co/downloads/" target="_blank"><code>RStudio</code></a>.</p>
+<section id="instalação--r" class="level3">
+<h3 class="anchored" data-anchor-id="instalação--r">Instalação -<code>R</code></h3>
+<p>Para instalar o <code>R</code> em seu computador, basta seguir as instruções em <a href="https://cran.r-project.org/">cran.r-project.org</a>. É necessário que você instale a versão 4.1 ou superior do R.</p>
+</section>
+<section id="instalação---rstudio" class="level3">
+<h3 class="anchored" data-anchor-id="instalação---rstudio">Instalação - <code>RStudio</code></h3>
+<p>Depois de ter instalado o R, siga as instruções de instalação em <a href="https://posit.co/downloads/">posit.co/downloads</a>.</p>
+<hr>
+
+
+</section>
+</section>
+
+<p>© 2024 <strong><code>R</code> para Ciência de Dados <br>🖤</strong> by Carolina Paraíba e Gilberto Sassi</p> ]]></description>
+  <category>Ciência de Dados</category>
+  <category>Aplicações de Regressão Logística</category>
+  <category>Estatística</category>
+  <category>Aprendizagem supervisionada</category>
+  <guid>https://cienciadedados.quarto.pub/paginas/material/2024/maio/aplicacoes-regressao-logistica.html</guid>
+  <pubDate>Tue, 28 May 2024 03:00:00 GMT</pubDate>
+  <media:content url="https://cienciadedados.quarto.pub/assets/logo_projeto.png" medium="image" type="image/png" height="151" width="144"/>
+</item>
+<item>
+  <title>R para Ciência de Dados: Regressão Linear Simples e Múltipla</title>
+  <dc:creator>Carolina Costa Mota Paraíba</dc:creator>
+  <link>https://cienciadedados.quarto.pub/paginas/material/2024/abril/regressao-linear.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="slides" class="level2">
+<h2 class="anchored" data-anchor-id="slides">Slides</h2>
+<p><a href="aula_rls.pdf" target="_blank">aula_rls.pdf</a><br> <a href="aula_rlm.pdf" target="_blank">aula_rlm.pdf</a></p>
+</section>
+<section id="dados" class="level2">
+<h2 class="anchored" data-anchor-id="dados">Dados</h2>
+<p><a href="dados_rls.xlsx">dados_rls.xlsx</a><br> <a href="dados_rlm.xlsx">dados_rlm.xlsx</a><br> <a href="mtcarros.xlsx">mtcarros.xlsx</a></p>
+</section>
+<section id="código-da-sala-de-aula" class="level2">
+<h2 class="anchored" data-anchor-id="código-da-sala-de-aula">Código da sala de aula</h2>
+<p>O código da sala de aula está em <a href="https://codeshare.io/9bjkmg" target="_blank">codeshare.io/9bjkmg</a>.</p>
+</section>
+<section id="r-e-rstudio" class="level2">
+<h2 class="anchored" data-anchor-id="r-e-rstudio"><code>R</code> e <code>Rstudio</code></h2>
+<p>Neste curso, a IDE vamos utilizar é o <a href="https://posit.co/downloads/" target="_blank"><code>RStudio</code></a>. Outras opções populares em ciência de dados são o <a href="https://code.visualstudio.com/Download" target="_blank"><code>VScode</code></a> da Microsoft e <a href="https://jupyter.org/install" target="_blank"><code>JupyterLab</code></a>, caso você tenha familiaridade ou já trabalhe com este editores sinta a vontade para usá-los.</p>
+<p>Caso você não queria ou não possa realizar instalações em seu computador, recomendamos que você use as plataformas <a href="https://colab.research.google.com/" target="_blank">Google Colaboratory</a> e/ou <a href="https://posit.cloud" target="_blank">Posit Cloud</a>. Recomendamos o uso da plataforma <a href="https://posit.cloud" target="_blank">Posit Cloud</a> pelo mesmo estilo e aspecto visual do aplicativo <a href="https://posit.co/downloads/" target="_blank"><code>RStudio</code></a>.</p>
+<section id="instalação--r" class="level3">
+<h3 class="anchored" data-anchor-id="instalação--r">Instalação -<code>R</code></h3>
+<p>Para instalar o <code>R</code> em seu computador, basta seguir as instruções em <a href="https://cran.r-project.org/">cran.r-project.org</a>. É necessário que você instale a versão 4.1 ou superior do R.</p>
+</section>
+<section id="instalação---rstudio" class="level3">
+<h3 class="anchored" data-anchor-id="instalação---rstudio">Instalação - <code>RStudio</code></h3>
+<p>Depois de ter instalado o R, siga as instruções de instalação em <a href="https://posit.co/downloads/">posit.co/downloads</a>.</p>
+<hr>
+
+
+</section>
+</section>
+
+<p>© 2024 <strong><code>R</code> para Ciência de Dados <br>🖤</strong> by Carolina Paraíba e Gilberto Sassi</p> ]]></description>
+  <category>Ciência de Dados</category>
+  <category>Estatística descritiva</category>
+  <category>Regressão Linear Simples</category>
+  <category>Regressão Linear Múltipla</category>
+  <category>Regressão Linear</category>
+  <category>Apredizagem Supervisionada</category>
+  <guid>https://cienciadedados.quarto.pub/paginas/material/2024/abril/regressao-linear.html</guid>
+  <pubDate>Fri, 19 Apr 2024 03:00:00 GMT</pubDate>
+  <media:content url="https://cienciadedados.quarto.pub/assets/logo_projeto.png" medium="image" type="image/png" height="151" width="144"/>
+</item>
+<item>
+  <title>R para Ciência de Dados: Exploração e Visualização de Dados</title>
+  <dc:creator>Gilberto Pereira Sassi</dc:creator>
+  <link>https://cienciadedados.quarto.pub/paginas/material/2024/marco/exploracao-visualizacao.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="slides" class="level2">
+<h2 class="anchored" data-anchor-id="slides">Slides</h2>
+<p><a href="slides.pdf" target="_blank">slides.pdf</a></p>
+</section>
+<section id="dados" class="level2">
+<h2 class="anchored" data-anchor-id="dados">Dados</h2>
+<p><a href="arquivos.zip" target="_blank">arquivos.zip</a></p>
+</section>
+<section id="dados---enem" class="level2">
+<h2 class="anchored" data-anchor-id="dados---enem">Dados - ENEM</h2>
+<p>Dicionário de dados: <a href="cidades-enem-2022/dicionario.xlsx">dicionario.xlsx</a>.</p>
+<div class="cell">
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<caption>Enem por cidade nos formatos .csv e .xlsx com id dos participantes.</caption>
+<thead>
+<tr class="header">
+<th style="text-align: right;">id</th>
+<th style="text-align: left;">nome</th>
+<th style="text-align: left;">csv</th>
+<th style="text-align: left;">xlsx</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Bárbara Carina Dos Santos Gouveia</td>
+<td style="text-align: left;"><a href="cidades-enem-2022/csv/belem.csv">belem.csv</a></td>
+<td style="text-align: left;"><a href="cidades-enem-2022/xlsx/belem.xlsx">belem.xlsx</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Bruno Bueno Baldez</td>
+<td style="text-align: left;"><a href="cidades-enem-2022/csv/joao_pessoa.csv">joao_pessoa.csv</a></td>
+<td style="text-align: left;"><a href="cidades-enem-2022/xlsx/joao_pessoa.xlsx">joao_pessoa.xlsx</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Davi Franco Rego</td>
+<td style="text-align: left;"><a href="cidades-enem-2022/csv/curitiba.csv">curitiba.csv</a></td>
+<td style="text-align: left;"><a href="cidades-enem-2022/xlsx/curitiba.xlsx">curitiba.xlsx</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Débora Christina Zuanny Martins Da Silva</td>
+<td style="text-align: left;"><a href="cidades-enem-2022/csv/rio_de_janeiro.csv">rio_de_janeiro.csv</a></td>
+<td style="text-align: left;"><a href="cidades-enem-2022/xlsx/rio_de_janeiro.xlsx">rio_de_janeiro.xlsx</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">Desirée Vitória Vigas Melo</td>
+<td style="text-align: left;"><a href="cidades-enem-2022/csv/sao_goncalo.csv">sao_goncalo.csv</a></td>
+<td style="text-align: left;"><a href="cidades-enem-2022/xlsx/sao_goncalo.xlsx">sao_goncalo.xlsx</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">Edson Souza Monteiro Junior</td>
+<td style="text-align: left;"><a href="cidades-enem-2022/csv/sao_paulo.csv">sao_paulo.csv</a></td>
+<td style="text-align: left;"><a href="cidades-enem-2022/xlsx/sao_paulo.xlsx">sao_paulo.xlsx</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">Érdeson Soares Farias</td>
+<td style="text-align: left;"><a href="cidades-enem-2022/csv/brasilia.csv">brasilia.csv</a></td>
+<td style="text-align: left;"><a href="cidades-enem-2022/xlsx/brasilia.xlsx">brasilia.xlsx</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">Harlan Rodrigo Ferreira Da Silva</td>
+<td style="text-align: left;"><a href="cidades-enem-2022/csv/fortaleza.csv">fortaleza.csv</a></td>
+<td style="text-align: left;"><a href="cidades-enem-2022/xlsx/fortaleza.xlsx">fortaleza.xlsx</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">Hellen Santana Da Silva Dos Santos</td>
+<td style="text-align: left;"><a href="cidades-enem-2022/csv/aracaju.csv">aracaju.csv</a></td>
+<td style="text-align: left;"><a href="cidades-enem-2022/xlsx/aracaju.xlsx">aracaju.xlsx</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">Jequeson Sales Da Cruz</td>
+<td style="text-align: left;"><a href="cidades-enem-2022/csv/sao_luis.csv">sao_luis.csv</a></td>
+<td style="text-align: left;"><a href="cidades-enem-2022/xlsx/sao_luis.xlsx">sao_luis.xlsx</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">João Luis Da Cruz De Souza</td>
+<td style="text-align: left;"><a href="cidades-enem-2022/csv/goiania.csv">goiania.csv</a></td>
+<td style="text-align: left;"><a href="cidades-enem-2022/xlsx/goiania.xlsx">goiania.xlsx</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">João Pedro De Brito Moreira Silva</td>
+<td style="text-align: left;"><a href="cidades-enem-2022/csv/porto_alegre.csv">porto_alegre.csv</a></td>
+<td style="text-align: left;"><a href="cidades-enem-2022/xlsx/porto_alegre.xlsx">porto_alegre.xlsx</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">Juliana De Souza Coutinho</td>
+<td style="text-align: left;"><a href="cidades-enem-2022/csv/macapa.csv">macapa.csv</a></td>
+<td style="text-align: left;"><a href="cidades-enem-2022/xlsx/macapa.xlsx">macapa.xlsx</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">Lorena Mara Santos Da Silva</td>
+<td style="text-align: left;"><a href="cidades-enem-2022/csv/cuiaba.csv">cuiaba.csv</a></td>
+<td style="text-align: left;"><a href="cidades-enem-2022/xlsx/cuiaba.xlsx">cuiaba.xlsx</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">Lucas Souza Reis Cintra</td>
+<td style="text-align: left;"><a href="cidades-enem-2022/csv/recife.csv">recife.csv</a></td>
+<td style="text-align: left;"><a href="cidades-enem-2022/xlsx/recife.xlsx">recife.xlsx</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">Lucas Bispo Dos Santos Castro</td>
+<td style="text-align: left;"><a href="cidades-enem-2022/csv/uberlandia.csv">uberlandia.csv</a></td>
+<td style="text-align: left;"><a href="cidades-enem-2022/xlsx/uberlandia.xlsx">uberlandia.xlsx</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">Luisy Rebeca Paixão Rocha</td>
+<td style="text-align: left;"><a href="cidades-enem-2022/csv/campo_grande.csv">campo_grande.csv</a></td>
+<td style="text-align: left;"><a href="cidades-enem-2022/xlsx/campo_grande.xlsx">campo_grande.xlsx</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">Marcos Santos Da Silva</td>
+<td style="text-align: left;"><a href="cidades-enem-2022/csv/guarulhos.csv">guarulhos.csv</a></td>
+<td style="text-align: left;"><a href="cidades-enem-2022/xlsx/guarulhos.xlsx">guarulhos.xlsx</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">Maria Das Graças Fechine Pimentel</td>
+<td style="text-align: left;"><a href="cidades-enem-2022/csv/natal.csv">natal.csv</a></td>
+<td style="text-align: left;"><a href="cidades-enem-2022/xlsx/natal.xlsx">natal.xlsx</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">Maria Dolores Ribeiro Orge</td>
+<td style="text-align: left;"><a href="cidades-enem-2022/csv/niteroi.csv">niteroi.csv</a></td>
+<td style="text-align: left;"><a href="cidades-enem-2022/xlsx/niteroi.xlsx">niteroi.xlsx</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">21</td>
+<td style="text-align: left;">Marta Cristina Penha Da Cunha</td>
+<td style="text-align: left;"><a href="cidades-enem-2022/csv/belo_horizonte.csv">belo_horizonte.csv</a></td>
+<td style="text-align: left;"><a href="cidades-enem-2022/xlsx/belo_horizonte.xlsx">belo_horizonte.xlsx</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">Miriam Da Silva Mamede</td>
+<td style="text-align: left;"><a href="cidades-enem-2022/csv/feira_de_santana.csv">feira_de_santana.csv</a></td>
+<td style="text-align: left;"><a href="cidades-enem-2022/xlsx/feira_de_santana.xlsx">feira_de_santana.xlsx</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">23</td>
+<td style="text-align: left;">Ney Cristian Amaral Boa Sorte</td>
+<td style="text-align: left;"><a href="cidades-enem-2022/csv/manaus.csv">manaus.csv</a></td>
+<td style="text-align: left;"><a href="cidades-enem-2022/xlsx/manaus.xlsx">manaus.xlsx</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">Quiara Lovatti Alves</td>
+<td style="text-align: left;"><a href="cidades-enem-2022/csv/maceio.csv">maceio.csv</a></td>
+<td style="text-align: left;"><a href="cidades-enem-2022/xlsx/maceio.xlsx">maceio.xlsx</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">25</td>
+<td style="text-align: left;">Sérgio De Oliveira Amado Machado</td>
+<td style="text-align: left;"><a href="cidades-enem-2022/csv/campina_grande.csv">campina_grande.csv</a></td>
+<td style="text-align: left;"><a href="cidades-enem-2022/xlsx/campina_grande.xlsx">campina_grande.xlsx</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">26</td>
+<td style="text-align: left;">–</td>
+<td style="text-align: left;"><a href="cidades-enem-2022/csv/teresina.csv">teresina.csv</a></td>
+<td style="text-align: left;"><a href="cidades-enem-2022/xlsx/teresina.xlsx">teresina.xlsx</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">27</td>
+<td style="text-align: left;">–</td>
+<td style="text-align: left;"><a href="cidades-enem-2022/csv/ananindeua.csv">ananindeua.csv</a></td>
+<td style="text-align: left;"><a href="cidades-enem-2022/xlsx/ananindeua.xlsx">ananindeua.xlsx</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">28</td>
+<td style="text-align: left;">–</td>
+<td style="text-align: left;"><a href="cidades-enem-2022/csv/ribeirao_preto.csv">ribeirao_preto.csv</a></td>
+<td style="text-align: left;"><a href="cidades-enem-2022/xlsx/ribeirao_preto.xlsx">ribeirao_preto.xlsx</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">29</td>
+<td style="text-align: left;">–</td>
+<td style="text-align: left;"><a href="cidades-enem-2022/csv/rio_branco.csv">rio_branco.csv</a></td>
+<td style="text-align: left;"><a href="cidades-enem-2022/xlsx/rio_branco.xlsx">rio_branco.xlsx</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">30</td>
+<td style="text-align: left;">–</td>
+<td style="text-align: left;"><a href="cidades-enem-2022/csv/campinas.csv">campinas.csv</a></td>
+<td style="text-align: left;"><a href="cidades-enem-2022/xlsx/campinas.xlsx">campinas.xlsx</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section id="r-e-rstudio" class="level2">
+<h2 class="anchored" data-anchor-id="r-e-rstudio"><code>R</code> e <code>Rstudio</code></h2>
+<p>Neste curso, a IDE vamos utilizar é o <a href="https://posit.co/downloads/" target="_blank"><code>RStudio</code></a>. Outras opções populares em ciência de dados são o <a href="https://code.visualstudio.com/Download" target="_blank"><code>VScode</code></a> da Microsoft e <a href="https://jupyter.org/install" target="_blank"><code>JupyterLab</code></a>, caso você tenha familiaridade ou já trabalhe com este editores sinta a vontade para usá-los.</p>
+<p>Caso você não queria ou não possa realizar instalações em seu computador, recomendamos que você use as plataformas <a href="https://colab.research.google.com/" target="_blank">Google Colaboratory</a> e/ou <a href="https://posit.cloud" target="_blank">Posit Cloud</a>. Recomendamos o uso da plataforma <a href="https://posit.cloud" target="_blank">Posit Cloud</a> pelo mesmo estilo e aspecto visual do aplicativo <a href="https://posit.co/downloads/" target="_blank"><code>RStudio</code></a>.</p>
+<section id="instalação--r" class="level3">
+<h3 class="anchored" data-anchor-id="instalação--r">Instalação -<code>R</code></h3>
+<p>Para instalar o <code>R</code> em seu computador, basta seguir as instruções em <a href="https://cran.r-project.org/">cran.r-project.org</a>. É necessário que você instale a versão 4.1 ou superior do R.</p>
+</section>
+<section id="instalação---rstudio" class="level3">
+<h3 class="anchored" data-anchor-id="instalação---rstudio">Instalação - <code>RStudio</code></h3>
+<p>Depois de ter instalado o R, siga as instruções de instalação em <a href="https://posit.co/downloads/">posit.co/downloads</a>.</p>
+<hr>
+
+
+</section>
+</section>
+
+<p>© 2024 <strong><code>R</code> para Ciência de Dados <br>🖤</strong> by Carolina Paraíba e Gilberto Sassi</p> ]]></description>
+  <category>Ciência de Dados</category>
+  <category>Estatística descritiva</category>
+  <category>Exploração e visualização de dados</category>
+  <category>Medidas de resumo</category>
+  <category>Gráfico de barras</category>
+  <category>Histograma</category>
+  <guid>https://cienciadedados.quarto.pub/paginas/material/2024/marco/exploracao-visualizacao.html</guid>
+  <pubDate>Sat, 16 Mar 2024 03:00:00 GMT</pubDate>
+  <media:content url="https://cienciadedados.quarto.pub/assets/logo_projeto.png" medium="image" type="image/png" height="151" width="144"/>
+</item>
+<item>
+  <title>R para Ciência de Dados: Exploração e Visualização de Dados</title>
+  <dc:creator>Carolina Costa Mota Paraíba</dc:creator>
+  <link>https://cienciadedados.quarto.pub/paginas/material/2023/exploracao-visualizacao/exploracao-visualizacao.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="avisos" class="level1" style="text-align:justify">
+<h1>Avisos</h1>
+<p>Infelizmente, a segunda aula que seria dia 03/11/2023 está cancelada, pois o campus Ondina/Federação da UFBA estará fechado por causa do feriado prolongado de Finados. <strong>Então, a segunda aula será remarcada para o dia 10/11/2023.</strong></p>
+<p><strong>Lembrando que dia 27/10/2023 não teremos aula.</strong></p>
+<hr>
+<section id="slides" class="level2">
+<h2 class="anchored" data-anchor-id="slides">Slides</h2>
+<p><a href="aula.pdf" target="_blank">slides</a></p>
+</section>
+<section id="conjunto-de-dados" class="level2">
+<h2 class="anchored" data-anchor-id="conjunto-de-dados">Conjunto de Dados</h2>
+<p><a href="economia_us.xlsx">economia_us.xlsx</a><br> <a href="estudantes.xlsx">estudantes.xlsx</a><br> <a href="renda_vida.xlsx">renda_vida.xlsx</a></p>
+</section>
+<section id="código-das-aulas" class="level2">
+<h2 class="anchored" data-anchor-id="código-das-aulas">Código das aulas</h2>
+<p><a href="https://gist.github.com/cienciadedados-ime/f7bb4abbcbe096d4030efa861b67baa3" target="_blank">Código apresentado durante as aulas.</a></p>
+</section>
+<section id="instalação-do-r-e-do-rstudio" class="level2">
+<h2 class="anchored" data-anchor-id="instalação-do-r-e-do-rstudio">Instalação do <code>R</code> e do <code>RStudio</code></h2>
+<p>Neste curso, a IDE vamos utilizar é o&nbsp;<code>RStudio</code>. Outras opções populares em ciência de dados são o <code>VScode</code> da Microsoft e <code>JupyterLab,</code> caso você tenha familiaridade ou já trabalhe com este editores sinta a vontade para usá-los.</p>
+<p>Caso você não queria ou não possa realizar instalações em seu computador, recomendamos que você use as plataformas <em>Google Colaboratory</em> <a href="https://colab.to/r">colab.to/r</a> e/ou <em>RStudio Cloud</em> <a href="https://posit.cloud/">posit.cloud</a>. Recomendamos o uso da plataforma <em>RStudio Cloud</em> pelo mesmo estilo e aspecto visual do aplicativo <code>RStudio</code>.</p>
+</section>
+<section id="para-instalar-o-r" class="level2">
+<h2 class="anchored" data-anchor-id="para-instalar-o-r">Para instalar o <code>R</code></h2>
+<p>Para instalar o <code>R</code> em seu computador, basta seguir as instruções em <a href="https://cran.r-project.org/">cran.r-project.org</a>. É necessário que você instale a versão 4.1 ou superior do <code>R</code>.</p>
+</section>
+<section id="para-instalar-o-rstudio" class="level2">
+<h2 class="anchored" data-anchor-id="para-instalar-o-rstudio">Para instalar o <code>RStudio</code></h2>
+<p>Depois de ter instalado o <code>R</code>, siga as instruções de instalação em <a href="https://posit.co/downloads/">posit.co/downloads</a>.</p>
+</section>
+</section>
+<hr>
+
+
+
+<p>© 2024 <strong><code>R</code> para Ciência de Dados <br>🖤</strong> by Carolina Paraíba e Gilberto Sassi</p> ]]></description>
+  <category>Ciência de Dados</category>
+  <category>Estatística descritiva</category>
+  <category>Exploração e visualização de dados</category>
+  <category>Medidas de resumo</category>
+  <category>Gráfico de barras</category>
+  <category>Histograma</category>
+  <guid>https://cienciadedados.quarto.pub/paginas/material/2023/exploracao-visualizacao/exploracao-visualizacao.html</guid>
+  <pubDate>Fri, 20 Oct 2023 03:00:00 GMT</pubDate>
+  <media:content url="https://cienciadedados.quarto.pub/assets/logo_projeto.png" medium="image" type="image/png" height="151" width="144"/>
+</item>
+<item>
+  <title>R para Ciência de Dados: Introdução à programação em R</title>
+  <dc:creator>Gilberto Pereira Sassi</dc:creator>
+  <link>https://cienciadedados.quarto.pub/paginas/material/2023/programacao/programacao.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<div style="text-align:justify">
+<section id="slides" class="level2">
+<h2 class="anchored" data-anchor-id="slides">Slides</h2>
+<p><a href="programacao.pdf">Slides</a></p>
+</section>
+<section id="conjunto-de-dados" class="level2">
+<h2 class="anchored" data-anchor-id="conjunto-de-dados">Conjunto de Dados</h2>
+<p><a href="arquivos.zip"><code>arquivos.zip</code></a></p>
+</section>
+<section id="código-de-sala-de-aula" class="level2">
+<h2 class="anchored" data-anchor-id="código-de-sala-de-aula">Código de sala de aula</h2>
+<p><strong>NÃO RECORTE NEM APAGUE NADA DESTE ARQUIVO</strong></p>
+<p><strong>APENAS COPIE O CÓDIGO</strong></p>
+<p><a href="https://codeshare.io/r9m9g6" target="_blank"><code>https://codeshare.io/r9m9g6</code></a></p>
+</section>
+<section id="instalação-do-r-e-do-rstudio" class="level2">
+<h2 class="anchored" data-anchor-id="instalação-do-r-e-do-rstudio">Instalação do <code>R</code> e do <code>RStudio</code></h2>
+<p>Neste curso, a IDE vamos utilizar é o&nbsp;<code>RStudio</code>. Outras opções populares em ciência de dados são o <code>VScode</code> da Microsoft e <code>JupyterLab,</code> caso você tenha familiaridade ou já trabalhe com este editores sinta a vontade para usá-los.</p>
+<p>Caso você não queria ou não possa realizar instalações em seu computador, recomendamos que você use as plataformas <em>Google Colaboratory</em> <a href="https://colab.to/r">colab.to/r</a> e/ou <em>RStudio Cloud</em> <a href="https://posit.cloud/">posit.cloud</a>. Recomendamos o uso da plataforma <em>RStudio Cloud</em> pelo mesmo estilo e aspecto visual do aplicativo <code>RStudio</code>.</p>
+</section>
+<section id="para-instalar-o-r" class="level2">
+<h2 class="anchored" data-anchor-id="para-instalar-o-r">Para instalar o <code>R</code></h2>
+<p>Para instalar o <code>R</code> em seu computador, basta seguir as instruções em <a href="https://cran.r-project.org/">cran.r-project.org</a>. É necessário que você instale a versão 4.1 ou superior do <code>R</code>.</p>
+</section>
+<section id="para-instalar-o-rstudio" class="level2">
+<h2 class="anchored" data-anchor-id="para-instalar-o-rstudio">Para instalar o <code>RStudio</code></h2>
+<p>Depois de ter instalado o <code>R</code>, siga as instruções de instalação em <a href="https://posit.co/downloads/">posit.co/downloads</a>.</p>
+</section>
+</div>
+<hr>
+
+
+
+<p>© 2024 <strong><code>R</code> para Ciência de Dados <br>🖤</strong> by Carolina Paraíba e Gilberto Sassi</p> ]]></description>
+  <category>Ciência de Dados</category>
+  <category>Linguagem &lt;code&gt;R&lt;/code&gt;</category>
+  <category>Laços de repetição</category>
+  <category>Controle de Fluxo</category>
+  <category>Pacote &lt;code&gt;purrr&lt;/code&gt;</category>
+  <guid>https://cienciadedados.quarto.pub/paginas/material/2023/programacao/programacao.html</guid>
+  <pubDate>Fri, 15 Sep 2023 03:00:00 GMT</pubDate>
+  <media:content url="https://cienciadedados.quarto.pub/assets/logo_projeto.png" medium="image" type="image/png" height="151" width="144"/>
+</item>
+<item>
+  <title>R para Ciência de Dados: Regressão Logística</title>
+  <dc:creator>Carolina Costa Mota Paraíba</dc:creator>
+  <link>https://cienciadedados.quarto.pub/paginas/material/2023/regressao-logistica/regressao-logistica.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<div style="text-align:justify">
+<section id="slides" class="level2">
+<h2 class="anchored" data-anchor-id="slides">Slides</h2>
+<p><a href="aula.pdf" target="_blank">Aula</a></p>
+</section>
+<section id="conjunto-de-dados" class="level2">
+<h2 class="anchored" data-anchor-id="conjunto-de-dados">Conjunto de Dados</h2>
+<p><a href="dados_cdrl.xlsx" target="_blank">dados_cdrl</a></p>
+</section>
+<section id="instalação-do-r-e-do-rstudio" class="level2">
+<h2 class="anchored" data-anchor-id="instalação-do-r-e-do-rstudio">Instalação do <code>R</code> e do <code>RStudio</code></h2>
+<p>Neste curso, a IDE vamos utilizar é o&nbsp;<code>RStudio</code>. Outras opções populares em ciência de dados são o <code>VScode</code> da Microsoft e <code>JupyterLab,</code> caso você tenha familiaridade ou já trabalhe com este editores sinta a vontade para usá-los.</p>
+<p>Caso você não queria ou não possa realizar instalações em seu computador, recomendamos que você use as plataformas <em>Google Colaboratory</em> <a href="https://colab.to/r">colab.to/r</a> e/ou <em>RStudio Cloud</em> <a href="https://posit.cloud/">posit.cloud</a>. Recomendamos o uso da plataforma <em>RStudio Cloud</em> pelo mesmo estilo e aspecto visual do aplicativo <code>RStudio</code>.</p>
+</section>
+<section id="para-instalar-o-r" class="level2">
+<h2 class="anchored" data-anchor-id="para-instalar-o-r">Para instalar o <code>R</code></h2>
+<p>Para instalar o <code>R</code> em seu computador, basta seguir as instruções em <a href="https://cran.r-project.org/">cran.r-project.org</a>. É necessário que você instale a versão 4.1 ou superior do <code>R</code>.</p>
+</section>
+<section id="para-instalar-o-rstudio" class="level2">
+<h2 class="anchored" data-anchor-id="para-instalar-o-rstudio">Para instalar o <code>RStudio</code></h2>
+<p>Depois de ter instalado o <code>R</code>, siga as instruções de instalação em <a href="https://posit.co/downloads/">posit.co/downloads</a>.</p>
+</section>
+</div>
+<hr>
+
+
+
+<p>© 2024 <strong><code>R</code> para Ciência de Dados <br>🖤</strong> by Carolina Paraíba e Gilberto Sassi</p> ]]></description>
+  <category>Ciência de Dados</category>
+  <category>Estatística</category>
+  <category>Modelagem Estatística</category>
+  <category>Modelos Lineares Generalizados</category>
+  <category>Regressão Logística</category>
+  <guid>https://cienciadedados.quarto.pub/paginas/material/2023/regressao-logistica/regressao-logistica.html</guid>
+  <pubDate>Fri, 18 Aug 2023 03:00:00 GMT</pubDate>
+  <media:content url="https://cienciadedados.quarto.pub/assets/logo_projeto.png" medium="image" type="image/png" height="151" width="144"/>
+</item>
+<item>
+  <title>Ciência de Dados para Docentes usando R</title>
+  <dc:creator>Carolina Costa Mota Paraíba</dc:creator>
+  <link>https://cienciadedados.quarto.pub/paginas/material/2023/cd-docentes/cd-docentes.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<div style="text-align:justify">
+<section id="slides" class="level2">
+<h2 class="anchored" data-anchor-id="slides">Slides</h2>
+<p><a href="aula.pdf" target="_blank">aula</a></p>
+</section>
+<section id="conjuntos-de-dados" class="level2">
+<h2 class="anchored" data-anchor-id="conjuntos-de-dados">Conjuntos de Dados</h2>
+<p><a href="estudantes.xlsx" target="_blank">estudantes</a></p>
+<p><a href="economia_us.xlsx" target="_blank">economia_us</a></p>
+<p><a href="renda_vida.xlsx" target="_blank">renda_vida</a></p>
+</section>
+<section id="instalação-do-r-e-do-rstudio" class="level2">
+<h2 class="anchored" data-anchor-id="instalação-do-r-e-do-rstudio">Instalação do <code>R</code> e do <code>RStudio</code></h2>
+<p>Neste curso, a IDE vamos utilizar é o&nbsp;<code>RStudio</code>. Outras opções populares em ciência de dados são o <code>VScode</code> da Microsoft e <code>JupyterLab,</code> caso você tenha familiaridade ou já trabalhe com este editores sinta a vontade para usá-los.</p>
+<p>Caso você não queria ou não possa realizar instalações em seu computador, recomendamos que você use as plataformas <em>Google Colaboratory</em> <a href="https://colab.to/r">colab.to/r</a> e/ou <em>RStudio Cloud</em> <a href="https://posit.cloud/">posit.cloud</a>. Recomendamos o uso da plataforma <em>RStudio Cloud</em> pelo mesmo estilo e aspecto visual do aplicativo <code>RStudio</code>.</p>
+</section>
+<section id="para-instalar-o-r" class="level2">
+<h2 class="anchored" data-anchor-id="para-instalar-o-r">Para instalar o <code>R</code></h2>
+<p>Para instalar o <code>R</code> em seu computador, basta seguir as instruções em <a href="https://cran.r-project.org/">cran.r-project.org</a>. É necessário que você instale a versão 4.1 ou superior do <code>R</code>.</p>
+</section>
+<section id="para-instalar-o-rstudio" class="level2">
+<h2 class="anchored" data-anchor-id="para-instalar-o-rstudio">Para instalar o <code>RStudio</code></h2>
+<p>Depois de ter instalado o <code>R</code>, siga as instruções de instalação em <a href="https://posit.co/downloads/">posit.co/downloads</a>.</p>
+</section>
+</div>
+<hr>
+
+
+
+<p>© 2024 <strong><code>R</code> para Ciência de Dados <br>🖤</strong> by Carolina Paraíba e Gilberto Sassi</p> ]]></description>
+  <category>Ciência de Dados</category>
+  <category>Estatística descritiva</category>
+  <category>Exploração e visualização de dados</category>
+  <category>Medidas de resumo</category>
+  <category>Gráfico de barras</category>
+  <category>Docentes</category>
+  <category>Histograma</category>
+  <guid>https://cienciadedados.quarto.pub/paginas/material/2023/cd-docentes/cd-docentes.html</guid>
+  <pubDate>Wed, 26 Jul 2023 03:00:00 GMT</pubDate>
+  <media:content url="https://cienciadedados.quarto.pub/assets/logo_projeto.png" medium="image" type="image/png" height="151" width="144"/>
+</item>
+<item>
+  <title>R para Ciência de Dados: Quarto</title>
+  <dc:creator>Gilberto Pereira Sassi</dc:creator>
+  <link>https://cienciadedados.quarto.pub/paginas/material/2023/quarto/quarto.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<div style="text-align:justify">
+<p>Página do curso do primeiro semestre de 2023: <a href="https://rmarkdown.simple.ink">rmarkdown.simple.ink</a></p>
+</div>
+<hr>
+
+
+
+<p>© 2024 <strong><code>R</code> para Ciência de Dados <br>🖤</strong> by Carolina Paraíba e Gilberto Sassi</p> ]]></description>
+  <category>Ciência de Dados</category>
+  <category>Estatística</category>
+  <category>Linguagem &lt;code&gt;R&lt;/code&gt;</category>
+  <category>Markdown</category>
+  <category>Quarto</category>
+  <guid>https://cienciadedados.quarto.pub/paginas/material/2023/quarto/quarto.html</guid>
+  <pubDate>Fri, 07 Jul 2023 03:00:00 GMT</pubDate>
+  <media:content url="https://cienciadedados.quarto.pub/assets/logo_projeto.png" medium="image" type="image/png" height="151" width="144"/>
+</item>
+</channel>
+</rss>

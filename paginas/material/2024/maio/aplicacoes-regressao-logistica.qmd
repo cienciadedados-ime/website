@@ -1,0 +1,49 @@
+---
+title: "`R` para Ciência de Dados: Aplicações de Regressão Logística"
+author: "Thiago Gerolamo"
+date: "2024/05/28"
+categories:
+  - Ciência de Dados
+  - Aplicações de Regressão Logística
+  - Estatística
+  - Aprendizagem supervisionada
+---
+
+## Slides
+
+[slides.pdf](modelo_propensao.pdf){target="_blank"}
+
+## Dados
+
+[base_dados_aluno.xlsx](base_dados_aluno.xlsx){target="_blank"}<br>
+[base_dados_profesor.xlsx](base_dados_profesor.xlsx){target="_blank"}<br>
+[base_modelo_final.xlsx](https://docs.google.com/spreadsheets/d/1tfryKzlOX9nXjmAIP8qnJlNGEoluzN4bv9KPCx4mRMA/edit?usp=sharing){target="_blank"}<br>
+
+### Validação e monitoramento
+
+[validacao_monitoramento.xlsx](validacao_monitoramento.xlsx)
+
+## Código `R`
+
+[code.R](code.R)
+
+### `codeshare.io`
+
+[codeshare.io/MkbMRJ](https://codeshare.io/MkbMRJ){target="_blank"}
+
+
+## `R` e `Rstudio`
+
+Neste curso, a IDE vamos utilizar é o [`RStudio`](https://posit.co/downloads/){target="_blank"}. Outras opções populares em ciência de dados são o [`VScode`](https://code.visualstudio.com/Download){target="_blank"} da Microsoft e [`JupyterLab`](https://jupyter.org/install){target="_blank"}, caso você tenha familiaridade ou já trabalhe com este editores sinta a vontade para usá-los.
+
+Caso você não queria ou não possa realizar instalações em seu computador, recomendamos que você use as plataformas [Google Colaboratory](https://colab.research.google.com/){target="_blank"} e/ou [Posit Cloud](https://posit.cloud){target="_blank"}. Recomendamos o uso da plataforma [Posit Cloud](https://posit.cloud){target="_blank"} pelo mesmo estilo e aspecto visual do aplicativo [`RStudio`](https://posit.co/downloads/){target="_blank"}.
+
+### Instalação -`R`
+
+Para instalar o `R` em seu computador, basta seguir as instruções em [cran.r-project.org](https://cran.r-project.org/). É necessário que você instale a versão 4.1 ou superior do R.
+
+### Instalação - `RStudio`
+
+Depois de ter instalado o R, siga as instruções de instalação em [posit.co/downloads](https://posit.co/downloads/).
+
+---

@@ -1,0 +1,52 @@
+---
+title: "Ciência de Dados para Docentes usando o R"
+---
+
+# Resumo
+
+O curso irá compartilhar o conhecimento de análise estatística de dados usando a linguagem R numa interação dialógica da comunidade acadêmica com a sociedade por meio da troca de conhecimentos. A ação irá aproximar a academia da comunidade, popularizando a ciência Estatística e trazendo para dentro da universidade a experiência e a grande demanda que profissionais têm de usar Estatística e Ciência de Dados. O objetivo do curso é apresentar a linguagem R, e os princípios de exploração e visualização de dados utilizando o framework tidyverse especialmente os pacotes ggplot2 e dplyr, para docentes de diferentes áreas de conhecimento, do ensino fundamental, médio e superior, que fazem uso de análise de dados. O curso irá apresentar a linguagem R aos professores, que poderá servir como ferramenta didática, com a vantagem de ser um programa de código aberto e gratuito. O curso terá 12 horas com 3 encontros presenciais de quatro horas nos laboratórios do IME-UFBA e será gratuito.
+
+# Área
+
+De acordo com o disposto na Política Nacional de Extensão, este Projeto de Extensão está vinculado às áreas temáticas descritas a seguir.
+
+- **Linha Programática:** Educação profissional;
+- **Área(s) de Conhecimento(s):** Ciências Exatas e da Terra;
+- **Área(s) Temáticas(s):** Tecnologia.
+
+# Coordenação
+
+- Professor Doutor Gilberto Pereira Sassi, Departamento de Estatística, Instituto de Matemática e Estatística, Universidade Federal da Bahia.
+- Professora Doutora Carolina Costa Mota Paraíba, Departamento de Estatística, Instituto de Matemática e Estatística, Universidade Federal da Bahia.
+
+Justificativa da necessidade do segundo coordenador: a Profa. Carolina é responsável por coordenar a ampla divulgação do curso entre os profissionais que fazem uso de análise estatística de dados, o processo de inscrição, a construção do site do curso, a elaboração de material didático e manutenção das bases de dados usadas neste curso.
+
+# Universidade universitária
+
+Instituto de Matemática e Estatística da Universidade Federal da Bahia.
+
+# Público alvo
+
+Profissionais que usam análises estatísticas de dados.
+
+# Número esperado de participantes
+
+20
+
+# Local de realização
+
+Laboratório de ensino de informática do IME-UFBA.
+
+# Metodologia
+
+Metodologia do curso será de aulas expositivas e práticas em laboratório de informática usando a linguagem R.
+
+# Conteúdo programático
+
+1. Apresentação da linguagem R;
+2. Apresentação da IDE `RStudio`
+3. Leitura de arquivos `.xlsx`, `.csv` e `.ods`
+4. Visualização de dados usando `ggplot2`
+5. Medidas de resumo usando o pacote `dplyr`
+
+---

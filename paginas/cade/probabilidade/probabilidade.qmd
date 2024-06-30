@@ -1,0 +1,118 @@
+---
+title: "O que é e como calcular probabilidade. "
+author: "Gilberto Pereira Sassi"
+date: "2023/12/01"
+image: dice.png
+categories:
+  - Ciência de Dados
+  - Probabilidade
+  - Estatística
+---
+
+Na natureza, existem dois tipos de fenômenos (ou experimentos): determinísticos e aleatórios. Os fenômenos determinísticos são aqueles que sabemos o resultado do fenômeno antes dele ter sido realizado. Por exemplo, imagine que o fenômeno seja soltar uma pedra de altura de 50 centímetros, então, usando os conhecimento de física que aprendemos no ensino básico, concluímos que essa pedra vai cair em direção ao chão e sabemos o resultado do fenômeno antes mesmo de ele ter sido realizado, e, consequentemente, este é um *fenômeno determinístico*. Por sua vez, os fenômenos aleatórios são aqueles que não conseguimos antever qual vai ser o resultado do fenômeno (ou experimento) antes dele ter sido realizado. Por exemplo, imagine que o fenômeno seja lançar um dado com seis faces: não sabemos qual das faces ficarão expostas para cima antes do lançamento do dado, e, consequentemente, este é um fenômeno aleatório.
+
+Apesar de não conseguirmos antever o resultado de um fenômeno aleatório, geralmente sabemos quais são os resultados possíveis. Por exemplo, no fenômeno aleatório que consiste no lançamento de dado de seis faces sabemos que os resultados possíveis são o conjunto dado por $\\{\mbox{face 1}, \mbox{face 2}, \mbox{face 3}, \mbox{face 4}, \mbox{face 5}, \mbox{face 6}\\}$. Chamamos este conjunto de todos os resultados do fenômeno aleatório de *espaço amostral* e o representamos pela letra maiúscula $\Omega$. Chamamos os subconjuntos do espaço amostral de *evento* e os representamos por letras maiúsculas do alfabeto latino. Apesar de não conseguirmos antecipar o resultado do fenômeno, podemos calcular a plausibilidade de um ponto de um *evento* ser o resultado do fenômeno. Chamamos esta *plausibilidade* de probabilidade [^2].
+
+## Como calcular ou encontrar probabilidade
+
+Vamos usar um pouquinho de notação matemática. Imagine que temos interesse em um fenômeno aleatório com espaço amostral $\Omega$. Seja $\mathcal{P}(\Omega)$ o [conjunto das partes](https://pt.wikipedia.org/wiki/Conjunto_de_partes) do espaço amostral, ou seja, o conjunto de todos os subconjuntos do espaço amostral. Queremos encontrar um [função](https://pt.wikipedia.org/wiki/Função_(matemática)) $P:\mathcal{P}(\Omega) \longrightarrow [0,1]$, e $P(A) \in [0,1]$ é a chance do resultado do fenômeno aleatório ser um ponto do evento $A \subset \Omega$[^1]. Chamamos essa função $P$ de *probabilidade*. Existem diversas formas de determinar, encontrar, estimar ou aproximar esta função, neste post vou citar três técnicas: *probabilidade frequentista*, *princípio da equiprobabilidade* e *probabilidade subjetiva*.
+
+### Probabilidade frequentista
+
+A ideia da probabilidade frequentista é bastante simples e é baseada no [empirismo](https://pt.wikipedia.org/wiki/Empirismo). Imagine que temos um fenômeno aleatório que podemos repetir quantas vezes quisermos. Se quisermos calcular a probabilidade do evento $A \in \mathcal{P}(\Omega)$, repetimos o fenômeno aleatório $N$ vezes ($N$ bem grande), e anotamos quantas vezes o resultado do fenômeno aleatório é um elemento do evento $A$: $n$. Então, a probabilidade do evento $A$ acontecer é a razão:
+$$
+P(A) = \dfrac{n}{N}.
+$$
+
+Com um exemplo tudo fica mais simples. Imagine que temos um dado simples de seis faces e não viciado, e lançamos esse dados $N=1.000.000$ de vezes[^3] e anotamos o número de vezes que cada face foi resultado do lançamento, conforme descrito na tabela abaixo.
+
+|Face do dado|Frequência|Frequência relativa|
+|:--:|:------:|:------:|
+|  1| 166675| $\frac{166675}{1.000.000} = 0,1667$|
+|  2| 166806| $\frac{166806}{1.000.000} = 0,1668$|
+|  3| 166284| $\frac{166284}{1.000.000} = 0,1663$|
+|  4| 166569| $\frac{166569}{1.000.00} = 0,1666$|
+|  5| 166556| $\frac{166556}{1.000.000} = 0,1666$|
+|  6| 167110| $\frac{167110}{1.000.000} = 0,1671$|
+
+Então, a probabilidade do evento $\\{1\\}$ é $P(\\{1\\}) = \frac{166675}{1.000.000} = 0,1667$, e a probabilidade do evento $A = \\{2, 4, 6\\}$ é $P(A) = \frac{166806 + 166569 + 167110}{1.000.000} = 0,500485$. Note que
+* $P(\Omega) = \frac{166675 + 166806 + 166284 + 166569 + 166556 + 167110}{1.000.000} = 1$;
+* $P(A^c) = \frac{166675 + 166284 + 166556}{1.000.000} =1 -  \frac{166806 + 166569 + 167110}{1.000.000} = 1 - P(A);$
+* Imagine $A_1=\\{1, 2\\}$ e $A_2 =\\{5, 6\\}$, então $A_1 \cap A_2 = \emptyset$ e 
+$$
+\begin{split}
+P(A_1 \cup A_2) &= \frac{166675 + 166806 + 166556 + 167110}{1.000.000}\newline
+&= \frac{166675 + 166806}{1.000.000} + \frac{166556 + 167110}{1.000.000}\newline
+&= P(A_1) + P(A_2).
+\end{split}
+$$
+
+### Princípio da equiprobabilidade ou probabilidade clássica
+
+O princípio da equiprobabilidade, como o próprio nome sugere, é um postulado ou [axioma](https://pt.wikipedia.org/wiki/Axioma), ou seja, basicamente fazemos uma afirmação que todos consideram razoável mas não é possível checar, provar, demonstrar ou deduzir.
+
+>> Princípio da equiprobabilidade.
+>
+> Imagine um fenômeno aleatório com um número finito $N$ de resultados possíveis, e suponha que cada resultado possível tem a mesma chance de ser o resultado do fenômeno aleatório. Imagine que um evento $A$ tem $n$ elementos, então a probabilidade do evento $A$ é $P(A)=\frac{n}{N}$.
+
+
+De novo, considere o lançamento de um dados simples e não viciado. O espaço amostral neste caso é $\Omega = \\{1, 2, 3, 4, 5, 6\\}$ e temos um número finito de resultados possíveis. Além disso, todas faces tem a mesma chance de ser resultado do lançamento do dado, pois o dado é não viciado. Logo, estamos no contexto do princípio da equiprobabilidade com $N=6$, e a probabilidade do resultado do lançamento ser uma face par é dada por
+$$
+P(\\{\mbox{face par}\\}) = P(\\{2, 4, 6\\}) = \frac{3}{6} = 0,5.
+$$
+Observe que neste caso, as probabilidades do evento $A$ usando _probabilidade frequentista_ e _princípio da equiprobabilidade_ estão próximas.
+
+Note que
+
+* $P(\Omega) = \frac{6}{6} = 1$;
+* $P(A^c) = \frac{3}{6} =1 -  \frac{3}{6} = 1 - P(A)$;
+* Imagine $A_1=\\{1, 2\\}$ e $A_2 =\\{5, 6\\}$, então $A_1 \cap A_2 = \emptyset$ e 
+$$
+\begin{split}
+P(A_1 \cup A_2) &= \frac{4}{6}\newline
+&= \frac{2}{6} + \frac{2}{6}\newline
+&= P(A_1) + P(A_2).
+\end{split}
+$$
+
+### Probabilidade subjetiva
+
+Este método é simples, mas depende do conhecimento específico de um especialista. Suponha que temos um fenômeno aleatório, e considere o evento $A$. Uma pessoa, provavelmente um(a) especialista neste tipo de fenômeno aleatório, atribui de forma arbitrária um número do intervalo $[0,1]$ para o evento $A$. Não tem lógica, regra ou fórmula para este cálculo: ele chegou neste número usando sua experiência pessoal e seu processo cognitivo, que é único e irreplicável. Basicamente é um _chute_, mas com mira.
+
+Vamos de novo com o nosso exemplo. Imagine um cidadão acostumado com [jogos de tabuleiro](https://pt.wikipedia.org/wiki/Jogo_de_tabuleiro). De sua intuição construída de centenas de partidas, ele intui que a probabilidade do evento $A = \\{2, 4, 6\\}$ é $50\\%$, ou seja, $P(A) = 0,5$.
+
+Vamos considerar um outro exemplo. Considere um analista de política internacional que está  analisando o contexto de tensão entre a [República Popular Democrática da Coreia](https://pt.wikipedia.org/wiki/Coreia_do_Norte) e os [Estados Unidos da América](https://pt.wikipedia.org/wiki/Estados_Unidos). Este analista afirma que a probabilidade de guerra total entre os dois países é $10\\%$. Não existe dedução ou demonstração para este valor, ele é inteiramente baseado na intuição deste analista de política internacional.
+
+Uma pessoa [_coerente_](https://en.wikipedia.org/wiki/Coherence_(philosophical_gambling_strategy)), atribuiria probabilidade com as seguintes propriedades:
+
+* A probabilidade de qualquer resultado do fenômeno aleatório ser resultado do fenômeno aleatório é 1 ou $100\\%$, ou seja, $P(\Omega) = 1$;
+* A probabilidade do complemento ou negação de um evento $A$ ser resultado do fenômenos aleatório é o valor que falta para completar 1 ou $100\\%$ da probabilidade de $A$ ser resultado do fenômeno aleatório, ou seja, $P(A^c) = 1 - P(A)$;
+* Se dois eventos não tem intersecção, então a probabilidade dos dois eventos ser resultado do fenômeno aleatório é a soma das probabilidades de cada um deles ser resultado do fenômeno aleatório, ou seja, $P(A \cup B) = P(A) + P(B)$ se $A \cap B = \emptyset$.
+
+### Axiomas de probabilidade
+
+Olha que curioso: se calculamos probabilidade usando _probabilidade frequentista_, _princípio da equiprobabilidade_, _probabilidade subjetiva_, temos as seguintes propriedades:
+
+1. $P(\Omega)=1$;
+2. $P(A^c) = 1 - P(A)$ para $A \subset \Omega$;
+3. $P(A\cup B) = P(A) + P(B)$ se $A \cap B = \emptyset$.
+
+O brilhante matemático soviético [Andrey Kolmogorov](https://pt.wikipedia.org/wiki/Andrei_Kolmogorov) percebeu esse padrão, e entendeu que seria desejável uma probabilidade ter essas propriedades. Assim, ele introduziu os _axiomas de probabilidade_:
+
+> A função $P:\mathcal{F} \longrightarrow [0,1]$, em que $\mathcal{F} \subset \mathcal{P}(\Omega)$, é probabilidade se as seguintes propriedades são válidas:
+>
+> 1. $P(\Omega)=1$;
+> 2. $P(A^c) = 1 - P(A)$ para $A \subset \Omega$;
+> 3. $P(A\cup B) = P(A) + P(B)$ se $A \cap B = \emptyset$;
+>
+> em que $\mathcal{F}$ é um subconjunto do conjunto das partes $\mathcal{P}(\Omega)$. 
+
+Usamos este subconjunto $\mathcal{F}$, porque para alguns fenômenos aleatórios é impossível calcular probabilidade para todos os eventos: surpreendente, contra-intuitivo e fantástico, não é mesmo? Para uma explicação mais formal de como escolher o conjunto $\mathcal{F}$, consulte o primeiro capítulo do livro do [_A First Look at Rigorous Probability Theory_](https://www.worldscientific.com/worldscibooks/10.1142/6300).
+
+
+[^1]: Dependendo do espaço amostral, não é possível atribuir chances para todos os subconjuntos do espaço amostral. Para mais detalhes, recomendamos um leitura do livro [Probability and Measure](https://www.amazon.com/Probability-Measure-Patrick-Billingsley/dp/1118122372).
+[^2]: Neste texto, estou supondo que você conhece a teoria básica de conjuntos e tem conhecimentos matemáticos do ensino básico. Mas nada muito avançado e acredito que você vai entender tudo com tranquilidade.
+[^3]: Claramente eu fiz isso simulando lançamentos de um dado em um computador.
+
+
+---

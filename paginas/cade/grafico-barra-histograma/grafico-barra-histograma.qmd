@@ -1,0 +1,24 @@
+---
+title: "Construindo gráfico de barras e histograma usando `ggplot2`"
+author: "Gilberto Pereira Sassi"
+date: "2024/02/01"
+image: histogram.png
+categories:
+  - Ciência de Dados
+  - Exploração e visualização de dados
+  - Gráfico de barras
+  - Histograma
+  - ggplot2
+  - tidyverse
+draft: trues
+---
+
+# Apresentando `ggplot2`
+
+# Gráfico de barras
+
+## Variáveis categóricas
+
+## Variáveis discretas
+
+# Histograma 

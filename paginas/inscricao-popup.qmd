@@ -1,0 +1,11 @@
+---
+title: ""
+---
+
+## Inscrição realizada com sucesso!
+
+Depois das inscrições se encerrarem, enviaremos uma mensagem por e-mail com mais informações sobre o curso.
+
+**Lembre que o curso conta com 20 vagas e, havendo mais inscritos do que número de vagas, as mesmas serão distribuídas por sorteio, respeitando o caráter extensionista da atividade conforme a [Resolução 02 de 2012 do CAPEX/UFBA](https://proext.ufba.br/sites/proext.ufba.br/files/resolucao_no_02-2012_capex_-_regulamento_da_extensao.pdf).**
+
+---

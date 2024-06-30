@@ -1,0 +1,9 @@
+- source: project
+  netlify:
+    - id: bdd524a1-a5fc-4034-95e0-ed32923d3ac9
+      url: 'https://cienciadedados-ime-ufba.netlify.app'
+  quarto-pub:
+    - id: f234a65c-d665-486e-93f8-440878d41663
+      url: 'https://gilbertosassi.quarto.pub/cienciadedados'
+    - id: aa49ad2e-9f28-4641-965f-f4e2c45682c4
+      url: 'https://cienciadedados.quarto.pub/ime'

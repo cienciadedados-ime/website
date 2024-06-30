@@ -1,0 +1,1179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>Ciência de Dados</title>
+<link>https://cienciadedados.quarto.pub/paginas/cade.html</link>
+<atom:link href="https://cienciadedados.quarto.pub/paginas/cade.xml" rel="self" type="application/rss+xml"/>
+<description></description>
+<generator>quarto-1.5.45</generator>
+<lastBuildDate>Mon, 01 Jan 2024 03:00:00 GMT</lastBuildDate>
+<item>
+  <title>Explicando probabilidade condicional e o Teorema de Bayes.</title>
+  <dc:creator>Gilberto Pereira Sassi</dc:creator>
+  <link>https://cienciadedados.quarto.pub/paginas/cade/probabilidade-condicional-bayes/prob-condicional.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>Neste texto,vamos ver algumas das propriedades das probabilidades começando com probabilidade condicional, e, em seguida, vamos apresentar o <em>Teorema da Probabilidade Total</em> e o <em>Teorema de Bayes</em>.</p>
+<section id="probabilidade-condicional" class="level2">
+<h2 class="anchored" data-anchor-id="probabilidade-condicional">Probabilidade condicional</h2>
+<p>Suponha que um camarada descobriu que o resultado do fenômeno aleatório está dentro do evento <img src="https://latex.codecogs.com/png.latex?B">, e ele quer saber a probabilidade de um elemento do evento <img src="https://latex.codecogs.com/png.latex?A"> ser resultado do fenômeno aleatório. Para não ficar repetindo a frase <em>ser resultado do fenômeno aleatório</em>, vamos simplificar: se um elemento do evento <img src="https://latex.codecogs.com/png.latex?A"> for resultado do fenômeno aleatório, vamos falar que o evento <img src="https://latex.codecogs.com/png.latex?A"> aconteceu (ou acontece). Neste contexto, a única forma do evento <img src="https://latex.codecogs.com/png.latex?A"> acontecer é o resultado do fenômeno estar em <img src="https://latex.codecogs.com/png.latex?A"> e <img src="https://latex.codecogs.com/png.latex?B"> simultaneamente <img src="https://latex.codecogs.com/png.latex?(A%20%5Ccap%20B)">, conforme ilustrado na Figura&nbsp;1.</p>
+<div id="fig-vann" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Diagrama de Venn com intersecção entre os eventos $A$ e $B$. A único jeito de A acontecer é se o resultado do fenômeno aleatório estiver dentro de $A \cap B$.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-vann-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="https://cienciadedados.quarto.pub/paginas/cade/probabilidade-condicional-bayes/interseccao.png" class="img-fluid figure-img" alt="Diagrama de Venn com intersecção entre os eventos $A$ e $B$. A único jeito de A acontecer é se o resultado do fenômeno aleatório estiver dentro de $A \cap B$.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-vann-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;1: Diagrama de Venn com intersecção entre os eventos A e B. O único jeito de A acontecer é se o resultado do fenômeno aleatório estiver dentro de <img src="https://latex.codecogs.com/png.latex?A%20%5Ccap%20B">.
+</figcaption>
+</figure>
+</div>
+<p>Imagine que estamos no contexto em que podemos aplicar o princípio da equiprobabilidade. Considere que o evento <img src="https://latex.codecogs.com/png.latex?B"> tem <img src="https://latex.codecogs.com/png.latex?n_1"> elementos e que o evento <img src="https://latex.codecogs.com/png.latex?A%20%5Ccap%20B"> tem <img src="https://latex.codecogs.com/png.latex?n_2"> elementos. Além disso, assuma que o espaço amostral tem <img src="https://latex.codecogs.com/png.latex?N"> elementos. Note que <img src="https://latex.codecogs.com/png.latex?n_2%20%5Cleq%20n_1">. Então, temos <img src="https://latex.codecogs.com/png.latex?n_1"> resultados possíveis do fenômeno aleatório (sabemos que <img src="https://latex.codecogs.com/png.latex?B"> acontece), e a probabilidade de <img src="https://latex.codecogs.com/png.latex?A"> acontecer (sabendo que <img src="https://latex.codecogs.com/png.latex?B"> acontece) é dada por <img src="https://latex.codecogs.com/png.latex?%0A%5Cbegin%7Bsplit%7D%0A%5Cfrac%7Bn_2%7D%7Bn_1%7D,%0A%5Cend%7Bsplit%7D%0A"> Note que <img src="https://latex.codecogs.com/png.latex?%5Cfrac%7Bn_2%7D%7Bn_1%7D%20=%20%5Cfrac%7BN%7D%7BN%7D%5Ccdot%20%5Cfrac%7Bn_2%7D%7Bn_1%7D%20=%20%5Cfrac%7B%5Cfrac%7Bn_2%7D%7BN%7D%7D%7B%5Cfrac%7Bn_1%7D%7BN%7D%7D">. Observe que estamos no princípio da equiprobabilidade, então <img src="https://latex.codecogs.com/png.latex?P(A%20%5Ccap%20B)%20=%20%5Cfrac%7Bn_2%7D%7BN%7D"> e <img src="https://latex.codecogs.com/png.latex?P(B)%20=%20%5Cfrac%7Bn_1%7D%7BN%7D">. Consequentemente, concluímos que a probabilidade de <img src="https://latex.codecogs.com/png.latex?A"> acontecer, se sabemos que <img src="https://latex.codecogs.com/png.latex?B"> acontece, é dada por <img src="https://latex.codecogs.com/png.latex?%0A%5Cfrac%7BP(A%20%5Ccap%20B)%7D%7BP(B)%7D.%0A"></p>
+<p>Chamamos a probabilidade de <img src="https://latex.codecogs.com/png.latex?A"> acontecer sabendo que <img src="https://latex.codecogs.com/png.latex?B"> acontece de <em>probabilidade condicional</em>, e em Estatística, resumimos a sentença <em>a probabilidade de <img src="https://latex.codecogs.com/png.latex?A"> acontecer sabendo que <img src="https://latex.codecogs.com/png.latex?B"> acontece</em> por <em>probabilidade de <img src="https://latex.codecogs.com/png.latex?A"> dado <img src="https://latex.codecogs.com/png.latex?B"></em>. Usamos a seguinte notação matemática para a <em>probabilidade de <img src="https://latex.codecogs.com/png.latex?A"> dado <img src="https://latex.codecogs.com/png.latex?B"></em>: <img src="https://latex.codecogs.com/png.latex?P(A%20%5Cmid%20B)">.</p>
+<p>Não precisamos nos restringir ao contexto em que podemos aplicar o princípio da equiprobabilidade, e definimos a probabilidade de <img src="https://latex.codecogs.com/png.latex?A"> dado <img src="https://latex.codecogs.com/png.latex?B"> por:</p>
+<blockquote class="blockquote">
+<ul>
+<li><img src="https://latex.codecogs.com/png.latex?P(A%20%5Cmid%20B)%20=%20%5Cfrac%7BP(A%20%5Ccap%20B)%7D%7BP(B)%7D">, se <img src="https://latex.codecogs.com/png.latex?P(B)%20%3E%200">;</li>
+<li>Por convenção e conveniência, estabelecemos que <img src="https://latex.codecogs.com/png.latex?P(A%20%5Cmid%20B)%20=%20P(A)"> se <img src="https://latex.codecogs.com/png.latex?P(B)%20=%200">.</li>
+</ul>
+</blockquote>
+<p>Com esta definição de probabilidade condicional, temos a seguinte propriedade chamada de <em>regra do produto</em>:</p>
+<blockquote class="blockquote">
+<ul>
+<li><img src="https://latex.codecogs.com/png.latex?P(A%20%5Ccap%20B)%20=%20P(A%20%5Cmid%20B)%20P(B)">;</li>
+<li><img src="https://latex.codecogs.com/png.latex?P(A%20%5Ccap%20B)%20=%20P(B%20%5Cmid%20A)%20P(A)">.</li>
+</ul>
+</blockquote>
+<p>Vamos ilustrar as ideias de probabilidade condicional com um exemplo. Imagine cinquenta estudantes distribuídos em duas turmas (Turma <img src="https://latex.codecogs.com/png.latex?A"> e Turma <img src="https://latex.codecogs.com/png.latex?B">) conforme a tabela abaixo, e queremos escolhê-los por sorteio para formar uma comissão de estudantes.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: center;">Gênero</th>
+<th style="text-align: center;">Turma A</th>
+<th style="text-align: center;">Turma B</th>
+<th style="text-align: center;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">Masculino</td>
+<td style="text-align: center;">21</td>
+<td style="text-align: center;">16</td>
+<td style="text-align: center;">37</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Feminino</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">13</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">Total</td>
+<td style="text-align: center;">26</td>
+<td style="text-align: center;">24</td>
+<td style="text-align: center;">50</td>
+</tr>
+</tbody>
+</table>
+<p>Vamos especificar alguns eventos que usaremos em nossa notação matemática. Lembre-se que usamos as letras maiúsculas do alfabeto latino para representar eventos.</p>
+<ul>
+<li><img src="https://latex.codecogs.com/png.latex?A%20=%20%5C%5C%7B%5Cmbox%7Bestudante%20da%20turma%20A%7D%5C%5C%7D">;</li>
+<li><img src="https://latex.codecogs.com/png.latex?B%20=%20%5C%5C%7B%5Cmbox%7Bestudante%20da%20turma%20B%7D%5C%5C%7D">;</li>
+<li><img src="https://latex.codecogs.com/png.latex?M%20=%20%5C%5C%7B%5Cmbox%7Bestudante%20se%20identifica%20com%20g%C3%AAnero%20masculino%7D%5C%5C%7D">;</li>
+<li><img src="https://latex.codecogs.com/png.latex?F%20=%20%5C%5C%7B%5Cmbox%7Bestudante%20se%20identifica%20com%20g%C3%AAnero%20feminino%7D%5C%5C%7D">.</li>
+</ul>
+<p>Imagine que queremos escolher por sorteio uma aluna para participar de uma comissão. Neste contexto, sabemos que a pessoa selecionada entre os alunos se identificará com o gênero feminino, e temos <img src="https://latex.codecogs.com/png.latex?13"> pessoas que se identificam com o gênero feminino. Entre estudantes que se identificam com o gênero feminino, <img src="https://latex.codecogs.com/png.latex?5"> são da turma <img src="https://latex.codecogs.com/png.latex?A">. Então, a probabilidade da aluna ser da turma <img src="https://latex.codecogs.com/png.latex?A"> é dada por <img src="https://latex.codecogs.com/png.latex?%0AP(A%20%5Cmid%20F)%20=%20%5Cfrac%7B5%7D%7B13%7D%20=%200,38.%0A"></p>
+<p>Se usarmos a definição de probabilidade condicional, vamos chegar no exato mesmo valor <img src="https://latex.codecogs.com/png.latex?0,38">. De fato, vamos calcular a probabilidade de <img src="https://latex.codecogs.com/png.latex?A%20%5Ccap%20F"> e <img src="https://latex.codecogs.com/png.latex?F"> usando o princípio da equiprobabilidade, e, depois, usaremos a definição de probabilidade condicional para calcular <img src="https://latex.codecogs.com/png.latex?P(A%20%5Cmid%20F)">: <img src="https://latex.codecogs.com/png.latex?%0A%5Cbegin%7Bsplit%7D%0AP(A%20%5Ccap%20F)%20&amp;=%20%5Cfrac%7B5%7D%7B50%7D%20=%200,1;%5Cnewline%0AP(F)%20&amp;=%20%5Cfrac%7B13%7D%7B50%7D%20=%200,26;%5Cnewline%0AP(A%20%5Cmid%20F)%20&amp;=%20%5Cfrac%7BP(A%20%5Ccap%20F)%7D%7BP(F)%7D%20=%20%5Cfrac%7B0,1%7D%7B0,26%7D%20=%200,38.%0A%5Cend%7Bsplit%7D%0A"></p>
+</section>
+<section id="teorema-da-probabilidade-total" class="level2">
+<h2 class="anchored" data-anchor-id="teorema-da-probabilidade-total">Teorema da probabilidade total</h2>
+<p>A partir de agora, vamos fazer algumas mágicas interessantes usando probabilidade condicional. Imagine que o espaço amostral pode ser dividido em algumas partes <img src="https://latex.codecogs.com/png.latex?C_1,%20%5Cdots,%20C_n">, conforme ilustrado na Figura&nbsp;2 onde dividimos o espaço amostral em quatro partes.</p>
+<div id="fig-prob-total" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Teorema da probabilidade total.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-prob-total-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="https://cienciadedados.quarto.pub/paginas/cade/probabilidade-condicional-bayes/prob-total.jpg" class="img-fluid figure-img" alt="Teorema da probabilidade total.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-prob-total-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;2: Teorema da probabilidade total.
+</figcaption>
+</figure>
+</div>
+<p>A probabilidade do evento <img src="https://latex.codecogs.com/png.latex?A"> é a área do quadrado indicada pelo círculo preenchido com a cor azul. Para calcular a probabilidade do evento indicado pelo círculo <img src="https://latex.codecogs.com/png.latex?A">, podemos calcular as probabilidades por partes deste círculo</p>
+<ul>
+<li><img src="https://latex.codecogs.com/png.latex?P(A%20%5Ccap%20C_1)">;</li>
+<li><img src="https://latex.codecogs.com/png.latex?P(A%20%5Ccap%20C_2)">;</li>
+<li><img src="https://latex.codecogs.com/png.latex?P(A%20%5Ccap%20C_3)">;</li>
+<li><img src="https://latex.codecogs.com/png.latex?P(A%20%5Ccap%20C_4)">;</li>
+</ul>
+<p>e depois somar essas probabilidades para obter a probabilidade do círculo <img src="https://latex.codecogs.com/png.latex?%0AP(A)%20=%20P(A%20%5Ccap%20C_1)%20+%20P(A%20%5Ccap%20C_2)%20+%20P(A%20%5Ccap%20C_3)%20+%20P(A%20%5Ccap%20C_4),%0A"> e, então, usando a <em>regra do produto</em> em <img src="https://latex.codecogs.com/png.latex?P(A%20%5Ccap%20C_1)">, <img src="https://latex.codecogs.com/png.latex?P(A%20%5Ccap%20C_2)">, <img src="https://latex.codecogs.com/png.latex?P(A%20%5Ccap%20C_3)"> e <img src="https://latex.codecogs.com/png.latex?P(A%20%5Ccap%20C_4)"> temos que <img src="https://latex.codecogs.com/png.latex?%0AP(A)%20=%20P(A%20%5Cmid%20C_1)%20P(C_1)%20+%20P(A%20%5Cmid%20C_2)%20P(C_2)%20+%20P(A%20%5Cmid%20C_3)%20P(C_3)%20+%20P(A%20%5Cmid%20C_4)%20P(C_4).%0A"> Chamamos a coleção dos conjuntos <img src="https://latex.codecogs.com/png.latex?C_1,%20%5Ccdots,%20C_4"> de partição do espaço amostral.</p>
+<p>Agora vamos enunciar o Teorema de Probabilidade Total de uma forma geral. Suponha que temos uma participação <img src="https://latex.codecogs.com/png.latex?C_1,%20%5Ccdots,%20C_n"> do espaço amostral e imagine que queremos calcular a probabilidade do evento <img src="https://latex.codecogs.com/png.latex?A">. Além disso, imagine que conhecemos as probabilidades:</p>
+<ul>
+<li>Probabilidade do evento <img src="https://latex.codecogs.com/png.latex?C_1">: <img src="https://latex.codecogs.com/png.latex?P(C_1)">;</li>
+<li>Probabilidade do evento <img src="https://latex.codecogs.com/png.latex?A"> dado <img src="https://latex.codecogs.com/png.latex?C_1">: <img src="https://latex.codecogs.com/png.latex?P(A%20%5Cmid%20C_1)">;</li>
+<li>Probabilidade do evento <img src="https://latex.codecogs.com/png.latex?C_2">: <img src="https://latex.codecogs.com/png.latex?P(C_2)">;</li>
+<li>Probabilidade do evento <img src="https://latex.codecogs.com/png.latex?A"> dado <img src="https://latex.codecogs.com/png.latex?C_2">: <img src="https://latex.codecogs.com/png.latex?P(A%20%5Cmid%20C_2)">;</li>
+<li>Probabilidade do evento <img src="https://latex.codecogs.com/png.latex?C_3">: <img src="https://latex.codecogs.com/png.latex?P(C_3)">;</li>
+<li>Probabilidade do evento <img src="https://latex.codecogs.com/png.latex?A"> dado <img src="https://latex.codecogs.com/png.latex?C_3">: <img src="https://latex.codecogs.com/png.latex?P(A%20%5Cmid%20C_3)">;</li>
+</ul>
+<p><img src="https://latex.codecogs.com/png.latex?%0A%5Cvdots%0A"></p>
+<ul>
+<li>Probabilidade do evento <img src="https://latex.codecogs.com/png.latex?C_n">: <img src="https://latex.codecogs.com/png.latex?P(C_n)">;</li>
+<li>Probabilidade do evento <img src="https://latex.codecogs.com/png.latex?A"> dado <img src="https://latex.codecogs.com/png.latex?C_n">: <img src="https://latex.codecogs.com/png.latex?P(A%20%5Cmid%20C_n)">;</li>
+</ul>
+<p>Então, podemos calcular a probabilidade do evento <img src="https://latex.codecogs.com/png.latex?A"> através da seguinte equação <img src="https://latex.codecogs.com/png.latex?%0AP(A)%20=%20P(A%20%5Cmid%20C_1)%20P(C_1)%20+%20P(A%20%5Cmid%20C_2)%20P(C_2)%20+%20%5Ccdots%20+%20P(A%20%5Cmid%20C_n)%20P(C_n).%0A"></p>
+<p>Vamos considerar um exemplo simples para ilustrar o uso do Teorema da Probabilidade Total. Imagine que um produtor artesanal de sorvete compra leite de três fazendas: <em>fazenda pequena</em>, <em>fazenda média</em> e <em>fazenda grande</em>. 20% de todo o leite usado por este produtor vem da <em>fazenda pequena</em>, 30% de todo o leite usado por este produtor vem da <em>fazenda média</em> e 50% de todo o leite usado por este produtor vem da <em>fazenda grande</em>. Uma inspenção surpresa da Ministério da Agricultura, Pecuária e Abastecimento (MAPA) descobriu que 10% do leite vendido pela <em>fazenda pequena</em> estava adulterado, 30% do leite vendido pela <em>fazenda média</em> estava adulterado e 20% do leite vendido pela <em>fazenda grande</em> estava adulterado. E agora vem a pergunta: quanto leite adulterado este pequeno produtor artesanal de sorvete comprou destas fazendas?</p>
+<p>Primeiro vamos definir alguns eventos: <img src="https://latex.codecogs.com/png.latex?%0A%5Cbegin%7Bsplit%7D%0AA%20&amp;=%20%5C%7B%5Cmbox%7BGal%C3%A3o%20adulterado%7D%5C%7D;%5Cnewline%0AP%20&amp;=%20%5C%7B%5Cmbox%7BGal%C3%A3o%20produzido%20pela%20fazenda%20pequena%7D%5C%7D;%5Cnewline%0AM%20&amp;=%20%5C%7B%5Cmbox%7BGal%C3%A3o%20produzido%20pela%20fazenda%20m%C3%A9dia%7D%5C%7D;%5Cnewline%0AG%20&amp;=%20%5C%7B%5Cmbox%7BGal%C3%A3o%20produzido%20pela%20fazenda%20grande%7D%5C%7D;%0A%5Cend%7Bsplit%7D%0A"> e sabemos que (usamos as informações do MAPA e do produtor artesanal)</p>
+<table class="caption-top table">
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><img src="https://latex.codecogs.com/png.latex?P(A%20%5Cmid%20P)%20=%200,1;"></td>
+<td style="text-align: right;"><img src="https://latex.codecogs.com/png.latex?P(P)%20=%200,2"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><img src="https://latex.codecogs.com/png.latex?P(A%20%5Cmid%20M)%20=%200,3;"></td>
+<td style="text-align: right;"><img src="https://latex.codecogs.com/png.latex?P(M)%20=%200,3"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><img src="https://latex.codecogs.com/png.latex?P(A%20%5Cmid%20G)%20=%200,2;"></td>
+<td style="text-align: right;"><img src="https://latex.codecogs.com/png.latex?P(G)%20=%200,5"></td>
+</tr>
+</tbody>
+</table>
+<p>então, usando o Teorema de Probabilidade Total, a proporção (ou probabilidade) de galões adulterados comprados pelo pequeno produtor artesanal de sorvete é dada por <img src="https://latex.codecogs.com/png.latex?%0A%5Cbegin%7Bsplit%7D%0AP(A)%20&amp;=%20P(A%20%5Cmid%20P)%20P(P)%20+%20P(A%20%5Cmid%20M)%20P(M)%20+%20P(A%20%5Cmid%20G)%20P(G),%5Cnewline%0A&amp;=%200,1%20%5Ccdot%200,2%20+%200,3%20%5Ccdot%200,3%20+%200,2%20%5Ccdot%200,5,%20%5Cnewline%0A&amp;=%200,21.%0A%5Cend%7Bsplit%7D%0A"></p>
+</section>
+<section id="teorema-de-bayes" class="level2">
+<h2 class="anchored" data-anchor-id="teorema-de-bayes">Teorema de Bayes</h2>
+<p>Finalmente, e não menos importante, temos o Teorema de Bayes, que foi descoberto pelo pastor presbiteriano <a href="https://pt.wikipedia.org/wiki/Thomas_Bayes">Thomas Bayes</a>. Apesar de matematicamente simples, as implicações e aplicações do Teorema de Bayes são extremamente relevantes para a Probabilidade, Estatística e o conhecimento científico como um todo. O Teorema de Bayes nos permite atualizar a probabilidade ou <em>crença</em> de que um evento <img src="https://latex.codecogs.com/png.latex?A"> será o resultado de um fenômeno aleatório ao coletarmos ou descobrirmos novas informações ou evidências sobre o fenômeno aleatório.</p>
+<div id="fig-thomas-bayes" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Reverendo Thomas Bayes.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-thomas-bayes-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="https://cienciadedados.quarto.pub/paginas/cade/probabilidade-condicional-bayes/thomas-bayes.jpeg" class="img-fluid figure-img" alt="Reverendo Thomas Bayes.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-thomas-bayes-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;3: Thomas Bayes: matemático, filósofo e pastor presbiteriano.
+</figcaption>
+</figure>
+</div>
+<p>Vamos considerar um exemplo. Imagine que a prevalência de um doença, que denotaremos por <img src="https://latex.codecogs.com/png.latex?D_1">, no Brasil é <img src="https://latex.codecogs.com/png.latex?20%5C%5C%25">. Ou seja, sem examinar um paciente, um médico estima que este paciente tem a doencça <img src="https://latex.codecogs.com/png.latex?D_1"> com probabilidade <img src="https://latex.codecogs.com/png.latex?0,2">.</p>
+<p>Na consulta médica, o paciente descreveu o sintoma <img src="https://latex.codecogs.com/png.latex?S">. Da literatura especilizada em medicina, o médico sabe que este sintoma está presente em apenas três doenças: <img src="https://latex.codecogs.com/png.latex?D_1">, <img src="https://latex.codecogs.com/png.latex?D_2"> e <img src="https://latex.codecogs.com/png.latex?D_3">. Além disso, o médico sabe que</p>
+<ul>
+<li>a probabilidade de um paciente com a doença <img src="https://latex.codecogs.com/png.latex?D_1"> apresentar o sintoma <img src="https://latex.codecogs.com/png.latex?S"> é <img src="https://latex.codecogs.com/png.latex?20%5C%5C%25">, ou seja, <img src="https://latex.codecogs.com/png.latex?P(S%20%5Cmid%20D_1)%20=%200,2">;</li>
+<li>a probabilidade de um paciente com a doença <img src="https://latex.codecogs.com/png.latex?D_2"> apresentar o sintoma <img src="https://latex.codecogs.com/png.latex?S"> é <img src="https://latex.codecogs.com/png.latex?40%5C%5C%25">, ou seja, <img src="https://latex.codecogs.com/png.latex?P(S%20%5Cmid%20D_2)%20=%200,4">;</li>
+<li>a probabilidade de um paciente com a doença <img src="https://latex.codecogs.com/png.latex?D_3"> apresentar o sintoma <img src="https://latex.codecogs.com/png.latex?S"> é <img src="https://latex.codecogs.com/png.latex?15%5C%5C%25">, ou seja, <img src="https://latex.codecogs.com/png.latex?P(S%20%5Cmid%20D_3)%20=%200,15">.</li>
+</ul>
+<p>No website do Ministério da Saúde, o médico verificou que a prevalência das doenças <img src="https://latex.codecogs.com/png.latex?D_2"> e <img src="https://latex.codecogs.com/png.latex?D_3"> no Brasil são: <img src="https://latex.codecogs.com/png.latex?P(D_2)%20=%200,4"> e <img src="https://latex.codecogs.com/png.latex?P(D_3)%20=%200,15">.</p>
+<p>Agora vem a pergunta mais importante: após o médico descobrir que o paciente tem o sintoma <img src="https://latex.codecogs.com/png.latex?S">, qual é a probabilidade do paciente ter a doença <img src="https://latex.codecogs.com/png.latex?D_1">? Lembre que antes da consulta, o médico diria que a probabilidade deste paciente ter a doença <img src="https://latex.codecogs.com/png.latex?D_1"> é <img src="https://latex.codecogs.com/png.latex?20%5C%5C%25">. Ou seja, queremos calcular a seguinte probabilidade <img src="https://latex.codecogs.com/png.latex?%0A%5Cbegin%7Bsplit%7D%0AP(D_1%20%5Cmid%20S),%0A%5Cend%7Bsplit%7D%0A"> usando a definição de probabilidade condicional e a regra do produto temos que <img src="https://latex.codecogs.com/png.latex?%0A%5Cbegin%7Bsplit%7D%0AP(D_1%20%5Cmid%20S)%20&amp;=%20%5Cfrac%7BP(D_1%20%5Ccap%20S)%7D%7BP(S)%7D,%5Cnewline%0A&amp;=%20%5Cfrac%7BP(D_1)%20P(S%20%5Cmid%20D_1)%7D%7BP(S)%7D,%0A%5Cend%7Bsplit%7D%0A"> e para calcular <img src="https://latex.codecogs.com/png.latex?P(S)"> usamos o Teorema da Probabilidade Total <img src="https://latex.codecogs.com/png.latex?%0A%5Cbegin%7Bsplit%7D%0AP(D_1%20%5Cmid%20S)%20&amp;=%20%5Cfrac%7BP(D_1)%20P(S%20%5Cmid%20D_1)%7D%7BP(S)%7D,%20%5Cnewline%0A&amp;=%20%5Cfrac%7BP(D_1)%20P(S%20%5Cmid%20D_1)%7D%7BP(D_1)%20P(S%20%5Cmid%20D_1)%20+%20P(D_2)%20P(S%20%5Cmid%20D_2)%20+%20P(D_3)%20P(S%20%5Cmid%20D_3)%7D,%20%5Cnewline%0A&amp;=%20%5Cfrac%7B0,2%20%5Ccdot%200,2%7D%7B0,2%20%5Ccdot%200,2%20+%200,4%20%5Ccdot%200,4%20+%200,4%20%5Ccdot%200,15%7D,%5Cnewline%0A&amp;%5Capprox%200,02%0A%5Cend%7Bsplit%7D%0A"></p>
+<p>Ou seja, ao descobrir que o paciente tem o sintoma <img src="https://latex.codecogs.com/png.latex?S">, o médico <del>mudou</del> atualizou a probabilidade do paciente ter a doença <img src="https://latex.codecogs.com/png.latex?D_1"> de <img src="https://latex.codecogs.com/png.latex?20%5C%5C%25"> para <img src="https://latex.codecogs.com/png.latex?2%5C%5C%25">.</p>
+<p>Agora vamos enunciar o Teorema de Bayes de uma forma geral. Suponha que temos uma participação <img src="https://latex.codecogs.com/png.latex?C_1,%20%5Cdots,%20C_n"> do espaço amostral e considere o evento de interesse <img src="https://latex.codecogs.com/png.latex?A">. Além disso, imagine que conhecemos as probabilidades:</p>
+<ul>
+<li>probabilidade do evento <img src="https://latex.codecogs.com/png.latex?C_1">: <img src="https://latex.codecogs.com/png.latex?P(C_1)">;</li>
+<li>probabilidade do evento <img src="https://latex.codecogs.com/png.latex?A"> dado <img src="https://latex.codecogs.com/png.latex?C_1">: <img src="https://latex.codecogs.com/png.latex?P(A%20%5Cmid%20C_1)">;</li>
+<li>probabilidade do evento <img src="https://latex.codecogs.com/png.latex?C_2">: <img src="https://latex.codecogs.com/png.latex?P(C_2)">;</li>
+<li>probabilidade do evento <img src="https://latex.codecogs.com/png.latex?A"> dado <img src="https://latex.codecogs.com/png.latex?C_2">: <img src="https://latex.codecogs.com/png.latex?P(A%20%5Cmid%20C_2)">;</li>
+<li>probabilidade do evento <img src="https://latex.codecogs.com/png.latex?C_3">: <img src="https://latex.codecogs.com/png.latex?P(C_3)">;</li>
+<li>probabilidade do evento <img src="https://latex.codecogs.com/png.latex?A"> dado <img src="https://latex.codecogs.com/png.latex?C_3">: <img src="https://latex.codecogs.com/png.latex?P(A%20%5Cmid%20C_3)">; <img src="https://latex.codecogs.com/png.latex?%0A%5Cvdots%0A"></li>
+<li>probabilidade do evento <img src="https://latex.codecogs.com/png.latex?C_n">: <img src="https://latex.codecogs.com/png.latex?P(C_n)">;</li>
+<li>probabilidade do evento <img src="https://latex.codecogs.com/png.latex?A"> dado <img src="https://latex.codecogs.com/png.latex?C_n">: <img src="https://latex.codecogs.com/png.latex?P(A%20%5Cmid%20C_n)">;</li>
+</ul>
+<p>Então, as probabilidades dos eventos <img src="https://latex.codecogs.com/png.latex?C_i,%20i=1,%20%5Cdots,%20n"> acontecerem dado que sabemos ou observamos o evento <img src="https://latex.codecogs.com/png.latex?A"> é dada por <img src="https://latex.codecogs.com/png.latex?%0A%5Cbegin%7Bsplit%7D%0AP(C_1%20%5Cmid%20A)%20&amp;=%20%5Cfrac%7BP(C_1)%20P(A%20%5Cmid%20C_1)%7D%7BP(C_1)%20P(A%20%5Cmid%20C_1)%20+%20%5Ccdots%20+%20P(C_n)%20P(A%20%5Cmid%20C_n)%7D,%20%5Cnewline%0AP(C_2%20%5Cmid%20A)%20&amp;=%20%5Cfrac%7BP(C_2)%20P(A%20%5Cmid%20C_2)%7D%7BP(C_1)%20P(A%20%5Cmid%20C_1)%20+%20%5Ccdots%20+%20P(C_n)%20P(A%20%5Cmid%20C_n)%7D,%20%5Cnewline%0A&amp;%5Cvdots%20%5Cnewline%0AP(C_n%20%5Cmid%20A)%20&amp;=%20%5Cfrac%7BP(C_n)%20P(A%20%5Cmid%20C_n)%7D%7BP(C_1)%20P(A%20%5Cmid%20C_1)%20+%20%5Ccdots%20+%20P(C_n1)%20P(A%20%5Cmid%20C_n)%7D.%5Cnewline%0A%5Cend%7Bsplit%7D%0A"></p>
+<p>Vamos fazer mais um exemplo para ilustração. Imagine que uma planta industrial tem três linhas de produção, <img src="https://latex.codecogs.com/png.latex?L_1,%20L_2,%20L_3">, que produzem lotes de um mesmo equipamento eletrônico. Um lote é considerado inadequado para venda se mais de <img src="https://latex.codecogs.com/png.latex?10%5C%5C%25"> dos equipamentos eletrônicos deste lote forem defeituosos. Considere os seguintes eventos</p>
+<ul>
+<li><img src="https://latex.codecogs.com/png.latex?L_1%20=%20%5C%5C%7B%5Cmbox%7Blote%20vem%20da%20linha%20de%20produ%C3%A7%C3%A3o%20%7D%20L_1%20%5C%5C%7D"></li>
+<li><img src="https://latex.codecogs.com/png.latex?L_2%20=%20%5C%5C%7B%5Cmbox%7Blote%20vem%20da%20linha%20de%20produ%C3%A7%C3%A3o%20%7DL_2%20%5C%5C%7D"></li>
+<li><img src="https://latex.codecogs.com/png.latex?L_3%20=%20%5C%5C%7B%5Cmbox%7Blote%20vem%20da%20linha%20de%20produ%C3%A7%C3%A3o%20%7DL_3%20%5C%5C%7D"></li>
+<li><img src="https://latex.codecogs.com/png.latex?D%20=%20%5C%5C%7B%5Cmbox%7Bmais%20de%20%7D10%5C%25%20%5Cmbox%7B%20equipamentos%20do%20lote%20s%C3%A3o%20defeituosos%7D%20%5C%5C%7D"></li>
+</ul>
+<p>Os engenheiros que construíram estas três linhas afirmam que:</p>
+<ul>
+<li>a probabilidade da linha de produção <img src="https://latex.codecogs.com/png.latex?L_1"> produzir um lote com mais de <img src="https://latex.codecogs.com/png.latex?10%5C%5C%25"> dos equipamentos defeituosos é <img src="https://latex.codecogs.com/png.latex?35%5C%5C%25">, ou seja, <img src="https://latex.codecogs.com/png.latex?P(D%20%5Cmid%20L_1)%20=%200,35">;</li>
+<li>a probabilidade da linha de produção <img src="https://latex.codecogs.com/png.latex?L_2"> produzir um lote com mais de <img src="https://latex.codecogs.com/png.latex?10%5C%5C%25"> dos equipamentos defeituosos é <img src="https://latex.codecogs.com/png.latex?40%5C%5C%25">, ou seja, <img src="https://latex.codecogs.com/png.latex?P(D%20%5Cmid%20L_2)%20=%200,4">;</li>
+<li>a probabilidade da linha de produção <img src="https://latex.codecogs.com/png.latex?L_3"> produzir um lote com mais de <img src="https://latex.codecogs.com/png.latex?10%5C%5C%25"> dos equipamentos defeituosos é <img src="https://latex.codecogs.com/png.latex?32,5%5C%5C%25">, ou seja, <img src="https://latex.codecogs.com/png.latex?P(D%20%5Cmid%20L_3)%20=%200,325">;</li>
+<li><img src="https://latex.codecogs.com/png.latex?50%5C%5C%25"> dos lotes desta planta industrial são produzidos pela linha de produção <img src="https://latex.codecogs.com/png.latex?L_1">, ou seja, <img src="https://latex.codecogs.com/png.latex?P(L_1)%20=%200,5">;</li>
+<li><img src="https://latex.codecogs.com/png.latex?30%5C%5C%25"> dos lotes desta planta industrial são produzidos pela linha de produção <img src="https://latex.codecogs.com/png.latex?L_2">, ou seja, <img src="https://latex.codecogs.com/png.latex?P(L_2)%20=%200,3">;</li>
+<li><img src="https://latex.codecogs.com/png.latex?20%5C%5C%25"> dos lotes desta planta industrial são produzidos pela linha de produção <img src="https://latex.codecogs.com/png.latex?L_3">, ou seja, <img src="https://latex.codecogs.com/png.latex?P(L_3)%20=%200,2">.</li>
+</ul>
+<p>A equipe do controle de qualidade identificou um lote inadequado, e os engenheiros da planta industrial precisam fazer ajustes nas linhas de produção. A melhor estratégia é começar as análises e ajustes na linha de produção com a maior probabilidade de te ter produzido o lote inadequado. Então, vamos usar o <em>Teorema de Bayes</em> para calcular <img src="https://latex.codecogs.com/png.latex?P(L_1%20%5Cmid%20D),%20P(L_2%20%5Cmid%20D)"> e <img src="https://latex.codecogs.com/png.latex?P(L_3%20%5Cmid%20D)">:</p>
+<p><img src="https://latex.codecogs.com/png.latex?%0A%5Cbegin%7Bsplit%7D%0AP(L_1%20%5Cmid%20D)%20&amp;=%20%5Cfrac%7BP(L_1)%20P(D%20%5Cmid%20L_1)%7D%7BP(D)%7D%5Cnewline%0A&amp;=%20%5Cfrac%7BP(L_1)%20P(D%20%5Cmid%20L_1)%7D%7BP(L_1)%20P(D%20%5Cmid%20L_1)%20+%20P(L_1)%20P(D%20%5Cmid%20L_1)%20+%20P(L_3)%20P(D%20%5Cmid%20L_3)%7D%5Cnewline%0A&amp;=%20%5Cfrac%7B0,35%20%5Ccdot%200,5%7D%7B0,35%20%5Ccdot%200,5%20+%200,4%20%5Ccdot%200,3%20+%200,2%20%5Ccdot%200,325%7D%5Cnewline%0A&amp;=%200,49%5Cnewline%0AP(L_2%20%5Cmid%20D)%20&amp;=%20%5Cfrac%7BP(L_2)%20P(D%20%5Cmid%20L_2)%7D%7BP(D)%7D%5Cnewline%0A&amp;=%20%5Cfrac%7BP(L_2)%20P(D%20%5Cmid%20L_2)%7D%7BP(L_1)%20P(D%20%5Cmid%20L_1)%20+%20P(L_1)%20P(D%20%5Cmid%20L_1)%20+%20P(L_3)%20P(D%20%5Cmid%20L_3)%7D%5Cnewline%0A&amp;=%20%5Cfrac%7B0,4%20%5Ccdot%200,3%7D%7B0,35%20%5Ccdot%200,5%20+%200,4%20%5Ccdot%200,3%20+%200,2%20%5Ccdot%200,325%7D%5Cnewline%0A&amp;=%200,33%5Cnewline%0AP(L_3%20%5Cmid%20D)%20&amp;=%20%5Cfrac%7BP(L_3)%20P(D%20%5Cmid%20L_3)%7D%7BP(D)%7D%5Cnewline%0A&amp;=%20%5Cfrac%7BP(L_3)%20P(D%20%5Cmid%20L_3)%7D%7BP(L_1)%20P(D%20%5Cmid%20L_1)%20+%20P(L_1)%20P(D%20%5Cmid%20L_1)%20+%20P(L_3)%20P(D%20%5Cmid%20L_3)%7D%5Cnewline%0A&amp;=%20%5Cfrac%7B0,2%20%5Ccdot%200,325%7D%7B0,35%20%5Ccdot%200,5%20+%200,4%20%5Ccdot%200,3%20+%200,2%20%5Ccdot%200,325%7D%5Cnewline%0A&amp;=%200,18%0A%5Cend%7Bsplit%7D%0A"></p>
+<p>Ou seja, a linha de produção com maior probabilidade de ter produzido o lote inaquedo é a linha de produção <img src="https://latex.codecogs.com/png.latex?L_1">, <img src="https://latex.codecogs.com/png.latex?P(L_1%20%5Cmid%20D)%20=%200,49">, e os engenheiros deveriam começar a análise nesta linha de produção.</p>
+<hr>
+
+
+</section>
+
+<p>© 2024 <strong><code>R</code> para Ciência de Dados <br>🖤</strong> by Carolina Paraíba e Gilberto Sassi</p> ]]></description>
+  <category>Probabilidade</category>
+  <category>Probabilidade condicional</category>
+  <category>Teorema de Bayes</category>
+  <category>Teorema da probabilidade total</category>
+  <guid>https://cienciadedados.quarto.pub/paginas/cade/probabilidade-condicional-bayes/prob-condicional.html</guid>
+  <pubDate>Mon, 01 Jan 2024 03:00:00 GMT</pubDate>
+  <media:content url="https://cienciadedados.quarto.pub/paginas/cade/probabilidade-condicional-bayes/bayes.png" medium="image" type="image/png" height="144" width="144"/>
+</item>
+<item>
+  <title>O que é e como calcular probabilidade.</title>
+  <dc:creator>Gilberto Pereira Sassi</dc:creator>
+  <link>https://cienciadedados.quarto.pub/paginas/cade/probabilidade/probabilidade.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>Na natureza, existem dois tipos de fenômenos (ou experimentos): determinísticos e aleatórios. Os fenômenos determinísticos são aqueles que sabemos o resultado do fenômeno antes dele ter sido realizado. Por exemplo, imagine que o fenômeno seja soltar uma pedra de altura de 50 centímetros, então, usando os conhecimento de física que aprendemos no ensino básico, concluímos que essa pedra vai cair em direção ao chão e sabemos o resultado do fenômeno antes mesmo de ele ter sido realizado, e, consequentemente, este é um <em>fenômeno determinístico</em>. Por sua vez, os fenômenos aleatórios são aqueles que não conseguimos antever qual vai ser o resultado do fenômeno (ou experimento) antes dele ter sido realizado. Por exemplo, imagine que o fenômeno seja lançar um dado com seis faces: não sabemos qual das faces ficarão expostas para cima antes do lançamento do dado, e, consequentemente, este é um fenômeno aleatório.</p>
+<p>Apesar de não conseguirmos antever o resultado de um fenômeno aleatório, geralmente sabemos quais são os resultados possíveis. Por exemplo, no fenômeno aleatório que consiste no lançamento de dado de seis faces sabemos que os resultados possíveis são o conjunto dado por <img src="https://latex.codecogs.com/png.latex?%5C%5C%7B%5Cmbox%7Bface%201%7D,%20%5Cmbox%7Bface%202%7D,%20%5Cmbox%7Bface%203%7D,%20%5Cmbox%7Bface%204%7D,%20%5Cmbox%7Bface%205%7D,%20%5Cmbox%7Bface%206%7D%5C%5C%7D">. Chamamos este conjunto de todos os resultados do fenômeno aleatório de <em>espaço amostral</em> e o representamos pela letra maiúscula <img src="https://latex.codecogs.com/png.latex?%5COmega">. Chamamos os subconjuntos do espaço amostral de <em>evento</em> e os representamos por letras maiúsculas do alfabeto latino. Apesar de não conseguirmos antecipar o resultado do fenômeno, podemos calcular a plausibilidade de um ponto de um <em>evento</em> ser o resultado do fenômeno. Chamamos esta <em>plausibilidade</em> de probabilidade <sup>1</sup>.</p>
+<section id="como-calcular-ou-encontrar-probabilidade" class="level2">
+<h2 class="anchored" data-anchor-id="como-calcular-ou-encontrar-probabilidade">Como calcular ou encontrar probabilidade</h2>
+<p>Vamos usar um pouquinho de notação matemática. Imagine que temos interesse em um fenômeno aleatório com espaço amostral <img src="https://latex.codecogs.com/png.latex?%5COmega">. Seja <img src="https://latex.codecogs.com/png.latex?%5Cmathcal%7BP%7D(%5COmega)"> o <a href="https://pt.wikipedia.org/wiki/Conjunto_de_partes">conjunto das partes</a> do espaço amostral, ou seja, o conjunto de todos os subconjuntos do espaço amostral. Queremos encontrar um <a href="https://pt.wikipedia.org/wiki/Função_(matemática)">função</a> <img src="https://latex.codecogs.com/png.latex?P:%5Cmathcal%7BP%7D(%5COmega)%20%5Clongrightarrow%20%5B0,1%5D">, e <img src="https://latex.codecogs.com/png.latex?P(A)%20%5Cin%20%5B0,1%5D"> é a chance do resultado do fenômeno aleatório ser um ponto do evento <img src="https://latex.codecogs.com/png.latex?A%20%5Csubset%20%5COmega"><sup>2</sup>. Chamamos essa função <img src="https://latex.codecogs.com/png.latex?P"> de <em>probabilidade</em>. Existem diversas formas de determinar, encontrar, estimar ou aproximar esta função, neste post vou citar três técnicas: <em>probabilidade frequentista</em>, <em>princípio da equiprobabilidade</em> e <em>probabilidade subjetiva</em>.</p>
+<section id="probabilidade-frequentista" class="level3">
+<h3 class="anchored" data-anchor-id="probabilidade-frequentista">Probabilidade frequentista</h3>
+<p>A ideia da probabilidade frequentista é bastante simples e é baseada no <a href="https://pt.wikipedia.org/wiki/Empirismo">empirismo</a>. Imagine que temos um fenômeno aleatório que podemos repetir quantas vezes quisermos. Se quisermos calcular a probabilidade do evento <img src="https://latex.codecogs.com/png.latex?A%20%5Cin%20%5Cmathcal%7BP%7D(%5COmega)">, repetimos o fenômeno aleatório <img src="https://latex.codecogs.com/png.latex?N"> vezes (<img src="https://latex.codecogs.com/png.latex?N"> bem grande), e anotamos quantas vezes o resultado do fenômeno aleatório é um elemento do evento <img src="https://latex.codecogs.com/png.latex?A">: <img src="https://latex.codecogs.com/png.latex?n">. Então, a probabilidade do evento <img src="https://latex.codecogs.com/png.latex?A"> acontecer é a razão: <img src="https://latex.codecogs.com/png.latex?%0AP(A)%20=%20%5Cdfrac%7Bn%7D%7BN%7D.%0A"></p>
+<p>Com um exemplo tudo fica mais simples. Imagine que temos um dado simples de seis faces e não viciado, e lançamos esse dados <img src="https://latex.codecogs.com/png.latex?N=1.000.000"> de vezes<sup>3</sup> e anotamos o número de vezes que cada face foi resultado do lançamento, conforme descrito na tabela abaixo.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: center;">Face do dado</th>
+<th style="text-align: center;">Frequência</th>
+<th style="text-align: center;">Frequência relativa</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">166675</td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?%5Cfrac%7B166675%7D%7B1.000.000%7D%20=%200,1667"></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">166806</td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?%5Cfrac%7B166806%7D%7B1.000.000%7D%20=%200,1668"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">166284</td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?%5Cfrac%7B166284%7D%7B1.000.000%7D%20=%200,1663"></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">166569</td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?%5Cfrac%7B166569%7D%7B1.000.00%7D%20=%200,1666"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">166556</td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?%5Cfrac%7B166556%7D%7B1.000.000%7D%20=%200,1666"></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">167110</td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?%5Cfrac%7B167110%7D%7B1.000.000%7D%20=%200,1671"></td>
+</tr>
+</tbody>
+</table>
+<p>Então, a probabilidade do evento <img src="https://latex.codecogs.com/png.latex?%5C%5C%7B1%5C%5C%7D"> é <img src="https://latex.codecogs.com/png.latex?P(%5C%5C%7B1%5C%5C%7D)%20=%20%5Cfrac%7B166675%7D%7B1.000.000%7D%20=%200,1667">, e a probabilidade do evento <img src="https://latex.codecogs.com/png.latex?A%20=%20%5C%5C%7B2,%204,%206%5C%5C%7D"> é <img src="https://latex.codecogs.com/png.latex?P(A)%20=%20%5Cfrac%7B166806%20+%20166569%20+%20167110%7D%7B1.000.000%7D%20=%200,500485">. Note que * <img src="https://latex.codecogs.com/png.latex?P(%5COmega)%20=%20%5Cfrac%7B166675%20+%20166806%20+%20166284%20+%20166569%20+%20166556%20+%20167110%7D%7B1.000.000%7D%20=%201">; * <img src="https://latex.codecogs.com/png.latex?P(A%5Ec)%20=%20%5Cfrac%7B166675%20+%20166284%20+%20166556%7D%7B1.000.000%7D%20=1%20-%20%20%5Cfrac%7B166806%20+%20166569%20+%20167110%7D%7B1.000.000%7D%20=%201%20-%20P(A);"> * Imagine <img src="https://latex.codecogs.com/png.latex?A_1=%5C%5C%7B1,%202%5C%5C%7D"> e <img src="https://latex.codecogs.com/png.latex?A_2%20=%5C%5C%7B5,%206%5C%5C%7D">, então <img src="https://latex.codecogs.com/png.latex?A_1%20%5Ccap%20A_2%20=%20%5Cemptyset"> e <img src="https://latex.codecogs.com/png.latex?%0A%5Cbegin%7Bsplit%7D%0AP(A_1%20%5Ccup%20A_2)%20&amp;=%20%5Cfrac%7B166675%20+%20166806%20+%20166556%20+%20167110%7D%7B1.000.000%7D%5Cnewline%0A&amp;=%20%5Cfrac%7B166675%20+%20166806%7D%7B1.000.000%7D%20+%20%5Cfrac%7B166556%20+%20167110%7D%7B1.000.000%7D%5Cnewline%0A&amp;=%20P(A_1)%20+%20P(A_2).%0A%5Cend%7Bsplit%7D%0A"></p>
+</section>
+<section id="princípio-da-equiprobabilidade-ou-probabilidade-clássica" class="level3">
+<h3 class="anchored" data-anchor-id="princípio-da-equiprobabilidade-ou-probabilidade-clássica">Princípio da equiprobabilidade ou probabilidade clássica</h3>
+<p>O princípio da equiprobabilidade, como o próprio nome sugere, é um postulado ou <a href="https://pt.wikipedia.org/wiki/Axioma">axioma</a>, ou seja, basicamente fazemos uma afirmação que todos consideram razoável mas não é possível checar, provar, demonstrar ou deduzir.</p>
+<blockquote class="blockquote">
+<blockquote class="blockquote">
+<p>Princípio da equiprobabilidade.</p>
+</blockquote>
+<p>Imagine um fenômeno aleatório com um número finito <img src="https://latex.codecogs.com/png.latex?N"> de resultados possíveis, e suponha que cada resultado possível tem a mesma chance de ser o resultado do fenômeno aleatório. Imagine que um evento <img src="https://latex.codecogs.com/png.latex?A"> tem <img src="https://latex.codecogs.com/png.latex?n"> elementos, então a probabilidade do evento <img src="https://latex.codecogs.com/png.latex?A"> é <img src="https://latex.codecogs.com/png.latex?P(A)=%5Cfrac%7Bn%7D%7BN%7D">.</p>
+</blockquote>
+<p>De novo, considere o lançamento de um dados simples e não viciado. O espaço amostral neste caso é <img src="https://latex.codecogs.com/png.latex?%5COmega%20=%20%5C%5C%7B1,%202,%203,%204,%205,%206%5C%5C%7D"> e temos um número finito de resultados possíveis. Além disso, todas faces tem a mesma chance de ser resultado do lançamento do dado, pois o dado é não viciado. Logo, estamos no contexto do princípio da equiprobabilidade com <img src="https://latex.codecogs.com/png.latex?N=6">, e a probabilidade do resultado do lançamento ser uma face par é dada por <img src="https://latex.codecogs.com/png.latex?%0AP(%5C%5C%7B%5Cmbox%7Bface%20par%7D%5C%5C%7D)%20=%20P(%5C%5C%7B2,%204,%206%5C%5C%7D)%20=%20%5Cfrac%7B3%7D%7B6%7D%20=%200,5.%0A"> Observe que neste caso, as probabilidades do evento <img src="https://latex.codecogs.com/png.latex?A"> usando <em>probabilidade frequentista</em> e <em>princípio da equiprobabilidade</em> estão próximas.</p>
+<p>Note que</p>
+<ul>
+<li><img src="https://latex.codecogs.com/png.latex?P(%5COmega)%20=%20%5Cfrac%7B6%7D%7B6%7D%20=%201">;</li>
+<li><img src="https://latex.codecogs.com/png.latex?P(A%5Ec)%20=%20%5Cfrac%7B3%7D%7B6%7D%20=1%20-%20%20%5Cfrac%7B3%7D%7B6%7D%20=%201%20-%20P(A)">;</li>
+<li>Imagine <img src="https://latex.codecogs.com/png.latex?A_1=%5C%5C%7B1,%202%5C%5C%7D"> e <img src="https://latex.codecogs.com/png.latex?A_2%20=%5C%5C%7B5,%206%5C%5C%7D">, então <img src="https://latex.codecogs.com/png.latex?A_1%20%5Ccap%20A_2%20=%20%5Cemptyset"> e <img src="https://latex.codecogs.com/png.latex?%0A%5Cbegin%7Bsplit%7D%0AP(A_1%20%5Ccup%20A_2)%20&amp;=%20%5Cfrac%7B4%7D%7B6%7D%5Cnewline%0A&amp;=%20%5Cfrac%7B2%7D%7B6%7D%20+%20%5Cfrac%7B2%7D%7B6%7D%5Cnewline%0A&amp;=%20P(A_1)%20+%20P(A_2).%0A%5Cend%7Bsplit%7D%0A"></li>
+</ul>
+</section>
+<section id="probabilidade-subjetiva" class="level3">
+<h3 class="anchored" data-anchor-id="probabilidade-subjetiva">Probabilidade subjetiva</h3>
+<p>Este método é simples, mas depende do conhecimento específico de um especialista. Suponha que temos um fenômeno aleatório, e considere o evento <img src="https://latex.codecogs.com/png.latex?A">. Uma pessoa, provavelmente um(a) especialista neste tipo de fenômeno aleatório, atribui de forma arbitrária um número do intervalo <img src="https://latex.codecogs.com/png.latex?%5B0,1%5D"> para o evento <img src="https://latex.codecogs.com/png.latex?A">. Não tem lógica, regra ou fórmula para este cálculo: ele chegou neste número usando sua experiência pessoal e seu processo cognitivo, que é único e irreplicável. Basicamente é um <em>chute</em>, mas com mira.</p>
+<p>Vamos de novo com o nosso exemplo. Imagine um cidadão acostumado com <a href="https://pt.wikipedia.org/wiki/Jogo_de_tabuleiro">jogos de tabuleiro</a>. De sua intuição construída de centenas de partidas, ele intui que a probabilidade do evento <img src="https://latex.codecogs.com/png.latex?A%20=%20%5C%5C%7B2,%204,%206%5C%5C%7D"> é <img src="https://latex.codecogs.com/png.latex?50%5C%5C%25">, ou seja, <img src="https://latex.codecogs.com/png.latex?P(A)%20=%200,5">.</p>
+<p>Vamos considerar um outro exemplo. Considere um analista de política internacional que está analisando o contexto de tensão entre a <a href="https://pt.wikipedia.org/wiki/Coreia_do_Norte">República Popular Democrática da Coreia</a> e os <a href="https://pt.wikipedia.org/wiki/Estados_Unidos">Estados Unidos da América</a>. Este analista afirma que a probabilidade de guerra total entre os dois países é <img src="https://latex.codecogs.com/png.latex?10%5C%5C%25">. Não existe dedução ou demonstração para este valor, ele é inteiramente baseado na intuição deste analista de política internacional.</p>
+<p>Uma pessoa <a href="https://en.wikipedia.org/wiki/Coherence_(philosophical_gambling_strategy)"><em>coerente</em></a>, atribuiria probabilidade com as seguintes propriedades:</p>
+<ul>
+<li>A probabilidade de qualquer resultado do fenômeno aleatório ser resultado do fenômeno aleatório é 1 ou <img src="https://latex.codecogs.com/png.latex?100%5C%5C%25">, ou seja, <img src="https://latex.codecogs.com/png.latex?P(%5COmega)%20=%201">;</li>
+<li>A probabilidade do complemento ou negação de um evento <img src="https://latex.codecogs.com/png.latex?A"> ser resultado do fenômenos aleatório é o valor que falta para completar 1 ou <img src="https://latex.codecogs.com/png.latex?100%5C%5C%25"> da probabilidade de <img src="https://latex.codecogs.com/png.latex?A"> ser resultado do fenômeno aleatório, ou seja, <img src="https://latex.codecogs.com/png.latex?P(A%5Ec)%20=%201%20-%20P(A)">;</li>
+<li>Se dois eventos não tem intersecção, então a probabilidade dos dois eventos ser resultado do fenômeno aleatório é a soma das probabilidades de cada um deles ser resultado do fenômeno aleatório, ou seja, <img src="https://latex.codecogs.com/png.latex?P(A%20%5Ccup%20B)%20=%20P(A)%20+%20P(B)"> se <img src="https://latex.codecogs.com/png.latex?A%20%5Ccap%20B%20=%20%5Cemptyset">.</li>
+</ul>
+</section>
+<section id="axiomas-de-probabilidade" class="level3">
+<h3 class="anchored" data-anchor-id="axiomas-de-probabilidade">Axiomas de probabilidade</h3>
+<p>Olha que curioso: se calculamos probabilidade usando <em>probabilidade frequentista</em>, <em>princípio da equiprobabilidade</em>, <em>probabilidade subjetiva</em>, temos as seguintes propriedades:</p>
+<ol type="1">
+<li><img src="https://latex.codecogs.com/png.latex?P(%5COmega)=1">;</li>
+<li><img src="https://latex.codecogs.com/png.latex?P(A%5Ec)%20=%201%20-%20P(A)"> para <img src="https://latex.codecogs.com/png.latex?A%20%5Csubset%20%5COmega">;</li>
+<li><img src="https://latex.codecogs.com/png.latex?P(A%5Ccup%20B)%20=%20P(A)%20+%20P(B)"> se <img src="https://latex.codecogs.com/png.latex?A%20%5Ccap%20B%20=%20%5Cemptyset">.</li>
+</ol>
+<p>O brilhante matemático soviético <a href="https://pt.wikipedia.org/wiki/Andrei_Kolmogorov">Andrey Kolmogorov</a> percebeu esse padrão, e entendeu que seria desejável uma probabilidade ter essas propriedades. Assim, ele introduziu os <em>axiomas de probabilidade</em>:</p>
+<blockquote class="blockquote">
+<p>A função <img src="https://latex.codecogs.com/png.latex?P:%5Cmathcal%7BF%7D%20%5Clongrightarrow%20%5B0,1%5D">, em que <img src="https://latex.codecogs.com/png.latex?%5Cmathcal%7BF%7D%20%5Csubset%20%5Cmathcal%7BP%7D(%5COmega)">, é probabilidade se as seguintes propriedades são válidas:</p>
+<ol type="1">
+<li><img src="https://latex.codecogs.com/png.latex?P(%5COmega)=1">;</li>
+<li><img src="https://latex.codecogs.com/png.latex?P(A%5Ec)%20=%201%20-%20P(A)"> para <img src="https://latex.codecogs.com/png.latex?A%20%5Csubset%20%5COmega">;</li>
+<li><img src="https://latex.codecogs.com/png.latex?P(A%5Ccup%20B)%20=%20P(A)%20+%20P(B)"> se <img src="https://latex.codecogs.com/png.latex?A%20%5Ccap%20B%20=%20%5Cemptyset">;</li>
+</ol>
+<p>em que <img src="https://latex.codecogs.com/png.latex?%5Cmathcal%7BF%7D"> é um subconjunto do conjunto das partes <img src="https://latex.codecogs.com/png.latex?%5Cmathcal%7BP%7D(%5COmega)">.</p>
+</blockquote>
+<p>Usamos este subconjunto <img src="https://latex.codecogs.com/png.latex?%5Cmathcal%7BF%7D">, porque para alguns fenômenos aleatórios é impossível calcular probabilidade para todos os eventos: surpreendente, contra-intuitivo e fantástico, não é mesmo? Para uma explicação mais formal de como escolher o conjunto <img src="https://latex.codecogs.com/png.latex?%5Cmathcal%7BF%7D">, consulte o primeiro capítulo do livro do <a href="https://www.worldscientific.com/worldscibooks/10.1142/6300"><em>A First Look at Rigorous Probability Theory</em></a>.</p>
+<hr>
+
+
+</section>
+</section>
+
+
+<p>© 2024 <strong><code>R</code> para Ciência de Dados <br>🖤</strong> by Carolina Paraíba e Gilberto Sassi</p><div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Notas de rodapé</h2>
+
+<ol>
+<li id="fn1"><p>Neste texto, estou supondo que você conhece a teoria básica de conjuntos e tem conhecimentos matemáticos do ensino básico. Mas nada muito avançado e acredito que você vai entender tudo com tranquilidade.↩︎</p></li>
+<li id="fn2"><p>Dependendo do espaço amostral, não é possível atribuir chances para todos os subconjuntos do espaço amostral. Para mais detalhes, recomendamos um leitura do livro <a href="https://www.amazon.com/Probability-Measure-Patrick-Billingsley/dp/1118122372">Probability and Measure</a>.↩︎</p></li>
+<li id="fn3"><p>Claramente eu fiz isso simulando lançamentos de um dado em um computador.↩︎</p></li>
+</ol>
+</section></div> ]]></description>
+  <category>Ciência de Dados</category>
+  <category>Probabilidade</category>
+  <category>Estatística</category>
+  <guid>https://cienciadedados.quarto.pub/paginas/cade/probabilidade/probabilidade.html</guid>
+  <pubDate>Fri, 01 Dec 2023 03:00:00 GMT</pubDate>
+  <media:content url="https://cienciadedados.quarto.pub/paginas/cade/probabilidade/dice.png" medium="image" type="image/png" height="144" width="144"/>
+</item>
+<item>
+  <title>E como calcular medidas de resumo quando temos um gráfico de barras ou histograma?</title>
+  <dc:creator>Gilberto Pereira Sassi</dc:creator>
+  <link>https://cienciadedados.quarto.pub/paginas/cade/medidas-resumo-graficos/medidas-resumo-graficos.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>Com um gráfico de barras e um histograma, você tem uma ideia da distribuição dos dados. Mas e se você deseja encontrar um ou alguns números que representam ou resumem fidedignamente os valores representados nestes gráficos? Para encontrar estes números podemos usar medidas de resumo, e se você tem o conjunto de dados que foi usado para construir estes gráficos essa tarefa é simples em <em>softwares</em> como o <code>R</code>, <code>Python</code> ou até um <em>software</em> de planilha como o <code>excel</code>. E se você tem apenas o gráfico de barras ou histograma e não tem o conjunto de dados? <em>Don’t panic</em>, mesmo nesse caso conseguimos calcular medidas de resumo, e é isso que eu vou explicar como fazer neste post.</p>
+<section id="gráfico-de-barras" class="level2">
+<h2 class="anchored" data-anchor-id="gráfico-de-barras">Gráfico de barras</h2>
+<p>Imagine que você tem um gráfico de barras para uma variável quantitativa discreta <img src="https://latex.codecogs.com/png.latex?X"> com valores observados <img src="https://latex.codecogs.com/png.latex?x_1,%20%5Cdots,%20x_k">, conforme a figura abaixo.</p>
+<p><img src="https://cienciadedados.quarto.pub/paginas/cade/medidas-resumo-graficos/barras-geral.png" alt="Gráfico de barras para variável quantitativa discreta." width="50%" title="Gráfico de barras para variável quantitativa discreta."></p>
+<p>Cada valor observado <img src="https://latex.codecogs.com/png.latex?x_i,%20i=1,%20%5Cdots,%20k"> do gráfico acima tem uma barra com altura <img src="https://latex.codecogs.com/png.latex?n_i,i=1,%20%5Cdots,%20k"><sup>1</sup>. Logo, usando esta altura, que é igual a frequência, podemos construir a tabela de distribuição de frequência abaixo.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 16%">
+<col style="width: 18%">
+<col style="width: 29%">
+<col style="width: 35%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;"><img src="https://latex.codecogs.com/png.latex?X"></th>
+<th style="text-align: center;">Frequência</th>
+<th style="text-align: center;">Frequência relativa (proporção)</th>
+<th style="text-align: center;">Porcentagem</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><img src="https://latex.codecogs.com/png.latex?x_1"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?n_1"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?f_1%20=%20%5Cfrac%7Bn_1%7D%7Bn%7D"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?100%5Ccdot%20f_1%5C%5C%25"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><img src="https://latex.codecogs.com/png.latex?x_2"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?n_1"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?f_2%20=%20%5Cfrac%7Bn_2%7D%7Bn%7D"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?100%5Ccdot%20f_2%5C%5C%25"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><img src="https://latex.codecogs.com/png.latex?x_3"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?n_3"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?f_3%20=%20%5Cfrac%7Bn_3%7D%7Bn%7D"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?100%5Ccdot%20f_3%5C%5C%25"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><img src="https://latex.codecogs.com/png.latex?%5Cvdots"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?%5Cvdots"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?%5Cvdots"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?%5Cvdots%25"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><img src="https://latex.codecogs.com/png.latex?x_k"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?n_k"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?f_k%20=%20%5Cfrac%7Bn_k%7D%7Bn%7D"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?100%5Ccdot%20f_k%5C%25"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Total</td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?n%20=%20n_1+%5Ccdots+n_k"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?1%20%5Capprox%20f_1%20+%20%5Ccdots%20+%20f_k"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?100%5C%25%20%5Capprox%20100%5Ccdot%20f_1%20+%20%5Ccdots%20+%20100%20%5Ccdot%20f_k"></td>
+</tr>
+</tbody>
+</table>
+<p>Para calcular as medidas de resumo, note que o valor <img src="https://latex.codecogs.com/png.latex?x_i"> aparece <img src="https://latex.codecogs.com/png.latex?n_i"> vezes para <img src="https://latex.codecogs.com/png.latex?i=1,%20%5Cdots,%20k">. Aqui vamos calcular a média, desvio padrão e a mediana. Para calcular a média, somamos todos os valores e dividimos pelo tamanho da amostra, e para calcular o desvio padrão somamos todos os desvios ao quadrado<sup>2</sup> e dividimos pelo tamanho da amostra subtraído por um e em seguida tiramos a raiz quadrada deste valor. Então podemos usar a frequência da tabela de distribuição de frequência como descrito na equação abaixo para calcular a média e o desvio padrão. <img src="https://latex.codecogs.com/png.latex?%0A%5Cbegin%7Bsplit%7D%0A%5Cbar%7Bx%7D%20&amp;=%20%5Cfrac%7B%5Coverbrace%7Bx_1+%20%5Ccdots%20+%20x_1%7D%5E%7Bn_1%5Cmbox%7B%20vezes%7D%7D%20+%20%5Ccdots%20+%20%5Coverbrace%7Bx_k+%20%5Ccdots%20+%20x_k%7D%5E%7Bn_k%5Cmbox%7B%20vezes%7D%7D%7D%7Bn%7D%5Cnewline%0A&amp;=%20%5Cfrac%7Bn_1%20%5Ccdot%20x_1%20+%20%5Ccdots%20+%20n_k%20%5Ccdot%20x_k%7D%7Bn%7D%5Cnewline%0Adp(x)%20&amp;=%20%5Csqrt%7BVar(x)%7D%5Cnewline%0A&amp;=%20%5Csqrt%7B%5Cfrac%7B%5Coverbrace%7B(x_1%20-%20%5Cbar%7Bx%7D)%5E2+%20%5Ccdots%20+%20(x_1%20-%20%5Cbar%7Bx%7D)%5E2%7D%5E%7Bn_1%5Cmbox%7B%20vezes%7D%7D%20+%20%5Ccdots%20+%20%5Coverbrace%7B(x_k%20-%20%5Cbar%7Bx%7D)%5E2+%20%5Ccdots%20+%20(x_k%20-%20%5Cbar%7Bx%7D)%5E2%7D%5E%7Bn_k%5Cmbox%7B%20vezes%7D%7D%7D%7Bn-1%7D%7D%5Cnewline%0A&amp;=%20%5Csqrt%7B%5Cfrac%7Bn_1%5Ccdot(x_1%20-%20%5Cbar%7Bx%7D)%5E2%20+%20%5Ccdots%20+%20n_k%20%5Ccdot%20(x_k%20-%20%5Cbar%7Bx%7D)%5E2%7D%7Bn-1%7D%7D%0A%5Cend%7Bsplit%7D%0A"></p>
+<p>Para calcular a mediana, precisamos calcular as estatísticas de ordem <img src="https://latex.codecogs.com/png.latex?x_%7B(i)%7D">, em que <img src="https://latex.codecogs.com/png.latex?x_%7B(i)%7D"> é o <img src="https://latex.codecogs.com/png.latex?i">-ésimo menor número. Imagine que <img src="https://latex.codecogs.com/png.latex?x_1"> é o menor número da amostra, então os <img src="https://latex.codecogs.com/png.latex?n_1"> menores valores são todos iguais a <img src="https://latex.codecogs.com/png.latex?x_1">: <img src="https://latex.codecogs.com/png.latex?x_%7B(1)%7D%20=%20x_%7B(2)%7D%20=%20%5Ccdots%20=%20x_%7B(n_1)%7D%20=%20x_1">. Suponha que <img src="https://latex.codecogs.com/png.latex?x_2"> é o segundo menor valor da amostra, então os <img src="https://latex.codecogs.com/png.latex?n_2"> menores valores (depois de <img src="https://latex.codecogs.com/png.latex?x_1">) são todos iguais a <img src="https://latex.codecogs.com/png.latex?x_2">: <img src="https://latex.codecogs.com/png.latex?x_%7B(n_1+1)%7D%20=%20x_%7B(n_1+2)%7D%20=%20%5Ccdots%20=%20x_%7B(n_1+n_2)%7D%20=%20x_2">. Imagine agora que <img src="https://latex.codecogs.com/png.latex?x_3"> é o terceiro menor valor da amostra, então os menores valores (depois de <img src="https://latex.codecogs.com/png.latex?x_1"> e <img src="https://latex.codecogs.com/png.latex?x_2">) são todos iguais a <img src="https://latex.codecogs.com/png.latex?x_3">: <img src="https://latex.codecogs.com/png.latex?x_%7B(n_1+n_2+1)%7D%20=%20x_%7B(n_1+n_2+2)%7D%20=%20%5Ccdots%20=%20x_%7B(n_1+n_2+n_3)%7D%20=%20x_3">. E continuamos neste processo até organizar todos os valores observados da amostra do menor até o maior valor como indicado na tabela abaixo. Note que estamos usando a frequência <img src="https://latex.codecogs.com/png.latex?n_1">, <img src="https://latex.codecogs.com/png.latex?n_2"> até <img src="https://latex.codecogs.com/png.latex?n_k"> da tabela distribuição de frequências.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 100%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Estatística de ordem</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><img src="https://latex.codecogs.com/png.latex?x_%7B(1)%7D%20=%20x_%7B(2)%7D%20=%20%5Ccdots%20=%20x_%7B(n_1)%7D%20=%20x_1"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><img src="https://latex.codecogs.com/png.latex?x_%7B(n_1+1)%7D%20=%20x_%7B(n_1+2)%7D%20=%20%5Ccdots%20=%20x_%7B(n_1+n_2)%7D%20=%20x_2"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><img src="https://latex.codecogs.com/png.latex?x_%7B(n_1+n_2+1)%7D%20=%20x_%7B(n_1+n_2+2)%7D%20=%20%5Ccdots%20=%20x_%7B(n_1+n_2%20+%20n_3)%7D%20=%20x_3"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><img src="https://latex.codecogs.com/png.latex?%5C%5Cvdots"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><img src="https://latex.codecogs.com/png.latex?x_%7B(n_1+n_2%20+%20n_3+%20%5Ccdots%20+%20n_%7Bk-1%7D+1)%7D%20=%20x_%7B(n_1+n_2%20+%20n_3+%20%5Ccdots%20+%20n_%7Bk-1%7D+2)%7D%20=%20%5Ccdots%20=%20x_%7B(n_1+n_2%20+%20n_3+%20%5Ccdots%20+%20n_%7Bk-1%7D+%20n_k)%7D%20=%20x_k"></td>
+</tr>
+</tbody>
+</table>
+<p>Então a mediana é calculada do jeito tradicional usando a equação abaixo. <img src="https://latex.codecogs.com/png.latex?%0Amd(x)%20=%20%5Cfrac%7Bx_%7B%5Cleft(%5Clceil(n+1)%5Ccdot%200.5%5Crceil%20%5Cright)%7D%20+%20x_%7B%5Cleft(%5Clfloor(n+1)%5Ccdot%200.5%5Crfloor%20%5Cright)%7D%7D%7B2%7D%0A"></p>
+<p>em que <img src="https://latex.codecogs.com/png.latex?%5Clfloor%20%5Ccdot%20%5Crfloor"> é a função <em>arredonda para baixo</em> e <img src="https://latex.codecogs.com/png.latex?%5Clceil%20%5Ccdot%20%5Crceil"> é a função <em>arredonda para cima</em>. Por exemplo, <img src="https://latex.codecogs.com/png.latex?%5Clfloor%201,2%20%5Crfloor%20=%201">, <img src="https://latex.codecogs.com/png.latex?%5Clfloor%201,76%20%5Crfloor%20=%201">, <img src="https://latex.codecogs.com/png.latex?%5Clceil%201,2%20%5Crceil%20=%202"> e <img src="https://latex.codecogs.com/png.latex?%5Clceil%201,76%20%5Crceil%20=2">.</p>
+<section id="exemplo" class="level3">
+<h3 class="anchored" data-anchor-id="exemplo">Exemplo</h3>
+<p>Considere o gráfico de barras da variável <code>Número de filhos</code> de um conjunto de <img src="https://latex.codecogs.com/png.latex?36"> funcionário da <code>Companhia MB</code> representado na figura abaixo.</p>
+<p><img src="https://cienciadedados.quarto.pub/paginas/cade/medidas-resumo-graficos/grafico-barras-numero-filhos.png" alt="Gráfico de barras para variável quantitativa discreta Número de filhos." width="50%"></p>
+<p>Note que a barra que corresponde a <code>zero filhos</code> tem altura <img src="https://latex.codecogs.com/png.latex?20"> e frequência <img src="https://latex.codecogs.com/png.latex?20">, a barra que corresponde a <code>um filho</code> tem altura <img src="https://latex.codecogs.com/png.latex?5"> e frequência <img src="https://latex.codecogs.com/png.latex?5">, a barra que corresponde a <code>dois filhos</code> tem altura <img src="https://latex.codecogs.com/png.latex?7"> e frequência <img src="https://latex.codecogs.com/png.latex?7">, a barra que corresponde a <code>três filhos</code> tem altura <img src="https://latex.codecogs.com/png.latex?3"> e frequência <img src="https://latex.codecogs.com/png.latex?3">, a barra que corresponde a <code>quatro filhos</code> tem altura <img src="https://latex.codecogs.com/png.latex?0"> e frequência <img src="https://latex.codecogs.com/png.latex?0"> e a barra que corresponde a <code>cinco filhos</code> tem altura <img src="https://latex.codecogs.com/png.latex?1"> e frequência <img src="https://latex.codecogs.com/png.latex?1">. Consequentemente, temos a seguinte tabela de distribuição de frequências.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 26%">
+<col style="width: 28%">
+<col style="width: 22%">
+<col style="width: 22%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Número de filhos</th>
+<th style="text-align: center;">Frequência</th>
+<th style="text-align: center;">Frequência relativa (proporção)</th>
+<th style="text-align: center;">Porcentagem</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?0"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?20"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?%5Cfrac%7B20%7D%7B36%7D%20=%200,5556"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?0,5556%20%5Ccdot%20100%20=%2055,56%5C%5C%25"></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?1"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?5"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?%5Cfrac%7B5%7D%7B36%7D%20=%200,1389"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?0,1389%20%5Ccdot%20100%20=%2013,89%5C%5C%25"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?2"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?7"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?%5Cfrac%7B7%7D%7B36%7D=0,1944"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?0,1944%20%5Ccdot%20100%20=%2019,44%5C%5C%25"></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?3"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?3"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?%5Cfrac%7B3%7D%7B36%7D=0,0833"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?0,0833%20%5Ccdot%20100%20=%208,33%5C%5C%25"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?4"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?0"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?%5Cfrac%7B0%7D%7B36%7D%20=0"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?0%20%5Ccdot%20100%20=%200%5C%5C%25"></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?5"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?1"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?%5Cfrac%7B1%7D%7B36%7D%20=%200,0278"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?0,0278%20%5Ccdot%20100%20=%202,78%5C%5C%25"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">Total</td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?36"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?1"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?100"></td>
+</tr>
+</tbody>
+</table>
+<p><img src="https://latex.codecogs.com/png.latex?%0A%5Cbegin%7Bsplit%7D%0A%5Cbar%7Bx%7D%20&amp;=%20%5Cfrac%7B20%20%5Ccdot%200%20+%205%20%5Ccdot%201%20+%207%20%5Ccdot%202%20+%203%20%5Ccdot%203%20+%200%20%5Ccdot%204%20+%201%20%5Ccdot%205%7D%7B36%7D%20=%200,92.%5Cnewline%0Adp(x)%20&amp;=%20%5Csqrt%7B%5Cfrac%7B20%20%5Ccdot%20(0%20-%200,92)%5E2%20+%205%20%5Ccdot%20(1%20-%200,92)%5E2%20+%207%20%5Ccdot%20(2%20-%200,92)%5E2%20+%203%20%5Ccdot%20(3%20-%200,92)%5E2%20+%200%20%5Ccdot%20(4%20-%200,92)%5E2%20+%201%20%5Ccdot%20(5%20-%200,92)%5E2%7D%7B35%7D%7D%5Cnewline%0A&amp;=%201,25.%0A%5Cend%7Bsplit%7D%0A"></p>
+<p>Para calcular a mediana, primeiro precisamos encontrar as estatísticas de ordem.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Estatísticas de ordem</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><img src="https://latex.codecogs.com/png.latex?x_%7B(1)%7D=x_%7B(2)%7D=%5C%5Ccdots=x_%7B(20)%7D=0"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><img src="https://latex.codecogs.com/png.latex?x_%7B(21)%7D=x_%7B(22)%7D=x_%7B(23)%7D=x_%7B(24)%7D=x_%7B(25)%7D=1"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><img src="https://latex.codecogs.com/png.latex?x_%7B(26)%7D=x_%7B(27)%7D=x_%7B(28)%7D=x_%7B(29)%7D=x_%7B(30)%7D=x_%7B(31)%7D=x_%7B(32)%7D=2"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><img src="https://latex.codecogs.com/png.latex?x_%7B(33)%7D=x_%7B(34)%7D=x_%7B(35)%7D=3"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><img src="https://latex.codecogs.com/png.latex?x_%7B(36)%7D%20=%205"></td>
+</tr>
+</tbody>
+</table>
+<p>Então a mediana é dada por</p>
+<p><img src="https://latex.codecogs.com/png.latex?%0A%5Cbegin%7Bsplit%7D%0Amd(x)%20&amp;=%20%5Cfrac%7Bx_%7B%5Cleft(%5Clfloor%20%5Cfrac%7Bn+1%7D%7B2%7D%20%20%5Crfloor%5Cright)%7D%20+%20x_%7B%5Cleft(%5Clceil%20%5Cfrac%7Bn+1%7D%7B2%7D%20%20%5Crceil%5Cright)%7D%7D%7B2%7D%5Cnewline%0A&amp;=%20%5Cfrac%7Bx_%7B%5Cleft(%5Clfloor%20%5Cfrac%7B36+1%7D%7B2%7D%20%20%5Crfloor%5Cright)%7D%20+%20x_%7B%5Cleft(%5Clceil%20%5Cfrac%7B36+1%7D%7B2%7D%20%20%5Crceil%5Cright)%7D%7D%7B2%7D%5Cnewline%0A&amp;=%20%5Cfrac%7Bx_%7B%5Cleft(%5Clfloor%2018,5%20%20%5Crfloor%5Cright)%7D%20+%20x_%7B%5Cleft(%5Clceil%2018,5%20%20%5Crceil%5Cright)%7D%7D%7B2%7D%5Cnewline%0A&amp;=%20%5Cfrac%7Bx_%7B%5Cleft(18%5Cright)%7D%20+%20x_%7B%5Cleft(19%5Cright)%7D%7D%7B2%7D=0%5Cnewline%0A%5Cend%7Bsplit%7D%0A"></p>
+</section>
+</section>
+<section id="histograma" class="level2">
+<h2 class="anchored" data-anchor-id="histograma">Histograma</h2>
+<p>O histograma é um gráfico construído usando barras sem espaçamento entre elas, e cada barra tem a largura da base igual a largura do intervalo intervalo usado na contagem da variável quantitativa contínua e a área da barra é igual a frequência relativa<sup>3</sup>. Note que a área da figura geométrica do histograma sempre é um, e a altura de cada barra é a divisão da frequência relativa pela largura do intervalo conforme ilustrado na figura abaixo. Chamamos essa divisão de <em>Densidade de frequência</em>.</p>
+<p><img src="https://cienciadedados.quarto.pub/paginas/cade/medidas-resumo-graficos/histograma-continua.png" alt="Histograma de uma variável quantitativa contínua." width="50%"></p>
+<p>Para encontrarmos a frequência relativa de cada intervalo, e consequentemente a porcentagem, precisamos multiplicar a <em>densidade de frequência</em> (altura da barra) pela largura do intervalo, conforme tabela abaixo.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 24%">
+<col style="width: 32%">
+<col style="width: 24%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">X</th>
+<th style="text-align: center;">Densidade de frequência (altura da barra)</th>
+<th style="text-align: center;">Frequência relativa</th>
+<th style="text-align: center;">Porcentagem</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?%5Ba_0,%20a_1)"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?df_1"></td>
+<td style="text-align: center;">f_1 = <img src="https://latex.codecogs.com/png.latex?df_1%20%5Ccdot%20(a_1%20-%20a_0)"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?f_1%20%5Ccdot%20100%5C%25"></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?%5Ba_1,%20a_2)"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?df_2"></td>
+<td style="text-align: center;">f_2 = <img src="https://latex.codecogs.com/png.latex?df_2%20%5Ccdot%20(a_2%20-%20a_1)"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?f_2%20%5Ccdot%20100%5C%25"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?%5Ba_3,%20a_2)"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?df_3"></td>
+<td style="text-align: center;">f_3 = <img src="https://latex.codecogs.com/png.latex?df_3%20%5Ccdot%20(a_3%20-%20a_2)"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?f_3%20%5Ccdot%20100%5C%25"></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?%5Cvdots"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?%5Cvdots"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?%5Cvdots"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?%5Cvdots"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?%5Ba_k,%20a_%7Bk-1%7D)"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?df_k"></td>
+<td style="text-align: center;">f_k = <img src="https://latex.codecogs.com/png.latex?df_k%20%5Ccdot%20(a_k%20-%20a_%7Bk-1%7D)"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?f_k%20%5Ccdot%20100%5C%25"></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Total</td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?--"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?1"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?100%5C%25"></td>
+</tr>
+</tbody>
+</table>
+<p>Se soubermos o tamanho da amostra, conseguimos calcular a frequência (absoluta): basta multiplicar a frequência relativa pelo tamanho da amostra. Imagine que o tamanho da amostra é <img src="https://latex.codecogs.com/png.latex?n">, então a tabela de distribuição de frequências é dada pela tabela abaixo.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 13%">
+<col style="width: 16%">
+<col style="width: 21%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">X</th>
+<th style="text-align: center;">Densidade de frequência (altura da barra)</th>
+<th style="text-align: center;">Frequência relativa</th>
+<th style="text-align: center;">Porcentagem</th>
+<th style="text-align: center;">Frequência</th>
+<th style="text-align: center;"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?%5Ba_0,%20a_1)"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?df_1"></td>
+<td style="text-align: center;">f_1 = <img src="https://latex.codecogs.com/png.latex?df_1%20%5Ccdot%20(a_1%20-%20a_0)"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?f_1%20%5Ccdot%20100%5C%25"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?f_1%20%5Ccdot%20n"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?%5Ba_1,%20a_2)"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?df_2"></td>
+<td style="text-align: center;">f_2 = <img src="https://latex.codecogs.com/png.latex?df_2%20%5Ccdot%20(a_2%20-%20a_1)"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?f_2%20%5Ccdot%20100%5C%25"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?f_2%20%5Ccdot%20n"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?%5Ba_3,%20a_2)"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?df_3"></td>
+<td style="text-align: center;">f_3 = <img src="https://latex.codecogs.com/png.latex?df_3%20%5Ccdot%20(a_3%20-%20a_2)"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?f_3%20%5Ccdot%20100%5C%25"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?f_3%20%5Ccdot%20n"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?%5Cvdots"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?%5Cvdots"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?%5Cvdots"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?%5Cvdots"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?%5Cvdots"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?%5Ba_k,%20a_%7Bk-1%7D)"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?df_k"></td>
+<td style="text-align: center;">f_k = <img src="https://latex.codecogs.com/png.latex?df_k%20%5Ccdot%20(a_k%20-%20a_%7Bk-1%7D)"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?f_k%20%5Ccdot%20100%5C%25"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?f_k%20%5Ccdot%20n"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Total</td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?--"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?1"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?100%5C%25"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?n"></td>
+<td style="text-align: center;"></td>
+</tr>
+</tbody>
+</table>
+<p>Agora, queremos calcular a média e o desvio padrão. Mas na tabela de distribuição de frequências acima, sabemos apenas que <img src="https://latex.codecogs.com/png.latex?n_i"> valores da variável quantitativa contínua <img src="https://latex.codecogs.com/png.latex?X"> está entre <img src="https://latex.codecogs.com/png.latex?a_%7Bi-1%7D"> e <img src="https://latex.codecogs.com/png.latex?a_i">, para <img src="https://latex.codecogs.com/png.latex?i=1,%20%5Cdots,%20k">, mas não sabemos quais são esses valores e sem esses valores não conseguimos calcular a média e o desvio padrão. Existe vários algoritmos para contornar essa restrição e você pode consultar, por exemplo, o livro com título <a href="https://gilbertosassi.netlify.app/ensino/2022/02/primeiro-semestre-de-2022/estatistica-basica-bussab-morettin.pdf"><strong>Estatística Básica</strong></a> de Bussab e <a href="https://www.ime.usp.br/~pam/">Morettin</a>. Aqui neste post, vamos usar uma abordagem bem simples, rápida e um pouco grosseira: vamos assumir que todos os <img src="https://latex.codecogs.com/png.latex?n_i"> valores do intervalo de valores <img src="https://latex.codecogs.com/png.latex?%5Ba_%7Bi-1%7D,%20a_i)"> são aproximadamente iguais a <img src="https://latex.codecogs.com/png.latex?%5Cfrac%7Ba_%7Bi-1%7D%20+%20a_i%7D%7B2%7D">. Vou chamar esse valor <img src="https://latex.codecogs.com/png.latex?%5Cfrac%7Ba_%7Bi-1%7D%20+%20a_i%7D%7B2%7D"> de ponto médio. E temos a seguinte tabela de distribuição de frequências.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 11%">
+<col style="width: 13%">
+<col style="width: 18%">
+<col style="width: 13%">
+<col style="width: 13%">
+<col style="width: 13%">
+<col style="width: 13%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">X</th>
+<th style="text-align: center;">Densidade de frequência (altura da barra)</th>
+<th style="text-align: center;">Frequência relativa</th>
+<th style="text-align: center;">Porcentagem</th>
+<th style="text-align: center;">Frequência</th>
+<th style="text-align: center;">Ponto médio</th>
+<th style="text-align: center;"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?%5Ba_0,%20a_1)"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?df_1"></td>
+<td style="text-align: center;">f_1 = <img src="https://latex.codecogs.com/png.latex?df_1%20%5Ccdot%20(a_1%20-%20a_0)"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?f_1%20%5Ccdot%20100%5C%25"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?f_1%20%5Ccdot%20n"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?p_1%20=%20%5Cfrac%7Ba_0%20+%20a_1%7D%7B2%7D"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?%5Ba_1,%20a_2)"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?df_2"></td>
+<td style="text-align: center;">f_2 = <img src="https://latex.codecogs.com/png.latex?df_2%20%5Ccdot%20(a_2%20-%20a_1)"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?f_2%20%5Ccdot%20100%5C%25"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?f_2%20%5Ccdot%20n"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?p_2%20=%20%5Cfrac%7Ba_2%20+%20a_1%7D%7B2%7D"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?%5Ba_3,%20a_2)"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?df_3"></td>
+<td style="text-align: center;">f_3 = <img src="https://latex.codecogs.com/png.latex?df_3%20%5Ccdot%20(a_3%20-%20a_2)"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?f_3%20%5Ccdot%20100%5C%25"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?f_3%20%5Ccdot%20n"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?p_3%20=%20%5Cfrac%7Ba_3%20+%20a_2%7D%7B2%7D"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?%5Cvdots"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?%5Cvdots"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?%5Cvdots"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?%5Cvdots"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?%5Cvdots"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?%5Ba_k,%20a_%7Bk-1%7D)"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?df_k"></td>
+<td style="text-align: center;">f_k = <img src="https://latex.codecogs.com/png.latex?df_k%20%5Ccdot%20(a_k%20-%20a_%7Bk-1%7D)"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?f_k%20%5Ccdot%20100%5C%25"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?f_k%20%5Ccdot%20n"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?p_k%20=%20%5Cfrac%7Ba_k%20+%20a_%7Bk-1%7D%7D%7B2%7D"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Total</td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?--"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?1"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?100%5C%25"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?n"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?--"></td>
+<td style="text-align: center;"></td>
+</tr>
+</tbody>
+</table>
+<p>Com a tabela de distribuição de frequências, podemos usar o ponto médio para calcular a média e o desvio padrão de forma análoga ao caso da variável quantitativa discreta. Mais precisamente,</p>
+<p><img src="https://latex.codecogs.com/png.latex?%0A%5Cbegin%7Bsplit%7D%0A%5Cbar%7Bx%7D%20&amp;=%20%5Cfrac%7Bp_1%20%5Ccdot%20n_1%20+%20p_2%20%5Ccdot%20n_2%20+%20%5Ccdots%20+%20p_k%20%5Ccdot%20n_k%7D%7Bn%7D%5Cnewline%0Adp(x)%20&amp;=%20%5Csqrt%7BVar(x)%7D%5Cnewline%0A&amp;=%20%5Csqrt%7B%5Cfrac%7Bn_1(%5Cbar%7Bx%7D%20-%20p_1)%20+%20n_2(%5Cbar%7Bx%7D%20-%20p_2)%20+%20%5Ccdots%20+%20n_k(%5Cbar%7Bx%7D%20-%20p_k)%7D%7Bn-1%7D%7D%5Cnewline%0A%5Cend%7Bsplit%7D%0A"></p>
+<p>Para calcular a mediana, precisamos calcular as estatísticas de ordem <img src="https://latex.codecogs.com/png.latex?p_%7B(i)%7D">, em que <img src="https://latex.codecogs.com/png.latex?p_%7B(i)%7D"> é o <img src="https://latex.codecogs.com/png.latex?i">-ésimo menor número. Imagine que <img src="https://latex.codecogs.com/png.latex?p_1"> é o menor número entre os pontos médios, então os <img src="https://latex.codecogs.com/png.latex?n_1"> menores pontos médios são todos iguais a <img src="https://latex.codecogs.com/png.latex?p_1">: <img src="https://latex.codecogs.com/png.latex?p_%7B(1)%7D%20=%20p_%7B(2)%7D%20=%20%5Ccdots%20=%20p_%7B(n_1)%7D%20=%20p_1">. Suponha que <img src="https://latex.codecogs.com/png.latex?p_2"> é o segundo menor valor da amostra, então os <img src="https://latex.codecogs.com/png.latex?n_2"> menores valores (depois de <img src="https://latex.codecogs.com/png.latex?p_1">) são todos iguais a <img src="https://latex.codecogs.com/png.latex?p_2">: <img src="https://latex.codecogs.com/png.latex?p_%7B(n_1+1)%7D%20=%20p_%7B(n_1+2)%7D%20=%20%5Ccdots%20=%20p_%7B(n_1+n_2)%7D%20=%20p_2">. Imagine agora que <img src="https://latex.codecogs.com/png.latex?p_3"> é o terceiro menor valor da amostra, então os menores valores (depois de <img src="https://latex.codecogs.com/png.latex?p_1"> e <img src="https://latex.codecogs.com/png.latex?p_2">) são todos iguais a <img src="https://latex.codecogs.com/png.latex?p_3">: <img src="https://latex.codecogs.com/png.latex?p_%7B(n_1+n_2+1)%7D%20=%20p_%7B(n_1+n_2+2)%7D%20=%20%5Ccdots%20=%20p_%7B(n_1+n_2+n_3)%7D%20=%20p_3">. E continuamos neste processo até organizar todos os valores observados da amostra do menor até o maior valor como indicado na tabela abaixo. Note que estamos usando a frequência <img src="https://latex.codecogs.com/png.latex?n_1">, <img src="https://latex.codecogs.com/png.latex?n_2"> até <img src="https://latex.codecogs.com/png.latex?n_k"> da tabela distribuição de frequências.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 100%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Estatística de ordem</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><img src="https://latex.codecogs.com/png.latex?p_%7B(1)%7D%20=%20p_%7B(2)%7D%20=%20%5Ccdots%20=%20p_%7B(n_1)%7D%20=%20p_1"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><img src="https://latex.codecogs.com/png.latex?p_%7B(n_1+1)%7D%20=%20p_%7B(n_1+2)%7D%20=%20%5Ccdots%20=%20p_%7B(n_1+n_2)%7D%20=%20p_2"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><img src="https://latex.codecogs.com/png.latex?p_%7B(n_1+n_2+1)%7D%20=%20p_%7B(n_1+n_2+2)%7D%20=%20%5Ccdots%20=%20p_%7B(n_1+n_2%20+%20n_3)%7D%20=%20p_3"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><img src="https://latex.codecogs.com/png.latex?%5C%5Cvdots"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><img src="https://latex.codecogs.com/png.latex?p_%7B(n_1+n_2%20+%20n_3+%20%5Ccdots%20+%20n_%7Bk-1%7D+1)%7D%20=%20p_%7B(n_1+n_2%20+%20n_3+%20%5Ccdots%20+%20n_%7Bk-1%7D+2)%7D%20=%20%5Ccdots%20=%20p_%7B(n_1+n_2%20+%20n_3+%20%5Ccdots%20+%20n_%7Bk-1%7D+%20n_k)%7D%20=%20p_k"></td>
+</tr>
+</tbody>
+</table>
+<p>Então a mediana é calculada do jeito tradicional usando a equação abaixo. <img src="https://latex.codecogs.com/png.latex?%0Amd(x)%20=%20%5Cfrac%7Bp_%7B%5Cleft(%5Clceil(n+1)%5Ccdot%200.5%5Crceil%20%5Cright)%7D%20+%20p_%7B%5Cleft(%5Clfloor(n+1)%5Ccdot%200.5%5Crfloor%20%5Cright)%7D%7D%7B2%7D.%0A"></p>
+<section id="exemplo-1" class="level3">
+<h3 class="anchored" data-anchor-id="exemplo-1">Exemplo</h3>
+<p>Considere o histograma da variável quantitativa contínua <img src="https://latex.codecogs.com/png.latex?X"> de 36 funcionário da <a href="empresa.xlsx">companhia MB</a> da figura abaixo.</p>
+<p><img src="https://cienciadedados.quarto.pub/paginas/cade/medidas-resumo-graficos/histograma-funcionarios.png" alt="Histograma para a variável salário." width="50%"></p>
+<p>Então, temos a seguinte tabela de distribuição de frequências.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 11%">
+<col style="width: 32%">
+<col style="width: 19%">
+<col style="width: 16%">
+<col style="width: 9%">
+<col style="width: 11%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Salário</th>
+<th style="text-align: center;">Densidade de frequência</th>
+<th style="text-align: center;">Frequência relativa</th>
+<th style="text-align: center;">Porcentagem</th>
+<th style="text-align: center;">frequência</th>
+<th style="text-align: center;">Ponto médio</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?%5B4,%208)"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?0,0694"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?0,0694%20%5Ccdot%204%20=%200,2776"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?27,76%5C%5C%25"></td>
+<td style="text-align: center;">$0,2776 \cdot 36 \approx 10 <img src="https://latex.codecogs.com/png.latex?%7C"> = 6<img src="https://latex.codecogs.com/png.latex?%7C%0A%7C">[8, 12)$</td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?0,0833"></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?%5B12,%2016)"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?0,0556"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?0,0556%20%5Ccdot%204%20=%200,2224"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?22,24%5C%5C%25"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?0,2224%20%5C%5Ccdot%2036%20%5C%5Capprox%208"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?%5Cfrac%7B12%20+%2016%7D%7B2%7D%20=%2014"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?%5B16,%2020)"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?0,0347"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?0,0347%20%5Ccdot%204%20=%200,1388"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?13,88%5C%5C%25"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?0,1388%20%5C%5Ccdot%2036%20%5C%5Capprox%205"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?%5Cfrac%7B16%20+%2020%7D%7B2%7D%20=%2018"></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?%5B20,%2024)"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?0,0069"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?0,0069%20%5Ccdot%204%20=%200,0276"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?2,76%5C%5C%25"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?0,0276%20%5C%5Ccdot%2036%20%5C%5Capprox%201"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?%5Cfrac%7B20%20+%2024%7D%7B2%7D%20=%2022"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">Total</td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?--"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?1"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?100%5C%5C%25"></td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?--"></td>
+<td style="text-align: center;"></td>
+</tr>
+</tbody>
+</table>
+<p>A média e o desvio padrão são dados por</p>
+<p><img src="https://latex.codecogs.com/png.latex?%0A%5Cbegin%7Bsplit%7D%0A%5Cbar%7Bx%7D%20&amp;=%20%5Cfrac%7B10%20%5Ccdot%206%20+%2012%20%5Ccdot%2010%20+%208%20%5Ccdot%2014%20+%205%20%5Ccdot%2018%20+%201%20%5Ccdot%201%7D%7B36%7D%5Cnewline%0A&amp;=%2011,22%5Cnewline%0Adp(x)%20&amp;=%20%5Csqrt%7B%5Cfrac%7B10%20%5Ccdot%20(6%20-%2011,22)%5E2%20+%2012%20%5Ccdot%20(10%20-%2011,22)%5E2%20+%208%20%5Ccdot%20(14%20-%2011,22)%5E2%20+%205%20%5Ccdot%20(18%20-%2011,22)%5E2%20+%201%20%5Ccdot%20(22%20-%2011,22)%5E2%7D%7B35%7D%7D%5Cnewline%0A&amp;=%204,47.%0A%5Cend%7Bsplit%7D%0A"></p>
+<p>Usando a tabela de distribuição de frequências acima, podemos encontrar as estatísticas de ordem.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Estatísticas de ordem</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><img src="https://latex.codecogs.com/png.latex?p_%7B(1)%7D=%5C%5Ccdots=p_%7B(10)%7D=6"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><img src="https://latex.codecogs.com/png.latex?p_%7B(11)%7D=%5C%5Ccdots=p_%7B(22)%7D=10"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><img src="https://latex.codecogs.com/png.latex?p_%7B(23)%7D=%5C%5Ccdots=p_%7B(30)%7D=14"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><img src="https://latex.codecogs.com/png.latex?p_%7B(31)%7D=p_%7B(32)%7D=p_%7B(33)%7D=p_%7B(34)%7D=p_%7B(35)%7D=18"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><img src="https://latex.codecogs.com/png.latex?p_%7B(36)%7D=22"></td>
+</tr>
+</tbody>
+</table>
+<p>Então a mediana é dada por</p>
+<p><img src="https://latex.codecogs.com/png.latex?%0A%5Cbegin%7Bsplit%7D%0Amd(x)%20&amp;=%20%5Cfrac%7Bx_%7B%5Cleft(%5Clfloor%20%5Cfrac%7Bn+1%7D%7B2%7D%20%20%5Crfloor%5Cright)%7D%20+%20x_%7B%5Cleft(%5Clceil%20%5Cfrac%7Bn+1%7D%7B2%7D%20%20%5Crceil%5Cright)%7D%7D%7B2%7D%5Cnewline%0A&amp;=%20%5Cfrac%7Bx_%7B%5Cleft(%5Clfloor%20%5Cfrac%7B36+1%7D%7B2%7D%20%20%5Crfloor%5Cright)%7D%20+%20x_%7B%5Cleft(%5Clceil%20%5Cfrac%7B36+1%7D%7B2%7D%20%20%5Crceil%5Cright)%7D%7D%7B2%7D%5Cnewline%0A&amp;=%20%5Cfrac%7Bx_%7B%5Cleft(%5Clfloor%2018,5%20%20%5Crfloor%5Cright)%7D%20+%20x_%7B%5Cleft(%5Clceil%2018,5%20%20%5Crceil%5Cright)%7D%7D%7B2%7D%5Cnewline%0A&amp;=%20%5Cfrac%7Bx_%7B%5Cleft(18%5Cright)%7D%20+%20x_%7B%5Cleft(19%5Cright)%7D%7D%7B2%7D=%20%5Cfrac%7B10%20+%2010%7D%7B2%7D%20=%2010.%0A%5Cend%7Bsplit%7D%0A"></p>
+<hr>
+
+
+</section>
+</section>
+
+
+<p>© 2024 <strong><code>R</code> para Ciência de Dados <br>🖤</strong> by Carolina Paraíba e Gilberto Sassi</p><div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Notas de rodapé</h2>
+
+<ol>
+<li id="fn1"><p>O gráfico de barras pode ser construído usando frequência relativa (proporção) ou porcentagem. Fique atento ao rótulo do eixo <img src="https://latex.codecogs.com/png.latex?y"> do gráfico.↩︎</p></li>
+<li id="fn2"><p>Os desvios ao quadrado são dados por <img src="https://latex.codecogs.com/png.latex?(x_i%20-%20%5Cbar%7Bx%7D)%5E2"> em que <img src="https://latex.codecogs.com/png.latex?x_i"> é um valor observado da amostra e <img src="https://latex.codecogs.com/png.latex?%5Cbar%7Bx%7D"> é a média.↩︎</p></li>
+<li id="fn3"><p>O histograma também pode ser construído usando frequência (absoluta) ou porcentagem. Mas geralmente, usamos frequência relativa.↩︎</p></li>
+</ol>
+</section></div> ]]></description>
+  <category>Ciência de Dados</category>
+  <category>Exploração e visualização de dados</category>
+  <category>Medidas de resumo</category>
+  <category>Gráfico de barras</category>
+  <category>Histograma</category>
+  <guid>https://cienciadedados.quarto.pub/paginas/cade/medidas-resumo-graficos/medidas-resumo-graficos.html</guid>
+  <pubDate>Wed, 01 Nov 2023 03:00:00 GMT</pubDate>
+  <media:content url="https://cienciadedados.quarto.pub/paginas/cade/medidas-resumo-graficos/barra.png" medium="image" type="image/png" height="144" width="144"/>
+</item>
+<item>
+  <title>Como criar tabela de distribuição de frequências usando o R?</title>
+  <dc:creator>Gilberto Pereira Sassi</dc:creator>
+  <link>https://cienciadedados.quarto.pub/paginas/cade/tabela-frequencias/tabela-frequencias.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>Neste artigo, eu vou mostrar como usar a linguagem <code>R</code> para criar tabelas de distribuição de frequências para variáveis categóricas, variáveis discretas e variáveis contínuas. A primeira coisa que um analista pode fazer é <strong>contar</strong>! A contagem ou frequência, como falamos em Estatística e Ciência de Dados, permite que você detecte valores que são comuns e valores pouco usuais e também permite que você encontre diversas características da variável. Além disso, você pode usar tabelas de distribuição de frequências para comunicar informações e construir relatórios e artigos.</p>
+<p>Para simplificar a sua vida, <del>assim espero</del>, eu dividi este texto em três partes: tabelas de distribuição de frequências para variáveis categóricas; tabelas de distribuição de frequências para variáveis discretas; e tabelas de distribuição de frequências para variáveis contínuas. E, para ilustrar tudo que eu estiver falando, eu vou usar um conjunto de dados do livro <a href="https://www.ime.usp.br/~pam/EstBas.html">Estatística Básica</a>: <em><a href="empresa.xlsx">empresa.xlsx</a></em> que é um conjunto de dados com informações socioeconômicas de 36 funcionários de um departamento de contabilidade.</p>
+<p>No que segue, vamos usar o <em>framework</em> <code>tidyverse</code> e o pacote <code>janitor</code>.</p>
+<section id="tabelas-de-distribuição-de-frequências-para-variáveis-categóricas" class="level2">
+<h2 class="anchored" data-anchor-id="tabelas-de-distribuição-de-frequências-para-variáveis-categóricas">Tabelas de distribuição de frequências para variáveis categóricas</h2>
+<p>Suponha que você tenha uma variável categórica <img src="https://latex.codecogs.com/png.latex?X"> com suporte <img src="https://latex.codecogs.com/png.latex?%5C%7BA_1,%5Cdots,%20A_k%5C%7D">, então a ideia é contar quantas vezes <img src="https://latex.codecogs.com/png.latex?A_1"> aparece, <img src="https://latex.codecogs.com/png.latex?A_2"> aparece e assim por diante. Além disso, você pode calcular a porcentagem de vezes que <img src="https://latex.codecogs.com/png.latex?A_1"> aparece, a porcentagem <img src="https://latex.codecogs.com/png.latex?A_2"> de vezes que aparece e assim sucessivamente.</p>
+<p>Para ilustrar, considere a variável <code>escolaridade</code> onde o pesquisador armazenou o grau de escolaridade de cada um dos 36 funcionários. A primeira coisa que você precisa fazer é carregar os pacotes e os dados.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">library</span>(readxl)</span>
+<span id="cb1-2"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">library</span>(janitor)</span>
+<span id="cb1-3"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">library</span>(tidyverse)</span></code></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># carregando o arquivo</span></span>
+<span id="cb2-2">df_dados <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">read_xlsx</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"empresa.xlsx"</span>)</span>
+<span id="cb2-3"></span>
+<span id="cb2-4"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># uma olhadinha rápida nos dados carregados</span></span>
+<span id="cb2-5"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">glimpse</span>(df_dados) </span></code></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Rows: 36
+Columns: 6
+$ estado_civil  &lt;chr&gt; "solteiro", "casado", "casado", "solteiro", "solteiro", …
+$ escolaridade  &lt;chr&gt; "ensino fundamental", "ensino fundamental", "ensino fund…
+$ numero_filhos &lt;dbl&gt; 0, 1, 2, 0, 0, 0, 0, 0, 1, 0, 2, 0, 0, 3, 0, 0, 1, 2, 0,…
+$ salario       &lt;dbl&gt; 4.00, 4.56, 5.25, 5.73, 6.26, 6.66, 6.86, 7.39, 7.59, 7.…
+$ idade         &lt;dbl&gt; 26, 32, 36, 20, 40, 28, 41, 43, 34, 23, 33, 27, 37, 44, …
+$ procedencia   &lt;chr&gt; "interior", "capital", "capital", "outra", "outra", "int…</code></pre>
+</div>
+</div>
+<p>Se tudo estiver correto, já estamos prontos para construir a tabela de distribuição de frequência, ou seja, contar quantos funcionários têm <code>ensino fundamental</code>, quantos funcionários têm <code>ensino médio</code> e quantos funcionários têm <code>superior</code>.</p>
+<p>Primeiro usamos a função <code>tabyl</code> do pacote <code>janitor</code> para contar sem incluir o total e sem o sinal de porcentagem na coluna de <em>porcentagem</em>. Depois usamos <code>adorn_totals</code> e <code>adorn_pct_formatting</code> para adicionar o total na tabela e o sinal de porcentagem, respectivamente. Finalmente, usamos a função <code>rename</code> do pacote <code>dplyr</code> para traduzir os nomes da tabela para o português. Repare que usamos o operador pipe <code>|&gt;</code> para simplificar a nossa codificação.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">tabyl</span>(df_dados, escolaridade) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">|&gt;</span> <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># função que realiza a contagem</span></span>
+<span id="cb4-2"> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">adorn_totals</span>() <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">|&gt;</span> <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># adiciona a linha de total a tabela</span></span>
+<span id="cb4-3"> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">adorn_pct_formatting</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">digits =</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2</span>, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">affix_sign =</span> <span class="cn" style="color: #8f5902;
+background-color: null;
+font-style: inherit;">FALSE</span>) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">|&gt;</span> <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># acrescenta porcentagem na tabela sem o sinal de %</span></span>
+<span id="cb4-4"> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">rename</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Frequência"</span> <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">=</span> n, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Porcentagem"</span> <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">=</span> percent) <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># nomes em português</span></span></code></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>       escolaridade Frequência Porcentagem
+ ensino fundamental         12       33.33
+       ensino médio         18       50.00
+           superior          6       16.67
+              Total         36      100.00</code></pre>
+</div>
+</div>
+</section>
+<section id="tabelas-de-distribuição-de-frequências-para-variáveis-discretas" class="level2">
+<h2 class="anchored" data-anchor-id="tabelas-de-distribuição-de-frequências-para-variáveis-discretas">Tabelas de distribuição de frequências para variáveis discretas</h2>
+<p>Para uma variável discreta, usamos uma abordagem semelhante a abordagem usada para variáveis categóricas. Suponha que <img src="https://latex.codecogs.com/png.latex?X"> seja uma variável discreta com suporte <img src="https://latex.codecogs.com/png.latex?%5C%7Bx_1,%20%5Cdots,%20x_k%5C%7D">. Então, vamos contar quantas vezes o valor <img src="https://latex.codecogs.com/png.latex?x_1"> apareceu no conjunto de dados, quantas vezes apareceu o valor <img src="https://latex.codecogs.com/png.latex?x_2"> e assim por diante. Além disso, também vamos calcular a porcentagem de vezes que o valor <img src="https://latex.codecogs.com/png.latex?x_1"> ocorreu no conjunto de dados, a porcentagem de vezes que o valor <img src="https://latex.codecogs.com/png.latex?x_2"> e assim por diante.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb6" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">tabyl</span>(df_dados, numero_filhos) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">|&gt;</span></span>
+<span id="cb6-2">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">adorn_totals</span>() <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">|&gt;</span></span>
+<span id="cb6-3">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">adorn_pct_formatting</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">digits =</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2</span>, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">affix_sign =</span> <span class="cn" style="color: #8f5902;
+background-color: null;
+font-style: inherit;">FALSE</span>) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">|&gt;</span></span>
+<span id="cb6-4">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">rename</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Número de filhos"</span> <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">=</span> numero_filhos, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Frequência"</span> <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">=</span> n, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Porcentagem"</span> <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">=</span> percent)</span></code></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> Número de filhos Frequência Porcentagem
+                0         20       55.56
+                1          5       13.89
+                2          7       19.44
+                3          3        8.33
+                5          1        2.78
+            Total         36      100.00</code></pre>
+</div>
+</div>
+</section>
+<section id="tabelas-de-distribuição-de-frequências-para-variáveis-contínuas" class="level2">
+<h2 class="anchored" data-anchor-id="tabelas-de-distribuição-de-frequências-para-variáveis-contínuas">Tabelas de distribuição de frequências para variáveis contínuas</h2>
+<p>E se quisermos construir uma tabela de distribuição de frequências para uma variável contínua? No conjunto de dados <em><a href="empresa.xlsx">empresa.xlsx</a></em>, a variável <code>salario</code> é contínua e se você olhar no arquivo <em><a href="empresa.xlsx">empresa.xlsx</a></em> você pode reparar que nenhum funcionário tem salário igual ao outro. Consequentemente, se usarmos a técnica que vimos nas seções anteriores, teremos uma tabela com 36 valores, que é basicamente uma cópia dos dados originais, e ficaria bem complicado de encontrar características desta variável.</p>
+<p>Neste caso, agregamos os valores em intervalos. Os intervalos podem ser determinados de diversas formas. O regulador ou o mercado pode especificar intervalos para uma variável, por exemplo os intervalos usados na medição de pressão arterial podem ser especificados pelo governo. Estudos ou pesquisas anteriores podem indicar quais intervalos você deveria usar em tabela de distribuição de frequências.</p>
+<p>E se você não tem acesso a estudos anteriores, nem regulador, nem <em>mercado</em> para indicar como construir os intervalos? Neste caso, você pode categorizar a variável contínua em <img src="https://latex.codecogs.com/png.latex?k"> intervalos de mesmo tamanho segundo a <strong>Regra de Sturge</strong>, que é dada por <img src="https://latex.codecogs.com/png.latex?%0Ak%20=%20%5Clfloor%201%20+%20%5Clog2(n)%20%5Crfloor,%0A"> onde <img src="https://latex.codecogs.com/png.latex?n"> é o número de linhas (ou o tamanho da amostra) do conjunto de dados, e <img src="https://latex.codecogs.com/png.latex?%5Clfloor%20x%20%5Crfloor"> é o maior número inteiro menor ou igual a <img src="https://latex.codecogs.com/png.latex?x"> (equivale a função <code>arrendonda.para.baixo</code> do <code>google sheets</code>).</p>
+<p>Em nosso exemplo, não temos regulador, nem mercado e nem estudos anteriores para nos indicar os intervalos para usar com a variável <code>salario</code> do conjuto de dados <em><a href="empresa.xlsx">empresa.xlsx</a></em>. Então, vamos usar a Regra de Sturge, ou seja, vamos categorizar a variável <code>salario</code> agregando os valores de <code>salario</code> em <img src="https://latex.codecogs.com/png.latex?k=%5Clfloor%201%20+%20%5Clog2(36)%20%5Crfloor=6"> intervalos de mesmo tamanho usando a função <code>cut</code>.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb8" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># limites dos intervalos</span></span>
+<span id="cb8-2">breaks <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">with</span>(df_dados, <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">seq</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">from =</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">min</span>(salario), <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">to =</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">max</span>(salario), <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">length.out =</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">6</span>))</span>
+<span id="cb8-3"></span>
+<span id="cb8-4"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># categorizando salario em 6 intervalos</span></span>
+<span id="cb8-5">df_dados <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">mutate</span>(df_dados, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">salario_cat =</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">cut</span>(salario, breaks, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">include.lowest =</span> T, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">right =</span> F))</span></code></pre></div>
+</div>
+<p>Após categorização, podemos usar as técnicas que aprendamos para variáveis categóricas.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb9" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">tabyl</span>(df_dados, salario_cat) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">|&gt;</span></span>
+<span id="cb9-2">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">adorn_totals</span>() <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">|&gt;</span></span>
+<span id="cb9-3">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">adorn_pct_formatting</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">digits =</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2</span>, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">affix_sign =</span> <span class="cn" style="color: #8f5902;
+background-color: null;
+font-style: inherit;">FALSE</span>) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">|&gt;</span></span>
+<span id="cb9-4">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">rename</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Salário"</span> <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">=</span> salario_cat, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Frequência"</span> <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">=</span> n, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Porcentagem"</span> <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">=</span> percent)</span></code></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>     Salário Frequência Porcentagem
+    [4,7.86)         10       27.78
+ [7.86,11.7)         12       33.33
+ [11.7,15.6)          7       19.44
+ [15.6,19.4)          6       16.67
+ [19.4,23.3]          1        2.78
+       Total         36      100.00</code></pre>
+</div>
+</div>
+<hr>
+
+
+</section>
+
+<p>© 2024 <strong><code>R</code> para Ciência de Dados <br>🖤</strong> by Carolina Paraíba e Gilberto Sassi</p> ]]></description>
+  <category>linguage R</category>
+  <category>Estatística</category>
+  <category>Ciência de Dados</category>
+  <category>Exploração e visualização de dados</category>
+  <guid>https://cienciadedados.quarto.pub/paginas/cade/tabela-frequencias/tabela-frequencias.html</guid>
+  <pubDate>Sun, 01 Oct 2023 03:00:00 GMT</pubDate>
+  <media:content url="https://cienciadedados.quarto.pub/paginas/cade/tabela-frequencias/tabela.png" medium="image" type="image/png" height="144" width="144"/>
+</item>
+</channel>
+</rss>

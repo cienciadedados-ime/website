@@ -1,0 +1,21 @@
+---
+title: ""
+listing:
+  id: posts
+  contents: material
+  type: table
+  categories: numbered
+  page-size: 5
+  feed: true
+  fields: [date, title, author]
+  sort:
+    - "date desc"
+    - "title desc"
+---
+
+Material dos cursos do projeto de extensão **`R` para Ciência de Dados**.
+
+::: {#posts}
+:::
+
+---

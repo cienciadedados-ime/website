@@ -1,0 +1,18 @@
+---
+title: "Catálogo de cursos"
+---
+
+
+||
+|:----|
+|[Ciência de Dados para Docentes usando o R](catalogo/ciencia-de-dados-para-docentes.html)<br>|
+|[Exploração e visualização de dados](catalogo/exploracao-visualizacao.html)<br>|
+|[Intervalos de Confiança e Testes de Hipóteses](catalogo/intervalo-confianca-teste-hipoteses.html)<br>|
+|[Introdução à Programação em R](catalogo/introducao-a-programacao.html)<br>|
+|[Modelos de Análise de Variância (Anova)](catalogo/modelo-de-analise-de-variancia.html)<br>|
+|[Produção de Texto usando Rmarkdown e Quarto](catalogo/producao-de-texto-usando-rmarkdown.html)<br>|
+|[Regressão Linear Simples e Múltipla](catalogo/regressao-linear-simples-e-multipla.html)<br>|
+|[Regressão Logística](catalogo/regressao-logistica.html)|
+
+
+---

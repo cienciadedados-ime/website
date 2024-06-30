@@ -1,0 +1,30 @@
+/* css styles */
+
+p {
+    text-align: justify; /* Justifica o texto */
+}
+
+/* Estilos gerais */
+html, body {
+  height: 100%; /* Define a altura para 100% */
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* 100% da altura da janela de visualização */
+}
+
+.content-wrap {
+  flex: 1 0 auto;
+}
+
+/* Estilização do rodapé */
+footer {
+    flex-shrink: 0; /* Isso garante que o rodapé não encolha */
+    background-color: #f7f7f7;
+    padding: 10px 20px;
+    text-align: center;
+}
