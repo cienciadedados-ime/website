@@ -1,18 +1,5 @@
 [
   {
-    "listing": "/paginas/eventos.html",
-    "items": []
-  },
-  {
-    "listing": "/paginas/cade.html",
-    "items": [
-      "/paginas/cade/probabilidade-condicional-bayes/prob-condicional.html",
-      "/paginas/cade/probabilidade/probabilidade.html",
-      "/paginas/cade/medidas-resumo-graficos/medidas-resumo-graficos.html",
-      "/paginas/cade/tabela-frequencias/tabela-frequencias.html"
-    ]
-  },
-  {
     "listing": "/paginas/material.html",
     "items": [
       "/paginas/material/2024/julho/anova.html",
@@ -26,5 +13,18 @@
       "/paginas/material/2023/cd-docentes/cd-docentes.html",
       "/paginas/material/2023/quarto/quarto.html"
     ]
+  },
+  {
+    "listing": "/paginas/cade.html",
+    "items": [
+      "/paginas/cade/probabilidade-condicional-bayes/prob-condicional.html",
+      "/paginas/cade/probabilidade/probabilidade.html",
+      "/paginas/cade/medidas-resumo-graficos/medidas-resumo-graficos.html",
+      "/paginas/cade/tabela-frequencias/tabela-frequencias.html"
+    ]
+  },
+  {
+    "listing": "/paginas/eventos.html",
+    "items": []
   }
 ]

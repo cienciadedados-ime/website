@@ -1,1 +1,1 @@
-Sitemap: https://cienciadedados.quarto.pub/sitemap.xml
+Sitemap: https://ufba.netlify.app/sitemap.xml

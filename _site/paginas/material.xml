@@ -6,15 +6,15 @@
       version="2.0">
 <channel>
 <title>Ciência de Dados</title>
-<link>https://cienciadedados.quarto.pub/paginas/material.html</link>
-<atom:link href="https://cienciadedados.quarto.pub/paginas/material.xml" rel="self" type="application/rss+xml"/>
+<link>https://ufba.netlify.app/paginas/material.html</link>
+<atom:link href="https://ufba.netlify.app/paginas/material.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.5.45</generator>
 <lastBuildDate>Fri, 05 Jul 2024 03:00:00 GMT</lastBuildDate>
 <item>
   <title>R para Ciência de Dados: Modelos de Análise de Variância (Anova)</title>
   <dc:creator>Carolina Costa Mota Paraíba</dc:creator>
-  <link>https://cienciadedados.quarto.pub/paginas/material/2024/julho/anova.html</link>
+  <link>https://ufba.netlify.app/paginas/material/2024/julho/anova.html</link>
   <description><![CDATA[ 
 
 
@@ -49,7 +49,7 @@
 </section>
 </section>
 
-<p>© 2024 <strong><code>R</code> para Ciência de Dados <br>🖤</strong> by Carolina Paraíba e Gilberto Sassi</p> ]]></description>
+<p>© 2024 <strong>Ciência de Dados <br>🖤</strong> by Carolina Paraíba e Gilberto Sassi</p> ]]></description>
   <category>Ciência de Dados</category>
   <category>Inferência Estatística</category>
   <category>Estatística</category>
@@ -58,14 +58,14 @@
   <category>Anova</category>
   <category>Modelo de Análise de Variância</category>
   <category>Modelos Lineares</category>
-  <guid>https://cienciadedados.quarto.pub/paginas/material/2024/julho/anova.html</guid>
+  <guid>https://ufba.netlify.app/paginas/material/2024/julho/anova.html</guid>
   <pubDate>Fri, 05 Jul 2024 03:00:00 GMT</pubDate>
-  <media:content url="https://cienciadedados.quarto.pub/assets/logo_projeto.png" medium="image" type="image/png" height="151" width="144"/>
+  <media:content url="https://ufba.netlify.app/assets/logo_projeto.png" medium="image" type="image/png" height="151" width="144"/>
 </item>
 <item>
   <title>R para Ciência de Dados: Intervalos de Confiança e Teste de Hipóteses</title>
   <dc:creator>Gilberto Sassi</dc:creator>
-  <link>https://cienciadedados.quarto.pub/paginas/material/2024/junho/inferencia-estatistica.html</link>
+  <link>https://ufba.netlify.app/paginas/material/2024/junho/inferencia-estatistica.html</link>
   <description><![CDATA[ 
 
 
@@ -379,20 +379,20 @@ Tabela&nbsp;1: Informações de candidatas/os do ENEM 2023 por cidade.
 </section>
 </section>
 
-<p>© 2024 <strong><code>R</code> para Ciência de Dados <br>🖤</strong> by Carolina Paraíba e Gilberto Sassi</p> ]]></description>
+<p>© 2024 <strong>Ciência de Dados <br>🖤</strong> by Carolina Paraíba e Gilberto Sassi</p> ]]></description>
   <category>Ciência de Dados</category>
   <category>Inferência Estatística</category>
   <category>Estatística</category>
   <category>Intervalo de Confiança</category>
   <category>Teste de Hipóteses</category>
-  <guid>https://cienciadedados.quarto.pub/paginas/material/2024/junho/inferencia-estatistica.html</guid>
+  <guid>https://ufba.netlify.app/paginas/material/2024/junho/inferencia-estatistica.html</guid>
   <pubDate>Fri, 07 Jun 2024 03:00:00 GMT</pubDate>
-  <media:content url="https://cienciadedados.quarto.pub/assets/logo_projeto.png" medium="image" type="image/png" height="151" width="144"/>
+  <media:content url="https://ufba.netlify.app/assets/logo_projeto.png" medium="image" type="image/png" height="151" width="144"/>
 </item>
 <item>
   <title>R para Ciência de Dados: Aplicações de Regressão Logística</title>
   <dc:creator>Thiago Gerolamo</dc:creator>
-  <link>https://cienciadedados.quarto.pub/paginas/material/2024/maio/aplicacoes-regressao-logistica.html</link>
+  <link>https://ufba.netlify.app/paginas/material/2024/maio/aplicacoes-regressao-logistica.html</link>
   <description><![CDATA[ 
 
 
@@ -435,19 +435,19 @@ Tabela&nbsp;1: Informações de candidatas/os do ENEM 2023 por cidade.
 </section>
 </section>
 
-<p>© 2024 <strong><code>R</code> para Ciência de Dados <br>🖤</strong> by Carolina Paraíba e Gilberto Sassi</p> ]]></description>
+<p>© 2024 <strong>Ciência de Dados <br>🖤</strong> by Carolina Paraíba e Gilberto Sassi</p> ]]></description>
   <category>Ciência de Dados</category>
   <category>Aplicações de Regressão Logística</category>
   <category>Estatística</category>
   <category>Aprendizagem supervisionada</category>
-  <guid>https://cienciadedados.quarto.pub/paginas/material/2024/maio/aplicacoes-regressao-logistica.html</guid>
+  <guid>https://ufba.netlify.app/paginas/material/2024/maio/aplicacoes-regressao-logistica.html</guid>
   <pubDate>Tue, 28 May 2024 03:00:00 GMT</pubDate>
-  <media:content url="https://cienciadedados.quarto.pub/assets/logo_projeto.png" medium="image" type="image/png" height="151" width="144"/>
+  <media:content url="https://ufba.netlify.app/assets/logo_projeto.png" medium="image" type="image/png" height="151" width="144"/>
 </item>
 <item>
   <title>R para Ciência de Dados: Regressão Linear Simples e Múltipla</title>
   <dc:creator>Carolina Costa Mota Paraíba</dc:creator>
-  <link>https://cienciadedados.quarto.pub/paginas/material/2024/abril/regressao-linear.html</link>
+  <link>https://ufba.netlify.app/paginas/material/2024/abril/regressao-linear.html</link>
   <description><![CDATA[ 
 
 
@@ -482,21 +482,21 @@ Tabela&nbsp;1: Informações de candidatas/os do ENEM 2023 por cidade.
 </section>
 </section>
 
-<p>© 2024 <strong><code>R</code> para Ciência de Dados <br>🖤</strong> by Carolina Paraíba e Gilberto Sassi</p> ]]></description>
+<p>© 2024 <strong>Ciência de Dados <br>🖤</strong> by Carolina Paraíba e Gilberto Sassi</p> ]]></description>
   <category>Ciência de Dados</category>
   <category>Estatística descritiva</category>
   <category>Regressão Linear Simples</category>
   <category>Regressão Linear Múltipla</category>
   <category>Regressão Linear</category>
   <category>Apredizagem Supervisionada</category>
-  <guid>https://cienciadedados.quarto.pub/paginas/material/2024/abril/regressao-linear.html</guid>
+  <guid>https://ufba.netlify.app/paginas/material/2024/abril/regressao-linear.html</guid>
   <pubDate>Fri, 19 Apr 2024 03:00:00 GMT</pubDate>
-  <media:content url="https://cienciadedados.quarto.pub/assets/logo_projeto.png" medium="image" type="image/png" height="151" width="144"/>
+  <media:content url="https://ufba.netlify.app/assets/logo_projeto.png" medium="image" type="image/png" height="151" width="144"/>
 </item>
 <item>
   <title>R para Ciência de Dados: Exploração e Visualização de Dados</title>
   <dc:creator>Gilberto Pereira Sassi</dc:creator>
-  <link>https://cienciadedados.quarto.pub/paginas/material/2024/marco/exploracao-visualizacao.html</link>
+  <link>https://ufba.netlify.app/paginas/material/2024/marco/exploracao-visualizacao.html</link>
   <description><![CDATA[ 
 
 
@@ -728,21 +728,21 @@ Tabela&nbsp;1: Informações de candidatas/os do ENEM 2023 por cidade.
 </section>
 </section>
 
-<p>© 2024 <strong><code>R</code> para Ciência de Dados <br>🖤</strong> by Carolina Paraíba e Gilberto Sassi</p> ]]></description>
+<p>© 2024 <strong>Ciência de Dados <br>🖤</strong> by Carolina Paraíba e Gilberto Sassi</p> ]]></description>
   <category>Ciência de Dados</category>
   <category>Estatística descritiva</category>
   <category>Exploração e visualização de dados</category>
   <category>Medidas de resumo</category>
   <category>Gráfico de barras</category>
   <category>Histograma</category>
-  <guid>https://cienciadedados.quarto.pub/paginas/material/2024/marco/exploracao-visualizacao.html</guid>
+  <guid>https://ufba.netlify.app/paginas/material/2024/marco/exploracao-visualizacao.html</guid>
   <pubDate>Sat, 16 Mar 2024 03:00:00 GMT</pubDate>
-  <media:content url="https://cienciadedados.quarto.pub/assets/logo_projeto.png" medium="image" type="image/png" height="151" width="144"/>
+  <media:content url="https://ufba.netlify.app/assets/logo_projeto.png" medium="image" type="image/png" height="151" width="144"/>
 </item>
 <item>
   <title>R para Ciência de Dados: Exploração e Visualização de Dados</title>
   <dc:creator>Carolina Costa Mota Paraíba</dc:creator>
-  <link>https://cienciadedados.quarto.pub/paginas/material/2023/exploracao-visualizacao/exploracao-visualizacao.html</link>
+  <link>https://ufba.netlify.app/paginas/material/2023/exploracao-visualizacao/exploracao-visualizacao.html</link>
   <description><![CDATA[ 
 
 
@@ -783,21 +783,21 @@ Tabela&nbsp;1: Informações de candidatas/os do ENEM 2023 por cidade.
 
 
 
-<p>© 2024 <strong><code>R</code> para Ciência de Dados <br>🖤</strong> by Carolina Paraíba e Gilberto Sassi</p> ]]></description>
+<p>© 2024 <strong>Ciência de Dados <br>🖤</strong> by Carolina Paraíba e Gilberto Sassi</p> ]]></description>
   <category>Ciência de Dados</category>
   <category>Estatística descritiva</category>
   <category>Exploração e visualização de dados</category>
   <category>Medidas de resumo</category>
   <category>Gráfico de barras</category>
   <category>Histograma</category>
-  <guid>https://cienciadedados.quarto.pub/paginas/material/2023/exploracao-visualizacao/exploracao-visualizacao.html</guid>
+  <guid>https://ufba.netlify.app/paginas/material/2023/exploracao-visualizacao/exploracao-visualizacao.html</guid>
   <pubDate>Fri, 20 Oct 2023 03:00:00 GMT</pubDate>
-  <media:content url="https://cienciadedados.quarto.pub/assets/logo_projeto.png" medium="image" type="image/png" height="151" width="144"/>
+  <media:content url="https://ufba.netlify.app/assets/logo_projeto.png" medium="image" type="image/png" height="151" width="144"/>
 </item>
 <item>
   <title>R para Ciência de Dados: Introdução à programação em R</title>
   <dc:creator>Gilberto Pereira Sassi</dc:creator>
-  <link>https://cienciadedados.quarto.pub/paginas/material/2023/programacao/programacao.html</link>
+  <link>https://ufba.netlify.app/paginas/material/2023/programacao/programacao.html</link>
   <description><![CDATA[ 
 
 
@@ -836,20 +836,20 @@ Tabela&nbsp;1: Informações de candidatas/os do ENEM 2023 por cidade.
 
 
 
-<p>© 2024 <strong><code>R</code> para Ciência de Dados <br>🖤</strong> by Carolina Paraíba e Gilberto Sassi</p> ]]></description>
+<p>© 2024 <strong>Ciência de Dados <br>🖤</strong> by Carolina Paraíba e Gilberto Sassi</p> ]]></description>
   <category>Ciência de Dados</category>
   <category>Linguagem &lt;code&gt;R&lt;/code&gt;</category>
   <category>Laços de repetição</category>
   <category>Controle de Fluxo</category>
   <category>Pacote &lt;code&gt;purrr&lt;/code&gt;</category>
-  <guid>https://cienciadedados.quarto.pub/paginas/material/2023/programacao/programacao.html</guid>
+  <guid>https://ufba.netlify.app/paginas/material/2023/programacao/programacao.html</guid>
   <pubDate>Fri, 15 Sep 2023 03:00:00 GMT</pubDate>
-  <media:content url="https://cienciadedados.quarto.pub/assets/logo_projeto.png" medium="image" type="image/png" height="151" width="144"/>
+  <media:content url="https://ufba.netlify.app/assets/logo_projeto.png" medium="image" type="image/png" height="151" width="144"/>
 </item>
 <item>
   <title>R para Ciência de Dados: Regressão Logística</title>
   <dc:creator>Carolina Costa Mota Paraíba</dc:creator>
-  <link>https://cienciadedados.quarto.pub/paginas/material/2023/regressao-logistica/regressao-logistica.html</link>
+  <link>https://ufba.netlify.app/paginas/material/2023/regressao-logistica/regressao-logistica.html</link>
   <description><![CDATA[ 
 
 
@@ -882,20 +882,20 @@ Tabela&nbsp;1: Informações de candidatas/os do ENEM 2023 por cidade.
 
 
 
-<p>© 2024 <strong><code>R</code> para Ciência de Dados <br>🖤</strong> by Carolina Paraíba e Gilberto Sassi</p> ]]></description>
+<p>© 2024 <strong>Ciência de Dados <br>🖤</strong> by Carolina Paraíba e Gilberto Sassi</p> ]]></description>
   <category>Ciência de Dados</category>
   <category>Estatística</category>
   <category>Modelagem Estatística</category>
   <category>Modelos Lineares Generalizados</category>
   <category>Regressão Logística</category>
-  <guid>https://cienciadedados.quarto.pub/paginas/material/2023/regressao-logistica/regressao-logistica.html</guid>
+  <guid>https://ufba.netlify.app/paginas/material/2023/regressao-logistica/regressao-logistica.html</guid>
   <pubDate>Fri, 18 Aug 2023 03:00:00 GMT</pubDate>
-  <media:content url="https://cienciadedados.quarto.pub/assets/logo_projeto.png" medium="image" type="image/png" height="151" width="144"/>
+  <media:content url="https://ufba.netlify.app/assets/logo_projeto.png" medium="image" type="image/png" height="151" width="144"/>
 </item>
 <item>
   <title>Ciência de Dados para Docentes usando R</title>
   <dc:creator>Carolina Costa Mota Paraíba</dc:creator>
-  <link>https://cienciadedados.quarto.pub/paginas/material/2023/cd-docentes/cd-docentes.html</link>
+  <link>https://ufba.netlify.app/paginas/material/2023/cd-docentes/cd-docentes.html</link>
   <description><![CDATA[ 
 
 
@@ -930,7 +930,7 @@ Tabela&nbsp;1: Informações de candidatas/os do ENEM 2023 por cidade.
 
 
 
-<p>© 2024 <strong><code>R</code> para Ciência de Dados <br>🖤</strong> by Carolina Paraíba e Gilberto Sassi</p> ]]></description>
+<p>© 2024 <strong>Ciência de Dados <br>🖤</strong> by Carolina Paraíba e Gilberto Sassi</p> ]]></description>
   <category>Ciência de Dados</category>
   <category>Estatística descritiva</category>
   <category>Exploração e visualização de dados</category>
@@ -938,14 +938,14 @@ Tabela&nbsp;1: Informações de candidatas/os do ENEM 2023 por cidade.
   <category>Gráfico de barras</category>
   <category>Docentes</category>
   <category>Histograma</category>
-  <guid>https://cienciadedados.quarto.pub/paginas/material/2023/cd-docentes/cd-docentes.html</guid>
+  <guid>https://ufba.netlify.app/paginas/material/2023/cd-docentes/cd-docentes.html</guid>
   <pubDate>Wed, 26 Jul 2023 03:00:00 GMT</pubDate>
-  <media:content url="https://cienciadedados.quarto.pub/assets/logo_projeto.png" medium="image" type="image/png" height="151" width="144"/>
+  <media:content url="https://ufba.netlify.app/assets/logo_projeto.png" medium="image" type="image/png" height="151" width="144"/>
 </item>
 <item>
   <title>R para Ciência de Dados: Quarto</title>
   <dc:creator>Gilberto Pereira Sassi</dc:creator>
-  <link>https://cienciadedados.quarto.pub/paginas/material/2023/quarto/quarto.html</link>
+  <link>https://ufba.netlify.app/paginas/material/2023/quarto/quarto.html</link>
   <description><![CDATA[ 
 
 
@@ -958,15 +958,15 @@ Tabela&nbsp;1: Informações de candidatas/os do ENEM 2023 por cidade.
 
 
 
-<p>© 2024 <strong><code>R</code> para Ciência de Dados <br>🖤</strong> by Carolina Paraíba e Gilberto Sassi</p> ]]></description>
+<p>© 2024 <strong>Ciência de Dados <br>🖤</strong> by Carolina Paraíba e Gilberto Sassi</p> ]]></description>
   <category>Ciência de Dados</category>
   <category>Estatística</category>
   <category>Linguagem &lt;code&gt;R&lt;/code&gt;</category>
   <category>Markdown</category>
   <category>Quarto</category>
-  <guid>https://cienciadedados.quarto.pub/paginas/material/2023/quarto/quarto.html</guid>
+  <guid>https://ufba.netlify.app/paginas/material/2023/quarto/quarto.html</guid>
   <pubDate>Fri, 07 Jul 2023 03:00:00 GMT</pubDate>
-  <media:content url="https://cienciadedados.quarto.pub/assets/logo_projeto.png" medium="image" type="image/png" height="151" width="144"/>
+  <media:content url="https://ufba.netlify.app/assets/logo_projeto.png" medium="image" type="image/png" height="151" width="144"/>
 </item>
 </channel>
 </rss>

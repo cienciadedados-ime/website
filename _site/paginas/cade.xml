@@ -6,15 +6,15 @@
       version="2.0">
 <channel>
 <title>Ciência de Dados</title>
-<link>https://cienciadedados.quarto.pub/paginas/cade.html</link>
-<atom:link href="https://cienciadedados.quarto.pub/paginas/cade.xml" rel="self" type="application/rss+xml"/>
+<link>https://ufba.netlify.app/paginas/cade.html</link>
+<atom:link href="https://ufba.netlify.app/paginas/cade.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.5.45</generator>
 <lastBuildDate>Mon, 01 Jan 2024 03:00:00 GMT</lastBuildDate>
 <item>
   <title>Explicando probabilidade condicional e o Teorema de Bayes.</title>
   <dc:creator>Gilberto Pereira Sassi</dc:creator>
-  <link>https://cienciadedados.quarto.pub/paginas/cade/probabilidade-condicional-bayes/prob-condicional.html</link>
+  <link>https://ufba.netlify.app/paginas/cade/probabilidade-condicional-bayes/prob-condicional.html</link>
   <description><![CDATA[ 
 
 
@@ -27,7 +27,7 @@
 <div id="fig-vann" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Diagrama de Venn com intersecção entre os eventos $A$ e $B$. A único jeito de A acontecer é se o resultado do fenômeno aleatório estiver dentro de $A \cap B$.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-vann-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="https://cienciadedados.quarto.pub/paginas/cade/probabilidade-condicional-bayes/interseccao.png" class="img-fluid figure-img" alt="Diagrama de Venn com intersecção entre os eventos $A$ e $B$. A único jeito de A acontecer é se o resultado do fenômeno aleatório estiver dentro de $A \cap B$.">
+<img src="https://ufba.netlify.app/paginas/cade/probabilidade-condicional-bayes/interseccao.png" class="img-fluid figure-img" alt="Diagrama de Venn com intersecção entre os eventos $A$ e $B$. A único jeito de A acontecer é se o resultado do fenômeno aleatório estiver dentro de $A \cap B$.">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-vann-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figura&nbsp;1: Diagrama de Venn com intersecção entre os eventos A e B. O único jeito de A acontecer é se o resultado do fenômeno aleatório estiver dentro de <img src="https://latex.codecogs.com/png.latex?A%20%5Ccap%20B">.
@@ -97,7 +97,7 @@ Figura&nbsp;1: Diagrama de Venn com intersecção entre os eventos A e B. O úni
 <div id="fig-prob-total" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Teorema da probabilidade total.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-prob-total-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="https://cienciadedados.quarto.pub/paginas/cade/probabilidade-condicional-bayes/prob-total.jpg" class="img-fluid figure-img" alt="Teorema da probabilidade total.">
+<img src="https://ufba.netlify.app/paginas/cade/probabilidade-condicional-bayes/prob-total.jpg" class="img-fluid figure-img" alt="Teorema da probabilidade total.">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-prob-total-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figura&nbsp;2: Teorema da probabilidade total.
@@ -153,7 +153,7 @@ Figura&nbsp;2: Teorema da probabilidade total.
 <div id="fig-thomas-bayes" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Reverendo Thomas Bayes.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-thomas-bayes-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="https://cienciadedados.quarto.pub/paginas/cade/probabilidade-condicional-bayes/thomas-bayes.jpeg" class="img-fluid figure-img" alt="Reverendo Thomas Bayes.">
+<img src="https://ufba.netlify.app/paginas/cade/probabilidade-condicional-bayes/thomas-bayes.jpeg" class="img-fluid figure-img" alt="Reverendo Thomas Bayes.">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-thomas-bayes-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figura&nbsp;3: Thomas Bayes: matemático, filósofo e pastor presbiteriano.
@@ -206,19 +206,19 @@ Figura&nbsp;3: Thomas Bayes: matemático, filósofo e pastor presbiteriano.
 
 </section>
 
-<p>© 2024 <strong><code>R</code> para Ciência de Dados <br>🖤</strong> by Carolina Paraíba e Gilberto Sassi</p> ]]></description>
+<p>© 2024 <strong>Ciência de Dados <br>🖤</strong> by Carolina Paraíba e Gilberto Sassi</p> ]]></description>
   <category>Probabilidade</category>
   <category>Probabilidade condicional</category>
   <category>Teorema de Bayes</category>
   <category>Teorema da probabilidade total</category>
-  <guid>https://cienciadedados.quarto.pub/paginas/cade/probabilidade-condicional-bayes/prob-condicional.html</guid>
+  <guid>https://ufba.netlify.app/paginas/cade/probabilidade-condicional-bayes/prob-condicional.html</guid>
   <pubDate>Mon, 01 Jan 2024 03:00:00 GMT</pubDate>
-  <media:content url="https://cienciadedados.quarto.pub/paginas/cade/probabilidade-condicional-bayes/bayes.png" medium="image" type="image/png" height="144" width="144"/>
+  <media:content url="https://ufba.netlify.app/paginas/cade/probabilidade-condicional-bayes/bayes.png" medium="image" type="image/png" height="144" width="144"/>
 </item>
 <item>
   <title>O que é e como calcular probabilidade.</title>
   <dc:creator>Gilberto Pereira Sassi</dc:creator>
-  <link>https://cienciadedados.quarto.pub/paginas/cade/probabilidade/probabilidade.html</link>
+  <link>https://ufba.netlify.app/paginas/cade/probabilidade/probabilidade.html</link>
   <description><![CDATA[ 
 
 
@@ -331,7 +331,7 @@ Figura&nbsp;3: Thomas Bayes: matemático, filósofo e pastor presbiteriano.
 </section>
 
 
-<p>© 2024 <strong><code>R</code> para Ciência de Dados <br>🖤</strong> by Carolina Paraíba e Gilberto Sassi</p><div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Notas de rodapé</h2>
+<p>© 2024 <strong>Ciência de Dados <br>🖤</strong> by Carolina Paraíba e Gilberto Sassi</p><div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Notas de rodapé</h2>
 
 <ol>
 <li id="fn1"><p>Neste texto, estou supondo que você conhece a teoria básica de conjuntos e tem conhecimentos matemáticos do ensino básico. Mas nada muito avançado e acredito que você vai entender tudo com tranquilidade.↩︎</p></li>
@@ -342,14 +342,14 @@ Figura&nbsp;3: Thomas Bayes: matemático, filósofo e pastor presbiteriano.
   <category>Ciência de Dados</category>
   <category>Probabilidade</category>
   <category>Estatística</category>
-  <guid>https://cienciadedados.quarto.pub/paginas/cade/probabilidade/probabilidade.html</guid>
+  <guid>https://ufba.netlify.app/paginas/cade/probabilidade/probabilidade.html</guid>
   <pubDate>Fri, 01 Dec 2023 03:00:00 GMT</pubDate>
-  <media:content url="https://cienciadedados.quarto.pub/paginas/cade/probabilidade/dice.png" medium="image" type="image/png" height="144" width="144"/>
+  <media:content url="https://ufba.netlify.app/paginas/cade/probabilidade/dice.png" medium="image" type="image/png" height="144" width="144"/>
 </item>
 <item>
   <title>E como calcular medidas de resumo quando temos um gráfico de barras ou histograma?</title>
   <dc:creator>Gilberto Pereira Sassi</dc:creator>
-  <link>https://cienciadedados.quarto.pub/paginas/cade/medidas-resumo-graficos/medidas-resumo-graficos.html</link>
+  <link>https://ufba.netlify.app/paginas/cade/medidas-resumo-graficos/medidas-resumo-graficos.html</link>
   <description><![CDATA[ 
 
 
@@ -359,7 +359,7 @@ Figura&nbsp;3: Thomas Bayes: matemático, filósofo e pastor presbiteriano.
 <section id="gráfico-de-barras" class="level2">
 <h2 class="anchored" data-anchor-id="gráfico-de-barras">Gráfico de barras</h2>
 <p>Imagine que você tem um gráfico de barras para uma variável quantitativa discreta <img src="https://latex.codecogs.com/png.latex?X"> com valores observados <img src="https://latex.codecogs.com/png.latex?x_1,%20%5Cdots,%20x_k">, conforme a figura abaixo.</p>
-<p><img src="https://cienciadedados.quarto.pub/paginas/cade/medidas-resumo-graficos/barras-geral.png" alt="Gráfico de barras para variável quantitativa discreta." width="50%" title="Gráfico de barras para variável quantitativa discreta."></p>
+<p><img src="https://ufba.netlify.app/paginas/cade/medidas-resumo-graficos/barras-geral.png" alt="Gráfico de barras para variável quantitativa discreta." width="50%" title="Gráfico de barras para variável quantitativa discreta."></p>
 <p>Cada valor observado <img src="https://latex.codecogs.com/png.latex?x_i,%20i=1,%20%5Cdots,%20k"> do gráfico acima tem uma barra com altura <img src="https://latex.codecogs.com/png.latex?n_i,i=1,%20%5Cdots,%20k"><sup>1</sup>. Logo, usando esta altura, que é igual a frequência, podemos construir a tabela de distribuição de frequência abaixo.</p>
 <table class="caption-top table">
 <colgroup>
@@ -449,7 +449,7 @@ Figura&nbsp;3: Thomas Bayes: matemático, filósofo e pastor presbiteriano.
 <section id="exemplo" class="level3">
 <h3 class="anchored" data-anchor-id="exemplo">Exemplo</h3>
 <p>Considere o gráfico de barras da variável <code>Número de filhos</code> de um conjunto de <img src="https://latex.codecogs.com/png.latex?36"> funcionário da <code>Companhia MB</code> representado na figura abaixo.</p>
-<p><img src="https://cienciadedados.quarto.pub/paginas/cade/medidas-resumo-graficos/grafico-barras-numero-filhos.png" alt="Gráfico de barras para variável quantitativa discreta Número de filhos." width="50%"></p>
+<p><img src="https://ufba.netlify.app/paginas/cade/medidas-resumo-graficos/grafico-barras-numero-filhos.png" alt="Gráfico de barras para variável quantitativa discreta Número de filhos." width="50%"></p>
 <p>Note que a barra que corresponde a <code>zero filhos</code> tem altura <img src="https://latex.codecogs.com/png.latex?20"> e frequência <img src="https://latex.codecogs.com/png.latex?20">, a barra que corresponde a <code>um filho</code> tem altura <img src="https://latex.codecogs.com/png.latex?5"> e frequência <img src="https://latex.codecogs.com/png.latex?5">, a barra que corresponde a <code>dois filhos</code> tem altura <img src="https://latex.codecogs.com/png.latex?7"> e frequência <img src="https://latex.codecogs.com/png.latex?7">, a barra que corresponde a <code>três filhos</code> tem altura <img src="https://latex.codecogs.com/png.latex?3"> e frequência <img src="https://latex.codecogs.com/png.latex?3">, a barra que corresponde a <code>quatro filhos</code> tem altura <img src="https://latex.codecogs.com/png.latex?0"> e frequência <img src="https://latex.codecogs.com/png.latex?0"> e a barra que corresponde a <code>cinco filhos</code> tem altura <img src="https://latex.codecogs.com/png.latex?1"> e frequência <img src="https://latex.codecogs.com/png.latex?1">. Consequentemente, temos a seguinte tabela de distribuição de frequências.</p>
 <table class="caption-top table">
 <colgroup>
@@ -544,7 +544,7 @@ Figura&nbsp;3: Thomas Bayes: matemático, filósofo e pastor presbiteriano.
 <section id="histograma" class="level2">
 <h2 class="anchored" data-anchor-id="histograma">Histograma</h2>
 <p>O histograma é um gráfico construído usando barras sem espaçamento entre elas, e cada barra tem a largura da base igual a largura do intervalo intervalo usado na contagem da variável quantitativa contínua e a área da barra é igual a frequência relativa<sup>3</sup>. Note que a área da figura geométrica do histograma sempre é um, e a altura de cada barra é a divisão da frequência relativa pela largura do intervalo conforme ilustrado na figura abaixo. Chamamos essa divisão de <em>Densidade de frequência</em>.</p>
-<p><img src="https://cienciadedados.quarto.pub/paginas/cade/medidas-resumo-graficos/histograma-continua.png" alt="Histograma de uma variável quantitativa contínua." width="50%"></p>
+<p><img src="https://ufba.netlify.app/paginas/cade/medidas-resumo-graficos/histograma-continua.png" alt="Histograma de uma variável quantitativa contínua." width="50%"></p>
 <p>Para encontrarmos a frequência relativa de cada intervalo, e consequentemente a porcentagem, precisamos multiplicar a <em>densidade de frequência</em> (altura da barra) pela largura do intervalo, conforme tabela abaixo.</p>
 <table class="caption-top table">
 <colgroup>
@@ -784,7 +784,7 @@ Figura&nbsp;3: Thomas Bayes: matemático, filósofo e pastor presbiteriano.
 <section id="exemplo-1" class="level3">
 <h3 class="anchored" data-anchor-id="exemplo-1">Exemplo</h3>
 <p>Considere o histograma da variável quantitativa contínua <img src="https://latex.codecogs.com/png.latex?X"> de 36 funcionário da <a href="empresa.xlsx">companhia MB</a> da figura abaixo.</p>
-<p><img src="https://cienciadedados.quarto.pub/paginas/cade/medidas-resumo-graficos/histograma-funcionarios.png" alt="Histograma para a variável salário." width="50%"></p>
+<p><img src="https://ufba.netlify.app/paginas/cade/medidas-resumo-graficos/histograma-funcionarios.png" alt="Histograma para a variável salário." width="50%"></p>
 <p>Então, temos a seguinte tabela de distribuição de frequências.</p>
 <table class="caption-top table">
 <colgroup>
@@ -884,7 +884,7 @@ Figura&nbsp;3: Thomas Bayes: matemático, filósofo e pastor presbiteriano.
 </section>
 
 
-<p>© 2024 <strong><code>R</code> para Ciência de Dados <br>🖤</strong> by Carolina Paraíba e Gilberto Sassi</p><div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Notas de rodapé</h2>
+<p>© 2024 <strong>Ciência de Dados <br>🖤</strong> by Carolina Paraíba e Gilberto Sassi</p><div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Notas de rodapé</h2>
 
 <ol>
 <li id="fn1"><p>O gráfico de barras pode ser construído usando frequência relativa (proporção) ou porcentagem. Fique atento ao rótulo do eixo <img src="https://latex.codecogs.com/png.latex?y"> do gráfico.↩︎</p></li>
@@ -897,14 +897,14 @@ Figura&nbsp;3: Thomas Bayes: matemático, filósofo e pastor presbiteriano.
   <category>Medidas de resumo</category>
   <category>Gráfico de barras</category>
   <category>Histograma</category>
-  <guid>https://cienciadedados.quarto.pub/paginas/cade/medidas-resumo-graficos/medidas-resumo-graficos.html</guid>
+  <guid>https://ufba.netlify.app/paginas/cade/medidas-resumo-graficos/medidas-resumo-graficos.html</guid>
   <pubDate>Wed, 01 Nov 2023 03:00:00 GMT</pubDate>
-  <media:content url="https://cienciadedados.quarto.pub/paginas/cade/medidas-resumo-graficos/barra.png" medium="image" type="image/png" height="144" width="144"/>
+  <media:content url="https://ufba.netlify.app/paginas/cade/medidas-resumo-graficos/barra.png" medium="image" type="image/png" height="144" width="144"/>
 </item>
 <item>
   <title>Como criar tabela de distribuição de frequências usando o R?</title>
   <dc:creator>Gilberto Pereira Sassi</dc:creator>
-  <link>https://cienciadedados.quarto.pub/paginas/cade/tabela-frequencias/tabela-frequencias.html</link>
+  <link>https://ufba.netlify.app/paginas/cade/tabela-frequencias/tabela-frequencias.html</link>
   <description><![CDATA[ 
 
 
@@ -1166,14 +1166,14 @@ font-style: inherit;">=</span> percent)</span></code></pre></div>
 
 </section>
 
-<p>© 2024 <strong><code>R</code> para Ciência de Dados <br>🖤</strong> by Carolina Paraíba e Gilberto Sassi</p> ]]></description>
+<p>© 2024 <strong>Ciência de Dados <br>🖤</strong> by Carolina Paraíba e Gilberto Sassi</p> ]]></description>
   <category>linguage R</category>
   <category>Estatística</category>
   <category>Ciência de Dados</category>
   <category>Exploração e visualização de dados</category>
-  <guid>https://cienciadedados.quarto.pub/paginas/cade/tabela-frequencias/tabela-frequencias.html</guid>
+  <guid>https://ufba.netlify.app/paginas/cade/tabela-frequencias/tabela-frequencias.html</guid>
   <pubDate>Sun, 01 Oct 2023 03:00:00 GMT</pubDate>
-  <media:content url="https://cienciadedados.quarto.pub/paginas/cade/tabela-frequencias/tabela.png" medium="image" type="image/png" height="144" width="144"/>
+  <media:content url="https://ufba.netlify.app/paginas/cade/tabela-frequencias/tabela.png" medium="image" type="image/png" height="144" width="144"/>
 </item>
 </channel>
 </rss>

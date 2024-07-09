@@ -9,34 +9,29 @@ website:
   google-analytics:
     tracking-id: G-0WD3PSV647
     anonymize-ip: true
-  site-url: "https://cienciadedados.quarto.pub/"
-  body-footer: "&#169; 2024 **`R` para Ciência de Dados <br>&#128420;** by Carolina Paraíba e Gilberto Sassi"
+  site-url: "https://ufba.netlify.app/"
+  body-footer: "&#169; 2024 **Ciência de Dados <br>&#128420;** by Carolina Paraíba e Gilberto Sassi"
   navbar:
     logo: assets/r.png
     left:
-      - href: index.qmd
-        text: Home
-      - href: paginas/inscricoes.qmd
-        text: Inscrições
-      - href: paginas/catalogo.qmd
-        text: "Cursos oferecidos"
-      - href: paginas/material.qmd
-        text: "Material"
+      - text: "Home"
+        href: index.qmd
+      - text: "Inscrições"
+        href: paginas/inscricoes.qmd
+      - text: "Cursos oferecidos"
+        href: paginas/catalogo.qmd
+      - text: "Material"
+        href: paginas/material.qmd
       # - href: paginas/cade.qmd
       #   text: CADE
       # - href: paginas/eventos.qmd
       #   text: Eventos
-      - href: paginas/equipe.qmd
-        text: Equipe
       - text: Editais
-        menu:
-          - href: paginas/editais/editais-abertos.qmd
-            text: "Editais abertos"
-          - href: paginas/editais/editais-2023.qmd
-            text: "Editais encerrados"
-      - href: paginas/contato.qmd
-        text: 'Contato'
-
+        href: paginas/editais-2024.qmd
+      - text: "Equipe"
+        href: paginas/equipe.qmd
+      - text: 'Contato'
+        href: paginas/contato.qmd
 
 format:
   html:

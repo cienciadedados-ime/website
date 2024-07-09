@@ -1,0 +1,46 @@
+## Edital 2024
+
+Estão abertas inscrições para seleção de 01 vaga para bolsista e 05 vagas para voluntária/o para os Semestres Letivos 2024.2 e 2025.1 no Programa de Extensão Ciência de Dados, sob número de cadastro 21258 na plataforma SIATEX.
+
+O Programa de Extensão Ciência de Dados busca promover a integração entre a academia e a sociedade por meio da difusão do conhecimento de Estatística e Ciência de Dados usando as linguagens `Python` e `R`. O objetivo principal é fomentar a interação dialógica e transformadora entre a academia e os outros setores da sociedade, por meio de cursos e eventos, ampliando as competências e habilidades de profissionais e estudantes interessados nessas áreas e promovendo a sua inserção no mercado de trabalho. Devido a relevância e atualidade do tema, o Programa de Extensão Ciência de Dados representa um importante espaço de promoção de ações de extensão para a difusão do conhecimento e da prática de Estatística e Ciência de Dados usando software livre.
+
+### Vagas ofertadas
+
+* 01 vaga para bolsista de Extensão, no valor de R$700,00 mensal, conforme Edital PIBIEX 2024-2025.
+* 02 vagas para voluntárias/os, conforme Edital PIBIEX 2024-2025.
+* 03 vagas para voluntárias/os, conforme Edital PAEX 2024-2025.
+
+### Requisitos para candidatura
+
+As vagas estão aberta para qualquer discente de graduação da UFBA que atenda aos seguintes requisitos: 
+
+* A/O candidata/o deve ser estudante regularmente matriculada/o em qualquer curso de graduação oferecido pela UFBA.
+* Não pode estar inadimplente com a PROEXT.
+* Nocasodebolsista, não pode acumular bolsa com outro Programa Institucional.
+* Ter disponibilidade de trabalhar vinte horas semanais nas atividades deste projeto.
+* Ter coeficiente de rendimento maior ou igual a 6,0.
+* Desejável conhecimento de linguagem `R`, `Python` e/ou Métodos Estatísticos.
+
+### Responsabilidades da/o voluntária/o
+
+* Participar de reuniões semanais com a equipe executora em dia e horário a definir.
+* Participar das reuniões de orientação e avaliação com a PROEXT.
+* Participar das atividades promovidas por este projeto de extensão.
+* Enviar relatório de atividades no sistema SISBIEX, usando formulário próprio, em até 30 (trinta) dias após a conclusão do projeto.
+* Apresentar os resultados dos planos de trabalhos na próxima edição do Congresso UFBA.
+
+### Critérios que serão usados para seleção
+
+Em ordem de importância:
+
+* Entrevista em que se avaliará a disponibilidade e adequação da/o candidata/o para a vaga (nota de 0 a 10).
+* Nível de conhecimento de Métodos Estatísticos (nota de 0 a 10).
+* Nível de conhecimento da linguagem `R` (nota de 0 a 10).
+* Nível de conhecimento da linguagem `Python` (nota de 0 a 10).
+
+### Inscrição
+
+* Para se candidatar as vagas, você precisa preencher o formulário de inscrição disponível no link: [formulário de inscrição](https://forms.gle/cFdNhhGY8qhXdJwQ6).
+* Operíodo de inscrição é de 10/07/2024 a 15/07/2024.
+* Eventuais dúvidas podem ser encaminhadas para a Profa Carolina Paraíba via e-mail [carolina.paraiba`@`ufba.br](mailto:carolina.paraiba@ufba.br).
+
