@@ -1,5 +1,3 @@
-<div style="text-align:justify">
-
 # Equipe técnica
 
 ## Coordenadores
@@ -55,17 +53,5 @@ knitr::include_graphics("../assets/fernanda.jpg")
 ```
 
 **Fernanda de Jesus** é estudante de Estatística na UFBA, atualmente cursando o terceiro semestre. Deseja expandir os conhecimentos na área de Estatística e Ciência de Dados e contribuir para o progresso dela.
-
-
-```{r}
-#| echo: false
-#| out.width: 25%
-knitr::include_graphics("../assets/thiago.jpg")
-```
-
-
-**Thiago Rodolfo** é aluno do curso Licenciatura em Computação na UFBA. Apaixonado por tecnologia, buscado conciliar seus estudos em ciências de dados aos objetivos profissionais e acadêmicos.
-
-</div>
 
 ---

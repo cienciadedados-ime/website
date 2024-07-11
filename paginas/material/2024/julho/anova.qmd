@@ -16,7 +16,7 @@ categories:
 ## Slides
 
 [Slides da aula 1](aula1.pdf){target="_blank"}<br>
-[Slides da aula 2](aula1.pdf){target="_blank"}
+[Slides da aula 2](aula2.pdf){target="_blank"}
 
 ## Arquivos
 
