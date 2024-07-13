@@ -2,10 +2,12 @@ project:
   type: website
 
 website:
+  reader-mode: true
+  bread-crumbs: false
+  title: "Ciência de Dados"
   open-graph:
     locale: pt_BR
     site-name: "Ciência de Dados"
-  title: "Ciência de Dados"
   google-analytics:
     tracking-id: G-0WD3PSV647
     anonymize-ip: true
