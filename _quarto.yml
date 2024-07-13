@@ -2,6 +2,7 @@ project:
   type: website
 
 website:
+  favicon: assets/rPython.png
   reader-mode: true
   bread-crumbs: false
   title: "Ciência de Dados"
