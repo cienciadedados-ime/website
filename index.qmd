@@ -1,12 +1,10 @@
 ---
-title: "`R` para Ciência de Dados"
+title: "Ciência de Dados"
 ---
 
-<div style="text-align:justify">
+Ciência de dados é uma ação de extensão na modalidade _programa_ com apoio financeiro da Pró-reitoria de Extensão da Univesidade Federal da Bahia (UFBA) e tem como o objetivo  compartilhar o conhecimento de análise de dados usando as linguagens `R` e `Python` numa interação dialógica da comunidade acadêmica com a sociedade por meio da troca de conhecimentos. 
 
-`R`  para Ciência de dados é uma ação de extensão na modalidade _projeto_ com apoio financeiro da Pró-reitoria de Extensão da Univesidade Federal da Bahia (UFBA) e tem como o objetivo  compartilhar o conhecimento de análise de dados usando a linguagem `R` numa interação dialógica da comunidade acadêmica com a sociedade por meio da troca de conhecimentos. 
-
-O projeto irá promover um conjunto de ações com o objetivo de popularizar a Estatística e Ciência de Dados e incentivar o uso de tecnologias de código aberto como a linguagem `R`, cujo uso é amplamente disseminado entre os pesquisadores da área de Estatística com crescente popularidade entre profissionais de outras áreas.
+O progrma irá promover um conjunto de ações com o objetivo de popularizar a Estatística e Ciência de Dados e incentivar o uso de tecnologias de código aberto como as linguagens `R` e `Python`, cujo uso é amplamente disseminado entre os pesquisadores da área de Estatística com crescente popularidade entre profissionais de outras áreas.
 
 Os cursos e eventos promovidos neste projeto serão presenciais em Salvador no Instituto de Matemática e Estatística da UFBA, gratuitas, abertas a toda comunidade e com certificado emitado pela UFBA. 
 
@@ -18,8 +16,6 @@ Os cursos e eventos promovidos neste projeto serão presenciais em Salvador no I
 **Serviço público salva vidas. Defenda o serviço público.**
 
 > De cada qual, segundo sua capacidade; a cada qual, segundo suas necessidades.
-
-</div>
 
 
 ---

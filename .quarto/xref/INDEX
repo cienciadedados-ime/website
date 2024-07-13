@@ -166,5 +166,32 @@
   },
   "paginas/editais-2024.qmd": {
     "editais-2024.html": "a779330c"
+  },
+  "paginas/catalogo/r/exploracao-visualizacao.qmd": {
+    "exploracao-visualizacao.html": "e7663553"
+  },
+  "paginas/catalogo/r/intervalo-confianca-teste-hipoteses.qmd": {
+    "intervalo-confianca-teste-hipoteses.html": "6da1ac5e"
+  },
+  "paginas/catalogo/r/ciencia-de-dados-para-docentes.qmd": {
+    "ciencia-de-dados-para-docentes.html": "cf5026b5"
+  },
+  "paginas/catalogo/r/introducao-a-programacao.qmd": {
+    "introducao-a-programacao.html": "fecc8150"
+  },
+  "paginas/catalogo/r/producao-de-texto-usando-rmarkdown.qmd": {
+    "producao-de-texto-usando-rmarkdown.html": "64c807ae"
+  },
+  "paginas/catalogo/r/regressao-logistica.qmd": {
+    "regressao-logistica.html": "181fc81b"
+  },
+  "paginas/catalogo/r/regressao-linear-simples-e-multipla.qmd": {
+    "regressao-linear-simples-e-multipla.html": "c60349ef"
+  },
+  "paginas/catalogo/r/modelo-de-analise-de-variancia.qmd": {
+    "modelo-de-analise-de-variancia.html": "53de7c74"
+  },
+  "paginas/catalogo/python/exploracao-visualizacao-dados.qmd": {
+    "exploracao-visualizacao-dados.html": "d7192761"
   }
 }

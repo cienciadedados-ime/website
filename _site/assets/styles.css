@@ -11,3 +11,15 @@ p {
 .category {
     font-size: 80%;
 }
+
+.code_bold_r {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #304796;
+}
+
+.code_bold_python {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #ecc900;
+}

@@ -12,8 +12,8 @@ website:
   site-url: "https://ufba.netlify.app/"
   body-footer: "&#169; 2024 **Ciência de Dados <br>&#128420;** by Carolina Paraíba e Gilberto Sassi"
   navbar:
-    logo: assets/r.png
-    left:
+    title: Ciência de Dados
+    right:
       - text: "Home"
         href: index.qmd
       - text: "Inscrições"
@@ -27,12 +27,67 @@ website:
       # - href: paginas/eventos.qmd
       #   text: Eventos
       - text: Editais
-        href: paginas/editais-2024.qmd
+        href: paginas/editais/editais-2024.qmd
       - text: "Equipe"
         href: paginas/equipe.qmd
       - text: 'Contato'
         href: paginas/contato.qmd
-
+  sidebar: 
+      search: true
+      logo: assets/rPython.png
+      style: docked
+      collapse-level: 1
+      contents: 
+      - text: "Quem somos"
+        href: index.qmd
+      - text: "Inscrições"
+        href: paginas/inscricoes.qmd
+      - section: "Catálogo"
+        href: paginas/catalogo.qmd
+        contents:
+          - section: <code class='code_bold_r'>R</code>
+            contents:
+          - text: Exploração e Visualização de dados
+            href: paginas/catalogo/r/exploracao-visualizacao.qmd
+          - text: Inferência Estatística
+            href: paginas/catalogo/r/intervalo-confianca-teste-hipoteses.qmd
+          - text: Introdução à Programação
+            href: paginas/catalogo/r/introducao-a-programacao.qmd
+          - text: Modelos de Análise Variância (Anova)
+            href: paginas/catalogo/r/modelo-de-analise-de-variancia.qmd
+          - text: <code>rmarkdown</code> e <code>quarto</code>
+            href: paginas/catalogo/r/producao-de-texto-usando-rmarkdown.qmd
+          - text: Regressão Linear Simples e Múltipla
+            href: paginas/catalogo/r/regressao-linear-simples-e-multipla.qmd
+          - text: Regressão Logística
+            href: paginas/catalogo/r/regressao-logistica.qmd
+          - section: <code class='code_bold_python'>Python</code>
+            contents: 
+          - text: Exploração e Visualização de Dados
+            href: paginas/catalogo/python/exploracao-visualizacao-dados.qmd
+      - section: "Slides e Códigos" 
+        href: paginas/material.qmd
+        contents:
+          - text: "Modelos de Análise de Variância (Anova)"
+            href: paginas/material/2024/julho/anova.qmd
+          - text: "Inferência Estatística"
+            href: paginas/material/2024/junho/inferencia-estatistica.qmd
+      - section: Editais
+        href: paginas/editais/editais-2024.qmd
+        contents:
+          - section: Editais abertos
+            contents: 
+          - text: "2024"
+            href: paginas/editais/editais-2024.qmd
+          - section: Editais encerrados
+            contents:
+          - text: "2023"
+            href: paginas/editais/editais-2023.qmd
+  
+      - text: "Equipe"
+        href: paginas/equipe.qmd
+      - text: 'Contato'
+        href: paginas/contato.qmd
 format:
   html:
     pandoc_args: ["--variable", "footnotes-appear-in-blocks", "--variable", "footnote-placement", "para"]
