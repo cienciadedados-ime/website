@@ -1,6 +1,7 @@
 ---
 title: "`R` para Ciência de Dados: Produção de texto usando `rmarkdown` e `quarto`"
 format: html
+author: Gilberto Sassi
 date: 2024/08/02
 categories:
   - Ciência de Dados
