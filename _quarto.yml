@@ -2,42 +2,95 @@ project:
   type: website
 
 website:
+  favicon: assets/rPython.png
+  reader-mode: true
+  bread-crumbs: false
+  title: "Ciência de Dados"
   open-graph:
     locale: pt_BR
     site-name: "Ciência de Dados"
-  title: "Ciência de Dados"
   google-analytics:
     tracking-id: G-0WD3PSV647
     anonymize-ip: true
-  site-url: "https://cienciadedados.quarto.pub/"
-  body-footer: "&#169; 2024 **`R` para Ciência de Dados <br>&#128420;** by Carolina Paraíba e Gilberto Sassi"
+  site-url: "https://ufba.netlify.app/"
+  body-footer: "&#169; 2024 **Ciência de Dados <br>&#128420;** by Carolina Paraíba e Gilberto Sassi"
   navbar:
-    logo: assets/r.png
-    left:
-      - href: index.qmd
-        text: Home
-      - href: paginas/inscricoes.qmd
-        text: Inscrições
-      - href: paginas/catalogo.qmd
-        text: "Cursos oferecidos"
-      - href: paginas/material.qmd
-        text: "Material"
-      - href: paginas/cade.qmd
-        text: CADE
-      - href: paginas/eventos.qmd
-        text: Eventos
-      - href: paginas/equipe.qmd
-        text: Equipe
+    title: Ciência de Dados
+    right:
+      - text: "Home"
+        href: index.qmd
+      - text: "Inscrições"
+        href: paginas/inscricoes.qmd
+      - text: "Cursos oferecidos"
+        href: paginas/catalogo.qmd
+      - text: "Material"
+        href: paginas/material.qmd
+      # - href: paginas/cade.qmd
+      #   text: CADE
+      # - href: paginas/eventos.qmd
+      #   text: Eventos
       - text: Editais
-        menu:
-          - href: paginas/editais/editais-abertos.qmd
-            text: "Editais abertos"
-          - href: paginas/editais/editais-2023.qmd
-            text: "Editais encerrados"
-      - href: paginas/contato.qmd
-        text: 'Contato'
-
-
+        href: paginas/editais/editais-2024.qmd
+      - text: "Equipe"
+        href: paginas/equipe.qmd
+      - text: 'Contato'
+        href: paginas/contato.qmd
+  sidebar: 
+      search: true
+      logo: assets/rPython.png
+      style: docked
+      collapse-level: 1
+      contents: 
+      - text: "Quem somos"
+        href: index.qmd
+      - text: "Inscrições"
+        href: paginas/inscricoes.qmd
+      - section: "Catálogo"
+        href: paginas/catalogo.qmd
+        contents:
+          - section: <code class='code_bold_r'>R</code>
+            contents:
+          - text: Exploração e Visualização de dados
+            href: paginas/catalogo/r/exploracao-visualizacao.qmd
+          - text: Inferência Estatística
+            href: paginas/catalogo/r/intervalo-confianca-teste-hipoteses.qmd
+          - text: Introdução à Programação
+            href: paginas/catalogo/r/introducao-a-programacao.qmd
+          - text: Modelos de Análise Variância (Anova)
+            href: paginas/catalogo/r/modelo-de-analise-de-variancia.qmd
+          - text: <code>rmarkdown</code> e <code>quarto</code>
+            href: paginas/catalogo/r/producao-de-texto-usando-rmarkdown.qmd
+          - text: Regressão Linear Simples e Múltipla
+            href: paginas/catalogo/r/regressao-linear-simples-e-multipla.qmd
+          - text: Regressão Logística
+            href: paginas/catalogo/r/regressao-logistica.qmd
+          - section: <code class='code_bold_python'>Python</code>
+            contents: 
+          - text: Exploração e Visualização de Dados
+            href: paginas/catalogo/python/exploracao-visualizacao-dados.qmd
+      - section: "Slides e Códigos" 
+        href: paginas/material.qmd
+        contents:
+          - text: "Modelos de Análise de Variância (Anova)"
+            href: paginas/material/2024/julho/anova.qmd
+          - text: "Inferência Estatística"
+            href: paginas/material/2024/junho/inferencia-estatistica.qmd
+      - section: Editais
+        href: paginas/editais/editais-2024.qmd
+        contents:
+          - section: Editais abertos
+            contents: 
+          - text: "2024"
+            href: paginas/editais/editais-2024.qmd
+          - section: Editais encerrados
+            contents:
+          - text: "2023"
+            href: paginas/editais/editais-2023.qmd
+  
+      - text: "Equipe"
+        href: paginas/equipe.qmd
+      - text: 'Contato'
+        href: paginas/contato.qmd
 format:
   html:
     pandoc_args: ["--variable", "footnotes-appear-in-blocks", "--variable", "footnote-placement", "para"]

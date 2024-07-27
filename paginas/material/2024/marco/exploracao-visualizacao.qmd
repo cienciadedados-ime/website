@@ -41,6 +41,14 @@ p_load(
   gt,
   tidyverse
 )
+# setwd("paginas/material/2024/marco")
+df_inscritos <- read_excel("lista-inscritos.xlsx")
+
+nomes <- df_inscritos$nome_completo
+nomes <- c(
+  nomes, 
+  rep("--", 5)
+)
 
 set.seed(11235)
 id <- sample(
@@ -65,6 +73,10 @@ df <- tibble(
     })
 ) |>
   arrange(id)
+
+df <- df |>
+  mutate(nome = nomes) |>
+  relocate(nome, .after = id)
 
 
 knitr::kable(df, caption = "Enem por cidade nos formatos .csv e .xlsx com id dos participantes.")
