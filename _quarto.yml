@@ -71,10 +71,10 @@ website:
       - section: "Slides e Códigos" 
         href: paginas/material.qmd
         contents:
+          - text: "`rmarkdown` e `quarto`"
+            href: paginas/material/2024/agosto/quarto.qmd
           - text: "Modelos de Análise de Variância (Anova)"
             href: paginas/material/2024/julho/anova.qmd
-          - text: "Inferência Estatística"
-            href: paginas/material/2024/junho/inferencia-estatistica.qmd
       - section: Editais
         href: paginas/editais/editais-2024.qmd
         contents:
