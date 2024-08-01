@@ -56,7 +56,6 @@
   <category>html</category>
   <guid>https://ufba.netlify.app/paginas/material/2024/agosto/quarto.html</guid>
   <pubDate>Fri, 02 Aug 2024 03:00:00 GMT</pubDate>
-  <media:content url="https://ufba.netlify.app/assets/logo_projeto.png" medium="image" type="image/png" height="151" width="144"/>
 </item>
 <item>
   <title>R para Ciência de Dados: Modelos de Análise de Variância (Anova)</title>
@@ -107,7 +106,6 @@
   <category>Modelos Lineares</category>
   <guid>https://ufba.netlify.app/paginas/material/2024/julho/anova.html</guid>
   <pubDate>Fri, 05 Jul 2024 03:00:00 GMT</pubDate>
-  <media:content url="https://ufba.netlify.app/assets/logo_projeto.png" medium="image" type="image/png" height="151" width="144"/>
 </item>
 <item>
   <title>R para Ciência de Dados: Intervalos de Confiança e Teste de Hipóteses</title>
@@ -434,7 +432,6 @@ Tabela&nbsp;1: Informações de candidatas/os do ENEM 2023 por cidade.
   <category>Teste de Hipóteses</category>
   <guid>https://ufba.netlify.app/paginas/material/2024/junho/inferencia-estatistica.html</guid>
   <pubDate>Fri, 07 Jun 2024 03:00:00 GMT</pubDate>
-  <media:content url="https://ufba.netlify.app/assets/logo_projeto.png" medium="image" type="image/png" height="151" width="144"/>
 </item>
 <item>
   <title>R para Ciência de Dados: Aplicações de Regressão Logística</title>
@@ -489,7 +486,6 @@ Tabela&nbsp;1: Informações de candidatas/os do ENEM 2023 por cidade.
   <category>Aprendizagem supervisionada</category>
   <guid>https://ufba.netlify.app/paginas/material/2024/maio/aplicacoes-regressao-logistica.html</guid>
   <pubDate>Tue, 28 May 2024 03:00:00 GMT</pubDate>
-  <media:content url="https://ufba.netlify.app/assets/logo_projeto.png" medium="image" type="image/png" height="151" width="144"/>
 </item>
 <item>
   <title>R para Ciência de Dados: Regressão Linear Simples e Múltipla</title>
@@ -538,7 +534,6 @@ Tabela&nbsp;1: Informações de candidatas/os do ENEM 2023 por cidade.
   <category>Apredizagem Supervisionada</category>
   <guid>https://ufba.netlify.app/paginas/material/2024/abril/regressao-linear.html</guid>
   <pubDate>Fri, 19 Apr 2024 03:00:00 GMT</pubDate>
-  <media:content url="https://ufba.netlify.app/assets/logo_projeto.png" medium="image" type="image/png" height="151" width="144"/>
 </item>
 <item>
   <title>R para Ciência de Dados: Exploração e Visualização de Dados</title>
@@ -784,7 +779,6 @@ Tabela&nbsp;1: Informações de candidatas/os do ENEM 2023 por cidade.
   <category>Histograma</category>
   <guid>https://ufba.netlify.app/paginas/material/2024/marco/exploracao-visualizacao.html</guid>
   <pubDate>Sat, 16 Mar 2024 03:00:00 GMT</pubDate>
-  <media:content url="https://ufba.netlify.app/assets/logo_projeto.png" medium="image" type="image/png" height="151" width="144"/>
 </item>
 <item>
   <title>R para Ciência de Dados: Exploração e Visualização de Dados</title>
@@ -839,7 +833,6 @@ Tabela&nbsp;1: Informações de candidatas/os do ENEM 2023 por cidade.
   <category>Histograma</category>
   <guid>https://ufba.netlify.app/paginas/material/2023/exploracao-visualizacao/exploracao-visualizacao.html</guid>
   <pubDate>Fri, 20 Oct 2023 03:00:00 GMT</pubDate>
-  <media:content url="https://ufba.netlify.app/assets/logo_projeto.png" medium="image" type="image/png" height="151" width="144"/>
 </item>
 <item>
   <title>R para Ciência de Dados: Introdução à programação em R</title>
@@ -891,7 +884,6 @@ Tabela&nbsp;1: Informações de candidatas/os do ENEM 2023 por cidade.
   <category>Pacote &lt;code&gt;purrr&lt;/code&gt;</category>
   <guid>https://ufba.netlify.app/paginas/material/2023/programacao/programacao.html</guid>
   <pubDate>Fri, 15 Sep 2023 03:00:00 GMT</pubDate>
-  <media:content url="https://ufba.netlify.app/assets/logo_projeto.png" medium="image" type="image/png" height="151" width="144"/>
 </item>
 <item>
   <title>R para Ciência de Dados: Regressão Logística</title>
@@ -937,7 +929,6 @@ Tabela&nbsp;1: Informações de candidatas/os do ENEM 2023 por cidade.
   <category>Regressão Logística</category>
   <guid>https://ufba.netlify.app/paginas/material/2023/regressao-logistica/regressao-logistica.html</guid>
   <pubDate>Fri, 18 Aug 2023 03:00:00 GMT</pubDate>
-  <media:content url="https://ufba.netlify.app/assets/logo_projeto.png" medium="image" type="image/png" height="151" width="144"/>
 </item>
 <item>
   <title>Ciência de Dados para Docentes usando R</title>
@@ -987,7 +978,6 @@ Tabela&nbsp;1: Informações de candidatas/os do ENEM 2023 por cidade.
   <category>Histograma</category>
   <guid>https://ufba.netlify.app/paginas/material/2023/cd-docentes/cd-docentes.html</guid>
   <pubDate>Wed, 26 Jul 2023 03:00:00 GMT</pubDate>
-  <media:content url="https://ufba.netlify.app/assets/logo_projeto.png" medium="image" type="image/png" height="151" width="144"/>
 </item>
 <item>
   <title>R para Ciência de Dados: Quarto</title>
@@ -1013,7 +1003,6 @@ Tabela&nbsp;1: Informações de candidatas/os do ENEM 2023 por cidade.
   <category>Quarto</category>
   <guid>https://ufba.netlify.app/paginas/material/2023/quarto/quarto.html</guid>
   <pubDate>Fri, 07 Jul 2023 03:00:00 GMT</pubDate>
-  <media:content url="https://ufba.netlify.app/assets/logo_projeto.png" medium="image" type="image/png" height="151" width="144"/>
 </item>
 </channel>
 </rss>
