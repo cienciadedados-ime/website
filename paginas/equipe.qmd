@@ -36,7 +36,8 @@ knitr::include_graphics("../assets/gabriella.jpg")
 ```
 
 
-**Gabriella Santos Rocha** tem 20 anos, é estudante do 3° semestre do Bacharelado Interdisciplinar em saúde pela UFBA. Nasceu e cresceu no interior da Bahia em uma cidade chamada Maracás,e Gosta muito de conhecer e aprender coisas novas.
+**Gabriella Santos Rocha** tem 20 anos, é estudante do 3° semestre do Bacharelado Interdisciplinar em saúde pela UFBA. Nasceu e cresceu no interior da Bahia em uma cidade chamada Maracás,e gosta muito de conhecer e aprender coisas novas.<br>
+**Instagram:** [`@`gabyrrocha_](https://www.instagram.com/gabyrrocha_/)
 
 ```{r}
 #| echo: false
@@ -44,7 +45,8 @@ knitr::include_graphics("../assets/gabriella.jpg")
 knitr::include_graphics("../assets/keila.jpg")
 ```
 
-**Keila Lisboa**  é estudante de estatística, entusiasta da área e encantada pelo software R. Seu interesse é pelo ramo aplicado ao mercado de trabalho e busca constantemente novos conhecimentos e aprimoramento de suas habilidades.
+**Keila Lisboa**  é estudante de estatística, entusiasta da área e encantada pelo software R. Seu interesse é pelo ramo aplicado ao mercado de trabalho e busca constantemente novos conhecimentos e aprimoramento de suas habilidades.<br>
+**Instagram:** [`@`klisbooas](https://www.instagram.com/klisbooas/)
 
 ```{r}
 #| echo: false
@@ -53,5 +55,13 @@ knitr::include_graphics("../assets/fernanda.jpg")
 ```
 
 **Fernanda de Jesus** é estudante de Estatística na UFBA, atualmente cursando o terceiro semestre. Deseja expandir os conhecimentos na área de Estatística e Ciência de Dados e contribuir para o progresso dela.
+
+```{r}
+#| echo: false
+#| out.width: 25%
+knitr::include_graphics("../assets/miguel.png")
+```
+
+**Miguel Antonio** é formado em Lic. em Matemática pela UCSAL e atualmente é estudante do curso de Estatística da UFBA, está em busca de novos conhecimentos e viu na área de estatística e ciência de dados um novo panorama e novas oportunidades de conhecimentos e aplicações.
 
 ---
