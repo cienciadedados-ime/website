@@ -2,7 +2,7 @@ project:
   type: website
 
 website:
-  favicon: assets/rPython.png
+  favicon: assets/pc.png
   reader-mode: true
   bread-crumbs: false
   title: "Ciência de Dados"
@@ -13,7 +13,7 @@ website:
     tracking-id: G-0WD3PSV647
     anonymize-ip: true
   site-url: "https://ufba.netlify.app/"
-  body-footer: "&#169; 2024 **Ciência de Dados <br>&#128420;** by Carolina Paraíba e Gilberto Sassi"
+  body-footer: "&#169; 2024 **Ciência de Dados**"
   navbar:
     title: Ciência de Dados
     right:
@@ -37,7 +37,7 @@ website:
         href: paginas/contato.qmd
   sidebar: 
       search: true
-      logo: assets/rPython.png
+      logo: assets/pc.png
       style: docked
       collapse-level: 1
       contents: 
