@@ -32,12 +32,31 @@ knitr::include_graphics("../assets/gilberto.jpeg")
 ```{r}
 #| echo: false
 #| out.width: 25%
+knitr::include_graphics("../assets/ana.png")
+```
+
+**Carol Andrade** é estudante de graduação em Estatística, com grande interesse  em Tratamento e Análise de Dados, Previsão, Visualização e Modelagem de Dados.
+<br>
+**Instagram:** [`@`aaguanaes](https://www.instagram.com/aaguanaes/){target="_blank"}
+
+```{r}
+#| echo: false
+#| out.width: 25%
+knitr::include_graphics("../assets/fernanda.jpg")
+```
+
+**Fernanda de Jesus** é estudante de Estatística na UFBA, atualmente cursando o terceiro semestre. Deseja expandir os conhecimentos na área de Estatística e Ciência de Dados e contribuir para o progresso dela.<br>
+**Instagram:** [`@`fernanda.fdj](https://www.instagram.com/fernanda.fdj/){target="_blank"}
+
+```{r}
+#| echo: false
+#| out.width: 25%
 knitr::include_graphics("../assets/gabriella.jpg")
 ```
 
 
 **Gabriella Santos Rocha** tem 20 anos, é estudante do 3° semestre do Bacharelado Interdisciplinar em saúde pela UFBA. Nasceu e cresceu no interior da Bahia em uma cidade chamada Maracás,e gosta muito de conhecer e aprender coisas novas.<br>
-**Instagram:** [`@`gabyrrocha_](https://www.instagram.com/gabyrrocha_/)
+**Instagram:** [`@`gabyrrocha_](https://www.instagram.com/gabyrrocha_/){target="_blank"}
 
 ```{r}
 #| echo: false
@@ -46,15 +65,17 @@ knitr::include_graphics("../assets/keila.jpg")
 ```
 
 **Keila Lisboa**  é estudante de estatística, entusiasta da área e encantada pelo software R. Seu interesse é pelo ramo aplicado ao mercado de trabalho e busca constantemente novos conhecimentos e aprimoramento de suas habilidades.<br>
-**Instagram:** [`@`klisbooas](https://www.instagram.com/klisbooas/)
+**Instagram:** [`@`klisbooas](https://www.instagram.com/klisbooas/){target="_blank"}
 
 ```{r}
 #| echo: false
 #| out.width: 25%
-knitr::include_graphics("../assets/fernanda.jpg")
+knitr::include_graphics("../assets/maiara.png")
 ```
 
-**Fernanda de Jesus** é estudante de Estatística na UFBA, atualmente cursando o terceiro semestre. Deseja expandir os conhecimentos na área de Estatística e Ciência de Dados e contribuir para o progresso dela.
+**Maiara Antunes** é estudante do Bacharelado Interdisciplinar em Ciência e Tecnologia. Entusiasta com a estatística, as ciências de dados e a influência dela na sociedade.<br>
+**Instagram:** [`@`mayantune](https://www.instagram.com/mayantune){target="_blank"}
+
 
 ```{r}
 #| echo: false
