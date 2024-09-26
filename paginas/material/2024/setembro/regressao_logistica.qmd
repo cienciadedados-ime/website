@@ -19,6 +19,10 @@ categories:
 
 [codeshare.io/w93AmR](https://codeshare.io/w93AmR)
 
+## Dados
+
+[`dados_cdrl.xlsx`](dados_cdrl.xlsx)
+
 ## `R` e `Rstudio`
 
 Neste curso, a IDE vamos utilizar é o [`RStudio`](https://posit.co/downloads/){target="_blank"}. Outras opções populares em ciência de dados são o [`VScode`](https://code.visualstudio.com/Download){target="_blank"} da Microsoft e [`JupyterLab`](https://jupyter.org/install){target="_blank"}, caso você tenha familiaridade ou já trabalhe com este editores sinta a vontade para usá-los.

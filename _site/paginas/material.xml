@@ -28,6 +28,10 @@
 <h2 class="anchored" data-anchor-id="codeshare.io"><code>codeshare.io</code></h2>
 <p><a href="https://codeshare.io/w93AmR">codeshare.io/w93AmR</a></p>
 </section>
+<section id="dados" class="level2">
+<h2 class="anchored" data-anchor-id="dados">Dados</h2>
+<p><a href="dados_cdrl.xlsx"><code>dados_cdrl.xlsx</code></a></p>
+</section>
 <section id="r-e-rstudio" class="level2">
 <h2 class="anchored" data-anchor-id="r-e-rstudio"><code>R</code> e <code>Rstudio</code></h2>
 <p>Neste curso, a IDE vamos utilizar é o <a href="https://posit.co/downloads/" target="_blank"><code>RStudio</code></a>. Outras opções populares em ciência de dados são o <a href="https://code.visualstudio.com/Download" target="_blank"><code>VScode</code></a> da Microsoft e <a href="https://jupyter.org/install" target="_blank"><code>JupyterLab</code></a>, caso você tenha familiaridade ou já trabalhe com este editores sinta a vontade para usá-los.</p>
