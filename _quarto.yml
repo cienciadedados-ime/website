@@ -71,10 +71,10 @@ website:
       - section: "Slides e Códigos" 
         href: paginas/material.qmd
         contents:
+          - text: "Regressão Logística"
+            href: paginas/material/2024/setembro/regressao_logistica.qmd
           - text: "`rmarkdown` e `quarto`"
             href: paginas/material/2024/agosto/quarto.qmd
-          - text: "Modelos de Análise de Variância (Anova)"
-            href: paginas/material/2024/julho/anova.qmd
       - section: Editais
         href: paginas/editais/editais-2024.qmd
         contents:
