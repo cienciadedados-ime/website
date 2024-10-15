@@ -16,7 +16,7 @@ As inscrições para o curso livre **[`R` para Ciência de Dados: Exploração e
 
 **Prazo de inscrições:** 15/10/2024 a 26/10/2024.
 
-**Importante:** o curso conta com 20 vagas e, havendo mais inscritos do que número de vagas, as mesmas serão distribuídas por sorteio, respeitando o caráter extensionista da atividade conforme a **[Resolução 02/2012 do Conselho Acadêmico de Pesquisa e Extensão da UFBA](https://proext.ufba.br/sites/proext.ufba.br/files/resolucao_no_02-2012_capex_-_regulamento_da_extensao.pdf){target="_blank"}**.
+**Importante:** o curso conta com 30 vagas e, havendo mais inscritos do que número de vagas, as mesmas serão distribuídas por sorteio, respeitando o caráter extensionista da atividade conforme a **[Resolução 02/2012 do Conselho Acadêmico de Pesquisa e Extensão da UFBA](https://proext.ufba.br/sites/proext.ufba.br/files/resolucao_no_02-2012_capex_-_regulamento_da_extensao.pdf){target="_blank"}**.
 
 ---
 
