@@ -10,7 +10,55 @@
 <atom:link href="https://ufba.netlify.app/paginas/material.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.5.45</generator>
-<lastBuildDate>Fri, 27 Sep 2024 03:00:00 GMT</lastBuildDate>
+<lastBuildDate>Fri, 18 Oct 2024 03:00:00 GMT</lastBuildDate>
+<item>
+  <title>R para Ciência de Dados: Introdução à Programação em R</title>
+  <dc:creator>Gilberto Sassi</dc:creator>
+  <link>https://ufba.netlify.app/paginas/material/2024/outubro/programacao_r.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="slides" class="level2">
+<h2 class="anchored" data-anchor-id="slides">Slides</h2>
+<p><a href="slides_programacao_r.html" target="_blank">Slides</a></p>
+</section>
+<section id="codeshare.io" class="level2">
+<h2 class="anchored" data-anchor-id="codeshare.io"><code>codeshare.io</code></h2>
+<p><a href="https://codeshare.io/VNdlJ4" target="_blank">codeshare.io/VNdlJ4</a></p>
+</section>
+<section id="arquivos" class="level2">
+<h2 class="anchored" data-anchor-id="arquivos">Arquivos</h2>
+<p><a href="projeto_programacao_r.zip">projeto_programacao_r.zip</a></p>
+</section>
+<section id="r-e-rstudio" class="level2">
+<h2 class="anchored" data-anchor-id="r-e-rstudio"><code>R</code> e <code>Rstudio</code></h2>
+<p>Neste curso, a IDE vamos utilizar é o <a href="https://posit.co/downloads/" target="_blank"><code>RStudio</code></a>. Outras opções populares em ciência de dados são o <a href="https://code.visualstudio.com/Download" target="_blank"><code>VScode</code></a> da Microsoft e <a href="https://jupyter.org/install" target="_blank"><code>JupyterLab</code></a>, caso você tenha familiaridade ou já trabalhe com este editores sinta a vontade para usá-los.</p>
+<p>Caso você não queria ou não possa realizar instalações em seu computador, recomendamos que você use as plataformas <a href="https://colab.research.google.com/" target="_blank">Google Colaboratory</a> e/ou <a href="https://posit.cloud" target="_blank">Posit Cloud</a>. Recomendamos o uso da plataforma <a href="https://posit.cloud" target="_blank">Posit Cloud</a> pelo mesmo estilo e aspecto visual do aplicativo <a href="https://posit.co/downloads/" target="_blank"><code>RStudio</code></a>.</p>
+<section id="instalação--r" class="level3">
+<h3 class="anchored" data-anchor-id="instalação--r">Instalação -<code>R</code></h3>
+<p>Para instalar o <code>R</code> em seu computador, basta seguir as instruções em <a href="https://cran.r-project.org/">cran.r-project.org</a>. É necessário que você instale a versão 4.1 ou superior do R.</p>
+</section>
+<section id="instalação---rstudio" class="level3">
+<h3 class="anchored" data-anchor-id="instalação---rstudio">Instalação - <code>RStudio</code></h3>
+<p>Depois de ter instalado o R, siga as instruções de instalação em <a href="https://posit.co/downloads/">posit.co/downloads</a>.</p>
+<hr>
+
+
+</section>
+</section>
+
+<p>© 2024 <strong>Ciência de Dados</strong></p> ]]></description>
+  <category>Ciência de Dados</category>
+  <category>R</category>
+  <category>Programação</category>
+  <category>Base de dados</category>
+  <category>Laço de repetição</category>
+  <category>Controle de fluxo</category>
+  <guid>https://ufba.netlify.app/paginas/material/2024/outubro/programacao_r.html</guid>
+  <pubDate>Fri, 18 Oct 2024 03:00:00 GMT</pubDate>
+</item>
 <item>
   <title>R para Ciência de Dados: Regressão Logística</title>
   <dc:creator>Carolina Costa Mota Paraíba</dc:creator>
