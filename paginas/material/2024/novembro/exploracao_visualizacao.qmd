@@ -1,0 +1,40 @@
+---
+title: "`R` para Ciência de Dados: Exploração e Visualização de Dados"
+format: html
+author: Carolina Costa Mota Paraíba
+date: 2024/11/22
+categories:
+  - Ciência de Dados
+  - Estatística
+  - Gráficos
+  - Medidas de resumo
+  - Tabelas
+---
+
+## Slides
+
+[Slides](slides.pdf){target="_blank"}
+
+## `codeshare.io`
+
+[codeshare.io/ldD7Ym](https://codeshare.io/ldD7Ym){target="_blank"}
+
+## Dados
+
+[`dados_casas.xlsx`](casas.xlsx)
+
+## `R` e `Rstudio`
+
+Neste curso, a IDE vamos utilizar é o [`RStudio`](https://posit.co/downloads/){target="_blank"}. Outras opções populares em ciência de dados são o [`VScode`](https://code.visualstudio.com/Download){target="_blank"} da Microsoft e [`JupyterLab`](https://jupyter.org/install){target="_blank"}, caso você tenha familiaridade ou já trabalhe com este editores sinta a vontade para usá-los.
+
+Caso você não queria ou não possa realizar instalações em seu computador, recomendamos que você use as plataformas [Google Colaboratory](https://colab.research.google.com/){target="_blank"} e/ou [Posit Cloud](https://posit.cloud){target="_blank"}. Recomendamos o uso da plataforma [Posit Cloud](https://posit.cloud){target="_blank"} pelo mesmo estilo e aspecto visual do aplicativo [`RStudio`](https://posit.co/downloads/){target="_blank"}.
+
+### Instalação -`R`
+
+Para instalar o `R` em seu computador, basta seguir as instruções em [cran.r-project.org](https://cran.r-project.org/). É necessário que você instale a versão 4.1 ou superior do R.
+
+### Instalação - `RStudio`
+
+Depois de ter instalado o R, siga as instruções de instalação em [posit.co/downloads](https://posit.co/downloads/).
+
+---
