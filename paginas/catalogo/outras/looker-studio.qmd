@@ -1,0 +1,55 @@
+---
+title: "Dashboards Interativos com Looker Studio"
+---
+
+# Resumo
+
+Esse curso de extensão tem por objetivo apresentar e ensinar a confecção de dashboards (painéis de dados) informativos com Looker Studio, numa interação dialógica da comunidade acadêmica com a sociedade por meio da troca de conhecimentos. A ação cumprirá o papel de aproximar a academia da comunidade, popularizando a ciência Estatística e trazendo para dentro da universidade a experiência e a grande demanda que profissionais têm de usar Estatística e Ciência de Dados. O curso abrange teoria e prática do Looker Studio, com a criação de dashboards usando como aplicação um conjunto de dados reais. As aulas acontecerão no laboratório de informática do IME. Essa ação de extensão procurará integrar discentes em sua equipe organizadora, faz parte do projeto de extensão Python para Ciência de Dados (número siatex 21257) e programa de extensão Ciência e Dados (número siatex 21258) e prevê 25 vagas.
+
+# Área
+
+De acordo com o disposto na Política Nacional de Extensão, este Projeto de Extensão está vinculado às áreas temáticas descritas a seguir.
+
+- **Linha Programática:** Educação profissional;
+- **Área(s) de Conhecimento(s):** Ciências Exatas e da Terra;
+- **Área(s) Temáticas(s):** Tecnologia.
+
+# Coordenação
+
+- Professor Doutor Gilberto Pereira Sassi, Departamento de Estatística, Instituto de Matemática e Estatística, Universidade Federal da Bahia.
+- Professora Doutora Carolina Costa Mota Paraíba, Departamento de Estatística, Instituto de Matemática e Estatística, Universidade Federal da Bahia.
+
+
+# Universidade universitária
+
+Instituto de Matemática e Estatística da Universidade Federal da Bahia.
+
+# Público alvo
+
+Profissionais que usam análises estatísticas de dados.
+
+# Número esperado de participantes
+
+25
+
+# Local de realização
+
+Laboratório de ensino de informática do IME-UFBA.
+
+# Metodologia
+
+A metodologia do curso será de aulas expositivas e práticas em laboratório de informática usando Looker Studio.
+
+# Conteúdo programático
+
+1. Aprensentação do Looker Studio
+1. Base de dados no Looker Studio
+1. Tabelas
+1. Gráficos
+1. Medidas de resumo
+1. Funções
+1. Grupos e agrupamentos
+1. Campo calculado
+1. Controles e parâmetros
+
+---

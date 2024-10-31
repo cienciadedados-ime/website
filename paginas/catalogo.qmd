@@ -20,4 +20,10 @@ title: "Catálogo de cursos"
 ||
 |:----|
 |[Exploração e Visualização de Dados](catalogo/python/exploracao-visualizacao-dados.qmd)|
+
+## Outras linguagens
+
+||
+|:---|
+|[Dashboards Interativos com Looker Studio](catalogo/outras/looker-studio.qmd)|
 ---

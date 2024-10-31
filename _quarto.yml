@@ -68,6 +68,10 @@ website:
             contents: 
           - text: Exploração e Visualização de Dados
             href: paginas/catalogo/python/exploracao-visualizacao-dados.qmd
+          - section: <code class='code_bold_outras'>Outras linguagens</code>
+            contents:
+          - text: Dashboards Interativos com Looker Studio
+            href: paginas/catalogo/outras/looker-studio.qmd
       - section: "Slides e Códigos" 
         href: paginas/material.qmd
         contents:
