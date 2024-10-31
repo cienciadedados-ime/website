@@ -202,5 +202,14 @@
   },
   "paginas/material/2024/outubro/programacao_r.qmd": {
     "programacao_r.html": "aed59c67"
+  },
+  "paginas/material/2024/novembro/descritiva.qmd": {
+    "descritiva.html": "78b776b6"
+  },
+  "paginas/catalogo/python/looker-studio.qmd": {
+    "looker-studio.html": "cd6d0395"
+  },
+  "paginas/catalogo/outras/looker-studio.qmd": {
+    "looker-studio.html": "9ab928e9"
   }
 }
