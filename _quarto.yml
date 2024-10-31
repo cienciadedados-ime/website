@@ -75,10 +75,10 @@ website:
       - section: "Slides e Códigos" 
         href: paginas/material.qmd
         contents:
+          - text: "Exploração e Visualização de Dados"
+            href: paginas/material/2024/novembro/descritiva.qmd
           - text: "Introdução à Programação em `R`"
             href: paginas/material/2024/outubro/programacao_r.qmd
-          - text: "Regressão Logística"
-            href: paginas/material/2024/setembro/regressao_logistica.qmd
       - section: Editais
         href: paginas/editais/editais-2024.qmd
         contents:
