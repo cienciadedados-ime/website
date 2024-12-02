@@ -14,6 +14,7 @@ title: "Catálogo de cursos"
 |[Produção de Texto usando Rmarkdown e Quarto](catalogo/r/producao-de-texto-usando-rmarkdown.html)<br>|
 |[Regressão Linear Simples e Múltipla](catalogo/r/regressao-linear-simples-e-multipla.html)<br>|
 |[Regressão Logística](catalogo/r/regressao-logistica.html)|
+|[Análise Estatística de Dados em Estudos de Gênero e Diversidade](catalogo/r/genero-diversidade.qmd)|
 
 ## Linguagem `Python`
 

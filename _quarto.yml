@@ -64,6 +64,8 @@ website:
             href: paginas/catalogo/r/regressao-linear-simples-e-multipla.qmd
           - text: Regressão Logística
             href: paginas/catalogo/r/regressao-logistica.qmd
+          - text: Análise Estatística de Dados em Estudos de Gênero e Diversidade
+            href: paginas/catalogo/r/genero-diversidade.qmd
           - section: <code class='code_bold_python'>Python</code>
             contents: 
           - text: Exploração e Visualização de Dados
