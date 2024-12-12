@@ -26,23 +26,23 @@ categories:
 
 ## Arquivos
 
-[`arquivos.zip`](arquivos.zip)
+* [`mtcarros.csv`](mtcarros.csv)
+* [`dicionario_enem_2023.xlsx`](dicionario_enem_2023.xlsx)
+* [`base_texto.xlsx`](base_texto.xlsx)
+* [`iris.xlsx`](iris.xlsx)
+* [`brasao_ufba.jpg`](brasao_ufba.jpg){target="_blank"}
 
 ```{r}
 #| echo: false
 #| message: false
-#| tbl-cap: Cada pessoa tem uma cidade, e cada cidade tem uma amostra de 3500 candidatas/os no ENEM na edição 2023.
+#| tbl-cap: Cada pessoa tem uma amostra de 5000 candidatas/os no ENEM na edição 2023.
 
 pacman::p_load(readxl, janitor, glue, tidyverse)
 
 # setwd("paginas/material/2024/dezembro")
 
-arquivos_csv <- list.files("cidades_enem_2023/csv/")
-arquivos_csv <- arquivos_csv[arquivos_csv != "salvador.csv"]
-arquivos_xlsx <- list.files("cidades_enem_2023/xlsx/")
-arquivos_xlsx <- arquivos_xlsx[arquivos_xlsx != "salvador.xlsx"]
-cidades <- arquivos_csv  |>
-  map_chr(~ str_split(.x, "\\.")[[1]][1])
+arquivos_csv <- list.files("amostra_5k/csv/")
+arquivos_xlsx <- list.files("amostra_5k/xlsx/")
 
 inscritos <- read_csv("presenca.csv")
 nomes <- inscritos$nome |> map_chr(~ str_to_title(.x)) |>
@@ -50,14 +50,13 @@ nomes <- inscritos$nome |> map_chr(~ str_to_title(.x)) |>
 nomes <- c(nomes, rep("", 28))
 id <- paste0("id_", 1:50)
 
-set.seed(20241210)
+
 df <- tibble( 
-  `.csv` = cidades |>
-      map_chr(\(nome) glue("[{nome}.csv](cidades_enem_2023/csv/{nome}.csv)")),
-  `.xlsx` = cidades |>
-      map_chr(\(nome) glue("[{nome}.xlsx](cidades_enem_2023/xlsx/{nome}.xlsx)"))
+  `.csv` = seq(50) |>
+      map_chr(\(k) glue("[amostra_{k}.csv](amostra_5k/csv/amostra_{k}.csv)")),
+  `.xlsx` = seq(50) |>
+      map_chr(\(k) glue("[amostra_{k}.xlsx](amostra_5k/xlsx/amostra_{k}.xlsx)"))
 ) |>
-  slice_sample(n = 50) |>
   mutate(id, nome = nomes) |>
   relocate(id, nome, .before = `.csv`)
 
