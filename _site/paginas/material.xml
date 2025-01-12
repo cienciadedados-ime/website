@@ -10,7 +10,60 @@
 <atom:link href="https://ufba.netlify.app/paginas/material.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.5.45</generator>
-<lastBuildDate>Mon, 16 Dec 2024 03:00:00 GMT</lastBuildDate>
+<lastBuildDate>Mon, 13 Jan 2025 03:00:00 GMT</lastBuildDate>
+<item>
+  <title>R para Ciência de Dados: Análise Estatística de Dados em Estudos de Gênero e Diversidade</title>
+  <dc:creator>Carolina Paraíba</dc:creator>
+  <link>https://ufba.netlify.app/paginas/material/2025/janeiro/genero.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="slides" class="level2">
+<h2 class="anchored" data-anchor-id="slides">Slides</h2>
+<p><a href="aula_exp_vis_ch.pdf" target="_blank">Slides</a></p>
+</section>
+<section id="codeshare.io" class="level2">
+<h2 class="anchored" data-anchor-id="codeshare.io"><code>codeshare.io</code></h2>
+<p><strong>Não altere (apenas copiei) o seguinte código do link abaixo:</strong></p>
+<p><a href="https://codeshare.io/k0yzOw" target="_blank">codeshare.io/k0yzOw</a></p>
+</section>
+<section id="arquivos" class="level2">
+<h2 class="anchored" data-anchor-id="arquivos">Arquivos</h2>
+<ul>
+<li><a href="base_curso.xlsx"><code>base_curso.xlsx</code></a></li>
+<li><a href="mulheres_20242.xlsx"><code>mulheres_20242.xlsx</code></a></li>
+</ul>
+</section>
+<section id="r-e-rstudio" class="level2">
+<h2 class="anchored" data-anchor-id="r-e-rstudio"><code>R</code> e <code>Rstudio</code></h2>
+<p>Neste curso, a IDE vamos utilizar é o <a href="https://posit.co/downloads/" target="_blank"><code>RStudio</code></a>. Outras opções populares em ciência de dados são o <a href="https://code.visualstudio.com/Download" target="_blank"><code>VScode</code></a> da Microsoft e <a href="https://jupyter.org/install" target="_blank"><code>JupyterLab</code></a>, caso você tenha familiaridade ou já trabalhe com este editores sinta a vontade para usá-los.</p>
+<p>Caso você não queria ou não possa realizar instalações em seu computador, recomendamos que você use as plataformas <a href="https://colab.research.google.com/" target="_blank">Google Colaboratory</a> e/ou <a href="https://posit.cloud" target="_blank">Posit Cloud</a>. Recomendamos o uso da plataforma <a href="https://posit.cloud" target="_blank">Posit Cloud</a> pelo mesmo estilo e aspecto visual do aplicativo <a href="https://posit.co/downloads/" target="_blank"><code>RStudio</code></a>.</p>
+<section id="instalação--r" class="level3">
+<h3 class="anchored" data-anchor-id="instalação--r">Instalação -<code>R</code></h3>
+<p>Para instalar o <code>R</code> em seu computador, basta seguir as instruções em <a href="https://cran.r-project.org/">cran.r-project.org</a>. É necessário que você instale a versão 4.1 ou superior do R.</p>
+</section>
+<section id="instalação---rstudio" class="level3">
+<h3 class="anchored" data-anchor-id="instalação---rstudio">Instalação - <code>RStudio</code></h3>
+<p>Depois de ter instalado o R, siga as instruções de instalação em <a href="https://posit.co/downloads/">posit.co/downloads</a>.</p>
+<hr>
+
+
+</section>
+</section>
+
+<p>© 2025 <strong>Ciência de Dados</strong></p> ]]></description>
+  <category>Ciência de Dados</category>
+  <category>R</category>
+  <category>Estatística</category>
+  <category>Gráficos</category>
+  <category>Tabelas</category>
+  <category>Visualização de dados</category>
+  <category>Gênero</category>
+  <guid>https://ufba.netlify.app/paginas/material/2025/janeiro/genero.html</guid>
+  <pubDate>Mon, 13 Jan 2025 03:00:00 GMT</pubDate>
+</item>
 <item>
   <title>Dashboards Interativos com Looker Studio</title>
   <dc:creator>Gilberto Pereira Sassi</dc:creator>
@@ -373,7 +426,7 @@
 </section>
 </section>
 
-<p>© 2024 <strong>Ciência de Dados</strong></p> ]]></description>
+<p>© 2025 <strong>Ciência de Dados</strong></p> ]]></description>
   <category>Ciência de Dados</category>
   <category>Looker Studio</category>
   <category>Estatística</category>
@@ -427,7 +480,7 @@
 </section>
 </section>
 
-<p>© 2024 <strong>Ciência de Dados</strong></p> ]]></description>
+<p>© 2025 <strong>Ciência de Dados</strong></p> ]]></description>
   <category>Ciência de Dados</category>
   <category>R</category>
   <category>Estatística</category>
@@ -478,7 +531,7 @@
 </section>
 </section>
 
-<p>© 2024 <strong>Ciência de Dados</strong></p> ]]></description>
+<p>© 2025 <strong>Ciência de Dados</strong></p> ]]></description>
   <category>Ciência de Dados</category>
   <category>R</category>
   <category>Programação</category>
@@ -526,7 +579,7 @@
 </section>
 </section>
 
-<p>© 2024 <strong>Ciência de Dados</strong></p> ]]></description>
+<p>© 2025 <strong>Ciência de Dados</strong></p> ]]></description>
   <category>Ciência de Dados</category>
   <category>Quarto</category>
   <category>Regressão Logística</category>
@@ -569,7 +622,7 @@
 </section>
 </section>
 
-<p>© 2024 <strong>Ciência de Dados</strong></p> ]]></description>
+<p>© 2025 <strong>Ciência de Dados</strong></p> ]]></description>
   <category>Ciência de Dados</category>
   <category>Quarto</category>
   <category>Rmarkdown</category>
@@ -619,7 +672,7 @@
 </section>
 </section>
 
-<p>© 2024 <strong>Ciência de Dados</strong></p> ]]></description>
+<p>© 2025 <strong>Ciência de Dados</strong></p> ]]></description>
   <category>Ciência de Dados</category>
   <category>Inferência Estatística</category>
   <category>Estatística</category>
@@ -948,7 +1001,7 @@ Tabela&nbsp;1: Informações de candidatas/os do ENEM 2023 por cidade.
 </section>
 </section>
 
-<p>© 2024 <strong>Ciência de Dados</strong></p> ]]></description>
+<p>© 2025 <strong>Ciência de Dados</strong></p> ]]></description>
   <category>Ciência de Dados</category>
   <category>Inferência Estatística</category>
   <category>Estatística</category>
@@ -1003,7 +1056,7 @@ Tabela&nbsp;1: Informações de candidatas/os do ENEM 2023 por cidade.
 </section>
 </section>
 
-<p>© 2024 <strong>Ciência de Dados</strong></p> ]]></description>
+<p>© 2025 <strong>Ciência de Dados</strong></p> ]]></description>
   <category>Ciência de Dados</category>
   <category>Aplicações de Regressão Logística</category>
   <category>Estatística</category>
@@ -1049,7 +1102,7 @@ Tabela&nbsp;1: Informações de candidatas/os do ENEM 2023 por cidade.
 </section>
 </section>
 
-<p>© 2024 <strong>Ciência de Dados</strong></p> ]]></description>
+<p>© 2025 <strong>Ciência de Dados</strong></p> ]]></description>
   <category>Ciência de Dados</category>
   <category>Estatística descritiva</category>
   <category>Regressão Linear Simples</category>
@@ -1294,7 +1347,7 @@ Tabela&nbsp;1: Informações de candidatas/os do ENEM 2023 por cidade.
 </section>
 </section>
 
-<p>© 2024 <strong>Ciência de Dados</strong></p> ]]></description>
+<p>© 2025 <strong>Ciência de Dados</strong></p> ]]></description>
   <category>Ciência de Dados</category>
   <category>Estatística descritiva</category>
   <category>Exploração e visualização de dados</category>
@@ -1348,7 +1401,7 @@ Tabela&nbsp;1: Informações de candidatas/os do ENEM 2023 por cidade.
 
 
 
-<p>© 2024 <strong>Ciência de Dados</strong></p> ]]></description>
+<p>© 2025 <strong>Ciência de Dados</strong></p> ]]></description>
   <category>Ciência de Dados</category>
   <category>Estatística descritiva</category>
   <category>Exploração e visualização de dados</category>
@@ -1400,7 +1453,7 @@ Tabela&nbsp;1: Informações de candidatas/os do ENEM 2023 por cidade.
 
 
 
-<p>© 2024 <strong>Ciência de Dados</strong></p> ]]></description>
+<p>© 2025 <strong>Ciência de Dados</strong></p> ]]></description>
   <category>Ciência de Dados</category>
   <category>Linguagem &lt;code&gt;R&lt;/code&gt;</category>
   <category>Laços de repetição</category>
@@ -1445,7 +1498,7 @@ Tabela&nbsp;1: Informações de candidatas/os do ENEM 2023 por cidade.
 
 
 
-<p>© 2024 <strong>Ciência de Dados</strong></p> ]]></description>
+<p>© 2025 <strong>Ciência de Dados</strong></p> ]]></description>
   <category>Ciência de Dados</category>
   <category>Estatística</category>
   <category>Modelagem Estatística</category>
@@ -1492,7 +1545,7 @@ Tabela&nbsp;1: Informações de candidatas/os do ENEM 2023 por cidade.
 
 
 
-<p>© 2024 <strong>Ciência de Dados</strong></p> ]]></description>
+<p>© 2025 <strong>Ciência de Dados</strong></p> ]]></description>
   <category>Ciência de Dados</category>
   <category>Estatística descritiva</category>
   <category>Exploração e visualização de dados</category>
@@ -1519,7 +1572,7 @@ Tabela&nbsp;1: Informações de candidatas/os do ENEM 2023 por cidade.
 
 
 
-<p>© 2024 <strong>Ciência de Dados</strong></p> ]]></description>
+<p>© 2025 <strong>Ciência de Dados</strong></p> ]]></description>
   <category>Ciência de Dados</category>
   <category>Estatística</category>
   <category>Linguagem &lt;code&gt;R&lt;/code&gt;</category>

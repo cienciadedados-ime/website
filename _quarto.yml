@@ -13,7 +13,7 @@ website:
     tracking-id: G-0WD3PSV647
     anonymize-ip: true
   site-url: "https://ufba.netlify.app/"
-  body-footer: "&#169; 2024 **Ciência de Dados**"
+  body-footer: "&#169; 2025 **Ciência de Dados**"
   navbar:
     title: Ciência de Dados
     right:
@@ -77,8 +77,8 @@ website:
       - section: "Slides e Códigos" 
         href: paginas/material.qmd
         contents:
-          - text: "Exploração e Visualização de Dados"
-            href: paginas/material/2024/novembro/descritiva.qmd
+          - text: "Análise Estatística de Dados em Estudos de Gênero e Diversidade"
+            href: paginas/material/2025/janeiro/genero.qmd
           - text: "Introdução à Programação em `R`"
             href: paginas/material/2024/outubro/programacao_r.qmd
       - section: Editais

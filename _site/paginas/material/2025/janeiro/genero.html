@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Carolina Paraíba">
 
-<title>Ciência de Dados</title>
+<title>R para Ciência de Dados: Análise Estatística de Dados em Estudos de Gênero e Diversidade – Ciência de Dados</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,25 +24,25 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./assets/pc.png" rel="icon" type="image/png">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script src="../../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../../">
+<link href="../../../../assets/pc.png" rel="icon" type="image/png">
+<script src="../../../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -102,8 +103,8 @@ gtag('config', 'G-0WD3PSV647', { 'anonymize_ip': true});
 </script>
 
 
-<link rel="stylesheet" href="assets/styles.css">
-<meta property="og:title" content="Ciência de Dados">
+<link rel="stylesheet" href="../../../../assets/styles.css">
+<meta property="og:title" content="Ciência de Dados - R para Ciência de Dados: Análise Estatística de Dados em Estudos de Gênero e Diversidade">
 <meta property="og:description" content="">
 <meta property="og:site_name" content="Ciência de Dados">
 <meta property="og:locale" content="pt_BR">
@@ -116,7 +117,7 @@ gtag('config', 'G-0WD3PSV647', { 'anonymize_ip': true});
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../../../index.html">
     <span class="navbar-title">Ciência de Dados</span>
     </a>
   </div>
@@ -127,31 +128,31 @@ gtag('config', 'G-0WD3PSV647', { 'anonymize_ip': true});
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link active" href="../../../../index.html" aria-current="page"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./paginas/inscricoes.html"> 
+    <a class="nav-link" href="../../../../paginas/inscricoes.html"> 
 <span class="menu-text">Inscrições</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./paginas/catalogo.html"> 
+    <a class="nav-link" href="../../../../paginas/catalogo.html"> 
 <span class="menu-text">Cursos oferecidos</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./paginas/material.html"> 
+    <a class="nav-link" href="../../../../paginas/material.html"> 
 <span class="menu-text">Material</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./paginas/editais/editais-2024.html"> 
+    <a class="nav-link" href="../../../../paginas/editais/editais-2024.html"> 
 <span class="menu-text">Editais</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./paginas/equipe.html"> 
+    <a class="nav-link" href="../../../../paginas/equipe.html"> 
 <span class="menu-text">Equipe</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./paginas/contato.html"> 
+    <a class="nav-link" href="../../../../paginas/contato.html"> 
 <span class="menu-text">Contato</span></a>
   </li>  
 </ul>
@@ -172,7 +173,7 @@ gtag('config', 'G-0WD3PSV647', { 'anonymize_ip': true});
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
         <a class="flex-grow-1 no-decor" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-          <h1 class="quarto-secondary-nav-title">Ciência de Dados</h1>
+          <h1 class="quarto-secondary-nav-title"><code>R</code> para Ciência de Dados: Análise Estatística de Dados em Estudos de Gênero e Diversidade</h1>
         </a>     
       <button type="button" class="btn quarto-search-button" aria-label="Procurar" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
@@ -185,8 +186,8 @@ gtag('config', 'G-0WD3PSV647', { 'anonymize_ip': true});
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
-      <a href="./index.html" class="sidebar-logo-link">
-      <img src="./assets/pc.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      <a href="../../../../index.html" class="sidebar-logo-link">
+      <img src="../../../../assets/pc.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
       </a>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -198,19 +199,19 @@ gtag('config', 'G-0WD3PSV647', { 'anonymize_ip': true});
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../../../index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Quem somos</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./paginas/inscricoes.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../../paginas/inscricoes.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Inscrições</span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="./paginas/catalogo.html" class="sidebar-item-text sidebar-link">
+            <a href="../../../../paginas/catalogo.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Catálogo</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Alternar seção">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -223,49 +224,49 @@ gtag('config', 'G-0WD3PSV647', { 'anonymize_ip': true});
   </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./paginas/catalogo/r/exploracao-visualizacao.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../../paginas/catalogo/r/exploracao-visualizacao.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Exploração e Visualização de dados</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./paginas/catalogo/r/intervalo-confianca-teste-hipoteses.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../../paginas/catalogo/r/intervalo-confianca-teste-hipoteses.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Inferência Estatística</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./paginas/catalogo/r/introducao-a-programacao.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../../paginas/catalogo/r/introducao-a-programacao.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Introdução à Programação</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./paginas/catalogo/r/modelo-de-analise-de-variancia.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../../paginas/catalogo/r/modelo-de-analise-de-variancia.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Modelos de Análise Variância (Anova)</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./paginas/catalogo/r/producao-de-texto-usando-rmarkdown.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../../paginas/catalogo/r/producao-de-texto-usando-rmarkdown.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><code>rmarkdown</code> e <code>quarto</code></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./paginas/catalogo/r/regressao-linear-simples-e-multipla.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../../paginas/catalogo/r/regressao-linear-simples-e-multipla.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Regressão Linear Simples e Múltipla</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./paginas/catalogo/r/regressao-logistica.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../../paginas/catalogo/r/regressao-logistica.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Regressão Logística</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./paginas/catalogo/r/genero-diversidade.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../../paginas/catalogo/r/genero-diversidade.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Análise Estatística de Dados em Estudos de Gênero e Diversidade</span></a>
   </div>
 </li>
@@ -275,7 +276,7 @@ gtag('config', 'G-0WD3PSV647', { 'anonymize_ip': true});
   </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./paginas/catalogo/python/exploracao-visualizacao-dados.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../../paginas/catalogo/python/exploracao-visualizacao-dados.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Exploração e Visualização de Dados</span></a>
   </div>
 </li>
@@ -285,7 +286,7 @@ gtag('config', 'G-0WD3PSV647', { 'anonymize_ip': true});
   </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./paginas/catalogo/outras/looker-studio.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../../paginas/catalogo/outras/looker-studio.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Dashboards Interativos com Looker Studio</span></a>
   </div>
 </li>
@@ -293,22 +294,22 @@ gtag('config', 'G-0WD3PSV647', { 'anonymize_ip': true});
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="./paginas/material.html" class="sidebar-item-text sidebar-link">
+            <a href="../../../../paginas/material.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Slides e Códigos</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false" aria-label="Alternar seção">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Alternar seção">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./paginas/material/2025/janeiro/genero.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../../paginas/material/2025/janeiro/genero.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Análise Estatística de Dados em Estudos de Gênero e Diversidade</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./paginas/material/2024/outubro/programacao_r.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../../paginas/material/2024/outubro/programacao_r.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Introdução à Programação em <code>R</code></span></a>
   </div>
 </li>
@@ -316,7 +317,7 @@ gtag('config', 'G-0WD3PSV647', { 'anonymize_ip': true});
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="./paginas/editais/editais-2024.html" class="sidebar-item-text sidebar-link">
+            <a href="../../../../paginas/editais/editais-2024.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Editais</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="false" aria-label="Alternar seção">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -329,7 +330,7 @@ gtag('config', 'G-0WD3PSV647', { 'anonymize_ip': true});
   </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./paginas/editais/editais-2024.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../../paginas/editais/editais-2024.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">2024</span></a>
   </div>
 </li>
@@ -339,7 +340,7 @@ gtag('config', 'G-0WD3PSV647', { 'anonymize_ip': true});
   </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./paginas/editais/editais-2023.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../../paginas/editais/editais-2023.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">2023</span></a>
   </div>
 </li>
@@ -347,13 +348,13 @@ gtag('config', 'G-0WD3PSV647', { 'anonymize_ip': true});
   </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./paginas/equipe.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../../paginas/equipe.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Equipe</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./paginas/contato.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../../paginas/contato.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Contato</span></a>
   </div>
 </li>
@@ -362,22 +363,56 @@ gtag('config', 'G-0WD3PSV647', { 'anonymize_ip': true});
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Nesta página</h2>
+   
+  <ul>
+  <li><a href="#slides" id="toc-slides" class="nav-link active" data-scroll-target="#slides">Slides</a></li>
+  <li><a href="#codeshare.io" id="toc-codeshare.io" class="nav-link" data-scroll-target="#codeshare.io"><code>codeshare.io</code></a></li>
+  <li><a href="#arquivos" id="toc-arquivos" class="nav-link" data-scroll-target="#arquivos">Arquivos</a></li>
+  <li><a href="#r-e-rstudio" id="toc-r-e-rstudio" class="nav-link" data-scroll-target="#r-e-rstudio"><code>R</code> e <code>Rstudio</code></a>
+  <ul class="collapse">
+  <li><a href="#instalação--r" id="toc-instalação--r" class="nav-link" data-scroll-target="#instalação--r">Instalação -<code>R</code></a></li>
+  <li><a href="#instalação---rstudio" id="toc-instalação---rstudio" class="nav-link" data-scroll-target="#instalação---rstudio">Instalação - <code>RStudio</code></a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block">Ciência de Dados</h1>
-</div>
+<h1 class="title d-none d-lg-block"><code>R</code> para Ciência de Dados: Análise Estatística de Dados em Estudos de Gênero e Diversidade</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">Ciência de Dados</div>
+    <div class="quarto-category">R</div>
+    <div class="quarto-category">Estatística</div>
+    <div class="quarto-category">Gráficos</div>
+    <div class="quarto-category">Tabelas</div>
+    <div class="quarto-category">Visualização de dados</div>
+    <div class="quarto-category">Gênero</div>
+  </div>
+  </div>
 
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Autor</div>
+    <div class="quarto-title-meta-contents">
+             <p>Carolina Paraíba </p>
+          </div>
+  </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Data de Publicação</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">13 de janeiro de 2025</p>
+    </div>
+  </div>
   
     
   </div>
@@ -387,20 +422,38 @@ gtag('config', 'G-0WD3PSV647', { 'anonymize_ip': true});
 </header>
 
 
-<p>Ciência de dados é uma ação de extensão na modalidade <em>programa</em> com apoio financeiro da Pró-reitoria de Extensão da Univesidade Federal da Bahia (UFBA) e tem como o objetivo compartilhar o conhecimento de análise de dados usando as linguagens <code>R</code> e <code>Python</code> numa interação dialógica da comunidade acadêmica com a sociedade por meio da troca de conhecimentos.</p>
-<p>O programa irá promover um conjunto de ações com o objetivo de popularizar a Estatística e Ciência de Dados e incentivar o uso de tecnologias de código aberto como as linguagens <code>R</code> e <code>Python</code>, cujo uso é amplamente disseminado entre os pesquisadores da área de Estatística com crescente popularidade entre profissionais de outras áreas.</p>
-<p>Os cursos e eventos promovidos neste projeto serão presenciais em Salvador no Instituto de Matemática e Estatística da UFBA, gratuitas, abertas a toda comunidade e com certificado emitado pela UFBA.</p>
-<div style="text-align: center;">
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1731.7044864127633!2d-38.50767380792866!3d-13.00092642626354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x716049fbfc20d8b%3A0x5a3ed51534624abc!2sInstituto%20de%20Matem%C3%A1tica%20e%20Estat%C3%ADstica%20da%20UFBA!5e0!3m2!1spt-BR!2sbr!4v1710436162475!5m2!1spt-BR!2sbr" width="75%" height="300em" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-</iframe>
-</div>
-<p><strong>Defenda a Universidade pública, gratuita, de qualidade e diversa.</strong><br> <strong>Serviço público salva vidas. Defenda o serviço público.</strong></p>
-<blockquote class="blockquote">
-<p>De cada qual, segundo sua capacidade; a cada qual, segundo suas necessidades.</p>
-</blockquote>
+<section id="slides" class="level2">
+<h2 class="anchored" data-anchor-id="slides">Slides</h2>
+<p><a href="aula_exp_vis_ch.pdf" target="_blank">Slides</a></p>
+</section>
+<section id="codeshare.io" class="level2">
+<h2 class="anchored" data-anchor-id="codeshare.io"><code>codeshare.io</code></h2>
+<p><strong>Não altere (apenas copiei) o seguinte código do link abaixo:</strong></p>
+<p><a href="https://codeshare.io/k0yzOw" target="_blank">codeshare.io/k0yzOw</a></p>
+</section>
+<section id="arquivos" class="level2">
+<h2 class="anchored" data-anchor-id="arquivos">Arquivos</h2>
+<ul>
+<li><a href="base_curso.xlsx"><code>base_curso.xlsx</code></a></li>
+<li><a href="mulheres_20242.xlsx"><code>mulheres_20242.xlsx</code></a></li>
+</ul>
+</section>
+<section id="r-e-rstudio" class="level2">
+<h2 class="anchored" data-anchor-id="r-e-rstudio"><code>R</code> e <code>Rstudio</code></h2>
+<p>Neste curso, a IDE vamos utilizar é o <a href="https://posit.co/downloads/" target="_blank"><code>RStudio</code></a>. Outras opções populares em ciência de dados são o <a href="https://code.visualstudio.com/Download" target="_blank"><code>VScode</code></a> da Microsoft e <a href="https://jupyter.org/install" target="_blank"><code>JupyterLab</code></a>, caso você tenha familiaridade ou já trabalhe com este editores sinta a vontade para usá-los.</p>
+<p>Caso você não queria ou não possa realizar instalações em seu computador, recomendamos que você use as plataformas <a href="https://colab.research.google.com/" target="_blank">Google Colaboratory</a> e/ou <a href="https://posit.cloud" target="_blank">Posit Cloud</a>. Recomendamos o uso da plataforma <a href="https://posit.cloud" target="_blank">Posit Cloud</a> pelo mesmo estilo e aspecto visual do aplicativo <a href="https://posit.co/downloads/" target="_blank"><code>RStudio</code></a>.</p>
+<section id="instalação--r" class="level3">
+<h3 class="anchored" data-anchor-id="instalação--r">Instalação -<code>R</code></h3>
+<p>Para instalar o <code>R</code> em seu computador, basta seguir as instruções em <a href="https://cran.r-project.org/">cran.r-project.org</a>. É necessário que você instale a versão 4.1 ou superior do R.</p>
+</section>
+<section id="instalação---rstudio" class="level3">
+<h3 class="anchored" data-anchor-id="instalação---rstudio">Instalação - <code>RStudio</code></h3>
+<p>Depois de ter instalado o R, siga as instruções de instalação em <a href="https://posit.co/downloads/">posit.co/downloads</a>.</p>
 <hr>
 
 
+</section>
+</section>
 
 <p>© 2025 <strong>Ciência de Dados</strong></p></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
