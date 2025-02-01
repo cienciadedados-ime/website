@@ -10,7 +10,64 @@
 <atom:link href="https://ufba.netlify.app/paginas/material.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.5.45</generator>
-<lastBuildDate>Mon, 13 Jan 2025 03:00:00 GMT</lastBuildDate>
+<lastBuildDate>Mon, 24 Mar 2025 03:00:00 GMT</lastBuildDate>
+<item>
+  <title>python para Ciência de Dados: Exploração e Visualização de Dados</title>
+  <dc:creator>Gilberto Sassi</dc:creator>
+  <link>https://ufba.netlify.app/paginas/material/2025/marco/python.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="slides" class="level2">
+<h2 class="anchored" data-anchor-id="slides">Slides</h2>
+<p>Em breve.</p>
+</section>
+<section id="codeshare.io" class="level2">
+<h2 class="anchored" data-anchor-id="codeshare.io"><code>codeshare.io</code></h2>
+<p><strong>Não altere (apenas copiei) o seguinte código do link abaixo:</strong></p>
+<p><a href="https://codeshare.io/XLXoXl" target="_blank">codeshare.io/XLXoXl</a></p>
+</section>
+<section id="arquivos" class="level2">
+<h2 class="anchored" data-anchor-id="arquivos">Arquivos</h2>
+<p>Em breve.</p>
+</section>
+<section id="ide-para-ciência-de-dados-usando-python" class="level2">
+<h2 class="anchored" data-anchor-id="ide-para-ciência-de-dados-usando-python">IDE para Ciência de Dados usando `python</h2>
+<p>Recomendamos que você utilize é o <a href="https://jupyter.org/install" target="_blank"><code>jupyter notebook</code></a>. Outras opções populares em ciência de dados são o <a href="https://code.visualstudio.com/Download" target="_blank"><code>VScode</code></a> da Microsoft e <a href="https://www.spyder-ide.org/download/" target="_blank"><code>Spyder</code></a>, caso você tenha familiaridade ou já trabalhe com este editores sinta a vontade para usá-los.</p>
+<p>Caso você não queria ou não possa realizar instalações em seu computador, recomendamos que você use as plataformas <a href="https://colab.research.google.com/" target="_blank"><code>Google Colaboratory</code></a> e/ou <a href="https://www.kaggle.com/" target="_blank"><code>Kaggle</code></a>.</p>
+<section id="instalação--python---anaconda" class="level3">
+<h3 class="anchored" data-anchor-id="instalação--python---anaconda">Instalação -<code>python</code> - <code>anaconda</code></h3>
+<p>Siga as orientações desse link <a href="https://docs.anaconda.com/anaconda/install/">docs.anaconda.com/anaconda/install</a>.</p>
+</section>
+<section id="instalação---jupyter-notebook" class="level3">
+<h3 class="anchored" data-anchor-id="instalação---jupyter-notebook">Instalação - <code>jupyter notebook</code></h3>
+<p>Após instalar <code>anaconda</code>, use o seguinte comando para instalar <code>jupyter notebook</code>:</p>
+<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1">conda install <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span>c conda<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span>forge jupyter jupyter<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span>lab</span></code></pre></div>
+<hr>
+
+
+</section>
+</section>
+
+<p>© 2025 <strong>Ciência de Dados</strong></p> ]]></description>
+  <category>Ciência de Dados</category>
+  <category>python</category>
+  <category>Estatística</category>
+  <category>Gráficos</category>
+  <category>Tabelas</category>
+  <category>Visualização de dados</category>
+  <category>Gênero</category>
+  <guid>https://ufba.netlify.app/paginas/material/2025/marco/python.html</guid>
+  <pubDate>Mon, 24 Mar 2025 03:00:00 GMT</pubDate>
+</item>
 <item>
   <title>R para Ciência de Dados: Análise Estatística de Dados em Estudos de Gênero e Diversidade</title>
   <dc:creator>Carolina Paraíba</dc:creator>

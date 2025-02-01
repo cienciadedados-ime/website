@@ -6,17 +6,17 @@ format:  html
 #        include-before-body: ../assets/form.html
 ---
 
-Não há inscrições abertas no momento. 
+<!-- Não há inscrições abertas no momento. 
 
-**Fique atento à nossa conta do Instagram [`@`cienciadedados.ime](https://www.instagram.com/cienciadedados.ime){target="_blank"} para se informar sobre os períodos de inscrições.**
-
-<!-- 
-As inscrições para o curso livre **[Análise Estatística de Dados em Estudos de Gênero e Diversidade](catalogo/r/genero-diversidade.qmd){target="_blank"}**, que acontecerá nos dias **13 de janeiro (das 14h às 18h) e 17 de janeiro (das 14h às 18h)** no Instituto de Matemática e Estatística da Universidade Federal da Bahia, estão abertas e podem ser realizadas pelo link: **[formulário de inscrição](https://forms.gle/rYTZh744bzk8EVmD8){target="_blank"}**.
+**Fique atento à nossa conta do Instagram [`@`cienciadedados.ime](https://www.instagram.com/cienciadedados.ime){target="_blank"} para se informar sobre os períodos de inscrições.** -->
 
 
-**Prazo de inscrições:** 02/12/2024 a 15/12/2024.
+As inscrições para o curso livre **[`python` para Ciência de Dados: Exploração e Visualização de Dados](catalogo/python/exploracao-visualizacao-dados.qmd){target="_blank"}**, que acontecerá nos dias **24 de março (das 13h às 18h) e 31 de março (das 14h às 18h)** no Instituto de Matemática e Estatística da Universidade Federal da Bahia, estão abertas e podem ser realizadas pelo link: **[formulário de inscrição](https://forms.gle/jHPED8hqKGSQtsnQ7){target="_blank"}**.
 
-**Importante:** o curso conta com 25 vagas e, havendo mais inscritos do que número de vagas, as mesmas serão distribuídas por sorteio, respeitando o caráter extensionista da atividade conforme a **[Resolução 02/2012 do Conselho Acadêmico de Pesquisa e Extensão da UFBA](https://proext.ufba.br/sites/proext.ufba.br/files/resolucao_no_02-2012_capex_-_regulamento_da_extensao.pdf){target="_blank"}**. -->
+
+**Prazo de inscrições:** 02/02/2025 a 21/02/2025.
+
+**Importante:** o curso conta com 20 vagas e, havendo mais inscritos do que número de vagas, as mesmas serão distribuídas por sorteio, respeitando o caráter extensionista da atividade conforme a **[Resolução 02/2012 do Conselho Acadêmico de Pesquisa e Extensão da UFBA](https://proext.ufba.br/sites/proext.ufba.br/files/resolucao_no_02-2012_capex_-_regulamento_da_extensao.pdf){target="_blank"}**.
 
 ---
 

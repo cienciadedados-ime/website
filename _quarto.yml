@@ -77,10 +77,10 @@ website:
       - section: "Slides e Códigos" 
         href: paginas/material.qmd
         contents:
+          - text: "Exploração e Visualização de Dados"
+            href: paginas/material/2025/marco/python.qmd
           - text: "Análise Estatística de Dados em Estudos de Gênero e Diversidade"
             href: paginas/material/2025/janeiro/genero.qmd
-          - text: "Introdução à Programação em `R`"
-            href: paginas/material/2024/outubro/programacao_r.qmd
       - section: Editais
         href: paginas/editais/editais-2024.qmd
         contents:

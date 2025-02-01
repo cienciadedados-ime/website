@@ -1,0 +1,49 @@
+---
+title: "`python` para Ciência de Dados: Exploração e Visualização de Dados"
+format: html
+author: Gilberto Sassi
+date: 2025/03/24
+categories:
+  - Ciência de Dados
+  - python
+  - Estatística
+  - Gráficos
+  - Tabelas
+  - Visualização de dados
+  - Gênero
+---
+
+## Slides
+
+Em breve.
+
+## `codeshare.io`
+
+**Não altere (apenas copiei) o seguinte código do link abaixo:**
+
+[codeshare.io/XLXoXl](https://codeshare.io/XLXoXl){target="_blank"}
+
+## Arquivos
+
+Em breve.
+
+
+## IDE para Ciência de Dados usando `python
+
+Recomendamos que você utilize é o [`jupyter notebook`](https://jupyter.org/install){target="_blank"}. Outras opções populares em ciência de dados são o [`VScode`](https://code.visualstudio.com/Download){target="_blank"} da Microsoft e [`Spyder`](https://www.spyder-ide.org/download/){target="_blank"}, caso você tenha familiaridade ou já trabalhe com este editores sinta a vontade para usá-los.
+
+Caso você não queria ou não possa realizar instalações em seu computador, recomendamos que você use as plataformas [`Google Colaboratory`](https://colab.research.google.com/){target="_blank"} e/ou [`Kaggle`](https://www.kaggle.com/){target="_blank"}. 
+
+### Instalação -`python` - `anaconda`
+
+Siga as orientações desse link [docs.anaconda.com/anaconda/install](https://docs.anaconda.com/anaconda/install/).
+
+### Instalação - `jupyter notebook`
+
+Após instalar `anaconda`, use o seguinte comando para instalar `jupyter notebook`:
+
+```python
+conda install -c conda-forge jupyter jupyter-lab
+```
+
+---

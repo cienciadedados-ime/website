@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Gilberto Sassi">
 
-<title>equipe – Ciência de Dados</title>
+<title>python para Ciência de Dados: Exploração e Visualização de Dados – Ciência de Dados</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,28 +21,62 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<link href="../assets/pc.png" rel="icon" type="image/png">
-<script src="../site_libs/quarto-html/quarto.js"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script src="../../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../../">
+<link href="../../../../assets/pc.png" rel="icon" type="image/png">
+<script src="../../../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -102,8 +137,8 @@ gtag('config', 'G-0WD3PSV647', { 'anonymize_ip': true});
 </script>
 
 
-<link rel="stylesheet" href="../assets/styles.css">
-<meta property="og:title" content="Ciência de Dados">
+<link rel="stylesheet" href="../../../../assets/styles.css">
+<meta property="og:title" content="Ciência de Dados - python para Ciência de Dados: Exploração e Visualização de Dados">
 <meta property="og:description" content="">
 <meta property="og:site_name" content="Ciência de Dados">
 <meta property="og:locale" content="pt_BR">
@@ -116,7 +151,7 @@ gtag('config', 'G-0WD3PSV647', { 'anonymize_ip': true});
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../index.html">
+    <a class="navbar-brand" href="../../../../index.html">
     <span class="navbar-title">Ciência de Dados</span>
     </a>
   </div>
@@ -127,31 +162,31 @@ gtag('config', 'G-0WD3PSV647', { 'anonymize_ip': true});
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="../index.html" aria-current="page"> 
+    <a class="nav-link active" href="../../../../index.html" aria-current="page"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../paginas/inscricoes.html"> 
+    <a class="nav-link" href="../../../../paginas/inscricoes.html"> 
 <span class="menu-text">Inscrições</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../paginas/catalogo.html"> 
+    <a class="nav-link" href="../../../../paginas/catalogo.html"> 
 <span class="menu-text">Cursos oferecidos</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../paginas/material.html"> 
+    <a class="nav-link" href="../../../../paginas/material.html"> 
 <span class="menu-text">Material</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../paginas/editais/editais-2024.html"> 
+    <a class="nav-link" href="../../../../paginas/editais/editais-2024.html"> 
 <span class="menu-text">Editais</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../paginas/equipe.html"> 
+    <a class="nav-link" href="../../../../paginas/equipe.html"> 
 <span class="menu-text">Equipe</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../paginas/contato.html"> 
+    <a class="nav-link" href="../../../../paginas/contato.html"> 
 <span class="menu-text">Contato</span></a>
   </li>  
 </ul>
@@ -172,7 +207,7 @@ gtag('config', 'G-0WD3PSV647', { 'anonymize_ip': true});
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
         <a class="flex-grow-1 no-decor" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-          <h1 class="quarto-secondary-nav-title"></h1>
+          <h1 class="quarto-secondary-nav-title"><code>python</code> para Ciência de Dados: Exploração e Visualização de Dados</h1>
         </a>     
       <button type="button" class="btn quarto-search-button" aria-label="Procurar" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
@@ -185,8 +220,8 @@ gtag('config', 'G-0WD3PSV647', { 'anonymize_ip': true});
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
-      <a href="../index.html" class="sidebar-logo-link">
-      <img src="../assets/pc.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      <a href="../../../../index.html" class="sidebar-logo-link">
+      <img src="../../../../assets/pc.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
       </a>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -198,19 +233,19 @@ gtag('config', 'G-0WD3PSV647', { 'anonymize_ip': true});
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../index.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../../index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Quem somos</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../paginas/inscricoes.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../../paginas/inscricoes.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Inscrições</span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../paginas/catalogo.html" class="sidebar-item-text sidebar-link">
+            <a href="../../../../paginas/catalogo.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Catálogo</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Alternar seção">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -223,49 +258,49 @@ gtag('config', 'G-0WD3PSV647', { 'anonymize_ip': true});
   </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../paginas/catalogo/r/exploracao-visualizacao.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../../paginas/catalogo/r/exploracao-visualizacao.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Exploração e Visualização de dados</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../paginas/catalogo/r/intervalo-confianca-teste-hipoteses.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../../paginas/catalogo/r/intervalo-confianca-teste-hipoteses.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Inferência Estatística</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../paginas/catalogo/r/introducao-a-programacao.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../../paginas/catalogo/r/introducao-a-programacao.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Introdução à Programação</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../paginas/catalogo/r/modelo-de-analise-de-variancia.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../../paginas/catalogo/r/modelo-de-analise-de-variancia.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Modelos de Análise Variância (Anova)</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../paginas/catalogo/r/producao-de-texto-usando-rmarkdown.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../../paginas/catalogo/r/producao-de-texto-usando-rmarkdown.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><code>rmarkdown</code> e <code>quarto</code></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../paginas/catalogo/r/regressao-linear-simples-e-multipla.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../../paginas/catalogo/r/regressao-linear-simples-e-multipla.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Regressão Linear Simples e Múltipla</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../paginas/catalogo/r/regressao-logistica.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../../paginas/catalogo/r/regressao-logistica.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Regressão Logística</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../paginas/catalogo/r/genero-diversidade.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../../paginas/catalogo/r/genero-diversidade.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Análise Estatística de Dados em Estudos de Gênero e Diversidade</span></a>
   </div>
 </li>
@@ -275,7 +310,7 @@ gtag('config', 'G-0WD3PSV647', { 'anonymize_ip': true});
   </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../paginas/catalogo/python/exploracao-visualizacao-dados.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../../paginas/catalogo/python/exploracao-visualizacao-dados.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Exploração e Visualização de Dados</span></a>
   </div>
 </li>
@@ -285,7 +320,7 @@ gtag('config', 'G-0WD3PSV647', { 'anonymize_ip': true});
   </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../paginas/catalogo/outras/looker-studio.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../../paginas/catalogo/outras/looker-studio.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Dashboards Interativos com Looker Studio</span></a>
   </div>
 </li>
@@ -293,22 +328,22 @@ gtag('config', 'G-0WD3PSV647', { 'anonymize_ip': true});
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../paginas/material.html" class="sidebar-item-text sidebar-link">
+            <a href="../../../../paginas/material.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Slides e Códigos</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false" aria-label="Alternar seção">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Alternar seção">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../paginas/material/2025/marco/python.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../../paginas/material/2025/marco/python.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Exploração e Visualização de Dados</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../paginas/material/2025/janeiro/genero.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../../paginas/material/2025/janeiro/genero.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Análise Estatística de Dados em Estudos de Gênero e Diversidade</span></a>
   </div>
 </li>
@@ -316,7 +351,7 @@ gtag('config', 'G-0WD3PSV647', { 'anonymize_ip': true});
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../paginas/editais/editais-2024.html" class="sidebar-item-text sidebar-link">
+            <a href="../../../../paginas/editais/editais-2024.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Editais</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="false" aria-label="Alternar seção">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -329,7 +364,7 @@ gtag('config', 'G-0WD3PSV647', { 'anonymize_ip': true});
   </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../paginas/editais/editais-2024.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../../paginas/editais/editais-2024.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">2024</span></a>
   </div>
 </li>
@@ -339,7 +374,7 @@ gtag('config', 'G-0WD3PSV647', { 'anonymize_ip': true});
   </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../paginas/editais/editais-2023.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../../paginas/editais/editais-2023.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">2023</span></a>
   </div>
 </li>
@@ -347,13 +382,13 @@ gtag('config', 'G-0WD3PSV647', { 'anonymize_ip': true});
   </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../paginas/equipe.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../../../paginas/equipe.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Equipe</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../paginas/contato.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../../paginas/contato.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Contato</span></a>
   </div>
 </li>
@@ -367,10 +402,13 @@ gtag('config', 'G-0WD3PSV647', { 'anonymize_ip': true});
     <h2 id="toc-title">Nesta página</h2>
    
   <ul>
-  <li><a href="#equipe-técnica" id="toc-equipe-técnica" class="nav-link active" data-scroll-target="#equipe-técnica">Equipe técnica</a>
+  <li><a href="#slides" id="toc-slides" class="nav-link active" data-scroll-target="#slides">Slides</a></li>
+  <li><a href="#codeshare.io" id="toc-codeshare.io" class="nav-link" data-scroll-target="#codeshare.io"><code>codeshare.io</code></a></li>
+  <li><a href="#arquivos" id="toc-arquivos" class="nav-link" data-scroll-target="#arquivos">Arquivos</a></li>
+  <li><a href="#ide-para-ciência-de-dados-usando-python" id="toc-ide-para-ciência-de-dados-usando-python" class="nav-link" data-scroll-target="#ide-para-ciência-de-dados-usando-python">IDE para Ciência de Dados usando `python</a>
   <ul class="collapse">
-  <li><a href="#coordenadores" id="toc-coordenadores" class="nav-link" data-scroll-target="#coordenadores">Coordenadores</a></li>
-  <li><a href="#membros" id="toc-membros" class="nav-link" data-scroll-target="#membros">Membros</a></li>
+  <li><a href="#instalação--python---anaconda" id="toc-instalação--python---anaconda" class="nav-link" data-scroll-target="#instalação--python---anaconda">Instalação -<code>python</code> - <code>anaconda</code></a></li>
+  <li><a href="#instalação---jupyter-notebook" id="toc-instalação---jupyter-notebook" class="nav-link" data-scroll-target="#instalação---jupyter-notebook">Instalação - <code>jupyter notebook</code></a></li>
   </ul></li>
   </ul>
 </nav>
@@ -378,96 +416,71 @@ gtag('config', 'G-0WD3PSV647', { 'anonymize_ip': true});
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title d-none d-lg-block"><code>python</code> para Ciência de Dados: Exploração e Visualização de Dados</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">Ciência de Dados</div>
+    <div class="quarto-category">python</div>
+    <div class="quarto-category">Estatística</div>
+    <div class="quarto-category">Gráficos</div>
+    <div class="quarto-category">Tabelas</div>
+    <div class="quarto-category">Visualização de dados</div>
+    <div class="quarto-category">Gênero</div>
+  </div>
+  </div>
 
 
 
-<section id="equipe-técnica" class="level1">
-<h1>Equipe técnica</h1>
-<section id="coordenadores" class="level2">
-<h2 class="anchored" data-anchor-id="coordenadores">Coordenadores</h2>
-<div class="cell">
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="../assets/carol.jpeg" class="img-fluid figure-img" style="width:25.0%"></p>
-</figure>
-</div>
-</div>
-</div>
-<p><strong>Carolina Costa Mota Paraíba</strong> fez doutorado sanduíche na Universidade de Edimburgo (Escócia) e pós-doutorado na Universidade Federal do Espírito Santo. Já trabalhou com Estatística Aplicada no Lanagro/SP e no Instituto Jones dos Santos Neves (Espírito Santo). Atua principalmente nos seguintes temas: análise de regressão, inferência Bayesiana, diagnóstico de modelos, estatística computacional e estatística aplicada.<br> <strong>Instagram:</strong> <a href="https://www.instagram.com/ccmparaiba/"><code>@</code>ccmparaiba</a><br> <strong>GitHub:</strong> <a href="https://github.com/ccmparaiba">github.com//ccmparaiba</a><br> <strong>e-mail:</strong> <a href="mailto:carolina.paraiba@ufba.br">carolina.paraiba<code>@</code>ufba.br</a></p>
-<div class="cell">
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="../assets/gilberto.jpeg" class="img-fluid figure-img" style="width:25.0%"></p>
-</figure>
-</div>
-</div>
-</div>
-<p><strong>Gilberto Pereira Sassi</strong> é professor do Departamento de Estatística do Instituto de Matemática e Estatística da Universidade Federal da Bahia. Bacharel em Matemática com mestrado pelo Programa de Pósgraduação em Ciência da Computação e Matemática Computacional do Instituto de Ciências Matemáticas e de Computação da Universidade de São Paulo e tem doutorado pelo Programa de Pós-graduação em Estatística do Instituto de Matemática e Estatística da Universidade de São Paulo. Já trabalhou com ciência de dados em empresas como Bradesco, Itaú e FIPE. Tem interesse em métodos estatísticos, análise de dados funcionais e teoria de resposta ao item.<br> <strong>Instagram:</strong> <a href="https://www.instagram.com/gpsassi/"><code>@</code>gpsassi</a><br> <strong>GitHub:</strong> <a href="https://github.com/gilberto-sassi">github.com/gilberto-sassi</a><br> <strong>e-mail:</strong> <a href="mailto:gilberto.sassi@ufba.br">gilberto.sassi<code>@</code>ufba.br</a><br> <strong>Página pessoal:</strong> <a href="https://gilbertosassi.netlify.app" target="_blank">gilbertosassi.netlify.app</a></p>
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Autor</div>
+    <div class="quarto-title-meta-contents">
+             <p>Gilberto Sassi </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Data de Publicação</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">24 de março de 2025</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="slides" class="level2">
+<h2 class="anchored" data-anchor-id="slides">Slides</h2>
+<p>Em breve.</p>
 </section>
-<section id="membros" class="level2">
-<h2 class="anchored" data-anchor-id="membros">Membros</h2>
-<div class="cell">
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="../assets/ana.png" class="img-fluid figure-img" style="width:25.0%"></p>
-</figure>
-</div>
-</div>
-</div>
-<p><strong>Carol Andrade</strong> é estudante de graduação em Estatística, com grande interesse em Tratamento e Análise de Dados, Previsão, Visualização e Modelagem de Dados. <br> <strong>Instagram:</strong> <a href="https://www.instagram.com/aaguanaes/" target="_blank"><code>@</code>aaguanaes</a></p>
-<div class="cell">
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="../assets/fernanda.jpg" class="img-fluid figure-img" style="width:25.0%"></p>
-</figure>
-</div>
-</div>
-</div>
-<p><strong>Fernanda de Jesus</strong> é estudante de Estatística na UFBA, atualmente cursando o terceiro semestre. Deseja expandir os conhecimentos na área de Estatística e Ciência de Dados e contribuir para o progresso dela.<br> <strong>Instagram:</strong> <a href="https://www.instagram.com/fernanda.fdj/" target="_blank"><code>@</code>fernanda.fdj</a></p>
-<div class="cell">
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="../assets/gabriella.jpg" class="img-fluid figure-img" style="width:25.0%"></p>
-</figure>
-</div>
-</div>
-</div>
-<p><strong>Gabriella Santos Rocha</strong> tem 20 anos, é estudante do 3° semestre do Bacharelado Interdisciplinar em saúde pela UFBA. Nasceu e cresceu no interior da Bahia em uma cidade chamada Maracás,e gosta muito de conhecer e aprender coisas novas.<br> <strong>Instagram:</strong> <a href="https://www.instagram.com/gabyrrocha_/" target="_blank"><code>@</code>gabyrrocha_</a></p>
-<div class="cell">
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="../assets/keila.jpg" class="img-fluid figure-img" style="width:25.0%"></p>
-</figure>
-</div>
-</div>
-</div>
-<p><strong>Keila Lisboa</strong> é estudante de estatística, entusiasta da área e encantada pelo software R. Seu interesse é pelo ramo aplicado ao mercado de trabalho e busca constantemente novos conhecimentos e aprimoramento de suas habilidades.<br> <strong>Instagram:</strong> <a href="https://www.instagram.com/klisbooas/" target="_blank"><code>@</code>klisbooas</a></p>
-<div class="cell">
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="../assets/maiara.png" class="img-fluid figure-img" style="width:25.0%"></p>
-</figure>
-</div>
-</div>
-</div>
-<p><strong>Maiara Antunes</strong> é estudante do Bacharelado Interdisciplinar em Ciência e Tecnologia. Entusiasta com a estatística, as ciências de dados e a influência dela na sociedade.<br> <strong>Instagram:</strong> <a href="https://www.instagram.com/mayantune" target="_blank"><code>@</code>mayantune</a></p>
-<div class="cell">
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="../assets/miguel.png" class="img-fluid figure-img" style="width:25.0%"></p>
-</figure>
-</div>
-</div>
-</div>
-<p><strong>Miguel Antonio</strong> é formado em Lic. em Matemática pela UCSAL e atualmente é estudante do curso de Estatística da UFBA, está em busca de novos conhecimentos e viu na área de estatística e ciência de dados um novo panorama e novas oportunidades de conhecimentos e aplicações.</p>
+<section id="codeshare.io" class="level2">
+<h2 class="anchored" data-anchor-id="codeshare.io"><code>codeshare.io</code></h2>
+<p><strong>Não altere (apenas copiei) o seguinte código do link abaixo:</strong></p>
+<p><a href="https://codeshare.io/XLXoXl" target="_blank">codeshare.io/XLXoXl</a></p>
+</section>
+<section id="arquivos" class="level2">
+<h2 class="anchored" data-anchor-id="arquivos">Arquivos</h2>
+<p>Em breve.</p>
+</section>
+<section id="ide-para-ciência-de-dados-usando-python" class="level2">
+<h2 class="anchored" data-anchor-id="ide-para-ciência-de-dados-usando-python">IDE para Ciência de Dados usando `python</h2>
+<p>Recomendamos que você utilize é o <a href="https://jupyter.org/install" target="_blank"><code>jupyter notebook</code></a>. Outras opções populares em ciência de dados são o <a href="https://code.visualstudio.com/Download" target="_blank"><code>VScode</code></a> da Microsoft e <a href="https://www.spyder-ide.org/download/" target="_blank"><code>Spyder</code></a>, caso você tenha familiaridade ou já trabalhe com este editores sinta a vontade para usá-los.</p>
+<p>Caso você não queria ou não possa realizar instalações em seu computador, recomendamos que você use as plataformas <a href="https://colab.research.google.com/" target="_blank"><code>Google Colaboratory</code></a> e/ou <a href="https://www.kaggle.com/" target="_blank"><code>Kaggle</code></a>.</p>
+<section id="instalação--python---anaconda" class="level3">
+<h3 class="anchored" data-anchor-id="instalação--python---anaconda">Instalação -<code>python</code> - <code>anaconda</code></h3>
+<p>Siga as orientações desse link <a href="https://docs.anaconda.com/anaconda/install/">docs.anaconda.com/anaconda/install</a>.</p>
+</section>
+<section id="instalação---jupyter-notebook" class="level3">
+<h3 class="anchored" data-anchor-id="instalação---jupyter-notebook">Instalação - <code>jupyter notebook</code></h3>
+<p>Após instalar <code>anaconda</code>, use o seguinte comando para instalar <code>jupyter notebook</code>:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>conda install <span class="op">-</span>c conda<span class="op">-</span>forge jupyter jupyter<span class="op">-</span>lab</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <hr>
 
 
