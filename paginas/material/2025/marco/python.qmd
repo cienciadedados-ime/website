@@ -25,7 +25,39 @@ Em breve.
 
 ## Arquivos
 
-Em breve.
+### Enem 2023
+
+```{r}
+#| echo: false
+#| message: false
+#| tbl-cap: "Amostra com 5 mil pessoas que realizaram o Enem 2023. Cada participantes deste curso tem sua própria amostra."
+
+pacman::p_load(
+  readxl, glue, writexl, tidyverse
+)
+
+arqs_csv <- 1:50 |>
+  map_chr(\(k) {
+    glue("[amostra_{k}.csv](amostra_5k/csv/amostra_{k}.csv)")
+  })
+arqs_xlsx <- 1:50 |>
+  map_chr(\(k) {
+    glue("[amostra_{k}.xlsx](amostra_5k/xlsx/amostra_{k}.xlsx)")
+  })
+nomes <- rep("", 50)
+ids <- paste0("id_", 1:50)
+
+df_tab <- tibble(
+  id = ids,
+  nome = nomes,
+  `.csv` = arqs_csv,
+  `.xlsx`= arqs_xlsx
+)
+
+knitr::kable(
+  df_tab
+)
+```
 
 
 ## IDE para Ciência de Dados usando `python
