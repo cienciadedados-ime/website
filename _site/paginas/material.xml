@@ -22,7 +22,7 @@
 
 <section id="slides" class="level2">
 <h2 class="anchored" data-anchor-id="slides">Slides</h2>
-<p>Em breve.</p>
+<p><a href="slides.html" target="_blank">slides</a></p>
 </section>
 <section id="codeshare.io" class="level2">
 <h2 class="anchored" data-anchor-id="codeshare.io"><code>codeshare.io</code></h2>
@@ -31,6 +31,10 @@
 </section>
 <section id="arquivos" class="level2">
 <h2 class="anchored" data-anchor-id="arquivos">Arquivos</h2>
+<ul>
+<li><a href="iris.xlsx"><code>iris.xlsx</code></a></li>
+<li><a href="mtcarros.csv"><code>mtcarros.csv</code></a></li>
+</ul>
 <section id="enem-2023" class="level3">
 <h3 class="anchored" data-anchor-id="enem-2023">Enem 2023</h3>
 <div class="cell">

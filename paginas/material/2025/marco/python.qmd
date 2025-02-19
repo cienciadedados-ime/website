@@ -15,7 +15,7 @@ categories:
 
 ## Slides
 
-Em breve.
+[slides](slides.html){target="_blank"}
 
 ## `codeshare.io`
 
@@ -24,6 +24,9 @@ Em breve.
 [codeshare.io/XLXoXl](https://codeshare.io/XLXoXl){target="_blank"}
 
 ## Arquivos
+
+* [`iris.xlsx`](iris.xlsx)
+* [`mtcarros.csv`](mtcarros.csv)
 
 ### Enem 2023
 
