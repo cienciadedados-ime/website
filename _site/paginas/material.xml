@@ -359,7 +359,7 @@
 <p>Caso você não queria ou não possa realizar instalações em seu computador, recomendamos que você use as plataformas <a href="https://colab.research.google.com/" target="_blank"><code>Google Colaboratory</code></a> e/ou <a href="https://www.kaggle.com/" target="_blank"><code>Kaggle</code></a>.</p>
 <section id="instalação--python---anaconda" class="level3">
 <h3 class="anchored" data-anchor-id="instalação--python---anaconda">Instalação -<code>python</code> - <code>anaconda</code></h3>
-<p>Siga as orientações desse link <a href="https://docs.anaconda.com/anaconda/install/">docs.anaconda.com/anaconda/install</a>.</p>
+<p>Siga as orientações desse link <a href="https://docs.anaconda.com/anaconda/install/" target="_blank">docs.anaconda.com/anaconda/install</a>.</p>
 </section>
 <section id="instalação---jupyter-notebook" class="level3">
 <h3 class="anchored" data-anchor-id="instalação---jupyter-notebook">Instalação - <code>jupyter notebook</code></h3>

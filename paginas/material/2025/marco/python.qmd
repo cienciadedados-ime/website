@@ -70,7 +70,7 @@ Caso você não queria ou não possa realizar instalações em seu computador, r
 
 ### Instalação -`python` - `anaconda`
 
-Siga as orientações desse link [docs.anaconda.com/anaconda/install](https://docs.anaconda.com/anaconda/install/).
+Siga as orientações desse link [docs.anaconda.com/anaconda/install](https://docs.anaconda.com/anaconda/install/){target="_blank"}.
 
 ### Instalação - `jupyter notebook`
 
