@@ -35,8 +35,12 @@ categories:
 #| tbl-cap: "Amostra com 5 mil pessoas que realizaram o Enem 2023. Cada participantes deste curso tem sua própria amostra."
 
 pacman::p_load(
-  readxl, glue, writexl, tidyverse
+  readxl, glue, writexl, googlesheets4, tidyverse
 )
+# setwd("paginas/material/2025/marco/")
+inscritos <- read_csv("lista_presenca.csv")
+nomes <- sort(inscritos$nome)
+nomes <- c(nomes, rep("", 50 - length(nomes)))
 
 arqs_csv <- 1:50 |>
   map_chr(\(k) {
@@ -46,7 +50,7 @@ arqs_xlsx <- 1:50 |>
   map_chr(\(k) {
     glue("[amostra_{k}.xlsx](amostra_5k/xlsx/amostra_{k}.xlsx)")
   })
-nomes <- rep("", 50)
+# nomes <- rep("", 50)
 ids <- paste0("id_", 1:50)
 
 df_tab <- tibble(
