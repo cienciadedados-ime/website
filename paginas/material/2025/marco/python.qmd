@@ -21,12 +21,11 @@ categories:
 
 **Todo o código da aula estará disponível neste _notebook_**:
 
-[`colab.research.google.com`](https://colab.research.google.com/drive/1PdxOoaO2UqDrkf9vn-i8IpvGExvBWiaZ?usp=sharing){target="_blank"}
+[`colab.research.google.com`](https://colab.research.google.com/drive/1LWI2RulGa8vKZqg_zXpyGd1uNaV301Ze?usp=drive_link){target="_blank"}
 
 ## Arquivos
 
-[`mtcarros.csv`](mtcarros.csv)<br>
-[`iris.xlsx`](iris.xlsx)
+[`arquivos.zip`](arquivos.zip)
 
 ### Enem 2023
 
