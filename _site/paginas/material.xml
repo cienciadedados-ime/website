@@ -24,10 +24,10 @@
 <h2 class="anchored" data-anchor-id="slides">Slides</h2>
 <p><a href="slides.html" target="_blank">slides</a></p>
 </section>
-<section id="codeshare.io" class="level2">
-<h2 class="anchored" data-anchor-id="codeshare.io"><code>codeshare.io</code></h2>
-<p><strong>Não altere (apenas copiei) o seguinte código do link abaixo:</strong></p>
-<p><a href="https://codeshare.io/XLXoXl" target="_blank">codeshare.io/XLXoXl</a></p>
+<section id="google-colab" class="level2">
+<h2 class="anchored" data-anchor-id="google-colab"><code>Google Colab</code></h2>
+<p><strong>Todo o código da aula estará disponível neste <em>notebook</em></strong>:</p>
+<p><a href="https://colab.research.google.com/drive/1PdxOoaO2UqDrkf9vn-i8IpvGExvBWiaZ?usp=sharing" target="_blank"><code>colab.research.google.com</code></a></p>
 </section>
 <section id="arquivos" class="level2">
 <h2 class="anchored" data-anchor-id="arquivos">Arquivos</h2>

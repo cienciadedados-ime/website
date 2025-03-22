@@ -17,11 +17,11 @@ categories:
 
 [slides](slides.html){target="_blank"}
 
-## `codeshare.io`
+## `Google Colab`
 
-**Não altere (apenas copiei) o seguinte código do link abaixo:**
+**Todo o código da aula estará disponível neste _notebook_**:
 
-[codeshare.io/XLXoXl](https://codeshare.io/XLXoXl){target="_blank"}
+[`colab.research.google.com`](https://colab.research.google.com/drive/1PdxOoaO2UqDrkf9vn-i8IpvGExvBWiaZ?usp=sharing){target="_blank"}
 
 ## Arquivos
 
