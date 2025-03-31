@@ -17,15 +17,18 @@ categories:
 
 ## Slides
 
-Em breve.
+[Slides](aula_exp_vis.pdf){target="_blank"}
 
 ## `codeshare.io`
 
-Em breve.
+**Não altere (apenas copiei) o seguinte código do link abaixo:**
+
+[codeshare.io/DA6BwO](https://codeshare.io/DA6BwO){target="_blank"}
 
 ## Arquivos
 
-Em breve.
+* [`dispersao.xlsx`](dispersao.xlsx)
+* [`mulheres_20242.xlsx`](mulheres_20242.xlsx)
 
 ## `R` e `Rstudio`
 

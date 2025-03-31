@@ -1,0 +1,86 @@
+---
+title: "`python` para Ciência de Dados: Exploração e Visualização de Dados"
+format: html
+author: Gilberto Sassi
+date: 2025/03/24
+categories:
+  - Ciência de Dados
+  - python
+  - Estatística
+  - Gráficos
+  - Tabelas
+  - Visualização de dados
+---
+
+## Slides
+
+[slides](slides.html){target="_blank"}
+
+## `Google Colab`
+
+**Todo o código da aula estará disponível neste _notebook_**:
+
+[`colab.research.google.com`](https://colab.research.google.com/drive/1LWI2RulGa8vKZqg_zXpyGd1uNaV301Ze?usp=drive_link){target="_blank"}
+
+## Arquivos
+
+[`arquivos.zip`](arquivos.zip)
+
+### Enem 2023
+
+```{r}
+#| echo: false
+#| message: false
+#| tbl-cap: "Amostra com 5 mil pessoas que realizaram o Enem 2023. Cada participantes deste curso tem sua própria amostra."
+
+pacman::p_load(
+  readxl, glue, writexl, googlesheets4, tidyverse
+)
+# setwd("paginas/material/2025/marco/")
+inscritos <- read_csv("lista_presenca.csv")
+nomes <- sort(inscritos$nome)
+nomes <- c(nomes, rep("", 50 - length(nomes)))
+
+arqs_csv <- 1:50 |>
+  map_chr(\(k) {
+    glue("[amostra_{k}.csv](amostra_5k/csv/amostra_{k}.csv)")
+  })
+arqs_xlsx <- 1:50 |>
+  map_chr(\(k) {
+    glue("[amostra_{k}.xlsx](amostra_5k/xlsx/amostra_{k}.xlsx)")
+  })
+# nomes <- rep("", 50)
+ids <- paste0("id_", 1:50)
+
+df_tab <- tibble(
+  id = ids,
+  nome = nomes,
+  `.csv` = arqs_csv,
+  `.xlsx`= arqs_xlsx
+)
+
+knitr::kable(
+  df_tab
+)
+```
+
+
+## IDE para Ciência de Dados usando `python
+
+Recomendamos que você utilize é o [`jupyter notebook`](https://jupyter.org/install){target="_blank"}. Outras opções populares em ciência de dados são o [`VScode`](https://code.visualstudio.com/Download){target="_blank"} da Microsoft e [`Spyder`](https://www.spyder-ide.org/download/){target="_blank"}, caso você tenha familiaridade ou já trabalhe com este editores sinta a vontade para usá-los.
+
+Caso você não queria ou não possa realizar instalações em seu computador, recomendamos que você use as plataformas [`Google Colaboratory`](https://colab.research.google.com/){target="_blank"} e/ou [`Kaggle`](https://www.kaggle.com/){target="_blank"}. 
+
+### Instalação -`python` - `anaconda`
+
+Siga as orientações desse link [docs.anaconda.com/anaconda/install](https://docs.anaconda.com/anaconda/install/){target="_blank"}.
+
+### Instalação - `jupyter notebook`
+
+Após instalar `anaconda`, use o seguinte comando para instalar `jupyter notebook`:
+
+```python
+conda install -c conda-forge jupyter jupyter-lab
+```
+
+---

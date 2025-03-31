@@ -211,5 +211,20 @@
   },
   "paginas/catalogo/outras/looker-studio.qmd": {
     "looker-studio.html": "9ab928e9"
+  },
+  "paginas/catalogo/r/genero-diversidade.qmd": {
+    "genero-diversidade.html": "0cce4b48"
+  },
+  "paginas/material/2024/dezembro/looker.qmd": {
+    "looker.html": "aae0a411"
+  },
+  "paginas/material/2025/janeiro/genero.qmd": {
+    "genero.html": "7f05f4e1"
+  },
+  "paginas/material/2025/marco/python.qmd": {
+    "python.html": "3209dce4"
+  },
+  "paginas/material/2025/abril/abril.qmd": {
+    "abril.html": "88ac9593"
   }
 }

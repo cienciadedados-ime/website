@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://ufba.netlify.app/paginas/catalogo.html</loc>
-    <lastmod>2024-10-31T22:55:42.564Z</lastmod>
+    <lastmod>2024-12-02T16:32:41.355Z</lastmod>
   </url>
   <url>
     <loc>https://ufba.netlify.app/paginas/equipe.html</loc>
@@ -25,8 +25,16 @@
     <lastmod>2023-11-16T19:53:15.176Z</lastmod>
   </url>
   <url>
-    <loc>https://ufba.netlify.app/paginas/material/2024/setembro/regressao_logistica.html</loc>
-    <lastmod>2024-09-26T22:16:29.389Z</lastmod>
+    <loc>https://ufba.netlify.app/paginas/material/2025/abril/abril.html</loc>
+    <lastmod>2025-03-31T13:32:33.583Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ufba.netlify.app/paginas/material/2024/novembro/descritiva.html</loc>
+    <lastmod>2024-11-18T19:41:16.600Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ufba.netlify.app/paginas/material/2024/julho/anova.html</loc>
+    <lastmod>2024-07-11T23:33:44.843Z</lastmod>
   </url>
   <url>
     <loc>https://ufba.netlify.app/paginas/material/2024/agosto/quarto.html</loc>
@@ -61,43 +69,11 @@
     <lastmod>2023-10-19T23:49:45.068Z</lastmod>
   </url>
   <url>
-    <loc>https://ufba.netlify.app/paginas/catalogo/r/regressao-logistica.html</loc>
+    <loc>https://ufba.netlify.app/paginas/catalogo/r/regressao-linear-simples-e-multipla.html</loc>
     <lastmod>2023-10-27T11:27:24.644Z</lastmod>
   </url>
   <url>
-    <loc>https://ufba.netlify.app/paginas/catalogo/r/introducao-a-programacao.html</loc>
-    <lastmod>2023-10-19T23:49:45.068Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ufba.netlify.app/paginas/catalogo/r/intervalo-confianca-teste-hipoteses.html</loc>
-    <lastmod>2023-10-19T23:49:45.068Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ufba.netlify.app/paginas/catalogo/python/exploracao-visualizacao-dados.html</loc>
-    <lastmod>2024-07-13T14:50:45.355Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ufba.netlify.app/paginas/editais/editais-abertos.html</loc>
-    <lastmod>2023-09-14T20:09:20.388Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ufba.netlify.app/paginas/cursos.html</loc>
-    <lastmod>2023-09-14T20:09:20.348Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ufba.netlify.app/index.html</loc>
-    <lastmod>2024-08-04T11:48:35.379Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ufba.netlify.app/paginas/editais/editais-2023.html</loc>
-    <lastmod>2023-09-14T20:09:20.388Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ufba.netlify.app/paginas/editais/editais-2024.html</loc>
-    <lastmod>2024-07-09T20:16:34.786Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ufba.netlify.app/paginas/catalogo/r/exploracao-visualizacao.html</loc>
+    <loc>https://ufba.netlify.app/paginas/catalogo/r/producao-de-texto-usando-rmarkdown.html</loc>
     <lastmod>2023-10-19T23:49:45.068Z</lastmod>
   </url>
   <url>
@@ -105,12 +81,48 @@
     <lastmod>2023-10-19T23:49:45.068Z</lastmod>
   </url>
   <url>
-    <loc>https://ufba.netlify.app/paginas/catalogo/r/producao-de-texto-usando-rmarkdown.html</loc>
+    <loc>https://ufba.netlify.app/paginas/catalogo/r/exploracao-visualizacao.html</loc>
+    <lastmod>2025-03-13T12:31:51.764Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ufba.netlify.app/paginas/editais/editais-2024.html</loc>
+    <lastmod>2024-07-09T20:16:34.786Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ufba.netlify.app/paginas/editais/editais-2023.html</loc>
+    <lastmod>2023-09-14T20:09:20.388Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ufba.netlify.app/index.html</loc>
+    <lastmod>2024-08-04T11:48:35.379Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ufba.netlify.app/paginas/cursos.html</loc>
+    <lastmod>2023-09-14T20:09:20.348Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ufba.netlify.app/paginas/editais/editais-abertos.html</loc>
+    <lastmod>2023-09-14T20:09:20.388Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ufba.netlify.app/paginas/catalogo/python/exploracao-visualizacao-dados.html</loc>
+    <lastmod>2024-07-13T14:50:45.355Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ufba.netlify.app/paginas/catalogo/r/intervalo-confianca-teste-hipoteses.html</loc>
     <lastmod>2023-10-19T23:49:45.068Z</lastmod>
   </url>
   <url>
-    <loc>https://ufba.netlify.app/paginas/catalogo/r/regressao-linear-simples-e-multipla.html</loc>
+    <loc>https://ufba.netlify.app/paginas/catalogo/r/introducao-a-programacao.html</loc>
+    <lastmod>2023-10-19T23:49:45.068Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ufba.netlify.app/paginas/catalogo/r/regressao-logistica.html</loc>
     <lastmod>2023-10-27T11:27:24.644Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ufba.netlify.app/paginas/catalogo/r/genero-diversidade.html</loc>
+    <lastmod>2024-12-02T16:30:16.544Z</lastmod>
   </url>
   <url>
     <loc>https://ufba.netlify.app/paginas/catalogo/outras/looker-studio.html</loc>
@@ -141,12 +153,20 @@
     <lastmod>2024-10-16T21:26:55.508Z</lastmod>
   </url>
   <url>
-    <loc>https://ufba.netlify.app/paginas/material/2024/julho/anova.html</loc>
-    <lastmod>2024-07-11T23:33:44.843Z</lastmod>
+    <loc>https://ufba.netlify.app/paginas/material/2024/dezembro/looker.html</loc>
+    <lastmod>2024-12-12T22:53:16.617Z</lastmod>
   </url>
   <url>
-    <loc>https://ufba.netlify.app/paginas/material/2024/novembro/descritiva.html</loc>
-    <lastmod>2024-10-31T22:18:23.371Z</lastmod>
+    <loc>https://ufba.netlify.app/paginas/material/2024/setembro/regressao_logistica.html</loc>
+    <lastmod>2024-09-26T22:16:29.389Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ufba.netlify.app/paginas/material/2025/marco/python.html</loc>
+    <lastmod>2025-03-31T13:30:53.176Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ufba.netlify.app/paginas/material/2025/janeiro/genero.html</loc>
+    <lastmod>2025-01-13T08:29:09.613Z</lastmod>
   </url>
   <url>
     <loc>https://ufba.netlify.app/paginas/material/2023/programacao/programacao.html</loc>
@@ -166,6 +186,6 @@
   </url>
   <url>
     <loc>https://ufba.netlify.app/paginas/inscricoes.html</loc>
-    <lastmod>2024-10-31T23:16:46.870Z</lastmod>
+    <lastmod>2025-03-31T13:36:13.731Z</lastmod>
   </url>
 </urlset>
