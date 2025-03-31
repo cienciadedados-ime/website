@@ -10,7 +10,6 @@ categories:
   - Gráficos
   - Tabelas
   - Visualização de dados
-  - Gênero
 ---
 
 ## Slides

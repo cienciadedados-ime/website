@@ -11,9 +11,9 @@ format:  html
 **Fique atento à nossa conta do Instagram [`@`cienciadedados.ime](https://www.instagram.com/cienciadedados.ime){target="_blank"} para se informar sobre os períodos de inscrições.** -->
 
 
-As inscrições para o curso livre **[`R` para Ciência de Dados: Exploração e Visualização de Dados](catalogo/r/exploracao-visualizacao.qmd){target="_blank"}**, que acontecerá nos dias **24 de março (das 13h às 18h) e 31 de março (das 14h às 18h)** no Instituto de Matemática e Estatística da Universidade Federal da Bahia, estão abertas e podem ser realizadas pelo link: **[formulário de inscrição](https://forms.gle/xy7cPPYoWUMor6pT7){target="_blank"}**.
+As inscrições para o curso livre **[`R` para Ciência de Dados: Regressão Linear Simples e Múltipla](catalogo/r/regressao-linear-simples-e-multipla.qmd){target="_blank"}**, que acontecerá nos dias **09 de maio (das 14h às 18h) e 16 de maio (das 14h às 18h)** no Instituto de Matemática e Estatística da Universidade Federal da Bahia, estão abertas e podem ser realizadas pelo link: **[formulário de inscrição](https://forms.gle/S1DcPZF3CieDF5DH8){target="_blank"}**.
 
-**Prazo de inscrições:** 11/03/2025 a 24/03/2025.
+**Prazo de inscrições:** 01/04/2025 a 15/04/2025.
 
 **Importante:** o curso conta com 20 vagas e, havendo mais inscritos do que número de vagas, as mesmas serão distribuídas por sorteio, respeitando o caráter extensionista da atividade conforme a **[Resolução 02/2012 do Conselho Acadêmico de Pesquisa e Extensão da UFBA](https://proext.ufba.br/sites/proext.ufba.br/files/resolucao_no_02-2012_capex_-_regulamento_da_extensao.pdf){target="_blank"}**.
 
